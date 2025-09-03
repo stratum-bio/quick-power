@@ -79,7 +79,7 @@ const SchoenfeldEventCount: React.FC<SchoenfeldEventCountProps> = ({
         <div className="flex flex-col gap-2 items-center py-1 text-theme-dark border rounded-lg pt-2 pb-2 pl-6 pr-6 mt-2 hover:bg-blue-200">
           <div className="font-bold">Event Count</div>
           <span className="text-2xl">
-            <InlineMath math={`\\frac{(Z_{1 - \\alpha / 2} + Z_{\\beta})^2}{P_A * P_B * log(\\Delta)^2} = ${derivedParameters.eventCount}`} />
+            <InlineMath math={`n_{events} = \\frac{(Z_{1 - \\alpha / 2} + Z_{\\beta})^2}{P_A * P_B * log(\\Delta)^2} = ${derivedParameters.eventCount}`} />
           </span>
         </div>
       </div>

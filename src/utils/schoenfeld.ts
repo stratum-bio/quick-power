@@ -15,16 +15,46 @@ function normalPPF(p: number, mean: number = 0, stdDev: number = 1): number {
   return jStat.normal.inv(p, mean, stdDev);
 }
 
+export function simpsonsApproximation(
+  survStart: number,
+  survMid: number,
+  survEnd: number,
+): number {
+  const weightedMean = (survStart + 4 * survMid + survEnd) / 6.0;
+  return 1 - weightedMean;
+}
+
+
 export function calculateDerivedParameters(params: SchoenfeldParameters): SchoenfeldDerived {
+  // event count estimation
   const alphaDeviate = normalPPF(1.0 - params.alpha / 2);
   const betaDeviate = normalPPF(1.0 - params.beta);
   const numerator = (alphaDeviate + betaDeviate) ** 2;
   const denominator = Math.log(params.hazardRatio) ** 2 * (params.group1Proportion * params.group2Proportion);
+  const eventCount = numerator / denominator;
+
+  // sample size estimation
+  const baseEventProportion = simpsonsApproximation(
+    params.simpsonStartSurv,
+    params.simpsonMidSurv,
+    params.simpsonEndSurv,
+  );
+  const treatEventProportion = 1 - (1 - baseEventProportion) ** (1 / params.hazardRatio); 
+
+  const overallEventProportion = params.group1Proportion * treatEventProportion + params.group2Proportion * baseEventProportion;
   return {
     alphaDeviate: alphaDeviate,
     betaDeviate: betaDeviate,
     numerator: numerator,
     denominator: denominator,
-    eventCount: Math.round(numerator / denominator),
+    eventCount: Math.round(eventCount),
+
+    // sample size
+    baseEventProportion: baseEventProportion,
+    treatmentEventProportion: treatEventProportion,
+    overallEventProportion: overallEventProportion,
+    sampleSize: Math.round(eventCount / overallEventProportion),
   };
 }
+
+

@@ -4,6 +4,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 
 import type { SchoenfeldParameters, SchoenfeldDerived } from './types/schoenfeld';
 import SchoenfeldEventCount from './SchoenfeldEventCount';
+import SchoenfeldSampleSize from './SchoenfeldSampleSize';
 import { validateSchoenfeldParameters } from './utils/schoenfeldValidation';
 import { calculateDerivedParameters } from './utils/schoenfeld';
 
@@ -14,6 +15,12 @@ const DEFAULT_PARAMS: SchoenfeldParameters = {
   group1Proportion: 0.3,
   group2Proportion: 0.7,
   hazardRatio: 0.667,
+  medianSurvivalB: 1.98,
+  accrual: 0.3,
+  followupTime: 2,
+  simpsonStartSurv: 0.6,
+  simpsonMidSurv: 0.5,
+  simpsonEndSurv: 0.4,
 };
 
 
@@ -45,13 +52,22 @@ const SchoenfeldClosedForm: React.FC = () => {
   }, [handleUpdate]);
 
   return (
-    <SchoenfeldEventCount
-      parameters={parameters}
-      setParameters={setParameters}
-      derivedParameters={derivedParameters}
-      invalid={invalid}
-      invalidMsg={invalidMsg}
-    />
+    <>
+      <SchoenfeldEventCount
+        parameters={parameters}
+        setParameters={setParameters}
+        derivedParameters={derivedParameters}
+        invalid={invalid}
+        invalidMsg={invalidMsg}
+      />
+      <SchoenfeldSampleSize
+        parameters={parameters}
+        setParameters={setParameters}
+        derivedParameters={derivedParameters}
+        invalid={invalid}
+        invalidMsg={invalidMsg}
+      />
+    </>
   );
 };
 
