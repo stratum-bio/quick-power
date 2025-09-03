@@ -28,17 +28,9 @@ const SchoenfeldSampleSize: React.FC<SchoenfeldSampleSizeProps> = ({
 }) => {
 
   return (
-    <div className="grid grid-cols-2">
+    <div className="grid grid-cols-2 items-end">
       <div>
         <form>
-          <ValidatedInputField
-            max={1000}
-            min={0.0}
-            keyValue="medianSurvival"
-            label="Median Survival, Group B"
-            value={parameters.medianSurvivalB}
-            onValueChange={(val) => setParameters((prev: SchoenfeldParameters) => ({ ...prev, medianSurvivalB: val }))}
-            />
           <ValidatedInputField
             max={1000}
             min={0.0}

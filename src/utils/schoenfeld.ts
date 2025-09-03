@@ -27,8 +27,8 @@ export function simpsonsApproximation(
 
 export function calculateDerivedParameters(params: SchoenfeldParameters): SchoenfeldDerived {
   // event count estimation
-  const alphaDeviate = normalPPF(1.0 - params.alpha / 2);
-  const betaDeviate = normalPPF(1.0 - params.beta);
+  const alphaDeviate = normalPPF(1.0 - params.alpha);
+  const betaDeviate = normalPPF(params.beta);
   const numerator = (alphaDeviate + betaDeviate) ** 2;
   const denominator = Math.log(params.hazardRatio) ** 2 * (params.group1Proportion * params.group2Proportion);
   const eventCount = numerator / denominator;
@@ -39,7 +39,7 @@ export function calculateDerivedParameters(params: SchoenfeldParameters): Schoen
     params.simpsonMidSurv,
     params.simpsonEndSurv,
   );
-  const treatEventProportion = 1 - (1 - baseEventProportion) ** (1 / params.hazardRatio); 
+  const treatEventProportion = 1 - (1 - baseEventProportion) ** (params.hazardRatio); 
 
   const overallEventProportion = params.group1Proportion * treatEventProportion + params.group2Proportion * baseEventProportion;
   return {

@@ -1,5 +1,6 @@
 import 'katex/dist/katex.min.css';
 
+import { InlineMath } from 'react-katex';
 import React, { useState, useEffect, useCallback } from 'react';
 
 import type { SchoenfeldParameters, SchoenfeldDerived } from './types/schoenfeld';
@@ -11,16 +12,16 @@ import { calculateDerivedParameters } from './utils/schoenfeld';
 
 const DEFAULT_PARAMS: SchoenfeldParameters = {
   alpha: 0.05,
-  beta: 0.2,
-  group1Proportion: 0.3,
-  group2Proportion: 0.7,
+  beta: 0.8,
+  group1Proportion: 0.5,
+  group2Proportion: 0.5,
   hazardRatio: 0.667,
-  medianSurvivalB: 1.98,
-  accrual: 0.3,
-  followupTime: 2,
-  simpsonStartSurv: 0.6,
-  simpsonMidSurv: 0.5,
-  simpsonEndSurv: 0.4,
+
+  accrual: 2,
+  followupTime: 1,
+  simpsonStartSurv: 0.43,
+  simpsonMidSurv: 0.2,
+  simpsonEndSurv: 0.11,
 };
 
 
@@ -53,6 +54,16 @@ const SchoenfeldClosedForm: React.FC = () => {
 
   return (
     <>
+      <div className="text-left mx-auto mb-4 ml-8 mr-8">
+        <p>
+          Schoenfeld's formula for estimating sample size from the 1983 paper "Sample-Size Formula for the Proportional-Hazards Regression Model".
+          The first step is determining the total number of events required for a clinical trial that compares two survival distributions,
+          equation (1) in the paper.  This equation is based on the proportional-hazards regression model, which assumes that the ratio of
+          the hazard functions for two treatment groups is a constant, regardless of time or patient characteristics. It also assumes that the 
+          treatment effect is tested using an appropriate partial likelihood-based test, and that the two treatment groups are randomized with
+          proportions <InlineMath math="P_A" /> (treatment) and <InlineMath math="P_B" /> (control)
+        </p>
+      </div>
       <SchoenfeldEventCount
         parameters={parameters}
         setParameters={setParameters}
@@ -60,6 +71,13 @@ const SchoenfeldClosedForm: React.FC = () => {
         invalid={invalid}
         invalidMsg={invalidMsg}
       />
+      <div className="text-left mx-auto ml-8 mr-8 mt-8 mb-8">
+        <p>
+        Given the total number of events required from equation (1), you can compute the sample size by dividing this number by the proportion of expected
+        events in the trial. The proportion events is calculated by first approximating the proportion of events on each treatment arm, and then taking a weighted
+        average of these proportions based on the proportion of patients randomized to each treatment.
+        </p>
+      </div>
       <SchoenfeldSampleSize
         parameters={parameters}
         setParameters={setParameters}

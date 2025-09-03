@@ -7,7 +7,6 @@ export interface SchoenfeldParameters {
   hazardRatio: number;
 
   // Needed for estimating sample size
-  medianSurvivalB: number;
   accrual: number;
   followupTime: number;
   simpsonStartSurv: number;

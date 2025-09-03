@@ -39,13 +39,16 @@ const SchoenfeldEventCount: React.FC<SchoenfeldEventCountProps> = ({
   const groupALabel = <span>Group A Proportion (<InlineMath math="P_{A}" />)</span>;
   const groupBLabel = <span>Group B Proportion (<InlineMath math="P_{B}" />)</span>;
   const relativeHazardLabel = <span>Relative Hazard Ratio (<InlineMath math="\Delta" />)</span>;
+  const alphaLabel = <InlineMath math="\alpha" />;
+  const betaLabel = <InlineMath math="\beta" />;
+
 
   return (
-    <div className="grid grid-cols-2">
+    <div className="grid grid-cols-2 items-end">
       <div>
         <form>
-          <ValidatedInputField max={0.5} min={0.0} keyValue="alpha" label="Alpha" value={parameters.alpha} onValueChange={(val) => setParameters((prev: SchoenfeldParameters) => ({ ...prev, alpha: val }))}/>
-          <ValidatedInputField max={0.5} min={0.0} keyValue="beta" label="Beta" value={parameters.beta} onValueChange={(val) => setParameters((prev: SchoenfeldParameters) => ({ ...prev, beta: val }))}/>
+          <ValidatedInputField max={0.5} min={0.0} keyValue="alpha" label={alphaLabel} value={parameters.alpha} onValueChange={(val) => setParameters((prev: SchoenfeldParameters) => ({ ...prev, alpha: val }))}/>
+          <ValidatedInputField max={1.0} min={0.5} keyValue="beta" label={betaLabel} value={parameters.beta} onValueChange={(val) => setParameters((prev: SchoenfeldParameters) => ({ ...prev, beta: val }))}/>
           <ValidatedInputField max={0.99} min={0.01} keyValue="grp1Prop" label={groupALabel} value={parameters.group1Proportion} onValueChange={group1Change} />
           <div className="flex items-center mb-4 justify-end">
             <label className="block text-gray-700 text-sm font-bold mr-4" htmlFor="group2Proportion">{groupBLabel}:</label>
@@ -69,9 +72,9 @@ const SchoenfeldEventCount: React.FC<SchoenfeldEventCountProps> = ({
           const { alphaDeviate, betaDeviate, numerator, denominator } = derivedParameters;
           return (
             <>
-              <DerivationRow label="Z_{1 - \alpha/2}" value={alphaDeviate.toFixed(3)} />
+              <DerivationRow label="Z_{1 - \alpha}" value={alphaDeviate.toFixed(3)} />
               <DerivationRow label="Z_{\beta}" value={betaDeviate.toFixed(3)} />
-              <DerivationRow label="(Z_{1 - \alpha/2} + Z_{\beta})^2" value={numerator.toFixed(3)} />
+              <DerivationRow label="(Z_{1 - \alpha} + Z_{\beta})^2" value={numerator.toFixed(3)} />
               <DerivationRow label="P_A * P_B * log(\Delta)^2" value={denominator.toFixed(3)} />
             </>
           );
@@ -79,7 +82,7 @@ const SchoenfeldEventCount: React.FC<SchoenfeldEventCountProps> = ({
         <div className="flex flex-col gap-2 items-center py-1 text-theme-dark border rounded-lg pt-2 pb-2 pl-6 pr-6 mt-2 hover:bg-blue-200">
           <div className="font-bold">Event Count</div>
           <span className="text-2xl">
-            <InlineMath math={`n_{events} = \\frac{(Z_{1 - \\alpha / 2} + Z_{\\beta})^2}{P_A * P_B * log(\\Delta)^2} = ${derivedParameters.eventCount}`} />
+            <InlineMath math={`n_{events} = \\frac{(Z_{1 - \\alpha } + Z_{\\beta})^2}{P_A * P_B * log(\\Delta)^2} = ${derivedParameters.eventCount}`} />
           </span>
         </div>
       </div>
