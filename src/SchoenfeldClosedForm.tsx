@@ -124,7 +124,6 @@ const SchoenfeldClosedForm: React.FC = () => {
       )}
       </div>
       <div className="p-4 ml-8">
-      {/*<h2 className="text-lg font-bold mb-4 text-gray-800">Event Count Derivation</h2> */}
         <DerivationRow label="Z_{1 - \alpha/2}" value={alphaDeviate.toFixed(3)} />
         <DerivationRow label="Z_{\beta}" value={betaDeviate.toFixed(3)} />
         <DerivationRow label="(Z_{1 - \alpha/2} + Z_{\beta})^2" value={numerator.toFixed(3)} />
