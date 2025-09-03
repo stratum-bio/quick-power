@@ -23,6 +23,14 @@ interface SchoenfeldIntermediate {
 }
 
 
+const DEFAULT_PARAMS: SchoenfeldParameters = {
+  alpha: 0.05,
+  beta: 0.2,
+  group1Proportion: 0.3,
+  group2Proportion: 0.7,
+  hazardRatio: 0.667,
+};
+
 
 /**
  * Computes the inverse of the normal CDF (PPF) for a given probability.
@@ -62,14 +70,8 @@ function DerivationRow({ label, value }: { label: string, value: string }): Reac
 }
 
 const SchoenfeldClosedForm: React.FC = () => {
-  const [parameters, setParameters] = useState<SchoenfeldParameters>({
-    alpha: 0.05,
-    beta: 0.2,
-    group1Proportion: 0.3,
-    group2Proportion: 0.7,
-    hazardRatio: 0.667,
-  });
-  const [derivedParameters, setDerivedParameters] = useState<SchoenfeldIntermediate>(calculateDerivedParameters(parameters));
+  const [parameters, setParameters] = useState<SchoenfeldParameters>(DEFAULT_PARAMS);
+  const [derivedParameters, setDerivedParameters] = useState<SchoenfeldIntermediate>(calculateDerivedParameters(DEFAULT_PARAMS));
 
   const [invalid, setInvalid] = useState<boolean>(false);
   const [invalidMsg, setInvalidMsg] = useState<string>("");
