@@ -14,7 +14,7 @@ interface SchoenfeldParameters {
   hazardRatio: number;
 }
 
-interface SchoenfeldIntermediate {
+interface SchoenfeldDerived {
   alphaDeviate: number;
   betaDeviate: number;
   numerator: number;
@@ -46,7 +46,7 @@ function normalPPF(p: number, mean: number = 0, stdDev: number = 1): number {
   return jStat.normal.inv(p, mean, stdDev);
 }
 
-function calculateDerivedParameters(params: SchoenfeldParameters): SchoenfeldIntermediate {
+function calculateDerivedParameters(params: SchoenfeldParameters): SchoenfeldDerived {
   const alphaDeviate = normalPPF(1.0 - params.alpha / 2);
   const betaDeviate = normalPPF(1.0 - params.beta);
   const numerator = (alphaDeviate + betaDeviate) ** 2;
@@ -71,7 +71,7 @@ function DerivationRow({ label, value }: { label: string, value: string }): Reac
 
 const SchoenfeldClosedForm: React.FC = () => {
   const [parameters, setParameters] = useState<SchoenfeldParameters>(DEFAULT_PARAMS);
-  const [derivedParameters, setDerivedParameters] = useState<SchoenfeldIntermediate>(calculateDerivedParameters(DEFAULT_PARAMS));
+  const [derivedParameters, setDerivedParameters] = useState<SchoenfeldDerived>(calculateDerivedParameters(DEFAULT_PARAMS));
 
   const [invalid, setInvalid] = useState<boolean>(false);
   const [invalidMsg, setInvalidMsg] = useState<string>("");
