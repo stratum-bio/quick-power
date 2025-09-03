@@ -65,3 +65,7 @@ button:focus-visible {
   button {
   }
 }
+
+@theme {
+  --color-theme-dark: #1a4063;
+}

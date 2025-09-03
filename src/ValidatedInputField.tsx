@@ -4,7 +4,7 @@ interface ValidatedInputFieldProps {
   min: number;
   max: number;
   key: string;
-  label: string;
+  label: React.ReactNode;
   value: number;
   onValueChange?: (value: number) => void;
 }
@@ -17,7 +17,7 @@ export const ValidatedInputField: React.FC<ValidatedInputFieldProps> = ({ min, m
   }
 
   return <div className="flex items-center mb-4 justify-end">
-    <label className="block text-gray-700 text-sm font-bold mr-4" htmlFor={key}>{label}:</label>
+    <label className="block text-gray-700 text-sm font-bold mr-4" htmlFor={key}>{label}</label>
     <input className={className}
       type="number"
       id={key}
@@ -27,7 +27,7 @@ export const ValidatedInputField: React.FC<ValidatedInputFieldProps> = ({ min, m
         const num = parseFloat(value);
         onValueChange(num);
       }}
-      step="any"
+      step={0.05}
     />
   </div>
 };
