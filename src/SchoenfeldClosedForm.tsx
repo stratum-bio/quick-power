@@ -5,8 +5,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 
 import type { SchoenfeldParameters, SchoenfeldDerived } from './types/schoenfeld';
 import SchoenfeldEventCount from './SchoenfeldEventCount';
-
-
+import { validateSchoenfeldParameters } from './utils/schoenfeldValidation';
 
 
 const DEFAULT_PARAMS: SchoenfeldParameters = {
@@ -55,39 +54,19 @@ const SchoenfeldClosedForm: React.FC = () => {
   const [invalid, setInvalid] = useState<boolean>(false);
   const [invalidMsg, setInvalidMsg] = useState<string>("");
 
-
-  const validate = useCallback(() => {
-    setInvalidMsg(""); // Clear previous messages at the start of validation
-
-    if (parameters.alpha <= 0.0 || parameters.alpha >= 0.5) {
-      setInvalidMsg("Alpha must be between (0.0, 0.5)")
-      return false;
-    }
-    if (parameters.beta <= 0.0 || parameters.beta >= 0.5) {
-      setInvalidMsg("Beta must be between (0.0, 0.5)")
-      return false;
-    }
-    if (parameters.group1Proportion < 0.1 || parameters.group1Proportion > 0.9) {
-      setInvalidMsg("Proportion must be between 0.1 and 0.9");
-      return false;
-    }
-    if (parameters.hazardRatio < 0.01 || parameters.hazardRatio > 5.0) {
-      setInvalidMsg("Relative Hazard Ratio must be between 0.01 and 5");
-      return false;
-    }
-    return true;
-  }, [parameters]);
-
   const handleUpdate = useCallback(() => {
-    if (!validate()) {
+    const validationResult = validateSchoenfeldParameters(parameters);
+    if (!validationResult.isValid) {
       setInvalid(true);
+      setInvalidMsg(validationResult.message);
       return;
     }
     setInvalid(false);
+    setInvalidMsg("");
 
     const derived = calculateDerivedParameters(parameters);
     setDerivedParameters(derived);
-  }, [validate, parameters]);
+  }, [parameters]);
 
 
   useEffect(() => {
