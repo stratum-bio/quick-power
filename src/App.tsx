@@ -6,9 +6,7 @@ function App() {
     <div className="App">
       <div className="mx-auto p-6 bg-white rounded-lg shadow-md">
         <h2 className="text-3xl mb-8">Survival Sample Size</h2>
-        <div className="w-3/4">
           <SchoenfeldClosedForm />
-        </div>
       </div>
     </div>
   )
