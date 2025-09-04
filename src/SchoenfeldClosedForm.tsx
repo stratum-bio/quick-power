@@ -102,8 +102,8 @@ const SchoenfeldClosedForm: React.FC = () => {
       </div>
       <div className="text-left mx-auto mt-8 mb-8 px-4">
         <p>
-        Here we are simply plotting the information provided in the form.
-        <InlineMath math="S_B(t)" /> is directly entered in the second part of the form, then
+        Here we are simply plotting the information provided. 
+        <InlineMath math="\ S_B(t)" /> is directly entered in the second part of the form, then
         we can derive <InlineMath math="S_A(t)" /> using the provided relative hazard ratio.
         </p>
       </div>
