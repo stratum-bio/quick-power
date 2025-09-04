@@ -7,12 +7,12 @@ import 'katex/dist/katex.min.css';
 import { InlineMath } from 'react-katex';
 
 interface Point {
-  x: number;
-  y: number;
+  time: number;
+  survProb: number;
 }
 
 interface LinePlotProps {
-  data: Point[];
+  baseSurv: Point[];
   hazardRatio: number;
 }
 
@@ -63,12 +63,12 @@ const CustomTooltip: React.FC<CustomTooltipProps> = ({ active, payload }) => {
 };
 
 
-const SurvivalPlot: React.FC<LinePlotProps> = ({ data, hazardRatio }) => {
-  const formattedData = data.map((point, index) => ({
+const SurvivalPlot: React.FC<LinePlotProps> = ({ baseSurv, hazardRatio }) => {
+  const formattedData = baseSurv.map((point, index) => ({
     name: `Point ${index + 1}`, // A generic name for each point
-    x: point.x,
-    y: point.y,
-    treat: baselineToTreatmentSurvival(point.y, hazardRatio),
+    time: point.time,
+    survProb: point.survProb,
+    treat: baselineToTreatmentSurvival(point.survProb, hazardRatio),
   }));
 
   return (
@@ -84,7 +84,7 @@ const SurvivalPlot: React.FC<LinePlotProps> = ({ data, hazardRatio }) => {
       >
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis
-          dataKey="x"
+          dataKey="time"
           type="number"
           domain={[0, 'auto']}
           label={{ value: "Time", position: "insideBottom", offset: -10 }} 
@@ -96,7 +96,7 @@ const SurvivalPlot: React.FC<LinePlotProps> = ({ data, hazardRatio }) => {
         />
         <Tooltip content={(props) => <CustomTooltip {...props} />} />
         <Legend verticalAlign="top" align="right" formatter={formatLegend} />
-        <Line type="monotone" dataKey="y" stroke="black" activeDot={{ r: 8 }} name="S_B(t)" />
+        <Line type="monotone" dataKey="survProb" stroke="black" activeDot={{ r: 8 }} name="S_B(t)" />
         <Line type="monotone" dataKey="treat" stroke="blue" activeDot={{ r: 8 }} name="S_A(t)" />
       </LineChart>
     </ResponsiveContainer>

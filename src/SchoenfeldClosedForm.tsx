@@ -94,10 +94,10 @@ const SchoenfeldClosedForm: React.FC = () => {
       <div className="mt-8">
         <SurvivalPlot
           hazardRatio={parameters.hazardRatio}
-          data={[
-            {x: parameters.followupTime, y: parameters.simpsonStartSurv},
-            {x: parameters.followupTime + 0.5 * parameters.accrual, y: parameters.simpsonMidSurv},
-            {x: parameters.followupTime + parameters.accrual, y: parameters.simpsonEndSurv},
+          baseSurv={[
+            {time: parameters.followupTime, survProb: parameters.simpsonStartSurv},
+            {time: parameters.followupTime + 0.5 * parameters.accrual, survProb: parameters.simpsonMidSurv},
+            {time: parameters.followupTime + parameters.accrual, survProb: parameters.simpsonEndSurv},
         ]}/>
       </div>
       <div className="text-left mx-auto mt-8 mb-8 px-4">
