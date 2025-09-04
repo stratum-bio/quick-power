@@ -1,7 +1,5 @@
 import 'katex/dist/katex.min.css';
 import { InlineMath } from 'react-katex';
-import React from 'react';
-
-export function formatLegend(value: string): React.Component {
+export function formatLegend(value: string): React.ReactNode {
   return <InlineMath math={value} />;
 };
