@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
@@ -18,8 +20,23 @@ const formatLegend = (value: string) => {
   return <InlineMath math={value} />;
 };
 
-const CustomTooltip = ({ payload, label }) => {
-  const isVisible = payload && payload.length;
+interface TooltipPayload {
+  name: string;
+  value: any;
+  unit?: string;
+  color?: string;
+  dataKey?: string;
+}
+
+interface CustomTooltipProps {
+  active?: boolean;
+  payload?: TooltipPayload[];
+  label?: string | number;
+}
+
+
+const CustomTooltip: React.FC<CustomTooltipProps> = ({ active, payload }) => {
+  const isVisible = active && payload && payload.length;
   if (!isVisible) {
     return <></>; 
   }
@@ -32,8 +49,6 @@ const CustomTooltip = ({ payload, label }) => {
 
 
 const SurvivalPlot: React.FC<LinePlotProps> = ({ data }) => {
-  // Ensure data has a 'name' property for Recharts to display on XAxis if needed,
-  // or use a custom XAxis tick formatter. For now, assuming x is numeric.
   const formattedData = data.map((point, index) => ({
     name: `Point ${index + 1}`, // A generic name for each point
     x: point.x,
@@ -54,7 +69,7 @@ const SurvivalPlot: React.FC<LinePlotProps> = ({ data }) => {
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="x" type="number" domain={[0, 'auto']} label={{ value: "Time", position: "insideBottom", offset: 0 }} />
         <YAxis type="number" domain={[0, 1]} label={{ value: "Survival probability", angle: -90, position: "insideLeft" }} />
-        <Tooltip content={CustomTooltip} />
+        <Tooltip content={(props) => <CustomTooltip {...props} />} />
         <Legend verticalAlign="top" align="right" formatter={formatLegend} />
         <Line type="monotone" dataKey="y" stroke="black" activeDot={{ r: 8 }} name="S_B(t)" />
       </LineChart>
