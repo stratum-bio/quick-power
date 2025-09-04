@@ -64,6 +64,9 @@ const SchoenfeldClosedForm: React.FC = () => {
   return (
     <>
       <div className="text-left mx-auto mb-4 px-4 text-black">
+        <h3 className="text-xl mb-4">
+          Estimate the event count
+        </h3>
         <p>
           Schoenfeld's formula for estimating sample size from the 1983 paper "Sample-Size Formula for the Proportional-Hazards Regression Model".
           The first step is determining the total number of events required for a clinical trial that compares two survival distributions,
@@ -83,6 +86,9 @@ const SchoenfeldClosedForm: React.FC = () => {
         />
       </div>
       <div className="text-left mx-auto mt-8 mb-8 px-4 text-black">
+        <h3 className="text-xl mb-4">
+          Estimate the total sample size using the event count
+        </h3>
         <p>
         Given the total number of events required from equation (1), you can compute the sample size by dividing this number by the proportion of expected
         events in the trial. The proportion events is calculated by first approximating the proportion of events on each treatment arm, and then taking a weighted
@@ -97,6 +103,11 @@ const SchoenfeldClosedForm: React.FC = () => {
           invalid={invalid}
           invalidMsg={invalidMsg}
         />
+      </div>
+      <div className="text-left mx-auto mt-8 mb-8 px-4 text-black">
+        <h3 className="text-xl mb-4">
+          Visualize the parameters
+        </h3>
       </div>
       <div className="mt-8">
         <SurvivalPlot
