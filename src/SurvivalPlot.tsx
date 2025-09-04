@@ -15,10 +15,19 @@ interface LinePlotProps {
 
 
 const formatLegend = (value: string) => {
-  // const { color } = entry;
-
-  // return <span style={{ color }}>{value}</span>;
   return <InlineMath math={value} />;
+};
+
+const CustomTooltip = ({ payload, label }) => {
+  const isVisible = payload && payload.length;
+  if (!isVisible) {
+    return <></>; 
+  }
+  return (
+    <div className="border border-black p-4 bg-white rounded-lg opacity-70" >
+      <p className="opacity-100"><InlineMath math={payload[0].name} />: {payload[0].value}</p>
+    </div>
+  );
 };
 
 
@@ -43,9 +52,9 @@ const SurvivalPlot: React.FC<LinePlotProps> = ({ data }) => {
         }}
       >
         <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="x" type="number" domain={[0, 'auto']} />
-        <YAxis type="number" domain={[0, 1]} />
-        <Tooltip />
+        <XAxis dataKey="x" type="number" domain={[0, 'auto']} label={{ value: "Time", position: "insideBottom", offset: 0 }} />
+        <YAxis type="number" domain={[0, 1]} label={{ value: "Survival probability", angle: -90, position: "insideLeft" }} />
+        <Tooltip content={CustomTooltip} />
         <Legend verticalAlign="top" align="right" formatter={formatLegend} />
         <Line type="monotone" dataKey="y" stroke="black" activeDot={{ r: 8 }} name="S_B(t)" />
       </LineChart>
