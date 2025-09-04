@@ -5,7 +5,7 @@ import 'katex/dist/katex.min.css';
 
 import { formatLegend } from './utils/formatters.tsx';
 import { baselineToTreatmentSurvival } from './utils/survival'; 
-import { CustomTooltip } from './CustomTooltip';
+import { InlineMathTooltip } from './InlineMathTooltip';
 
 interface Point {
   time: number;
@@ -49,7 +49,7 @@ const SurvivalPlot: React.FC<LinePlotProps> = ({ baseSurv, hazardRatio }) => {
           domain={[0, 1]}
           label={{ value: "Survival probability", angle: -90, position: "insideLeft", dy: 60 }}
         />
-        <Tooltip content={(props) => <CustomTooltip {...props} />} />
+        <Tooltip content={(props) => <InlineMathTooltip {...props} round={true} />} />
         <Legend verticalAlign="top" align="right" formatter={formatLegend} />
         <Line type="monotone" dataKey="survProb" stroke="black" activeDot={{ r: 8 }} name="S_B(t)" />
         <Line type="monotone" dataKey="treat" stroke="blue" activeDot={{ r: 8 }} name="S_A(t)" />

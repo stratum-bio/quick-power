@@ -10,7 +10,7 @@ interface TooltipPayload {
   dataKey?: string;
 }
 
-interface CustomTooltipProps {
+interface InlineMathTooltipProps {
   active?: boolean;
   payload?: TooltipPayload[];
   label?: string | number;
@@ -18,7 +18,7 @@ interface CustomTooltipProps {
 }
 
 
-export const CustomTooltip: React.FC<CustomTooltipProps> = ({ active, payload, round }) => {
+export const InlineMathTooltip: React.FC<InlineMathTooltipProps> = ({ active, payload, round }) => {
   const isVisible = active && payload && payload.length;
   if (!isVisible) {
     return <></>; 

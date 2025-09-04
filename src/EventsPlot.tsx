@@ -5,7 +5,7 @@ import 'katex/dist/katex.min.css';
 
 import { formatLegend } from './utils/formatters.tsx';
 import { baselineToTreatmentSurvival } from './utils/survival'; 
-import { CustomTooltip } from './CustomTooltip';
+import { InlineMathTooltip } from './InlineMathTooltip';
 
 interface Point {
   time: number;
@@ -61,7 +61,7 @@ const EventsPlot: React.FC<LinePlotProps> = ({ baseSurv, hazardRatio, aProportio
           domain={[0, 1]}
           label={{ value: "Estimated Event Count", angle: -90, position: "insideLeft", dy: 60 }}
         />
-        <Tooltip content={(props) => <CustomTooltip {...props} round={false} />} />
+        <Tooltip content={(props) => <InlineMathTooltip {...props} round={false} />} />
         <Legend verticalAlign="top" align="right" formatter={formatLegend} />
         <Line type="monotone" dataKey="bEventSum" stroke="black" activeDot={{ r: 8 }} name="Group\ B\ (Control)" />
         <Line type="monotone" dataKey="aEventSum" stroke="blue" activeDot={{ r: 8 }} name="Group\ A\ (Treatment)" />
