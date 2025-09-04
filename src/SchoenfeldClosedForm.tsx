@@ -9,8 +9,9 @@ import SchoenfeldSampleSize from './SchoenfeldSampleSize';
 import { validateSchoenfeldParameters } from './utils/schoenfeldValidation';
 import { calculateDerivedParameters } from './utils/schoenfeld';
 
-import SurvivalPlot from './SurvivalPlot';
 import EventsPlot from './EventsPlot';
+import ExponentialSurvivalPlot from './ExponentialSurvivalPlot';
+import SurvivalPlot from './SurvivalPlot';
 
 
 const DEFAULT_PARAMS: SchoenfeldParameters = {
@@ -139,9 +140,26 @@ const SchoenfeldClosedForm: React.FC = () => {
           sampleSize={derivedParameters.sampleSize}
         />
       </div>
+      <div className="text-left mx-auto mt-8 mb-8 px-4 text-black">
+        <h3 className="text-xl mb-4">
+          Fit a parametric (exponential) curve to the data
+        </h3>
+      </div>
+      <div className="text-left mx-auto mt-8 mb-8 px-4 text-black">
+        <p>
+          Given the 3 points provided for <InlineMath math="\ S_B(t)" /> and
+          the 3 derived points for <InlineMath math="\ S_A(t)" />, we can fit
+          the naive exponential curve to this data and see the result.
+        </p>
+      </div>
+      <div className="mt-8">
+        <ExponentialSurvivalPlot
+          hazardRatio={parameters.hazardRatio}
+          baseSurv={baseSurv} 
+        />
+      </div>
     </>
   );
 };
 
 export default SchoenfeldClosedForm;
-
