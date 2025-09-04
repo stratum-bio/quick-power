@@ -15,21 +15,33 @@ interface Point {
 interface LinePlotProps {
   baseSurv: Point[];
   hazardRatio: number;
+  aProportion: number;
+  bProportion: number;
+  sampleSize: number;
 }
 
 
-const SurvivalPlot: React.FC<LinePlotProps> = ({ baseSurv, hazardRatio }) => {
+const EventsPlot: React.FC<LinePlotProps> = ({ baseSurv, hazardRatio, aProportion, bProportion, sampleSize }) => {
   const formattedData = baseSurv.map((point, index) => ({
     name: `Point ${index + 1}`, // A generic name for each point
     time: point.time,
     survProb: point.survProb,
-    treat: baselineToTreatmentSurvival(point.survProb, hazardRatio),
+    treatProb: baselineToTreatmentSurvival(point.survProb, hazardRatio),
+  }));
+
+  const bEnrolled = sampleSize * bProportion;
+  const aEnrolled = sampleSize * aProportion;
+
+  const eventSumData = formattedData.map((entry) => ({
+    time: entry.time,
+    bEventSum: Math.round(bEnrolled * (1 - entry.survProb)),
+    aEventSum: Math.round(aEnrolled * (1 - entry.treatProb)),
   }));
 
   return (
     <ResponsiveContainer width="100%" height={300}>
       <LineChart
-        data={formattedData}
+        data={eventSumData}
         margin={{
           top: 5,
           right: 30,
@@ -47,15 +59,15 @@ const SurvivalPlot: React.FC<LinePlotProps> = ({ baseSurv, hazardRatio }) => {
         <YAxis
           type="number"
           domain={[0, 1]}
-          label={{ value: "Survival probability", angle: -90, position: "insideLeft", dy: 60 }}
+          label={{ value: "Estimated Event Count", angle: -90, position: "insideLeft", dy: 60 }}
         />
-        <Tooltip content={(props) => <CustomTooltip {...props} />} />
+        <Tooltip content={(props) => <CustomTooltip {...props} round={false} />} />
         <Legend verticalAlign="top" align="right" formatter={formatLegend} />
-        <Line type="monotone" dataKey="survProb" stroke="black" activeDot={{ r: 8 }} name="S_B(t)" />
-        <Line type="monotone" dataKey="treat" stroke="blue" activeDot={{ r: 8 }} name="S_A(t)" />
+        <Line type="monotone" dataKey="bEventSum" stroke="black" activeDot={{ r: 8 }} name="Group\ B\ (Control)" />
+        <Line type="monotone" dataKey="aEventSum" stroke="blue" activeDot={{ r: 8 }} name="Group\ A\ (Treatment)" />
       </LineChart>
     </ResponsiveContainer>
   );
 };
 
-export default SurvivalPlot;
+export default EventsPlot;

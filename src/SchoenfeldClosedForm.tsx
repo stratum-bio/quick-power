@@ -10,6 +10,7 @@ import { validateSchoenfeldParameters } from './utils/schoenfeldValidation';
 import { calculateDerivedParameters } from './utils/schoenfeld';
 
 import SurvivalPlot from './SurvivalPlot';
+import EventsPlot from './EventsPlot';
 
 
 const DEFAULT_PARAMS: SchoenfeldParameters = {
@@ -54,6 +55,12 @@ const SchoenfeldClosedForm: React.FC = () => {
     handleUpdate();
   }, [handleUpdate]);
 
+  const baseSurv = [
+    {time: parameters.followupTime, survProb: parameters.simpsonStartSurv},
+    {time: parameters.followupTime + 0.5 * parameters.accrual, survProb: parameters.simpsonMidSurv},
+    {time: parameters.followupTime + parameters.accrual, survProb: parameters.simpsonEndSurv},
+  ];
+
   return (
     <>
       <div className="text-left mx-auto mb-4 px-4">
@@ -94,11 +101,8 @@ const SchoenfeldClosedForm: React.FC = () => {
       <div className="mt-8">
         <SurvivalPlot
           hazardRatio={parameters.hazardRatio}
-          baseSurv={[
-            {time: parameters.followupTime, survProb: parameters.simpsonStartSurv},
-            {time: parameters.followupTime + 0.5 * parameters.accrual, survProb: parameters.simpsonMidSurv},
-            {time: parameters.followupTime + parameters.accrual, survProb: parameters.simpsonEndSurv},
-        ]}/>
+          baseSurv={baseSurv} 
+        />
       </div>
       <div className="text-left mx-auto mt-8 mb-8 px-4">
         <p>
@@ -106,6 +110,23 @@ const SchoenfeldClosedForm: React.FC = () => {
         <InlineMath math="\ S_B(t)" /> is directly entered in the second part of the form, then
         we can derive <InlineMath math="S_A(t)" /> using the provided relative hazard ratio.
         </p>
+        <br />
+        <p>
+          Using these point estimates of the survival curve for each group, along with the expected
+          proportion of enrollment, we can take the total estimated sample size and compute
+          <InlineMath math="\ n_{samples} * P_B * (1 - S_B(t))" /> for the control group B and
+          <InlineMath math="\ n_{samples} * P_A * (1 - S_A(t))" /> for
+          treatment group A to produce (very naive) point estimates of the event accrual over time.
+        </p>
+      </div>
+      <div className="mt-8">
+        <EventsPlot
+          hazardRatio={parameters.hazardRatio}
+          baseSurv={baseSurv} 
+          aProportion={parameters.group2Proportion}
+          bProportion={parameters.group1Proportion}
+          sampleSize={derivedParameters.sampleSize}
+        />
       </div>
     </>
   );
