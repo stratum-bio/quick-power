@@ -51,7 +51,7 @@ const SchoenfeldEventCount: React.FC<SchoenfeldEventCountProps> = ({
           <ValidatedInputField max={1.0} min={0.5} keyValue="beta" label={betaLabel} value={parameters.beta} onValueChange={(val) => setParameters((prev: SchoenfeldParameters) => ({ ...prev, beta: val }))}/>
           <ValidatedInputField max={0.99} min={0.01} keyValue="grp1Prop" label={groupALabel} value={parameters.group1Proportion} onValueChange={group1Change} />
           <div className="flex items-center mb-4 justify-end">
-            <label className="block text-gray-700 text-sm font-bold mr-4" htmlFor="group2Proportion">{groupBLabel}:</label>
+            <label className="block text-gray-700 text-sm font-bold mr-4" htmlFor="group2Proportion">{groupBLabel}</label>
             <input
               className="shadow appearance-none border rounded w-32 py-2 px-3 text-gray-400 leading-tight focus:outline-none focus:shadow-outline"
               type="number"
