@@ -149,7 +149,8 @@ const SchoenfeldClosedForm: React.FC = () => {
         <p>
           Given the 3 points provided for <InlineMath math="\ S_B(t)" /> and
           the 3 derived points for <InlineMath math="\ S_A(t)" />, we can fit
-          the naive exponential curve to this data and see the result.
+          naive exponential curves <InlineMath math="\ \hat{S_B}(t)\ " /> 
+           and <InlineMath math="\ \hat{S_A}(t)" />, respectively, to this data and see the result.
         </p>
       </div>
       <div className="mt-8">

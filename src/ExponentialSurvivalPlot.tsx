@@ -84,13 +84,15 @@ const ExponentialSurvivalPlot: React.FC<LinePlotProps> = ({ baseSurv, hazardRati
           stroke="black"
           name="\hat{S_B}(t)"
           dot={false}
+          legendType="plainline"
         />
         <Line
           type="monotone"
           dataKey="baseSurvProb"
           stroke="black"
-          strokeDasharray="5 5"
           name="S_B(t)"
+          dot={{fill: "black"}}
+          legendType="circle"
         />
 
         <Line
@@ -99,13 +101,15 @@ const ExponentialSurvivalPlot: React.FC<LinePlotProps> = ({ baseSurv, hazardRati
           stroke="blue"
           name="\hat{S_A}(t)"
           dot={false}
+          legendType="plainline"
         />
         <Line
           type="monotone"
           dataKey="treatSurvProb"
           stroke="blue"
-          strokeDasharray="5 5"
           name="S_A(t)"
+          dot={{fill: "blue"}}
+          legendType="circle"
         />
       </LineChart>
     </ResponsiveContainer>
