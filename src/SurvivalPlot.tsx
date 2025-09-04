@@ -1,6 +1,9 @@
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
+import 'katex/dist/katex.min.css';
+import { InlineMath } from 'react-katex';
+
 interface Point {
   x: number;
   y: number;
@@ -9,6 +12,15 @@ interface Point {
 interface LinePlotProps {
   data: Point[];
 }
+
+
+const formatLegend = (value: string) => {
+  // const { color } = entry;
+
+  // return <span style={{ color }}>{value}</span>;
+  return <InlineMath math={value} />;
+};
+
 
 const SurvivalPlot: React.FC<LinePlotProps> = ({ data }) => {
   // Ensure data has a 'name' property for Recharts to display on XAxis if needed,
@@ -34,8 +46,8 @@ const SurvivalPlot: React.FC<LinePlotProps> = ({ data }) => {
         <XAxis dataKey="x" type="number" domain={[0, 'auto']} />
         <YAxis type="number" domain={[0, 1]} />
         <Tooltip />
-        <Legend />
-        <Line type="monotone" dataKey="y" stroke="black" activeDot={{ r: 8 }} />
+        <Legend verticalAlign="top" align="right" formatter={formatLegend} />
+        <Line type="monotone" dataKey="y" stroke="black" activeDot={{ r: 8 }} name="S_B(t)" />
       </LineChart>
     </ResponsiveContainer>
   );
