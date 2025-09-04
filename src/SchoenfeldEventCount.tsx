@@ -44,7 +44,7 @@ const SchoenfeldEventCount: React.FC<SchoenfeldEventCountProps> = ({
 
 
   return (
-    <div className="grid grid-cols-2 items-end">
+    <div className="grid grid-cols-1 md:grid-cols-2 items-end gap-x-8">
       <div>
         <form>
           <ValidatedInputField max={0.5} min={0.0} keyValue="alpha" label={alphaLabel} value={parameters.alpha} onValueChange={(val) => setParameters((prev: SchoenfeldParameters) => ({ ...prev, alpha: val }))}/>
@@ -66,7 +66,7 @@ const SchoenfeldEventCount: React.FC<SchoenfeldEventCountProps> = ({
           <p className="text-red-500 text-center mt-4">{invalidMsg}</p>
         )}
       </div>
-      <div className="p-4 ml-8">
+      <div className="p-4">
         {/* Calculate derived parameters here */}
         {(() => {
           const { alphaDeviate, betaDeviate, numerator, denominator } = derivedParameters;

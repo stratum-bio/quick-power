@@ -64,13 +64,15 @@ const SchoenfeldClosedForm: React.FC = () => {
           proportions <InlineMath math="P_A" /> (treatment) and <InlineMath math="P_B" /> (control)
         </p>
       </div>
-      <SchoenfeldEventCount
-        parameters={parameters}
-        setParameters={setParameters}
-        derivedParameters={derivedParameters}
-        invalid={invalid}
-        invalidMsg={invalidMsg}
-      />
+      <div className="px-8">
+        <SchoenfeldEventCount
+          parameters={parameters}
+          setParameters={setParameters}
+          derivedParameters={derivedParameters}
+          invalid={invalid}
+          invalidMsg={invalidMsg}
+        />
+      </div>
       <div className="text-left mx-auto ml-8 mr-8 mt-8 mb-8">
         <p>
         Given the total number of events required from equation (1), you can compute the sample size by dividing this number by the proportion of expected
@@ -78,13 +80,15 @@ const SchoenfeldClosedForm: React.FC = () => {
         average of these proportions based on the proportion of patients randomized to each treatment.
         </p>
       </div>
-      <SchoenfeldSampleSize
-        parameters={parameters}
-        setParameters={setParameters}
-        derivedParameters={derivedParameters}
-        invalid={invalid}
-        invalidMsg={invalidMsg}
-      />
+      <div className="px-8">
+        <SchoenfeldSampleSize
+          parameters={parameters}
+          setParameters={setParameters}
+          derivedParameters={derivedParameters}
+          invalid={invalid}
+          invalidMsg={invalidMsg}
+        />
+      </div>
     </>
   );
 };

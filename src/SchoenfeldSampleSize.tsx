@@ -28,7 +28,7 @@ const SchoenfeldSampleSize: React.FC<SchoenfeldSampleSizeProps> = ({
 }) => {
 
   return (
-    <div className="grid grid-cols-2 items-end">
+    <div className="grid grid-cols-1 md:grid-cols-2 items-end gap-x-8">
       <div>
         <form>
           <ValidatedInputField
@@ -73,7 +73,7 @@ const SchoenfeldSampleSize: React.FC<SchoenfeldSampleSizeProps> = ({
             />
         </form>
       </div>
-      <div className="p-4 ml-8">
+      <div className="p-4">
         {/* Calculate derived parameters here */}
         {(() => {
           return (
