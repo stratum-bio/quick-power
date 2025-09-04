@@ -51,12 +51,12 @@ const ExponentialSurvivalPlot: React.FC<LinePlotProps> = ({ baseSurv, hazardRati
     expTreatSurv: exponentialTreat[idx].survProb,
   }));
 
-  console.log([...evaluatedData, ...mergedExponential]);
+  const allPoints = [...evaluatedData, ...mergedExponential].sort((a, b) => a.time - b.time);
 
   return (
     <ResponsiveContainer width="100%" height={300}>
       <LineChart
-        data={[...evaluatedData, ...mergedExponential]}
+        data={allPoints}
         margin={{
           top: 5,
           right: 30,
