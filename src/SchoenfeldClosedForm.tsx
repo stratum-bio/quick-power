@@ -92,11 +92,20 @@ const SchoenfeldClosedForm: React.FC = () => {
         />
       </div>
       <div className="mt-8">
-        <SurvivalPlot data={[
-          {x: parameters.followupTime, y: parameters.simpsonStartSurv},
-          {x: parameters.followupTime + 0.5 * parameters.accrual, y: parameters.simpsonMidSurv},
-          {x: parameters.followupTime + parameters.accrual, y: parameters.simpsonEndSurv},
+        <SurvivalPlot
+          hazardRatio={parameters.hazardRatio}
+          data={[
+            {x: parameters.followupTime, y: parameters.simpsonStartSurv},
+            {x: parameters.followupTime + 0.5 * parameters.accrual, y: parameters.simpsonMidSurv},
+            {x: parameters.followupTime + parameters.accrual, y: parameters.simpsonEndSurv},
         ]}/>
+      </div>
+      <div className="text-left mx-auto mt-8 mb-8 px-4">
+        <p>
+        Here we are simply plotting the information provided in the form.
+        <InlineMath math="S_B(t)" /> is directly entered in the second part of the form, then
+        we can derive <InlineMath math="S_A(t)" /> using the provided relative hazard ratio.
+        </p>
       </div>
     </>
   );
