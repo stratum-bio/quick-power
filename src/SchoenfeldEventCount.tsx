@@ -36,11 +36,11 @@ const SchoenfeldEventCount: React.FC<SchoenfeldEventCountProps> = ({
     }));
   };
 
-  const groupALabel = <span>Group A Proportion (<InlineMath math="P_{A}" />)</span>;
-  const groupBLabel = <span>Group B Proportion (<InlineMath math="P_{B}" />)</span>;
-  const relativeHazardLabel = <span>Relative Hazard Ratio (<InlineMath math="\Delta" />)</span>;
   const alphaLabel = <InlineMath math="\alpha" />;
   const betaLabel = <InlineMath math="\beta" />;
+  const groupALabel = <span>Group A Proportion, <InlineMath math="P_{A}" /></span>;
+  const groupBLabel = <span>Group B Proportion, <InlineMath math="P_{B}" /></span>;
+  const relativeHazardLabel = <span>Relative Hazard Ratio, <InlineMath math="\Delta" /></span>;
 
 
   return (

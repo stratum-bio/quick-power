@@ -26,6 +26,12 @@ const SchoenfeldSampleSize: React.FC<SchoenfeldSampleSizeProps> = ({
   setParameters,
   derivedParameters,
 }) => {
+  const accrualLabel = <span>Accrual period, <InlineMath math="a" /></span>;
+  const followupLabel = <span>Follow-up period, <InlineMath math="f" /></span>;
+  const survStartLabel = <span>Survival @ {parameters.followupTime}, <InlineMath math="S_{B}(f)" /></span>;
+  const survMidLabel = <span>Survival @ {parameters.followupTime + 0.5 * parameters.accrual}, <InlineMath math="S_{B}(f + \frac{a}{2})" /></span>;
+  const survEndLabel = <span>Survival @ {parameters.followupTime + parameters.accrual}, <InlineMath math="S_{B}(f + a)" /></span>;
+
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 items-end gap-x-8">
@@ -35,7 +41,7 @@ const SchoenfeldSampleSize: React.FC<SchoenfeldSampleSizeProps> = ({
             max={1000}
             min={0.0}
             keyValue="accrual"
-            label="Accrual period"
+            label={accrualLabel}
             value={parameters.accrual}
             onValueChange={(val) => setParameters((prev: SchoenfeldParameters) => ({ ...prev, accrual: val }))}
             />
@@ -43,7 +49,7 @@ const SchoenfeldSampleSize: React.FC<SchoenfeldSampleSizeProps> = ({
             max={1000}
             min={0.0}
             keyValue="followup"
-            label="Follow-up period"
+            label={followupLabel}
             value={parameters.followupTime}
             onValueChange={(val) => setParameters((prev: SchoenfeldParameters) => ({ ...prev, followupTime: val }))}
             />
@@ -51,7 +57,7 @@ const SchoenfeldSampleSize: React.FC<SchoenfeldSampleSizeProps> = ({
             max={1.0}
             min={0.0}
             keyValue="survStart"
-            label={`Survival at time ${parameters.followupTime}`}
+            label={survStartLabel}
             value={parameters.simpsonStartSurv}
             onValueChange={(val) => setParameters((prev: SchoenfeldParameters) => ({ ...prev, simpsonStartSurv: val }))}
             />
@@ -59,7 +65,7 @@ const SchoenfeldSampleSize: React.FC<SchoenfeldSampleSizeProps> = ({
             max={1.0}
             min={0.0}
             keyValue="survMid"
-            label={`Survival at time ${parameters.followupTime + 0.5 * parameters.accrual}`}
+            label={survMidLabel}
             value={parameters.simpsonMidSurv}
             onValueChange={(val) => setParameters((prev: SchoenfeldParameters) => ({ ...prev, simpsonMidSurv: val }))}
             />
@@ -67,7 +73,7 @@ const SchoenfeldSampleSize: React.FC<SchoenfeldSampleSizeProps> = ({
             max={1.0}
             min={0.0}
             keyValue="survEnd"
-            label={`Survival at time ${parameters.followupTime + parameters.accrual}`}
+            label={survEndLabel}
             value={parameters.simpsonEndSurv}
             onValueChange={(val) => setParameters((prev: SchoenfeldParameters) => ({ ...prev, simpsonEndSurv: val }))}
             />
@@ -78,7 +84,9 @@ const SchoenfeldSampleSize: React.FC<SchoenfeldSampleSizeProps> = ({
         {(() => {
           return (
             <>
-              <DerivationRow label="d_{B}" value={derivedParameters.baseEventProportion.toFixed(3)} />
+              <span className="">
+              <DerivationRow label="d_{B} = 1 - \frac{S_B(f) + 4 S_B(f + \frac{a}{2}) + S_B(f+a)}{6}" value={derivedParameters.baseEventProportion.toFixed(3)} />
+              </span>
               <DerivationRow label="d_{A} = 1 - (1 - d_{B})^{1 / \Delta}" value={derivedParameters.treatmentEventProportion.toFixed(3)} />
               <DerivationRow label="d = P_A * d_A + P_B * d_B" value={derivedParameters.overallEventProportion.toFixed(3)} />
             </>
