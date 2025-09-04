@@ -9,6 +9,8 @@ import SchoenfeldSampleSize from './SchoenfeldSampleSize';
 import { validateSchoenfeldParameters } from './utils/schoenfeldValidation';
 import { calculateDerivedParameters } from './utils/schoenfeld';
 
+import SurvivalPlot from './SurvivalPlot';
+
 
 const DEFAULT_PARAMS: SchoenfeldParameters = {
   alpha: 0.05,
@@ -88,6 +90,13 @@ const SchoenfeldClosedForm: React.FC = () => {
           invalid={invalid}
           invalidMsg={invalidMsg}
         />
+      </div>
+      <div className="mt-8">
+        <SurvivalPlot data={[
+          {x: parameters.followupTime, y: parameters.simpsonStartSurv},
+          {x: parameters.followupTime + 0.5 * parameters.accrual, y: parameters.simpsonMidSurv},
+          {x: parameters.followupTime + parameters.accrual, y: parameters.simpsonEndSurv},
+        ]}/>
       </div>
     </>
   );
