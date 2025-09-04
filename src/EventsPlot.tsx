@@ -4,16 +4,11 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 import 'katex/dist/katex.min.css';
 
 import { formatLegend } from './utils/formatters.tsx';
-import { baselineToTreatmentSurvival } from './utils/survival'; 
+import { baselineToTreatmentSurvival, type SurvivalPoint } from './utils/survival'; 
 import { InlineMathTooltip } from './InlineMathTooltip';
 
-interface Point {
-  time: number;
-  survProb: number;
-}
-
 interface LinePlotProps {
-  baseSurv: Point[];
+  baseSurv: SurvivalPoint[];
   hazardRatio: number;
   aProportion: number;
   bProportion: number;
