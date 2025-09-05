@@ -184,6 +184,11 @@ const SchoenfeldClosedForm: React.FC = () => {
         />
       </div>
       <div className="text-left mx-auto mt-8 mb-8 px-4 text-black">
+        <h3 className="text-xl mb-4">
+          Estimate the mean survival sampling distribution
+        </h3>
+      </div>
+      <div className="text-left mx-auto mt-8 mb-8 px-4 text-black">
         <p>
           Using the hazard rates produced by fitting the exponential model, we
           can then simulate these hazard rates at varying sample sizes to
