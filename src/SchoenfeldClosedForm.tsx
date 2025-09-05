@@ -173,8 +173,7 @@ const SchoenfeldClosedForm: React.FC = () => {
         <p>
           Given the 3 points provided for <InlineMath math="\ S_B(t)" /> and the
           3 derived points for <InlineMath math="\ S_A(t)" />, we can fit naive
-          exponential curves <InlineMath math="\ \hat{S_B}(t)\ " />
-          and <InlineMath math="\ \hat{S_A}(t)" />, respectively, to this data
+          exponential curves <InlineMath math="e^{-\lambda t} " /> to this data
           and see the result.
         </p>
       </div>
@@ -183,6 +182,15 @@ const SchoenfeldClosedForm: React.FC = () => {
           hazardRatio={parameters.hazardRatio}
           baseSurv={baseSurv}
         />
+      </div>
+      <div className="text-left mx-auto mt-8 mb-8 px-4 text-black">
+        <p>
+          Using the hazard rates produced by fitting the exponential model, we
+          can then simulate these hazard rates at varying sample sizes to
+          estimate the sampling distribution at different sample sizes. This is
+          naively sampling from exponential distributions and then re-fitting
+          the exponential distribution to see the range of values that result.
+        </p>
       </div>
       <div className="mt-8">
         <TTEDistributionPlot

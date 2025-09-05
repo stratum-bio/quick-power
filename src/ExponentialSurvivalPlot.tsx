@@ -46,6 +46,9 @@ const ExponentialSurvivalPlot: React.FC<LinePlotProps> = ({
       survProb: d.treatSurvProb,
     })),
   );
+  console.log(baseLambda);
+  console.log(treatLambda);
+
   const origTime = baseSurv.map((e) => e.time);
   const baseEval = evaluateExponential(origTime, baseLambda);
   const treatEval = evaluateExponential(origTime, treatLambda);
@@ -75,6 +78,9 @@ const ExponentialSurvivalPlot: React.FC<LinePlotProps> = ({
   const allPoints = [...evaluatedData, ...mergedExponential].sort(
     (a, b) => a.time - b.time,
   );
+
+  const baseCurveLabel = `e^{-t / ${(1.0 / baseLambda).toFixed(3)}}`;
+  const treatCurveLabel = `e^{-t / ${(1.0 / treatLambda).toFixed(3)}}`;
 
   return (
     <ResponsiveContainer width="100%" height={300}>
@@ -112,7 +118,7 @@ const ExponentialSurvivalPlot: React.FC<LinePlotProps> = ({
           type="monotone"
           dataKey="expBaseSurv"
           stroke="black"
-          name="\hat{S_B}(t)"
+          name={baseCurveLabel}
           dot={false}
           legendType="plainline"
         />
@@ -129,7 +135,7 @@ const ExponentialSurvivalPlot: React.FC<LinePlotProps> = ({
           type="monotone"
           dataKey="expTreatSurv"
           stroke="blue"
-          name="\hat{S_A}(t)"
+          name={treatCurveLabel}
           dot={false}
           legendType="plainline"
         />

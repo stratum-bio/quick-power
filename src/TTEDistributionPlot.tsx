@@ -44,16 +44,10 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
     }))
     .map((result) => ({
       sample_size: result.sampleSize,
-      true_baseline_tte: Math.log(2) / baselineHazard,
-      true_treat_tte: Math.log(2) / treatmentHazard,
-      control_hazard: [
-        Math.log(2) / result.baseInterval[0],
-        Math.log(2) / result.baseInterval[1],
-      ],
-      treat_hazard: [
-        Math.log(2) / result.treatInterval[0],
-        Math.log(2) / result.treatInterval[1],
-      ],
+      true_baseline_tte: 1 / baselineHazard,
+      true_treat_tte: 1 / treatmentHazard,
+      control_hazard: [1 / result.baseInterval[1], 1 / result.baseInterval[0]],
+      treat_hazard: [1 / result.treatInterval[1], 1 / result.treatInterval[0]],
     }));
 
   return (
@@ -80,7 +74,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
         />
         <YAxis
           label={{
-            value: "Estimated Median TTE",
+            value: "Estimated Mean TTE",
             angle: -90,
             position: "insideLeft",
             dy: 60,
@@ -104,7 +98,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
           dataKey="true_baseline_tte"
           stroke="black"
           dot={false}
-          name="log(2) / \lambda_B"
+          name="1 / \lambda_B"
           strokeWidth={2}
         />
 
@@ -122,7 +116,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
           dataKey="true_treat_tte"
           stroke="blue"
           dot={false}
-          name="log(2) / \lambda_A"
+          name="1 / \lambda_A"
           strokeWidth={2}
         />
       </ComposedChart>
