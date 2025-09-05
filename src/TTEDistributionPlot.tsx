@@ -8,6 +8,7 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
+  ReferenceLine,
   ResponsiveContainer,
 } from "recharts";
 
@@ -27,7 +28,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   treatmentHazard,
   totalSampleSize,
 }) => {
-  const simulationCount = 100;
+  const simulationCount = 300;
   const percentiles = [2.5, 97.5];
   const sampleEvalPoints = linspace(0, totalSampleSize * 1.5, 21);
 
@@ -81,9 +82,10 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
           }}
         />
         <Tooltip
-          content={(props) => <InlineMathTooltip {...props} round={true} />}
+          content={(props) => <InlineMathTooltip {...props} round={true} xName="Sample\ size" />}
         />
         <Legend verticalAlign="top" align="right" formatter={formatLegend} />
+        <ReferenceLine x={totalSampleSize} stroke="darkred" strokeOpacity={0.5} name="n_{samples}"/>
         <Area
           dataKey="control_hazard"
           stroke="black"
