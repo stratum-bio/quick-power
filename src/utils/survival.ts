@@ -75,17 +75,3 @@ export function evalExponentialCurve(
     survProb: evalValues[idx],
   }));
 }
-
-export function estimateConfidence(
-  baseLambda: number,
-  treatmentLambda: number,
-  sampleSize: int,
-  simCount: int,
-): ConfidenceEstimate {
-  return {
-    sampleSize: sampleSize,
-    pvalue: 0,
-    baseBounds: [0, 1],
-    treatmentBounds: [0, 1],
-  };
-}

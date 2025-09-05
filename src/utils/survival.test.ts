@@ -7,7 +7,6 @@ import {
   fitExponential,
   evaluateExponential,
   evalExponentialCurve,
-  estimateConfidence,
 } from "./survival.js";
 
 describe("generateTimePoints", () => {
@@ -224,30 +223,4 @@ describe("evalExponentialCurve", () => {
     expect(result[0].time).toBeCloseTo(0);
     expect(result[0].survProb).toBeCloseTo(Math.exp(-lambda * result[0].time));
   });
-});
-
-describe("estimateConfidence", () => {
-  it("should return the expected structure with default values", () => {
-    const baseMedianTTE = 10;
-    const treatMedianTTE = 5;
-    const sampleSize = 100;
-    const simCount = 1000;
-    const result = estimateConfidence(
-      baseMedianTTE,
-      treatMedianTTE,
-      sampleSize,
-      simCount,
-    );
-
-    expect(result).toEqual({
-      sampleSize: sampleSize,
-      pvalue: 0,
-      baseBounds: [0, 1],
-      treatmentBounds: [0, 1],
-    });
-  });
-
-  // This function currently returns hardcoded values.
-  // If its implementation changes to actually estimate confidence,
-  // these tests will need to be updated to reflect the new logic.
 });
