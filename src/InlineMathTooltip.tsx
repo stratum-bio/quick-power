@@ -1,6 +1,6 @@
-import React from 'react';
-import 'katex/dist/katex.min.css';
-import { InlineMath } from 'react-katex';
+import React from "react";
+import "katex/dist/katex.min.css";
+import { InlineMath } from "react-katex";
 
 interface TooltipPayload {
   name: string;
@@ -17,18 +17,26 @@ interface InlineMathTooltipProps {
   round?: boolean;
 }
 
-
-export const InlineMathTooltip: React.FC<InlineMathTooltipProps> = ({ active, payload, round }) => {
+export const InlineMathTooltip: React.FC<InlineMathTooltipProps> = ({
+  active,
+  payload,
+  round,
+}) => {
   const isVisible = active && payload && payload.length;
   if (!isVisible) {
-    return <></>; 
+    return <></>;
   }
 
   return (
-    <div className="border border-black p-4 bg-white rounded-lg opacity-70" >
+    <div className="border border-black p-4 bg-white rounded-lg opacity-70">
       {payload.map((entry, index) => (
-        <p key={`item-${index}`} className="opacity-100 font-bold" style={{ color: entry.stroke }}>
-          <InlineMath math={entry.name} />: {round ? entry.value.toFixed(3) : entry.value }
+        <p
+          key={`item-${index}`}
+          className="opacity-100 font-bold"
+          style={{ color: entry.stroke }}
+        >
+          <InlineMath math={entry.name} />:{" "}
+          {round ? entry.value.toFixed(3) : entry.value}
         </p>
       ))}
     </div>

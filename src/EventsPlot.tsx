@@ -1,11 +1,23 @@
-import React from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import React from "react";
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 
-import 'katex/dist/katex.min.css';
+import "katex/dist/katex.min.css";
 
-import { formatLegend } from './utils/formatters.tsx';
-import { baselineToTreatmentSurvival, type SurvivalPoint } from './utils/survival'; 
-import { InlineMathTooltip } from './InlineMathTooltip';
+import { formatLegend } from "./utils/formatters.tsx";
+import {
+  baselineToTreatmentSurvival,
+  type SurvivalPoint,
+} from "./utils/survival";
+import { InlineMathTooltip } from "./InlineMathTooltip";
 
 interface LinePlotProps {
   baseSurv: SurvivalPoint[];
@@ -15,8 +27,13 @@ interface LinePlotProps {
   sampleSize: number;
 }
 
-
-const EventsPlot: React.FC<LinePlotProps> = ({ baseSurv, hazardRatio, aProportion, bProportion, sampleSize }) => {
+const EventsPlot: React.FC<LinePlotProps> = ({
+  baseSurv,
+  hazardRatio,
+  aProportion,
+  bProportion,
+  sampleSize,
+}) => {
   const formattedData = baseSurv.map((point, index) => ({
     name: `Point ${index + 1}`, // A generic name for each point
     time: point.time,
@@ -48,18 +65,37 @@ const EventsPlot: React.FC<LinePlotProps> = ({ baseSurv, hazardRatio, aProportio
         <XAxis
           dataKey="time"
           type="number"
-          domain={[0, 'auto']}
-          label={{ value: "Time", position: "insideBottom", offset: -10 }} 
+          domain={[0, "auto"]}
+          label={{ value: "Time", position: "insideBottom", offset: -10 }}
         />
         <YAxis
           type="number"
           domain={[0, 1]}
-          label={{ value: "Estimated Event Count", angle: -90, position: "insideLeft", dy: 60 }}
+          label={{
+            value: "Estimated Event Count",
+            angle: -90,
+            position: "insideLeft",
+            dy: 60,
+          }}
         />
-        <Tooltip content={(props) => <InlineMathTooltip {...props} round={false} />} />
+        <Tooltip
+          content={(props) => <InlineMathTooltip {...props} round={false} />}
+        />
         <Legend verticalAlign="top" align="right" formatter={formatLegend} />
-        <Line type="monotone" dataKey="bEventSum" stroke="black" activeDot={{ r: 8 }} name="Group\ B\ (Control)" />
-        <Line type="monotone" dataKey="aEventSum" stroke="blue" activeDot={{ r: 8 }} name="Group\ A\ (Treatment)" />
+        <Line
+          type="monotone"
+          dataKey="bEventSum"
+          stroke="black"
+          activeDot={{ r: 8 }}
+          name="Group\ B\ (Control)"
+        />
+        <Line
+          type="monotone"
+          dataKey="aEventSum"
+          stroke="blue"
+          activeDot={{ r: 8 }}
+          name="Group\ A\ (Treatment)"
+        />
       </LineChart>
     </ResponsiveContainer>
   );
