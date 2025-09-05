@@ -3,13 +3,28 @@ export interface SurvivalPoint {
   survProb: number;
 }
 
-function generateTimePoints(startTime: number, endTime: number, numPoints: number): number[] {
+export interface ConfidenceEstimate {
+  sampleSize: number;
+  pvalue: number;
+  baseBounds: [number, number];
+  treatmentBounds: [number, number];
+}
+
+export function generateTimePoints(startTime: number, endTime: number, numPoints: number): number[] {
   if (numPoints < 2) {
     return [startTime];
   }
 
   const timeStep = (endTime - startTime) / (numPoints - 1);
   return Array.from({ length: numPoints }, (_, i) => startTime + i * timeStep);
+}
+
+export function exponentialLambdaToMedianTTE(lambda: number): number {
+  return Math.log(2) / lambda;
+}
+
+export function medianTTEToExponentialLambda(medianTTE: number): number {
+  return 1.0 / (medianTTE * Math.log(2));
 }
 
 export function baselineToTreatmentSurvival(baseSurv: number, hazardRatio: number): number {
@@ -41,6 +56,8 @@ export function evaluateExponential(time: number[], lambda: number): number[] {
 
 
 export function evalExponentialCurve(originalTime: number[], numEvalPoints: number, lambda: number): SurvivalPoint[] {
+  // evaluates the exponential curve by taking `number` points between 0
+  // and max(originalTime) as the evaluation points
   const maxTime = Math.max(...originalTime);
 
   const evalPoints = generateTimePoints(0, maxTime, numEvalPoints);
@@ -49,4 +66,14 @@ export function evalExponentialCurve(originalTime: number[], numEvalPoints: numb
     time: p,
     survProb: evalValues[idx],
   }));
+}
+
+
+export function estimateConfidence(baseMedianTTE: number, treatMedianTTE: number, sampleSize: int, simCount: int): ConfidenceEstimate {
+  return {
+    sampleSize: sampleSize,
+    pvalue: 0,
+    baseBounds: [0, 1],
+    treatmentBounds: [0, 1],
+  }
 }

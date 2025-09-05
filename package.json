@@ -7,13 +7,15 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
     "jstat": "^1.9.6",
     "katex": "^0.16.22",
     "mathjs": "^14.6.0",
+    "random": "^5.4.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-katex": "^3.1.0",
@@ -31,6 +33,7 @@
     "globals": "^16.3.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.39.1",
-    "vite": "^7.1.2"
+    "vite": "^7.1.2",
+    "vitest": "^3.2.4"
   }
 }
