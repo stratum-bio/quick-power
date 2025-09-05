@@ -75,3 +75,17 @@ export function evalExponentialCurve(
     survProb: evalValues[idx],
   }));
 }
+
+export function fitExponentialPerGroup(
+  baseSurv: SurvivalPoint[],
+  hazardRatio: number,
+): [number, number] {
+  const baseLambda = fitExponential(baseSurv);
+
+  const treatSurv = baseSurv.map((s) => ({
+    time: s.time,
+    survProb: baselineToTreatmentSurvival(s.survProb, hazardRatio),
+  }));
+  const treatLambda = fitExponential(treatSurv);
+  return [baseLambda, treatLambda];
+}

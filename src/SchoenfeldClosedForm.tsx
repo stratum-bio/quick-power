@@ -11,10 +11,12 @@ import SchoenfeldEventCount from "./SchoenfeldEventCount";
 import SchoenfeldSampleSize from "./SchoenfeldSampleSize";
 import { validateSchoenfeldParameters } from "./utils/schoenfeldValidation";
 import { calculateDerivedParameters } from "./utils/schoenfeld";
+import { fitExponentialPerGroup } from "./utils/survival";
 
 import EventsPlot from "./EventsPlot";
 import ExponentialSurvivalPlot from "./ExponentialSurvivalPlot";
 import SurvivalPlot from "./SurvivalPlot";
+import TTEDistributionPlot from "./TTEDistributionPlot";
 
 const DEFAULT_PARAMS: SchoenfeldParameters = {
   alpha: 0.05,
@@ -69,6 +71,11 @@ const SchoenfeldClosedForm: React.FC = () => {
       survProb: parameters.simpsonEndSurv,
     },
   ];
+
+  const [baseHazard, treatHazard] = fitExponentialPerGroup(
+    baseSurv,
+    parameters.hazardRatio,
+  );
 
   return (
     <>
@@ -175,6 +182,13 @@ const SchoenfeldClosedForm: React.FC = () => {
         <ExponentialSurvivalPlot
           hazardRatio={parameters.hazardRatio}
           baseSurv={baseSurv}
+        />
+      </div>
+      <div className="mt-8">
+        <TTEDistributionPlot
+          baselineHazard={baseHazard}
+          treatmentHazard={treatHazard}
+          totalSampleSize={derivedParameters.sampleSize}
         />
       </div>
     </>

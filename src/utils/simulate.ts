@@ -16,7 +16,10 @@ import random from "random";
  * @returns A Float64Array containing the value at each given percentile, in the same order as the input percentiles.
  * @throws {Error} If any percentile value is not between 0 and 100.
  */
-export function getPercentiles(data: Float64Array, percentiles: number[]): Float64Array {
+export function getPercentiles(
+  data: Float64Array,
+  percentiles: number[],
+): Float64Array {
   // Input validation for percentiles
   for (const p of percentiles) {
     if (p < 0 || p > 100) {
@@ -110,7 +113,10 @@ function shuffle(array: Float64Array, rng: () => number): Float64Array {
     currentIndex--;
 
     // And swap it with the current element.
-    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex],
+      array[currentIndex],
+    ];
   }
 
   return array;
@@ -146,7 +152,7 @@ export function simulate(
   random.use(seed);
   const baseDist = random.exponential(baseLambda);
   const treatDist = random.exponential(treatLambda);
-  const uniform = random.uniform()
+  const uniform = random.uniform();
 
   const baseLambdaDist = new Float64Array(simulationCount);
   const treatLambdaDist = new Float64Array(simulationCount);
@@ -194,7 +200,6 @@ export function simulate(
   }
 
   const permutationPValue = psum / simulationCount;
-
 
   return {
     baseLambdaDist,

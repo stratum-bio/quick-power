@@ -4,7 +4,7 @@ import { InlineMath } from "react-katex";
 
 interface TooltipPayload {
   name: string;
-  value: number;
+  value: number | number[];
   unit?: string;
   stroke?: string;
   dataKey?: string;
@@ -36,7 +36,13 @@ export const InlineMathTooltip: React.FC<InlineMathTooltipProps> = ({
           style={{ color: entry.stroke }}
         >
           <InlineMath math={entry.name} />:{" "}
-          {round ? entry.value.toFixed(3) : entry.value}
+          {round
+            ? Array.isArray(entry.value)
+              ? entry.value.map((val) => val.toFixed(3)).join(", ")
+              : entry.value.toFixed(3)
+            : Array.isArray(entry.value)
+              ? entry.value.join(", ")
+              : entry.value}
         </p>
       ))}
     </div>

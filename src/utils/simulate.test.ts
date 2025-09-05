@@ -29,7 +29,6 @@ function likelihoodRatio(
   );
 }
 
-
 describe("estimateExponentialLambda", () => {
   it("should correctly estimate lambda for a given set of samples", () => {
     const samples = new Float64Array([1, 2, 3, 4, 5]); // Mean = 3, Lambda = 1/3
@@ -120,54 +119,60 @@ describe("simulate", () => {
       return simulate(baseLambda, treatLambda, simulationCount, s, seed);
     });
 
-    expect(resultList[1].permutationPValue).toBeLessThan(resultList[0].permutationPValue);
-    expect(resultList[2].permutationPValue).toBeLessThan(resultList[1].permutationPValue);
+    expect(resultList[1].permutationPValue).toBeLessThan(
+      resultList[0].permutationPValue,
+    );
+    expect(resultList[2].permutationPValue).toBeLessThan(
+      resultList[1].permutationPValue,
+    );
   });
 });
 
-describe('getPercentiles', () => {
-  it('should return correct percentiles for a simple array', () => {
+describe("getPercentiles", () => {
+  it("should return correct percentiles for a simple array", () => {
     const data = new Float64Array([10, 20, 30, 40, 50]);
     const percentiles = [25, 50, 75];
     const result = getPercentiles(data, percentiles);
     expect(result).toEqual(new Float64Array([20, 30, 40]));
   });
 
-  it('should handle empty data array', () => {
+  it("should handle empty data array", () => {
     const data = new Float64Array([]);
     const percentiles = [25, 50, 75];
     const result = getPercentiles(data, percentiles);
     expect(result).toEqual(new Float64Array([NaN, NaN, NaN]));
   });
 
-  it('should throw error for percentile values out of range', () => {
+  it("should throw error for percentile values out of range", () => {
     const data = new Float64Array([1, 2, 3]);
     const percentiles = [-10, 110];
-    expect(() => getPercentiles(data, percentiles)).toThrow('Percentile values must be between 0 and 100.');
+    expect(() => getPercentiles(data, percentiles)).toThrow(
+      "Percentile values must be between 0 and 100.",
+    );
   });
 
-  it('should handle single data point', () => {
+  it("should handle single data point", () => {
     const data = new Float64Array([100]);
     const percentiles = [0, 50, 100];
     const result = getPercentiles(data, percentiles);
     expect(result).toEqual(new Float64Array([100, 100, 100]));
   });
 
-  it('should handle duplicate values', () => {
+  it("should handle duplicate values", () => {
     const data = new Float64Array([10, 20, 20, 30, 40]);
     const percentiles = [25, 50, 75];
     const result = getPercentiles(data, percentiles);
     expect(result).toEqual(new Float64Array([20, 20, 30]));
   });
 
-  it('should return correct values for 0th and 100th percentiles', () => {
+  it("should return correct values for 0th and 100th percentiles", () => {
     const data = new Float64Array([10, 20, 30, 40, 50]);
     const percentiles = [0, 100];
     const result = getPercentiles(data, percentiles);
     expect(result).toEqual(new Float64Array([10, 50]));
   });
 
-  it('should interpolate correctly for non-integer indices', () => {
+  it("should interpolate correctly for non-integer indices", () => {
     const data = new Float64Array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
     const percentiles = [10, 90]; // 10th percentile should be 1.9, 90th should be 9.1
     const result = getPercentiles(data, percentiles);
@@ -175,7 +180,7 @@ describe('getPercentiles', () => {
     expect(result[1]).toBeCloseTo(9.1);
   });
 
-  it('should handle unsorted input data', () => {
+  it("should handle unsorted input data", () => {
     const data = new Float64Array([50, 10, 40, 20, 30]);
     const percentiles = [25, 50, 75];
     const result = getPercentiles(data, percentiles);
