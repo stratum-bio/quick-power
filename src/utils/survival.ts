@@ -10,7 +10,7 @@ export interface ConfidenceEstimate {
   treatmentBounds: [number, number];
 }
 
-export function generateTimePoints(
+export function linspace(
   startTime: number,
   endTime: number,
   numPoints: number,
@@ -68,7 +68,7 @@ export function evalExponentialCurve(
   // and max(originalTime) as the evaluation points
   const maxTime = Math.max(...originalTime);
 
-  const evalPoints = generateTimePoints(0, maxTime, numEvalPoints);
+  const evalPoints = linspace(0, maxTime, numEvalPoints);
   const evalValues = evaluateExponential(evalPoints, lambda);
   return evalPoints.map((p, idx) => ({
     time: p,
