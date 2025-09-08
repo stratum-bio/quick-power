@@ -30,8 +30,7 @@ interface TTEDistributionProps {
   alpha: number;
   beta: number;
   controlProportion: number;
-  treatProportion:
-  number;
+  treatProportion: number;
 }
 
 interface HazardDistPlotData {
@@ -42,6 +41,20 @@ interface HazardDistPlotData {
   treat_hazard: [number, number];
   pvalue_median: number;
   pvalue_bounds: [number, number];
+}
+
+
+function propsAreEqual(a: TTEDistributionProps, b: TTEDistributionProps): boolean {
+    const keys = Object.keys(a);
+
+    // Check if all properties and their values are the same
+    for (const key of keys) {
+        if (a[key] !== b[key]) {
+            return false;
+        }
+    }
+
+    return true;
 }
 
 const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
@@ -55,6 +68,11 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   controlProportion,
   treatProportion,
 }) => {
+  const allProperties = {
+    totalSampleSize, baselineHazard, hazardRatio, accrual, followup, alpha, beta, controlProportion, treatProportion
+  }
+
+  const [properties, setProperties] = useState<TTEDistributionProps>(allProperties)
   const [data, setData] = useState<HazardDistPlotData[]>([]);
   const [loading, setLoading] = useState(true);
   const [completed, setCompleted] = useState(0);
@@ -114,6 +132,11 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
         // @ts-expect-error I have no idea how else to handle this
         setData(processedData);
         setLoading(false);
+
+        setProperties({
+          totalSampleSize, baselineHazard, hazardRatio, accrual, followup, alpha, beta, controlProportion, treatProportion
+        })
+
         worker.terminate();
       }
     };
@@ -155,8 +178,16 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
     );
   }
 
+  let containerClass = "";
+  let mismatchMessage = ""
+  if (!propsAreEqual(allProperties, properties)) {
+    containerClass = "bg-red-100 rounded-lg";
+    mismatchMessage = "Input values don't match simulation results, press the Update button";
+  }
+
   return (
-    <>
+    <div className={containerClass}>
+      <p className="font-bold text-red-950 italic"> {mismatchMessage} </p>
       <ResponsiveContainer width="100%" height={500}>
         <ComposedChart
           data={data}
@@ -340,7 +371,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

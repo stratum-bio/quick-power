@@ -38,13 +38,11 @@ const SchoenfeldClosedForm: React.FC = () => {
   const [derivedParameters, setDerivedParameters] = useState<SchoenfeldDerived>(
     calculateDerivedParameters(DEFAULT_PARAMS),
   );
-  const [invalidateResults, setInvalidateResults] = useState<boolean>(false);
 
   const [invalid, setInvalid] = useState<boolean>(false);
   const [invalidMsg, setInvalidMsg] = useState<string>("");
 
   const handleUpdate = useCallback(() => {
-    setInvalidateResults(true);
 
     const validationResult = validateSchoenfeldParameters(parameters);
     if (!validationResult.isValid) {
