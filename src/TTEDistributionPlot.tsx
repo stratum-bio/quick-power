@@ -258,7 +258,11 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
           />
           <Tooltip
             content={(props) => (
-              <InlineMathTooltip {...props} round={true} xName="\text{Sample\ size}" />
+              <InlineMathTooltip
+                {...props}
+                round={true}
+                xName="\text{Sample\ size}"
+              />
             )}
           />
           <Legend verticalAlign="top" align="right" formatter={formatLegend} />
@@ -343,7 +347,11 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
           />
           <Tooltip
             content={(props) => (
-              <InlineMathTooltip {...props} round={true} xName="\text{Sample\ size}" />
+              <InlineMathTooltip
+                {...props}
+                round={true}
+                xName="\text{Sample\ size}"
+              />
             )}
           />
           <Legend verticalAlign="top" align="right" formatter={formatLegend} />

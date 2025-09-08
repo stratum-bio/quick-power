@@ -79,7 +79,9 @@ const EventsPlot: React.FC<LinePlotProps> = ({
           }}
         />
         <Tooltip
-          content={(props) => <InlineMathTooltip {...props} round={false} xName="\text{Time}"/>}
+          content={(props) => (
+            <InlineMathTooltip {...props} round={false} xName="\text{Time}" />
+          )}
         />
         <Legend verticalAlign="top" align="right" formatter={formatLegend} />
         <Line

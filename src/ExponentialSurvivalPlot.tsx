@@ -109,7 +109,9 @@ const ExponentialSurvivalPlot: React.FC<LinePlotProps> = ({
           }}
         />
         <Tooltip
-          content={(props) => <InlineMathTooltip {...props} round={true} xName="\text{Time}" />}
+          content={(props) => (
+            <InlineMathTooltip {...props} round={true} xName="\text{Time}" />
+          )}
         />
         <Legend verticalAlign="top" align="right" formatter={formatLegend} />
         <Line
