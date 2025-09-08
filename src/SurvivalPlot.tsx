@@ -61,7 +61,7 @@ const SurvivalPlot: React.FC<LinePlotProps> = ({ baseSurv, hazardRatio }) => {
           }}
         />
         <Tooltip
-          content={(props) => <InlineMathTooltip {...props} round={true} />}
+          content={(props) => <InlineMathTooltip {...props} round={true} xName="\text{Time}" />}
         />
         <Legend verticalAlign="top" align="right" formatter={formatLegend} />
         <Line

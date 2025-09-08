@@ -33,7 +33,7 @@ export const InlineMathTooltip: React.FC<InlineMathTooltipProps> = ({
   return (
     <div className="border border-black p-4 bg-white rounded-lg opacity-70">
       {label && (
-        <p className="opacity-100 font-bold">
+        <p className="opacity-100 font-bold text-black">
           {xName ? <InlineMath math={`${xName}:\\ `} /> : null}
           {typeof label === "string" ? label : label.toFixed(2)}
         </p>

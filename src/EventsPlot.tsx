@@ -79,7 +79,7 @@ const EventsPlot: React.FC<LinePlotProps> = ({
           }}
         />
         <Tooltip
-          content={(props) => <InlineMathTooltip {...props} round={false} />}
+          content={(props) => <InlineMathTooltip {...props} round={false} xName="\text{Time}"/>}
         />
         <Legend verticalAlign="top" align="right" formatter={formatLegend} />
         <Line
@@ -87,14 +87,14 @@ const EventsPlot: React.FC<LinePlotProps> = ({
           dataKey="bEventSum"
           stroke="black"
           activeDot={{ r: 8 }}
-          name="Group\ B\ (Control)"
+          name="\text{Group\ B\ (Control)}"
         />
         <Line
           type="monotone"
           dataKey="aEventSum"
           stroke="blue"
           activeDot={{ r: 8 }}
-          name="Group\ A\ (Treatment)"
+          name="\text{Group\ A\ (Treatment)}"
         />
       </LineChart>
     </ResponsiveContainer>
