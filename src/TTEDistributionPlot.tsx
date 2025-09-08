@@ -47,7 +47,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
     .slice(1)
     .map((sampleSize) => ({
       ...samplePValueDistribution(
-        totalSampleSize,
+        sampleSize,
         controlProportion,
         treatProportion,
         baselineHazard,
