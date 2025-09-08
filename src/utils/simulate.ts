@@ -9,13 +9,14 @@ export interface PValueDist {
   pValueDist: Float64Array;
 }
 
-function sum(arr: Float64Array): number {
+export function sum(arr: Float64Array | Uint8Array): number {
+  // @ts-expect-error This isn't a valid error
   return arr.reduce((a, b) => a + b, 0);
 }
 
 export function samplesToLambda(
   times: Float64Array,
-  events: Float64Array,
+  events: Uint8Array,
 ): number {
   if (times.some((t) => t < 0)) {
     throw new Error('No event times can be less than 0');
@@ -38,9 +39,9 @@ function logLikelihood(numEvents: number, sumTime: number, lam: number): number 
 
 export function likelihoodRatio(
   aSamples: Float64Array,
-  aEvents: Float64Array,
+  aEvents: Uint8Array,
   bSamples: Float64Array,
-  bEvents: Float64Array,
+  bEvents: Uint8Array,
 ): number {
   // *Samples are the timestamps
   // *Events are the 0/1 event indicators
@@ -64,15 +65,15 @@ export function likelihoodRatio(
   );
 }
 
-function randomPermutation(
+export function randomPermutation(
   aSamples: Float64Array,
-  aEvents: Float64Array,
+  aEvents: Uint8Array,
   bSamples: Float64Array,
-  bEvents: Float64Array,
+  bEvents: Uint8Array,
   rng: typeof random,
-): [Float64Array, Float64Array, Float64Array, Float64Array] {
+): [Float64Array, Uint8Array, Float64Array, Uint8Array] {
   const combinedSamples = new Float64Array([...aSamples, ...bSamples]);
-  const combinedEvents = new Float64Array([...aEvents, ...bEvents]);
+  const combinedEvents = new Uint8Array([...aEvents, ...bEvents]);
 
   // Fisher-Yates shuffle
   for (let i = combinedSamples.length - 1; i > 0; i--) {
@@ -98,22 +99,22 @@ function randomPermutation(
 function censor(
   samples: Float64Array,
   maxTime: number,
-): [Float64Array, Float64Array] {
+): [Float64Array, Uint8Array] {
   const events = samples.map((s) => (s < maxTime ? 1 : 0));
   const censoredSamples = samples.map((s) => Math.min(s, maxTime));
-  return [new Float64Array(censoredSamples), new Float64Array(events)];
+  return [new Float64Array(censoredSamples), new Uint8Array(events)];
 }
 
-function sampleDataset(
+export function sampleDataset(
   hazard: number,
   simCount: number,
   sampleSize: number,
   accrual: number,
   followup: number,
   rng: typeof random,
-): [Float64Array[], Float64Array[]] {
+): [Float64Array[], Uint8Array[]] {
   const timeSamples: Float64Array[] = [];
-  const events: Float64Array[] = [];
+  const events: Uint8Array[] = [];
 
   const exponential = rng.exponential(hazard);
   const uniformEnroll = rng.uniform(0, accrual);
@@ -139,9 +140,9 @@ function sampleDataset(
 
 function permutationTestPValue(
   controlTime: Float64Array,
-  controlEvent: Float64Array,
+  controlEvent: Uint8Array,
   treatTime: Float64Array,
-  treatEvent: Float64Array,
+  treatEvent: Uint8Array,
   pValueSimCount: number,
   rng: typeof random,
 ): number {

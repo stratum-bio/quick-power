@@ -1,22 +1,83 @@
 import { describe, it, expect } from 'vitest';
 import {
+  sum,
+  sampleDataset,
   samplesToLambda,
   likelihoodRatio,
   getPercentiles,
+  randomPermutation,
   samplePValueDistribution,
 } from './simulate';
+import random from 'random';
+
+
+describe('sampleDataset', () => {
+  it('should randomly generate data', () => {
+    const rng = random.clone(123);
+    const [times, events] = sampleDataset(
+      1.0 / 1.31, // hazard
+      10,  // number of datasets
+      30,  // sample size per dataset
+      2,   // accrual  
+      1,   // followup
+      rng
+    );
+
+    expect(times.length).toEqual(10);
+    expect(events.length).toEqual(10);
+    
+
+    for (let i = 0; i < times.length; i++) {
+      expect(times[i].length).toEqual(30);
+      expect(events[i].length).toEqual(30);
+
+      for (let j = i+1; j < times.length; j++) {
+        expect(() => {sum(times[i])}).not.toEqual(() => {sum(times[j])});
+        expect(() => {sum(events[i])}).not.toEqual(() => {sum(events[j])});
+      }
+    }
+  });
+});
+
+describe('randomPermutation', () => {
+  it('should randomly permute', () => {
+    const rng = random.clone('123');
+
+    const aSamples = new Float64Array(10);
+    const aEvents = new Uint8Array(10);
+    const bSamples = new Float64Array(10);
+    const bEvents = new Uint8Array(10);
+
+    aSamples.fill(10);
+    aEvents.fill(1);
+
+    bSamples.fill(1);
+    bEvents.fill(0);
+
+    const resultList = randomPermutation(aSamples, aEvents, bSamples, bEvents, rng);
+
+    const resultList2 = randomPermutation(aSamples, aEvents, bSamples, bEvents, rng);
+
+    for (let i = 0; i < resultList.length; i++) {
+      expect(() => {
+        sum(resultList[i])
+      }).not.toBe(sum(resultList2[i]))
+    }
+
+  });
+});
 
 describe('samplesToLambda', () => {
   it('should calculate lambda correctly', () => {
     const times = new Float64Array([10, 20, 30]);
-    const events = new Float64Array([1, 0, 1]);
+    const events = new Uint8Array([1, 0, 1]);
     const expectedLambda = 2 / 60;
     expect(samplesToLambda(times, events)).toBe(expectedLambda);
   });
 
   it('should throw an error for negative event times', () => {
     const times = new Float64Array([-10, 20, 30]);
-    const events = new Float64Array([1, 0, 1]);
+    const events = new Uint8Array([1, 0, 1]);
     expect(() => samplesToLambda(times, events)).toThrow(
       'No event times can be less than 0',
     );
@@ -24,7 +85,7 @@ describe('samplesToLambda', () => {
 
   it('should throw an error for zero total time', () => {
     const times = new Float64Array([0, 0, 0]);
-    const events = new Float64Array([1, 0, 1]);
+    const events = new Uint8Array([1, 0, 1]);
     expect(() => samplesToLambda(times, events)).toThrow('Total time is 0');
   });
 });
@@ -32,9 +93,9 @@ describe('samplesToLambda', () => {
 describe('likelihoodRatio', () => {
   it('should calculate the likelihood ratio correctly', () => {
     const aSamples = new Float64Array([10, 20, 30]);
-    const aEvents = new Float64Array([1, 1, 0]);
+    const aEvents = new Uint8Array([1, 1, 0]);
     const bSamples = new Float64Array([15, 25, 35]);
-    const bEvents = new Float64Array([1, 0, 1]);
+    const bEvents = new Uint8Array([1, 0, 1]);
 
     const aEventsSum = 2;
     const aTotal = 60;
