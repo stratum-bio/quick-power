@@ -1,4 +1,5 @@
-import { type PValueDist, samplePValueDistribution } from "../utils/simulate";
+import { samplePValueDistribution } from "../utils/simulate";
+import { type TTEDistributionWorkerResult } from "../types/tteDistribution";
 
 self.onmessage = (e) => {
   const {
@@ -13,7 +14,7 @@ self.onmessage = (e) => {
     datasetSimCount,
   } = e.data;
 
-  const result: PValueDist = samplePValueDistribution(
+  const pValueDist = samplePValueDistribution(
     sampleSize,
     controlProportion,
     treatProportion,
@@ -25,8 +26,10 @@ self.onmessage = (e) => {
     datasetSimCount,
   );
 
-  self.postMessage({
-    sampleSize: sampleSize,
-    ...result,
-  });
+  const result: TTEDistributionWorkerResult = {
+    ...pValueDist,
+    sampleSize,
+  };
+
+  self.postMessage(result);
 };

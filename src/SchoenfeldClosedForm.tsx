@@ -73,10 +73,7 @@ const SchoenfeldClosedForm: React.FC = () => {
     },
   ];
 
-  const [baseHazard, ] = fitExponentialPerGroup(
-    baseSurv,
-    parameters.hazardRatio,
-  );
+  const [baseHazard] = fitExponentialPerGroup(baseSurv, parameters.hazardRatio);
 
   return (
     <>

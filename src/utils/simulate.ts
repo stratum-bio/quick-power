@@ -1,13 +1,9 @@
-import random from 'random';
-import { jStat } from 'jstat';
+import random from "random";
+import { jStat } from "jstat";
+
+import type { PValueDist } from "../types/simulation";
 
 const MIN_LAMBDA = 1e-6;
-
-export interface PValueDist {
-  controlHazardDist: Float64Array;
-  treatHazardDist: Float64Array;
-  pValueDist: Float64Array;
-}
 
 export function sum(arr: Float64Array | Uint8Array): number {
   // @ts-expect-error This isn't a valid error
@@ -19,17 +15,21 @@ export function samplesToLambda(
   events: Uint8Array,
 ): number {
   if (times.some((t) => t < 0)) {
-    throw new Error('No event times can be less than 0');
+    throw new Error("No event times can be less than 0");
   }
   const totalTime = sum(times);
   if (totalTime === 0) {
-    throw new Error('Total time is 0');
+    throw new Error("Total time is 0");
   }
 
   return sum(events) / totalTime;
 }
 
-function logLikelihood(numEvents: number, sumTime: number, lam: number): number {
+function logLikelihood(
+  numEvents: number,
+  sumTime: number,
+  lam: number,
+): number {
   if (lam === 0) {
     lam = MIN_LAMBDA;
   }
@@ -120,8 +120,12 @@ export function sampleDataset(
   const uniformEnroll = rng.uniform(0, accrual);
 
   for (let i = 0; i < simCount; i++) {
-    const samples = new Float64Array(Array.from({ length: sampleSize }, () => exponential()));
-    const enrollmentTimes = new Float64Array(Array.from({ length: sampleSize }, () => uniformEnroll()));
+    const samples = new Float64Array(
+      Array.from({ length: sampleSize }, () => exponential()),
+    );
+    const enrollmentTimes = new Float64Array(
+      Array.from({ length: sampleSize }, () => uniformEnroll()),
+    );
 
     const samplesWithEnrollment = samples.map((s, j) => s + enrollmentTimes[j]);
 
@@ -236,6 +240,9 @@ export function samplePValueDistribution(
   };
 }
 
-export function getPercentiles(data: Float64Array, percentiles: number[]): number[] {
-    return percentiles.map(p => jStat.percentile(data, p / 100));
+export function getPercentiles(
+  data: Float64Array,
+  percentiles: number[],
+): number[] {
+  return percentiles.map((p) => jStat.percentile(data, p / 100));
 }

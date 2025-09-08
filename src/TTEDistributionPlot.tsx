@@ -16,6 +16,8 @@ import { linspace } from "./utils/survival";
 import { getPercentiles } from "./utils/simulate";
 import { formatLegend } from "./utils/formatters.tsx";
 import { InlineMathTooltip } from "./InlineMathTooltip";
+import type { TTEDistributionWorkerResult } from "./types/tteDistribution";
+
 import Worker from "./workers/tteDistribution.worker.ts?worker";
 
 interface TTEDistributionProps {
@@ -29,6 +31,14 @@ interface TTEDistributionProps {
   treatProportion: number;
 }
 
+interface HazardDistPlotData {
+  sample_size: number;
+  true_baseline_tte: number;
+  true_treat_tte: number;
+  control_hazard: [number, number];
+  treat_hazard: [number, number];
+}
+
 const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   totalSampleSize,
   baselineHazard,
@@ -39,7 +49,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   controlProportion,
   treatProportion,
 }) => {
-  const [data, setData] = useState<any[]>([]);
+  const [data, setData] = useState<HazardDistPlotData[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -48,8 +58,12 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
     const datasetSimCount = 100;
     const percentiles = [2.5, 97.5];
     const sampleEvalPoints = linspace(0, totalSampleSize * 1.5, 11);
+    if (!sampleEvalPoints.includes(totalSampleSize)) {
+      sampleEvalPoints.push(totalSampleSize);
+      sampleEvalPoints.sort();
+    }
 
-    const results: any[] = [];
+    const results: TTEDistributionWorkerResult[] = [];
     worker.onmessage = (e) => {
       results.push(e.data);
       if (results.length === sampleEvalPoints.slice(1).length) {
@@ -73,6 +87,8 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
               1 / result.treatInterval[0],
             ],
           }));
+        processedData.sort((a, b) => a.sample_size - b.sample_size);
+        // @ts-expect-error I have no idea how else to handle this
         setData(processedData);
         setLoading(false);
         worker.terminate();
