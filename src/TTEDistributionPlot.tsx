@@ -94,6 +94,8 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   const [datasetSimCount, setDatasetSimCount] = useState(100);
   const [evaluationCount, setEvaluationCount] = useState(11);
   const [triggerUpdate, setTriggerUpdate] = useState(0);
+  
+  const maxSampleSize = Math.round(totalSampleSize * 1.5);
 
   /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
@@ -103,9 +105,9 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
     const percentiles = [2.5, 97.5];
     const sampleEvalPoints = linspace(
       0,
-      totalSampleSize * 1.5,
+      maxSampleSize,
       evaluationCount,
-    );
+    ).map((s) => Math.round(s));
     if (!sampleEvalPoints.includes(totalSampleSize)) {
       sampleEvalPoints.push(totalSampleSize);
       sampleEvalPoints.sort();
@@ -227,7 +229,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   return (
     <div className={containerClass}>
       <p className="font-bold text-red-950 italic"> {mismatchMessage} </p>
-      <ResponsiveContainer width="100%" height={300}>
+      <ResponsiveContainer width="100%" height={400}>
         <ComposedChart
           data={data}
           margin={{
@@ -256,6 +258,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
               position: "insideLeft",
               dy: 60,
             }}
+            scale="linear"
           />
           <Tooltip
             content={(props) => (
@@ -315,7 +318,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
           />
         </ComposedChart>
       </ResponsiveContainer>
-      <ResponsiveContainer width="100%" height={300}>
+      <ResponsiveContainer width="100%" height={400}>
         <ComposedChart
           data={data}
           margin={{
@@ -345,6 +348,9 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
               dy: 60,
             }}
             domain={[0, 1]}
+            tickCount={10}
+            ticks={[0.025, 0.05, 0.075, 0.1, 0.2, 0.4, 0.8, 1.0]}
+            scale="sqrt"
           />
           <Tooltip
             content={(props) => (
@@ -374,7 +380,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             name="\text{alpha}"
             label={{
               position: "insideBottomRight",
-              value: "Target alpha",
+              value: `alpha=${alpha}`,
               fill: "darkred",
             }}
           />
@@ -399,6 +405,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             max={2000}
             min={1}
             keyValue="permutationCount"
+            description="Number of random permutations used to sample the null distribution to compute the p-value for each instance of a simulated trial."
           />
           <ValidatedInputField
             label="Simulations"
@@ -407,6 +414,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             max={2000}
             min={1}
             keyValue="datasetSimCount"
+            description="Number of simulated trials to perform for each sample size candidate."
           />
           <ValidatedInputField
             label="Evaluations"
@@ -415,6 +423,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             max={100}
             min={2}
             keyValue="sampleSizeEvals"
+            description={`Number of different sample sizes to evaluate between 0 and ${maxSampleSize}`}
           />
           <button
             className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 mb-4 ml-4 w-32"

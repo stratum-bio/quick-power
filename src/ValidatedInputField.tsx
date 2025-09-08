@@ -7,6 +7,7 @@ interface ValidatedInputFieldProps {
   label: React.ReactNode;
   value: number;
   onValueChange?: (value: number) => void;
+  description?: string;
 }
 
 export const ValidatedInputField: React.FC<ValidatedInputFieldProps> = ({
@@ -16,6 +17,7 @@ export const ValidatedInputField: React.FC<ValidatedInputFieldProps> = ({
   label,
   value,
   onValueChange = () => {},
+  description,
 }) => {
   let className =
     "shadow appearance-none border rounded w-20 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline";
@@ -30,6 +32,14 @@ export const ValidatedInputField: React.FC<ValidatedInputFieldProps> = ({
         htmlFor={keyValue}
       >
         {label}
+        {description && (
+          <span
+            className="ml-1 text-blue-800 cursor-help"
+            title={description}
+          >
+            [?]
+          </span>
+        )}
       </label>
       <input
         className={className}
