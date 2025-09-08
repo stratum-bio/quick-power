@@ -39,8 +39,7 @@ interface HazardDistPlotData {
   true_treat_tte: number;
   control_hazard: [number, number];
   treat_hazard: [number, number];
-  pvalue_median: number;
-  pvalue_bounds: [number, number];
+  pvalue_upper: number;
 }
 
 function propsAreEqual(
@@ -124,11 +123,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             ...result,
             baseInterval: getPercentiles(result.controlHazardDist, percentiles),
             treatInterval: getPercentiles(result.treatHazardDist, percentiles),
-            pvalueInterval: getPercentiles(result.pValueDist, [
-              50,
-              0,
-              beta * 100,
-            ]),
+            pvalueInterval: getPercentiles(result.pValueDist, [beta * 100]),
           }))
           .map((result) => ({
             sample_size: result.sampleSize,
@@ -142,8 +137,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
               1 / result.treatInterval[1],
               1 / result.treatInterval[0],
             ],
-            pvalue_median: result.pvalueInterval[0],
-            pvalue_bounds: [result.pvalueInterval[1], result.pvalueInterval[2]],
+            pvalue_upper: result.pvalueInterval[0],
           }));
         processedData.sort((a, b) => a.sample_size - b.sample_size);
         // @ts-expect-error I have no idea how else to handle this
@@ -383,7 +377,8 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             }}
           />
           <Area
-            dataKey="pvalue_bounds"
+            type="monotone"
+            dataKey="pvalue_upper"
             stroke="green"
             fill="green"
             fillOpacity={0.2}
