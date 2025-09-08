@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 interface ValidatedInputFieldProps {
   min: number;
@@ -19,6 +19,8 @@ export const ValidatedInputField: React.FC<ValidatedInputFieldProps> = ({
   onValueChange = () => {},
   description,
 }) => {
+  const [showDescription, setShowDescription] = useState<boolean>(false);
+
   let className =
     "shadow appearance-none border rounded w-20 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline";
   if (value >= max || value <= min) {
@@ -28,16 +30,23 @@ export const ValidatedInputField: React.FC<ValidatedInputFieldProps> = ({
   return (
     <div className="flex items-center mb-4 justify-end">
       <label
-        className="block text-gray-700 text-sm font-bold mr-4"
+        className="block text-gray-700 text-sm font-bold mr-2"
         htmlFor={keyValue}
       >
         {label}
         {description && (
           <span
-            className="ml-1 text-blue-800 cursor-help"
-            title={description}
+            className="text-blue-800 cursor-help relative"
+            onMouseEnter={() => setShowDescription(true)}
+            onMouseLeave={() => setShowDescription(false)}
+            onClick={() => setShowDescription(!showDescription)}
           >
             [?]
+            {showDescription && (
+              <div className="absolute z-10 bg-gray-700 text-white text-xs rounded py-1 px-2 bottom-full left-1/2 transform -translate-x-1/2 mb-2 max-w-l">
+                {description}
+              </div>
+            )}
           </span>
         )}
       </label>
