@@ -43,7 +43,7 @@ export const ValidatedInputField: React.FC<ValidatedInputFieldProps> = ({
           >
             [?]
             {showDescription && (
-              <div className="absolute z-10 bg-gray-700 text-white text-xs rounded py-1 px-2 bottom-full left-1/2 transform -translate-x-1/2 mb-2 max-w-l">
+              <div className="absolute z-10 bg-gray-700 text-white text-s rounded py-1 px-2 bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 max-w-xl">
                 {description}
               </div>
             )}
