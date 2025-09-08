@@ -209,7 +209,6 @@ const SchoenfeldClosedForm: React.FC = () => {
           beta={parameters.beta}
           controlProportion={parameters.group2Proportion}
           treatProportion={parameters.group1Proportion}
-          invalidated={invalidateResults}
         />
       </div>
     </>

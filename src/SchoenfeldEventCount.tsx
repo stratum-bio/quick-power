@@ -111,7 +111,7 @@ const SchoenfeldEventCount: React.FC<SchoenfeldEventCountProps> = ({
               {groupBLabel}
             </label>
             <input
-              className="shadow appearance-none border rounded w-16 py-2 px-3 text-gray-400 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded w-20 py-2 px-3 text-gray-400 leading-tight focus:outline-none focus:shadow-outline"
               type="number"
               id="group2Proportion"
               value={parameters.group2Proportion}
