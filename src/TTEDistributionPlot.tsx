@@ -211,6 +211,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
       "Input values don't match simulation results, press the Update button to re-run the simulation";
   }
 
+  /*
   const hazardMin = Math.floor(
     Math.min(
       ...data.map((e) => Math.min(...e.treat_hazard, ...e.control_hazard)),
@@ -221,6 +222,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
       ...data.map((e) => Math.max(...e.treat_hazard, ...e.control_hazard)),
     ),
   );
+  */
 
   return (
     <div className={containerClass}>
@@ -254,7 +256,6 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
               position: "insideLeft",
               dy: 60,
             }}
-            domain={[hazardMin, hazardMax]}
           />
           <Tooltip
             content={(props) => (
