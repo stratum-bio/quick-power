@@ -227,7 +227,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   return (
     <div className={containerClass}>
       <p className="font-bold text-red-950 italic"> {mismatchMessage} </p>
-      <ResponsiveContainer width="100%" height={300}>
+      <ResponsiveContainer width="100%" height={400}>
         <ComposedChart
           data={data}
           margin={{
@@ -256,6 +256,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
               position: "insideLeft",
               dy: 60,
             }}
+            scale="linear"
           />
           <Tooltip
             content={(props) => (
@@ -315,7 +316,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
           />
         </ComposedChart>
       </ResponsiveContainer>
-      <ResponsiveContainer width="100%" height={300}>
+      <ResponsiveContainer width="100%" height={400}>
         <ComposedChart
           data={data}
           margin={{
@@ -345,6 +346,9 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
               dy: 60,
             }}
             domain={[0, 1]}
+            tickCount={10}
+            ticks={[0.025, 0.05, 0.075, 0.1, 0.2, 0.4, 0.8, 1.0]}
+            scale="sqrt"
           />
           <Tooltip
             content={(props) => (
@@ -374,7 +378,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             name="\text{alpha}"
             label={{
               position: "insideBottomRight",
-              value: "Target alpha",
+              value: `alpha=${alpha}`,
               fill: "darkred",
             }}
           />
