@@ -258,7 +258,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
           />
           <Tooltip
             content={(props) => (
-              <InlineMathTooltip {...props} round={true} xName="Sample\ size" />
+              <InlineMathTooltip {...props} round={true} xName="\text{Sample\ size}" />
             )}
           />
           <Legend verticalAlign="top" align="right" formatter={formatLegend} />
@@ -269,7 +269,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             name="n_{samples}"
             label={{
               position: "insideTopLeft",
-              value: "Schoenfeld estimate",
+              value: "Schoenfeld",
               fill: "darkred",
             }}
           />
@@ -280,7 +280,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             fillOpacity={0.2}
             strokeOpacity={0.3}
             strokeWidth={2}
-            name="95\%\ CI"
+            name="\text{95\%\ CI}"
             legendType="none"
           />
           <Line
@@ -298,7 +298,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             fillOpacity={0.2}
             strokeOpacity={0.3}
             strokeWidth={2}
-            name="95\%\ CI"
+            name="\text{95\%\ CI}"
             legendType="none"
           />
           <Line
@@ -343,7 +343,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
           />
           <Tooltip
             content={(props) => (
-              <InlineMathTooltip {...props} round={true} xName="Sample\ size" />
+              <InlineMathTooltip {...props} round={true} xName="\text{Sample\ size}" />
             )}
           />
           <Legend verticalAlign="top" align="right" formatter={formatLegend} />
@@ -354,7 +354,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             name="n_{samples}"
             label={{
               position: "insideTopLeft",
-              value: "Schoenfeld estimate",
+              value: "Schoenfeld",
               fill: "darkred",
             }}
           />
@@ -377,15 +377,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             strokeOpacity={0.3}
             strokeWidth={2}
             name={`${beta * 100}\\%\\ \\text{One-sided Upper CI}`}
-            legendType="none"
-          />
-
-          <Line
-            dataKey="pvalue_median"
-            stroke="green"
-            dot={false}
-            name="p_{median}"
-            strokeWidth={2}
+            legendType="plainline"
           />
         </ComposedChart>
       </ResponsiveContainer>
