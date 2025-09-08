@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import {
-  generateTimePoints,
+  linspace,
   exponentialLambdaToMedianTTE,
   medianTTEToExponentialLambda,
   baselineToTreatmentSurvival,
@@ -9,20 +9,20 @@ import {
   evalExponentialCurve,
 } from "./survival.js";
 
-describe("generateTimePoints", () => {
+describe("linspace", () => {
   it("should generate correct time points for a given range and number of points", () => {
     const startTime = 0;
     const endTime = 10;
     const numPoints = 5;
     const expected = [0, 2.5, 5, 7.5, 10];
-    expect(generateTimePoints(startTime, endTime, numPoints)).toEqual(expected);
+    expect(linspace(startTime, endTime, numPoints)).toEqual(expected);
   });
 
   it("should return only startTime if numPoints is less than 2", () => {
     const startTime = 5;
     const endTime = 10;
     const numPoints = 1;
-    expect(generateTimePoints(startTime, endTime, numPoints)).toEqual([5]);
+    expect(linspace(startTime, endTime, numPoints)).toEqual([5]);
   });
 
   it("should handle negative time ranges", () => {
@@ -30,7 +30,7 @@ describe("generateTimePoints", () => {
     const endTime = 0;
     const numPoints = 3;
     const expected = [-10, -5, 0];
-    expect(generateTimePoints(startTime, endTime, numPoints)).toEqual(expected);
+    expect(linspace(startTime, endTime, numPoints)).toEqual(expected);
   });
 
   it("should handle zero range", () => {
@@ -38,7 +38,7 @@ describe("generateTimePoints", () => {
     const endTime = 5;
     const numPoints = 3;
     const expected = [5, 5, 5];
-    expect(generateTimePoints(startTime, endTime, numPoints)).toEqual(expected);
+    expect(linspace(startTime, endTime, numPoints)).toEqual(expected);
   });
 });
 
