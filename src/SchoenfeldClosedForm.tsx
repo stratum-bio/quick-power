@@ -202,6 +202,7 @@ const SchoenfeldClosedForm: React.FC = () => {
           hazardRatio={parameters.hazardRatio}
           accrual={parameters.accrual}
           followup={parameters.followupTime}
+          alpha={parameters.alpha}
           beta={parameters.beta}
           controlProportion={parameters.group2Proportion}
           treatProportion={parameters.group1Proportion}

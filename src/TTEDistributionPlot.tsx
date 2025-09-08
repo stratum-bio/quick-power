@@ -26,6 +26,7 @@ interface TTEDistributionProps {
   totalSampleSize: number;
   accrual: number;
   followup: number;
+  alpha: number;
   beta: number;
   controlProportion: number;
   treatProportion: number;
@@ -47,6 +48,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   hazardRatio,
   accrual,
   followup,
+  alpha,
   beta,
   controlProportion,
   treatProportion,
@@ -80,7 +82,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             ...result,
             baseInterval: getPercentiles(result.controlHazardDist, percentiles),
             treatInterval: getPercentiles(result.treatHazardDist, percentiles),
-            pvalueInterval: getPercentiles(result.pValueDist, [0.5, 0, beta]),
+            pvalueInterval: getPercentiles(result.pValueDist, [50, 0, beta * 100]),
           }))
           .map((result) => ({
             sample_size: result.sampleSize,
@@ -154,84 +156,156 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   }
 
   return (
-    <ResponsiveContainer width="100%" height={500}>
-      <ComposedChart
-        data={data}
-        margin={{
-          top: 5,
-          right: 30,
-          left: 20,
-          bottom: 30,
-        }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis
-          dataKey="sample_size"
-          type="number"
-          label={{
-            value: "Sample Size",
-            position: "insideBottom",
-            offset: -10,
+    <>
+      <ResponsiveContainer width="100%" height={500}>
+        <ComposedChart
+          data={data}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 30,
           }}
-          domain={[0, "auto"]}
-        />
-        <YAxis
-          label={{
-            value: "Estimated Mean TTE",
-            angle: -90,
-            position: "insideLeft",
-            dy: 60,
-          }}
-        />
-        <Tooltip
-          content={(props) => (
-            <InlineMathTooltip {...props} round={true} xName="Sample\ size" />
-          )}
-        />
-        <Legend verticalAlign="top" align="right" formatter={formatLegend} />
-        <ReferenceLine
-          x={totalSampleSize}
-          stroke="darkred"
-          strokeOpacity={0.5}
-          name="n_{samples}"
-        />
-        <Area
-          dataKey="control_hazard"
-          stroke="black"
-          fill="black"
-          fillOpacity={0.2}
-          strokeOpacity={0.3}
-          strokeWidth={2}
-          name="95\%\ CI"
-          legendType="none"
-        />
-        <Line
-          dataKey="true_baseline_tte"
-          stroke="black"
-          dot={false}
-          name="1 / \lambda_B"
-          strokeWidth={2}
-        />
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis
+            dataKey="sample_size"
+            type="number"
+            label={{
+              value: "Sample Size",
+              position: "insideBottom",
+              offset: -10,
+            }}
+            domain={[0, "auto"]}
+          />
+          <YAxis
+            label={{
+              value: "Estimated Mean TTE",
+              angle: -90,
+              position: "insideLeft",
+              dy: 60,
+            }}
+          />
+          <Tooltip
+            content={(props) => (
+              <InlineMathTooltip {...props} round={true} xName="Sample\ size" />
+            )}
+          />
+          <Legend verticalAlign="top" align="right" formatter={formatLegend} />
+          <ReferenceLine
+            x={totalSampleSize}
+            stroke="darkred"
+            strokeOpacity={0.5}
+            name="n_{samples}"
+            label={{position: "insideTopRight", value: "Schoenfeld estimate", fill: "darkred"}}
+          />
+          <Area
+            dataKey="control_hazard"
+            stroke="black"
+            fill="black"
+            fillOpacity={0.2}
+            strokeOpacity={0.3}
+            strokeWidth={2}
+            name="95\%\ CI"
+            legendType="none"
+          />
+          <Line
+            dataKey="true_baseline_tte"
+            stroke="black"
+            dot={false}
+            name="1 / \lambda_B"
+            strokeWidth={2}
+          />
 
-        <Area
-          dataKey="treat_hazard"
-          stroke="blue"
-          fill="blue"
-          fillOpacity={0.2}
-          strokeOpacity={0.3}
-          strokeWidth={2}
-          name="95\%\ CI"
-          legendType="none"
-        />
-        <Line
-          dataKey="true_treat_tte"
-          stroke="blue"
-          dot={false}
-          name="1 / \lambda_A"
-          strokeWidth={2}
-        />
-      </ComposedChart>
-    </ResponsiveContainer>
+          <Area
+            dataKey="treat_hazard"
+            stroke="blue"
+            fill="blue"
+            fillOpacity={0.2}
+            strokeOpacity={0.3}
+            strokeWidth={2}
+            name="95\%\ CI"
+            legendType="none"
+          />
+          <Line
+            dataKey="true_treat_tte"
+            stroke="blue"
+            dot={false}
+            name="1 / \lambda_A"
+            strokeWidth={2}
+          />
+        </ComposedChart>
+      </ResponsiveContainer>
+      <ResponsiveContainer width="100%" height={500}>
+        <ComposedChart
+          data={data}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 30,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis
+            dataKey="sample_size"
+            type="number"
+            label={{
+              value: "Sample Size",
+              position: "insideBottom",
+              offset: -10,
+            }}
+            domain={[0, "auto"]}
+          />
+          <YAxis
+            label={{
+              value: "P-value",
+              angle: -90,
+              position: "insideLeft",
+              dy: 60,
+            }}
+            domain={[0, 1]}
+          />
+          <Tooltip
+            content={(props) => (
+              <InlineMathTooltip {...props} round={true} xName="Sample\ size" />
+            )}
+          />
+          <Legend verticalAlign="top" align="right" formatter={formatLegend} />
+          <ReferenceLine
+            x={totalSampleSize}
+            stroke="darkred"
+            strokeOpacity={0.5}
+            name="n_{samples}"
+          />
+          <ReferenceLine
+            y={alpha}
+            stroke="darkred"
+            strokeOpacity={0.5}
+            name="\text{alpha}"
+            label={{ position: "insideBottomRight", value: "alpha", fill: "darkred" }}
+          />
+          <Area
+            dataKey="pvalue_bounds"
+            stroke="green"
+            fill="green"
+            fillOpacity={0.2}
+            strokeOpacity={0.3}
+            strokeWidth={2}
+            name={`${beta * 100}\\%\\ \\text{One-sided Upper CI}`}
+            legendType="none"
+          />
+
+          <Line
+            dataKey="pvalue_median"
+            stroke="green"
+            dot={false}
+            name="p_{median}"
+            strokeWidth={2}
+          />
+        </ComposedChart>
+      </ResponsiveContainer>
+    </>
   );
 };
 
