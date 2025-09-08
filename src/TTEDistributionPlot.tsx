@@ -51,6 +51,8 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
 }) => {
   const [data, setData] = useState<HazardDistPlotData[]>([]);
   const [loading, setLoading] = useState(true);
+  const [completed, setCompleted] = useState(0);
+  const [total, setTotal] = useState(0);
 
   useEffect(() => {
     const worker = new Worker();
@@ -62,11 +64,15 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
       sampleEvalPoints.push(totalSampleSize);
       sampleEvalPoints.sort();
     }
+    const jobs = sampleEvalPoints.slice(1);
+    setTotal(jobs.length);
+    setCompleted(0);
 
     const results: TTEDistributionWorkerResult[] = [];
     worker.onmessage = (e) => {
       results.push(e.data);
-      if (results.length === sampleEvalPoints.slice(1).length) {
+      setCompleted(results.length);
+      if (results.length === jobs.length) {
         const processedData = results
           .map((result) => ({
             ...result,
@@ -95,7 +101,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
       }
     };
 
-    sampleEvalPoints.slice(1).forEach((sampleSize) => {
+    jobs.forEach((sampleSize) => {
       worker.postMessage({
         sampleSize,
         controlProportion,
@@ -124,7 +130,20 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   ]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    const percentage = total > 0 ? (completed / total) * 100 : 0;
+    return (
+      <div className="flex h-[500px] flex-col items-center justify-center">
+        <p className="mb-2 text-gray-600">
+          {completed}/{total}{" "}
+        </p>
+        <div className="h-2.5 w-1/2 rounded-full bg-gray-200 dark:bg-gray-700">
+          <div
+            className="h-2.5 rounded-full bg-blue-600"
+            style={{ width: `${percentage}%` }}
+          ></div>
+        </div>
+      </div>
+    );
   }
 
   return (
