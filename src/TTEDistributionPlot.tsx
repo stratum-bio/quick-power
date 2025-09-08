@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   Area,
   ComposedChart,
@@ -13,9 +13,10 @@ import {
 } from "recharts";
 
 import { linspace } from "./utils/survival";
-import { getPercentiles, samplePValueDistribution } from "./utils/simulate";
+import { getPercentiles } from "./utils/simulate";
 import { formatLegend } from "./utils/formatters.tsx";
 import { InlineMathTooltip } from "./InlineMathTooltip";
+import Worker from "./workers/tteDistribution.worker.ts?worker";
 
 interface TTEDistributionProps {
   baselineHazard: number;
@@ -38,15 +39,48 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   controlProportion,
   treatProportion,
 }) => {
-  const permutationCount = 100;
-  const datasetSimCount = 100;
-  const percentiles = [2.5, 97.5];
-  const sampleEvalPoints = linspace(0, totalSampleSize * 1.5, 11);
+  const [data, setData] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
 
-  const data = sampleEvalPoints
-    .slice(1)
-    .map((sampleSize) => ({
-      ...samplePValueDistribution(
+  useEffect(() => {
+    const worker = new Worker();
+    const permutationCount = 100;
+    const datasetSimCount = 100;
+    const percentiles = [2.5, 97.5];
+    const sampleEvalPoints = linspace(0, totalSampleSize * 1.5, 11);
+
+    const results: any[] = [];
+    worker.onmessage = (e) => {
+      results.push(e.data);
+      if (results.length === sampleEvalPoints.slice(1).length) {
+        const processedData = results
+          .map((result) => ({
+            ...result,
+            baseInterval: getPercentiles(result.controlHazardDist, percentiles),
+            treatInterval: getPercentiles(result.treatHazardDist, percentiles),
+            pvalueInterval: getPercentiles(result.pValueDist, [0, beta]),
+          }))
+          .map((result) => ({
+            sample_size: result.sampleSize,
+            true_baseline_tte: 1 / baselineHazard,
+            true_treat_tte: 1 / (baselineHazard * hazardRatio),
+            control_hazard: [
+              1 / result.baseInterval[1],
+              1 / result.baseInterval[0],
+            ],
+            treat_hazard: [
+              1 / result.treatInterval[1],
+              1 / result.treatInterval[0],
+            ],
+          }));
+        setData(processedData);
+        setLoading(false);
+        worker.terminate();
+      }
+    };
+
+    sampleEvalPoints.slice(1).forEach((sampleSize) => {
+      worker.postMessage({
         sampleSize,
         controlProportion,
         treatProportion,
@@ -56,22 +90,26 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
         followup,
         permutationCount,
         datasetSimCount,
-      ),
-      sampleSize: sampleSize,
-    }))
-    .map((result) => ({
-      ...result,
-      baseInterval: getPercentiles(result.controlHazardDist, percentiles),
-      treatInterval: getPercentiles(result.treatHazardDist, percentiles),
-      pvalueInterval: getPercentiles(result.pValueDist, [0, beta]),
-    }))
-    .map((result) => ({
-      sample_size: result.sampleSize,
-      true_baseline_tte: 1 / baselineHazard,
-      true_treat_tte: 1 / (baselineHazard * hazardRatio),
-      control_hazard: [1 / result.baseInterval[1], 1 / result.baseInterval[0]],
-      treat_hazard: [1 / result.treatInterval[1], 1 / result.treatInterval[0]],
-    }));
+      });
+    });
+
+    return () => {
+      worker.terminate();
+    };
+  }, [
+    totalSampleSize,
+    baselineHazard,
+    hazardRatio,
+    accrual,
+    followup,
+    beta,
+    controlProportion,
+    treatProportion,
+  ]);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <ResponsiveContainer width="100%" height={500}>
