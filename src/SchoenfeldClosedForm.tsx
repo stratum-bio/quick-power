@@ -194,6 +194,9 @@ const SchoenfeldClosedForm: React.FC = () => {
           estimate the sampling distribution at different sample sizes. This is
           naively sampling from exponential distributions and then re-fitting
           the exponential distribution to see the range of values that result.
+          Since the simulation and permutation testing makes fewer assumptions
+          about the generating distributions, this leads to a larger sample size
+          estimate compared to Schoenfeld's formula.
         </p>
       </div>
       <div className="mt-8">
@@ -208,6 +211,18 @@ const SchoenfeldClosedForm: React.FC = () => {
           controlProportion={parameters.group2Proportion}
           treatProportion={parameters.group1Proportion}
         />
+      </div>
+      <div className="text-left mx-auto mt-8 mb-8 px-4 text-black">
+        <p>
+          The default parameters of this simulation are such that the simulation
+          is quick, which means the estimates will be noisy and non-monotonic.
+          To get more reliable results, increase the Permutations (number of random
+          permutations used to estimate the p-value for every simulated clinical trial)
+          and the Simulations (number of simulated clinical trials).  These scale
+          multiplicatively, so increasing each by a factor of 10 will increase the total
+          computation time by a factor of 100.  Increase the Evaluations to increase
+          how many different sample sizes are evaluated in the simulation.
+        </p>
       </div>
     </>
   );
