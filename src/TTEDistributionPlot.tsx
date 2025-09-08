@@ -390,7 +390,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
         </ComposedChart>
       </ResponsiveContainer>
       <div className="flex flex-col items-end justify-center mt-4 w-full">
-        <div className="grid grid-cols-1 md:grid-cols-4">
+        <div className="grid grid-cols-1 lg:grid-cols-4">
           <ValidatedInputField
             label="Permutations"
             value={permutationCount}
