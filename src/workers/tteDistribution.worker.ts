@@ -1,5 +1,5 @@
 import { samplePValueDistribution } from "../utils/simulate";
-import { type TTEDistributionWorkerResult } from "../types/tteDistribution";
+import { type TTEDistributionWorkerResult } from "../types/tteDistribution.d";
 
 self.onmessage = (e) => {
   const {

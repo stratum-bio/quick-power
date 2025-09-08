@@ -49,7 +49,8 @@ function propsAreEqual(a: TTEDistributionProps, b: TTEDistributionProps): boolea
 
     // Check if all properties and their values are the same
     for (const key of keys) {
-        if (a[key] !== b[key]) {
+        const propKey = key as keyof TTEDistributionProps;
+        if (a[propKey] !== b[propKey]) {
             return false;
         }
     }
