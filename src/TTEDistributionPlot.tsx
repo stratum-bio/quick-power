@@ -94,6 +94,8 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   const [datasetSimCount, setDatasetSimCount] = useState(100);
   const [evaluationCount, setEvaluationCount] = useState(11);
   const [triggerUpdate, setTriggerUpdate] = useState(0);
+  
+  const maxSampleSize = Math.round(totalSampleSize * 1.5);
 
   /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
@@ -103,9 +105,9 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
     const percentiles = [2.5, 97.5];
     const sampleEvalPoints = linspace(
       0,
-      totalSampleSize * 1.5,
+      maxSampleSize,
       evaluationCount,
-    );
+    ).map((s) => Math.round(s));
     if (!sampleEvalPoints.includes(totalSampleSize)) {
       sampleEvalPoints.push(totalSampleSize);
       sampleEvalPoints.sort();
@@ -403,6 +405,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             max={2000}
             min={1}
             keyValue="permutationCount"
+            description="Number of random permutations used to sample the null distribution to compute the p-value for each instance of a simulated trial."
           />
           <ValidatedInputField
             label="Simulations"
@@ -411,6 +414,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             max={2000}
             min={1}
             keyValue="datasetSimCount"
+            description="Number of simulated trials to perform for each sample size candidate."
           />
           <ValidatedInputField
             label="Evaluations"
@@ -419,6 +423,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             max={100}
             min={2}
             keyValue="sampleSizeEvals"
+            description={`Number of different sample sizes to evaluate between 0 and ${maxSampleSize}`}
           />
           <button
             className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 mb-4 ml-4 w-32"
