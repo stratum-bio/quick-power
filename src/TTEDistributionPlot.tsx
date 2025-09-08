@@ -13,40 +13,62 @@ import {
 } from "recharts";
 
 import { linspace } from "./utils/survival";
-import { getPercentiles, simulate } from "./utils/simulate";
+import { getPercentiles, samplePValueDistribution } from "./utils/simulate";
 import { formatLegend } from "./utils/formatters.tsx";
 import { InlineMathTooltip } from "./InlineMathTooltip";
 
 interface TTEDistributionProps {
   baselineHazard: number;
-  treatmentHazard: number;
+  hazardRatio: number;
   totalSampleSize: number;
+  accrual: number;
+  followup: number;
+  beta: number;
+  controlProportion: number;
+  treatProportion: number;
 }
 
 const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
-  baselineHazard,
-  treatmentHazard,
   totalSampleSize,
+  baselineHazard,
+  hazardRatio,
+  accrual,
+  followup,
+  beta,
+  controlProportion,
+  treatProportion,
 }) => {
-  const simulationCount = 300;
+  const permutationCount = 100;
+  const datasetSimCount = 100;
   const percentiles = [2.5, 97.5];
-  const sampleEvalPoints = linspace(0, totalSampleSize * 1.5, 21);
+  const sampleEvalPoints = linspace(0, totalSampleSize * 1.5, 11);
 
   const data = sampleEvalPoints
     .slice(1)
     .map((sampleSize) => ({
-      ...simulate(baselineHazard, treatmentHazard, simulationCount, sampleSize),
+      ...samplePValueDistribution(
+        totalSampleSize,
+        controlProportion,
+        treatProportion,
+        baselineHazard,
+        hazardRatio,
+        accrual,
+        followup,
+        permutationCount,
+        datasetSimCount,
+      ),
       sampleSize: sampleSize,
     }))
     .map((result) => ({
       ...result,
-      baseInterval: getPercentiles(result.baseLambdaDist, percentiles),
-      treatInterval: getPercentiles(result.treatLambdaDist, percentiles),
+      baseInterval: getPercentiles(result.controlHazardDist, percentiles),
+      treatInterval: getPercentiles(result.treatHazardDist, percentiles),
+      pvalueInterval: getPercentiles(result.pValueDist, [0, beta]),
     }))
     .map((result) => ({
       sample_size: result.sampleSize,
       true_baseline_tte: 1 / baselineHazard,
-      true_treat_tte: 1 / treatmentHazard,
+      true_treat_tte: 1 / (baselineHazard * hazardRatio),
       control_hazard: [1 / result.baseInterval[1], 1 / result.baseInterval[0]],
       treat_hazard: [1 / result.treatInterval[1], 1 / result.treatInterval[0]],
     }));

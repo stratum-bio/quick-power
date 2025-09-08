@@ -73,7 +73,7 @@ const SchoenfeldClosedForm: React.FC = () => {
     },
   ];
 
-  const [baseHazard, treatHazard] = fitExponentialPerGroup(
+  const [baseHazard, ] = fitExponentialPerGroup(
     baseSurv,
     parameters.hazardRatio,
   );
@@ -200,9 +200,14 @@ const SchoenfeldClosedForm: React.FC = () => {
       </div>
       <div className="mt-8">
         <TTEDistributionPlot
-          baselineHazard={baseHazard}
-          treatmentHazard={treatHazard}
           totalSampleSize={derivedParameters.sampleSize}
+          baselineHazard={baseHazard}
+          hazardRatio={parameters.hazardRatio}
+          accrual={parameters.accrual}
+          followup={parameters.followupTime}
+          beta={parameters.beta}
+          controlProportion={parameters.group2Proportion}
+          treatProportion={parameters.group1Proportion}
         />
       </div>
     </>

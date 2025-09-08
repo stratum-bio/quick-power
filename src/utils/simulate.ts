@@ -236,5 +236,5 @@ export function samplePValueDistribution(
 }
 
 export function getPercentiles(data: Float64Array, percentiles: number[]): number[] {
-    return percentiles.map(p => jStat.percentile(Array.from(data), p / 100));
+    return percentiles.map(p => jStat.percentile(data, p / 100));
 }
