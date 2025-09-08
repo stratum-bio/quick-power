@@ -16,6 +16,7 @@ import { linspace } from "./utils/survival";
 import { getPercentiles } from "./utils/simulate";
 import { formatLegend } from "./utils/formatters.tsx";
 import { InlineMathTooltip } from "./InlineMathTooltip";
+import { ValidatedInputField } from "./ValidatedInputField";
 import type { TTEDistributionWorkerResult } from "./types/tteDistribution";
 
 import Worker from "./workers/tteDistribution.worker.ts?worker";
@@ -29,7 +30,8 @@ interface TTEDistributionProps {
   alpha: number;
   beta: number;
   controlProportion: number;
-  treatProportion: number;
+  treatProportion:
+  number;
 }
 
 interface HazardDistPlotData {
@@ -58,12 +60,18 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   const [completed, setCompleted] = useState(0);
   const [total, setTotal] = useState(0);
 
+  const [permutationCount, setPermutationCount] = useState(100);
+  const [datasetSimCount, setDatasetSimCount] = useState(100);
+  const [evaluationCount, setEvaluationCount] = useState(11);
+  const [triggerUpdate, setTriggerUpdate] = useState(0);
+
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
+    setLoading(true);
+
     const worker = new Worker();
-    const permutationCount = 100;
-    const datasetSimCount = 100;
     const percentiles = [2.5, 97.5];
-    const sampleEvalPoints = linspace(0, totalSampleSize * 1.5, 11);
+    const sampleEvalPoints = linspace(0, totalSampleSize * 1.5, evaluationCount);
     if (!sampleEvalPoints.includes(totalSampleSize)) {
       sampleEvalPoints.push(totalSampleSize);
       sampleEvalPoints.sort();
@@ -127,16 +135,8 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
     return () => {
       worker.terminate();
     };
-  }, [
-    totalSampleSize,
-    baselineHazard,
-    hazardRatio,
-    accrual,
-    followup,
-    beta,
-    controlProportion,
-    treatProportion,
-  ]);
+  }, [triggerUpdate]);
+  /* eslint-enable react-hooks/exhaustive-deps */
 
   if (loading) {
     const percentage = total > 0 ? (completed / total) * 100 : 0;
@@ -305,6 +305,40 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
           />
         </ComposedChart>
       </ResponsiveContainer>
+      <div className="flex flex-col items-center justify-center mt-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 w-full max-w-md">
+          <ValidatedInputField
+            label="Permutation Count"
+            value={permutationCount}
+            onValueChange={setPermutationCount}
+            max={2000}
+            min={1}
+            keyValue="permutationCount"
+          />
+          <ValidatedInputField
+            label="Sim Count"
+            value={datasetSimCount}
+            onValueChange={setDatasetSimCount}
+            max={2000}
+            min={1}
+            keyValue="datasetSimCount"
+          />
+          <ValidatedInputField
+            label="Sample Size Evals"
+            value={evaluationCount}
+            onValueChange={setEvaluationCount}
+            max={100}
+            min={2}
+            keyValue="sampleSizeEvals"
+          />
+          <button
+            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+            onClick={() => setTriggerUpdate(triggerUpdate + 1)}
+          >
+            Update
+          </button>
+        </div>
+      </div>
     </>
   );
 };
