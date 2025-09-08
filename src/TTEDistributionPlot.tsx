@@ -94,7 +94,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   const [datasetSimCount, setDatasetSimCount] = useState(100);
   const [evaluationCount, setEvaluationCount] = useState(11);
   const [triggerUpdate, setTriggerUpdate] = useState(0);
-  
+
   const maxSampleSize = Math.round(totalSampleSize * 1.5);
 
   /* eslint-disable react-hooks/exhaustive-deps */
@@ -103,11 +103,9 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
 
     const worker = new Worker();
     const percentiles = [2.5, 97.5];
-    const sampleEvalPoints = linspace(
-      0,
-      maxSampleSize,
-      evaluationCount,
-    ).map((s) => Math.round(s));
+    const sampleEvalPoints = linspace(0, maxSampleSize, evaluationCount).map(
+      (s) => Math.round(s),
+    );
     if (!sampleEvalPoints.includes(totalSampleSize)) {
       sampleEvalPoints.push(totalSampleSize);
       sampleEvalPoints.sort();
