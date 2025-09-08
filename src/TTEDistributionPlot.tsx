@@ -277,13 +277,14 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             stroke="darkred"
             strokeOpacity={0.5}
             name="n_{samples}"
+            label={{position: "insideTopRight", value: "Schoenfeld estimate", fill: "darkred"}}
           />
           <ReferenceLine
             y={alpha}
             stroke="darkred"
             strokeOpacity={0.5}
             name="\text{alpha}"
-            label={{ position: "insideBottomRight", value: "alpha", fill: "darkred" }}
+            label={{ position: "insideBottomRight", value: "Target alpha", fill: "darkred" }}
           />
           <Area
             dataKey="pvalue_bounds"
@@ -305,10 +306,10 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
           />
         </ComposedChart>
       </ResponsiveContainer>
-      <div className="flex flex-col items-center justify-center mt-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 w-full max-w-md">
+      <div className="flex flex-col items-end justify-center mt-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 w-full max-w-lg">
           <ValidatedInputField
-            label="Permutation Count"
+            label="Permutations"
             value={permutationCount}
             onValueChange={setPermutationCount}
             max={2000}
@@ -316,7 +317,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             keyValue="permutationCount"
           />
           <ValidatedInputField
-            label="Sim Count"
+            label="Simulations"
             value={datasetSimCount}
             onValueChange={setDatasetSimCount}
             max={2000}
@@ -324,7 +325,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             keyValue="datasetSimCount"
           />
           <ValidatedInputField
-            label="Sample Size Evals"
+            label="Evaluations"
             value={evaluationCount}
             onValueChange={setEvaluationCount}
             max={100}
@@ -332,7 +333,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             keyValue="sampleSizeEvals"
           />
           <button
-            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 mb-4"
             onClick={() => setTriggerUpdate(triggerUpdate + 1)}
           >
             Update

@@ -18,7 +18,7 @@ export const ValidatedInputField: React.FC<ValidatedInputFieldProps> = ({
   onValueChange = () => {},
 }) => {
   let className =
-    "shadow appearance-none border rounded w-32 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline";
+    "shadow appearance-none border rounded w-16 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline";
   if (value >= max || value <= min) {
     className += " border-red-500";
   }
