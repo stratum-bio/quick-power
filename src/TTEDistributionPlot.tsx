@@ -82,10 +82,17 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
           }}
         />
         <Tooltip
-          content={(props) => <InlineMathTooltip {...props} round={true} xName="Sample\ size" />}
+          content={(props) => (
+            <InlineMathTooltip {...props} round={true} xName="Sample\ size" />
+          )}
         />
         <Legend verticalAlign="top" align="right" formatter={formatLegend} />
-        <ReferenceLine x={totalSampleSize} stroke="darkred" strokeOpacity={0.5} name="n_{samples}"/>
+        <ReferenceLine
+          x={totalSampleSize}
+          stroke="darkred"
+          strokeOpacity={0.5}
+          name="n_{samples}"
+        />
         <Area
           dataKey="control_hazard"
           stroke="black"

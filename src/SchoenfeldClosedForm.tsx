@@ -53,6 +53,7 @@ const SchoenfeldClosedForm: React.FC = () => {
     setInvalidMsg("");
 
     const derived = calculateDerivedParameters(parameters);
+
     setDerivedParameters(derived);
   }, [parameters]);
 

@@ -51,6 +51,7 @@ export function calculateDerivedParameters(
   const overallEventProportion =
     params.group1Proportion * treatEventProportion +
     params.group2Proportion * baseEventProportion;
+
   return {
     alphaDeviate: alphaDeviate,
     betaDeviate: betaDeviate,

@@ -23,7 +23,7 @@ export const InlineMathTooltip: React.FC<InlineMathTooltipProps> = ({
   payload,
   label,
   round,
-  xName, 
+  xName,
 }) => {
   const isVisible = active && payload && payload.length;
   if (!isVisible) {
@@ -34,8 +34,8 @@ export const InlineMathTooltip: React.FC<InlineMathTooltipProps> = ({
     <div className="border border-black p-4 bg-white rounded-lg opacity-70">
       {label && (
         <p className="opacity-100 font-bold">
-         {xName ? (<InlineMath math={`${xName}:\\ `} />) : (null) }
-         {typeof(label) === 'string' ? label : label.toFixed(2)}
+          {xName ? <InlineMath math={`${xName}:\\ `} /> : null}
+          {typeof label === "string" ? label : label.toFixed(2)}
         </p>
       )}
       {payload.map((entry, index) => (

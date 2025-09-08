@@ -46,8 +46,6 @@ const ExponentialSurvivalPlot: React.FC<LinePlotProps> = ({
       survProb: d.treatSurvProb,
     })),
   );
-  console.log(baseLambda);
-  console.log(treatLambda);
 
   const origTime = baseSurv.map((e) => e.time);
   const baseEval = evaluateExponential(origTime, baseLambda);
