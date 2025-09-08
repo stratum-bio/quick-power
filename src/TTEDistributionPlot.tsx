@@ -37,6 +37,8 @@ interface HazardDistPlotData {
   true_treat_tte: number;
   control_hazard: [number, number];
   treat_hazard: [number, number];
+  pvalue_median: number;
+  pvalue_bounds: [number, number];
 }
 
 const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
@@ -78,7 +80,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             ...result,
             baseInterval: getPercentiles(result.controlHazardDist, percentiles),
             treatInterval: getPercentiles(result.treatHazardDist, percentiles),
-            pvalueInterval: getPercentiles(result.pValueDist, [0, beta]),
+            pvalueInterval: getPercentiles(result.pValueDist, [0.5, 0, beta]),
           }))
           .map((result) => ({
             sample_size: result.sampleSize,
@@ -91,6 +93,11 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             treat_hazard: [
               1 / result.treatInterval[1],
               1 / result.treatInterval[0],
+            ],
+            pvalue_median: result.pvalueInterval[0],
+            pvalue_bounds: [
+              result.pvalueInterval[1],
+              result.pvalueInterval[2],
             ],
           }));
         processedData.sort((a, b) => a.sample_size - b.sample_size);
