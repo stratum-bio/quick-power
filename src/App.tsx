@@ -1,5 +1,5 @@
-import './App.css'
-import SchoenfeldClosedForm from './SchoenfeldClosedForm';
+import "./App.css";
+import SchoenfeldClosedForm from "./SchoenfeldClosedForm";
 
 function App() {
   return (
@@ -8,10 +8,10 @@ function App() {
         <h2 className="text-3xl mb-8 text-black">
           Survival Analysis: Sample Size Estimation
         </h2>
-          <SchoenfeldClosedForm />
+        <SchoenfeldClosedForm />
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

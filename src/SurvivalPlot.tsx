@@ -1,17 +1,28 @@
-import React from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import React from "react";
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 
-import 'katex/dist/katex.min.css';
+import "katex/dist/katex.min.css";
 
-import { formatLegend } from './utils/formatters.tsx';
-import { baselineToTreatmentSurvival, type SurvivalPoint } from './utils/survival'; 
-import { InlineMathTooltip } from './InlineMathTooltip';
+import { formatLegend } from "./utils/formatters.tsx";
+import {
+  baselineToTreatmentSurvival,
+  type SurvivalPoint,
+} from "./utils/survival";
+import { InlineMathTooltip } from "./InlineMathTooltip";
 
 interface LinePlotProps {
   baseSurv: SurvivalPoint[];
   hazardRatio: number;
 }
-
 
 const SurvivalPlot: React.FC<LinePlotProps> = ({ baseSurv, hazardRatio }) => {
   const formattedData = baseSurv.map((point, index) => ({
@@ -36,18 +47,37 @@ const SurvivalPlot: React.FC<LinePlotProps> = ({ baseSurv, hazardRatio }) => {
         <XAxis
           dataKey="time"
           type="number"
-          domain={[0, 'auto']}
-          label={{ value: "Time", position: "insideBottom", offset: -10 }} 
+          domain={[0, "auto"]}
+          label={{ value: "Time", position: "insideBottom", offset: -10 }}
         />
         <YAxis
           type="number"
           domain={[0, 1]}
-          label={{ value: "Survival probability", angle: -90, position: "insideLeft", dy: 60 }}
+          label={{
+            value: "Survival probability",
+            angle: -90,
+            position: "insideLeft",
+            dy: 60,
+          }}
         />
-        <Tooltip content={(props) => <InlineMathTooltip {...props} round={true} />} />
+        <Tooltip
+          content={(props) => <InlineMathTooltip {...props} round={true} />}
+        />
         <Legend verticalAlign="top" align="right" formatter={formatLegend} />
-        <Line type="monotone" dataKey="survProb" stroke="black" activeDot={{ r: 8 }} name="S_B(t)" />
-        <Line type="monotone" dataKey="treat" stroke="blue" activeDot={{ r: 8 }} name="S_A(t)" />
+        <Line
+          type="monotone"
+          dataKey="survProb"
+          stroke="black"
+          activeDot={{ r: 8 }}
+          name="S_B(t)"
+        />
+        <Line
+          type="monotone"
+          dataKey="treat"
+          stroke="blue"
+          activeDot={{ r: 8 }}
+          name="S_A(t)"
+        />
       </LineChart>
     </ResponsiveContainer>
   );

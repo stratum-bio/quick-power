@@ -1,5 +1,8 @@
-import jStat from 'jstat';
-import type { SchoenfeldParameters, SchoenfeldDerived } from '../types/schoenfeld';
+import jStat from "jstat";
+import type {
+  SchoenfeldParameters,
+  SchoenfeldDerived,
+} from "../types/schoenfeld";
 
 /**
  * Computes the inverse of the normal CDF (PPF) for a given probability.
@@ -10,7 +13,7 @@ import type { SchoenfeldParameters, SchoenfeldDerived } from '../types/schoenfel
  */
 function normalPPF(p: number, mean: number = 0, stdDev: number = 1): number {
   if (p <= 0 || p >= 1) {
-    throw new Error('Probability must be between 0 and 1 (exclusive).');
+    throw new Error("Probability must be between 0 and 1 (exclusive).");
   }
   return jStat.normal.inv(p, mean, stdDev);
 }
@@ -24,13 +27,16 @@ export function simpsonsApproximation(
   return 1 - weightedMean;
 }
 
-
-export function calculateDerivedParameters(params: SchoenfeldParameters): SchoenfeldDerived {
+export function calculateDerivedParameters(
+  params: SchoenfeldParameters,
+): SchoenfeldDerived {
   // event count estimation
   const alphaDeviate = normalPPF(1.0 - params.alpha);
   const betaDeviate = normalPPF(params.beta);
   const numerator = (alphaDeviate + betaDeviate) ** 2;
-  const denominator = Math.log(params.hazardRatio) ** 2 * (params.group1Proportion * params.group2Proportion);
+  const denominator =
+    Math.log(params.hazardRatio) ** 2 *
+    (params.group1Proportion * params.group2Proportion);
   const eventCount = numerator / denominator;
 
   // sample size estimation
@@ -39,9 +45,13 @@ export function calculateDerivedParameters(params: SchoenfeldParameters): Schoen
     params.simpsonMidSurv,
     params.simpsonEndSurv,
   );
-  const treatEventProportion = 1 - (1 - baseEventProportion) ** (params.hazardRatio); 
+  const treatEventProportion =
+    1 - (1 - baseEventProportion) ** params.hazardRatio;
 
-  const overallEventProportion = params.group1Proportion * treatEventProportion + params.group2Proportion * baseEventProportion;
+  const overallEventProportion =
+    params.group1Proportion * treatEventProportion +
+    params.group2Proportion * baseEventProportion;
+
   return {
     alphaDeviate: alphaDeviate,
     betaDeviate: betaDeviate,
@@ -56,5 +66,3 @@ export function calculateDerivedParameters(params: SchoenfeldParameters): Schoen
     sampleSize: Math.round(eventCount / overallEventProportion),
   };
 }
-
-
