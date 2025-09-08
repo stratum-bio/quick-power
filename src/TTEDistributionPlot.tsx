@@ -43,19 +43,21 @@ interface HazardDistPlotData {
   pvalue_bounds: [number, number];
 }
 
+function propsAreEqual(
+  a: TTEDistributionProps,
+  b: TTEDistributionProps,
+): boolean {
+  const keys = Object.keys(a);
 
-function propsAreEqual(a: TTEDistributionProps, b: TTEDistributionProps): boolean {
-    const keys = Object.keys(a);
-
-    // Check if all properties and their values are the same
-    for (const key of keys) {
-        const propKey = key as keyof TTEDistributionProps;
-        if (a[propKey] !== b[propKey]) {
-            return false;
-        }
+  // Check if all properties and their values are the same
+  for (const key of keys) {
+    const propKey = key as keyof TTEDistributionProps;
+    if (a[propKey] !== b[propKey]) {
+      return false;
     }
+  }
 
-    return true;
+  return true;
 }
 
 const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
@@ -70,10 +72,19 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   treatProportion,
 }) => {
   const allProperties = {
-    totalSampleSize, baselineHazard, hazardRatio, accrual, followup, alpha, beta, controlProportion, treatProportion
-  }
+    totalSampleSize,
+    baselineHazard,
+    hazardRatio,
+    accrual,
+    followup,
+    alpha,
+    beta,
+    controlProportion,
+    treatProportion,
+  };
 
-  const [properties, setProperties] = useState<TTEDistributionProps>(allProperties)
+  const [properties, setProperties] =
+    useState<TTEDistributionProps>(allProperties);
   const [data, setData] = useState<HazardDistPlotData[]>([]);
   const [loading, setLoading] = useState(true);
   const [completed, setCompleted] = useState(0);
@@ -90,7 +101,11 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
 
     const worker = new Worker();
     const percentiles = [2.5, 97.5];
-    const sampleEvalPoints = linspace(0, totalSampleSize * 1.5, evaluationCount);
+    const sampleEvalPoints = linspace(
+      0,
+      totalSampleSize * 1.5,
+      evaluationCount,
+    );
     if (!sampleEvalPoints.includes(totalSampleSize)) {
       sampleEvalPoints.push(totalSampleSize);
       sampleEvalPoints.sort();
@@ -109,7 +124,11 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             ...result,
             baseInterval: getPercentiles(result.controlHazardDist, percentiles),
             treatInterval: getPercentiles(result.treatHazardDist, percentiles),
-            pvalueInterval: getPercentiles(result.pValueDist, [50, 0, beta * 100]),
+            pvalueInterval: getPercentiles(result.pValueDist, [
+              50,
+              0,
+              beta * 100,
+            ]),
           }))
           .map((result) => ({
             sample_size: result.sampleSize,
@@ -124,10 +143,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
               1 / result.treatInterval[0],
             ],
             pvalue_median: result.pvalueInterval[0],
-            pvalue_bounds: [
-              result.pvalueInterval[1],
-              result.pvalueInterval[2],
-            ],
+            pvalue_bounds: [result.pvalueInterval[1], result.pvalueInterval[2]],
           }));
         processedData.sort((a, b) => a.sample_size - b.sample_size);
         // @ts-expect-error I have no idea how else to handle this
@@ -135,8 +151,16 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
         setLoading(false);
 
         setProperties({
-          totalSampleSize, baselineHazard, hazardRatio, accrual, followup, alpha, beta, controlProportion, treatProportion
-        })
+          totalSampleSize,
+          baselineHazard,
+          hazardRatio,
+          accrual,
+          followup,
+          alpha,
+          beta,
+          controlProportion,
+          treatProportion,
+        });
 
         worker.terminate();
       }
@@ -180,27 +204,40 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   }
 
   let containerClass = "";
-  let mismatchMessage = ""
+  let mismatchMessage = "";
   if (!propsAreEqual(allProperties, properties)) {
     containerClass = "bg-red-100 rounded-lg";
-    mismatchMessage = "Input values don't match simulation results, press the Update button";
+    mismatchMessage =
+      "Input values don't match simulation results, press the Update button to re-run the simulation";
   }
+
+  const hazardMin = Math.floor(
+    Math.min(
+      ...data.map((e) => Math.min(...e.treat_hazard, ...e.control_hazard)),
+    ),
+  );
+  const hazardMax = Math.ceil(
+    Math.max(
+      ...data.map((e) => Math.max(...e.treat_hazard, ...e.control_hazard)),
+    ),
+  );
 
   return (
     <div className={containerClass}>
       <p className="font-bold text-red-950 italic"> {mismatchMessage} </p>
-      <ResponsiveContainer width="100%" height={500}>
+      <ResponsiveContainer width="100%" height={300}>
         <ComposedChart
           data={data}
           margin={{
             top: 5,
-            right: 30,
-            left: 20,
+            right: 10,
+            left: 0,
             bottom: 30,
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis
+            tickCount={10}
             dataKey="sample_size"
             type="number"
             label={{
@@ -217,6 +254,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
               position: "insideLeft",
               dy: 60,
             }}
+            domain={[hazardMin, hazardMax]}
           />
           <Tooltip
             content={(props) => (
@@ -229,7 +267,11 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             stroke="darkred"
             strokeOpacity={0.5}
             name="n_{samples}"
-            label={{position: "insideTopLeft", value: "Schoenfeld estimate", fill: "darkred"}}
+            label={{
+              position: "insideTopLeft",
+              value: "Schoenfeld estimate",
+              fill: "darkred",
+            }}
           />
           <Area
             dataKey="control_hazard"
@@ -268,18 +310,19 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
           />
         </ComposedChart>
       </ResponsiveContainer>
-      <ResponsiveContainer width="100%" height={500}>
+      <ResponsiveContainer width="100%" height={300}>
         <ComposedChart
           data={data}
           margin={{
             top: 5,
-            right: 30,
-            left: 20,
+            right: 10,
+            left: 0,
             bottom: 30,
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis
+            tickCount={10}
             dataKey="sample_size"
             type="number"
             label={{
@@ -309,14 +352,22 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             stroke="darkred"
             strokeOpacity={0.5}
             name="n_{samples}"
-            label={{position: "insideTopLeft", value: "Schoenfeld estimate", fill: "darkred"}}
+            label={{
+              position: "insideTopLeft",
+              value: "Schoenfeld estimate",
+              fill: "darkred",
+            }}
           />
           <ReferenceLine
             y={alpha}
             stroke="darkred"
             strokeOpacity={0.5}
             name="\text{alpha}"
-            label={{ position: "insideBottomRight", value: "Target alpha", fill: "darkred" }}
+            label={{
+              position: "insideBottomRight",
+              value: "Target alpha",
+              fill: "darkred",
+            }}
           />
           <Area
             dataKey="pvalue_bounds"
