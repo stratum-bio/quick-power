@@ -197,7 +197,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             stroke="darkred"
             strokeOpacity={0.5}
             name="n_{samples}"
-            label={{position: "insideTopRight", value: "Schoenfeld estimate", fill: "darkred"}}
+            label={{position: "insideTopLeft", value: "Schoenfeld estimate", fill: "darkred"}}
           />
           <Area
             dataKey="control_hazard"
@@ -277,7 +277,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             stroke="darkred"
             strokeOpacity={0.5}
             name="n_{samples}"
-            label={{position: "insideTopRight", value: "Schoenfeld estimate", fill: "darkred"}}
+            label={{position: "insideTopLeft", value: "Schoenfeld estimate", fill: "darkred"}}
           />
           <ReferenceLine
             y={alpha}
