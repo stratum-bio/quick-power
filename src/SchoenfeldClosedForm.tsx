@@ -43,7 +43,6 @@ const SchoenfeldClosedForm: React.FC = () => {
   const [invalidMsg, setInvalidMsg] = useState<string>("");
 
   const handleUpdate = useCallback(() => {
-
     const validationResult = validateSchoenfeldParameters(parameters);
     if (!validationResult.isValid) {
       setInvalid(true);
@@ -214,14 +213,21 @@ const SchoenfeldClosedForm: React.FC = () => {
       </div>
       <div className="text-left mx-auto mt-8 mb-8 px-4 text-black">
         <p>
+          The sample size estimate based on the simulation and permutation
+          testing is where the Target alpha line crosses the one-sided upper
+          confidence bound which was set as input at the top.
+        </p>
+        <br />
+        <p>
           The default parameters of this simulation are such that the simulation
           is quick, which means the estimates will be noisy and non-monotonic.
-          To get more reliable results, increase the Permutations (number of random
-          permutations used to estimate the p-value for every simulated clinical trial)
-          and the Simulations (number of simulated clinical trials).  These scale
-          multiplicatively, so increasing each by a factor of 10 will increase the total
-          computation time by a factor of 100.  Increase the Evaluations to increase
-          how many different sample sizes are evaluated in the simulation.
+          To get more reliable results, increase the Permutations (number of
+          random permutations used to estimate the p-value for every simulated
+          clinical trial) and the Simulations (number of simulated clinical
+          trials). These scale multiplicatively, so increasing each by a factor
+          of 10 will increase the total computation time by a factor of 100.
+          Increase the Evaluations to increase how many different sample sizes
+          are evaluated in the simulation.
         </p>
       </div>
     </>
