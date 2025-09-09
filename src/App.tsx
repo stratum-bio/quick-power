@@ -5,9 +5,9 @@ import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="flex rounded-lg m-4">
+    <div className="flex rounded-lg m-4 h-full">
       {/* Left Navigation Bar */}
-      <nav className="w-64 text-dark-azure p-4 space-y-4 rounded-lg bg-theme-light">
+      <nav className="w-64 text-dark-azure p-4 space-y-4 rounded-lg bg-theme-light h-full mb-4">
         <img src="/stratum-logo-light.svg" alt="Stratum Logo" className="p-4 mb-8" />
         <ul className="space-y-3">
           <li>

@@ -1,10 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import type { TrialIndex } from './types/trialdata';
+import type { TrialIndex, TrialMeta } from './types/trialdata';
+
+const DISEASE_VAL_TO_NAME = {
+  "breast_cancer": "Breast",
+  "colorectal_cancer": "Colorectal",
+  "lung_cancer": "Lung",
+  "prostate_cancer": "Prostate",
+};
 
 const TrialList: React.FC = () => {
   const [trialIndex, setTrialIndex] = useState<TrialIndex | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+  const [collapsedStates, setCollapsedStates] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
     const fetchTrials = async () => {
@@ -15,6 +23,14 @@ const TrialList: React.FC = () => {
         }
         const data: TrialIndex = await response.json();
         setTrialIndex(data);
+
+        // Initialize all disease sections as collapsed
+        const initialCollapsedStates: Record<string, boolean> = {};
+        data.trials.forEach(trial => {
+          initialCollapsedStates[trial.disease] = true;
+        });
+        setCollapsedStates(initialCollapsedStates);
+
       } catch (e: unknown) {
         if (e instanceof Error) {
           setError(e.message);
@@ -29,6 +45,13 @@ const TrialList: React.FC = () => {
     fetchTrials();
   }, []);
 
+  const toggleCollapse = (disease: string) => {
+    setCollapsedStates(prevState => ({
+      ...prevState,
+      [disease]: !prevState[disease]
+    }));
+  };
+
   if (loading) {
     return <div>Loading trials...</div>;
   }
@@ -38,25 +61,40 @@ const TrialList: React.FC = () => {
   }
 
   return (
-    <div>
-      <h1>Clinical Trials Index</h1>
+    <div className="w-full">
       {trialIndex && trialIndex.trials.length > 0 ? (
-        <div className="grid grid-cols-3 gap-4 font-bold border-b pb-2 mb-2">
-          <div>Identifier</div>
-          <div>PubMed</div>
-          <div>Publication Date</div>
-        </div>
-      ) : null}
-      {trialIndex && trialIndex.trials.length > 0 ? (
-        <div className="space-y-2">
-          {trialIndex.trials.map((trial) => (
-            <div key={trial.identifier} className="grid grid-cols-3 gap-4 border-b pb-2">
-              <div>{trial.identifier}</div>
-              <div>{trial.pubmed}</div>
-              <div>{trial.publication_date}</div>
-            </div>
-          ))}
-        </div>
+        Object.entries(trialIndex.trials.reduce((acc, trial) => {
+          (acc[trial.disease] = acc[trial.disease] || []).push(trial);
+          return acc;
+        }, {} as Record<string, TrialMeta[]>)).sort(([diseaseA], [diseaseB]) => diseaseA.localeCompare(diseaseB)).map(([disease, trials]) => (
+          <div key={disease} className="mb-6 shadow-md rounded-lg w-196">
+            <h2 className="text-xl font-bold mb-2 text-left cursor-pointer bg-theme-light rounded-t-lg p-4" onClick={() => toggleCollapse(disease)}>
+              {DISEASE_VAL_TO_NAME[disease as keyof typeof DISEASE_VAL_TO_NAME]} {collapsedStates[disease] ? '[+]' : '[-]'}
+            </h2>
+            {!collapsedStates[disease] && (
+              <>
+                <div className="grid grid-cols-5 gap-4 font-bold border-b pb-4">
+                  <div>Trial Name</div>
+                  <div>Subjects</div>
+                  <div>Arms</div>
+                  <div>Publication Date</div>
+                  <div>PubMed</div>
+                </div>
+                <div className="">
+                  {trials.map((trial) => (
+                    <div key={trial.identifier} className="grid grid-cols-5 gap-4 border-b pb-3 pt-3 hover:bg-gray-200">
+                      <div>{trial.identifier}</div>
+                      <div>{trial.subjects}</div>
+                      <div>{trial.arms}</div>
+                      <div>{trial.publication_date.split(' ')[0]}</div>
+                      <div>{trial.pubmed}</div>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+        ))
       ) : (
         <div>No trials found.</div>
       )}
