@@ -91,12 +91,7 @@ function App() {
             <Route
               path="*"
               element={
-                <>
-                  <h2 className="text-3xl mb-8 text-black text-left">
-                    Survival Analysis: Sample Size Estimation
-                  </h2>
-                  <SchoenfeldClosedForm />
-                </>
+                <SchoenfeldClosedForm />
               }
             />
           </Routes>
