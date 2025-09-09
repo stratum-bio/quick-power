@@ -1,0 +1,799 @@
+{
+  "trials": [
+    {
+      "identifier": "20050181",
+      "pubmed": "24356622",
+      "publication_date": "2014-01-01 00:00:00"
+    },
+    {
+      "identifier": "20050181",
+      "pubmed": "24356622",
+      "publication_date": "2014-01-01 00:00:00"
+    },
+    {
+      "identifier": "A001",
+      "pubmed": "25794890",
+      "publication_date": "2015-03-20 00:00:00"
+    },
+    {
+      "identifier": "A003",
+      "pubmed": "25515658",
+      "publication_date": "2014-12-15 00:00:00"
+    },
+    {
+      "identifier": "A004",
+      "pubmed": "24401928",
+      "publication_date": "2014-01-08 00:00:00"
+    },
+    {
+      "identifier": "ACT1",
+      "pubmed": "25385727",
+      "publication_date": "2014-11-10 00:00:00"
+    },
+    {
+      "identifier": "ACT2",
+      "pubmed": "26483047",
+      "publication_date": "2015-10-19 00:00:00"
+    },
+    {
+      "identifier": "ACT2",
+      "pubmed": "26483047",
+      "publication_date": "2015-10-19 00:00:00"
+    },
+    {
+      "identifier": "ACTSCC",
+      "pubmed": "24942277",
+      "publication_date": "2014-06-18 00:00:00"
+    },
+    {
+      "identifier": "AIO0207",
+      "pubmed": "26361971",
+      "publication_date": "2015-09-09 00:00:00"
+    },
+    {
+      "identifier": "ALTTO",
+      "pubmed": "26598744",
+      "publication_date": "2015-11-23 00:00:00"
+    },
+    {
+      "identifier": "AMAROS",
+      "pubmed": "25439688",
+      "publication_date": "2014-10-16 00:00:00"
+    },
+    {
+      "identifier": "ASPECCT",
+      "pubmed": "24739896",
+      "publication_date": "2014-04-14 00:00:00"
+    },
+    {
+      "identifier": "ATTENTION",
+      "pubmed": "26153496",
+      "publication_date": "2015-07-07 00:00:00"
+    },
+    {
+      "identifier": "AURA3",
+      "pubmed": "27959700",
+      "publication_date": "2016-12-06 00:00:00"
+    },
+    {
+      "identifier": "AZURE",
+      "pubmed": "25035292",
+      "publication_date": "2014-07-15 00:00:00"
+    },
+    {
+      "identifier": "BEACON",
+      "pubmed": "26482278",
+      "publication_date": "2015-10-16 00:00:00"
+    },
+    {
+      "identifier": "BEBYP",
+      "pubmed": "25600568",
+      "publication_date": "2015-01-18 00:00:00"
+    },
+    {
+      "identifier": "BEYOND",
+      "pubmed": "26014294",
+      "publication_date": "2015-05-26 00:00:00"
+    },
+    {
+      "identifier": "BOLERO1",
+      "pubmed": "26092818",
+      "publication_date": "2015-06-17 00:00:00"
+    },
+    {
+      "identifier": "BOLERO2",
+      "pubmed": "25231953",
+      "publication_date": "2014-09-17 00:00:00"
+    },
+    {
+      "identifier": "BREC",
+      "pubmed": "25164908",
+      "publication_date": "2014-08-27 00:00:00"
+    },
+    {
+      "identifier": "BREC",
+      "pubmed": "25164908",
+      "publication_date": "2014-08-27 00:00:00"
+    },
+    {
+      "identifier": "CA184043",
+      "pubmed": "24831977",
+      "publication_date": "2014-05-13 00:00:00"
+    },
+    {
+      "identifier": "CA184095",
+      "pubmed": "28034081",
+      "publication_date": "2016-10-10 00:00:00"
+    },
+    {
+      "identifier": "CAIRO3",
+      "pubmed": "25862517",
+      "publication_date": "2015-04-08 00:00:00"
+    },
+    {
+      "identifier": "CAIRO3",
+      "pubmed": "25862517",
+      "publication_date": "2015-04-08 00:00:00"
+    },
+    {
+      "identifier": "CALGB40502",
+      "pubmed": "26056183",
+      "publication_date": "2015-06-08 00:00:00"
+    },
+    {
+      "identifier": "CALGB40502",
+      "pubmed": "26056183",
+      "publication_date": "2015-06-08 00:00:00"
+    },
+    {
+      "identifier": "CALGB40503",
+      "pubmed": "27138575",
+      "publication_date": "2016-08-01 00:00:00"
+    },
+    {
+      "identifier": "CALGB90202",
+      "pubmed": "24590644",
+      "publication_date": "2014-03-03 00:00:00"
+    },
+    {
+      "identifier": "CBCSG006",
+      "pubmed": "25795409",
+      "publication_date": "2015-03-18 00:00:00"
+    },
+    {
+      "identifier": "CEREBEL",
+      "pubmed": "25605838",
+      "publication_date": "2015-01-20 00:00:00"
+    },
+    {
+      "identifier": "Checkmate017",
+      "pubmed": "26028407",
+      "publication_date": "2015-05-31 00:00:00"
+    },
+    {
+      "identifier": "Checkmate057",
+      "pubmed": "26412456",
+      "publication_date": "2015-09-27 00:00:00"
+    },
+    {
+      "identifier": "CHHiP",
+      "pubmed": "27339115",
+      "publication_date": "2016-06-20 00:00:00"
+    },
+    {
+      "identifier": "Chronicle",
+      "pubmed": "24718885",
+      "publication_date": "2014-04-08 00:00:00"
+    },
+    {
+      "identifier": "CLEOPATRA",
+      "pubmed": "25693012",
+      "publication_date": "2015-02-19 00:00:00"
+    },
+    {
+      "identifier": "COMET1",
+      "pubmed": "27400947",
+      "publication_date": "2016-07-11 00:00:00"
+    },
+    {
+      "identifier": "CONCEPT",
+      "pubmed": "24608198",
+      "publication_date": "2014-03-07 00:00:00"
+    },
+    {
+      "identifier": "CONCUR",
+      "pubmed": "25981818",
+      "publication_date": "2015-05-14 00:00:00"
+    },
+    {
+      "identifier": "COUAA202",
+      "pubmed": "25601341",
+      "publication_date": "2015-01-16 00:00:00"
+    },
+    {
+      "identifier": "Dalotuzumab",
+      "pubmed": "26405092",
+      "publication_date": "2015-09-23 00:00:00"
+    },
+    {
+      "identifier": "DART0105",
+      "pubmed": "25702876",
+      "publication_date": "2015-02-19 00:00:00"
+    },
+    {
+      "identifier": "DELTA",
+      "pubmed": "24841974",
+      "publication_date": "2014-05-19 00:00:00"
+    },
+    {
+      "identifier": "E1199",
+      "pubmed": "26077235",
+      "publication_date": "2015-06-15 00:00:00"
+    },
+    {
+      "identifier": "EAGLE",
+      "pubmed": "25908603",
+      "publication_date": "2015-04-23 00:00:00"
+    },
+    {
+      "identifier": "ELDA",
+      "pubmed": "25488686",
+      "publication_date": "2014-12-08 00:00:00"
+    },
+    {
+      "identifier": "ELM-PC4",
+      "pubmed": "25701170",
+      "publication_date": "2015-02-18 00:00:00"
+    },
+    {
+      "identifier": "ELM-PC5",
+      "pubmed": "25624429",
+      "publication_date": "2015-01-26 00:00:00"
+    },
+    {
+      "identifier": "ENSURE",
+      "pubmed": "26105600",
+      "publication_date": "2015-06-23 00:00:00"
+    },
+    {
+      "identifier": "EORTC22881",
+      "pubmed": "25500422",
+      "publication_date": "2014-12-09 00:00:00"
+    },
+    {
+      "identifier": "Eribulin",
+      "pubmed": "25605862",
+      "publication_date": "2015-01-20 00:00:00"
+    },
+    {
+      "identifier": "ESPATUE",
+      "pubmed": "26527789",
+      "publication_date": "2015-11-02 00:00:00"
+    },
+    {
+      "identifier": "ExteNET",
+      "pubmed": "26874901",
+      "publication_date": "2016-02-10 00:00:00"
+    },
+    {
+      "identifier": "FALCON",
+      "pubmed": "27908454",
+      "publication_date": "2016-11-28 00:00:00"
+    },
+    {
+      "identifier": "FFCD2001",
+      "pubmed": "26487578",
+      "publication_date": "2015-10-20 00:00:00"
+    },
+    {
+      "identifier": "FFCD2001",
+      "pubmed": "26487578",
+      "publication_date": "2015-10-20 00:00:00"
+    },
+    {
+      "identifier": "Figitumumab",
+      "pubmed": "25395283",
+      "publication_date": "2014-11-13 00:00:00"
+    },
+    {
+      "identifier": "Figitumumab2",
+      "pubmed": "24888810",
+      "publication_date": "2014-06-02 00:00:00"
+    },
+    {
+      "identifier": "FIRE3",
+      "pubmed": "25088940",
+      "publication_date": "2014-08-01 00:00:00"
+    },
+    {
+      "identifier": "GECESTRO-APBI",
+      "pubmed": "26494415",
+      "publication_date": "2015-10-20 00:00:00"
+    },
+    {
+      "identifier": "GEICAM2003",
+      "pubmed": "26416999",
+      "publication_date": "2015-09-28 00:00:00"
+    },
+    {
+      "identifier": "GETUG12",
+      "pubmed": "26028518",
+      "publication_date": "2015-05-29 00:00:00"
+    },
+    {
+      "identifier": "GETUG16",
+      "pubmed": "27160475",
+      "publication_date": "2016-05-06 00:00:00"
+    },
+    {
+      "identifier": "GIM",
+      "pubmed": "26720025",
+      "publication_date": "2015-12-22 00:00:00"
+    },
+    {
+      "identifier": "GIM2",
+      "pubmed": "25740286",
+      "publication_date": "2015-03-02 00:00:00"
+    },
+    {
+      "identifier": "GIM2",
+      "pubmed": "25740286",
+      "publication_date": "2015-03-02 00:00:00"
+    },
+    {
+      "identifier": "HYPRO",
+      "pubmed": "27339116",
+      "publication_date": "2016-06-20 00:00:00"
+    },
+    {
+      "identifier": "IBCSG2200",
+      "pubmed": "27325862",
+      "publication_date": "2016-06-20 00:00:00"
+    },
+    {
+      "identifier": "IMELDA",
+      "pubmed": "25273343",
+      "publication_date": "2014-09-28 00:00:00"
+    },
+    {
+      "identifier": "IMPRESS",
+      "pubmed": "26159065",
+      "publication_date": "2015-07-07 00:00:00"
+    },
+    {
+      "identifier": "Iniparib",
+      "pubmed": "25349301",
+      "publication_date": "2014-10-27 00:00:00"
+    },
+    {
+      "identifier": "INSPIRE",
+      "pubmed": "25701171",
+      "publication_date": "2015-02-18 00:00:00"
+    },
+    {
+      "identifier": "INT0142",
+      "pubmed": "25349302",
+      "publication_date": "2014-10-27 00:00:00"
+    },
+    {
+      "identifier": "ITACa",
+      "pubmed": "25735317",
+      "publication_date": "2015-03-03 00:00:00"
+    },
+    {
+      "identifier": "JCOG0509",
+      "pubmed": "24638015",
+      "publication_date": "2014-03-17 00:00:00"
+    },
+    {
+      "identifier": "JCOG0605",
+      "pubmed": "27312053",
+      "publication_date": "2016-06-13 00:00:00"
+    },
+    {
+      "identifier": "JFMC33-0502",
+      "pubmed": "26347106",
+      "publication_date": "2015-09-07 00:00:00"
+    },
+    {
+      "identifier": "KEYNOTE024",
+      "pubmed": "27718847",
+      "publication_date": "2016-10-09 00:00:00"
+    },
+    {
+      "identifier": "LEA",
+      "pubmed": "25691671",
+      "publication_date": "2015-02-17 00:00:00"
+    },
+    {
+      "identifier": "LUMELung1",
+      "pubmed": "24411639",
+      "publication_date": "2014-01-09 00:00:00"
+    },
+    {
+      "identifier": "LUXBreast1",
+      "pubmed": "26822398",
+      "publication_date": "2016-01-25 00:00:00"
+    },
+    {
+      "identifier": "LUXLung3-6",
+      "pubmed": "25589191",
+      "publication_date": "2015-01-12 00:00:00"
+    },
+    {
+      "identifier": "LUXLung3-6",
+      "pubmed": "25589191",
+      "publication_date": "2015-01-12 00:00:00"
+    },
+    {
+      "identifier": "LUXLung8",
+      "pubmed": "26156651",
+      "publication_date": "2015-07-06 00:00:00"
+    },
+    {
+      "identifier": "MA17R",
+      "pubmed": "27264120",
+      "publication_date": "2016-06-28 00:00:00"
+    },
+    {
+      "identifier": "MA31",
+      "pubmed": "25779558",
+      "publication_date": "2015-03-16 00:00:00"
+    },
+    {
+      "identifier": "MAGRIT",
+      "pubmed": "27132212",
+      "publication_date": "2016-04-27 00:00:00"
+    },
+    {
+      "identifier": "MAINSAIL",
+      "pubmed": "25743937",
+      "publication_date": "2015-03-03 00:00:00"
+    },
+    {
+      "identifier": "MAPS",
+      "pubmed": "26719230",
+      "publication_date": "2015-12-21 00:00:00"
+    },
+    {
+      "identifier": "MARIANNE",
+      "pubmed": "28056202",
+      "publication_date": "2016-11-07 00:00:00"
+    },
+    {
+      "identifier": "MARQUEE",
+      "pubmed": "26169611",
+      "publication_date": "2015-07-13 00:00:00"
+    },
+    {
+      "identifier": "METlung",
+      "pubmed": "27937096",
+      "publication_date": "2016-12-12 00:00:00"
+    },
+    {
+      "identifier": "MINDACT",
+      "pubmed": "27557300",
+      "publication_date": "2016-08-25 00:00:00"
+    },
+    {
+      "identifier": "MINDACT",
+      "pubmed": "27557300",
+      "publication_date": "2016-08-25 00:00:00"
+    },
+    {
+      "identifier": "MIROX",
+      "pubmed": "25403578",
+      "publication_date": "2014-11-17 00:00:00"
+    },
+    {
+      "identifier": "MONALEESA2",
+      "pubmed": "27717303",
+      "publication_date": "2016-10-08 00:00:00"
+    },
+    {
+      "identifier": "MRC-RT01",
+      "pubmed": "24581940",
+      "publication_date": "2014-02-26 00:00:00"
+    },
+    {
+      "identifier": "NCICBR26",
+      "pubmed": "25439692",
+      "publication_date": "2014-10-15 00:00:00"
+    },
+    {
+      "identifier": "NeoALTTO",
+      "pubmed": "25130998",
+      "publication_date": "2014-08-15 00:00:00"
+    },
+    {
+      "identifier": "NITRO",
+      "pubmed": "26347110",
+      "publication_date": "2015-09-07 00:00:00"
+    },
+    {
+      "identifier": "NO16968",
+      "pubmed": "26324362",
+      "publication_date": "2015-08-31 00:00:00"
+    },
+    {
+      "identifier": "NOAH",
+      "pubmed": "24657003",
+      "publication_date": "2014-03-20 00:00:00"
+    },
+    {
+      "identifier": "NSABPB35",
+      "pubmed": "26686957",
+      "publication_date": "2015-12-10 00:00:00"
+    },
+    {
+      "identifier": "NSABPB35",
+      "pubmed": "26686957",
+      "publication_date": "2015-12-10 00:00:00"
+    },
+    {
+      "identifier": "NSABPB40",
+      "pubmed": "26272770",
+      "publication_date": "2015-08-11 00:00:00"
+    },
+    {
+      "identifier": "NSABPR04",
+      "pubmed": "26374429",
+      "publication_date": "2015-09-14 00:00:00"
+    },
+    {
+      "identifier": "NSABPR04",
+      "pubmed": "26374429",
+      "publication_date": "2015-09-14 00:00:00"
+    },
+    {
+      "identifier": "NTR1527",
+      "pubmed": "25230595",
+      "publication_date": "2014-09-14 00:00:00"
+    },
+    {
+      "identifier": "OMEGA",
+      "pubmed": "24504445",
+      "publication_date": "2014-02-06 00:00:00"
+    },
+    {
+      "identifier": "OPTIMAL",
+      "pubmed": "26141208",
+      "publication_date": "2015-07-03 00:00:00"
+    },
+    {
+      "identifier": "OPTIMOX3",
+      "pubmed": "26474518",
+      "publication_date": "2015-10-14 00:00:00"
+    },
+    {
+      "identifier": "PALOMA2",
+      "pubmed": "27959613",
+      "publication_date": "2016-11-17 00:00:00"
+    },
+    {
+      "identifier": "PALOMA3",
+      "pubmed": "26947331",
+      "publication_date": "2016-03-02 00:00:00"
+    },
+    {
+      "identifier": "PALOMA3",
+      "pubmed": "26030518",
+      "publication_date": "2015-06-01 00:00:00"
+    },
+    {
+      "identifier": "PEGASE07",
+      "pubmed": "25943350",
+      "publication_date": "2015-05-05 00:00:00"
+    },
+    {
+      "identifier": "PETACC8",
+      "pubmed": "24928083",
+      "publication_date": "2014-06-11 00:00:00"
+    },
+    {
+      "identifier": "PREVAIL",
+      "pubmed": "24881730",
+      "publication_date": "2014-06-01 00:00:00"
+    },
+    {
+      "identifier": "PROCLAIM",
+      "pubmed": "26811519",
+      "publication_date": "2016-01-25 00:00:00"
+    },
+    {
+      "identifier": "PROCTOR-SCRIPT",
+      "pubmed": "25480874",
+      "publication_date": "2014-12-05 00:00:00"
+    },
+    {
+      "identifier": "PROFILE1014",
+      "pubmed": "27022118",
+      "publication_date": "2016-03-28 00:00:00"
+    },
+    {
+      "identifier": "PROFILE1014",
+      "pubmed": "25470694",
+      "publication_date": "2014-12-04 00:00:00"
+    },
+    {
+      "identifier": "PROSE",
+      "pubmed": "24831979",
+      "publication_date": "2014-05-13 00:00:00"
+    },
+    {
+      "identifier": "QUARTZ",
+      "pubmed": "27604504",
+      "publication_date": "2016-09-04 00:00:00"
+    },
+    {
+      "identifier": "QUASAR2",
+      "pubmed": "27660192",
+      "publication_date": "2016-09-19 00:00:00"
+    },
+    {
+      "identifier": "R98",
+      "pubmed": "25739671",
+      "publication_date": "2015-03-03 00:00:00"
+    },
+    {
+      "identifier": "RADIANT",
+      "pubmed": "26324372",
+      "publication_date": "2015-08-31 00:00:00"
+    },
+    {
+      "identifier": "RAISE",
+      "pubmed": "25877855",
+      "publication_date": "2015-04-13 00:00:00"
+    },
+    {
+      "identifier": "RECOURSE",
+      "pubmed": "25970050",
+      "publication_date": "2015-05-14 00:00:00"
+    },
+    {
+      "identifier": "REVEL",
+      "pubmed": "24933332",
+      "publication_date": "2014-06-02 00:00:00"
+    },
+    {
+      "identifier": "ROSE",
+      "pubmed": "25185099",
+      "publication_date": "2014-09-02 00:00:00"
+    },
+    {
+      "identifier": "RTOG0415",
+      "pubmed": "27044935",
+      "publication_date": "2016-04-04 00:00:00"
+    },
+    {
+      "identifier": "RTOG0617",
+      "pubmed": "25601342",
+      "publication_date": "2015-01-16 00:00:00"
+    },
+    {
+      "identifier": "RTOG0617",
+      "pubmed": "25601342",
+      "publication_date": "2015-01-16 00:00:00"
+    },
+    {
+      "identifier": "RTOG9804",
+      "pubmed": "25605856",
+      "publication_date": "2015-01-20 00:00:00"
+    },
+    {
+      "identifier": "SAKK",
+      "pubmed": "26275735",
+      "publication_date": "2015-08-12 00:00:00"
+    },
+    {
+      "identifier": "SAKK4106",
+      "pubmed": "25605741",
+      "publication_date": "2015-01-20 00:00:00"
+    },
+    {
+      "identifier": "SELECTBC",
+      "pubmed": "26617202",
+      "publication_date": "2015-11-23 00:00:00"
+    },
+    {
+      "identifier": "SIRFLOX",
+      "pubmed": "26903575",
+      "publication_date": "2016-02-22 00:00:00"
+    },
+    {
+      "identifier": "SMART",
+      "pubmed": "27345639",
+      "publication_date": "2016-06-23 00:00:00"
+    },
+    {
+      "identifier": "SOFT",
+      "pubmed": "25495490",
+      "publication_date": "2014-12-11 00:00:00"
+    },
+    {
+      "identifier": "SQUIRE",
+      "pubmed": "26045340",
+      "publication_date": "2015-06-02 00:00:00"
+    },
+    {
+      "identifier": "TANIA",
+      "pubmed": "25273342",
+      "publication_date": "2014-09-28 00:00:00"
+    },
+    {
+      "identifier": "Tasquinimod",
+      "pubmed": "27298414",
+      "publication_date": "2016-06-13 00:00:00"
+    },
+    {
+      "identifier": "TCOG0701",
+      "pubmed": "25908605",
+      "publication_date": "2015-04-23 00:00:00"
+    },
+    {
+      "identifier": "TEXT-SOFT(2)",
+      "pubmed": "24881463",
+      "publication_date": "2014-06-01 00:00:00"
+    },
+    {
+      "identifier": "TH3RESA",
+      "pubmed": "24793816",
+      "publication_date": "2014-05-02 00:00:00"
+    },
+    {
+      "identifier": "TRAPEZE",
+      "pubmed": "26794729",
+      "publication_date": "2016-01-21 00:00:00"
+    },
+    {
+      "identifier": "TRAPEZE",
+      "pubmed": "26794729",
+      "publication_date": "2016-01-21 00:00:00"
+    },
+    {
+      "identifier": "TRIBE",
+      "pubmed": "26338525",
+      "publication_date": "2015-09-01 00:00:00"
+    },
+    {
+      "identifier": "TRIBE(2)",
+      "pubmed": "25337750",
+      "publication_date": "2014-10-23 00:00:00"
+    },
+    {
+      "identifier": "TROG0306",
+      "pubmed": "27155740",
+      "publication_date": "2016-05-04 00:00:00"
+    },
+    {
+      "identifier": "TURANDOT",
+      "pubmed": "27501767",
+      "publication_date": "2016-08-05 00:00:00"
+    },
+    {
+      "identifier": "VANTAGE014",
+      "pubmed": "25800891",
+      "publication_date": "2015-03-20 00:00:00"
+    },
+    {
+      "identifier": "WJOG5108L",
+      "pubmed": "27022112",
+      "publication_date": "2016-03-28 00:00:00"
+    },
+    {
+      "identifier": "WJOG5208L",
+      "pubmed": "26522337",
+      "publication_date": "2015-10-28 00:00:00"
+    },
+    {
+      "identifier": "WSGAGO",
+      "pubmed": "24827128",
+      "publication_date": "2014-05-14 00:00:00"
+    },
+    {
+      "identifier": "WSG-ARA",
+      "pubmed": "24356620",
+      "publication_date": "2014-01-01 00:00:00"
+    }
+  ]
+}
