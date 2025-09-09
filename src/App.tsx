@@ -12,7 +12,7 @@ function App() {
     <>
       {/* Hamburger menu for mobile */}
       <button
-        className="md:hidden p-4 text-black focus:outline-none z-50 fixed top-4 left-4 bg-theme-light"
+        className={`md:hidden p-4 text-black focus:outline-none z-50 fixed top-4 left-4 bg-theme-light ${isNavOpen ? 'hidden' : ''}`}
         onClick={() => setIsNavOpen(!isNavOpen)}
       >
         <svg
