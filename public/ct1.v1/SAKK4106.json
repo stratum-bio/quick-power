@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "SAKK4106",
     "pubmed": "25605741",
-    "publication_date": "2015-01-20 00:00:00"
+    "publication_date": "2015-01-20 00:00:00",
+    "arms": 2,
+    "disease": "colorectal_cancer",
+    "subjects": 524
   },
   "arms": [
     {

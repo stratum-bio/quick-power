@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "TRAPEZE",
     "pubmed": "26794729",
-    "publication_date": "2016-01-21 00:00:00"
+    "publication_date": "2016-01-21 00:00:00",
+    "arms": 4,
+    "disease": "prostate_cancer",
+    "subjects": 1514
   },
   "arms": [
     {

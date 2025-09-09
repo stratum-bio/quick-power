@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "Figitumumab2",
     "pubmed": "24888810",
-    "publication_date": "2014-06-02 00:00:00"
+    "publication_date": "2014-06-02 00:00:00",
+    "arms": 2,
+    "disease": "lung_cancer",
+    "subjects": 1362
   },
   "arms": [
     {

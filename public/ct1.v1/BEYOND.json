@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "BEYOND",
     "pubmed": "26014294",
-    "publication_date": "2015-05-26 00:00:00"
+    "publication_date": "2015-05-26 00:00:00",
+    "arms": 2,
+    "disease": "lung_cancer",
+    "subjects": 552
   },
   "arms": [
     {

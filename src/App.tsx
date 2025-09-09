@@ -1,6 +1,7 @@
 import "./App.css";
 import SchoenfeldClosedForm from "./SchoenfeldClosedForm";
 import TrialList from "./TrialList";
+import TrialDetail from "./TrialDetail";
 import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
@@ -30,17 +31,12 @@ function App() {
       </nav>
 
       {/* Main Content Area */}
-      <main className="p-6 w-full md:w-3/4 lg:w-1/2">
+      <main className="p-6 w-full">
         <Routes>
           <Route
             path="/schoenfeld"
             element={
-              <>
-                <h2 className="text-3xl mb-8 text-black">
-                  Survival Analysis: Sample Size Estimation
-                </h2>
                 <SchoenfeldClosedForm />
-              </>
             }
           />
           <Route
@@ -49,12 +45,18 @@ function App() {
                 <TrialList />
             }
           />
+          <Route
+            path="/trial-detail/:trial_name"
+            element={
+                <TrialDetail />
+            }
+          />
           {/* Default route or redirect */}
           <Route
             path="*"
             element={
               <>
-                <h2 className="text-3xl mb-8 text-black">
+                <h2 className="text-3xl mb-8 text-black text-left">
                   Survival Analysis: Sample Size Estimation
                 </h2>
                 <SchoenfeldClosedForm />

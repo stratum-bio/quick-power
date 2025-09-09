@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "PALOMA2",
     "pubmed": "27959613",
-    "publication_date": "2016-11-17 00:00:00"
+    "publication_date": "2016-11-17 00:00:00",
+    "arms": 2,
+    "disease": "breast_cancer",
+    "subjects": 666
   },
   "arms": [
     {

@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "TROG0306",
     "pubmed": "27155740",
-    "publication_date": "2016-05-04 00:00:00"
+    "publication_date": "2016-05-04 00:00:00",
+    "arms": 2,
+    "disease": "prostate_cancer",
+    "subjects": 293
   },
   "arms": [
     {

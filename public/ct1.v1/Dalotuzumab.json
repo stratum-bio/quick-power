@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "Dalotuzumab",
     "pubmed": "26405092",
-    "publication_date": "2015-09-23 00:00:00"
+    "publication_date": "2015-09-23 00:00:00",
+    "arms": 3,
+    "disease": "colorectal_cancer",
+    "subjects": 688
   },
   "arms": [
     {

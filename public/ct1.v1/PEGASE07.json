@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "PEGASE07",
     "pubmed": "25943350",
-    "publication_date": "2015-05-05 00:00:00"
+    "publication_date": "2015-05-05 00:00:00",
+    "arms": 2,
+    "disease": "breast_cancer",
+    "subjects": 348
   },
   "arms": [
     {

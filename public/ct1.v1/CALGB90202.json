@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "CALGB90202",
     "pubmed": "24590644",
-    "publication_date": "2014-03-03 00:00:00"
+    "publication_date": "2014-03-03 00:00:00",
+    "arms": 2,
+    "disease": "prostate_cancer",
+    "subjects": 1290
   },
   "arms": [
     {

@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "MA31",
     "pubmed": "25779558",
-    "publication_date": "2015-03-16 00:00:00"
+    "publication_date": "2015-03-16 00:00:00",
+    "arms": 2,
+    "disease": "breast_cancer",
+    "subjects": 1304
   },
   "arms": [
     {

@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "PROFILE1014",
     "pubmed": "25470694",
-    "publication_date": "2014-12-04 00:00:00"
+    "publication_date": "2014-12-04 00:00:00",
+    "arms": 4,
+    "disease": "lung_cancer",
+    "subjects": 1029
   },
   "arms": [
     {

@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "BEACON",
     "pubmed": "26482278",
-    "publication_date": "2015-10-16 00:00:00"
+    "publication_date": "2015-10-16 00:00:00",
+    "arms": 2,
+    "disease": "breast_cancer",
+    "subjects": 1704
   },
   "arms": [
     {

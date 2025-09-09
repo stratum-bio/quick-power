@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "MARQUEE",
     "pubmed": "26169611",
-    "publication_date": "2015-07-13 00:00:00"
+    "publication_date": "2015-07-13 00:00:00",
+    "arms": 2,
+    "disease": "lung_cancer",
+    "subjects": 2096
   },
   "arms": [
     {

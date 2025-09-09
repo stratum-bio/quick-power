@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "TEXT-SOFT(2)",
     "pubmed": "24881463",
-    "publication_date": "2014-06-01 00:00:00"
+    "publication_date": "2014-06-01 00:00:00",
+    "arms": 2,
+    "disease": "breast_cancer",
+    "subjects": 4690
   },
   "arms": [
     {

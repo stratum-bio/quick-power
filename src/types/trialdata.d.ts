@@ -1,6 +1,6 @@
 export interface TrialArmData {
   events: boolean[];
-  times: number[];
+  time: number[];
   arm_name: string;
 }
 

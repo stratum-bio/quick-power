@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "NSABPR04",
     "pubmed": "26374429",
-    "publication_date": "2015-09-14 00:00:00"
+    "publication_date": "2015-09-14 00:00:00",
+    "arms": 4,
+    "disease": "colorectal_cancer",
+    "subjects": 5702
   },
   "arms": [
     {

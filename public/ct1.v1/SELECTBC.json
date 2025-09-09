@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "SELECTBC",
     "pubmed": "26617202",
-    "publication_date": "2015-11-23 00:00:00"
+    "publication_date": "2015-11-23 00:00:00",
+    "arms": 3,
+    "disease": "breast_cancer",
+    "subjects": 1184
   },
   "arms": [
     {

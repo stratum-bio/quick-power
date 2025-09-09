@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "ESPATUE",
     "pubmed": "26527789",
-    "publication_date": "2015-11-02 00:00:00"
+    "publication_date": "2015-11-02 00:00:00",
+    "arms": 2,
+    "disease": "lung_cancer",
+    "subjects": 322
   },
   "arms": [
     {

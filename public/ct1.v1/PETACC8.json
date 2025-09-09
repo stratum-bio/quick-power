@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "PETACC8",
     "pubmed": "24928083",
-    "publication_date": "2014-06-11 00:00:00"
+    "publication_date": "2014-06-11 00:00:00",
+    "arms": 2,
+    "disease": "colorectal_cancer",
+    "subjects": 3204
   },
   "arms": [
     {

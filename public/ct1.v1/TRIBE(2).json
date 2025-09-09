@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "TRIBE(2)",
     "pubmed": "25337750",
-    "publication_date": "2014-10-23 00:00:00"
+    "publication_date": "2014-10-23 00:00:00",
+    "arms": 2,
+    "disease": "colorectal_cancer",
+    "subjects": 1016
   },
   "arms": [
     {

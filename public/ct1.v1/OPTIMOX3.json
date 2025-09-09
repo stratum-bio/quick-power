@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "OPTIMOX3",
     "pubmed": "26474518",
-    "publication_date": "2015-10-14 00:00:00"
+    "publication_date": "2015-10-14 00:00:00",
+    "arms": 2,
+    "disease": "colorectal_cancer",
+    "subjects": 904
   },
   "arms": [
     {

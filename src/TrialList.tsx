@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import type { TrialIndex, TrialMeta } from './types/trialdata';
+import CitationFooter from './CitationFooter';
 
 const DISEASE_VAL_TO_NAME = {
   "breast_cancer": "Breast",
@@ -83,13 +85,13 @@ const TrialList: React.FC = () => {
                 </div>
                 <div className="">
                   {trials.map((trial) => (
-                    <div key={trial.identifier} className="grid grid-cols-5 gap-4 border-b pb-3 pt-3 hover:bg-gray-200">
+                    <Link to={`/trial-detail/${trial.identifier}`} key={trial.identifier} className="grid grid-cols-5 gap-4 pb-3 pt-3 hover:bg-gray-200">
                       <div>{trial.identifier}</div>
                       <div>{trial.subjects}</div>
                       <div>{trial.arms}</div>
                       <div>{trial.publication_date.split(' ')[0]}</div>
                       <div>{trial.pubmed}</div>
-                    </div>
+                    </Link>
                   ))}
                 </div>
               </>
@@ -99,6 +101,7 @@ const TrialList: React.FC = () => {
       ) : (
         <div>No trials found.</div>
       )}
+        <CitationFooter />
     </div>
   );
 };

@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "QUARTZ",
     "pubmed": "27604504",
-    "publication_date": "2016-09-04 00:00:00"
+    "publication_date": "2016-09-04 00:00:00",
+    "arms": 2,
+    "disease": "lung_cancer",
+    "subjects": 538
   },
   "arms": [
     {

@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "WSG-ARA",
     "pubmed": "24356620",
-    "publication_date": "2014-01-01 00:00:00"
+    "publication_date": "2014-01-01 00:00:00",
+    "arms": 2,
+    "disease": "breast_cancer",
+    "subjects": 1170
   },
   "arms": [
     {

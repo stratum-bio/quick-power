@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "ExteNET",
     "pubmed": "26874901",
-    "publication_date": "2016-02-10 00:00:00"
+    "publication_date": "2016-02-10 00:00:00",
+    "arms": 2,
+    "disease": "breast_cancer",
+    "subjects": 2840
   },
   "arms": [
     {

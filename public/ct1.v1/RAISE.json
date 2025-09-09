@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "RAISE",
     "pubmed": "25877855",
-    "publication_date": "2015-04-13 00:00:00"
+    "publication_date": "2015-04-13 00:00:00",
+    "arms": 2,
+    "disease": "colorectal_cancer",
+    "subjects": 2144
   },
   "arms": [
     {

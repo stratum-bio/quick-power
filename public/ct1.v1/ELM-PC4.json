@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "ELM-PC4",
     "pubmed": "25701170",
-    "publication_date": "2015-02-18 00:00:00"
+    "publication_date": "2015-02-18 00:00:00",
+    "arms": 2,
+    "disease": "prostate_cancer",
+    "subjects": 3120
   },
   "arms": [
     {

@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "FFCD2001",
     "pubmed": "26487578",
-    "publication_date": "2015-10-20 00:00:00"
+    "publication_date": "2015-10-20 00:00:00",
+    "arms": 4,
+    "disease": "colorectal_cancer",
+    "subjects": 1128
   },
   "arms": [
     {

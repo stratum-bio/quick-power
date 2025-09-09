@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "Eribulin",
     "pubmed": "25605862",
-    "publication_date": "2015-01-20 00:00:00"
+    "publication_date": "2015-01-20 00:00:00",
+    "arms": 2,
+    "disease": "breast_cancer",
+    "subjects": 2204
   },
   "arms": [
     {

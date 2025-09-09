@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "GIM2",
     "pubmed": "25740286",
-    "publication_date": "2015-03-02 00:00:00"
+    "publication_date": "2015-03-02 00:00:00",
+    "arms": 4,
+    "disease": "breast_cancer",
+    "subjects": 8188
   },
   "arms": [
     {

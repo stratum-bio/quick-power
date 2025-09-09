@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "FIRE3",
     "pubmed": "25088940",
-    "publication_date": "2014-08-01 00:00:00"
+    "publication_date": "2014-08-01 00:00:00",
+    "arms": 2,
+    "disease": "colorectal_cancer",
+    "subjects": 1184
   },
   "arms": [
     {

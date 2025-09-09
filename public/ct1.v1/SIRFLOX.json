@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "SIRFLOX",
     "pubmed": "26903575",
-    "publication_date": "2016-02-22 00:00:00"
+    "publication_date": "2016-02-22 00:00:00",
+    "arms": 2,
+    "disease": "colorectal_cancer",
+    "subjects": 530
   },
   "arms": [
     {

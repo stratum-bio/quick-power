@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "JCOG0605",
     "pubmed": "27312053",
-    "publication_date": "2016-06-13 00:00:00"
+    "publication_date": "2016-06-13 00:00:00",
+    "arms": 2,
+    "disease": "lung_cancer",
+    "subjects": 360
   },
   "arms": [
     {

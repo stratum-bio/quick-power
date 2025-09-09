@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "ACT2",
     "pubmed": "26483047",
-    "publication_date": "2015-10-19 00:00:00"
+    "publication_date": "2015-10-19 00:00:00",
+    "arms": 4,
+    "disease": "colorectal_cancer",
+    "subjects": 276
   },
   "arms": [
     {

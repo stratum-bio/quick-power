@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "KEYNOTE024",
     "pubmed": "27718847",
-    "publication_date": "2016-10-09 00:00:00"
+    "publication_date": "2016-10-09 00:00:00",
+    "arms": 2,
+    "disease": "lung_cancer",
+    "subjects": 610
   },
   "arms": [
     {

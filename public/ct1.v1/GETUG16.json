@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "GETUG16",
     "pubmed": "27160475",
-    "publication_date": "2016-05-06 00:00:00"
+    "publication_date": "2016-05-06 00:00:00",
+    "arms": 2,
+    "disease": "prostate_cancer",
+    "subjects": 730
   },
   "arms": [
     {

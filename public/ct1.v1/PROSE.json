@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "PROSE",
     "pubmed": "24831979",
-    "publication_date": "2014-05-13 00:00:00"
+    "publication_date": "2014-05-13 00:00:00",
+    "arms": 2,
+    "disease": "lung_cancer",
+    "subjects": 526
   },
   "arms": [
     {

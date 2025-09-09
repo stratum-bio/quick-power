@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "METlung",
     "pubmed": "27937096",
-    "publication_date": "2016-12-12 00:00:00"
+    "publication_date": "2016-12-12 00:00:00",
+    "arms": 2,
+    "disease": "lung_cancer",
+    "subjects": 998
   },
   "arms": [
     {

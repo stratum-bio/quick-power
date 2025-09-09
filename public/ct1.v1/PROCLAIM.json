@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "PROCLAIM",
     "pubmed": "26811519",
-    "publication_date": "2016-01-25 00:00:00"
+    "publication_date": "2016-01-25 00:00:00",
+    "arms": 2,
+    "disease": "lung_cancer",
+    "subjects": 1196
   },
   "arms": [
     {

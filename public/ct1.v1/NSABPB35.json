@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "NSABPB35",
     "pubmed": "26686957",
-    "publication_date": "2015-12-10 00:00:00"
+    "publication_date": "2015-12-10 00:00:00",
+    "arms": 2,
+    "disease": "breast_cancer",
+    "subjects": 6154
   },
   "arms": [
     {

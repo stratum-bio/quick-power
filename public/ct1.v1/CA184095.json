@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "CA184095",
     "pubmed": "28034081",
-    "publication_date": "2016-10-10 00:00:00"
+    "publication_date": "2016-10-10 00:00:00",
+    "arms": 4,
+    "disease": "prostate_cancer",
+    "subjects": 1204
   },
   "arms": [
     {

@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "TH3RESA",
     "pubmed": "24793816",
-    "publication_date": "2014-05-02 00:00:00"
+    "publication_date": "2014-05-02 00:00:00",
+    "arms": 2,
+    "disease": "breast_cancer",
+    "subjects": 1204
   },
   "arms": [
     {

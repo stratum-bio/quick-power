@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "CAIRO3",
     "pubmed": "25862517",
-    "publication_date": "2015-04-08 00:00:00"
+    "publication_date": "2015-04-08 00:00:00",
+    "arms": 2,
+    "disease": "colorectal_cancer",
+    "subjects": 1671
   },
   "arms": [
     {

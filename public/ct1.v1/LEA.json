@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "LEA",
     "pubmed": "25691671",
-    "publication_date": "2015-02-17 00:00:00"
+    "publication_date": "2015-02-17 00:00:00",
+    "arms": 2,
+    "disease": "breast_cancer",
+    "subjects": 748
   },
   "arms": [
     {

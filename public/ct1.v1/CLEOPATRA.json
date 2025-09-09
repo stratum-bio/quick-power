@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "CLEOPATRA",
     "pubmed": "25693012",
-    "publication_date": "2015-02-19 00:00:00"
+    "publication_date": "2015-02-19 00:00:00",
+    "arms": 2,
+    "disease": "breast_cancer",
+    "subjects": 1616
   },
   "arms": [
     {

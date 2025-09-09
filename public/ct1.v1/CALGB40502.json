@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "CALGB40502",
     "pubmed": "26056183",
-    "publication_date": "2015-06-08 00:00:00"
+    "publication_date": "2015-06-08 00:00:00",
+    "arms": 3,
+    "disease": "breast_cancer",
+    "subjects": 2058
   },
   "arms": [
     {

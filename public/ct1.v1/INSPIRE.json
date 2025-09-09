@@ -2,7 +2,10 @@
   "meta": {
     "identifier": "INSPIRE",
     "pubmed": "25701171",
-    "publication_date": "2015-02-18 00:00:00"
+    "publication_date": "2015-02-18 00:00:00",
+    "arms": 2,
+    "disease": "lung_cancer",
+    "subjects": 1266
   },
   "arms": [
     {
