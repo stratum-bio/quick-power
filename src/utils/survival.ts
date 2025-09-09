@@ -60,14 +60,10 @@ export function evaluateExponential(time: number[], lambda: number): number[] {
 }
 
 export function evalExponentialCurve(
-  originalTime: number[],
+  maxTime: number,
   numEvalPoints: number,
   lambda: number,
 ): SurvivalPoint[] {
-  // evaluates the exponential curve by taking `number` points between 0
-  // and max(originalTime) as the evaluation points
-  const maxTime = Math.max(...originalTime);
-
   const evalPoints = linspace(0, maxTime, numEvalPoints);
   const evalValues = evaluateExponential(evalPoints, lambda);
   return evalPoints.map((p, idx) => ({

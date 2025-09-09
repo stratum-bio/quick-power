@@ -16,52 +16,32 @@ import { formatLegend } from "./utils/formatters.tsx";
 import {
   baselineToTreatmentSurvival,
   evaluateExponential,
-  fitExponential,
   evalExponentialCurve,
   type SurvivalPoint,
 } from "./utils/survival";
 import { InlineMathTooltip } from "./InlineMathTooltip";
 
 interface LinePlotProps {
-  baseSurv: SurvivalPoint[];
-  hazardRatio: number;
+  baseSurv?: SurvivalPoint[];
+  hazardRatio?: number;
+  baseLambda: number;
+  treatLambda: number;
+  maxTime: number;
 }
 
 const ExponentialSurvivalPlot: React.FC<LinePlotProps> = ({
   baseSurv,
   hazardRatio,
+  baseLambda,
+  treatLambda,
+  maxTime,
 }) => {
-  const formattedData = baseSurv.map((point) => ({
-    time: point.time,
-    baseSurvProb: point.survProb,
-    treatSurvProb: baselineToTreatmentSurvival(point.survProb, hazardRatio),
-  }));
-
-  // this is for evaluating the parametric model on the
-  // data points given
-  const baseLambda = fitExponential(baseSurv);
-  const treatLambda = fitExponential(
-    formattedData.map((d) => ({
-      time: d.time,
-      survProb: d.treatSurvProb,
-    })),
-  );
-
-  const origTime = baseSurv.map((e) => e.time);
-  const baseEval = evaluateExponential(origTime, baseLambda);
-  const treatEval = evaluateExponential(origTime, treatLambda);
-  const evaluatedData = formattedData.map((entry, idx) => ({
-    ...entry,
-    expBaseSurv: baseEval[idx],
-    expTreatSurv: treatEval[idx],
-  }));
-
   // this is for adding evaluation points to observe
   // more of the parametric curve
   const numPoints = 21;
-  const exponentialBase = evalExponentialCurve(origTime, numPoints, baseLambda);
+  const exponentialBase = evalExponentialCurve(maxTime, numPoints, baseLambda);
   const exponentialTreat = evalExponentialCurve(
-    origTime,
+    maxTime,
     numPoints,
     treatLambda,
   );
@@ -73,10 +53,31 @@ const ExponentialSurvivalPlot: React.FC<LinePlotProps> = ({
     expTreatSurv: exponentialTreat[idx].survProb,
   }));
 
-  const allPoints = [...evaluatedData, ...mergedExponential].sort(
-    (a, b) => a.time - b.time,
-  );
+  let allPoints = mergedExponential.sort((a, b) => a.time - b.time);
 
+  if (baseSurv) {
+    if (hazardRatio === undefined) {
+      throw new Error("Hazard ratio must not be null");
+    }
+    const formattedData = baseSurv.map((point) => ({
+      time: point.time,
+      baseSurvProb: point.survProb,
+      treatSurvProb: baselineToTreatmentSurvival(point.survProb, hazardRatio),
+    }));
+
+    const origTime = baseSurv.map((e) => e.time);
+    const baseEval = evaluateExponential(origTime, baseLambda);
+    const treatEval = evaluateExponential(origTime, treatLambda);
+    const evaluatedData = formattedData.map((entry, idx) => ({
+      ...entry,
+      expBaseSurv: baseEval[idx],
+      expTreatSurv: treatEval[idx],
+    }));
+    // @ts-expect-error this is just a data type mix
+    allPoints = [...evaluatedData, ...mergedExponential].sort(
+      (a, b) => a.time - b.time,
+    );
+  }
   const baseCurveLabel = `e^{-t / ${(1.0 / baseLambda).toFixed(3)}}`;
   const treatCurveLabel = `e^{-t / ${(1.0 / treatLambda).toFixed(3)}}`;
 

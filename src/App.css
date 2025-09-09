@@ -1,7 +1,4 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 1rem 0rem 8rem 0rem;
   text-align: center;
 }
 
@@ -42,10 +39,4 @@
 }
 
 body {
-  background-image: url('/stratum-logo-light.svg');
-  background-repeat: no-repeat;
-  background-position: bottom 40px right 30px;
-  background-attachment: fixed;
-  background-size: 200px;
-  background-color: #bfdbfe;
 }
