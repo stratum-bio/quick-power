@@ -49,10 +49,10 @@ function App() {
           onClick={() => setIsNavOpen(false)}
         ></div>
       )}
-      <div className="flex rounded-lg m-4 min-h-screen">
+      <div className="flex rounded-lg md:m-4 min-h-screen">
         {/* Left Navigation Bar */}
         <nav
-          className={`transform ${isNavOpen ? "translate-x-0" : "-translate-x-full"} z-40 transition-transform duration-300 ease-in-out w-64 text-dark-azure p-4 space-y-4 rounded-lg bg-theme-light mb-4 md:relative md:translate-x-0 md:block md:h-auto md:min-h-full fixed inset-y-0 left-0`}
+          className={`transform ${isNavOpen ? "translate-x-0" : "-translate-x-full"} z-40 transition-transform duration-300 ease-in-out w-64 text-dark-azure p-4 space-y-4 rounded-lg bg-theme-light md:relative md:translate-x-0 md:block md:h-auto md:min-h-full fixed inset-y-0 left-0`}
         >
           <img
             src="/stratum-logo-light.svg"
@@ -82,7 +82,7 @@ function App() {
         </nav>
 
         {/* Main Content Area */}
-        <main className="p-6 w-full pt-16 md:pt-6">
+        <main className="md:p-6 w-full pt-16 md:pt-6">
           <Routes>
             <Route path="/schoenfeld" element={<SchoenfeldClosedForm />} />
             <Route path="/trials" element={<TrialList />} />

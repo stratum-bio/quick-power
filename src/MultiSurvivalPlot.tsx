@@ -88,8 +88,8 @@ const MultiSurvivalPlot: React.FC<MultiSurvivalProps> = ({
             key={idx}
             type="monotone"
             dataKey={`${curveEntry.name}_surv`}
-            stroke={`hsl(${idx * 60}, 70%, 50%)`}
-            name={`\\text{${curveEntry.name}}`}
+            stroke={`hsl(${(idx * 240) % 360}, 70%, 50%)`}
+            name={`\\text{${curveEntry.name.replace(/_/g, '\\_')}}`}
             dot={false}
             legendType="plainline"
           />

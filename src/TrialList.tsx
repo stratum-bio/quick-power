@@ -59,7 +59,7 @@ const TrialList: React.FC = () => {
   }
 
   return (
-    <div className="w-full">
+    <div className="w-full mt-4">
       {trialIndex && trialIndex.trials.length > 0 ? (
         Object.entries(
           trialIndex.trials.reduce(
@@ -94,7 +94,7 @@ const TrialList: React.FC = () => {
                     <div>Trial Name</div>
                     <div>Subjects</div>
                     <div>Arms</div>
-                    <div>Publication Date</div>
+                    <div><span class="desktop-only">Publication Date</span><span class="mobile-only">Date</span></div>
                     <div>PubMed</div>
                   </div>
                   <div className="">
