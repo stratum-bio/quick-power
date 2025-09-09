@@ -8,6 +8,8 @@ import { useState } from "react";
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
+  const overlayZVal = isNavOpen ? "z-30" : "-z-10";
+
   return (
     <>
       {/* Hamburger menu for mobile */}
@@ -43,7 +45,7 @@ function App() {
       {/* Overlay for mobile nav */}
       {isNavOpen && (
         <div
-          className="fixed inset-0 bg-black opacity-50 z-30 md:hidden"
+          className={`fixed inset-0 bg-black opacity-50 ${overlayZVal} md:hidden`}
           onClick={() => setIsNavOpen(false)}
         ></div>
       )}
