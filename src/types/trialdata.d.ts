@@ -9,6 +9,9 @@ export interface TrialMeta {
   identifier: string;
   pubmed: string; 
   publication_date: string;
+  arms: number;
+  disease: string;
+  subjects: number;
 }
 
 export interface Trial {
