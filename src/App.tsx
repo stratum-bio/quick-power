@@ -5,11 +5,11 @@ import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="flex rounded-lg ml-4 mt-4 mb-32">
+    <div className="flex rounded-lg m-4">
       {/* Left Navigation Bar */}
       <nav className="w-64 text-dark-azure p-4 space-y-4 rounded-lg bg-theme-light">
-        <h2 className="text-2xl font-bold mb-6">Navigation</h2>
-        <ul className="space-y-2">
+        <img src="/stratum-logo-light.svg" alt="Stratum Logo" className="p-4 mb-8" />
+        <ul className="space-y-3">
           <li>
             <Link
               to="/schoenfeld"
