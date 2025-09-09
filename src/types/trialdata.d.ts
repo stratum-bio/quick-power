@@ -4,10 +4,9 @@ export interface TrialArmData {
   arm_name: string;
 }
 
-
 export interface TrialMeta {
   identifier: string;
-  pubmed: string; 
+  pubmed: string;
   publication_date: string;
   arms: number;
   disease: string;

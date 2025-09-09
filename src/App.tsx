@@ -3,7 +3,7 @@ import SchoenfeldClosedForm from "./SchoenfeldClosedForm";
 import TrialList from "./TrialList";
 import TrialDetail from "./TrialDetail";
 import { Routes, Route, Link } from "react-router-dom";
-import { useState } from 'react';
+import { useState } from "react";
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -12,7 +12,7 @@ function App() {
     <>
       {/* Hamburger menu for mobile */}
       <button
-        className={`md:hidden p-4 text-black focus:outline-none z-50 fixed top-4 left-4 bg-theme-light ${isNavOpen ? 'hidden' : ''}`}
+        className={`md:hidden p-4 text-black focus:outline-none z-50 fixed top-4 left-4 bg-theme-light ${isNavOpen ? "hidden" : ""}`}
         onClick={() => setIsNavOpen(!isNavOpen)}
       >
         <svg
@@ -48,70 +48,58 @@ function App() {
         ></div>
       )}
       <div className="flex rounded-lg m-4 h-full">
-      {/* Left Navigation Bar */}
-      <nav
-        className={`fixed inset-y-0 left-0 transform ${isNavOpen ? 'translate-x-0' : '-translate-x-full'} z-40 transition-transform duration-300 ease-in-out w-64 text-dark-azure p-4 space-y-4 rounded-lg bg-theme-light h-full mb-4 md:relative md:translate-x-0 md:block`}
-      >
-        <img src="/stratum-logo-light.svg" alt="Stratum Logo" className="p-4 md:pt-4 mb-8" />
-        <ul className="space-y-3">
-          <li>
-            <Link
-              to="/schoenfeld"
-              className="block py-2 px-4 rounded hover:bg-medium-azure-alpha"
-              onClick={() => setIsNavOpen(false)} // Close nav on link click
-            >
-              Simulation
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/trials"
-              className="block py-2 px-4 rounded hover:bg-medium-azure-alpha"
-              onClick={() => setIsNavOpen(false)} // Close nav on link click
-            >
-              Clinical Trials
-            </Link>
-          </li>
-        </ul>
-      </nav>
+        {/* Left Navigation Bar */}
+        <nav
+          className={`fixed inset-y-0 left-0 transform ${isNavOpen ? "translate-x-0" : "-translate-x-full"} z-40 transition-transform duration-300 ease-in-out w-64 text-dark-azure p-4 space-y-4 rounded-lg bg-theme-light h-full mb-4 md:relative md:translate-x-0 md:block`}
+        >
+          <img
+            src="/stratum-logo-light.svg"
+            alt="Stratum Logo"
+            className="p-4 md:pt-4 mb-8"
+          />
+          <ul className="space-y-3">
+            <li>
+              <Link
+                to="/schoenfeld"
+                className="block py-2 px-4 rounded hover:bg-medium-azure-alpha"
+                onClick={() => setIsNavOpen(false)} // Close nav on link click
+              >
+                Simulation
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/trials"
+                className="block py-2 px-4 rounded hover:bg-medium-azure-alpha"
+                onClick={() => setIsNavOpen(false)} // Close nav on link click
+              >
+                Clinical Trials
+              </Link>
+            </li>
+          </ul>
+        </nav>
 
-
-      {/* Main Content Area */}
-      <main className="p-6 w-full pt-16 md:pt-6">
-        <Routes>
-          <Route
-            path="/schoenfeld"
-            element={
-                <SchoenfeldClosedForm />
-            }
-          />
-          <Route
-            path="/trials"
-            element={
-                <TrialList />
-            }
-          />
-          <Route
-            path="/trial-detail/:trial_name"
-            element={
-                <TrialDetail />
-            }
-          />
-          {/* Default route or redirect */}
-          <Route
-            path="*"
-            element={
-              <>
-                <h2 className="text-3xl mb-8 text-black text-left">
-                  Survival Analysis: Sample Size Estimation
-                </h2>
-                <SchoenfeldClosedForm />
-              </>
-            }
-          />
-        </Routes>
-      </main>
-    </div>
+        {/* Main Content Area */}
+        <main className="p-6 w-full pt-16 md:pt-6">
+          <Routes>
+            <Route path="/schoenfeld" element={<SchoenfeldClosedForm />} />
+            <Route path="/trials" element={<TrialList />} />
+            <Route path="/trial-detail/:trial_name" element={<TrialDetail />} />
+            {/* Default route or redirect */}
+            <Route
+              path="*"
+              element={
+                <>
+                  <h2 className="text-3xl mb-8 text-black text-left">
+                    Survival Analysis: Sample Size Estimation
+                  </h2>
+                  <SchoenfeldClosedForm />
+                </>
+              }
+            />
+          </Routes>
+        </main>
+      </div>
     </>
   );
 }
