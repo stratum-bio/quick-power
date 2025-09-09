@@ -69,14 +69,14 @@ const TrialList: React.FC = () => {
           (acc[trial.disease] = acc[trial.disease] || []).push(trial);
           return acc;
         }, {} as Record<string, TrialMeta[]>)).sort(([diseaseA], [diseaseB]) => diseaseA.localeCompare(diseaseB)).map(([disease, trials]) => (
-          <div key={disease} className="mb-6 shadow-md rounded-lg w-196">
+          <div key={disease} className="mb-6 shadow-md rounded-lg md:w-196">
             <h2 className="text-xl font-bold text-left cursor-pointer bg-theme-light rounded-t-lg p-4 flex justify-between items-center" onClick={() => toggleCollapse(disease)}>
               <span>{DISEASE_VAL_TO_NAME[disease as keyof typeof DISEASE_VAL_TO_NAME]}</span>
               <span className="ml-auto">{collapsedStates[disease] ? '\u25BC' : '\u25B2'}</span>
             </h2>
             {!collapsedStates[disease] && (
               <>
-                <div className="grid grid-cols-5 gap-4 font-bold border-b pb-4 pt-3">
+                <div className="grid grid-cols-5 pl-4 pr-4 md:gap-4 font-bold border-b pb-4 pt-3">
                   <div>Trial Name</div>
                   <div>Subjects</div>
                   <div>Arms</div>
@@ -85,7 +85,7 @@ const TrialList: React.FC = () => {
                 </div>
                 <div className="">
                   {trials.map((trial) => (
-                    <Link to={`/trial-detail/${trial.identifier}`} key={trial.identifier} className="grid grid-cols-5 gap-4 pb-3 pt-3 hover:bg-gray-200">
+                    <Link to={`/trial-detail/${trial.identifier}`} key={trial.identifier} className="grid grid-cols-5 pl-4 pr-4 md:pl-0 md:gap-4 pb-3 pt-3 hover:bg-gray-200">
                       <div>{trial.identifier}</div>
                       <div>{trial.subjects}</div>
                       <div>{trial.arms}</div>

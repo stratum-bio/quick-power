@@ -9,10 +9,10 @@ function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="flex rounded-lg m-4 h-full">
+    <>
       {/* Hamburger menu for mobile */}
       <button
-        className="md:hidden p-4 text-black focus:outline-none z-50"
+        className="md:hidden p-4 text-black focus:outline-none z-50 fixed top-4 left-4 bg-theme-light"
         onClick={() => setIsNavOpen(!isNavOpen)}
       >
         <svg
@@ -40,11 +40,19 @@ function App() {
         </svg>
       </button>
 
+      {/* Overlay for mobile nav */}
+      {isNavOpen && (
+        <div
+          className="fixed inset-0 bg-black opacity-50 z-30 md:hidden"
+          onClick={() => setIsNavOpen(false)}
+        ></div>
+      )}
+      <div className="flex rounded-lg m-4 h-full">
       {/* Left Navigation Bar */}
       <nav
-        className={`fixed inset-y-0 left-0 transform ${isNavOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out w-64 text-dark-azure p-4 space-y-4 rounded-lg bg-theme-light h-full mb-4 md:relative md:translate-x-0 md:block`}
+        className={`fixed inset-y-0 left-0 transform ${isNavOpen ? 'translate-x-0' : '-translate-x-full'} z-40 transition-transform duration-300 ease-in-out w-64 text-dark-azure p-4 space-y-4 rounded-lg bg-theme-light h-full mb-4 md:relative md:translate-x-0 md:block`}
       >
-        <img src="/stratum-logo-light.svg" alt="Stratum Logo" className="p-4 mb-8" />
+        <img src="/stratum-logo-light.svg" alt="Stratum Logo" className="p-4 md:pt-4 mb-8" />
         <ul className="space-y-3">
           <li>
             <Link
@@ -67,16 +75,9 @@ function App() {
         </ul>
       </nav>
 
-      {/* Overlay for mobile nav */}
-      {isNavOpen && (
-        <div
-          className="fixed inset-0 bg-black opacity-50 z-30 md:hidden"
-          onClick={() => setIsNavOpen(false)}
-        ></div>
-      )}
 
       {/* Main Content Area */}
-      <main className="p-6 w-full">
+      <main className="p-6 w-full pt-16 md:pt-6">
         <Routes>
           <Route
             path="/schoenfeld"
@@ -111,6 +112,7 @@ function App() {
         </Routes>
       </main>
     </div>
+    </>
   );
 }
 
