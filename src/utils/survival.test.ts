@@ -191,7 +191,7 @@ describe("evalExponentialCurve", () => {
     const originalTime = [0, 5, 10];
     const numEvalPoints = 3;
     const lambda = 0.1;
-    const result = evalExponentialCurve(originalTime, numEvalPoints, lambda);
+    const result = evalExponentialCurve(Math.max(...originalTime), numEvalPoints, lambda);
 
     expect(result.length).toBe(numEvalPoints);
     expect(result[0].time).toBeCloseTo(0);
@@ -208,7 +208,7 @@ describe("evalExponentialCurve", () => {
     const originalTime = [5];
     const numEvalPoints = 1;
     const lambda = 0.1;
-    const result = evalExponentialCurve(originalTime, numEvalPoints, lambda);
+    const result = evalExponentialCurve(Math.max(...originalTime), numEvalPoints, lambda);
     expect(result.length).toBe(1);
     expect(result[0].time).toBeCloseTo(0); // generateTimePoints starts from 0
     expect(result[0].survProb).toBeCloseTo(Math.exp(-lambda * result[0].time));
@@ -218,7 +218,7 @@ describe("evalExponentialCurve", () => {
     const originalTime = [0, 10];
     const numEvalPoints = 1;
     const lambda = 0.1;
-    const result = evalExponentialCurve(originalTime, numEvalPoints, lambda);
+    const result = evalExponentialCurve(Math.max(...originalTime), numEvalPoints, lambda);
     expect(result.length).toBe(1);
     expect(result[0].time).toBeCloseTo(0);
     expect(result[0].survProb).toBeCloseTo(Math.exp(-lambda * result[0].time));
