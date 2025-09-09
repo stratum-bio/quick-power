@@ -82,9 +82,12 @@ const TrialDetail: React.FC = () => {
       </div>
 
       { lambdaByArm !== null ? (
-        <div className="w-96 md:w-128">
-          <MultiSurvivalPlot names={Object.keys(lambdaByArm)} lambdas={Object.values(lambdaByArm) } maxTime={Math.max(...trialData.arms[0].time)} />
-        </div>
+        <>
+          <h2 className="text-2xl font-bold mb-3 mt-8">Fitted Exponential Survival</h2>
+          <div className="w-96 md:w-128">
+            <MultiSurvivalPlot names={Object.keys(lambdaByArm)} lambdas={Object.values(lambdaByArm) } maxTime={Math.max(...trialData.arms[0].time)} />
+          </div>
+        </>
       ): null } 
 
       <h2 className="text-2xl font-bold mb-3 mt-8">Trial Arms</h2>

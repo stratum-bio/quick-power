@@ -47,10 +47,10 @@ function App() {
           onClick={() => setIsNavOpen(false)}
         ></div>
       )}
-      <div className="flex rounded-lg m-4 h-full">
+      <div className="flex rounded-lg m-4 min-h-screen">
         {/* Left Navigation Bar */}
         <nav
-          className={`fixed inset-y-0 left-0 transform ${isNavOpen ? "translate-x-0" : "-translate-x-full"} z-40 transition-transform duration-300 ease-in-out w-64 text-dark-azure p-4 space-y-4 rounded-lg bg-theme-light h-full mb-4 md:relative md:translate-x-0 md:block`}
+          className={`transform ${isNavOpen ? "translate-x-0" : "-translate-x-full"} z-40 transition-transform duration-300 ease-in-out w-64 text-dark-azure p-4 space-y-4 rounded-lg bg-theme-light mb-4 md:relative md:translate-x-0 md:block md:h-auto md:min-h-full fixed inset-y-0 left-0`}
         >
           <img
             src="/stratum-logo-light.svg"
@@ -73,7 +73,7 @@ function App() {
                 className="block py-2 px-4 rounded hover:bg-medium-azure-alpha"
                 onClick={() => setIsNavOpen(false)} // Close nav on link click
               >
-                Clinical Trials
+                Oncology Trials
               </Link>
             </li>
           </ul>
