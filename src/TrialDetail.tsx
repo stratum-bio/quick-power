@@ -5,6 +5,8 @@ import CitationFooter from "./CitationFooter";
 import { samplesToLambda } from "./utils/simulate";
 import MultiSurvivalPlot from "./MultiSurvivalPlot";
 
+import { DISEASE_VAL_TO_NAME } from "./constants";
+
 function fitLambdaPerArm(data: Trial): Record<string, number> {
   const result: Record<string, number> = {};
   for (let i = 0; i < data.arms.length; i++) {
@@ -62,31 +64,26 @@ const TrialDetail: React.FC = () => {
   return (
     <div className="p-6 text-black text-left w-full">
       <h1 className="text-2xl font-bold mb-4">{trialData.meta.identifier}</h1>
-      <div className="mb-4">
-        <p>
-          <span className="font-semibold">PubMed ID:</span>{" "}
-          {trialData.meta.pubmed}
-        </p>
-        <p>
-          <span className="font-semibold">Publication Date:</span>{" "}
-          {trialData.meta.publication_date.split(" ")[0]}
-        </p>
-        <p>
-          <span className="font-semibold">Disease:</span>{" "}
-          {trialData.meta.disease}
-        </p>
-        <p>
-          <span className="font-semibold">Subjects:</span>{" "}
-          {trialData.meta.subjects}
-        </p>
-        <p>
-          <span className="font-semibold">Arms:</span> {trialData.meta.arms}
-        </p>
+      <div className="mb-4 grid grid-cols-[auto_1fr] gap-x-4">
+        <div className="font-semibold">PubMed ID</div>
+        <div>{trialData.meta.pubmed}</div>
+
+        <div className="font-semibold">Publication Date</div>
+        <div>{trialData.meta.publication_date.split(" ")[0]}</div>
+
+        <div className="font-semibold">Disease</div>
+        <div>{DISEASE_VAL_TO_NAME[trialData.meta.disease as keyof typeof DISEASE_VAL_TO_NAME]}</div>
+
+        <div className="font-semibold">Subjects</div>
+        <div>{trialData.meta.subjects}</div>
+
+        <div className="font-semibold">Arms</div>
+        <div>{trialData.meta.arms}</div>
       </div>
 
       { lambdaByArm !== null ? (
         <div className="w-96 md:w-128">
-        <MultiSurvivalPlot names={Object.keys(lambdaByArm)} lambdas={Object.values(lambdaByArm) } maxTime={Math.max(...trialData.arms[0].time)} />
+          <MultiSurvivalPlot names={Object.keys(lambdaByArm)} lambdas={Object.values(lambdaByArm) } maxTime={Math.max(...trialData.arms[0].time)} />
         </div>
       ): null } 
 

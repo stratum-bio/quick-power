@@ -3,12 +3,7 @@ import { Link } from "react-router-dom";
 import type { TrialIndex, TrialMeta } from "./types/trialdata";
 import CitationFooter from "./CitationFooter";
 
-const DISEASE_VAL_TO_NAME = {
-  breast_cancer: "Breast",
-  colorectal_cancer: "Colorectal",
-  lung_cancer: "Lung",
-  prostate_cancer: "Prostate",
-};
+import { DISEASE_VAL_TO_NAME } from "./constants";
 
 const TrialList: React.FC = () => {
   const [trialIndex, setTrialIndex] = useState<TrialIndex | null>(null);
