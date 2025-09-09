@@ -5,7 +5,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  color-scheme: light;
   color: #213547; /* Default to light theme text color */
   background-color: #ffffff; /* Default to light theme background color */
 
@@ -56,17 +56,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color: rgba(255, 255, 255, 0.87); /* Dark theme text color */
-    background-color: #242424; /* Dark theme background color */
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-  }
-}
 
 @theme {
   --color-dark-azure-beta: #10273ccf;
