@@ -73,7 +73,10 @@ const SchoenfeldClosedForm: React.FC = () => {
     },
   ];
 
-  const [baseHazard] = fitExponentialPerGroup(baseSurv, parameters.hazardRatio);
+  const [baseHazard, treatHazard] = fitExponentialPerGroup(
+    baseSurv,
+    parameters.hazardRatio,
+  );
 
   return (
     <div className="md:w-2/3 pb-8">
@@ -182,6 +185,9 @@ const SchoenfeldClosedForm: React.FC = () => {
         <ExponentialSurvivalPlot
           hazardRatio={parameters.hazardRatio}
           baseSurv={baseSurv}
+          baseLambda={baseHazard}
+          treatLambda={treatHazard}
+          maxTime={parameters.accrual + parameters.followupTime}
         />
       </div>
       <div className="text-left mx-auto mt-8 mb-8 px-4 text-black">
