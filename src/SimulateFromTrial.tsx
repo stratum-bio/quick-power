@@ -101,12 +101,12 @@ const SimulateFromTrial: React.FC = () => {
       <h1 className="text-2xl font-bold mb-4">
         Simulate from trial {trialData.meta.identifier}
       </h1>
-      <div className="mt-8 p-4 mx-auto">
+      <div className="mt-8 p-4 max-w-3xl mx-auto">
         <h2 className="text-xl font-semibold mb-4">Original</h2>
         <KaplanMeierPlot trialName={trialName} />
       </div>
 
-      <div className="mt-8 p-4 border rounded-lg shadow-md bg-white w-3/4 mx-auto">
+      <div className="mt-8 p-4 border rounded-lg shadow-md bg-white max-w-3xl mx-auto">
         <h2 className="text-xl font-semibold mb-4">Simulation Parameters</h2>
         <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
@@ -219,7 +219,7 @@ const SimulateFromTrial: React.FC = () => {
         </div>
       </div>
       {showTTEDistributionPlot && lambdaByArm !== null && (
-        <div className="mt-8 p-4 mx-auto">
+        <div className="mt-8 p-4 max-w-3xl mx-auto">
           <h2 className="text-xl font-semibold mb-4">Results</h2>
           <TTEDistributionPlot
             totalSampleSize={largestSampleSize}
