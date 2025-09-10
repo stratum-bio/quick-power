@@ -60,6 +60,16 @@ const TrialList: React.FC = () => {
 
   return (
     <div className="w-full mt-4">
+      <h2 className="text-3xl m-4 mb-8 text-black text-left">
+        Find a reference trial for sample size estimation
+      </h2>
+      <div className="text-left m-4 mb-8 text-black md:w-196">
+        <p>
+          Explores the cancer trials listed here to find a trial which
+          would make a good starting point for performing power analysis
+          and sample size estimation.
+        </p>
+      </div>
       {trialIndex && trialIndex.trials.length > 0 ? (
         Object.entries(
           trialIndex.trials.reduce(
@@ -72,7 +82,7 @@ const TrialList: React.FC = () => {
         )
           .sort(([diseaseA], [diseaseB]) => diseaseA.localeCompare(diseaseB))
           .map(([disease, trials]) => (
-            <div key={disease} className="mb-6 shadow-md rounded-lg md:w-196">
+            <div key={disease} className="m-4 mb-6 shadow-md rounded-lg md:w-196">
               <h2
                 className="text-xl font-bold text-left cursor-pointer bg-theme-light rounded-t-lg p-4 flex justify-between items-center"
                 onClick={() => toggleCollapse(disease)}
@@ -90,7 +100,7 @@ const TrialList: React.FC = () => {
               </h2>
               {!collapsedStates[disease] && (
                 <>
-                  <div className="grid grid-cols-5 pl-4 pr-4 md:gap-4 font-bold border-b pb-4 pt-3">
+                  <div className="grid grid-cols-4 pl-8 pr-4 md:gap-4 font-bold border-b pb-4 pt-3 uppercase text-xs">
                     <div>Trial Name</div>
                     <div>Subjects</div>
                     <div>Arms</div>
@@ -98,20 +108,18 @@ const TrialList: React.FC = () => {
                       <span className="desktop-only">Publication Date</span>
                       <span className="mobile-only">Date</span>
                     </div>
-                    <div>PubMed</div>
                   </div>
                   <div className="">
                     {trials.map((trial) => (
                       <Link
                         to={`/trial-detail/${trial.identifier}`}
                         key={trial.identifier}
-                        className="grid grid-cols-5 pl-4 pr-4 md:pl-0 md:gap-4 pb-3 pt-3 hover:bg-gray-200"
+                        className="grid grid-cols-4 pl-8 pr-4 md:gap-4 pb-3 pt-3 hover:bg-gray-200"
                       >
                         <div>{trial.identifier}</div>
                         <div>{trial.subjects}</div>
                         <div>{trial.arms}</div>
                         <div>{trial.publication_date.split(" ")[0]}</div>
-                        <div>{trial.pubmed}</div>
                       </Link>
                     ))}
                   </div>
@@ -122,7 +130,9 @@ const TrialList: React.FC = () => {
       ) : (
         <div>No trials found.</div>
       )}
+      <div className="m-4">
       <CitationFooter />
+      </div>
     </div>
   );
 };

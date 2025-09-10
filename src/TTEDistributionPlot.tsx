@@ -62,6 +62,8 @@ function propsAreEqual(
   return true;
 }
 
+const MIN_SAMPLE_SIZE = 100;
+
 const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   totalSampleSize,
   baselineHazard,
@@ -110,7 +112,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
     const worker = new Worker();
     const percentiles = [2.5, 97.5];
     const sampleEvalPoints = linspace(
-      0,
+      MIN_SAMPLE_SIZE,
       totalSampleSize,
       evaluationCount + 1,
     ).map((s) => Math.round(s));
@@ -242,7 +244,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
               position: "insideBottom",
               offset: -10,
             }}
-            domain={[0, "auto"]}
+            domain={[MIN_SAMPLE_SIZE, "auto"]}
           />
           <YAxis
             label={{
@@ -320,7 +322,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
               position: "insideBottom",
               offset: -10,
             }}
-            domain={[0, "auto"]}
+            domain={[MIN_SAMPLE_SIZE, "auto"]}
           />
           <YAxis
             label={{
@@ -369,7 +371,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
         </ComposedChart>
       </ResponsiveContainer>
       <div className="flex flex-col items-end justify-center mt-4 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-4 mr-16 lg:mr-0">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr_1fr_min-content] mr-16 gap-4 lg:mr-0">
           <ValidatedInputField
             label="Permutations"
             value={permutationCount}
@@ -398,7 +400,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             description={`Number of different sample sizes to evaluate between 0 and ${totalSampleSize}`}
           />
           <button
-            className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 mb-4 ml-16 lg:ml-12"
+            className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 mb-4"
             onClick={() => setTriggerUpdate(triggerUpdate + 1)}
           >
             Update

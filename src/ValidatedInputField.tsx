@@ -28,7 +28,7 @@ export const ValidatedInputField: React.FC<ValidatedInputFieldProps> = ({
   }
 
   return (
-    <div className="flex items-center mb-4 justify-end">
+    <div className="flex items-center mb-4 justify-end text-right">
       <label
         className="block text-gray-700 text-sm font-bold mr-2"
         htmlFor={keyValue}

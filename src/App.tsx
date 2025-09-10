@@ -67,7 +67,7 @@ function App() {
                 className="block py-2 px-4 rounded hover:bg-medium-azure-alpha"
                 onClick={() => setIsNavOpen(false)} // Close nav on link click
               >
-                Simulation
+                Free-form
               </Link>
             </li>
             <li>
@@ -76,7 +76,7 @@ function App() {
                 className="block py-2 px-4 rounded hover:bg-medium-azure-alpha"
                 onClick={() => setIsNavOpen(false)} // Close nav on link click
               >
-                Oncology Trials
+                Start from a Trial
               </Link>
             </li>
           </ul>

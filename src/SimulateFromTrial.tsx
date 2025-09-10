@@ -66,11 +66,16 @@ const SimulateFromTrial: React.FC = () => {
 
         const maxTime = Math.max(...data.arms[0].time);
 
-        console.log(controlIdx);
-        console.log(arms);
+        let defaultAccrual = 24;
+        let defaultFollowup = 12; 
+        if (maxTime < 12) {
+          // assume the time variable is in years
+          defaultAccrual = 2;
+          defaultFollowup = 1;
+        }
 
-        setAccrualPeriod(Math.floor(maxTime / 2));
-        setFollowUpPeriod(Math.floor(maxTime / 3));
+        setAccrualPeriod(defaultAccrual);
+        setFollowUpPeriod(defaultFollowup);
         setControlArm(arms[controlIdx]);
         setTreatmentArm(arms[treatIdx]);
 
@@ -162,7 +167,7 @@ const SimulateFromTrial: React.FC = () => {
               htmlFor="accrualPeriod"
               className="block font-medium text-gray-700"
             >
-              Accrual Period
+              Enrollemnt Period
             </label>
             <input
               type="number"
