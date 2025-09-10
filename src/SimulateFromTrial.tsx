@@ -55,14 +55,18 @@ const SimulateFromTrial: React.FC = () => {
         setTrialData(data);
 
         const arms = data.arms.map((a) => a.arm_name);
-        let controlIdx = arms.indexOf("placebo");
+        let controlIdx = arms.findIndex(
+          (str) => str.includes("placebo") || str.includes("control"),
+        );
         if (controlIdx == -1) {
-          controlIdx = arms.indexOf("control");
+          controlIdx = 0;
         }
-        controlIdx = controlIdx % arms.length;
         const treatIdx = (controlIdx + 1) % arms.length;
 
         const maxTime = Math.max(...data.arms[0].time);
+
+        console.log(controlIdx);
+        console.log(arms);
 
         setAccrualPeriod(Math.floor(maxTime / 2));
         setFollowUpPeriod(Math.floor(maxTime / 3));
@@ -98,11 +102,10 @@ const SimulateFromTrial: React.FC = () => {
 
   return (
     <div className="p-6 text-black text-left w-full">
-      <h1 className="text-2xl font-bold mb-4">
+      <h2 className="text-3xl font-bold mb-4">
         Simulate from trial {trialData.meta.identifier}
-      </h1>
+      </h2>
       <div className="mt-8 p-4 max-w-3xl mx-auto">
-        <h2 className="text-xl font-semibold mb-4">Original</h2>
         <KaplanMeierPlot trialName={trialName} />
       </div>
 
@@ -213,7 +216,7 @@ const SimulateFromTrial: React.FC = () => {
               setShowTTEDistributionPlot(true);
               setForceSimulation(true);
             }}
-            >
+          >
             Start Simulation
           </button>
         </div>
@@ -235,16 +238,24 @@ const SimulateFromTrial: React.FC = () => {
             treatLabel={`\\text{Treatment}`}
             forceUpdate={forceSimulation}
           />
-          
-          <br /> 
-          <p>
 
-            The initial simulation parameters are quick and
-            noisy to demonstrate the results. For more accurate
-            simulated results, increase the Permutations and Simulations.  For something visually interesting, setting Simulations to 500 and Permutations to 500.  This will run <InlineMath math="500 * 500 = 250000" /> randomized computations for each sample size evaluated.  When evaluating 11 sample sizes, this usually takes 3-4 minutes.
+          <br />
+          <p>
+            The initial simulation parameters are quick and noisy to demonstrate
+            the results. For more accurate simulated results, increase the
+            Permutations and Simulations. For something visually interesting,
+            setting Simulations to 500 and Permutations to 500. This will run{" "}
+            <InlineMath math="500 * 500 = 250000" /> randomized computations for
+            each sample size evaluated. When evaluating 11 sample sizes, this
+            usually takes 3-4 minutes.
           </p>
           <br />
-          <p>For accurate results, it is recommended to set Permutations and Simulations to 1000 each, but this will end up taking up to a half hour.  Mobile devices pause computations when the page is not in the foreground, so it is recommended to run larger simulations on desktop.
+          <p>
+            For accurate results, it is recommended to set Permutations and
+            Simulations to 1000 each, but this will end up taking up to a half
+            hour. Mobile devices pause computations when the page is not in the
+            foreground, so it is recommended to run larger simulations on
+            desktop.
           </p>
         </div>
       )}

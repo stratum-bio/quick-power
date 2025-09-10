@@ -109,9 +109,11 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
 
     const worker = new Worker();
     const percentiles = [2.5, 97.5];
-    const sampleEvalPoints = linspace(0, totalSampleSize, evaluationCount+1).map(
-      (s) => Math.round(s),
-    );
+    const sampleEvalPoints = linspace(
+      0,
+      totalSampleSize,
+      evaluationCount + 1,
+    ).map((s) => Math.round(s));
     if (!sampleEvalPoints.includes(totalSampleSize)) {
       sampleEvalPoints.push(totalSampleSize);
       sampleEvalPoints.sort();
@@ -218,7 +220,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   return (
     <div className={containerClass}>
       <div className="pt-4 pl-4 justify-center">
-      <p className="font-bold text-red-950 italic"> {mismatchMessage} </p>
+        <p className="font-bold text-red-950 italic"> {mismatchMessage} </p>
       </div>
       <ResponsiveContainer width="100%" height={400}>
         <ComposedChart
