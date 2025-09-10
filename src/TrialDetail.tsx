@@ -68,12 +68,6 @@ const TrialDetail: React.FC = () => {
   return (
     <div className="p-6 text-black text-left w-full">
       <h2 className="text-3xl font-bold mb-4">{trialData.meta.identifier}</h2>
-      <Link
-        to={`/simulate-from-trial/${trialName}`}
-        className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4"
-      >
-        Simulate from this Trial
-      </Link>
       <div className="mb-4 grid grid-cols-[auto_1fr] gap-x-4">
         <div className="font-semibold">PubMed ID</div>
         <div>{trialData.meta.pubmed}</div>
@@ -92,37 +86,16 @@ const TrialDetail: React.FC = () => {
 
         <div className="font-semibold">Subjects</div>
         <div>{trialData.meta.subjects}</div>
-
-        <div className="font-semibold">Arms</div>
-        <div>{trialData.meta.arms}</div>
       </div>
-      {trialName !== undefined && (
-        <>
-          <h2 className="text-2xl font-bold mb-3 mt-8">Kaplan-Meier</h2>
-          <div className="max-w-3xl mx-auto">
-            <KaplanMeierPlot trialName={trialName} />
-          </div>
-        </>
-      )}
-
-      {lambdaByArm !== null ? (
-        <>
-          <h2 className="text-2xl font-bold mb-3 mt-8">
-            Fitted Exponential Survival
-          </h2>
-          <div className="max-w-3xl mx-auto">
-            <MultiSurvivalPlot
-              names={Object.keys(lambdaByArm)}
-              lambdas={Object.values(lambdaByArm)}
-              maxTime={Math.max(...trialData.arms[0].time)}
-            />
-          </div>
-        </>
-      ) : null}
-
-      <h2 className="text-2xl font-bold mb-3 mt-8">Trial Arms</h2>
+      <Link
+        to={`/simulate-from-trial/${trialName}`}
+        className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4"
+      >
+        Simulate from this Trial
+      </Link>
+      <h2 className="text-xl font-bold mb-3">Trial Arms</h2>
       {trialData.arms.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {trialData.arms.map((arm, index) => (
             <div key={index} className="border rounded-md">
               <h3 className="text-xl font-semibold mb-2 bg-theme-light p-4 pb-2 pt-2 rounded-t-lg">
@@ -140,10 +113,10 @@ const TrialDetail: React.FC = () => {
                 {lambdaByArm !== null ? (
                   <>
                     <p className="text-right">
-                      <span className="font-semibold">Median TTE</span>
+                      <span className="font-semibold">Mean TTE</span>
                     </p>
                     <p>
-                      {(Math.log(2) / lambdaByArm[arm.arm_name]).toFixed(3)}
+                      {( 1.0 / lambdaByArm[arm.arm_name]).toFixed(3)}
                     </p>
                   </>
                 ) : null}
@@ -154,6 +127,30 @@ const TrialDetail: React.FC = () => {
       ) : (
         <p>No arm data available.</p>
       )}
+      {trialName !== undefined && (
+        <>
+          <h2 className="text-xl font-bold mb-3 mt-8">Kaplan-Meier</h2>
+          <div className="max-w-3xl mx-auto">
+            <KaplanMeierPlot trialName={trialName} />
+          </div>
+        </>
+      )}
+
+      {lambdaByArm !== null ? (
+        <>
+          <h2 className="text-xl font-bold mb-3 mt-8">
+            Fitted Exponential Survival
+          </h2>
+          <div className="max-w-3xl mx-auto">
+            <MultiSurvivalPlot
+              names={Object.keys(lambdaByArm)}
+              lambdas={Object.values(lambdaByArm)}
+              maxTime={Math.max(...trialData.arms[0].time)}
+            />
+          </div>
+        </>
+      ) : null}
+
       <CitationFooter />
     </div>
   );
