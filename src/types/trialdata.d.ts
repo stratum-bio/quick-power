@@ -27,3 +27,8 @@ export interface KaplanMeier {
   probability: number[];
   interval: [number, number][];
 }
+
+export interface KaplanMeierByArm {
+  arm_names: string[];
+  curves: KaplanMeier[];
+}

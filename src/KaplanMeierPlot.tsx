@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {
+  Legend,
   ComposedChart,
   Line,
   XAxis,
@@ -9,21 +10,25 @@ import {
   ResponsiveContainer,
   Area,
 } from "recharts";
-import type { KaplanMeier } from "./types/trialdata";
+import type { KaplanMeierByArm } from "./types/trialdata";
 import  { InlineMathTooltip } from "./InlineMathTooltip";
+import { PLOT_COLORS } from "./constants";
+import { formatLegend } from "./utils/formatters.tsx";
 
 interface KaplanMeierPlotProps {
   trialName: string;
 }
 
-interface PlotData {
+interface TransformedPlotDataItem {
   time: number;
-  probability: number;
-  interval: [number, number];
+  [key: string]: number | [number, number] | number; // time, armName_probability, armName_interval
 }
 
+
+
 const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName }) => {
-  const [plotData, setPlotData] = useState<PlotData[]>([]);
+  const [plotData, setPlotData] = useState<TransformedPlotDataItem[]>([]); // Changed type to any[] for dynamic keys
+  const [armNames, setArmNames] = useState<string[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -35,14 +40,39 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName }) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const data: KaplanMeier = await response.json();
+        const data: KaplanMeierByArm = await response.json(); // Changed type to KaplanMeierByArm
 
-        const transformedData: PlotData[] = data.time.map((t, index) => ({
-          time: t,
-          probability: data.probability[index],
-          interval: data.interval[index],
-        }));
+        // Transform KaplanMeierByArm into a format suitable for Recharts with multiple lines/areas
+        const timePointMap = new Map<number, TransformedPlotDataItem>();
+
+        data.curves.forEach((curve, armIndex) => {
+          const armName = data.arm_names[armIndex];
+          curve.time.forEach((time, i) => {
+            let timePoint = timePointMap.get(time);
+            if (!timePoint) {
+              timePoint = { time };
+              timePointMap.set(time, timePoint);
+            }
+            timePoint[`${armName}_probability`] = curve.probability[i];
+            timePoint[`${armName}_interval`] = curve.interval[i];
+          });
+        });
+
+        const sortedData: TransformedPlotDataItem[] = Array.from(timePointMap.values()).sort(
+          (a, b) => a.time - b.time
+        );
+        const  transformedData: TransformedPlotDataItem[] = [];
+        let cumulativeData = {...sortedData[0]};
+        for (let i = 0; i < sortedData.length; i++) {
+          const entry = sortedData[i];
+          cumulativeData = {
+            ...cumulativeData,
+            ...entry,
+          }
+          transformedData.push(cumulativeData);
+        }
         setPlotData(transformedData);
+        setArmNames(data.arm_names);
       } catch (e: unknown) {
         setError(e instanceof Error ? e.message : String(e));
       } finally {
@@ -87,16 +117,32 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName }) => {
             <InlineMathTooltip {...props} round={true} xName="\text{Time}" />
           )}
         />
-        <Area
-          type="monotone"
-          dataKey="interval"
-          stroke="none"
-          fill="blue"
-          fillOpacity={0.3}
-          yAxisId={0}
-          name="log-log\ \text{CI}"
-        />
-        <Line type="monotone" dataKey="probability" stroke="blue" dot={false} name="S(t)"/>
+        <Legend verticalAlign="top" align="right" formatter={formatLegend}/>
+        {armNames.map((armName, index) => {
+          const color = PLOT_COLORS[index % PLOT_COLORS.length];
+          return (
+            <React.Fragment key={armName}>
+              <Area
+                type="monotone"
+                dataKey={`${armName}_interval`}
+                stroke={color}
+                strokeOpacity={0.3}
+                fill={color}
+                fillOpacity={0.3}
+                yAxisId={0}
+                name={`\\text{${armName.replace(/_/g, '\\_')} log-log CI}`}
+                legendType="none"
+              />
+              <Line
+                type="monotone"
+                dataKey={`${armName}_probability`}
+                stroke={color}
+                dot={false}
+                name={`\\text{${armName.replace(/_/g, '\\_')}}`}
+              />
+            </React.Fragment>
+          );
+        })}
       </ComposedChart>
     </ResponsiveContainer>
   );

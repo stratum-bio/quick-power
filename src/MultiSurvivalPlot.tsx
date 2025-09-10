@@ -15,6 +15,7 @@ import "katex/dist/katex.min.css";
 import { formatLegend } from "./utils/formatters.tsx";
 import { evalExponentialCurve } from "./utils/survival";
 import { InlineMathTooltip } from "./InlineMathTooltip";
+import { PLOT_COLORS } from "./constants";
 
 interface MultiSurvivalProps {
   names: string[];
@@ -80,13 +81,13 @@ const MultiSurvivalPlot: React.FC<MultiSurvivalProps> = ({
             <InlineMathTooltip {...props} round={true} xName="\text{Time}" />
           )}
         />
-        <Legend verticalAlign="top" align="center" formatter={formatLegend} />
+        <Legend verticalAlign="top" align="right" formatter={formatLegend} />
         {allCurvesData.map((curveEntry, idx) => (
           <Line
             key={idx}
             type="monotone"
             dataKey={`${curveEntry.name}_surv`}
-            stroke={`hsl(${(idx * 240) % 360}, 70%, 50%)`}
+            stroke={PLOT_COLORS[idx % PLOT_COLORS.length]}
             name={`\\text{${curveEntry.name.replace(/_/g, "\\_")}}`}
             dot={false}
             legendType="plainline"
