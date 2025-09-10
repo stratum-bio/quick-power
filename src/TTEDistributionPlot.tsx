@@ -263,17 +263,6 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             )}
           />
           <Legend verticalAlign="top" align="right" formatter={formatLegend} />
-          <ReferenceLine
-            x={totalSampleSize}
-            stroke="darkred"
-            strokeOpacity={0.5}
-            name="n_{samples}"
-            label={{
-              position: "insideTopLeft",
-              value: "Schoenfeld",
-              fill: "darkred",
-            }}
-          />
           <Area
             dataKey="control_hazard"
             stroke="black"
@@ -355,17 +344,6 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             )}
           />
           <Legend verticalAlign="top" align="right" formatter={formatLegend} />
-          <ReferenceLine
-            x={totalSampleSize}
-            stroke="darkred"
-            strokeOpacity={0.5}
-            name="n_{samples}"
-            label={{
-              position: "insideTopLeft",
-              value: "Schoenfeld",
-              fill: "darkred",
-            }}
-          />
           <ReferenceLine
             y={alpha}
             stroke="darkred"

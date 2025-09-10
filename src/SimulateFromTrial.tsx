@@ -34,6 +34,7 @@ const SimulateFromTrial: React.FC = () => {
   const [accrualPeriod, setAccrualPeriod] = useState<number>(2);
   const [followUpPeriod, setFollowUpPeriod] = useState<number>(3);
   const [largestSampleSize, setLargestSampleSize] = useState<number>(500);
+  const [beta, setBeta] = useState<number>(0.8);
   const [showTTEDistributionPlot, setShowTTEDistributionPlot] =
     useState<boolean>(false);
   const [forceSimulation, setForceSimulation] = useState<boolean>(false);
@@ -207,6 +208,22 @@ const SimulateFromTrial: React.FC = () => {
               step="1"
             />
           </div>
+          <div>
+            <label htmlFor="beta" className="block font-medium text-gray-700">
+              Beta
+            </label>
+            <input
+              type="number"
+              id="beta"
+              name="beta"
+              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md"
+              value={beta}
+              onChange={(e) => setBeta(parseFloat(e.target.value))}
+              step="0.01"
+              min="0"
+              max="1"
+            />
+          </div>
         </form>
         <div className="mt-4 flex justify-end">
           <button
@@ -231,7 +248,7 @@ const SimulateFromTrial: React.FC = () => {
             accrual={accrualPeriod}
             followup={followUpPeriod}
             alpha={0.05}
-            beta={0.8}
+            beta={beta}
             controlProportion={0.5}
             treatProportion={0.5}
             controlLabel={`\\text{Control}`}
