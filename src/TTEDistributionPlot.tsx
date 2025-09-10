@@ -13,7 +13,6 @@ import {
 } from "recharts";
 
 import { linspace } from "./utils/survival";
-import { getPercentiles } from "./utils/simulate";
 import { formatLegend } from "./utils/formatters.tsx";
 import { InlineMathTooltip } from "./InlineMathTooltip";
 import { ValidatedInputField } from "./ValidatedInputField";
@@ -110,17 +109,16 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
     setLoading(true);
 
     const worker = new Worker();
-    const percentiles = [2.5, 97.5];
     const sampleEvalPoints = linspace(
       MIN_SAMPLE_SIZE,
       totalSampleSize,
-      evaluationCount + 1,
+      evaluationCount,
     ).map((s) => Math.round(s));
     if (!sampleEvalPoints.includes(totalSampleSize)) {
       sampleEvalPoints.push(totalSampleSize);
       sampleEvalPoints.sort();
     }
-    const jobs = sampleEvalPoints.slice(1);
+    const jobs = sampleEvalPoints;
     setTotal(jobs.length);
     setCompleted(0);
 
@@ -130,12 +128,6 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
       setCompleted(results.length);
       if (results.length === jobs.length) {
         const processedData = results
-          .map((result) => ({
-            ...result,
-            baseInterval: getPercentiles(result.controlHazardDist, percentiles),
-            treatInterval: getPercentiles(result.treatHazardDist, percentiles),
-            pvalueInterval: getPercentiles(result.pValueDist, [beta * 100]),
-          }))
           .map((result) => ({
             sample_size: result.sampleSize,
             true_baseline_tte: (1 / baselineHazard) * Math.log(2),
@@ -185,6 +177,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
         followup,
         permutationCount,
         datasetSimCount,
+        beta,
       });
     });
 
