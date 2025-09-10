@@ -2,6 +2,7 @@ import "./App.css";
 import SchoenfeldClosedForm from "./SchoenfeldClosedForm";
 import TrialList from "./TrialList";
 import TrialDetail from "./TrialDetail";
+import SimulateFromTrial from "./SimulateFromTrial";
 import { Routes, Route, Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -87,6 +88,10 @@ function App() {
             <Route path="/schoenfeld" element={<SchoenfeldClosedForm />} />
             <Route path="/trials" element={<TrialList />} />
             <Route path="/trial-detail/:trialName" element={<TrialDetail />} />
+            <Route
+              path="/simulate-from-trial/:trialName"
+              element={<SimulateFromTrial />}
+            />
             {/* Default route or redirect */}
             <Route path="*" element={<SchoenfeldClosedForm />} />
           </Routes>

@@ -4,6 +4,7 @@ import type { Trial } from "./types/trialdata";
 import CitationFooter from "./CitationFooter";
 import { samplesToLambda } from "./utils/simulate";
 import KaplanMeierPlot from "./KaplanMeierPlot";
+import TTEDistributionPlot from "./TTEDistributionPlot";
 
 function fitLambdaPerArm(data: Trial): Record<string, number> {
   const result: Record<string, number> = {};
@@ -27,10 +28,13 @@ const SimulateFromTrial: React.FC = () => {
   );
 
   // New state variables for the simulation form
-  const [controlArm, setControlArm] = useState<string>('');
-  const [treatmentArm, setTreatmentArm] = useState<string>('');
-  const [accrualPeriod, setAccrualPeriod] = useState<number>(0);
-  const [followUpPeriod, setFollowUpPeriod] = useState<number>(0);
+  const [controlArm, setControlArm] = useState<string>("");
+  const [treatmentArm, setTreatmentArm] = useState<string>("");
+  const [accrualPeriod, setAccrualPeriod] = useState<number>(2);
+  const [followUpPeriod, setFollowUpPeriod] = useState<number>(3);
+  const [largestSampleSize, setLargestSampleSize] = useState<number>(500);
+  const [showTTEDistributionPlot, setShowTTEDistributionPlot] =
+    useState<boolean>(false);
 
   useEffect(() => {
     const fetchTrial = async () => {
@@ -41,6 +45,22 @@ const SimulateFromTrial: React.FC = () => {
         }
         const data: Trial = await response.json();
         setTrialData(data);
+
+        const arms = data.arms.map((a) => a.arm_name);
+        let controlIdx = arms.indexOf("placebo");
+        if (controlIdx == -1) {
+          controlIdx = arms.indexOf("control");
+        }
+        controlIdx = controlIdx % arms.length;
+        const treatIdx = (controlIdx + 1) % arms.length;
+
+        const maxTime = Math.max(...data.arms[0].time);
+
+        setAccrualPeriod(Math.floor(maxTime / 2));
+        setFollowUpPeriod(Math.floor(maxTime / 3));
+        setControlArm(arms[controlIdx]);
+        setTreatmentArm(arms[treatIdx]);
+
         setLambdaByArm(fitLambdaPerArm(data));
       } catch (e: unknown) {
         if (e instanceof Error) {
@@ -70,18 +90,28 @@ const SimulateFromTrial: React.FC = () => {
 
   return (
     <div className="p-6 text-black text-left w-full">
-      <h1 className="text-2xl font-bold mb-4">Simulate from trial {trialData.meta.identifier}</h1>
-      <KaplanMeierPlot trialName={trialName} />
+      <h1 className="text-2xl font-bold mb-4">
+        Simulate from trial {trialData.meta.identifier}
+      </h1>
+      <div className="mt-8 p-4 mx-auto">
+        <h2 className="text-xl font-semibold mb-4">Original</h2>
+        <KaplanMeierPlot trialName={trialName} />
+      </div>
 
-      <div className="mt-8 p-4 border rounded-lg shadow-md bg-white">
+      <div className="mt-8 p-4 border rounded-lg shadow-md bg-white w-3/4 mx-auto">
         <h2 className="text-xl font-semibold mb-4">Simulation Parameters</h2>
         <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label htmlFor="controlArm" className="block text-sm font-medium text-gray-700">Control Arm</label>
+            <label
+              htmlFor="controlArm"
+              className="block font-medium text-gray-700"
+            >
+              Control Arm
+            </label>
             <select
               id="controlArm"
               name="controlArm"
-              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md"
               value={controlArm}
               onChange={(e) => setControlArm(e.target.value)}
             >
@@ -94,11 +124,16 @@ const SimulateFromTrial: React.FC = () => {
             </select>
           </div>
           <div>
-            <label htmlFor="treatmentArm" className="block text-sm font-medium text-gray-700">Treatment Arm</label>
+            <label
+              htmlFor="treatmentArm"
+              className="block font-medium text-gray-700"
+            >
+              Treatment Arm
+            </label>
             <select
               id="treatmentArm"
               name="treatmentArm"
-              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md"
               value={treatmentArm}
               onChange={(e) => setTreatmentArm(e.target.value)}
             >
@@ -111,31 +146,83 @@ const SimulateFromTrial: React.FC = () => {
             </select>
           </div>
           <div>
-            <label htmlFor="accrualPeriod" className="block text-sm font-medium text-gray-700">Accrual Period (months)</label>
+            <label
+              htmlFor="accrualPeriod"
+              className="block font-medium text-gray-700"
+            >
+              Accrual Period
+            </label>
             <input
               type="number"
               id="accrualPeriod"
               name="accrualPeriod"
-              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md"
               value={accrualPeriod}
               onChange={(e) => setAccrualPeriod(parseFloat(e.target.value))}
               step="0.1"
             />
           </div>
           <div>
-            <label htmlFor="followUpPeriod" className="block text-sm font-medium text-gray-700">Follow-up Period (months)</label>
+            <label
+              htmlFor="followUpPeriod"
+              className="block font-medium text-gray-700"
+            >
+              Follow-up Period
+            </label>
             <input
               type="number"
               id="followUpPeriod"
               name="followUpPeriod"
-              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md"
               value={followUpPeriod}
               onChange={(e) => setFollowUpPeriod(parseFloat(e.target.value))}
               step="0.1"
             />
           </div>
+          <div>
+            <label
+              htmlFor="largestSampleSize"
+              className="block font-medium text-gray-700"
+            >
+              Largest Sample Size
+            </label>
+            <input
+              type="number"
+              id="largestSampleSize"
+              name="largestSampleSize"
+              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md"
+              value={largestSampleSize}
+              onChange={(e) => setLargestSampleSize(parseInt(e.target.value))}
+              step="1"
+            />
+          </div>
         </form>
+        <div className="mt-4 flex justify-end">
+          <button
+            type="submit"
+            className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            onClick={() => setShowTTEDistributionPlot(true)}
+          >
+            Start Simulation
+          </button>
+        </div>
       </div>
+      {showTTEDistributionPlot && lambdaByArm !== null && (
+        <div className="mt-8 p-4 mx-auto">
+          <h2 className="text-xl font-semibold mb-4">Results</h2>
+          <TTEDistributionPlot
+            totalSampleSize={largestSampleSize}
+            baselineHazard={lambdaByArm[controlArm]}
+            hazardRatio={lambdaByArm[treatmentArm] / lambdaByArm[controlArm]}
+            accrual={accrualPeriod}
+            followup={followUpPeriod}
+            alpha={0.05}
+            beta={0.8}
+            controlProportion={0.5}
+            treatProportion={0.5}
+          />
+        </div>
+      )}
 
       <div className="mb-4 grid grid-cols-[auto_1fr] gap-x-4">
         <CitationFooter />
