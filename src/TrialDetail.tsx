@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import type { Trial } from "./types/trialdata";
 import CitationFooter from "./CitationFooter";
 import { samplesToLambda } from "./utils/simulate";
@@ -68,6 +68,12 @@ const TrialDetail: React.FC = () => {
   return (
     <div className="p-6 text-black text-left w-full">
       <h1 className="text-2xl font-bold mb-4">{trialData.meta.identifier}</h1>
+      <Link
+        to={`/simulate-from-trial/${trialName}`}
+        className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4"
+      >
+        Simulate from this Trial
+      </Link>
       <div className="mb-4 grid grid-cols-[auto_1fr] gap-x-4">
         <div className="font-semibold">PubMed ID</div>
         <div>{trialData.meta.pubmed}</div>
@@ -75,7 +81,7 @@ const TrialDetail: React.FC = () => {
         <div className="font-semibold">Publication Date</div>
         <div>{trialData.meta.publication_date.split(" ")[0]}</div>
 
-        <div className="font-semibold">Disease</div>
+        <div className="font-semibold">Cancer Type</div>
         <div>
           {
             DISEASE_VAL_TO_NAME[
@@ -93,7 +99,7 @@ const TrialDetail: React.FC = () => {
       {trialName !== undefined && (
         <>
           <h2 className="text-2xl font-bold mb-3 mt-8">Kaplan-Meier</h2>
-          <div className="w-96 md:w-128">
+          <div className="max-w-3xl mx-auto">
             <KaplanMeierPlot trialName={trialName} />
           </div>
         </>
@@ -104,7 +110,7 @@ const TrialDetail: React.FC = () => {
           <h2 className="text-2xl font-bold mb-3 mt-8">
             Fitted Exponential Survival
           </h2>
-          <div className="w-96 md:w-128">
+          <div className="max-w-3xl mx-auto">
             <MultiSurvivalPlot
               names={Object.keys(lambdaByArm)}
               lambdas={Object.values(lambdaByArm)}
@@ -118,8 +124,10 @@ const TrialDetail: React.FC = () => {
       {trialData.arms.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {trialData.arms.map((arm, index) => (
-            <div key={index} className="border p-4 rounded-md">
-              <h3 className="text-xl font-semibold mb-2">{arm.arm_name}</h3>
+            <div key={index} className="border rounded-md">
+              <h3 className="text-xl font-semibold mb-2 bg-theme-light p-4 pb-2 pt-2 rounded-t-lg">
+                {arm.arm_name}
+              </h3>
               <div className="grid grid-cols-2 gap-x-2">
                 <p className="text-right">
                   <span className="font-semibold">Events</span>

@@ -11,7 +11,7 @@ import {
   Area,
 } from "recharts";
 import type { KaplanMeierByArm } from "./types/trialdata";
-import  { InlineMathTooltip } from "./InlineMathTooltip";
+import { InlineMathTooltip } from "./InlineMathTooltip";
 import { PLOT_COLORS } from "./constants";
 import { formatLegend } from "./utils/formatters.tsx";
 
@@ -23,8 +23,6 @@ interface TransformedPlotDataItem {
   time: number;
   [key: string]: number | [number, number] | number; // time, armName_probability, armName_interval
 }
-
-
 
 const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName }) => {
   const [plotData, setPlotData] = useState<TransformedPlotDataItem[]>([]); // Changed type to any[] for dynamic keys
@@ -58,17 +56,17 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName }) => {
           });
         });
 
-        const sortedData: TransformedPlotDataItem[] = Array.from(timePointMap.values()).sort(
-          (a, b) => a.time - b.time
-        );
-        const  transformedData: TransformedPlotDataItem[] = [];
-        let cumulativeData = {...sortedData[0]};
+        const sortedData: TransformedPlotDataItem[] = Array.from(
+          timePointMap.values(),
+        ).sort((a, b) => a.time - b.time);
+        const transformedData: TransformedPlotDataItem[] = [];
+        let cumulativeData = { ...sortedData[0] };
         for (let i = 0; i < sortedData.length; i++) {
           const entry = sortedData[i];
           cumulativeData = {
             ...cumulativeData,
             ...entry,
-          }
+          };
           transformedData.push(cumulativeData);
         }
         setPlotData(transformedData);
@@ -98,7 +96,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName }) => {
         margin={{
           top: 15,
           right: 10,
-          bottom: 0,
+          bottom: 10,
           left: 10,
         }}
       >
@@ -117,7 +115,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName }) => {
             <InlineMathTooltip {...props} round={true} xName="\text{Time}" />
           )}
         />
-        <Legend verticalAlign="top" align="right" formatter={formatLegend}/>
+        <Legend verticalAlign="top" align="right" formatter={formatLegend} />
         {armNames.map((armName, index) => {
           const color = PLOT_COLORS[index % PLOT_COLORS.length];
           return (
@@ -130,7 +128,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName }) => {
                 fill={color}
                 fillOpacity={0.3}
                 yAxisId={0}
-                name={`\\text{${armName.replace(/_/g, '\\_')} log-log CI}`}
+                name={`\\text{${armName.replace(/_/g, "\\_")} log-log CI}`}
                 legendType="none"
               />
               <Line
@@ -138,7 +136,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName }) => {
                 dataKey={`${armName}_probability`}
                 stroke={color}
                 dot={false}
-                name={`\\text{${armName.replace(/_/g, '\\_')}}`}
+                name={`\\text{${armName.replace(/_/g, "\\_")}}`}
               />
             </React.Fragment>
           );

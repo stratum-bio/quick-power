@@ -33,7 +33,7 @@ export const ValidatedInputField: React.FC<ValidatedInputFieldProps> = ({
         className="block text-gray-700 text-sm font-bold mr-2"
         htmlFor={keyValue}
       >
-        {label}
+        {label}{" "}
         {description && (
           <span
             className="text-blue-800 cursor-help relative"
