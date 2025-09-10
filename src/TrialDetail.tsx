@@ -67,7 +67,7 @@ const TrialDetail: React.FC = () => {
 
   return (
     <div className="p-6 text-black text-left w-full">
-      <h1 className="text-2xl font-bold mb-4">{trialData.meta.identifier}</h1>
+      <h2 className="text-3xl font-bold mb-4">{trialData.meta.identifier}</h2>
       <Link
         to={`/simulate-from-trial/${trialName}`}
         className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4"
