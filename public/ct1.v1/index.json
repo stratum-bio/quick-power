@@ -9,14 +9,6 @@
       "subjects": 2166
     },
     {
-      "identifier": "20050181",
-      "pubmed": "24356622",
-      "publication_date": "2014-01-01 00:00:00",
-      "arms": 2,
-      "disease": "colorectal_cancer",
-      "subjects": 2166
-    },
-    {
       "identifier": "A001",
       "pubmed": "25794890",
       "publication_date": "2015-03-20 00:00:00",
@@ -47,14 +39,6 @@
       "arms": 2,
       "disease": "lung_cancer",
       "subjects": 1274
-    },
-    {
-      "identifier": "ACT2",
-      "pubmed": "26483047",
-      "publication_date": "2015-10-19 00:00:00",
-      "arms": 4,
-      "disease": "colorectal_cancer",
-      "subjects": 276
     },
     {
       "identifier": "ACT2",
@@ -177,14 +161,6 @@
       "subjects": 401
     },
     {
-      "identifier": "BREC",
-      "pubmed": "25164908",
-      "publication_date": "2014-08-27 00:00:00",
-      "arms": 2,
-      "disease": "lung_cancer",
-      "subjects": 401
-    },
-    {
       "identifier": "CA184043",
       "pubmed": "24831977",
       "publication_date": "2014-05-13 00:00:00",
@@ -207,22 +183,6 @@
       "arms": 2,
       "disease": "colorectal_cancer",
       "subjects": 1671
-    },
-    {
-      "identifier": "CAIRO3",
-      "pubmed": "25862517",
-      "publication_date": "2015-04-08 00:00:00",
-      "arms": 2,
-      "disease": "colorectal_cancer",
-      "subjects": 1671
-    },
-    {
-      "identifier": "CALGB40502",
-      "pubmed": "26056183",
-      "publication_date": "2015-06-08 00:00:00",
-      "arms": 3,
-      "disease": "breast_cancer",
-      "subjects": 2058
     },
     {
       "identifier": "CALGB40502",
@@ -457,14 +417,6 @@
       "subjects": 1128
     },
     {
-      "identifier": "FFCD2001",
-      "pubmed": "26487578",
-      "publication_date": "2015-10-20 00:00:00",
-      "arms": 4,
-      "disease": "colorectal_cancer",
-      "subjects": 1128
-    },
-    {
       "identifier": "Figitumumab",
       "pubmed": "25395283",
       "publication_date": "2014-11-13 00:00:00",
@@ -527,14 +479,6 @@
       "arms": 2,
       "disease": "breast_cancer",
       "subjects": 281
-    },
-    {
-      "identifier": "GIM2",
-      "pubmed": "25740286",
-      "publication_date": "2015-03-02 00:00:00",
-      "arms": 4,
-      "disease": "breast_cancer",
-      "subjects": 8188
     },
     {
       "identifier": "GIM2",
@@ -673,14 +617,6 @@
       "subjects": 709
     },
     {
-      "identifier": "LUXLung3-6",
-      "pubmed": "25589191",
-      "publication_date": "2015-01-12 00:00:00",
-      "arms": 2,
-      "disease": "lung_cancer",
-      "subjects": 709
-    },
-    {
       "identifier": "LUXLung8",
       "pubmed": "26156651",
       "publication_date": "2015-07-06 00:00:00",
@@ -751,14 +687,6 @@
       "arms": 2,
       "disease": "lung_cancer",
       "subjects": 998
-    },
-    {
-      "identifier": "MINDACT",
-      "pubmed": "27557300",
-      "publication_date": "2016-08-25 00:00:00",
-      "arms": 2,
-      "disease": "breast_cancer",
-      "subjects": 2187
     },
     {
       "identifier": "MINDACT",
@@ -841,28 +769,12 @@
       "subjects": 6154
     },
     {
-      "identifier": "NSABPB35",
-      "pubmed": "26686957",
-      "publication_date": "2015-12-10 00:00:00",
-      "arms": 2,
-      "disease": "breast_cancer",
-      "subjects": 6154
-    },
-    {
       "identifier": "NSABPB40",
       "pubmed": "26272770",
       "publication_date": "2015-08-11 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
       "subjects": 2370
-    },
-    {
-      "identifier": "NSABPR04",
-      "pubmed": "26374429",
-      "publication_date": "2015-09-14 00:00:00",
-      "arms": 4,
-      "disease": "colorectal_cancer",
-      "subjects": 5702
     },
     {
       "identifier": "NSABPR04",
@@ -921,14 +833,6 @@
       "subjects": 1042
     },
     {
-      "identifier": "PALOMA3",
-      "pubmed": "26030518",
-      "publication_date": "2015-06-01 00:00:00",
-      "arms": 4,
-      "disease": "breast_cancer",
-      "subjects": 1042
-    },
-    {
       "identifier": "PEGASE07",
       "pubmed": "25943350",
       "publication_date": "2015-05-05 00:00:00",
@@ -972,14 +876,6 @@
       "identifier": "PROFILE1014",
       "pubmed": "27022118",
       "publication_date": "2016-03-28 00:00:00",
-      "arms": 2,
-      "disease": "lung_cancer",
-      "subjects": 1029
-    },
-    {
-      "identifier": "PROFILE1014",
-      "pubmed": "25470694",
-      "publication_date": "2014-12-04 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
       "subjects": 1029
@@ -1063,14 +959,6 @@
       "arms": 2,
       "disease": "prostate_cancer",
       "subjects": 1092
-    },
-    {
-      "identifier": "RTOG0617",
-      "pubmed": "25601342",
-      "publication_date": "2015-01-16 00:00:00",
-      "arms": 4,
-      "disease": "lung_cancer",
-      "subjects": 889
     },
     {
       "identifier": "RTOG0617",
@@ -1183,14 +1071,6 @@
       "arms": 2,
       "disease": "breast_cancer",
       "subjects": 1204
-    },
-    {
-      "identifier": "TRAPEZE",
-      "pubmed": "26794729",
-      "publication_date": "2016-01-21 00:00:00",
-      "arms": 4,
-      "disease": "prostate_cancer",
-      "subjects": 1514
     },
     {
       "identifier": "TRAPEZE",
