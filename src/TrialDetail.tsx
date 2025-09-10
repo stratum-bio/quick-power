@@ -4,6 +4,7 @@ import type { Trial } from "./types/trialdata";
 import CitationFooter from "./CitationFooter";
 import { samplesToLambda } from "./utils/simulate";
 import MultiSurvivalPlot from "./MultiSurvivalPlot";
+import KaplanMeierPlot from "./KaplanMeierPlot";
 
 import { DISEASE_VAL_TO_NAME } from "./constants";
 
@@ -11,23 +12,27 @@ function fitLambdaPerArm(data: Trial): Record<string, number> {
   const result: Record<string, number> = {};
   for (let i = 0; i < data.arms.length; i++) {
     const arm = data.arms[i];
-    result[arm.arm_name] = samplesToLambda(new Float64Array(arm.time), new Uint8Array(arm.events.map(v => Number(v))));
+    result[arm.arm_name] = samplesToLambda(
+      new Float64Array(arm.time),
+      new Uint8Array(arm.events.map((v) => Number(v))),
+    );
   }
   return result;
 }
 
-
 const TrialDetail: React.FC = () => {
-  const { trial_name } = useParams<{ trial_name: string }>();
+  const { trialName } = useParams<{ trialName: string }>();
   const [trialData, setTrialData] = useState<Trial | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
-  const [lambdaByArm, setLambdaByArm] = useState<Record<string, number> | null>(null);
+  const [lambdaByArm, setLambdaByArm] = useState<Record<string, number> | null>(
+    null,
+  );
 
   useEffect(() => {
     const fetchTrial = async () => {
       try {
-        const response = await fetch(`/ct1.v1/${trial_name}.json`);
+        const response = await fetch(`/ct1.v1/${trialName}.json`);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -46,7 +51,7 @@ const TrialDetail: React.FC = () => {
     };
 
     fetchTrial();
-  }, [trial_name]);
+  }, [trialName]);
 
   if (loading) {
     return <div className="text-black">Loading trial details...</div>;
@@ -60,7 +65,6 @@ const TrialDetail: React.FC = () => {
     return <div className="text-black">No trial data found.</div>;
   }
 
-
   return (
     <div className="p-6 text-black text-left w-full">
       <h1 className="text-2xl font-bold mb-4">{trialData.meta.identifier}</h1>
@@ -72,7 +76,13 @@ const TrialDetail: React.FC = () => {
         <div>{trialData.meta.publication_date.split(" ")[0]}</div>
 
         <div className="font-semibold">Disease</div>
-        <div>{DISEASE_VAL_TO_NAME[trialData.meta.disease as keyof typeof DISEASE_VAL_TO_NAME]}</div>
+        <div>
+          {
+            DISEASE_VAL_TO_NAME[
+              trialData.meta.disease as keyof typeof DISEASE_VAL_TO_NAME
+            ]
+          }
+        </div>
 
         <div className="font-semibold">Subjects</div>
         <div>{trialData.meta.subjects}</div>
@@ -80,38 +90,46 @@ const TrialDetail: React.FC = () => {
         <div className="font-semibold">Arms</div>
         <div>{trialData.meta.arms}</div>
       </div>
-
-      { lambdaByArm !== null ? (
+      {trialName !== undefined && (
         <>
-          <h2 className="text-2xl font-bold mb-3 mt-8">Fitted Exponential Survival</h2>
+          <h2 className="text-2xl font-bold mb-3 mt-8">Kaplan-Meier</h2>
           <div className="w-96 md:w-128">
-            <MultiSurvivalPlot names={Object.keys(lambdaByArm)} lambdas={Object.values(lambdaByArm) } maxTime={Math.max(...trialData.arms[0].time)} />
+            <KaplanMeierPlot trialName={trialName} />
           </div>
         </>
-      ): null } 
+      )}
+
+      {lambdaByArm !== null ? (
+        <>
+          <h2 className="text-2xl font-bold mb-3 mt-8">
+            Fitted Exponential Survival
+          </h2>
+          <div className="w-96 md:w-128">
+            <MultiSurvivalPlot
+              names={Object.keys(lambdaByArm)}
+              lambdas={Object.values(lambdaByArm)}
+              maxTime={Math.max(...trialData.arms[0].time)}
+            />
+          </div>
+        </>
+      ) : null}
 
       <h2 className="text-2xl font-bold mb-3 mt-8">Trial Arms</h2>
       {trialData.arms.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {trialData.arms.map((arm, index) => (
             <div key={index} className="border p-4 rounded-md">
-              <h3 className="text-xl font-semibold mb-2">
-                {arm.arm_name}
-              </h3>
+              <h3 className="text-xl font-semibold mb-2">{arm.arm_name}</h3>
               <div className="grid grid-cols-2 gap-x-2">
                 <p className="text-right">
                   <span className="font-semibold">Events</span>
                 </p>
-                <p>
-                  {arm.events.filter(Boolean).length}
-                </p>
+                <p>{arm.events.filter(Boolean).length}</p>
                 <p className="text-right">
                   <span className="font-semibold">Subjects</span>
                 </p>
-                <p>
-                  {arm.time.length}
-                </p>
-                { lambdaByArm !== null ? (
+                <p>{arm.time.length}</p>
+                {lambdaByArm !== null ? (
                   <>
                     <p className="text-right">
                       <span className="font-semibold">Median TTE</span>
@@ -120,7 +138,7 @@ const TrialDetail: React.FC = () => {
                       {(Math.log(2) / lambdaByArm[arm.arm_name]).toFixed(3)}
                     </p>
                   </>
-                ) : null }
+                ) : null}
               </div>
             </div>
           ))}

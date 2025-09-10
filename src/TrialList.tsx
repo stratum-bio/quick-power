@@ -94,7 +94,10 @@ const TrialList: React.FC = () => {
                     <div>Trial Name</div>
                     <div>Subjects</div>
                     <div>Arms</div>
-                    <div><span className="desktop-only">Publication Date</span><span className="mobile-only">Date</span></div>
+                    <div>
+                      <span className="desktop-only">Publication Date</span>
+                      <span className="mobile-only">Date</span>
+                    </div>
                     <div>PubMed</div>
                   </div>
                   <div className="">
