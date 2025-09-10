@@ -209,7 +209,7 @@ const SchoenfeldClosedForm: React.FC = () => {
       </div>
       <div className="mt-8">
         <TTEDistributionPlot
-          totalSampleSize={derivedParameters.sampleSize}
+          totalSampleSize={Math.round(derivedParameters.sampleSize) * 1.5}
           baselineHazard={baseHazard}
           hazardRatio={parameters.hazardRatio}
           accrual={parameters.accrual}
@@ -218,6 +218,9 @@ const SchoenfeldClosedForm: React.FC = () => {
           beta={parameters.beta}
           controlProportion={parameters.group2Proportion}
           treatProportion={parameters.group1Proportion}
+          controlLabel="1 / \lambda_B"
+          treatLabel="1 / \lambda_A"
+          forceUpdate={false}
         />
       </div>
       <div className="text-left mx-auto mt-8 mb-8 px-4 text-black">

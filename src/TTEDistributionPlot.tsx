@@ -31,6 +31,9 @@ interface TTEDistributionProps {
   beta: number;
   controlProportion: number;
   treatProportion: number;
+  controlLabel: string;
+  treatLabel: string;
+  forceUpdate: boolean;
 }
 
 interface HazardDistPlotData {
@@ -69,6 +72,9 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   beta,
   controlProportion,
   treatProportion,
+  controlLabel,
+  treatLabel,
+  forceUpdate = false,
 }) => {
   const allProperties = {
     totalSampleSize,
@@ -80,6 +86,9 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
     beta,
     controlProportion,
     treatProportion,
+    controlLabel,
+    treatLabel,
+    forceUpdate,
   };
 
   const [properties, setProperties] =
@@ -94,15 +103,13 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   const [evaluationCount, setEvaluationCount] = useState(11);
   const [triggerUpdate, setTriggerUpdate] = useState(0);
 
-  const maxSampleSize = Math.round(totalSampleSize * 1.5);
-
   /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     setLoading(true);
 
     const worker = new Worker();
     const percentiles = [2.5, 97.5];
-    const sampleEvalPoints = linspace(0, maxSampleSize, evaluationCount).map(
+    const sampleEvalPoints = linspace(0, totalSampleSize, evaluationCount+1).map(
       (s) => Math.round(s),
     );
     if (!sampleEvalPoints.includes(totalSampleSize)) {
@@ -154,6 +161,9 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
           beta,
           controlProportion,
           treatProportion,
+          controlLabel,
+          treatLabel,
+          forceUpdate,
         });
 
         worker.terminate();
@@ -177,7 +187,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
     return () => {
       worker.terminate();
     };
-  }, [triggerUpdate]);
+  }, [triggerUpdate, forceUpdate]);
   /* eslint-enable react-hooks/exhaustive-deps */
 
   if (loading) {
@@ -205,22 +215,11 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
       "Input values don't match simulation results, press the Update button to re-run the simulation";
   }
 
-  /*
-  const hazardMin = Math.floor(
-    Math.min(
-      ...data.map((e) => Math.min(...e.treat_hazard, ...e.control_hazard)),
-    ),
-  );
-  const hazardMax = Math.ceil(
-    Math.max(
-      ...data.map((e) => Math.max(...e.treat_hazard, ...e.control_hazard)),
-    ),
-  );
-  */
-
   return (
     <div className={containerClass}>
+      <div className="pt-4 pl-4 justify-center">
       <p className="font-bold text-red-950 italic"> {mismatchMessage} </p>
+      </div>
       <ResponsiveContainer width="100%" height={400}>
         <ComposedChart
           data={data}
@@ -287,7 +286,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             dataKey="true_baseline_tte"
             stroke="black"
             dot={false}
-            name="1 / \lambda_B"
+            name={controlLabel}
             strokeWidth={2}
           />
 
@@ -305,7 +304,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             dataKey="true_treat_tte"
             stroke="blue"
             dot={false}
-            name="1 / \lambda_A"
+            name={treatLabel}
             strokeWidth={2}
           />
         </ComposedChart>
@@ -390,7 +389,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
         </ComposedChart>
       </ResponsiveContainer>
       <div className="flex flex-col items-end justify-center mt-4 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-4">
+        <div className="grid grid-cols-1 lg:grid-cols-4 mr-16 lg:mr-0">
           <ValidatedInputField
             label="Permutations"
             value={permutationCount}
@@ -416,10 +415,10 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             max={100}
             min={2}
             keyValue="sampleSizeEvals"
-            description={`Number of different sample sizes to evaluate between 0 and ${maxSampleSize}`}
+            description={`Number of different sample sizes to evaluate between 0 and ${totalSampleSize}`}
           />
           <button
-            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 mb-4 ml-4 w-32"
+            className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 mb-4 ml-16 lg:ml-12"
             onClick={() => setTriggerUpdate(triggerUpdate + 1)}
           >
             Update

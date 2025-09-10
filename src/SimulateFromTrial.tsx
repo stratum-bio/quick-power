@@ -5,6 +5,7 @@ import CitationFooter from "./CitationFooter";
 import { samplesToLambda } from "./utils/simulate";
 import KaplanMeierPlot from "./KaplanMeierPlot";
 import TTEDistributionPlot from "./TTEDistributionPlot";
+import { InlineMath } from "react-katex";
 
 function fitLambdaPerArm(data: Trial): Record<string, number> {
   const result: Record<string, number> = {};
@@ -35,6 +36,13 @@ const SimulateFromTrial: React.FC = () => {
   const [largestSampleSize, setLargestSampleSize] = useState<number>(500);
   const [showTTEDistributionPlot, setShowTTEDistributionPlot] =
     useState<boolean>(false);
+  const [forceSimulation, setForceSimulation] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (forceSimulation) {
+      setForceSimulation(false);
+    }
+  }, [forceSimulation]);
 
   useEffect(() => {
     const fetchTrial = async () => {
@@ -201,8 +209,11 @@ const SimulateFromTrial: React.FC = () => {
           <button
             type="submit"
             className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-            onClick={() => setShowTTEDistributionPlot(true)}
-          >
+            onClick={() => {
+              setShowTTEDistributionPlot(true);
+              setForceSimulation(true);
+            }}
+            >
             Start Simulation
           </button>
         </div>
@@ -220,7 +231,21 @@ const SimulateFromTrial: React.FC = () => {
             beta={0.8}
             controlProportion={0.5}
             treatProportion={0.5}
+            controlLabel={`\\text{Control}`}
+            treatLabel={`\\text{Treatment}`}
+            forceUpdate={forceSimulation}
           />
+          
+          <br /> 
+          <p>
+
+            The initial simulation parameters are quick and
+            noisy to demonstrate the results. For more accurate
+            simulated results, increase the Permutations and Simulations.  For something visually interesting, setting Simulations to 500 and Permutations to 500.  This will run <InlineMath math="500 * 500 = 250000" /> randomized computations for each sample size evaluated.  When evaluating 11 sample sizes, this usually takes 3-4 minutes.
+          </p>
+          <br />
+          <p>For accurate results, it is recommended to set Permutations and Simulations to 1000 each, but this will end up taking up to a half hour.  Mobile devices pause computations when the page is not in the foreground, so it is recommended to run larger simulations on desktop.
+          </p>
         </div>
       )}
 
