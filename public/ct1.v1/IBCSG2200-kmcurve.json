@@ -1,7 +1,7 @@
 {
   "arm_names": [
-    "CM_maintenance",
-    "No_CM"
+    "cm_maintenance",
+    "no_cm"
   ],
   "curves": [
     {

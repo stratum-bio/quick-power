@@ -1,7 +1,7 @@
 {
   "arm_names": [
-    "Delayed_ADT",
-    "Immediate_ADT"
+    "delayed_adt",
+    "immediate_adt"
   ],
   "curves": [
     {

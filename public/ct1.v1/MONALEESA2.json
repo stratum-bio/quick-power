@@ -681,7 +681,7 @@
         20.85,
         21.05
       ],
-      "arm_name": "Placebo"
+      "arm_name": "placebo"
     },
     {
       "events": [
@@ -1356,7 +1356,7 @@
         21.65,
         22.45
       ],
-      "arm_name": "Ribociclib_letrozole"
+      "arm_name": "ribociclib_letrozole"
     }
   ]
 }

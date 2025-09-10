@@ -1,7 +1,7 @@
 {
   "arm_names": [
-    "Chemotherapy",
-    "Pembrolizumab"
+    "chemotherapy",
+    "pembrolizumab"
   ],
   "curves": [
     {

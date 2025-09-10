@@ -1601,7 +1601,7 @@
         48.0,
         48.0
       ],
-      "arm_name": "Conventional_fractionation"
+      "arm_name": "conventional_fractionation"
     },
     {
       "events": [
@@ -3236,7 +3236,7 @@
         48.0,
         48.0
       ],
-      "arm_name": "Hypofractionation"
+      "arm_name": "hypofractionation"
     }
   ]
 }

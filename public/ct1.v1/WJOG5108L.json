@@ -1133,7 +1133,7 @@
         44.05,
         45.15
       ],
-      "arm_name": "Erlotinib"
+      "arm_name": "erlotinib"
     },
     {
       "events": [
@@ -2256,7 +2256,7 @@
         34.65,
         36.55
       ],
-      "arm_name": "Gefitinib"
+      "arm_name": "gefitinib"
     }
   ]
 }

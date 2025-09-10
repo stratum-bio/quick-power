@@ -3043,7 +3043,7 @@
         65.65,
         68.05
       ],
-      "arm_name": "MAGE_A3"
+      "arm_name": "mage_a3"
     },
     {
       "events": [
@@ -4564,7 +4564,7 @@
         62.95,
         63.55
       ],
-      "arm_name": "Placebo"
+      "arm_name": "placebo"
     }
   ]
 }

@@ -1013,7 +1013,7 @@
         15.95,
         16.45
       ],
-      "arm_name": "Onaturzumab_erlotinib"
+      "arm_name": "onaturzumab_erlotinib"
     },
     {
       "events": [
@@ -2016,7 +2016,7 @@
         17.05,
         17.9
       ],
-      "arm_name": "Placebo_erlotinib"
+      "arm_name": "placebo_erlotinib"
     }
   ]
 }

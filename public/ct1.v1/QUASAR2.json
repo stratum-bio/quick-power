@@ -1947,7 +1947,7 @@
         4.98,
         4.98
       ],
-      "arm_name": "CAP"
+      "arm_name": "cap"
     },
     {
       "events": [
@@ -3898,7 +3898,7 @@
         4.99,
         4.99
       ],
-      "arm_name": "CAP_BEV"
+      "arm_name": "cap_bev"
     }
   ]
 }

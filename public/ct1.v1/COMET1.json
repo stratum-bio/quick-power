@@ -2741,7 +2741,7 @@
         21.15,
         21.25
       ],
-      "arm_name": "Cabozantinib"
+      "arm_name": "cabozantinib"
     },
     {
       "events": [
@@ -4132,7 +4132,7 @@
         20.15,
         20.55
       ],
-      "arm_name": "Prednisone"
+      "arm_name": "prednisone"
     }
   ]
 }

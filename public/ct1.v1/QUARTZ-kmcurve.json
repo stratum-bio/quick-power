@@ -1,7 +1,7 @@
 {
   "arm_names": [
-    "OSC",
-    "OSC_WBRT"
+    "osc",
+    "osc_wbrt"
   ],
   "curves": [
     {

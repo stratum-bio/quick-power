@@ -1,7 +1,7 @@
 {
   "arm_names": [
-    "Chemotherapy",
-    "No_chemotherapy"
+    "chemotherapy",
+    "no_chemotherapy"
   ],
   "curves": [
     {

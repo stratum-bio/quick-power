@@ -1201,7 +1201,7 @@
         61.75,
         67.45
       ],
-      "arm_name": "Eto_Cis"
+      "arm_name": "eto_cis"
     },
     {
       "events": [
@@ -2412,7 +2412,7 @@
         61.45,
         64.45
       ],
-      "arm_name": "Pem_Cis"
+      "arm_name": "pem_cis"
     }
   ]
 }

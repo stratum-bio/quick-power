@@ -1369,7 +1369,7 @@
         24.05,
         24.15
       ],
-      "arm_name": "Afatinib"
+      "arm_name": "afatinib"
     },
     {
       "events": [
@@ -2052,7 +2052,7 @@
         19.95,
         21.05
       ],
-      "arm_name": "Trastuzumab"
+      "arm_name": "trastuzumab"
     }
   ]
 }

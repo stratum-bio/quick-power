@@ -1,7 +1,7 @@
 {
   "arm_names": [
-    "Palbociclib_letrozole",
-    "Placebo_letrozole"
+    "palbociclib_letrozole",
+    "placebo_letrozole"
   ],
   "curves": [
     {

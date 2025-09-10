@@ -315,7 +315,7 @@
         8.0,
         8.0
       ],
-      "arm_name": "Delayed_ADT"
+      "arm_name": "delayed_adt"
     },
     {
       "events": [
@@ -606,7 +606,7 @@
         8.0,
         8.0
       ],
-      "arm_name": "Immediate_ADT"
+      "arm_name": "immediate_adt"
     }
   ]
 }

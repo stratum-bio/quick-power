@@ -1,7 +1,7 @@
 {
   "arm_names": [
-    "RT",
-    "RT_goserelin"
+    "rt",
+    "rt_goserelin"
   ],
   "curves": [
     {

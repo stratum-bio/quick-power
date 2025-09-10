@@ -217,17 +217,16 @@ const SimulateFromTrial: React.FC = () => {
             <label htmlFor="beta" className="block font-medium text-gray-700">
               Beta
             </label>
-            <input
-              type="number"
+            <select
               id="beta"
               name="beta"
-              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md"
+              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md"
               value={beta}
               onChange={(e) => setBeta(parseFloat(e.target.value))}
-              step="0.01"
-              min="0"
-              max="1"
-            />
+            >
+              <option value={0.8}>0.8</option>
+              <option value={0.9}>0.9</option>
+            </select>
           </div>
         </form>
         <div className="mt-4 flex justify-end">

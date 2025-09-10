@@ -1157,7 +1157,7 @@
         21.45,
         21.95
       ],
-      "arm_name": "Placebo"
+      "arm_name": "placebo"
     },
     {
       "events": [
@@ -3490,7 +3490,7 @@
         25.65,
         27.8
       ],
-      "arm_name": "TASQ"
+      "arm_name": "tasq"
     }
   ]
 }

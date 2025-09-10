@@ -1,7 +1,7 @@
 {
   "arm_names": [
-    "Deferred_RT",
-    "Immediate_RT"
+    "deferred_rt",
+    "immediate_rt"
   ],
   "curves": [
     {

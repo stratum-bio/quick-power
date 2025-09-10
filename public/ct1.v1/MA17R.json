@@ -3849,7 +3849,7 @@
         9.99,
         9.99
       ],
-      "arm_name": "Letrozole"
+      "arm_name": "letrozole"
     },
     {
       "events": [
@@ -7692,7 +7692,7 @@
         9.94,
         9.94
       ],
-      "arm_name": "Placebo"
+      "arm_name": "placebo"
     }
   ]
 }

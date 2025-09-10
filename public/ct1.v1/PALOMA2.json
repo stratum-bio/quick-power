@@ -901,7 +901,7 @@
         33.0,
         33.0
       ],
-      "arm_name": "Palbociclib_letrozole"
+      "arm_name": "palbociclib_letrozole"
     },
     {
       "events": [
@@ -1352,7 +1352,7 @@
         33.0,
         33.0
       ],
-      "arm_name": "Placebo_letrozole"
+      "arm_name": "placebo_letrozole"
     }
   ]
 }

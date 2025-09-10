@@ -215,7 +215,7 @@
         12.0,
         12.0
       ],
-      "arm_name": "Deferred_RT"
+      "arm_name": "deferred_rt"
     },
     {
       "events": [
@@ -426,7 +426,7 @@
         12.0,
         12.0
       ],
-      "arm_name": "Immediate_RT"
+      "arm_name": "immediate_rt"
     }
   ]
 }

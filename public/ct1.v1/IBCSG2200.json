@@ -1097,7 +1097,7 @@
         7.92,
         7.92
       ],
-      "arm_name": "CM_maintenance"
+      "arm_name": "cm_maintenance"
     },
     {
       "events": [
@@ -2182,7 +2182,7 @@
         7.92,
         7.92
       ],
-      "arm_name": "No_CM"
+      "arm_name": "no_cm"
     }
   ]
 }
