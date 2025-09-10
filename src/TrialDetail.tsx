@@ -99,7 +99,7 @@ const TrialDetail: React.FC = () => {
       {trialName !== undefined && (
         <>
           <h2 className="text-2xl font-bold mb-3 mt-8">Kaplan-Meier</h2>
-          <div className="w-96 md:w-128">
+          <div className="max-w-3xl mx-auto">
             <KaplanMeierPlot trialName={trialName} />
           </div>
         </>
@@ -110,7 +110,7 @@ const TrialDetail: React.FC = () => {
           <h2 className="text-2xl font-bold mb-3 mt-8">
             Fitted Exponential Survival
           </h2>
-          <div className="w-96 md:w-128">
+          <div className="max-w-3xl mx-auto">
             <MultiSurvivalPlot
               names={Object.keys(lambdaByArm)}
               lambdas={Object.values(lambdaByArm)}

@@ -134,13 +134,13 @@ const SchoenfeldClosedForm: React.FC = () => {
       <div className="text-left mx-auto mt-8 mb-8 px-4 text-black">
         <h3 className="text-xl mb-4">Visualize the parameters</h3>
       </div>
-      <div className="mt-8">
+      <div className="m-4 mt-8">
         <SurvivalPlot
           hazardRatio={parameters.hazardRatio}
           baseSurv={baseSurv}
         />
       </div>
-      <div className="text-left mx-auto mt-8 mb-8 px-4 text-black">
+      <div className="text-left mx-auto m-8 m-8 px-4 text-black">
         <p>
           Here we are simply plotting the information provided.
           <InlineMath math="\ S_B(t)" /> is directly entered in the second part
@@ -173,7 +173,7 @@ const SchoenfeldClosedForm: React.FC = () => {
           Fit a parametric (exponential) curve to the data
         </h3>
       </div>
-      <div className="text-left mx-auto mt-8 mb-8 px-4 text-black">
+      <div className="text-left mx-auto m-8 m-8 px-4 text-black">
         <p>
           Given the 3 points provided for <InlineMath math="\ S_B(t)" /> and the
           3 derived points for <InlineMath math="\ S_A(t)" />, we can fit naive
@@ -181,7 +181,7 @@ const SchoenfeldClosedForm: React.FC = () => {
           and see the result.
         </p>
       </div>
-      <div className="mt-8">
+      <div className="m-8">
         <ExponentialSurvivalPlot
           hazardRatio={parameters.hazardRatio}
           baseSurv={baseSurv}
@@ -207,7 +207,7 @@ const SchoenfeldClosedForm: React.FC = () => {
           estimate compared to Schoenfeld's formula.
         </p>
       </div>
-      <div className="mt-8">
+      <div className="m-8">
         <TTEDistributionPlot
           totalSampleSize={Math.round(derivedParameters.sampleSize) * 1.5}
           baselineHazard={baseHazard}
