@@ -76,7 +76,7 @@
       "identifier": "AIO0207",
       "pubmed": "26361971",
       "publication_date": "2015-09-09 00:00:00",
-      "arms": 6,
+      "arms": 3,
       "disease": "colorectal_cancer",
       "subjects": 924
     },
@@ -196,7 +196,7 @@
       "identifier": "CA184095",
       "pubmed": "28034081",
       "publication_date": "2016-10-10 00:00:00",
-      "arms": 4,
+      "arms": 2,
       "disease": "prostate_cancer",
       "subjects": 1204
     },
@@ -284,7 +284,7 @@
       "identifier": "CHHiP",
       "pubmed": "27339115",
       "publication_date": "2016-06-20 00:00:00",
-      "arms": 6,
+      "arms": 3,
       "disease": "prostate_cancer",
       "subjects": 6432
     },
@@ -972,7 +972,7 @@
       "identifier": "PROFILE1014",
       "pubmed": "27022118",
       "publication_date": "2016-03-28 00:00:00",
-      "arms": 4,
+      "arms": 2,
       "disease": "lung_cancer",
       "subjects": 1029
     },
@@ -980,7 +980,7 @@
       "identifier": "PROFILE1014",
       "pubmed": "25470694",
       "publication_date": "2014-12-04 00:00:00",
-      "arms": 4,
+      "arms": 2,
       "disease": "lung_cancer",
       "subjects": 1029
     },

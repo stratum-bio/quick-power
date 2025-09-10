@@ -1,7 +1,7 @@
 {
   "arm_names": [
-    "Neratinib",
-    "Placebo"
+    "neratinib",
+    "placebo"
   ],
   "curves": [
     {

@@ -2853,7 +2853,7 @@
         23.9,
         23.9
       ],
-      "arm_name": "Neratinib"
+      "arm_name": "neratinib"
     },
     {
       "events": [
@@ -5700,7 +5700,7 @@
         23.9,
         23.9
       ],
-      "arm_name": "Placebo"
+      "arm_name": "placebo"
     }
   ]
 }

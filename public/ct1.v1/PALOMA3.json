@@ -707,7 +707,7 @@
         13.85,
         14.25
       ],
-      "arm_name": "Fulvestrant_palbociclib"
+      "arm_name": "fulvestrant_palbociclib"
     },
     {
       "events": [
@@ -1062,7 +1062,7 @@
         12.45,
         13.25
       ],
-      "arm_name": "Fulvestrant_placebo"
+      "arm_name": "fulvestrant_placebo"
     },
     {
       "events": [

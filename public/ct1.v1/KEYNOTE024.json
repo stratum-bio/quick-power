@@ -617,7 +617,7 @@
         17.55,
         18.25
       ],
-      "arm_name": "Chemotherapy"
+      "arm_name": "chemotherapy"
     },
     {
       "events": [
@@ -1240,7 +1240,7 @@
         18.25,
         18.55
       ],
-      "arm_name": "Pembrolizumab"
+      "arm_name": "pembrolizumab"
     }
   ]
 }

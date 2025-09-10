@@ -373,7 +373,7 @@
         20.95,
         54.0
       ],
-      "arm_name": "Combination_chemotherapy"
+      "arm_name": "combination_chemotherapy"
     },
     {
       "events": [
@@ -740,7 +740,7 @@
         21.3,
         37.25
       ],
-      "arm_name": "Topotecan"
+      "arm_name": "topotecan"
     }
   ]
 }

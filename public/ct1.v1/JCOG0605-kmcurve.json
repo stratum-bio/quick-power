@@ -1,7 +1,7 @@
 {
   "arm_names": [
-    "Combination_chemotherapy",
-    "Topotecan"
+    "combination_chemotherapy",
+    "topotecan"
   ],
   "curves": [
     {

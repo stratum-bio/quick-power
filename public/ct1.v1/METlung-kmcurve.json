@@ -1,7 +1,7 @@
 {
   "arm_names": [
-    "Onaturzumab_erlotinib",
-    "Placebo_erlotinib"
+    "onaturzumab_erlotinib",
+    "placebo_erlotinib"
   ],
   "curves": [
     {

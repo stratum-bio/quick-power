@@ -1129,7 +1129,7 @@
         36.0,
         36.0
       ],
-      "arm_name": "BEV_capecitabine"
+      "arm_name": "bev_capecitabine"
     },
     {
       "events": [
@@ -2276,7 +2276,7 @@
         36.0,
         36.0
       ],
-      "arm_name": "BEV_paclitaxel"
+      "arm_name": "bev_paclitaxel"
     }
   ]
 }

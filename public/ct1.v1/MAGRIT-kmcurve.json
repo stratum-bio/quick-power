@@ -1,7 +1,7 @@
 {
   "arm_names": [
-    "MAGE_A3",
-    "Placebo"
+    "mage_a3",
+    "placebo"
   ],
   "curves": [
     {

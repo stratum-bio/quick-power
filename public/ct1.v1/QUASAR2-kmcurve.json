@@ -1,7 +1,7 @@
 {
   "arm_names": [
-    "CAP",
-    "CAP_BEV"
+    "cap",
+    "cap_bev"
   ],
   "curves": [
     {

@@ -1,7 +1,7 @@
 {
   "arm_names": [
-    "Conventional_fractionation",
-    "Hypofractionation"
+    "conventional_fractionation",
+    "hypofractionation"
   ],
   "curves": [
     {

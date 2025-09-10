@@ -1,7 +1,7 @@
 {
   "arm_names": [
-    "BEV_capecitabine",
-    "BEV_paclitaxel"
+    "bev_capecitabine",
+    "bev_paclitaxel"
   ],
   "curves": [
     {

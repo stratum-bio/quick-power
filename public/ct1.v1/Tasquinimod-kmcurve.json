@@ -1,7 +1,7 @@
 {
   "arm_names": [
-    "Placebo",
-    "TASQ"
+    "placebo",
+    "tasq"
   ],
   "curves": [
     {

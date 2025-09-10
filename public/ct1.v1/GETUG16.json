@@ -747,7 +747,7 @@
         93.95,
         94.95
       ],
-      "arm_name": "RT"
+      "arm_name": "rt"
     },
     {
       "events": [
@@ -1480,7 +1480,7 @@
         92.05,
         92.55
       ],
-      "arm_name": "RT_goserelin"
+      "arm_name": "rt_goserelin"
     }
   ]
 }
