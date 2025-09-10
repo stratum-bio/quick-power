@@ -21,3 +21,14 @@ export interface Trial {
 export interface TrialIndex {
   trials: TrialMeta[];
 }
+
+export interface KaplanMeier {
+  time: number[];
+  probability: number[];
+  interval: [number, number][];
+}
+
+export interface KaplanMeierByArm {
+  arm_names: string[];
+  curves: KaplanMeier[];
+}

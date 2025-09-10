@@ -86,14 +86,9 @@ function App() {
           <Routes>
             <Route path="/schoenfeld" element={<SchoenfeldClosedForm />} />
             <Route path="/trials" element={<TrialList />} />
-            <Route path="/trial-detail/:trial_name" element={<TrialDetail />} />
+            <Route path="/trial-detail/:trialName" element={<TrialDetail />} />
             {/* Default route or redirect */}
-            <Route
-              path="*"
-              element={
-                <SchoenfeldClosedForm />
-              }
-            />
+            <Route path="*" element={<SchoenfeldClosedForm />} />
           </Routes>
         </main>
       </div>
