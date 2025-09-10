@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Page Not Found</title>
+  <script type="text/javascript">
+    // Single Page Apps for GitHub Pages
+    // MIT License
+    // https://github.com/rafgraph/spa-github-pages
+    // This script takes the current URL and converts the path and query
+    // string into just the path, and then redirects to the path with a
+    // 200 status code
+    (function(){
+      var redirect = sessionStorage.getItem('redirect');
+      // Remove redirect from storage
+      sessionStorage.removeItem('redirect');
+      // If redirect is set, then we redirect to the path
+      if (redirect) {
+        history.replaceState(null, null, redirect);
+      } else {
+        // Otherwise, we redirect to the root
+        window.location.replace('/');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <!-- This is a placeholder for the actual content -->
+  <!-- The JavaScript above will handle the redirection -->
+</body>
+</html>
