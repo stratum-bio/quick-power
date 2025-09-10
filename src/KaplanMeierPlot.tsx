@@ -96,7 +96,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName }) => {
         margin={{
           top: 15,
           right: 10,
-          bottom: 0,
+          bottom: 10,
           left: 10,
         }}
       >

@@ -75,7 +75,7 @@ const TrialDetail: React.FC = () => {
         <div className="font-semibold">Publication Date</div>
         <div>{trialData.meta.publication_date.split(" ")[0]}</div>
 
-        <div className="font-semibold">Disease</div>
+        <div className="font-semibold">Cancer Type</div>
         <div>
           {
             DISEASE_VAL_TO_NAME[
@@ -118,8 +118,8 @@ const TrialDetail: React.FC = () => {
       {trialData.arms.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {trialData.arms.map((arm, index) => (
-            <div key={index} className="border p-4 rounded-md">
-              <h3 className="text-xl font-semibold mb-2">{arm.arm_name}</h3>
+            <div key={index} className="border rounded-md">
+              <h3 className="text-xl font-semibold mb-2 bg-theme-light p-4 pb-2 pt-2 rounded-t-lg">{arm.arm_name}</h3>
               <div className="grid grid-cols-2 gap-x-2">
                 <p className="text-right">
                   <span className="font-semibold">Events</span>
