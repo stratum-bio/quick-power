@@ -21,16 +21,16 @@ export const ValidatedInputField: React.FC<ValidatedInputFieldProps> = ({
 }) => {
   const [showDescription, setShowDescription] = useState<boolean>(false);
 
-  let className =
-    "shadow appearance-none border rounded w-20 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline";
+  let inputClassName = "mt-1 block w-48 pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md text-right";
   if (value >= max || value <= min) {
-    className += " border-red-500";
+    inputClassName += " border-red-500";
   }
 
   return (
-    <div className="flex items-center mb-4 justify-end text-right">
+    <div className="mb-4 flex flex-col items-center lg:items-end">
+      <div className="block text-left w-48">
       <label
-        className="block text-gray-700 text-sm font-bold mr-2"
+        className="block font-medium text-gray-700 mb-1"
         htmlFor={keyValue}
       >
         {label}{" "}
@@ -50,8 +50,9 @@ export const ValidatedInputField: React.FC<ValidatedInputFieldProps> = ({
           </span>
         )}
       </label>
+      </div>
       <input
-        className={className}
+        className={inputClassName}
         type="number"
         id={keyValue}
         value={value}

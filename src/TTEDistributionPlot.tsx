@@ -365,7 +365,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
           />
         </ComposedChart>
       </ResponsiveContainer>
-      <div className="flex flex-col items-end justify-center mt-4 w-full">
+      <div className="flex flex-col items-center lg:items-end justify-center mt-4 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr_1fr_min-content] mr-16 gap-4 lg:mr-0">
           <ValidatedInputField
             label="Permutations"
@@ -395,7 +395,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             description={`Number of different sample sizes to evaluate between 0 and ${totalSampleSize}`}
           />
           <button
-            className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 mb-4"
+            className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 mb-4 lg:mt-8"
             onClick={() => setTriggerUpdate(triggerUpdate + 1)}
           >
             Update

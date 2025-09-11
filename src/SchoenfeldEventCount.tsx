@@ -47,8 +47,16 @@ const SchoenfeldEventCount: React.FC<SchoenfeldEventCountProps> = ({
     }));
   };
 
-  const alphaLabel = <InlineMath math="\alpha" />;
-  const betaLabel = <InlineMath math="\beta" />;
+  const alphaLabel = (
+    <span>
+    Alpha, <InlineMath math="\alpha" />
+    </span>
+  );
+  const betaLabel = (
+    <span>
+    Beta, <InlineMath math="\beta" />
+    </span>
+  );
   const groupALabel = (
     <span>
       Group A Proportion, <InlineMath math="P_{A}" />
@@ -66,8 +74,8 @@ const SchoenfeldEventCount: React.FC<SchoenfeldEventCountProps> = ({
   );
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 items-end gap-x-8 pr-24 pl-16 lg:pr-0 lg:pl-0">
-      <div>
+    <div className="grid grid-cols-1 md:grid-cols-2 items-center lg:items-end gap-x-8 pr-24 pl-16 lg:pr-0 lg:pl-0">
+      <div className="text-right">
         <form>
           <ValidatedInputField
             max={0.5}
@@ -103,15 +111,17 @@ const SchoenfeldEventCount: React.FC<SchoenfeldEventCountProps> = ({
             value={parameters.group1Proportion}
             onValueChange={group1Change}
           />
-          <div className="flex items-center mb-4 justify-end">
+          <div className="mb-4 flex flex-col items-center lg:items-end">
+            <div className="block w-48 text-left">
             <label
-              className="block text-gray-700 text-sm font-bold mr-4"
+              className="block font-medium text-gray-700 mb-1"
               htmlFor="group2Proportion"
             >
               {groupBLabel}
             </label>
+            </div>
             <input
-              className="shadow appearance-none border rounded w-20 py-2 px-3 text-gray-400 leading-tight focus:outline-none focus:shadow-outline"
+              className="mt-1 block w-48 pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md text-right text-gray-400"
               type="number"
               id="group2Proportion"
               value={parameters.group2Proportion}
@@ -163,7 +173,7 @@ const SchoenfeldEventCount: React.FC<SchoenfeldEventCountProps> = ({
           <div className="font-bold">
             Event Count, <InlineMath math="n_{events}" />
           </div>
-          <span className="text-2xl">
+          <span className="text-2xl text-center">
             <InlineMath
               math={`\\frac{(Z_{1 - \\alpha } + Z_{\\beta})^2}{P_A * P_B * log(\\Delta)^2} = ${derivedParameters.eventCount}`}
             />
