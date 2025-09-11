@@ -5,7 +5,21 @@
     "publication_date": "2014-12-05 00:00:00",
     "arms": 2,
     "disease": "colorectal_cancer",
-    "subjects": 874
+    "subjects": 874,
+    "weibull_by_arm": {
+      "chemotherapy": {
+        "scale": 164.71476528491914,
+        "shape": 1.061928936639293
+      },
+      "observation": {
+        "scale": 159.26405596627848,
+        "shape": 0.9080208554765457
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.966908192418499,
+      "shape": 0.8550674382696235
+    }
   },
   "arms": [
     {

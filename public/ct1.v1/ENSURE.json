@@ -5,7 +5,21 @@
     "publication_date": "2015-06-23 00:00:00",
     "arms": 2,
     "disease": "lung_cancer",
-    "subjects": 434
+    "subjects": 434,
+    "weibull_by_arm": {
+      "erlotinib": {
+        "scale": 28.54123478465864,
+        "shape": 1.2835367203647199
+      },
+      "gp": {
+        "scale": 20.603913567382953,
+        "shape": 1.026828188532089
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.7218998660302489,
+      "shape": 0.7999990746196285
+    }
   },
   "arms": [
     {

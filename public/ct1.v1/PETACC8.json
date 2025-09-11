@@ -5,7 +5,21 @@
     "publication_date": "2014-06-11 00:00:00",
     "arms": 2,
     "disease": "colorectal_cancer",
-    "subjects": 3204
+    "subjects": 3204,
+    "weibull_by_arm": {
+      "folfox4": {
+        "scale": 162.78830097363397,
+        "shape": 1.1902433751733226
+      },
+      "folfox4_cetuximab": {
+        "scale": 181.72800715071992,
+        "shape": 1.028424744141636
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.8957799269686708,
+      "shape": 0.864045762062635
+    }
   },
   "arms": [
     {

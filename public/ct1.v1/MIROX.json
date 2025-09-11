@@ -5,7 +5,21 @@
     "publication_date": "2014-11-17 00:00:00",
     "arms": 2,
     "disease": "colorectal_cancer",
-    "subjects": 564
+    "subjects": 564,
+    "weibull_by_arm": {
+      "folfox4": {
+        "scale": 93.88935655637376,
+        "shape": 0.8973544760004881
+      },
+      "folfox7_folfiri": {
+        "scale": 89.21883012576264,
+        "shape": 0.9403674085691295
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.9502549958598682,
+      "shape": 0.9542594392609903
+    }
   },
   "arms": [
     {

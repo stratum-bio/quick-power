@@ -5,7 +5,21 @@
     "publication_date": "2016-02-10 00:00:00",
     "arms": 2,
     "disease": "breast_cancer",
-    "subjects": 2840
+    "subjects": 2840,
+    "weibull_by_arm": {
+      "neratinib": {
+        "scale": 124.71081130372303,
+        "shape": 1.65406868523593
+      },
+      "placebo": {
+        "scale": 204.61144266413515,
+        "shape": 1.11204355048102
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.6095006695614423,
+      "shape": 0.672307964238137
+    }
   },
   "arms": [
     {

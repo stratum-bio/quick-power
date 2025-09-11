@@ -5,7 +5,21 @@
     "publication_date": "2015-04-13 00:00:00",
     "arms": 2,
     "disease": "colorectal_cancer",
-    "subjects": 2144
+    "subjects": 2144,
+    "weibull_by_arm": {
+      "placebo_folfiri": {
+        "scale": 9.526718227062716,
+        "shape": 1.3271051305453474
+      },
+      "ramucirumab_folfiri": {
+        "scale": 13.101979931839066,
+        "shape": 1.2351923900055464
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.7271205021396712,
+      "shape": 0.9307419296148518
+    }
   },
   "arms": [
     {

@@ -5,7 +5,29 @@
     "publication_date": "2016-03-02 00:00:00",
     "arms": 4,
     "disease": "breast_cancer",
-    "subjects": 1042
+    "subjects": 1042,
+    "weibull_by_arm": {
+      "fulvestrant_palbociclib": {
+        "scale": 151.11489074322094,
+        "shape": 1.2950437067914649
+      },
+      "fulvestrant_placebo": {
+        "scale": 82.51723548331164,
+        "shape": 1.247383303129894
+      },
+      "palbociclib_fulvestrant": {
+        "scale": 126.17773454102124,
+        "shape": 1.4313831584952297
+      },
+      "placebo_fulvestrant": {
+        "scale": 68.09785304828301,
+        "shape": 1.4793739737396174
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.4506362855001297,
+      "shape": 0.8431832148410123
+    }
   },
   "arms": [
     {

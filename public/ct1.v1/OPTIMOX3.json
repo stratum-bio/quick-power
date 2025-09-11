@@ -5,7 +5,21 @@
     "publication_date": "2015-10-14 00:00:00",
     "arms": 2,
     "disease": "colorectal_cancer",
-    "subjects": 904
+    "subjects": 904,
+    "weibull_by_arm": {
+      "bev": {
+        "scale": 17.753196160876822,
+        "shape": 1.021533413584423
+      },
+      "bev_erlotinib": {
+        "scale": 21.290480014149992,
+        "shape": 0.9682270738293668
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.8338560778844707,
+      "shape": 0.9478173312334334
+    }
   },
   "arms": [
     {

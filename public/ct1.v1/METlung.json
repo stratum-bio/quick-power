@@ -5,7 +5,21 @@
     "publication_date": "2016-12-12 00:00:00",
     "arms": 2,
     "disease": "lung_cancer",
-    "subjects": 998
+    "subjects": 998,
+    "weibull_by_arm": {
+      "onaturzumab_erlotinib": {
+        "scale": 6.159605945824911,
+        "shape": 1.1626030836571613
+      },
+      "placebo_erlotinib": {
+        "scale": 6.925968122275102,
+        "shape": 1.0354788051439112
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.8893494508030669,
+      "shape": 0.8906554779526651
+    }
   },
   "arms": [
     {

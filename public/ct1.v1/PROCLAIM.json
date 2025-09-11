@@ -5,7 +5,21 @@
     "publication_date": "2016-01-25 00:00:00",
     "arms": 2,
     "disease": "lung_cancer",
-    "subjects": 1196
+    "subjects": 1196,
+    "weibull_by_arm": {
+      "eto_cis": {
+        "scale": 24.583087462906068,
+        "shape": 1.126479714645295
+      },
+      "pem_cis": {
+        "scale": 27.283843832762848,
+        "shape": 1.087564180830555
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.9010126144097896,
+      "shape": 0.9654538529999241
+    }
   },
   "arms": [
     {

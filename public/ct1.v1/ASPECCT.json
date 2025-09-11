@@ -5,7 +5,21 @@
     "publication_date": "2014-04-14 00:00:00",
     "arms": 2,
     "disease": "colorectal_cancer",
-    "subjects": 1998
+    "subjects": 1998,
+    "weibull_by_arm": {
+      "cetuximab": {
+        "scale": 9.37929826249343,
+        "shape": 1.1496775635842702
+      },
+      "panitumumab": {
+        "scale": 9.492297665705376,
+        "shape": 1.1282859867622286
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.9880956742833508,
+      "shape": 0.981393411944693
+    }
   },
   "arms": [
     {

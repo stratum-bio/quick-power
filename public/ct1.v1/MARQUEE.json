@@ -5,7 +5,21 @@
     "publication_date": "2015-07-13 00:00:00",
     "arms": 2,
     "disease": "lung_cancer",
-    "subjects": 2096
+    "subjects": 2096,
+    "weibull_by_arm": {
+      "erlotinib_placebo": {
+        "scale": 14.992398036322378,
+        "shape": 1.1197119866895808
+      },
+      "erlotinib_tivantinib": {
+        "scale": 18.12345180241325,
+        "shape": 1.0537881899040078
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.8272374490121163,
+      "shape": 0.94112432699727
+    }
   },
   "arms": [
     {

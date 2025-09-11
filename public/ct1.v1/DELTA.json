@@ -5,7 +5,21 @@
     "publication_date": "2014-05-19 00:00:00",
     "arms": 2,
     "disease": "lung_cancer",
-    "subjects": 301
+    "subjects": 301,
+    "weibull_by_arm": {
+      "docetaxel": {
+        "scale": 18.334091455610373,
+        "shape": 1.194655242817205
+      },
+      "erlotinib": {
+        "scale": 20.292332269767748,
+        "shape": 1.1091568551601763
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.9034984846431461,
+      "shape": 0.9284325849059109
+    }
   },
   "arms": [
     {

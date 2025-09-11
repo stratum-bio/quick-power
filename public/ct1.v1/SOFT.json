@@ -5,7 +5,21 @@
     "publication_date": "2014-12-11 00:00:00",
     "arms": 2,
     "disease": "breast_cancer",
-    "subjects": 2033
+    "subjects": 2033,
+    "weibull_by_arm": {
+      "tamoxifen": {
+        "scale": 375.1832472520295,
+        "shape": 0.9849467109859701
+      },
+      "tamoxifen_os": {
+        "scale": 361.9088867795596,
+        "shape": 1.1017574914383874
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.9646189946654179,
+      "shape": 0.8939777751817995
+    }
   },
   "arms": [
     {

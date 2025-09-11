@@ -5,7 +5,21 @@
     "publication_date": "2015-02-18 00:00:00",
     "arms": 2,
     "disease": "prostate_cancer",
-    "subjects": 3120
+    "subjects": 3120,
+    "weibull_by_arm": {
+      "orteronel": {
+        "scale": 27.939010854015113,
+        "shape": 1.3255393785338976
+      },
+      "placebo": {
+        "scale": 25.11694170993908,
+        "shape": 1.138829289862945
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.8989918018636486,
+      "shape": 0.8591440649032535
+    }
   },
   "arms": [
     {

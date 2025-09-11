@@ -5,7 +5,29 @@
     "publication_date": "2015-01-16 00:00:00",
     "arms": 4,
     "disease": "lung_cancer",
-    "subjects": 889
+    "subjects": 889,
+    "weibull_by_arm": {
+      "60gy": {
+        "scale": 36.03577658189805,
+        "shape": 1.393606007302837
+      },
+      "74gy": {
+        "scale": 27.750534037976966,
+        "shape": 1.2964543404470432
+      },
+      "cetuximab": {
+        "scale": 32.70551340647145,
+        "shape": 1.2633729207296849
+      },
+      "no_cetuximab": {
+        "scale": 31.003993918903397,
+        "shape": 1.293220905662079
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.7700828640367632,
+      "shape": 0.906549565737591
+    }
   },
   "arms": [
     {

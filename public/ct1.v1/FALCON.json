@@ -5,7 +5,21 @@
     "publication_date": "2016-11-28 00:00:00",
     "arms": 2,
     "disease": "breast_cancer",
-    "subjects": 462
+    "subjects": 462,
+    "weibull_by_arm": {
+      "anastrazole": {
+        "scale": 19.55264292503393,
+        "shape": 1.2425679568670494
+      },
+      "fulvestrant": {
+        "scale": 24.20991852828077,
+        "shape": 1.1879373754721134
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.8076294392396879,
+      "shape": 0.9560341298896208
+    }
   },
   "arms": [
     {

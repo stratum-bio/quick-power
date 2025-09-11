@@ -5,7 +5,21 @@
     "publication_date": "2015-09-07 00:00:00",
     "arms": 2,
     "disease": "lung_cancer",
-    "subjects": 744
+    "subjects": 744,
+    "weibull_by_arm": {
+      "chemo": {
+        "scale": 10.59651613978979,
+        "shape": 1.1171950936859834
+      },
+      "nitro_chemo": {
+        "scale": 9.981782772061488,
+        "shape": 1.0797383811766177
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.9419872192314239,
+      "shape": 0.9664725411693458
+    }
   },
   "arms": [
     {

@@ -5,7 +5,21 @@
     "publication_date": "2016-12-06 00:00:00",
     "arms": 2,
     "disease": "lung_cancer",
-    "subjects": 419
+    "subjects": 419,
+    "weibull_by_arm": {
+      "osimertinib": {
+        "scale": 155.4529705794294,
+        "shape": 1.4331006976797778
+      },
+      "platinum-pemetrexed": {
+        "scale": 75.83357278861381,
+        "shape": 1.5014837987151988
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.48782324651600206,
+      "shape": 0.9544563177478601
+    }
   },
   "arms": [
     {

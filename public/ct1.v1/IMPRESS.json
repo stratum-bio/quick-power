@@ -5,7 +5,21 @@
     "publication_date": "2015-07-07 00:00:00",
     "arms": 2,
     "disease": "lung_cancer",
-    "subjects": 265
+    "subjects": 265,
+    "weibull_by_arm": {
+      "gefitinib": {
+        "scale": 82.16798818312179,
+        "shape": 1.6919322515776278
+      },
+      "placebo": {
+        "scale": 72.04130208042443,
+        "shape": 1.629695633985982
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.8767563095237435,
+      "shape": 0.9632156562216876
+    }
   },
   "arms": [
     {

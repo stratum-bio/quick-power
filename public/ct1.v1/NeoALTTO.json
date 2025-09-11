@@ -5,7 +5,25 @@
     "publication_date": "2014-08-15 00:00:00",
     "arms": 3,
     "disease": "breast_cancer",
-    "subjects": 455
+    "subjects": 455,
+    "weibull_by_arm": {
+      "lapatinib": {
+        "scale": 105.08893904759634,
+        "shape": 1.354153683071902
+      },
+      "lapatinib_trastuzumab": {
+        "scale": 111.09754198666155,
+        "shape": 1.6024242078143285
+      },
+      "trastuzumab": {
+        "scale": 96.52080288035589,
+        "shape": 1.5220574496701034
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.8687933248059101,
+      "shape": 0.8450656676729429
+    }
   },
   "arms": [
     {

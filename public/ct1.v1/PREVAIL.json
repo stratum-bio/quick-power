@@ -5,7 +5,21 @@
     "publication_date": "2014-06-01 00:00:00",
     "arms": 2,
     "disease": "prostate_cancer",
-    "subjects": 3350
+    "subjects": 3350,
+    "weibull_by_arm": {
+      "enzalutamide": {
+        "scale": 43.72887629007011,
+        "shape": 1.373889523309343
+      },
+      "placebo": {
+        "scale": 30.631680692764604,
+        "shape": 0.918910108749442
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.7004909179365398,
+      "shape": 0.6688384278060627
+    }
   },
   "arms": [
     {

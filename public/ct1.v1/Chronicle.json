@@ -5,7 +5,21 @@
     "publication_date": "2014-04-08 00:00:00",
     "arms": 2,
     "disease": "colorectal_cancer",
-    "subjects": 226
+    "subjects": 226,
+    "weibull_by_arm": {
+      "capecitabine_oxaliplatin": {
+        "scale": 236.62918691746066,
+        "shape": 0.9283330049079543
+      },
+      "follow_up_only": {
+        "scale": 295.3138474853679,
+        "shape": 0.7875916103290566
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.8012803630184835,
+      "shape": 0.8483934171953172
+    }
   },
   "arms": [
     {

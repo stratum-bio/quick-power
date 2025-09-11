@@ -5,7 +5,21 @@
     "publication_date": "2015-12-10 00:00:00",
     "arms": 2,
     "disease": "breast_cancer",
-    "subjects": 6154
+    "subjects": 6154,
+    "weibull_by_arm": {
+      "anastrozole": {
+        "scale": 15.311509847938813,
+        "shape": 1.0811354200057244
+      },
+      "tamoxifen": {
+        "scale": 8.776192154840189,
+        "shape": 1.3490053255221377
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.5731761427839601,
+      "shape": 0.8014315433389907
+    }
   },
   "arms": [
     {

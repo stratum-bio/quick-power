@@ -5,7 +5,21 @@
     "publication_date": "2014-03-20 00:00:00",
     "arms": 2,
     "disease": "breast_cancer",
-    "subjects": 470
+    "subjects": 470,
+    "weibull_by_arm": {
+      "chemotherapy": {
+        "scale": 99.37446162005529,
+        "shape": 1.105740193301686
+      },
+      "chemotherapy_trastuzumab": {
+        "scale": 131.01991822370653,
+        "shape": 1.286422608203459
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.758468353265043,
+      "shape": 0.8595466110828824
+    }
   },
   "arms": [
     {

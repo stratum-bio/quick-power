@@ -5,7 +5,21 @@
     "publication_date": "2015-03-20 00:00:00",
     "arms": 2,
     "disease": "breast_cancer",
-    "subjects": 499
+    "subjects": 499,
+    "weibull_by_arm": {
+      "a": {
+        "scale": 141.73617276916252,
+        "shape": 0.9873324580440067
+      },
+      "b": {
+        "scale": 133.47167251835754,
+        "shape": 1.3066611038641833
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.9416909594118581,
+      "shape": 0.7556147918723322
+    }
   },
   "arms": [
     {

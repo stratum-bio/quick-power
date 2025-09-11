@@ -5,7 +5,21 @@
     "publication_date": "2015-03-18 00:00:00",
     "arms": 2,
     "disease": "breast_cancer",
-    "subjects": 472
+    "subjects": 472,
+    "weibull_by_arm": {
+      "cis_gemcitabine": {
+        "scale": 17.176765161774927,
+        "shape": 1.327622673569633
+      },
+      "paclitaxel_gemcitabine": {
+        "scale": 15.053140697720325,
+        "shape": 1.2894014598530883
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.8763664494418015,
+      "shape": 0.9712107856566069
+    }
   },
   "arms": [
     {

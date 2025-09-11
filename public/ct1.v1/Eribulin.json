@@ -5,7 +5,21 @@
     "publication_date": "2015-01-20 00:00:00",
     "arms": 2,
     "disease": "breast_cancer",
-    "subjects": 2204
+    "subjects": 2204,
+    "weibull_by_arm": {
+      "capecitabine": {
+        "scale": 14.813315513048083,
+        "shape": 0.9833840890773416
+      },
+      "eribulin": {
+        "scale": 15.861785199930718,
+        "shape": 0.9960342666252662
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.9338996415808724,
+      "shape": 0.9872994554787904
+    }
   },
   "arms": [
     {

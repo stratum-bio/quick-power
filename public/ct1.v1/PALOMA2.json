@@ -5,7 +5,21 @@
     "publication_date": "2016-11-17 00:00:00",
     "arms": 2,
     "disease": "breast_cancer",
-    "subjects": 666
+    "subjects": 666,
+    "weibull_by_arm": {
+      "palbociclib_letrozole": {
+        "scale": 41.742055850999506,
+        "shape": 1.0993585480332844
+      },
+      "placebo_letrozole": {
+        "scale": 28.420144049811864,
+        "shape": 1.1026693373805827
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.6808515649363099,
+      "shape": 0.9969974776344437
+    }
   },
   "arms": [
     {

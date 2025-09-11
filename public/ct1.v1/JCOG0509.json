@@ -5,7 +5,21 @@
     "publication_date": "2014-03-17 00:00:00",
     "arms": 2,
     "disease": "lung_cancer",
-    "subjects": 568
+    "subjects": 568,
+    "weibull_by_arm": {
+      "amrubicin_cisplatin": {
+        "scale": 12.629967015787354,
+        "shape": 1.2611987467966284
+      },
+      "irinotecan_cisplatin": {
+        "scale": 15.421095593829088,
+        "shape": 1.225596474160705
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.8190058182922727,
+      "shape": 0.9717710846713487
+    }
   },
   "arms": [
     {

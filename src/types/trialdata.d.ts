@@ -1,3 +1,8 @@
+export interface Weibull {
+  scale: number;
+  shape: number;
+}
+
 export interface TrialArmData {
   events: boolean[];
   time: number[];
@@ -11,6 +16,8 @@ export interface TrialMeta {
   arms: number;
   disease: string;
   subjects: number;
+  weibull_by_arm: {[key: string]: Weibull};
+  weibull_max_diff: Weibull;
 }
 
 export interface Trial {

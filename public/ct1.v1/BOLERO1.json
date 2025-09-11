@@ -5,7 +5,21 @@
     "publication_date": "2015-06-17 00:00:00",
     "arms": 2,
     "disease": "breast_cancer",
-    "subjects": 719
+    "subjects": 719,
+    "weibull_by_arm": {
+      "everolimus": {
+        "scale": 0.5897961932849498,
+        "shape": 1.1538518355387186
+      },
+      "placebo": {
+        "scale": 0.5253915446005498,
+        "shape": 1.1989548535561692
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.8908018576286673,
+      "shape": 0.9623813875195781
+    }
   },
   "arms": [
     {

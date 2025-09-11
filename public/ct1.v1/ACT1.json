@@ -5,7 +5,21 @@
     "publication_date": "2014-11-10 00:00:00",
     "arms": 2,
     "disease": "lung_cancer",
-    "subjects": 1274
+    "subjects": 1274,
+    "weibull_by_arm": {
+      "amrubicin": {
+        "scale": 7.940933722528505,
+        "shape": 1.1917893930017627
+      },
+      "topotecan": {
+        "scale": 7.21517734950653,
+        "shape": 1.2380463675941704
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.9086056629634124,
+      "shape": 0.9626371226448518
+    }
   },
   "arms": [
     {

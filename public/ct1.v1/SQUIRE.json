@@ -5,7 +5,21 @@
     "publication_date": "2015-06-02 00:00:00",
     "arms": 2,
     "disease": "lung_cancer",
-    "subjects": 2186
+    "subjects": 2186,
+    "weibull_by_arm": {
+      "gem_cis": {
+        "scale": 10.782032364457438,
+        "shape": 1.1571487411398935
+      },
+      "necitumumab_gem_cis": {
+        "scale": 12.053132760856927,
+        "shape": 1.1955072532174589
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.8945419069366395,
+      "shape": 0.9679144463788644
+    }
   },
   "arms": [
     {

@@ -5,7 +5,21 @@
     "publication_date": "2015-10-16 00:00:00",
     "arms": 2,
     "disease": "breast_cancer",
-    "subjects": 1704
+    "subjects": 1704,
+    "weibull_by_arm": {
+      "control": {
+        "scale": 9.480445322444377,
+        "shape": 1.0299503113591575
+      },
+      "etirinotecan_pegol": {
+        "scale": 10.36051750037134,
+        "shape": 1.0498373471090634
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.9150551912203787,
+      "shape": 0.981057031544297
+    }
   },
   "arms": [
     {

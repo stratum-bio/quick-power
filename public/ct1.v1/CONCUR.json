@@ -5,7 +5,21 @@
     "publication_date": "2015-05-14 00:00:00",
     "arms": 2,
     "disease": "colorectal_cancer",
-    "subjects": 408
+    "subjects": 408,
+    "weibull_by_arm": {
+      "placebo": {
+        "scale": 4.668679235335768,
+        "shape": 1.167952885207099
+      },
+      "regorafenib": {
+        "scale": 8.187453085010173,
+        "shape": 1.2063573819224984
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.5702236320453942,
+      "shape": 0.9681649092624638
+    }
   },
   "arms": [
     {

@@ -5,7 +5,25 @@
     "publication_date": "2015-06-08 00:00:00",
     "arms": 3,
     "disease": "breast_cancer",
-    "subjects": 2058
+    "subjects": 2058,
+    "weibull_by_arm": {
+      "ixabepilone": {
+        "scale": 19.567795344174453,
+        "shape": 1.155521115596846
+      },
+      "nab_paclitaxel": {
+        "scale": 22.000751204737146,
+        "shape": 1.2278501445774763
+      },
+      "paclitaxel": {
+        "scale": 25.1187057003319,
+        "shape": 1.2643605063633363
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.7790128829733411,
+      "shape": 0.9139174387220116
+    }
   },
   "arms": [
     {

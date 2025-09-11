@@ -6,7 +6,21 @@
       "publication_date": "2014-01-01 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 2166
+      "subjects": 2166,
+      "weibull_by_arm": {
+        "folfiri": {
+          "scale": 11.816590001042517,
+          "shape": 1.1336795405854965
+        },
+        "panitumumab_folfiri": {
+          "scale": 12.871818120698908,
+          "shape": 1.209263129207877
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9180202742330937,
+        "shape": 0.9374961604329314
+      }
     },
     {
       "identifier": "A001",
@@ -14,7 +28,21 @@
       "publication_date": "2015-03-20 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 499
+      "subjects": 499,
+      "weibull_by_arm": {
+        "a": {
+          "scale": 141.73617276916252,
+          "shape": 0.9873324580440067
+        },
+        "b": {
+          "scale": 133.47167251835754,
+          "shape": 1.3066611038641833
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9416909594118581,
+        "shape": 0.7556147918723322
+      }
     },
     {
       "identifier": "A003",
@@ -22,7 +50,21 @@
       "publication_date": "2014-12-15 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 312
+      "subjects": 312,
+      "weibull_by_arm": {
+        "control": {
+          "scale": 36.83662021277722,
+          "shape": 1.0229257341558111
+        },
+        "pci": {
+          "scale": 45.87978467727788,
+          "shape": 1.1612154024449497
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8028943568913627,
+        "shape": 0.8809095470160244
+      }
     },
     {
       "identifier": "A004",
@@ -30,7 +72,21 @@
       "publication_date": "2014-01-08 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 726
+      "subjects": 726,
+      "weibull_by_arm": {
+        "mpt": {
+          "scale": 35.15217898891336,
+          "shape": 1.1178200713665236
+        },
+        "pt": {
+          "scale": 29.131616101421912,
+          "shape": 1.236468288104832
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8287286005971273,
+        "shape": 0.9040426528688709
+      }
     },
     {
       "identifier": "ACT1",
@@ -38,7 +94,21 @@
       "publication_date": "2014-11-10 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1274
+      "subjects": 1274,
+      "weibull_by_arm": {
+        "amrubicin": {
+          "scale": 7.940933722528505,
+          "shape": 1.1917893930017627
+        },
+        "topotecan": {
+          "scale": 7.21517734950653,
+          "shape": 1.2380463675941704
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9086056629634124,
+        "shape": 0.9626371226448518
+      }
     },
     {
       "identifier": "ACT2",
@@ -46,7 +116,29 @@
       "publication_date": "2015-10-19 00:00:00",
       "arms": 4,
       "disease": "colorectal_cancer",
-      "subjects": 276
+      "subjects": 276,
+      "weibull_by_arm": {
+        "mut_b": {
+          "scale": 20.030448516153264,
+          "shape": 0.939553845634075
+        },
+        "mut_c": {
+          "scale": 16.57157286512814,
+          "shape": 1.0747471533432331
+        },
+        "wt_b": {
+          "scale": 19.94243792038846,
+          "shape": 0.9188916514917906
+        },
+        "wt_be": {
+          "scale": 15.346021556517229,
+          "shape": 1.1174910410392223
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7661346945946643,
+        "shape": 0.8222810006935339
+      }
     },
     {
       "identifier": "ACTSCC",
@@ -54,7 +146,21 @@
       "publication_date": "2014-06-18 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 1518
+      "subjects": 1518,
+      "weibull_by_arm": {
+        "s_1": {
+          "scale": 138.5459521955032,
+          "shape": 0.9597571221900298
+        },
+        "uft_lv": {
+          "scale": 115.64820681766427,
+          "shape": 0.9543646983524209
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.834728153259016,
+        "shape": 0.9943814703606426
+      }
     },
     {
       "identifier": "AIO0207",
@@ -62,7 +168,25 @@
       "publication_date": "2015-09-09 00:00:00",
       "arms": 3,
       "disease": "colorectal_cancer",
-      "subjects": 924
+      "subjects": 924,
+      "weibull_by_arm": {
+        "5fu_bev": {
+          "scale": 17.966662734904062,
+          "shape": 1.1392617646702654
+        },
+        "bev": {
+          "scale": 16.781704933066916,
+          "shape": 1.033384049072635
+        },
+        "no_tx": {
+          "scale": 14.887675369269534,
+          "shape": 0.9424066867643434
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8286277529074478,
+        "shape": 0.8272082114834273
+      }
     },
     {
       "identifier": "ALTTO",
@@ -70,7 +194,29 @@
       "publication_date": "2015-11-23 00:00:00",
       "arms": 4,
       "disease": "breast_cancer",
-      "subjects": 8381
+      "subjects": 8381,
+      "weibull_by_arm": {
+        "l": {
+          "scale": 235.87926471715076,
+          "shape": 1.0290529265697357
+        },
+        "l_t": {
+          "scale": 274.4539837885742,
+          "shape": 1.1958302528322535
+        },
+        "t": {
+          "scale": 310.8183695760075,
+          "shape": 1.014319070044796
+        },
+        "t_then_l": {
+          "scale": 347.47492461667764,
+          "shape": 0.9864959795704986
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.6788382355284044,
+        "shape": 0.8249464982459183
+      }
     },
     {
       "identifier": "AMAROS",
@@ -78,7 +224,21 @@
       "publication_date": "2014-10-16 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 2850
+      "subjects": 2850,
+      "weibull_by_arm": {
+        "dissection": {
+          "scale": 312.74454098122743,
+          "shape": 1.3216064398885357
+        },
+        "radiotherapy": {
+          "scale": 244.86246122073698,
+          "shape": 1.4463121630008902
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7829471953450816,
+        "shape": 0.9137767583634172
+      }
     },
     {
       "identifier": "ASPECCT",
@@ -86,7 +246,21 @@
       "publication_date": "2014-04-14 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 1998
+      "subjects": 1998,
+      "weibull_by_arm": {
+        "cetuximab": {
+          "scale": 9.37929826249343,
+          "shape": 1.1496775635842702
+        },
+        "panitumumab": {
+          "scale": 9.492297665705376,
+          "shape": 1.1282859867622286
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9880956742833508,
+        "shape": 0.981393411944693
+      }
     },
     {
       "identifier": "ATTENTION",
@@ -94,7 +268,21 @@
       "publication_date": "2015-07-07 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 614
+      "subjects": 614,
+      "weibull_by_arm": {
+        "placebo": {
+          "scale": 9.32520182305826,
+          "shape": 0.8954662440689388
+        },
+        "tivantinib": {
+          "scale": 12.082641770927134,
+          "shape": 0.9256926338349798
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7717850119082618,
+        "shape": 0.9673472720196352
+      }
     },
     {
       "identifier": "AURA3",
@@ -102,7 +290,21 @@
       "publication_date": "2016-12-06 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 419
+      "subjects": 419,
+      "weibull_by_arm": {
+        "osimertinib": {
+          "scale": 155.4529705794294,
+          "shape": 1.4331006976797778
+        },
+        "platinum-pemetrexed": {
+          "scale": 75.83357278861381,
+          "shape": 1.5014837987151988
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.48782324651600206,
+        "shape": 0.9544563177478601
+      }
     },
     {
       "identifier": "AZURE",
@@ -110,7 +312,21 @@
       "publication_date": "2014-07-15 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 6718
+      "subjects": 6718,
+      "weibull_by_arm": {
+        "control": {
+          "scale": 256.5840161434994,
+          "shape": 1.0754293855986232
+        },
+        "zoledronic_acid": {
+          "scale": 252.83828118836027,
+          "shape": 1.151102902087934
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9854015265197025,
+        "shape": 0.934259989830579
+      }
     },
     {
       "identifier": "BEACON",
@@ -118,7 +334,21 @@
       "publication_date": "2015-10-16 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 1704
+      "subjects": 1704,
+      "weibull_by_arm": {
+        "control": {
+          "scale": 9.480445322444377,
+          "shape": 1.0299503113591575
+        },
+        "etirinotecan_pegol": {
+          "scale": 10.36051750037134,
+          "shape": 1.0498373471090634
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9150551912203787,
+        "shape": 0.981057031544297
+      }
     },
     {
       "identifier": "BEBYP",
@@ -126,7 +356,21 @@
       "publication_date": "2015-01-18 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 368
+      "subjects": 368,
+      "weibull_by_arm": {
+        "bev_ct": {
+          "scale": 13.37245692003412,
+          "shape": 1.111797802913326
+        },
+        "ct": {
+          "scale": 11.758155381063588,
+          "shape": 1.213225975285288
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.879281604822219,
+        "shape": 0.9163979551722741
+      }
     },
     {
       "identifier": "BEYOND",
@@ -134,7 +378,21 @@
       "publication_date": "2015-05-26 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 552
+      "subjects": 552,
+      "weibull_by_arm": {
+        "bev_cp": {
+          "scale": 23.031613950648946,
+          "shape": 1.367385730786773
+        },
+        "placebo_cp": {
+          "scale": 16.028125026594573,
+          "shape": 1.2814721405685434
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.6959184476146084,
+        "shape": 0.9371694553454232
+      }
     },
     {
       "identifier": "BOLERO1",
@@ -142,7 +400,21 @@
       "publication_date": "2015-06-17 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 719
+      "subjects": 719,
+      "weibull_by_arm": {
+        "everolimus": {
+          "scale": 0.5897961932849498,
+          "shape": 1.1538518355387186
+        },
+        "placebo": {
+          "scale": 0.5253915446005498,
+          "shape": 1.1989548535561692
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8908018576286673,
+        "shape": 0.9623813875195781
+      }
     },
     {
       "identifier": "BOLERO2",
@@ -150,7 +422,21 @@
       "publication_date": "2014-09-17 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 724
+      "subjects": 724,
+      "weibull_by_arm": {
+        "eve_exe": {
+          "scale": 40.252950981142035,
+          "shape": 1.370983337706751
+        },
+        "pbo_exe": {
+          "scale": 38.02741568762068,
+          "shape": 1.2477520359095797
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9447112512430706,
+        "shape": 0.9101146612012799
+      }
     },
     {
       "identifier": "BREC",
@@ -158,7 +444,21 @@
       "publication_date": "2014-08-27 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 401
+      "subjects": 401,
+      "weibull_by_arm": {
+        "control": {
+          "scale": 7.849383367243453,
+          "shape": 1.0198652796090517
+        },
+        "experimental": {
+          "scale": 6.628169526078104,
+          "shape": 1.0677022575760178
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8444191366341411,
+        "shape": 0.955196331535751
+      }
     },
     {
       "identifier": "CA184043",
@@ -166,7 +466,21 @@
       "publication_date": "2014-05-13 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 1598
+      "subjects": 1598,
+      "weibull_by_arm": {
+        "ipilimumab": {
+          "scale": 10.9847080281065,
+          "shape": 1.0066442990788094
+        },
+        "placebo": {
+          "scale": 9.166906070657427,
+          "shape": 1.1513566752192401
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8345152230903294,
+        "shape": 0.8743114282002362
+      }
     },
     {
       "identifier": "CA184095",
@@ -174,7 +488,21 @@
       "publication_date": "2016-10-10 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 1204
+      "subjects": 1204,
+      "weibull_by_arm": {
+        "ipilimumab": {
+          "scale": 21.98384373957261,
+          "shape": 0.9275249230439752
+        },
+        "placebo": {
+          "scale": 20.890892445706896,
+          "shape": 0.8730248726446571
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9502838854381813,
+        "shape": 0.9412414167584215
+      }
     },
     {
       "identifier": "CAIRO3",
@@ -182,7 +510,21 @@
       "publication_date": "2015-04-08 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 1671
+      "subjects": 1671,
+      "weibull_by_arm": {
+        "maintenance": {
+          "scale": 18.636621192935216,
+          "shape": 1.1824810489253175
+        },
+        "observation": {
+          "scale": 13.451602752051196,
+          "shape": 1.0587466152633185
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7217833432784715,
+        "shape": 0.895360324146883
+      }
     },
     {
       "identifier": "CALGB40502",
@@ -190,7 +532,25 @@
       "publication_date": "2015-06-08 00:00:00",
       "arms": 3,
       "disease": "breast_cancer",
-      "subjects": 2058
+      "subjects": 2058,
+      "weibull_by_arm": {
+        "ixabepilone": {
+          "scale": 19.567795344174453,
+          "shape": 1.155521115596846
+        },
+        "nab_paclitaxel": {
+          "scale": 22.000751204737146,
+          "shape": 1.2278501445774763
+        },
+        "paclitaxel": {
+          "scale": 25.1187057003319,
+          "shape": 1.2643605063633363
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7790128829733411,
+        "shape": 0.9139174387220116
+      }
     },
     {
       "identifier": "CALGB40503",
@@ -198,7 +558,21 @@
       "publication_date": "2016-08-01 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 686
+      "subjects": 686,
+      "weibull_by_arm": {
+        "l": {
+          "scale": 38.3878200956845,
+          "shape": 1.095893460068365
+        },
+        "l_b": {
+          "scale": 44.353244971822754,
+          "shape": 1.2536972721899031
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8655019518881192,
+        "shape": 0.8741292530325974
+      }
     },
     {
       "identifier": "CALGB90202",
@@ -206,7 +580,21 @@
       "publication_date": "2014-03-03 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 1290
+      "subjects": 1290,
+      "weibull_by_arm": {
+        "placebo": {
+          "scale": 33.2847839887828,
+          "shape": 0.9566869096027001
+        },
+        "za": {
+          "scale": 38.24328163700584,
+          "shape": 0.908895440101159
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.870343301202871,
+        "shape": 0.9500448171477663
+      }
     },
     {
       "identifier": "CBCSG006",
@@ -214,7 +602,21 @@
       "publication_date": "2015-03-18 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 472
+      "subjects": 472,
+      "weibull_by_arm": {
+        "cis_gemcitabine": {
+          "scale": 17.176765161774927,
+          "shape": 1.327622673569633
+        },
+        "paclitaxel_gemcitabine": {
+          "scale": 15.053140697720325,
+          "shape": 1.2894014598530883
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8763664494418015,
+        "shape": 0.9712107856566069
+      }
     },
     {
       "identifier": "CEREBEL",
@@ -222,7 +624,21 @@
       "publication_date": "2015-01-20 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 540
+      "subjects": 540,
+      "weibull_by_arm": {
+        "lapatinib_cape": {
+          "scale": 10.060329366778921,
+          "shape": 1.418822509710969
+        },
+        "trastuzumab_cape": {
+          "scale": 12.879045207556278,
+          "shape": 1.4095223658997889
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7811393783194748,
+        "shape": 0.9934451675614628
+      }
     },
     {
       "identifier": "Checkmate017",
@@ -230,7 +646,21 @@
       "publication_date": "2015-05-31 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 544
+      "subjects": 544,
+      "weibull_by_arm": {
+        "docetaxel": {
+          "scale": 6.564370620446858,
+          "shape": 1.1052241285232394
+        },
+        "nivolumab": {
+          "scale": 10.944530544084868,
+          "shape": 0.9283496825520984
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.5997854904790474,
+        "shape": 0.8399650881604672
+      }
     },
     {
       "identifier": "Checkmate057",
@@ -238,7 +668,21 @@
       "publication_date": "2015-09-27 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1164
+      "subjects": 1164,
+      "weibull_by_arm": {
+        "docetaxel": {
+          "scale": 9.239964802861241,
+          "shape": 1.1675392128866384
+        },
+        "nivolumab": {
+          "scale": 11.362917216164657,
+          "shape": 0.8594353849139753
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8131683639934165,
+        "shape": 0.7361083682912
+      }
     },
     {
       "identifier": "CHHiP",
@@ -246,7 +690,25 @@
       "publication_date": "2016-06-20 00:00:00",
       "arms": 3,
       "disease": "prostate_cancer",
-      "subjects": 6432
+      "subjects": 6432,
+      "weibull_by_arm": {
+        "57gy": {
+          "scale": 4.0957034011724314e17,
+          "shape": -0.0029442449978913914
+        },
+        "60gy": {
+          "scale": 6.373412817325568e16,
+          "shape": -0.0023449699007454766
+        },
+        "74gy": {
+          "scale": 270.4558808158743,
+          "shape": 1.5520253065168723
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 6.603404942322091e-16,
+        "shape": -661.852975606841
+      }
     },
     {
       "identifier": "Chronicle",
@@ -254,7 +716,21 @@
       "publication_date": "2014-04-08 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 226
+      "subjects": 226,
+      "weibull_by_arm": {
+        "capecitabine_oxaliplatin": {
+          "scale": 236.62918691746066,
+          "shape": 0.9283330049079543
+        },
+        "follow_up_only": {
+          "scale": 295.3138474853679,
+          "shape": 0.7875916103290566
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8012803630184835,
+        "shape": 0.8483934171953172
+      }
     },
     {
       "identifier": "CLEOPATRA",
@@ -262,7 +738,21 @@
       "publication_date": "2015-02-19 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 1616
+      "subjects": 1616,
+      "weibull_by_arm": {
+        "control": {
+          "scale": 38.635393499379006,
+          "shape": 1.0156364737709664
+        },
+        "pertuzumab": {
+          "scale": 53.810106914328195,
+          "shape": 1.049940492492214
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7179951075156,
+        "shape": 0.9673276543132258
+      }
     },
     {
       "identifier": "COMET1",
@@ -270,7 +760,21 @@
       "publication_date": "2016-07-11 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 2056
+      "subjects": 2056,
+      "weibull_by_arm": {
+        "cabozantinib": {
+          "scale": 11.41093067078136,
+          "shape": 1.4298572657486288
+        },
+        "prednisone": {
+          "scale": 9.556887766737505,
+          "shape": 1.2773521570109894
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8375204479340772,
+        "shape": 0.8933424248763792
+      }
     },
     {
       "identifier": "CONCEPT",
@@ -278,7 +782,21 @@
       "publication_date": "2014-03-07 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 139
+      "subjects": 139,
+      "weibull_by_arm": {
+        "co": {
+          "scale": 63.63799429478754,
+          "shape": 1.5946088573817483
+        },
+        "io": {
+          "scale": 92.08331033184214,
+          "shape": 1.5189359639090754
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.691091513385588,
+        "shape": 0.9525445421161631
+      }
     },
     {
       "identifier": "CONCUR",
@@ -286,7 +804,21 @@
       "publication_date": "2015-05-14 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 408
+      "subjects": 408,
+      "weibull_by_arm": {
+        "placebo": {
+          "scale": 4.668679235335768,
+          "shape": 1.167952885207099
+        },
+        "regorafenib": {
+          "scale": 8.187453085010173,
+          "shape": 1.2063573819224984
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.5702236320453942,
+        "shape": 0.9681649092624638
+      }
     },
     {
       "identifier": "COUAA202",
@@ -294,7 +826,21 @@
       "publication_date": "2015-01-16 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 1088
+      "subjects": 1088,
+      "weibull_by_arm": {
+        "abiraterone": {
+          "scale": 45.16614929076086,
+          "shape": 1.732214224131743
+        },
+        "placebo": {
+          "scale": 39.6036244782629,
+          "shape": 1.8106349353594275
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8768430583557446,
+        "shape": 0.9566888334604473
+      }
     },
     {
       "identifier": "Dalotuzumab",
@@ -302,7 +848,25 @@
       "publication_date": "2015-09-23 00:00:00",
       "arms": 3,
       "disease": "colorectal_cancer",
-      "subjects": 688
+      "subjects": 688,
+      "weibull_by_arm": {
+        "arma": {
+          "scale": 10.327652341066552,
+          "shape": 1.1089155622429583
+        },
+        "armb": {
+          "scale": 11.319783893103516,
+          "shape": 1.2463053200559393
+        },
+        "armc": {
+          "scale": 12.502880183748372,
+          "shape": 1.2541488180084437
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8260218597064339,
+        "shape": 0.8841977493579174
+      }
     },
     {
       "identifier": "DART0105",
@@ -310,7 +874,21 @@
       "publication_date": "2015-02-19 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 343
+      "subjects": 343,
+      "weibull_by_arm": {
+        "ltad": {
+          "scale": 3.9683133161408963,
+          "shape": 1.8912691171196856
+        },
+        "stad": {
+          "scale": 2.9468250192287604,
+          "shape": 1.8232880623047898
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7425887989344772,
+        "shape": 0.9640553244382123
+      }
     },
     {
       "identifier": "DELTA",
@@ -318,7 +896,21 @@
       "publication_date": "2014-05-19 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 301
+      "subjects": 301,
+      "weibull_by_arm": {
+        "docetaxel": {
+          "scale": 18.334091455610373,
+          "shape": 1.194655242817205
+        },
+        "erlotinib": {
+          "scale": 20.292332269767748,
+          "shape": 1.1091568551601763
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9034984846431461,
+        "shape": 0.9284325849059109
+      }
     },
     {
       "identifier": "E1199",
@@ -326,7 +918,29 @@
       "publication_date": "2015-06-15 00:00:00",
       "arms": 4,
       "disease": "breast_cancer",
-      "subjects": 9896
+      "subjects": 9896,
+      "weibull_by_arm": {
+        "d1": {
+          "scale": 325.6474555866163,
+          "shape": 1.0661233960510446
+        },
+        "d3": {
+          "scale": 438.6707077668723,
+          "shape": 0.9734690018351247
+        },
+        "p1": {
+          "scale": 338.3580264602103,
+          "shape": 1.1714159694380333
+        },
+        "p3": {
+          "scale": 336.3153297447605,
+          "shape": 1.009006482883157
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7423505828423783,
+        "shape": 0.8310190634520117
+      }
     },
     {
       "identifier": "EAGLE",
@@ -334,7 +948,21 @@
       "publication_date": "2015-04-23 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 368
+      "subjects": 368,
+      "weibull_by_arm": {
+        "bev10": {
+          "scale": 8.47777953726576,
+          "shape": 1.6918087142321863
+        },
+        "bev5": {
+          "scale": 8.44713867777177,
+          "shape": 1.558224669028484
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.996385744715429,
+        "shape": 0.9210406920830123
+      }
     },
     {
       "identifier": "ELDA",
@@ -342,7 +970,21 @@
       "publication_date": "2014-12-08 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 598
+      "subjects": 598,
+      "weibull_by_arm": {
+        "cmf": {
+          "scale": 221.98054772745786,
+          "shape": 1.0591215912882341
+        },
+        "wdocetaxel": {
+          "scale": 163.21914605573176,
+          "shape": 1.166717817550218
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7352858064668266,
+        "shape": 0.9077787065188514
+      }
     },
     {
       "identifier": "ELM-PC4",
@@ -350,7 +992,21 @@
       "publication_date": "2015-02-18 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 3120
+      "subjects": 3120,
+      "weibull_by_arm": {
+        "orteronel": {
+          "scale": 27.939010854015113,
+          "shape": 1.3255393785338976
+        },
+        "placebo": {
+          "scale": 25.11694170993908,
+          "shape": 1.138829289862945
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8989918018636486,
+        "shape": 0.8591440649032535
+      }
     },
     {
       "identifier": "ELM-PC5",
@@ -358,7 +1014,21 @@
       "publication_date": "2015-01-26 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 2198
+      "subjects": 2198,
+      "weibull_by_arm": {
+        "orteronel": {
+          "scale": 16.408611403659467,
+          "shape": 1.282675626585377
+        },
+        "placebo": {
+          "scale": 14.375112499857257,
+          "shape": 1.2623491958279829
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.876071237609497,
+        "shape": 0.9841531012704239
+      }
     },
     {
       "identifier": "ENSURE",
@@ -366,7 +1036,21 @@
       "publication_date": "2015-06-23 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 434
+      "subjects": 434,
+      "weibull_by_arm": {
+        "erlotinib": {
+          "scale": 28.54123478465864,
+          "shape": 1.2835367203647199
+        },
+        "gp": {
+          "scale": 20.603913567382953,
+          "shape": 1.026828188532089
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7218998660302489,
+        "shape": 0.7999990746196285
+      }
     },
     {
       "identifier": "EORTC22881",
@@ -374,7 +1058,21 @@
       "publication_date": "2014-12-09 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 5318
+      "subjects": 5318,
+      "weibull_by_arm": {
+        "boost": {
+          "scale": 397.01476089683257,
+          "shape": 1.336348141894921
+        },
+        "no_boost": {
+          "scale": 420.60688671388675,
+          "shape": 1.2920007431912623
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.943909321120787,
+        "shape": 0.9668144869489064
+      }
     },
     {
       "identifier": "Eribulin",
@@ -382,7 +1080,21 @@
       "publication_date": "2015-01-20 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 2204
+      "subjects": 2204,
+      "weibull_by_arm": {
+        "capecitabine": {
+          "scale": 14.813315513048083,
+          "shape": 0.9833840890773416
+        },
+        "eribulin": {
+          "scale": 15.861785199930718,
+          "shape": 0.9960342666252662
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9338996415808724,
+        "shape": 0.9872994554787904
+      }
     },
     {
       "identifier": "ESPATUE",
@@ -390,7 +1102,21 @@
       "publication_date": "2015-11-02 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 322
+      "subjects": 322,
+      "weibull_by_arm": {
+        "arma": {
+          "scale": 54.36234588101419,
+          "shape": 0.8225888845097586
+        },
+        "armb": {
+          "scale": 59.98460000004645,
+          "shape": 0.7934268387833388
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9062717077545253,
+        "shape": 0.9645484563728335
+      }
     },
     {
       "identifier": "ExteNET",
@@ -398,7 +1124,21 @@
       "publication_date": "2016-02-10 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 2840
+      "subjects": 2840,
+      "weibull_by_arm": {
+        "neratinib": {
+          "scale": 124.71081130372303,
+          "shape": 1.65406868523593
+        },
+        "placebo": {
+          "scale": 204.61144266413515,
+          "shape": 1.11204355048102
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.6095006695614423,
+        "shape": 0.672307964238137
+      }
     },
     {
       "identifier": "FALCON",
@@ -406,7 +1146,21 @@
       "publication_date": "2016-11-28 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 462
+      "subjects": 462,
+      "weibull_by_arm": {
+        "anastrazole": {
+          "scale": 19.55264292503393,
+          "shape": 1.2425679568670494
+        },
+        "fulvestrant": {
+          "scale": 24.20991852828077,
+          "shape": 1.1879373754721134
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8076294392396879,
+        "shape": 0.9560341298896208
+      }
     },
     {
       "identifier": "FFCD2001",
@@ -414,7 +1168,29 @@
       "publication_date": "2015-10-20 00:00:00",
       "arms": 4,
       "disease": "colorectal_cancer",
-      "subjects": 1128
+      "subjects": 1128,
+      "weibull_by_arm": {
+        "classic": {
+          "scale": 14.767228175418106,
+          "shape": 1.0076592789605712
+        },
+        "fu": {
+          "scale": 12.945116456387149,
+          "shape": 1.0432983299943999
+        },
+        "iri": {
+          "scale": 13.753005773173069,
+          "shape": 1.0483132930671168
+        },
+        "simplified": {
+          "scale": 11.918443654957702,
+          "shape": 1.1297202235683794
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8070873906314685,
+        "shape": 0.8919547140421531
+      }
     },
     {
       "identifier": "Figitumumab",
@@ -422,7 +1198,21 @@
       "publication_date": "2014-11-13 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1166
+      "subjects": 1166,
+      "weibull_by_arm": {
+        "control": {
+          "scale": 6.70772382023619,
+          "shape": 1.0749981417355208
+        },
+        "figitumumab": {
+          "scale": 6.134410904393899,
+          "shape": 0.9511840760940343
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.91452943931402,
+        "shape": 0.8848239258892151
+      }
     },
     {
       "identifier": "Figitumumab2",
@@ -430,7 +1220,21 @@
       "publication_date": "2014-06-02 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1362
+      "subjects": 1362,
+      "weibull_by_arm": {
+        "control": {
+          "scale": 10.509376199864988,
+          "shape": 1.0951041185445372
+        },
+        "figitumumab": {
+          "scale": 9.19494769650693,
+          "shape": 1.1290101269449675
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8749280187177099,
+        "shape": 0.9699683753128256
+      }
     },
     {
       "identifier": "FIRE3",
@@ -438,7 +1242,21 @@
       "publication_date": "2014-08-01 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 1184
+      "subjects": 1184,
+      "weibull_by_arm": {
+        "folfiri_bevacizumab": {
+          "scale": 23.00378183756358,
+          "shape": 1.332215564857169
+        },
+        "folfiri_cetuximab": {
+          "scale": 25.11731522770527,
+          "shape": 1.1792059177683776
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9158535308817405,
+        "shape": 0.8851464799503403
+      }
     },
     {
       "identifier": "GECESTRO-APBI",
@@ -446,7 +1264,21 @@
       "publication_date": "2015-10-20 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 2368
+      "subjects": 2368,
+      "weibull_by_arm": {
+        "apbi": {
+          "scale": 479.9959692409167,
+          "shape": 1.5254749104442857
+        },
+        "wbi": {
+          "scale": 643.9806710909006,
+          "shape": 1.2518668024973587
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7453577270072492,
+        "shape": 0.8206407027256579
+      }
     },
     {
       "identifier": "GEICAM2003",
@@ -454,7 +1286,21 @@
       "publication_date": "2015-09-28 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 2768
+      "subjects": 2768,
+      "weibull_by_arm": {
+        "ec_t": {
+          "scale": 302.5613225390401,
+          "shape": 1.4074984951916494
+        },
+        "et_x": {
+          "scale": 295.5595016770032,
+          "shape": 1.2633132201482347
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9768581760441855,
+        "shape": 0.8975591977284623
+      }
     },
     {
       "identifier": "GETUG12",
@@ -462,7 +1308,21 @@
       "publication_date": "2015-05-29 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 413
+      "subjects": 413,
+      "weibull_by_arm": {
+        "adt": {
+          "scale": 125.27675731130273,
+          "shape": 1.5726265908350006
+        },
+        "adt_de": {
+          "scale": 160.2073198299572,
+          "shape": 1.4347578549333835
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7819665009331065,
+        "shape": 0.9123321857171356
+      }
     },
     {
       "identifier": "GETUG16",
@@ -470,7 +1330,21 @@
       "publication_date": "2016-05-06 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 730
+      "subjects": 730,
+      "weibull_by_arm": {
+        "rt": {
+          "scale": 2.514718489243715,
+          "shape": 1.0129780912525317
+        },
+        "rt_goserelin": {
+          "scale": 3.288654850978255,
+          "shape": 1.4227398473731616
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.764664765138147,
+        "shape": 0.7119910875644744
+      }
     },
     {
       "identifier": "GIM",
@@ -478,7 +1352,21 @@
       "publication_date": "2015-12-22 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 281
+      "subjects": 281,
+      "weibull_by_arm": {
+        "control": {
+          "scale": 357.46592698414344,
+          "shape": 0.9801912270762765
+        },
+        "lhrha": {
+          "scale": 303.5474598210996,
+          "shape": 0.978653508621468
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8491647368521488,
+        "shape": 0.9984312056542324
+      }
     },
     {
       "identifier": "GIM2",
@@ -486,7 +1374,29 @@
       "publication_date": "2015-03-02 00:00:00",
       "arms": 4,
       "disease": "breast_cancer",
-      "subjects": 8188
+      "subjects": 8188,
+      "weibull_by_arm": {
+        "ec_p": {
+          "scale": 297.4854756971565,
+          "shape": 1.1871640448524559
+        },
+        "fec_p": {
+          "scale": 259.17197745051845,
+          "shape": 1.2484847303070383
+        },
+        "q2": {
+          "scale": 286.4365267507208,
+          "shape": 1.329614896277486
+        },
+        "q3": {
+          "scale": 259.1963308101716,
+          "shape": 1.1721253299511796
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.871208844207098,
+        "shape": 0.8815524955630168
+      }
     },
     {
       "identifier": "HYPRO",
@@ -494,7 +1404,21 @@
       "publication_date": "2016-06-20 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 1608
+      "subjects": 1608,
+      "weibull_by_arm": {
+        "conventional_fractionation": {
+          "scale": 125.86229983834399,
+          "shape": 1.9646293949891935
+        },
+        "hypofractionation": {
+          "scale": 203.92090741487357,
+          "shape": 1.3050607884366419
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.6172113562749076,
+        "shape": 0.6642783579260354
+      }
     },
     {
       "identifier": "IBCSG2200",
@@ -502,7 +1426,21 @@
       "publication_date": "2016-06-20 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 1081
+      "subjects": 1081,
+      "weibull_by_arm": {
+        "cm_maintenance": {
+          "scale": 381.0997902141645,
+          "shape": 0.8054851670547456
+        },
+        "no_cm": {
+          "scale": 295.78578737839894,
+          "shape": 0.813038699710925
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7761373660483463,
+        "shape": 0.99070950416153
+      }
     },
     {
       "identifier": "IMELDA",
@@ -510,7 +1448,21 @@
       "publication_date": "2014-09-28 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 370
+      "subjects": 370,
+      "weibull_by_arm": {
+        "bevacizumab": {
+          "scale": 18.68554496323302,
+          "shape": 0.9592381534758526
+        },
+        "bevacizumab_capecitabine": {
+          "scale": 32.037736043420225,
+          "shape": 1.1749192739733898
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.583235498847634,
+        "shape": 0.8164289876970543
+      }
     },
     {
       "identifier": "IMPRESS",
@@ -518,7 +1470,21 @@
       "publication_date": "2015-07-07 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 265
+      "subjects": 265,
+      "weibull_by_arm": {
+        "gefitinib": {
+          "scale": 82.16798818312179,
+          "shape": 1.6919322515776278
+        },
+        "placebo": {
+          "scale": 72.04130208042443,
+          "shape": 1.629695633985982
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8767563095237435,
+        "shape": 0.9632156562216876
+      }
     },
     {
       "identifier": "Iniparib",
@@ -526,7 +1492,21 @@
       "publication_date": "2014-10-27 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 1038
+      "subjects": 1038,
+      "weibull_by_arm": {
+        "gc": {
+          "scale": 9.58093794814626,
+          "shape": 1.154846337693064
+        },
+        "gci": {
+          "scale": 11.15388221555746,
+          "shape": 1.188095047549703
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8589778664492931,
+        "shape": 0.9720151094601309
+      }
     },
     {
       "identifier": "INSPIRE",
@@ -534,7 +1514,21 @@
       "publication_date": "2015-02-18 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1266
+      "subjects": 1266,
+      "weibull_by_arm": {
+        "ct": {
+          "scale": 11.861139289127411,
+          "shape": 1.0744190414874133
+        },
+        "necitumumab_ct": {
+          "scale": 12.065351937569295,
+          "shape": 1.0674825132991965
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9830744557225883,
+        "shape": 0.9935439266055692
+      }
     },
     {
       "identifier": "INT0142",
@@ -542,7 +1536,21 @@
       "publication_date": "2014-10-27 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 674
+      "subjects": 674,
+      "weibull_by_arm": {
+        "tamoxifen": {
+          "scale": 1457.5047485411458,
+          "shape": 0.8203409901004007
+        },
+        "tamoxifen_ofs": {
+          "scale": 1056.0416329967634,
+          "shape": 1.0289669317528278
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7245545059484594,
+        "shape": 0.7972471852938594
+      }
     },
     {
       "identifier": "ITACa",
@@ -550,7 +1558,21 @@
       "publication_date": "2015-03-03 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 740
+      "subjects": 740,
+      "weibull_by_arm": {
+        "ct": {
+          "scale": 19.655962191059803,
+          "shape": 1.183675042166224
+        },
+        "ct_b": {
+          "scale": 19.08058630620982,
+          "shape": 1.137251962781001
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9707276662797163,
+        "shape": 0.9607805540106135
+      }
     },
     {
       "identifier": "JCOG0509",
@@ -558,7 +1580,21 @@
       "publication_date": "2014-03-17 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 568
+      "subjects": 568,
+      "weibull_by_arm": {
+        "amrubicin_cisplatin": {
+          "scale": 12.629967015787354,
+          "shape": 1.2611987467966284
+        },
+        "irinotecan_cisplatin": {
+          "scale": 15.421095593829088,
+          "shape": 1.225596474160705
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8190058182922727,
+        "shape": 0.9717710846713487
+      }
     },
     {
       "identifier": "JCOG0605",
@@ -566,7 +1602,21 @@
       "publication_date": "2016-06-13 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 360
+      "subjects": 360,
+      "weibull_by_arm": {
+        "combination_chemotherapy": {
+          "scale": 15.23807847495808,
+          "shape": 1.233688570773158
+        },
+        "topotecan": {
+          "scale": 10.354230407021308,
+          "shape": 1.0115539658427501
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.6794971179625582,
+        "shape": 0.8199427228289916
+      }
     },
     {
       "identifier": "JFMC33-0502",
@@ -574,7 +1624,21 @@
       "publication_date": "2015-09-07 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 2120
+      "subjects": 2120,
+      "weibull_by_arm": {
+        "control": {
+          "scale": 285.91990847867544,
+          "shape": 0.8767937561314038
+        },
+        "study": {
+          "scale": 248.1733354095472,
+          "shape": 0.9311956770797367
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8679820049258884,
+        "shape": 0.9415784219285259
+      }
     },
     {
       "identifier": "KEYNOTE024",
@@ -582,7 +1646,21 @@
       "publication_date": "2016-10-09 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 610
+      "subjects": 610,
+      "weibull_by_arm": {
+        "chemotherapy": {
+          "scale": 10.850614473461523,
+          "shape": 1.110176916372776
+        },
+        "pembrolizumab": {
+          "scale": 23.355772938781186,
+          "shape": 0.8578595163378541
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.4645795496429312,
+        "shape": 0.772723251300067
+      }
     },
     {
       "identifier": "LEA",
@@ -590,7 +1668,21 @@
       "publication_date": "2015-02-17 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 748
+      "subjects": 748,
+      "weibull_by_arm": {
+        "et": {
+          "scale": 43.10704355693739,
+          "shape": 1.0394637004636296
+        },
+        "et_b": {
+          "scale": 41.38198357900892,
+          "shape": 1.2509680836894392
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9599819464387543,
+        "shape": 0.8309274345337199
+      }
     },
     {
       "identifier": "LUMELung1",
@@ -598,7 +1690,21 @@
       "publication_date": "2014-01-09 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 2448
+      "subjects": 2448,
+      "weibull_by_arm": {
+        "docetaxel_nintedanib": {
+          "scale": 10.704825278513336,
+          "shape": 1.011255932957356
+        },
+        "docetaxel_placebo": {
+          "scale": 9.526611232942662,
+          "shape": 0.9883715332715001
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8899361722478947,
+        "shape": 0.9773703184920438
+      }
     },
     {
       "identifier": "LUXBreast1",
@@ -606,7 +1712,21 @@
       "publication_date": "2016-01-25 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 1016
+      "subjects": 1016,
+      "weibull_by_arm": {
+        "afatinib": {
+          "scale": 18.210624836166186,
+          "shape": 1.1042721670250324
+        },
+        "trastuzumab": {
+          "scale": 23.549823818096765,
+          "shape": 1.030729885932585
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7732807250206393,
+        "shape": 0.9334020332228656
+      }
     },
     {
       "identifier": "LUXLung3-6",
@@ -614,7 +1734,21 @@
       "publication_date": "2015-01-12 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 709
+      "subjects": 709,
+      "weibull_by_arm": {
+        "afatinib": {
+          "scale": 34.808029297012965,
+          "shape": 1.4502304732796731
+        },
+        "ct": {
+          "scale": 34.713144840488205,
+          "shape": 1.4647004294265074
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9972740641041432,
+        "shape": 0.9901208766952435
+      }
     },
     {
       "identifier": "LUXLung8",
@@ -622,7 +1756,21 @@
       "publication_date": "2015-07-06 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1590
+      "subjects": 1590,
+      "weibull_by_arm": {
+        "afatinib": {
+          "scale": 8.686576417439191,
+          "shape": 1.0312775515939463
+        },
+        "erlotinib": {
+          "scale": 7.194079018766485,
+          "shape": 1.1029425908544808
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8281834721817026,
+        "shape": 0.9350237810609766
+      }
     },
     {
       "identifier": "MA17R",
@@ -630,7 +1778,21 @@
       "publication_date": "2016-06-28 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 3836
+      "subjects": 3836,
+      "weibull_by_arm": {
+        "letrozole": {
+          "scale": 478.7746204465816,
+          "shape": 1.364480772727386
+        },
+        "placebo": {
+          "scale": 470.32475965049224,
+          "shape": 1.271287255045813
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9823510678402133,
+        "shape": 0.9317003804346076
+      }
     },
     {
       "identifier": "MA31",
@@ -638,7 +1800,21 @@
       "publication_date": "2015-03-16 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 1304
+      "subjects": 1304,
+      "weibull_by_arm": {
+        "ltax_l": {
+          "scale": 23.654395657243732,
+          "shape": 1.3168534171994026
+        },
+        "ttax_t": {
+          "scale": 29.014652054002504,
+          "shape": 1.2813614190774498
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8152569127218144,
+        "shape": 0.9730478748367949
+      }
     },
     {
       "identifier": "MAGRIT",
@@ -646,7 +1822,21 @@
       "publication_date": "2016-04-27 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 2272
+      "subjects": 2272,
+      "weibull_by_arm": {
+        "mage_a3": {
+          "scale": 1.6387113394247814,
+          "shape": 0.7928715840528753
+        },
+        "placebo": {
+          "scale": 1.6833605298023429,
+          "shape": 0.7925884617958553
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9734761570162251,
+        "shape": 0.9996429153690024
+      }
     },
     {
       "identifier": "MAINSAIL",
@@ -654,7 +1844,21 @@
       "publication_date": "2015-03-03 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 2118
+      "subjects": 2118,
+      "weibull_by_arm": {
+        "lenolidomide": {
+          "scale": 19.043285284550027,
+          "shape": 1.5226549346025426
+        },
+        "placebo": {
+          "scale": 22.482785423962202,
+          "shape": 1.6493301456212992
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8470162804762461,
+        "shape": 0.923195964522289
+      }
     },
     {
       "identifier": "MAPS",
@@ -662,7 +1866,21 @@
       "publication_date": "2015-12-21 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 896
+      "subjects": 896,
+      "weibull_by_arm": {
+        "pc": {
+          "scale": 16.714276878821376,
+          "shape": 1.2045112720530584
+        },
+        "pcb": {
+          "scale": 21.122772559431,
+          "shape": 1.1625926140548146
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7912918075406111,
+        "shape": 0.9651986170899053
+      }
     },
     {
       "identifier": "MARIANNE",
@@ -670,7 +1888,25 @@
       "publication_date": "2016-11-07 00:00:00",
       "arms": 3,
       "disease": "breast_cancer",
-      "subjects": 1095
+      "subjects": 1095,
+      "weibull_by_arm": {
+        "t-dm1": {
+          "scale": 23.998505042629578,
+          "shape": 0.9254800008420486
+        },
+        "t-dm1_pertuzumab": {
+          "scale": 26.51270633002206,
+          "shape": 0.9930213691298805
+        },
+        "trastuzumab_taxane": {
+          "scale": 21.571392461312826,
+          "shape": 1.1632994307444589
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8136246897166486,
+        "shape": 0.7955647328476585
+      }
     },
     {
       "identifier": "MARQUEE",
@@ -678,7 +1914,21 @@
       "publication_date": "2015-07-13 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 2096
+      "subjects": 2096,
+      "weibull_by_arm": {
+        "erlotinib_placebo": {
+          "scale": 14.992398036322378,
+          "shape": 1.1197119866895808
+        },
+        "erlotinib_tivantinib": {
+          "scale": 18.12345180241325,
+          "shape": 1.0537881899040078
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8272374490121163,
+        "shape": 0.94112432699727
+      }
     },
     {
       "identifier": "METlung",
@@ -686,7 +1936,21 @@
       "publication_date": "2016-12-12 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 998
+      "subjects": 998,
+      "weibull_by_arm": {
+        "onaturzumab_erlotinib": {
+          "scale": 6.159605945824911,
+          "shape": 1.1626030836571613
+        },
+        "placebo_erlotinib": {
+          "scale": 6.925968122275102,
+          "shape": 1.0354788051439112
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8893494508030669,
+        "shape": 0.8906554779526651
+      }
     },
     {
       "identifier": "MINDACT",
@@ -694,7 +1958,21 @@
       "publication_date": "2016-08-25 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 2187
+      "subjects": 2187,
+      "weibull_by_arm": {
+        "chemotherapy": {
+          "scale": 430.2521130807366,
+          "shape": 1.29770981971888
+        },
+        "no_chemotherapy": {
+          "scale": 319.08753605794874,
+          "shape": 1.367529085803677
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.741629213098303,
+        "shape": 0.948944949829886
+      }
     },
     {
       "identifier": "MIROX",
@@ -702,7 +1980,21 @@
       "publication_date": "2014-11-17 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 564
+      "subjects": 564,
+      "weibull_by_arm": {
+        "folfox4": {
+          "scale": 93.88935655637376,
+          "shape": 0.8973544760004881
+        },
+        "folfox7_folfiri": {
+          "scale": 89.21883012576264,
+          "shape": 0.9403674085691295
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9502549958598682,
+        "shape": 0.9542594392609903
+      }
     },
     {
       "identifier": "MONALEESA2",
@@ -710,7 +2002,21 @@
       "publication_date": "2016-10-08 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 668
+      "subjects": 668,
+      "weibull_by_arm": {
+        "placebo": {
+          "scale": 20.290229978468172,
+          "shape": 1.2413416601488336
+        },
+        "ribociclib_letrozole": {
+          "scale": 34.13624741433493,
+          "shape": 1.172988675955743
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.5943895863007964,
+        "shape": 0.9449362037967087
+      }
     },
     {
       "identifier": "MRC-RT01",
@@ -718,7 +2024,21 @@
       "publication_date": "2014-02-26 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 836
+      "subjects": 836,
+      "weibull_by_arm": {
+        "control": {
+          "scale": 226.56726009167815,
+          "shape": 1.7095260395787304
+        },
+        "escalated_dose": {
+          "scale": 232.00398944588446,
+          "shape": 1.6286831757885811
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9765662247136727,
+        "shape": 0.9527103642071044
+      }
     },
     {
       "identifier": "NCICBR26",
@@ -726,7 +2046,21 @@
       "publication_date": "2014-10-15 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1440
+      "subjects": 1440,
+      "weibull_by_arm": {
+        "dacomitinib": {
+          "scale": 8.251828503614037,
+          "shape": 1.0276357238113936
+        },
+        "placebo": {
+          "scale": 7.070346008259505,
+          "shape": 0.9573697578304633
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8568217341360063,
+        "shape": 0.931623663567941
+      }
     },
     {
       "identifier": "NeoALTTO",
@@ -734,7 +2068,25 @@
       "publication_date": "2014-08-15 00:00:00",
       "arms": 3,
       "disease": "breast_cancer",
-      "subjects": 455
+      "subjects": 455,
+      "weibull_by_arm": {
+        "lapatinib": {
+          "scale": 105.08893904759634,
+          "shape": 1.354153683071902
+        },
+        "lapatinib_trastuzumab": {
+          "scale": 111.09754198666155,
+          "shape": 1.6024242078143285
+        },
+        "trastuzumab": {
+          "scale": 96.52080288035589,
+          "shape": 1.5220574496701034
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8687933248059101,
+        "shape": 0.8450656676729429
+      }
     },
     {
       "identifier": "NITRO",
@@ -742,7 +2094,21 @@
       "publication_date": "2015-09-07 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 744
+      "subjects": 744,
+      "weibull_by_arm": {
+        "chemo": {
+          "scale": 10.59651613978979,
+          "shape": 1.1171950936859834
+        },
+        "nitro_chemo": {
+          "scale": 9.981782772061488,
+          "shape": 1.0797383811766177
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9419872192314239,
+        "shape": 0.9664725411693458
+      }
     },
     {
       "identifier": "NO16968",
@@ -750,7 +2116,21 @@
       "publication_date": "2015-08-31 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 3772
+      "subjects": 3772,
+      "weibull_by_arm": {
+        "fu_fa": {
+          "scale": 174.3157689123797,
+          "shape": 0.8931357615727189
+        },
+        "xelox": {
+          "scale": 235.79829704350507,
+          "shape": 0.8414441275690921
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.739257963683335,
+        "shape": 0.9421234304708578
+      }
     },
     {
       "identifier": "NOAH",
@@ -758,7 +2138,21 @@
       "publication_date": "2014-03-20 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 470
+      "subjects": 470,
+      "weibull_by_arm": {
+        "chemotherapy": {
+          "scale": 99.37446162005529,
+          "shape": 1.105740193301686
+        },
+        "chemotherapy_trastuzumab": {
+          "scale": 131.01991822370653,
+          "shape": 1.286422608203459
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.758468353265043,
+        "shape": 0.8595466110828824
+      }
     },
     {
       "identifier": "NSABPB35",
@@ -766,7 +2160,21 @@
       "publication_date": "2015-12-10 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 6154
+      "subjects": 6154,
+      "weibull_by_arm": {
+        "anastrozole": {
+          "scale": 15.311509847938813,
+          "shape": 1.0811354200057244
+        },
+        "tamoxifen": {
+          "scale": 8.776192154840189,
+          "shape": 1.3490053255221377
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.5731761427839601,
+        "shape": 0.8014315433389907
+      }
     },
     {
       "identifier": "NSABPB40",
@@ -774,7 +2182,21 @@
       "publication_date": "2015-08-11 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 2370
+      "subjects": 2370,
+      "weibull_by_arm": {
+        "bev": {
+          "scale": 206.70664061862482,
+          "shape": 1.2128030174030768
+        },
+        "no_bev": {
+          "scale": 158.0067537547423,
+          "shape": 1.2359455912766415
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7644009562627736,
+        "shape": 0.9812754104736439
+      }
     },
     {
       "identifier": "NSABPR04",
@@ -782,7 +2204,29 @@
       "publication_date": "2015-09-14 00:00:00",
       "arms": 4,
       "disease": "colorectal_cancer",
-      "subjects": 5702
+      "subjects": 5702,
+      "weibull_by_arm": {
+        "5fu": {
+          "scale": 514.6993162658364,
+          "shape": 0.8036637519069818
+        },
+        "cape": {
+          "scale": 622.6090609852946,
+          "shape": 0.7481855474372218
+        },
+        "no_oxali": {
+          "scale": 462.06203800874556,
+          "shape": 0.7960240609796129
+        },
+        "oxali": {
+          "scale": 683.1005024625172,
+          "shape": 0.7161369015744349
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.676418823208375,
+        "shape": 0.8910902101471443
+      }
     },
     {
       "identifier": "NTR1527",
@@ -790,7 +2234,21 @@
       "publication_date": "2014-09-14 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 495
+      "subjects": 495,
+      "weibull_by_arm": {
+        "control": {
+          "scale": 4.430071351077059,
+          "shape": 1.2757153238411632
+        },
+        "thoracic_radiotherapy": {
+          "scale": 5.974445303151761,
+          "shape": 1.2064329312628073
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.741503374169317,
+        "shape": 0.9456913378058771
+      }
     },
     {
       "identifier": "OMEGA",
@@ -798,7 +2256,21 @@
       "publication_date": "2014-02-06 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 156
+      "subjects": 156,
+      "weibull_by_arm": {
+        "capecitabine": {
+          "scale": 13.671359911045801,
+          "shape": 1.0890989138371365
+        },
+        "peg_doxorubicin": {
+          "scale": 11.551736024040673,
+          "shape": 1.2598349170826646
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8449588116473641,
+        "shape": 0.8644774796043178
+      }
     },
     {
       "identifier": "OPTIMAL",
@@ -806,7 +2278,21 @@
       "publication_date": "2015-07-03 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 154
+      "subjects": 154,
+      "weibull_by_arm": {
+        "erlotinib": {
+          "scale": 31.146763609042182,
+          "shape": 1.8553990239620501
+        },
+        "gem_carboplatin": {
+          "scale": 35.52979213574665,
+          "shape": 1.4356845134224414
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8766379350051223,
+        "shape": 0.773787468291676
+      }
     },
     {
       "identifier": "OPTIMOX3",
@@ -814,7 +2300,21 @@
       "publication_date": "2015-10-14 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 904
+      "subjects": 904,
+      "weibull_by_arm": {
+        "bev": {
+          "scale": 17.753196160876822,
+          "shape": 1.021533413584423
+        },
+        "bev_erlotinib": {
+          "scale": 21.290480014149992,
+          "shape": 0.9682270738293668
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8338560778844707,
+        "shape": 0.9478173312334334
+      }
     },
     {
       "identifier": "PALOMA2",
@@ -822,7 +2322,21 @@
       "publication_date": "2016-11-17 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 666
+      "subjects": 666,
+      "weibull_by_arm": {
+        "palbociclib_letrozole": {
+          "scale": 41.742055850999506,
+          "shape": 1.0993585480332844
+        },
+        "placebo_letrozole": {
+          "scale": 28.420144049811864,
+          "shape": 1.1026693373805827
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.6808515649363099,
+        "shape": 0.9969974776344437
+      }
     },
     {
       "identifier": "PALOMA3",
@@ -830,7 +2344,29 @@
       "publication_date": "2016-03-02 00:00:00",
       "arms": 4,
       "disease": "breast_cancer",
-      "subjects": 1042
+      "subjects": 1042,
+      "weibull_by_arm": {
+        "fulvestrant_palbociclib": {
+          "scale": 151.11489074322094,
+          "shape": 1.2950437067914649
+        },
+        "fulvestrant_placebo": {
+          "scale": 82.51723548331164,
+          "shape": 1.247383303129894
+        },
+        "palbociclib_fulvestrant": {
+          "scale": 126.17773454102124,
+          "shape": 1.4313831584952297
+        },
+        "placebo_fulvestrant": {
+          "scale": 68.09785304828301,
+          "shape": 1.4793739737396174
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.4506362855001297,
+        "shape": 0.8431832148410123
+      }
     },
     {
       "identifier": "PEGASE07",
@@ -838,7 +2374,21 @@
       "publication_date": "2015-05-05 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 348
+      "subjects": 348,
+      "weibull_by_arm": {
+        "arma": {
+          "scale": 112.04033489847464,
+          "shape": 1.0989866246539686
+        },
+        "armb": {
+          "scale": 115.61154003697197,
+          "shape": 1.0076586838300396
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9691103056203967,
+        "shape": 0.916898041545606
+      }
     },
     {
       "identifier": "PETACC8",
@@ -846,7 +2396,21 @@
       "publication_date": "2014-06-11 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 3204
+      "subjects": 3204,
+      "weibull_by_arm": {
+        "folfox4": {
+          "scale": 162.78830097363397,
+          "shape": 1.1902433751733226
+        },
+        "folfox4_cetuximab": {
+          "scale": 181.72800715071992,
+          "shape": 1.028424744141636
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8957799269686708,
+        "shape": 0.864045762062635
+      }
     },
     {
       "identifier": "PREVAIL",
@@ -854,7 +2418,21 @@
       "publication_date": "2014-06-01 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 3350
+      "subjects": 3350,
+      "weibull_by_arm": {
+        "enzalutamide": {
+          "scale": 43.72887629007011,
+          "shape": 1.373889523309343
+        },
+        "placebo": {
+          "scale": 30.631680692764604,
+          "shape": 0.918910108749442
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7004909179365398,
+        "shape": 0.6688384278060627
+      }
     },
     {
       "identifier": "PROCLAIM",
@@ -862,7 +2440,21 @@
       "publication_date": "2016-01-25 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1196
+      "subjects": 1196,
+      "weibull_by_arm": {
+        "eto_cis": {
+          "scale": 24.583087462906068,
+          "shape": 1.126479714645295
+        },
+        "pem_cis": {
+          "scale": 27.283843832762848,
+          "shape": 1.087564180830555
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9010126144097896,
+        "shape": 0.9654538529999241
+      }
     },
     {
       "identifier": "PROCTOR-SCRIPT",
@@ -870,7 +2462,21 @@
       "publication_date": "2014-12-05 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 874
+      "subjects": 874,
+      "weibull_by_arm": {
+        "chemotherapy": {
+          "scale": 164.71476528491914,
+          "shape": 1.061928936639293
+        },
+        "observation": {
+          "scale": 159.26405596627848,
+          "shape": 0.9080208554765457
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.966908192418499,
+        "shape": 0.8550674382696235
+      }
     },
     {
       "identifier": "PROFILE1014",
@@ -878,7 +2484,21 @@
       "publication_date": "2016-03-28 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1029
+      "subjects": 1029,
+      "weibull_by_arm": {
+        "chemotherapy": {
+          "scale": 21.02857955198328,
+          "shape": 1.1345670010907825
+        },
+        "crizotinib": {
+          "scale": 31.88507134420208,
+          "shape": 1.1301745644387302
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.6595117610049531,
+        "shape": 0.996128534808584
+      }
     },
     {
       "identifier": "PROSE",
@@ -886,7 +2506,21 @@
       "publication_date": "2014-05-13 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 526
+      "subjects": 526,
+      "weibull_by_arm": {
+        "chemotherapy": {
+          "scale": 9.157546281667297,
+          "shape": 1.040723659565072
+        },
+        "erlotinib": {
+          "scale": 7.662582849279921,
+          "shape": 0.9235388099287416
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8367506549892978,
+        "shape": 0.8874006096053365
+      }
     },
     {
       "identifier": "QUARTZ",
@@ -894,7 +2528,21 @@
       "publication_date": "2016-09-04 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 538
+      "subjects": 538,
+      "weibull_by_arm": {
+        "osc": {
+          "scale": 0.2425206909864624,
+          "shape": 1.1130678309302389
+        },
+        "osc_wbrt": {
+          "scale": 0.2668741125962894,
+          "shape": 1.139763258267914
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9087456577451282,
+        "shape": 0.9765780944910929
+      }
     },
     {
       "identifier": "QUASAR2",
@@ -902,7 +2550,21 @@
       "publication_date": "2016-09-19 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 1939
+      "subjects": 1939,
+      "weibull_by_arm": {
+        "cap": {
+          "scale": 246.16334377241841,
+          "shape": 1.124160117060423
+        },
+        "cap_bev": {
+          "scale": 218.38610804121342,
+          "shape": 1.1178250460224664
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8871593336947622,
+        "shape": 0.9943646185789599
+      }
     },
     {
       "identifier": "R98",
@@ -910,7 +2572,21 @@
       "publication_date": "2015-03-03 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 714
+      "subjects": 714,
+      "weibull_by_arm": {
+        "5fulv": {
+          "scale": 171.260441567989,
+          "shape": 0.9004848481265388
+        },
+        "5fulv_cpt11": {
+          "scale": 196.60426563996756,
+          "shape": 0.9734174416015056
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8710921963494447,
+        "shape": 0.9250757276806392
+      }
     },
     {
       "identifier": "RADIANT",
@@ -918,7 +2594,21 @@
       "publication_date": "2015-08-31 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 973
+      "subjects": 973,
+      "weibull_by_arm": {
+        "erlotinib": {
+          "scale": 1.3334566343746364,
+          "shape": 0.9680459665192714
+        },
+        "placebo": {
+          "scale": 1.3205332944608925,
+          "shape": 0.8347900070279521
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9903083913037751,
+        "shape": 0.8623454214984672
+      }
     },
     {
       "identifier": "RAISE",
@@ -926,7 +2616,21 @@
       "publication_date": "2015-04-13 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 2144
+      "subjects": 2144,
+      "weibull_by_arm": {
+        "placebo_folfiri": {
+          "scale": 9.526718227062716,
+          "shape": 1.3271051305453474
+        },
+        "ramucirumab_folfiri": {
+          "scale": 13.101979931839066,
+          "shape": 1.2351923900055464
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7271205021396712,
+        "shape": 0.9307419296148518
+      }
     },
     {
       "identifier": "RECOURSE",
@@ -934,7 +2638,21 @@
       "publication_date": "2015-05-14 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 1600
+      "subjects": 1600,
+      "weibull_by_arm": {
+        "placebo": {
+          "scale": 4.577726862746945,
+          "shape": 1.1474863072483479
+        },
+        "tas102": {
+          "scale": 6.513178700598647,
+          "shape": 1.2332198687646387
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7028406670810663,
+        "shape": 0.9304799057428638
+      }
     },
     {
       "identifier": "REVEL",
@@ -942,7 +2660,21 @@
       "publication_date": "2014-06-02 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 2506
+      "subjects": 2506,
+      "weibull_by_arm": {
+        "placebo_docetaxel": {
+          "scale": 8.746381547058048,
+          "shape": 1.0153955319653536
+        },
+        "ramucirumab_docetaxel": {
+          "scale": 10.480024614491194,
+          "shape": 1.1060309517851954
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8345764317160133,
+        "shape": 0.9180534507885596
+      }
     },
     {
       "identifier": "ROSE",
@@ -950,7 +2682,21 @@
       "publication_date": "2014-09-02 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 2288
+      "subjects": 2288,
+      "weibull_by_arm": {
+        "pbo_doc": {
+          "scale": 21.884060747310365,
+          "shape": 1.1779833878910189
+        },
+        "ram_doc": {
+          "scale": 22.898211625840915,
+          "shape": 1.2438443387317037
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9557104766476143,
+        "shape": 0.9470504879188978
+      }
     },
     {
       "identifier": "RTOG0415",
@@ -958,7 +2704,21 @@
       "publication_date": "2016-04-04 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 1092
+      "subjects": 1092,
+      "weibull_by_arm": {
+        "70gy": {
+          "scale": 395.9805230131641,
+          "shape": 1.0295719602550397
+        },
+        "73.8gy": {
+          "scale": 202.15651798435388,
+          "shape": 1.5077598355610173
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.5105213671775299,
+        "shape": 0.6828487773531583
+      }
     },
     {
       "identifier": "RTOG0617",
@@ -966,7 +2726,29 @@
       "publication_date": "2015-01-16 00:00:00",
       "arms": 4,
       "disease": "lung_cancer",
-      "subjects": 889
+      "subjects": 889,
+      "weibull_by_arm": {
+        "60gy": {
+          "scale": 36.03577658189805,
+          "shape": 1.393606007302837
+        },
+        "74gy": {
+          "scale": 27.750534037976966,
+          "shape": 1.2964543404470432
+        },
+        "cetuximab": {
+          "scale": 32.70551340647145,
+          "shape": 1.2633729207296849
+        },
+        "no_cetuximab": {
+          "scale": 31.003993918903397,
+          "shape": 1.293220905662079
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7700828640367632,
+        "shape": 0.906549565737591
+      }
     },
     {
       "identifier": "RTOG9804",
@@ -974,7 +2756,21 @@
       "publication_date": "2015-01-20 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 585
+      "subjects": 585,
+      "weibull_by_arm": {
+        "observation": {
+          "scale": 378.57101773341213,
+          "shape": 1.2831070758716108
+        },
+        "rt": {
+          "scale": 349.9957928186797,
+          "shape": 1.4592655901401845
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9245181918948298,
+        "shape": 0.8792827601371378
+      }
     },
     {
       "identifier": "SAKK",
@@ -982,7 +2778,21 @@
       "publication_date": "2015-08-12 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 232
+      "subjects": 232,
+      "weibull_by_arm": {
+        "chemo_surgery": {
+          "scale": 0.5383113499003741,
+          "shape": 0.6857770980441655
+        },
+        "crt_surgery": {
+          "scale": 0.6131225853651854,
+          "shape": 0.7567390906373586
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8779832332872675,
+        "shape": 0.9062266064074663
+      }
     },
     {
       "identifier": "SAKK4106",
@@ -990,7 +2800,21 @@
       "publication_date": "2015-01-20 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 524
+      "subjects": 524,
+      "weibull_by_arm": {
+        "bev": {
+          "scale": 19.2416520583306,
+          "shape": 0.9409829439207315
+        },
+        "no_bev": {
+          "scale": 17.075555158634735,
+          "shape": 0.9080720110943096
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8874266672565643,
+        "shape": 0.9650249422276518
+      }
     },
     {
       "identifier": "SELECTBC",
@@ -998,7 +2822,25 @@
       "publication_date": "2015-11-23 00:00:00",
       "arms": 3,
       "disease": "breast_cancer",
-      "subjects": 1184
+      "subjects": 1184,
+      "weibull_by_arm": {
+        "s-1": {
+          "scale": 44.67294055143579,
+          "shape": 1.46791296244211
+        },
+        "s1": {
+          "scale": 12.622413792669809,
+          "shape": 0.9112398589902104
+        },
+        "taxane": {
+          "scale": 28.537628842542134,
+          "shape": 0.9090301096607823
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.2825516663300134,
+        "shape": 0.6192670362066047
+      }
     },
     {
       "identifier": "SIRFLOX",
@@ -1006,7 +2848,21 @@
       "publication_date": "2016-02-22 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 530
+      "subjects": 530,
+      "weibull_by_arm": {
+        "mfolfox6": {
+          "scale": 0.3014256705508182,
+          "shape": 1.3742627082816268
+        },
+        "mfolfox6_rt": {
+          "scale": 0.31245431396365053,
+          "shape": 1.3018978325618986
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9647031808492957,
+        "shape": 0.9473427640263825
+      }
     },
     {
       "identifier": "SMART",
@@ -1014,7 +2870,21 @@
       "publication_date": "2016-06-23 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 203
+      "subjects": 203,
+      "weibull_by_arm": {
+        "deferred_rt": {
+          "scale": 14.209128490180884,
+          "shape": 1.6435647068848205
+        },
+        "immediate_rt": {
+          "scale": 14.578042802746317,
+          "shape": 1.6317368016517566
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9746938380167237,
+        "shape": 0.9928035049770069
+      }
     },
     {
       "identifier": "SOFT",
@@ -1022,7 +2892,21 @@
       "publication_date": "2014-12-11 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 2033
+      "subjects": 2033,
+      "weibull_by_arm": {
+        "tamoxifen": {
+          "scale": 375.1832472520295,
+          "shape": 0.9849467109859701
+        },
+        "tamoxifen_os": {
+          "scale": 361.9088867795596,
+          "shape": 1.1017574914383874
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9646189946654179,
+        "shape": 0.8939777751817995
+      }
     },
     {
       "identifier": "SQUIRE",
@@ -1030,7 +2914,21 @@
       "publication_date": "2015-06-02 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 2186
+      "subjects": 2186,
+      "weibull_by_arm": {
+        "gem_cis": {
+          "scale": 10.782032364457438,
+          "shape": 1.1571487411398935
+        },
+        "necitumumab_gem_cis": {
+          "scale": 12.053132760856927,
+          "shape": 1.1955072532174589
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8945419069366395,
+        "shape": 0.9679144463788644
+      }
     },
     {
       "identifier": "TANIA",
@@ -1038,7 +2936,21 @@
       "publication_date": "2014-09-28 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 494
+      "subjects": 494,
+      "weibull_by_arm": {
+        "chem_bev": {
+          "scale": 9.003055812937914,
+          "shape": 1.3052287277478531
+        },
+        "chemo": {
+          "scale": 7.039744143425513,
+          "shape": 1.1590612250526213
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7819283018671274,
+        "shape": 0.8880138786498816
+      }
     },
     {
       "identifier": "Tasquinimod",
@@ -1046,7 +2958,21 @@
       "publication_date": "2016-06-13 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 1735
+      "subjects": 1735,
+      "weibull_by_arm": {
+        "placebo": {
+          "scale": 22.901270424922153,
+          "shape": 0.9983886449145419
+        },
+        "tasq": {
+          "scale": 22.383968406297246,
+          "shape": 1.1181223719372857
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9774116453355376,
+        "shape": 0.8929153641606417
+      }
     },
     {
       "identifier": "TCOG0701",
@@ -1054,7 +2980,21 @@
       "publication_date": "2015-04-23 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1192
+      "subjects": 1192,
+      "weibull_by_arm": {
+        "docetaxel_cis": {
+          "scale": 14.764213312527241,
+          "shape": 1.004698884182586
+        },
+        "s1_cis": {
+          "scale": 13.82813444722896,
+          "shape": 0.9885228304239696
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9365981210455671,
+        "shape": 0.9838996001555461
+      }
     },
     {
       "identifier": "TEXT-SOFT(2)",
@@ -1062,7 +3002,21 @@
       "publication_date": "2014-06-01 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 4690
+      "subjects": 4690,
+      "weibull_by_arm": {
+        "exemestane_os": {
+          "scale": 545.3526594694775,
+          "shape": 1.0846042996061198
+        },
+        "tamoxifen_os": {
+          "scale": 290.58294266799044,
+          "shape": 1.2866366974887848
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.5328349236449518,
+        "shape": 0.8429763442337801
+      }
     },
     {
       "identifier": "TH3RESA",
@@ -1070,7 +3024,21 @@
       "publication_date": "2014-05-02 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 1204
+      "subjects": 1204,
+      "weibull_by_arm": {
+        "physicians_choice": {
+          "scale": 19.296083229888026,
+          "shape": 1.3469062488590267
+        },
+        "trastuzumab_emtansine": {
+          "scale": 25.36873450897297,
+          "shape": 1.475698875410506
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.7606245878391358,
+        "shape": 0.9127243174759131
+      }
     },
     {
       "identifier": "TRAPEZE",
@@ -1078,7 +3046,29 @@
       "publication_date": "2016-01-21 00:00:00",
       "arms": 4,
       "disease": "prostate_cancer",
-      "subjects": 1514
+      "subjects": 1514,
+      "weibull_by_arm": {
+        "no_sr89": {
+          "scale": 12.081821893425497,
+          "shape": 1.3307820817354248
+        },
+        "no_za": {
+          "scale": 12.45167444141812,
+          "shape": 1.2304217805795967
+        },
+        "sr89": {
+          "scale": 13.310362623526967,
+          "shape": 1.21869872576313
+        },
+        "za": {
+          "scale": 12.872577134754346,
+          "shape": 1.3254224535839838
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9077004312467084,
+        "shape": 0.9157763261839753
+      }
     },
     {
       "identifier": "TRIBE",
@@ -1086,7 +3076,21 @@
       "publication_date": "2015-09-01 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 508
+      "subjects": 508,
+      "weibull_by_arm": {
+        "folfiri_bev": {
+          "scale": 35.42038990328106,
+          "shape": 1.4342449909818178
+        },
+        "folfoxiri_bev": {
+          "scale": 40.93757664171625,
+          "shape": 1.2920482584947715
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.865229278549599,
+        "shape": 0.9008560368827191
+      }
     },
     {
       "identifier": "TRIBE(2)",
@@ -1094,7 +3098,21 @@
       "publication_date": "2014-10-23 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 1016
+      "subjects": 1016,
+      "weibull_by_arm": {
+        "folfiri_bevacizumab": {
+          "scale": 23.27130976369453,
+          "shape": 1.203086885941335
+        },
+        "folfoxiri_bevacizumab": {
+          "scale": 26.811605901674586,
+          "shape": 1.2158796392581603
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.86795658003615,
+        "shape": 0.9894786022367884
+      }
     },
     {
       "identifier": "TROG0306",
@@ -1102,7 +3120,21 @@
       "publication_date": "2016-05-04 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 293
+      "subjects": 293,
+      "weibull_by_arm": {
+        "delayed_adt": {
+          "scale": null,
+          "shape": null
+        },
+        "immediate_adt": {
+          "scale": 8.512709804218717e16,
+          "shape": -0.003182196501220569
+        }
+      },
+      "weibull_max_diff": {
+        "scale": null,
+        "shape": null
+      }
     },
     {
       "identifier": "TURANDOT",
@@ -1110,7 +3142,21 @@
       "publication_date": "2016-08-05 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 1128
+      "subjects": 1128,
+      "weibull_by_arm": {
+        "bev_capecitabine": {
+          "scale": 23.409626770321825,
+          "shape": 1.0152827876336035
+        },
+        "bev_paclitaxel": {
+          "scale": 27.817795949959475,
+          "shape": 1.166187765212033
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8415342039474528,
+        "shape": 0.8705997592497531
+      }
     },
     {
       "identifier": "VANTAGE014",
@@ -1118,7 +3164,21 @@
       "publication_date": "2015-03-20 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1322
+      "subjects": 1322,
+      "weibull_by_arm": {
+        "placebo": {
+          "scale": 0.4536461301042635,
+          "shape": 0.9364730751517555
+        },
+        "vorinostat": {
+          "scale": 0.5067052949104742,
+          "shape": 0.9785884339489221
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8952859475928995,
+        "shape": 0.9569631549524681
+      }
     },
     {
       "identifier": "WJOG5108L",
@@ -1126,7 +3186,21 @@
       "publication_date": "2016-03-28 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1118
+      "subjects": 1118,
+      "weibull_by_arm": {
+        "erlotinib": {
+          "scale": 20.614091926639738,
+          "shape": 0.9389212788899175
+        },
+        "gefitinib": {
+          "scale": 19.588384674246225,
+          "shape": 0.9214294680300211
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.9502424236758165,
+        "shape": 0.9813703115978191
+      }
     },
     {
       "identifier": "WJOG5208L",
@@ -1134,7 +3208,21 @@
       "publication_date": "2015-10-28 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 698
+      "subjects": 698,
+      "weibull_by_arm": {
+        "cisplatin_docetaxel": {
+          "scale": 10.942531443824327,
+          "shape": 1.0892310562814265
+        },
+        "nedaplatin_docetaxel": {
+          "scale": 12.903737109538739,
+          "shape": 1.0896215906786064
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8480125835588636,
+        "shape": 0.9996415871339914
+      }
     },
     {
       "identifier": "WSGAGO",
@@ -1142,7 +3230,21 @@
       "publication_date": "2014-05-14 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 1930
+      "subjects": 1930,
+      "weibull_by_arm": {
+        "control": {
+          "scale": 6.413622774151858,
+          "shape": 1.1367318414416805
+        },
+        "ed_doc": {
+          "scale": 6.125983694483502,
+          "shape": 1.3550152823215071
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.955151855698842,
+        "shape": 0.8389070265644176
+      }
     },
     {
       "identifier": "WSG-ARA",
@@ -1150,7 +3252,21 @@
       "publication_date": "2014-01-01 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 1170
+      "subjects": 1170,
+      "weibull_by_arm": {
+        "da_negative": {
+          "scale": 2.6336286899823262,
+          "shape": 1.4560535232995635
+        },
+        "da_positive": {
+          "scale": 2.991485265316679,
+          "shape": 1.3860668368451423
+        }
+      },
+      "weibull_max_diff": {
+        "scale": 0.8803749497002888,
+        "shape": 0.9519339877727679
+      }
     }
   ]
 }

@@ -5,7 +5,25 @@
     "publication_date": "2016-11-07 00:00:00",
     "arms": 3,
     "disease": "breast_cancer",
-    "subjects": 1095
+    "subjects": 1095,
+    "weibull_by_arm": {
+      "t-dm1": {
+        "scale": 23.998505042629578,
+        "shape": 0.9254800008420486
+      },
+      "t-dm1_pertuzumab": {
+        "scale": 26.51270633002206,
+        "shape": 0.9930213691298805
+      },
+      "trastuzumab_taxane": {
+        "scale": 21.571392461312826,
+        "shape": 1.1632994307444589
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.8136246897166486,
+      "shape": 0.7955647328476585
+    }
   },
   "arms": [
     {

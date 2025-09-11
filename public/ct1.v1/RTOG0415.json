@@ -5,7 +5,21 @@
     "publication_date": "2016-04-04 00:00:00",
     "arms": 2,
     "disease": "prostate_cancer",
-    "subjects": 1092
+    "subjects": 1092,
+    "weibull_by_arm": {
+      "70gy": {
+        "scale": 395.9805230131641,
+        "shape": 1.0295719602550397
+      },
+      "73.8gy": {
+        "scale": 202.15651798435388,
+        "shape": 1.5077598355610173
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.5105213671775299,
+      "shape": 0.6828487773531583
+    }
   },
   "arms": [
     {

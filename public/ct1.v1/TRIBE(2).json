@@ -5,7 +5,21 @@
     "publication_date": "2014-10-23 00:00:00",
     "arms": 2,
     "disease": "colorectal_cancer",
-    "subjects": 1016
+    "subjects": 1016,
+    "weibull_by_arm": {
+      "folfiri_bevacizumab": {
+        "scale": 23.27130976369453,
+        "shape": 1.203086885941335
+      },
+      "folfoxiri_bevacizumab": {
+        "scale": 26.811605901674586,
+        "shape": 1.2158796392581603
+      }
+    },
+    "weibull_max_diff": {
+      "scale": 0.86795658003615,
+      "shape": 0.9894786022367884
+    }
   },
   "arms": [
     {
