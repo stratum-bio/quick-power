@@ -243,13 +243,14 @@ const SchoenfeldClosedForm: React.FC = () => {
         <p>
           The default parameters of this simulation are such that the simulation
           is quick, which means the estimates will be noisy and non-monotonic.
-          To get more reliable results, increase the Permutations (number of
+          There are 3 main variables which determine the speed and accuracy. The number of
           random permutations used to estimate the p-value for every simulated
-          clinical trial) and the Simulations (number of simulated clinical
-          trials). These scale multiplicatively, so increasing each by a factor
-          of 10 will increase the total computation time by a factor of 100.
-          Increase the Evaluations to increase how many different sample sizes
-          are evaluated in the simulation.
+          clinical trial, and the number of simulated clinical
+          trials, and the number of sample sizes evaluated. These scale multiplicatively, so increasing each by a factor
+          The permutation count and simulation count scale multiplicatively, while the
+          number of sample sizes scales linearly in amount of computation.
+          The different buttons correspond to simulation and permutation counts of 100, 500, and 1000 respectively.
+          This means the most accurate button here is expected to make around 1M times more computations.
         </p>
       </div>
     </div>

@@ -66,7 +66,7 @@ const SchoenfeldSampleSize: React.FC<SchoenfeldSampleSizeProps> = ({
   );
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 items-end gap-x-8 pr-24 pl-16 lg:pr-0 lg:pl-0">
+    <div className="grid grid-cols-1 md:grid-cols-2 items-end">
       <div>
         <form>
           <ValidatedInputField
@@ -158,7 +158,7 @@ const SchoenfeldSampleSize: React.FC<SchoenfeldSampleSizeProps> = ({
             </>
           );
         })()}
-        <div className="flex flex-col gap-2 items-center py-1 text-theme-dark border rounded-lg pt-2 pb-2 pl-6 pr-6 mt-2 hover:bg-blue-200">
+        <div className="flex flex-col gap-2 items-center py-1 text-theme-dark border rounded-lg pt-2 pb-2 pl-6 pr-6 mt-2 hover:bg-blue-200 text-center">
           <div className="font-bold">Sample Size</div>
           <span className="text-2xl">
             <InlineMath

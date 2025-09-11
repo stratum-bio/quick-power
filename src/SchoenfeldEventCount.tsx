@@ -74,7 +74,7 @@ const SchoenfeldEventCount: React.FC<SchoenfeldEventCountProps> = ({
   );
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 items-center lg:items-end gap-x-8 pr-24 pl-16 lg:pr-0 lg:pl-0">
+    <div className="grid grid-cols-1 md:grid-cols-2 items-center lg:items-end">
       <div className="text-right">
         <form>
           <ValidatedInputField

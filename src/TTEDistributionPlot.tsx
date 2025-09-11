@@ -15,8 +15,10 @@ import {
 import { linspace } from "./utils/survival";
 import { formatLegend } from "./utils/formatters.tsx";
 import { InlineMathTooltip } from "./InlineMathTooltip";
-import { ValidatedInputField } from "./ValidatedInputField";
+
 import type { TTEDistributionWorkerResult } from "./types/tteDistribution";
+
+import { ValidatedInputField } from "./ValidatedInputField";
 
 import Worker from "./workers/tteDistribution.worker.ts?worker";
 
@@ -104,14 +106,17 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   const [evaluationCount, setEvaluationCount] = useState(11);
   const [triggerUpdate, setTriggerUpdate] = useState(0);
 
+  const [minSampleSize, setMinSampleSize] = useState(MIN_SAMPLE_SIZE);
+  const [maxSampleSize, setMaxSampleSize] = useState(totalSampleSize);
+
   /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     setLoading(true);
 
     const worker = new Worker();
     const sampleEvalPoints = linspace(
-      MIN_SAMPLE_SIZE,
-      totalSampleSize,
+      minSampleSize,
+      maxSampleSize,
       evaluationCount,
     ).map((s) => Math.round(s));
     if (!sampleEvalPoints.includes(totalSampleSize)) {
@@ -240,7 +245,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
               position: "insideBottom",
               offset: -10,
             }}
-            domain={[MIN_SAMPLE_SIZE, "auto"]}
+            domain={[minSampleSize, "auto"]}
           />
           <YAxis
             label={{
@@ -321,7 +326,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
               position: "insideBottom",
               offset: -10,
             }}
-            domain={[MIN_SAMPLE_SIZE, "auto"]}
+            domain={[minSampleSize, "auto"]}
           />
           <YAxis
             label={{
@@ -370,42 +375,80 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
         </ComposedChart>
       </ResponsiveContainer>
       <div className="flex flex-col items-center lg:items-end justify-center mt-4 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr_1fr_min-content] mr-16 gap-4 lg:mr-0">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <ValidatedInputField
-            label="Permutations"
-            value={permutationCount}
-            onValueChange={setPermutationCount}
-            max={2000}
+            label="Min Sample Size"
+            value={minSampleSize}
+            onValueChange={setMinSampleSize}
             min={1}
-            keyValue="permutationCount"
-            description="Number of random permutations used to sample the null distribution to compute the p-value for each instance of a simulated trial."
+            max={5000}
+            step={100}
+            keyValue="minSampleSize"
+            description="Minimum sample size for evaluation."
           />
           <ValidatedInputField
-            label="Simulations"
-            value={datasetSimCount}
-            onValueChange={setDatasetSimCount}
-            max={2000}
+            label="Max Sample Size"
+            value={maxSampleSize}
+            onValueChange={setMaxSampleSize}
             min={1}
-            keyValue="datasetSimCount"
-            description="Number of simulated trials to perform for each sample size candidate."
+            max={10000}
+            step={100}
+            keyValue="maxSampleSize"
+            description="Maximum sample size for evaluation."
           />
-          <ValidatedInputField
-            label="Evaluations"
-            value={evaluationCount}
-            onValueChange={setEvaluationCount}
-            max={100}
-            min={2}
-            keyValue="sampleSizeEvals"
-            description={`Number of different sample sizes to evaluate between 0 and ${totalSampleSize}`}
-          />
+          </div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           <button
-            className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 mb-4 lg:mt-8"
-            onClick={() => setTriggerUpdate(triggerUpdate + 1)}
+            className="bg-indigo-600 text-white rounded hover:bg-indigo-700"
+            onClick={() => {
+              setPermutationCount(100);
+              setDatasetSimCount(100);
+              setEvaluationCount(11);
+              setTriggerUpdate(triggerUpdate + 1);
+            }}
           >
-            Update
+            Quick, Noisy
+          </button>
+          <button
+            className="bg-indigo-600 text-white rounded hover:bg-indigo-700"
+            onClick={() => {
+              setPermutationCount(500);
+              setDatasetSimCount(500);
+              setEvaluationCount(25);
+              setTriggerUpdate(triggerUpdate + 1);
+            }}
+          >
+            Slow, Less Noisy
+          </button>
+          <button
+            className="bg-indigo-600 text-white rounded hover:bg-indigo-700"
+            onClick={() => {
+              setPermutationCount(1000);
+              setDatasetSimCount(1000);
+              setEvaluationCount(25);
+              setTriggerUpdate(triggerUpdate + 1);
+            }}
+          >
+            Very Slow, Accurate
           </button>
         </div>
       </div>
+        <div className="mt-8">
+          <p>
+            Update the sample size evaluation range and press a button to re-run the simulation.
+          </p>
+          <br />
+          <ul>
+            <li><span className="font-bold">Quick, Noisy</span></li>
+            <li>Quick simulation taking less than a minute</li>
+            <li> <br /> </li>
+            <li><span className="font-bold">Slow, Less Noisy</span></li>
+            <li>More accurate simulation taking around 5 minutes</li>
+            <li> <br /> </li>
+            <li><span className="font-bold">Very Slow, Accurate</span></li>
+            <li> Most accurate simulation taking around 30 minutes (just leave tab open while you work on something else)</li>
+          </ul>
+        </div>
     </div>
   );
 };

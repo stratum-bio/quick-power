@@ -5,7 +5,6 @@ import CitationFooter from "./CitationFooter";
 import { samplesToLambda } from "./utils/simulate";
 import KaplanMeierPlot from "./KaplanMeierPlot";
 import TTEDistributionPlot from "./TTEDistributionPlot";
-import { InlineMath } from "react-katex";
 
 function fitLambdaPerArm(data: Trial): Record<string, number> {
   const result: Record<string, number> = {};
@@ -64,6 +63,22 @@ const SimulateFromTrial: React.FC = () => {
         }
         const treatIdx = (controlIdx + 1) % arms.length;
 
+        const maxTime = Math.max(...data.arms[0].time);
+        let defaultAccrual = 24;
+        let defaultFollowup = 12;
+        if (maxTime < defaultAccrual + defaultFollowup) {
+          defaultAccrual = Math.round(maxTime * 2 / 3);
+          defaultFollowup = Math.round(maxTime / 3);
+          if (defaultAccrual === 0) {
+            defaultAccrual = 1;
+          }
+          if (defaultFollowup === 0) {
+            defaultFollowup = 1;
+          }
+        }
+
+        setAccrualPeriod(defaultAccrual);
+        setFollowUpPeriod(defaultFollowup);
         setControlArm(arms[controlIdx]);
         setTreatmentArm(arms[treatIdx]);
 
@@ -249,23 +264,6 @@ const SimulateFromTrial: React.FC = () => {
           />
 
           <br />
-          <p>
-            The initial simulation parameters are quick and noisy to demonstrate
-            the results. For more accurate simulated results, increase the
-            Permutations and Simulations. For something visually interesting,
-            setting Simulations to 500 and Permutations to 500. This will run{" "}
-            <InlineMath math="500 * 500 = 250000" /> randomized computations for
-            each sample size evaluated. When evaluating 11 sample sizes, this
-            usually takes 3-4 minutes.
-          </p>
-          <br />
-          <p>
-            For accurate results, it is recommended to set Permutations and
-            Simulations to 1000 each, but this will end up taking up to a half
-            hour. Mobile devices pause computations when the page is not in the
-            foreground, so it is recommended to run larger simulations on
-            desktop.
-          </p>
         </div>
       )}
 

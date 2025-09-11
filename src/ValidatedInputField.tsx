@@ -6,6 +6,7 @@ interface ValidatedInputFieldProps {
   keyValue: string;
   label: React.ReactNode;
   value: number;
+  step?: number;
   onValueChange?: (value: number) => void;
   description?: string;
 }
@@ -16,6 +17,7 @@ export const ValidatedInputField: React.FC<ValidatedInputFieldProps> = ({
   keyValue,
   label,
   value,
+  step,
   onValueChange = () => {},
   description,
 }) => {
@@ -62,7 +64,7 @@ export const ValidatedInputField: React.FC<ValidatedInputFieldProps> = ({
           const num = parseFloat(value);
           onValueChange(num);
         }}
-        step={0.05}
+        step={step ? step : 0.05}
       />
     </div>
   );
