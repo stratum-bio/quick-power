@@ -100,26 +100,27 @@ const TrialList: React.FC = () => {
               </h2>
               {!collapsedStates[disease] && (
                 <>
-                  <div className="grid grid-cols-4 pl-8 pr-4 md:gap-4 font-bold border-b pb-4 pt-3 uppercase text-xs">
+                  <div className="grid grid-cols-6 pl-8 pr-4 md:gap-4 font-bold border-b pb-4 pt-3 uppercase text-xs">
                     <div>Trial Name</div>
+                    <div>Date</div>
                     <div>Subjects</div>
                     <div>Arms</div>
-                    <div>
-                      <span className="desktop-only">Publication Date</span>
-                      <span className="mobile-only">Date</span>
-                    </div>
+                    <div>Weibull Min Scale Ratio</div>
+                    <div>Weibull Min Shape Ratio</div>
                   </div>
                   <div className="">
                     {trials.map((trial) => (
                       <Link
                         to={`/trial-detail/${trial.identifier}`}
                         key={trial.identifier}
-                        className="grid grid-cols-4 pl-8 pr-4 md:gap-4 pb-3 pt-3 hover:bg-gray-200"
+                        className="grid grid-cols-6 pl-8 pr-4 md:gap-4 pb-3 pt-3 hover:bg-gray-200"
                       >
                         <div>{trial.identifier}</div>
+                        <div>{new Date(trial.publication_date).getFullYear()}</div>
                         <div>{trial.subjects}</div>
                         <div>{trial.arms}</div>
-                        <div>{trial.publication_date.split(" ")[0]}</div>
+                        <div>{trial.weibull_max_diff.scale.toFixed(3)}</div>
+                        <div>{trial.weibull_max_diff.shape.toFixed(3)}</div>
                       </Link>
                     ))}
                   </div>
