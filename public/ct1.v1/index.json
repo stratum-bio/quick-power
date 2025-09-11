@@ -20,7 +20,8 @@
       "weibull_max_diff": {
         "scale": 0.9180202742330937,
         "shape": 0.9374961604329314
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "A001",
@@ -31,18 +32,19 @@
       "subjects": 499,
       "weibull_by_arm": {
         "a": {
-          "scale": 141.73617276916252,
-          "shape": 0.9873324580440067
+          "scale": 11.81134773076356,
+          "shape": 0.9873324580440057
         },
         "b": {
-          "scale": 133.47167251835754,
-          "shape": 1.3066611038641833
+          "scale": 11.122639376529687,
+          "shape": 1.3066611038641895
         }
       },
       "weibull_max_diff": {
-        "scale": 0.9416909594118581,
-        "shape": 0.7556147918723322
-      }
+        "scale": 0.9416909594118478,
+        "shape": 0.7556147918723278
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "A003",
@@ -64,7 +66,8 @@
       "weibull_max_diff": {
         "scale": 0.8028943568913627,
         "shape": 0.8809095470160244
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "A004",
@@ -86,7 +89,8 @@
       "weibull_max_diff": {
         "scale": 0.8287286005971273,
         "shape": 0.9040426528688709
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "ACT1",
@@ -108,7 +112,8 @@
       "weibull_max_diff": {
         "scale": 0.9086056629634124,
         "shape": 0.9626371226448518
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "ACT2",
@@ -138,7 +143,8 @@
       "weibull_max_diff": {
         "scale": 0.7661346945946643,
         "shape": 0.8222810006935339
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "ACTSCC",
@@ -149,18 +155,19 @@
       "subjects": 1518,
       "weibull_by_arm": {
         "s_1": {
-          "scale": 138.5459521955032,
-          "shape": 0.9597571221900298
+          "scale": 11.545496016291935,
+          "shape": 0.9597571221900297
         },
         "uft_lv": {
-          "scale": 115.64820681766427,
+          "scale": 9.637350568138691,
           "shape": 0.9543646983524209
         }
       },
       "weibull_max_diff": {
         "scale": 0.834728153259016,
-        "shape": 0.9943814703606426
-      }
+        "shape": 0.9943814703606428
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "AIO0207",
@@ -186,7 +193,8 @@
       "weibull_max_diff": {
         "scale": 0.8286277529074478,
         "shape": 0.8272082114834273
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "ALTTO",
@@ -197,26 +205,27 @@
       "subjects": 8381,
       "weibull_by_arm": {
         "l": {
-          "scale": 235.87926471715076,
-          "shape": 1.0290529265697357
+          "scale": 19.656605393095923,
+          "shape": 1.0290529265697348
         },
         "l_t": {
-          "scale": 274.4539837885742,
-          "shape": 1.1958302528322535
+          "scale": 22.871165315714535,
+          "shape": 1.1958302528322529
         },
         "t": {
-          "scale": 310.8183695760075,
-          "shape": 1.014319070044796
+          "scale": 25.901530798000636,
+          "shape": 1.0143190700447957
         },
         "t_then_l": {
-          "scale": 347.47492461667764,
-          "shape": 0.9864959795704986
+          "scale": 28.956243718056477,
+          "shape": 0.9864959795704985
         }
       },
       "weibull_max_diff": {
-        "scale": 0.6788382355284044,
-        "shape": 0.8249464982459183
-      }
+        "scale": 0.678838235528405,
+        "shape": 0.8249464982459187
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "AMAROS",
@@ -238,7 +247,8 @@
       "weibull_max_diff": {
         "scale": 0.7829471953450816,
         "shape": 0.9137767583634172
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "ASPECCT",
@@ -260,7 +270,8 @@
       "weibull_max_diff": {
         "scale": 0.9880956742833508,
         "shape": 0.981393411944693
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "ATTENTION",
@@ -282,7 +293,8 @@
       "weibull_max_diff": {
         "scale": 0.7717850119082618,
         "shape": 0.9673472720196352
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "AURA3",
@@ -293,18 +305,19 @@
       "subjects": 419,
       "weibull_by_arm": {
         "osimertinib": {
-          "scale": 155.4529705794294,
-          "shape": 1.4331006976797778
+          "scale": 12.954414214952452,
+          "shape": 1.4331006976797775
         },
         "platinum-pemetrexed": {
-          "scale": 75.83357278861381,
+          "scale": 6.31946439905115,
           "shape": 1.5014837987151988
         }
       },
       "weibull_max_diff": {
-        "scale": 0.48782324651600206,
-        "shape": 0.9544563177478601
-      }
+        "scale": 0.48782324651600195,
+        "shape": 0.95445631774786
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "AZURE",
@@ -326,7 +339,8 @@
       "weibull_max_diff": {
         "scale": 0.9854015265197025,
         "shape": 0.934259989830579
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "BEACON",
@@ -348,7 +362,8 @@
       "weibull_max_diff": {
         "scale": 0.9150551912203787,
         "shape": 0.981057031544297
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "BEBYP",
@@ -370,7 +385,8 @@
       "weibull_max_diff": {
         "scale": 0.879281604822219,
         "shape": 0.9163979551722741
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "BEYOND",
@@ -392,7 +408,8 @@
       "weibull_max_diff": {
         "scale": 0.6959184476146084,
         "shape": 0.9371694553454232
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "BOLERO1",
@@ -403,18 +420,19 @@
       "subjects": 719,
       "weibull_by_arm": {
         "everolimus": {
-          "scale": 0.5897961932849498,
+          "scale": 30.669402050817386,
           "shape": 1.1538518355387186
         },
         "placebo": {
-          "scale": 0.5253915446005498,
-          "shape": 1.1989548535561692
+          "scale": 27.32036031922851,
+          "shape": 1.198954853556179
         }
       },
       "weibull_max_diff": {
-        "scale": 0.8908018576286673,
-        "shape": 0.9623813875195781
-      }
+        "scale": 0.8908018576286648,
+        "shape": 0.9623813875195703
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "BOLERO2",
@@ -436,7 +454,8 @@
       "weibull_max_diff": {
         "scale": 0.9447112512430706,
         "shape": 0.9101146612012799
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "BREC",
@@ -458,7 +477,8 @@
       "weibull_max_diff": {
         "scale": 0.8444191366341411,
         "shape": 0.955196331535751
-      }
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "CA184043",
@@ -480,7 +500,8 @@
       "weibull_max_diff": {
         "scale": 0.8345152230903294,
         "shape": 0.8743114282002362
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "CA184095",
@@ -502,7 +523,8 @@
       "weibull_max_diff": {
         "scale": 0.9502838854381813,
         "shape": 0.9412414167584215
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "CAIRO3",
@@ -524,7 +546,8 @@
       "weibull_max_diff": {
         "scale": 0.7217833432784715,
         "shape": 0.895360324146883
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "CALGB40502",
@@ -550,7 +573,8 @@
       "weibull_max_diff": {
         "scale": 0.7790128829733411,
         "shape": 0.9139174387220116
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "CALGB40503",
@@ -572,7 +596,8 @@
       "weibull_max_diff": {
         "scale": 0.8655019518881192,
         "shape": 0.8741292530325974
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "CALGB90202",
@@ -594,7 +619,8 @@
       "weibull_max_diff": {
         "scale": 0.870343301202871,
         "shape": 0.9500448171477663
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "CBCSG006",
@@ -616,7 +642,8 @@
       "weibull_max_diff": {
         "scale": 0.8763664494418015,
         "shape": 0.9712107856566069
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "CEREBEL",
@@ -638,7 +665,8 @@
       "weibull_max_diff": {
         "scale": 0.7811393783194748,
         "shape": 0.9934451675614628
-      }
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "Checkmate017",
@@ -660,7 +688,8 @@
       "weibull_max_diff": {
         "scale": 0.5997854904790474,
         "shape": 0.8399650881604672
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "Checkmate057",
@@ -682,7 +711,8 @@
       "weibull_max_diff": {
         "scale": 0.8131683639934165,
         "shape": 0.7361083682912
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "CHHiP",
@@ -708,7 +738,8 @@
       "weibull_max_diff": {
         "scale": 6.603404942322091e-16,
         "shape": -661.852975606841
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "Chronicle",
@@ -730,7 +761,8 @@
       "weibull_max_diff": {
         "scale": 0.8012803630184835,
         "shape": 0.8483934171953172
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "CLEOPATRA",
@@ -752,7 +784,8 @@
       "weibull_max_diff": {
         "scale": 0.7179951075156,
         "shape": 0.9673276543132258
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "COMET1",
@@ -774,7 +807,8 @@
       "weibull_max_diff": {
         "scale": 0.8375204479340772,
         "shape": 0.8933424248763792
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "CONCEPT",
@@ -785,18 +819,19 @@
       "subjects": 139,
       "weibull_by_arm": {
         "co": {
-          "scale": 63.63799429478754,
+          "scale": 5.303166191232295,
           "shape": 1.5946088573817483
         },
         "io": {
-          "scale": 92.08331033184214,
+          "scale": 7.673609194320178,
           "shape": 1.5189359639090754
         }
       },
       "weibull_max_diff": {
         "scale": 0.691091513385588,
         "shape": 0.9525445421161631
-      }
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "CONCUR",
@@ -818,7 +853,8 @@
       "weibull_max_diff": {
         "scale": 0.5702236320453942,
         "shape": 0.9681649092624638
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "COUAA202",
@@ -840,7 +876,8 @@
       "weibull_max_diff": {
         "scale": 0.8768430583557446,
         "shape": 0.9566888334604473
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "Dalotuzumab",
@@ -866,7 +903,8 @@
       "weibull_max_diff": {
         "scale": 0.8260218597064339,
         "shape": 0.8841977493579174
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "DART0105",
@@ -877,18 +915,19 @@
       "subjects": 343,
       "weibull_by_arm": {
         "ltad": {
-          "scale": 3.9683133161408963,
-          "shape": 1.8912691171196856
+          "scale": 206.3522924393266,
+          "shape": 1.8912691171196858
         },
         "stad": {
-          "scale": 2.9468250192287604,
-          "shape": 1.8232880623047898
+          "scale": 153.23490099992043,
+          "shape": 1.8232880623046033
         }
       },
       "weibull_max_diff": {
-        "scale": 0.7425887989344772,
-        "shape": 0.9640553244382123
-      }
+        "scale": 0.7425887989345978,
+        "shape": 0.9640553244381135
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "DELTA",
@@ -910,7 +949,8 @@
       "weibull_max_diff": {
         "scale": 0.9034984846431461,
         "shape": 0.9284325849059109
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "E1199",
@@ -940,7 +980,8 @@
       "weibull_max_diff": {
         "scale": 0.7423505828423783,
         "shape": 0.8310190634520117
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "EAGLE",
@@ -962,7 +1003,8 @@
       "weibull_max_diff": {
         "scale": 0.996385744715429,
         "shape": 0.9210406920830123
-      }
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "ELDA",
@@ -984,7 +1026,8 @@
       "weibull_max_diff": {
         "scale": 0.7352858064668266,
         "shape": 0.9077787065188514
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "ELM-PC4",
@@ -1006,7 +1049,8 @@
       "weibull_max_diff": {
         "scale": 0.8989918018636486,
         "shape": 0.8591440649032535
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "ELM-PC5",
@@ -1028,7 +1072,8 @@
       "weibull_max_diff": {
         "scale": 0.876071237609497,
         "shape": 0.9841531012704239
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "ENSURE",
@@ -1050,7 +1095,8 @@
       "weibull_max_diff": {
         "scale": 0.7218998660302489,
         "shape": 0.7999990746196285
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "EORTC22881",
@@ -1072,7 +1118,8 @@
       "weibull_max_diff": {
         "scale": 0.943909321120787,
         "shape": 0.9668144869489064
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "Eribulin",
@@ -1094,7 +1141,8 @@
       "weibull_max_diff": {
         "scale": 0.9338996415808724,
         "shape": 0.9872994554787904
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "ESPATUE",
@@ -1116,7 +1164,8 @@
       "weibull_max_diff": {
         "scale": 0.9062717077545253,
         "shape": 0.9645484563728335
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "ExteNET",
@@ -1138,7 +1187,8 @@
       "weibull_max_diff": {
         "scale": 0.6095006695614423,
         "shape": 0.672307964238137
-      }
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "FALCON",
@@ -1160,7 +1210,8 @@
       "weibull_max_diff": {
         "scale": 0.8076294392396879,
         "shape": 0.9560341298896208
-      }
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "FFCD2001",
@@ -1190,7 +1241,8 @@
       "weibull_max_diff": {
         "scale": 0.8070873906314685,
         "shape": 0.8919547140421531
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "Figitumumab",
@@ -1212,7 +1264,8 @@
       "weibull_max_diff": {
         "scale": 0.91452943931402,
         "shape": 0.8848239258892151
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "Figitumumab2",
@@ -1234,7 +1287,8 @@
       "weibull_max_diff": {
         "scale": 0.8749280187177099,
         "shape": 0.9699683753128256
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "FIRE3",
@@ -1256,7 +1310,8 @@
       "weibull_max_diff": {
         "scale": 0.9158535308817405,
         "shape": 0.8851464799503403
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "GECESTRO-APBI",
@@ -1278,7 +1333,8 @@
       "weibull_max_diff": {
         "scale": 0.7453577270072492,
         "shape": 0.8206407027256579
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "GEICAM2003",
@@ -1300,7 +1356,8 @@
       "weibull_max_diff": {
         "scale": 0.9768581760441855,
         "shape": 0.8975591977284623
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "GETUG12",
@@ -1311,18 +1368,19 @@
       "subjects": 413,
       "weibull_by_arm": {
         "adt": {
-          "scale": 125.27675731130273,
+          "scale": 10.439729775941895,
           "shape": 1.5726265908350006
         },
         "adt_de": {
-          "scale": 160.2073198299572,
+          "scale": 13.35060998582977,
           "shape": 1.4347578549333835
         }
       },
       "weibull_max_diff": {
         "scale": 0.7819665009331065,
         "shape": 0.9123321857171356
-      }
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "GETUG16",
@@ -1333,18 +1391,19 @@
       "subjects": 730,
       "weibull_by_arm": {
         "rt": {
-          "scale": 2.514718489243715,
-          "shape": 1.0129780912525317
+          "scale": 130.76536144067322,
+          "shape": 1.0129780912525321
         },
         "rt_goserelin": {
-          "scale": 3.288654850978255,
-          "shape": 1.4227398473731616
+          "scale": 171.0100522508693,
+          "shape": 1.4227398473731614
         }
       },
       "weibull_max_diff": {
         "scale": 0.764664765138147,
-        "shape": 0.7119910875644744
-      }
+        "shape": 0.7119910875644748
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "GIM",
@@ -1355,18 +1414,19 @@
       "subjects": 281,
       "weibull_by_arm": {
         "control": {
-          "scale": 357.46592698414344,
+          "scale": 29.788827248678626,
           "shape": 0.9801912270762765
         },
         "lhrha": {
-          "scale": 303.5474598210996,
-          "shape": 0.978653508621468
+          "scale": 25.295621651758303,
+          "shape": 0.9786535086214679
         }
       },
       "weibull_max_diff": {
         "scale": 0.8491647368521488,
-        "shape": 0.9984312056542324
-      }
+        "shape": 0.9984312056542322
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "GIM2",
@@ -1396,7 +1456,8 @@
       "weibull_max_diff": {
         "scale": 0.871208844207098,
         "shape": 0.8815524955630168
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "HYPRO",
@@ -1418,7 +1479,8 @@
       "weibull_max_diff": {
         "scale": 0.6172113562749076,
         "shape": 0.6642783579260354
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "IBCSG2200",
@@ -1429,18 +1491,19 @@
       "subjects": 1081,
       "weibull_by_arm": {
         "cm_maintenance": {
-          "scale": 381.0997902141645,
+          "scale": 31.758315851180374,
           "shape": 0.8054851670547456
         },
         "no_cm": {
-          "scale": 295.78578737839894,
+          "scale": 24.648815614866585,
           "shape": 0.813038699710925
         }
       },
       "weibull_max_diff": {
-        "scale": 0.7761373660483463,
+        "scale": 0.7761373660483465,
         "shape": 0.99070950416153
-      }
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "IMELDA",
@@ -1462,7 +1525,8 @@
       "weibull_max_diff": {
         "scale": 0.583235498847634,
         "shape": 0.8164289876970543
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "IMPRESS",
@@ -1473,18 +1537,19 @@
       "subjects": 265,
       "weibull_by_arm": {
         "gefitinib": {
-          "scale": 82.16798818312179,
-          "shape": 1.6919322515776278
+          "scale": 6.847332348593456,
+          "shape": 1.69193225157763
         },
         "placebo": {
-          "scale": 72.04130208042443,
-          "shape": 1.629695633985982
+          "scale": 6.00344184003537,
+          "shape": 1.6296956339859818
         }
       },
       "weibull_max_diff": {
-        "scale": 0.8767563095237435,
-        "shape": 0.9632156562216876
-      }
+        "scale": 0.8767563095237471,
+        "shape": 0.9632156562216861
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "Iniparib",
@@ -1506,7 +1571,8 @@
       "weibull_max_diff": {
         "scale": 0.8589778664492931,
         "shape": 0.9720151094601309
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "INSPIRE",
@@ -1528,7 +1594,8 @@
       "weibull_max_diff": {
         "scale": 0.9830744557225883,
         "shape": 0.9935439266055692
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "INT0142",
@@ -1550,7 +1617,8 @@
       "weibull_max_diff": {
         "scale": 0.7245545059484594,
         "shape": 0.7972471852938594
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "ITACa",
@@ -1572,7 +1640,8 @@
       "weibull_max_diff": {
         "scale": 0.9707276662797163,
         "shape": 0.9607805540106135
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "JCOG0509",
@@ -1594,7 +1663,8 @@
       "weibull_max_diff": {
         "scale": 0.8190058182922727,
         "shape": 0.9717710846713487
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "JCOG0605",
@@ -1616,7 +1686,8 @@
       "weibull_max_diff": {
         "scale": 0.6794971179625582,
         "shape": 0.8199427228289916
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "JFMC33-0502",
@@ -1638,7 +1709,8 @@
       "weibull_max_diff": {
         "scale": 0.8679820049258884,
         "shape": 0.9415784219285259
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "KEYNOTE024",
@@ -1660,7 +1732,8 @@
       "weibull_max_diff": {
         "scale": 0.4645795496429312,
         "shape": 0.772723251300067
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "LEA",
@@ -1682,7 +1755,8 @@
       "weibull_max_diff": {
         "scale": 0.9599819464387543,
         "shape": 0.8309274345337199
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "LUMELung1",
@@ -1704,7 +1778,8 @@
       "weibull_max_diff": {
         "scale": 0.8899361722478947,
         "shape": 0.9773703184920438
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "LUXBreast1",
@@ -1726,7 +1801,8 @@
       "weibull_max_diff": {
         "scale": 0.7732807250206393,
         "shape": 0.9334020332228656
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "LUXLung3-6",
@@ -1748,7 +1824,8 @@
       "weibull_max_diff": {
         "scale": 0.9972740641041432,
         "shape": 0.9901208766952435
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "LUXLung8",
@@ -1770,7 +1847,8 @@
       "weibull_max_diff": {
         "scale": 0.8281834721817026,
         "shape": 0.9350237810609766
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "MA17R",
@@ -1792,7 +1870,8 @@
       "weibull_max_diff": {
         "scale": 0.9823510678402133,
         "shape": 0.9317003804346076
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "MA31",
@@ -1814,7 +1893,8 @@
       "weibull_max_diff": {
         "scale": 0.8152569127218144,
         "shape": 0.9730478748367949
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "MAGRIT",
@@ -1825,18 +1905,19 @@
       "subjects": 2272,
       "weibull_by_arm": {
         "mage_a3": {
-          "scale": 1.6387113394247814,
+          "scale": 85.21298965008863,
           "shape": 0.7928715840528753
         },
         "placebo": {
-          "scale": 1.6833605298023429,
-          "shape": 0.7925884617958553
+          "scale": 87.53474754972187,
+          "shape": 0.7925884617958551
         }
       },
       "weibull_max_diff": {
-        "scale": 0.9734761570162251,
-        "shape": 0.9996429153690024
-      }
+        "scale": 0.9734761570162246,
+        "shape": 0.9996429153690022
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "MAINSAIL",
@@ -1858,7 +1939,8 @@
       "weibull_max_diff": {
         "scale": 0.8470162804762461,
         "shape": 0.923195964522289
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "MAPS",
@@ -1880,7 +1962,8 @@
       "weibull_max_diff": {
         "scale": 0.7912918075406111,
         "shape": 0.9651986170899053
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "MARIANNE",
@@ -1906,7 +1989,8 @@
       "weibull_max_diff": {
         "scale": 0.8136246897166486,
         "shape": 0.7955647328476585
-      }
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "MARQUEE",
@@ -1928,7 +2012,8 @@
       "weibull_max_diff": {
         "scale": 0.8272374490121163,
         "shape": 0.94112432699727
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "METlung",
@@ -1950,7 +2035,8 @@
       "weibull_max_diff": {
         "scale": 0.8893494508030669,
         "shape": 0.8906554779526651
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "MINDACT",
@@ -1961,18 +2047,19 @@
       "subjects": 2187,
       "weibull_by_arm": {
         "chemotherapy": {
-          "scale": 430.2521130807366,
-          "shape": 1.29770981971888
+          "scale": 35.85434275672805,
+          "shape": 1.2977098197188799
         },
         "no_chemotherapy": {
-          "scale": 319.08753605794874,
-          "shape": 1.367529085803677
+          "scale": 26.590628004829068,
+          "shape": 1.3675290858036768
         }
       },
       "weibull_max_diff": {
-        "scale": 0.741629213098303,
+        "scale": 0.7416292130983031,
         "shape": 0.948944949829886
-      }
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "MIROX",
@@ -1994,7 +2081,8 @@
       "weibull_max_diff": {
         "scale": 0.9502549958598682,
         "shape": 0.9542594392609903
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "MONALEESA2",
@@ -2016,7 +2104,8 @@
       "weibull_max_diff": {
         "scale": 0.5943895863007964,
         "shape": 0.9449362037967087
-      }
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "MRC-RT01",
@@ -2038,7 +2127,8 @@
       "weibull_max_diff": {
         "scale": 0.9765662247136727,
         "shape": 0.9527103642071044
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "NCICBR26",
@@ -2060,7 +2150,8 @@
       "weibull_max_diff": {
         "scale": 0.8568217341360063,
         "shape": 0.931623663567941
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "NeoALTTO",
@@ -2071,22 +2162,23 @@
       "subjects": 455,
       "weibull_by_arm": {
         "lapatinib": {
-          "scale": 105.08893904759634,
-          "shape": 1.354153683071902
+          "scale": 8.757411587299698,
+          "shape": 1.3541536830719016
         },
         "lapatinib_trastuzumab": {
-          "scale": 111.09754198666155,
+          "scale": 9.258128498888464,
           "shape": 1.6024242078143285
         },
         "trastuzumab": {
-          "scale": 96.52080288035589,
-          "shape": 1.5220574496701034
+          "scale": 8.043400240029655,
+          "shape": 1.5220574496701038
         }
       },
       "weibull_max_diff": {
-        "scale": 0.8687933248059101,
-        "shape": 0.8450656676729429
-      }
+        "scale": 0.8687933248059098,
+        "shape": 0.8450656676729427
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "NITRO",
@@ -2108,7 +2200,8 @@
       "weibull_max_diff": {
         "scale": 0.9419872192314239,
         "shape": 0.9664725411693458
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "NO16968",
@@ -2130,7 +2223,8 @@
       "weibull_max_diff": {
         "scale": 0.739257963683335,
         "shape": 0.9421234304708578
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "NOAH",
@@ -2152,7 +2246,8 @@
       "weibull_max_diff": {
         "scale": 0.758468353265043,
         "shape": 0.8595466110828824
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "NSABPB35",
@@ -2163,18 +2258,19 @@
       "subjects": 6154,
       "weibull_by_arm": {
         "anastrozole": {
-          "scale": 15.311509847938813,
-          "shape": 1.0811354200057244
+          "scale": 796.1985120928189,
+          "shape": 1.0811354200057242
         },
         "tamoxifen": {
-          "scale": 8.776192154840189,
-          "shape": 1.3490053255221377
+          "scale": 456.36199205170146,
+          "shape": 1.349005325522123
         }
       },
       "weibull_max_diff": {
-        "scale": 0.5731761427839601,
-        "shape": 0.8014315433389907
-      }
+        "scale": 0.5731761427839743,
+        "shape": 0.8014315433389992
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "NSABPB40",
@@ -2196,7 +2292,8 @@
       "weibull_max_diff": {
         "scale": 0.7644009562627736,
         "shape": 0.9812754104736439
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "NSABPR04",
@@ -2226,7 +2323,8 @@
       "weibull_max_diff": {
         "scale": 0.676418823208375,
         "shape": 0.8910902101471443
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "NTR1527",
@@ -2248,7 +2346,8 @@
       "weibull_max_diff": {
         "scale": 0.741503374169317,
         "shape": 0.9456913378058771
-      }
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "OMEGA",
@@ -2270,7 +2369,8 @@
       "weibull_max_diff": {
         "scale": 0.8449588116473641,
         "shape": 0.8644774796043178
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "OPTIMAL",
@@ -2292,7 +2392,8 @@
       "weibull_max_diff": {
         "scale": 0.8766379350051223,
         "shape": 0.773787468291676
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "OPTIMOX3",
@@ -2314,7 +2415,8 @@
       "weibull_max_diff": {
         "scale": 0.8338560778844707,
         "shape": 0.9478173312334334
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "PALOMA2",
@@ -2336,7 +2438,8 @@
       "weibull_max_diff": {
         "scale": 0.6808515649363099,
         "shape": 0.9969974776344437
-      }
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "PALOMA3",
@@ -2347,26 +2450,27 @@
       "subjects": 1042,
       "weibull_by_arm": {
         "fulvestrant_palbociclib": {
-          "scale": 151.11489074322094,
-          "shape": 1.2950437067914649
+          "scale": 12.59290756193508,
+          "shape": 1.2950437067914646
         },
         "fulvestrant_placebo": {
-          "scale": 82.51723548331164,
+          "scale": 6.8764362902759695,
           "shape": 1.247383303129894
         },
         "palbociclib_fulvestrant": {
-          "scale": 126.17773454102124,
-          "shape": 1.4313831584952297
+          "scale": 10.514811211751766,
+          "shape": 1.4313831584952303
         },
         "placebo_fulvestrant": {
-          "scale": 68.09785304828301,
+          "scale": 5.674821087356917,
           "shape": 1.4793739737396174
         }
       },
       "weibull_max_diff": {
-        "scale": 0.4506362855001297,
+        "scale": 0.4506362855001295,
         "shape": 0.8431832148410123
-      }
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "PEGASE07",
@@ -2388,7 +2492,8 @@
       "weibull_max_diff": {
         "scale": 0.9691103056203967,
         "shape": 0.916898041545606
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "PETACC8",
@@ -2410,7 +2515,8 @@
       "weibull_max_diff": {
         "scale": 0.8957799269686708,
         "shape": 0.864045762062635
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "PREVAIL",
@@ -2432,7 +2538,8 @@
       "weibull_max_diff": {
         "scale": 0.7004909179365398,
         "shape": 0.6688384278060627
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "PROCLAIM",
@@ -2454,7 +2561,8 @@
       "weibull_max_diff": {
         "scale": 0.9010126144097896,
         "shape": 0.9654538529999241
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "PROCTOR-SCRIPT",
@@ -2476,7 +2584,8 @@
       "weibull_max_diff": {
         "scale": 0.966908192418499,
         "shape": 0.8550674382696235
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "PROFILE1014",
@@ -2498,7 +2607,8 @@
       "weibull_max_diff": {
         "scale": 0.6595117610049531,
         "shape": 0.996128534808584
-      }
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "PROSE",
@@ -2520,7 +2630,8 @@
       "weibull_max_diff": {
         "scale": 0.8367506549892978,
         "shape": 0.8874006096053365
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "QUARTZ",
@@ -2531,18 +2642,19 @@
       "subjects": 538,
       "weibull_by_arm": {
         "osc": {
-          "scale": 0.2425206909864624,
+          "scale": 12.611075931296044,
           "shape": 1.1130678309302389
         },
         "osc_wbrt": {
-          "scale": 0.2668741125962894,
+          "scale": 13.877453855007047,
           "shape": 1.139763258267914
         }
       },
       "weibull_max_diff": {
         "scale": 0.9087456577451282,
         "shape": 0.9765780944910929
-      }
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "QUASAR2",
@@ -2564,7 +2676,8 @@
       "weibull_max_diff": {
         "scale": 0.8871593336947622,
         "shape": 0.9943646185789599
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "R98",
@@ -2586,7 +2699,8 @@
       "weibull_max_diff": {
         "scale": 0.8710921963494447,
         "shape": 0.9250757276806392
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "RADIANT",
@@ -2597,18 +2711,19 @@
       "subjects": 973,
       "weibull_by_arm": {
         "erlotinib": {
-          "scale": 1.3334566343746364,
+          "scale": 69.33974498748108,
           "shape": 0.9680459665192714
         },
         "placebo": {
-          "scale": 1.3205332944608925,
-          "shape": 0.8347900070279521
+          "scale": 68.66773131196642,
+          "shape": 0.834790007027952
         }
       },
       "weibull_max_diff": {
-        "scale": 0.9903083913037751,
-        "shape": 0.8623454214984672
-      }
+        "scale": 0.9903083913037753,
+        "shape": 0.8623454214984669
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "RAISE",
@@ -2630,7 +2745,8 @@
       "weibull_max_diff": {
         "scale": 0.7271205021396712,
         "shape": 0.9307419296148518
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "RECOURSE",
@@ -2652,7 +2768,8 @@
       "weibull_max_diff": {
         "scale": 0.7028406670810663,
         "shape": 0.9304799057428638
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "REVEL",
@@ -2674,7 +2791,8 @@
       "weibull_max_diff": {
         "scale": 0.8345764317160133,
         "shape": 0.9180534507885596
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "ROSE",
@@ -2696,7 +2814,8 @@
       "weibull_max_diff": {
         "scale": 0.9557104766476143,
         "shape": 0.9470504879188978
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "RTOG0415",
@@ -2707,18 +2826,19 @@
       "subjects": 1092,
       "weibull_by_arm": {
         "70gy": {
-          "scale": 395.9805230131641,
-          "shape": 1.0295719602550397
+          "scale": 32.998376917763665,
+          "shape": 1.02957196025504
         },
         "73.8gy": {
-          "scale": 202.15651798435388,
-          "shape": 1.5077598355610173
+          "scale": 16.846376498696152,
+          "shape": 1.507759835561018
         }
       },
       "weibull_max_diff": {
         "scale": 0.5105213671775299,
-        "shape": 0.6828487773531583
-      }
+        "shape": 0.6828487773531582
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "RTOG0617",
@@ -2748,7 +2868,8 @@
       "weibull_max_diff": {
         "scale": 0.7700828640367632,
         "shape": 0.906549565737591
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "RTOG9804",
@@ -2759,18 +2880,19 @@
       "subjects": 585,
       "weibull_by_arm": {
         "observation": {
-          "scale": 378.57101773341213,
-          "shape": 1.2831070758716108
+          "scale": 31.547584811117705,
+          "shape": 1.28310707587161
         },
         "rt": {
-          "scale": 349.9957928186797,
-          "shape": 1.4592655901401845
+          "scale": 29.166316068223324,
+          "shape": 1.459265590140184
         }
       },
       "weibull_max_diff": {
-        "scale": 0.9245181918948298,
-        "shape": 0.8792827601371378
-      }
+        "scale": 0.9245181918948294,
+        "shape": 0.8792827601371377
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "SAKK",
@@ -2781,18 +2903,19 @@
       "subjects": 232,
       "weibull_by_arm": {
         "chemo_surgery": {
-          "scale": 0.5383113499003741,
+          "scale": 27.992190194819454,
           "shape": 0.6857770980441655
         },
         "crt_surgery": {
-          "scale": 0.6131225853651854,
-          "shape": 0.7567390906373586
+          "scale": 31.88237443898964,
+          "shape": 0.7567390906373587
         }
       },
       "weibull_max_diff": {
         "scale": 0.8779832332872675,
-        "shape": 0.9062266064074663
-      }
+        "shape": 0.9062266064074662
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "SAKK4106",
@@ -2814,7 +2937,8 @@
       "weibull_max_diff": {
         "scale": 0.8874266672565643,
         "shape": 0.9650249422276518
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "SELECTBC",
@@ -2840,7 +2964,8 @@
       "weibull_max_diff": {
         "scale": 0.2825516663300134,
         "shape": 0.6192670362066047
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "SIRFLOX",
@@ -2851,18 +2976,19 @@
       "subjects": 530,
       "weibull_by_arm": {
         "mfolfox6": {
-          "scale": 0.3014256705508182,
+          "scale": 15.674134868642545,
           "shape": 1.3742627082816268
         },
         "mfolfox6_rt": {
-          "scale": 0.31245431396365053,
-          "shape": 1.3018978325618986
+          "scale": 16.24762432610999,
+          "shape": 1.3018978325620683
         }
       },
       "weibull_max_diff": {
-        "scale": 0.9647031808492957,
-        "shape": 0.9473427640263825
-      }
+        "scale": 0.9647031808492861,
+        "shape": 0.9473427640265061
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "SMART",
@@ -2884,7 +3010,8 @@
       "weibull_max_diff": {
         "scale": 0.9746938380167237,
         "shape": 0.9928035049770069
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "SOFT",
@@ -2895,18 +3022,19 @@
       "subjects": 2033,
       "weibull_by_arm": {
         "tamoxifen": {
-          "scale": 375.1832472520295,
-          "shape": 0.9849467109859701
+          "scale": 31.265270604335818,
+          "shape": 0.9849467109859698
         },
         "tamoxifen_os": {
-          "scale": 361.9088867795596,
+          "scale": 30.15907389829664,
           "shape": 1.1017574914383874
         }
       },
       "weibull_max_diff": {
-        "scale": 0.9646189946654179,
-        "shape": 0.8939777751817995
-      }
+        "scale": 0.9646189946654173,
+        "shape": 0.8939777751817992
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "SQUIRE",
@@ -2928,7 +3056,8 @@
       "weibull_max_diff": {
         "scale": 0.8945419069366395,
         "shape": 0.9679144463788644
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "TANIA",
@@ -2950,7 +3079,8 @@
       "weibull_max_diff": {
         "scale": 0.7819283018671274,
         "shape": 0.8880138786498816
-      }
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "Tasquinimod",
@@ -2972,7 +3102,8 @@
       "weibull_max_diff": {
         "scale": 0.9774116453355376,
         "shape": 0.8929153641606417
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "TCOG0701",
@@ -2994,7 +3125,8 @@
       "weibull_max_diff": {
         "scale": 0.9365981210455671,
         "shape": 0.9838996001555461
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "TEXT-SOFT(2)",
@@ -3005,18 +3137,19 @@
       "subjects": 4690,
       "weibull_by_arm": {
         "exemestane_os": {
-          "scale": 545.3526594694775,
-          "shape": 1.0846042996061198
+          "scale": 45.4460549557897,
+          "shape": 1.0846042996061205
         },
         "tamoxifen_os": {
-          "scale": 290.58294266799044,
-          "shape": 1.2866366974887848
+          "scale": 24.21524522233254,
+          "shape": 1.2866366974887846
         }
       },
       "weibull_max_diff": {
-        "scale": 0.5328349236449518,
-        "shape": 0.8429763442337801
-      }
+        "scale": 0.532834923644953,
+        "shape": 0.8429763442337808
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "TH3RESA",
@@ -3038,7 +3171,8 @@
       "weibull_max_diff": {
         "scale": 0.7606245878391358,
         "shape": 0.9127243174759131
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "TRAPEZE",
@@ -3068,7 +3202,8 @@
       "weibull_max_diff": {
         "scale": 0.9077004312467084,
         "shape": 0.9157763261839753
-      }
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "TRIBE",
@@ -3090,7 +3225,8 @@
       "weibull_max_diff": {
         "scale": 0.865229278549599,
         "shape": 0.9008560368827191
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "TRIBE(2)",
@@ -3112,7 +3248,8 @@
       "weibull_max_diff": {
         "scale": 0.86795658003615,
         "shape": 0.9894786022367884
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "TROG0306",
@@ -3134,7 +3271,8 @@
       "weibull_max_diff": {
         "scale": null,
         "shape": null
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "TURANDOT",
@@ -3156,7 +3294,8 @@
       "weibull_max_diff": {
         "scale": 0.8415342039474528,
         "shape": 0.8705997592497531
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "VANTAGE014",
@@ -3167,18 +3306,19 @@
       "subjects": 1322,
       "weibull_by_arm": {
         "placebo": {
-          "scale": 0.4536461301042635,
-          "shape": 0.9364730751517555
+          "scale": 23.589598765421705,
+          "shape": 0.9364730751517556
         },
         "vorinostat": {
-          "scale": 0.5067052949104742,
+          "scale": 26.34867533534466,
           "shape": 0.9785884339489221
         }
       },
       "weibull_max_diff": {
-        "scale": 0.8952859475928995,
-        "shape": 0.9569631549524681
-      }
+        "scale": 0.8952859475928996,
+        "shape": 0.9569631549524682
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "WJOG5108L",
@@ -3200,7 +3340,8 @@
       "weibull_max_diff": {
         "scale": 0.9502424236758165,
         "shape": 0.9813703115978191
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "WJOG5208L",
@@ -3222,7 +3363,8 @@
       "weibull_max_diff": {
         "scale": 0.8480125835588636,
         "shape": 0.9996415871339914
-      }
+      },
+      "time_scale": "Months"
     },
     {
       "identifier": "WSGAGO",
@@ -3233,18 +3375,19 @@
       "subjects": 1930,
       "weibull_by_arm": {
         "control": {
-          "scale": 6.413622774151858,
-          "shape": 1.1367318414416805
+          "scale": 333.5083842558971,
+          "shape": 1.1367318414416796
         },
         "ed_doc": {
-          "scale": 6.125983694483502,
-          "shape": 1.3550152823215071
+          "scale": 318.5511521131424,
+          "shape": 1.3550152823215065
         }
       },
       "weibull_max_diff": {
-        "scale": 0.955151855698842,
-        "shape": 0.8389070265644176
-      }
+        "scale": 0.9551518556988413,
+        "shape": 0.8389070265644174
+      },
+      "time_scale": "Unknown"
     },
     {
       "identifier": "WSG-ARA",
@@ -3255,18 +3398,19 @@
       "subjects": 1170,
       "weibull_by_arm": {
         "da_negative": {
-          "scale": 2.6336286899823262,
-          "shape": 1.4560535232995635
+          "scale": 136.9486918790809,
+          "shape": 1.4560535232995637
         },
         "da_positive": {
-          "scale": 2.991485265316679,
-          "shape": 1.3860668368451423
+          "scale": 155.5572337964695,
+          "shape": 1.3860668368451337
         }
       },
       "weibull_max_diff": {
-        "scale": 0.8803749497002888,
-        "shape": 0.9519339877727679
-      }
+        "scale": 0.8803749497002761,
+        "shape": 0.951933987772762
+      },
+      "time_scale": "Unknown"
     }
   ]
 }
