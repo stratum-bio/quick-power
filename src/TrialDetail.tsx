@@ -101,7 +101,7 @@ const TrialDetail: React.FC = () => {
               <h3 className="text-xl font-semibold mb-2 bg-theme-light p-4 pb-2 pt-2 rounded-t-lg">
                 {arm.arm_name}
               </h3>
-              <div className="grid grid-cols-2 gap-x-2 p-2">
+              <div className="grid grid-cols-2 p-2 pl-4 pr-4">
                 <p className="">
                   <span className="font-semibold">Events</span>
                 </p>
