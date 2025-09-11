@@ -27,6 +27,7 @@ interface MultiSurvivalProps {
   lambdas: number[];
   maxTime: number;
   weibulls: { [key: string]: Weibull };
+  timeScale: string;
 }
 
 const MultiSurvivalPlot: React.FC<MultiSurvivalProps> = ({
@@ -34,6 +35,7 @@ const MultiSurvivalPlot: React.FC<MultiSurvivalProps> = ({
   lambdas,
   maxTime,
   weibulls,
+  timeScale,
 }) => {
   // this is for adding evaluation points to observe
   // more of the parametric curve
@@ -78,7 +80,7 @@ const MultiSurvivalPlot: React.FC<MultiSurvivalProps> = ({
           dataKey="time"
           type="number"
           domain={[0, maxTime]}
-          label={{ value: "Time", position: "insideBottom", offset: -10 }}
+          label={{ value: `Time (${timeScale})`, position: "insideBottom", offset: -10 }}
         />
         <YAxis
           type="number"

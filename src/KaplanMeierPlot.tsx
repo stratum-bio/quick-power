@@ -29,6 +29,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName }) => {
   const [armNames, setArmNames] = useState<string[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+  const [timeScale, setTimeScale] = useState<string | null> (null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -71,6 +72,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName }) => {
         }
         setPlotData(transformedData);
         setArmNames(data.arm_names);
+        setTimeScale(data.time_scale);
       } catch (e: unknown) {
         setError(e instanceof Error ? e.message : String(e));
       } finally {
@@ -104,7 +106,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName }) => {
         <XAxis
           dataKey="time"
           label={{
-            value: "Time (Months)",
+            value: `Time (${timeScale})`,
             position: "insideBottom",
             offset: -10,
           }}

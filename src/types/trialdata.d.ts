@@ -18,6 +18,7 @@ export interface TrialMeta {
   subjects: number;
   weibull_by_arm: { [key: string]: Weibull };
   weibull_max_diff: Weibull;
+  time_scale: string;
 }
 
 export interface Trial {
@@ -38,4 +39,5 @@ export interface KaplanMeier {
 export interface KaplanMeierByArm {
   arm_names: string[];
   curves: KaplanMeier[];
+  time_scale: string;
 }

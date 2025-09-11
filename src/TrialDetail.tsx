@@ -167,6 +167,7 @@ const TrialDetail: React.FC = () => {
               lambdas={Object.values(lambdaByArm)}
               maxTime={Math.max(...trialData.arms[0].time)}
               weibulls={trialData.meta.weibull_by_arm}
+              timeScale={trialData.meta.time_scale}
             />
           </div>
         </>
