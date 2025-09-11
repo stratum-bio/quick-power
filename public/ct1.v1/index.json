@@ -17,10 +17,7 @@
           "shape": 1.209263129207877
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9180202742330937,
-        "shape": 0.9374961604329314
-      },
+      "weibull_max_diff": 0.8996558462545444,
       "time_scale": "Months"
     },
     {
@@ -40,10 +37,7 @@
           "shape": 1.3066611038641895
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9416909594118478,
-        "shape": 0.7556147918723278
-      },
+      "weibull_max_diff": 0.9698232864186046,
       "time_scale": "Unknown"
     },
     {
@@ -63,10 +57,7 @@
           "shape": 1.1612154024449497
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8028943568913627,
-        "shape": 0.8809095470160244
-      },
+      "weibull_max_diff": 0.7693555335266804,
       "time_scale": "Months"
     },
     {
@@ -86,10 +77,7 @@
           "shape": 1.236468288104832
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8287286005971273,
-        "shape": 0.9040426528688709
-      },
+      "weibull_max_diff": 0.8552171326560942,
       "time_scale": "Months"
     },
     {
@@ -109,10 +97,7 @@
           "shape": 1.2380463675941704
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9086056629634124,
-        "shape": 0.9626371226448518
-      },
+      "weibull_max_diff": 0.919105994114723,
       "time_scale": "Months"
     },
     {
@@ -140,10 +125,7 @@
           "shape": 1.1174910410392223
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7661346945946643,
-        "shape": 0.8222810006935339
-      },
+      "weibull_max_diff": 0.8152314913439899,
       "time_scale": "Months"
     },
     {
@@ -163,10 +145,7 @@
           "shape": 0.9543646983524209
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.834728153259016,
-        "shape": 0.9943814703606428
-      },
+      "weibull_max_diff": 0.8329289749814315,
       "time_scale": "Unknown"
     },
     {
@@ -190,10 +169,7 @@
           "shape": 0.9424066867643434
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8286277529074478,
-        "shape": 0.8272082114834273
-      },
+      "weibull_max_diff": 0.7747731576560741,
       "time_scale": "Months"
     },
     {
@@ -221,10 +197,7 @@
           "shape": 0.9864959795704985
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.678838235528405,
-        "shape": 0.8249464982459187
-      },
+      "weibull_max_diff": 0.6893489856727604,
       "time_scale": "Unknown"
     },
     {
@@ -244,10 +217,7 @@
           "shape": 1.4463121630008902
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7829471953450816,
-        "shape": 0.9137767583634172
-      },
+      "weibull_max_diff": 0.8018944669608372,
       "time_scale": "Months"
     },
     {
@@ -267,10 +237,7 @@
           "shape": 1.1282859867622286
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9880956742833508,
-        "shape": 0.981393411944693
-      },
+      "weibull_max_diff": 0.9940859797902283,
       "time_scale": "Months"
     },
     {
@@ -290,10 +257,7 @@
           "shape": 0.9256926338349798
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7717850119082618,
-        "shape": 0.9673472720196352
-      },
+      "weibull_max_diff": 0.7615389493515234,
       "time_scale": "Months"
     },
     {
@@ -313,10 +277,7 @@
           "shape": 1.5014837987151988
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.48782324651600195,
-        "shape": 0.95445631774786
-      },
+      "weibull_max_diff": 0.4935384926557388,
       "time_scale": "Unknown"
     },
     {
@@ -336,10 +297,7 @@
           "shape": 1.151102902087934
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9854015265197025,
-        "shape": 0.934259989830579
-      },
+      "weibull_max_diff": 0.9923310393697637,
       "time_scale": "Months"
     },
     {
@@ -359,10 +317,7 @@
           "shape": 1.0498373471090634
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9150551912203787,
-        "shape": 0.981057031544297
-      },
+      "weibull_max_diff": 0.9089075942898485,
       "time_scale": "Months"
     },
     {
@@ -382,10 +337,7 @@
           "shape": 1.213225975285288
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.879281604822219,
-        "shape": 0.9163979551722741
-      },
+      "weibull_max_diff": 0.9038516923691202,
       "time_scale": "Months"
     },
     {
@@ -405,10 +357,7 @@
           "shape": 1.2814721405685434
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.6959184476146084,
-        "shape": 0.9371694553454232
-      },
+      "weibull_max_diff": 0.6835244052676356,
       "time_scale": "Months"
     },
     {
@@ -428,10 +377,7 @@
           "shape": 1.198954853556179
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8908018576286648,
-        "shape": 0.9623813875195703
-      },
+      "weibull_max_diff": 0.9015101561499155,
       "time_scale": "Unknown"
     },
     {
@@ -451,10 +397,7 @@
           "shape": 1.2477520359095797
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9447112512430706,
-        "shape": 0.9101146612012799
-      },
+      "weibull_max_diff": 0.9200946398057402,
       "time_scale": "Months"
     },
     {
@@ -474,10 +417,7 @@
           "shape": 1.0677022575760178
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8444191366341411,
-        "shape": 0.955196331535751
-      },
+      "weibull_max_diff": 0.8581254028022476,
       "time_scale": "Unknown"
     },
     {
@@ -497,10 +437,7 @@
           "shape": 1.1513566752192401
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8345152230903294,
-        "shape": 0.8743114282002362
-      },
+      "weibull_max_diff": 0.87359196850924,
       "time_scale": "Months"
     },
     {
@@ -520,10 +457,7 @@
           "shape": 0.8730248726446571
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9502838854381813,
-        "shape": 0.9412414167584215
-      },
+      "weibull_max_diff": 0.9271290459193409,
       "time_scale": "Months"
     },
     {
@@ -543,10 +477,7 @@
           "shape": 1.0587466152633185
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7217833432784715,
-        "shape": 0.895360324146883
-      },
+      "weibull_max_diff": 0.6961055115748959,
       "time_scale": "Months"
     },
     {
@@ -570,10 +501,7 @@
           "shape": 1.2643605063633363
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7790128829733411,
-        "shape": 0.9139174387220116
-      },
+      "weibull_max_diff": 0.7580304559429134,
       "time_scale": "Months"
     },
     {
@@ -593,10 +521,7 @@
           "shape": 1.2536972721899031
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8655019518881192,
-        "shape": 0.8741292530325974
-      },
+      "weibull_max_diff": 0.8298236029911665,
       "time_scale": "Months"
     },
     {
@@ -616,10 +541,7 @@
           "shape": 0.908895440101159
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.870343301202871,
-        "shape": 0.9500448171477663
-      },
+      "weibull_max_diff": 0.8880536929893998,
       "time_scale": "Months"
     },
     {
@@ -639,10 +561,7 @@
           "shape": 1.2894014598530883
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8763664494418015,
-        "shape": 0.9712107856566069
-      },
+      "weibull_max_diff": 0.8692241030589907,
       "time_scale": "Months"
     },
     {
@@ -662,10 +581,7 @@
           "shape": 1.4095223658997889
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7811393783194748,
-        "shape": 0.9934451675614628
-      },
+      "weibull_max_diff": 0.7824719102006609,
       "time_scale": "Unknown"
     },
     {
@@ -685,10 +601,7 @@
           "shape": 0.9283496825520984
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.5997854904790474,
-        "shape": 0.8399650881604672
-      },
+      "weibull_max_diff": 0.6389038278699026,
       "time_scale": "Months"
     },
     {
@@ -708,10 +621,7 @@
           "shape": 0.8594353849139753
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8131683639934165,
-        "shape": 0.7361083682912
-      },
+      "weibull_max_diff": 0.9100293226587033,
       "time_scale": "Months"
     },
     {
@@ -735,10 +645,7 @@
           "shape": 1.5520253065168723
         }
       },
-      "weibull_max_diff": {
-        "scale": 6.603404942322091e-16,
-        "shape": -661.852975606841
-      },
+      "weibull_max_diff": 4.426145271497564e-83,
       "time_scale": "Months"
     },
     {
@@ -758,10 +665,7 @@
           "shape": 0.7875916103290566
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8012803630184835,
-        "shape": 0.8483934171953172
-      },
+      "weibull_max_diff": 0.8598538255857687,
       "time_scale": "Months"
     },
     {
@@ -781,10 +685,7 @@
           "shape": 1.049940492492214
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7179951075156,
-        "shape": 0.9673276543132258
-      },
+      "weibull_max_diff": 0.7095793144706508,
       "time_scale": "Months"
     },
     {
@@ -804,10 +705,7 @@
           "shape": 1.2773521570109894
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8375204479340772,
-        "shape": 0.8933424248763792
-      },
+      "weibull_max_diff": 0.8122776633038625,
       "time_scale": "Months"
     },
     {
@@ -827,10 +725,7 @@
           "shape": 1.5189359639090754
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.691091513385588,
-        "shape": 0.9525445421161631
-      },
+      "weibull_max_diff": 0.6990505487707297,
       "time_scale": "Unknown"
     },
     {
@@ -850,10 +745,7 @@
           "shape": 1.2063573819224984
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.5702236320453942,
-        "shape": 0.9681649092624638
-      },
+      "weibull_max_diff": 0.5645553982940328,
       "time_scale": "Months"
     },
     {
@@ -873,10 +765,7 @@
           "shape": 1.8106349353594275
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8768430583557446,
-        "shape": 0.9566888334604473
-      },
+      "weibull_max_diff": 0.8849154255079716,
       "time_scale": "Months"
     },
     {
@@ -900,10 +789,7 @@
           "shape": 1.2541488180084437
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8260218597064339,
-        "shape": 0.8841977493579174
-      },
+      "weibull_max_diff": 0.7950037954866261,
       "time_scale": "Months"
     },
     {
@@ -923,10 +809,7 @@
           "shape": 1.8232880623046033
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7425887989345978,
-        "shape": 0.9640553244381135
-      },
+      "weibull_max_diff": 0.7372425533093419,
       "time_scale": "Unknown"
     },
     {
@@ -946,10 +829,7 @@
           "shape": 1.1091568551601763
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9034984846431461,
-        "shape": 0.9284325849059109
-      },
+      "weibull_max_diff": 0.9251199191063197,
       "time_scale": "Months"
     },
     {
@@ -977,10 +857,7 @@
           "shape": 1.009006482883157
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7423505828423783,
-        "shape": 0.8310190634520117
-      },
+      "weibull_max_diff": 0.7670427607898054,
       "time_scale": "Months"
     },
     {
@@ -1000,10 +877,7 @@
           "shape": 1.558224669028484
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.996385744715429,
-        "shape": 0.9210406920830123
-      },
+      "weibull_max_diff": 0.9780514841452311,
       "time_scale": "Unknown"
     },
     {
@@ -1023,10 +897,7 @@
           "shape": 1.166717817550218
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7352858064668266,
-        "shape": 0.9077787065188514
-      },
+      "weibull_max_diff": 0.759129812422177,
       "time_scale": "Months"
     },
     {
@@ -1046,10 +917,7 @@
           "shape": 1.138829289862945
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8989918018636486,
-        "shape": 0.8591440649032535
-      },
+      "weibull_max_diff": 0.8591485304976211,
       "time_scale": "Months"
     },
     {
@@ -1069,10 +937,7 @@
           "shape": 1.2623491958279829
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.876071237609497,
-        "shape": 0.9841531012704239
-      },
+      "weibull_max_diff": 0.8720496755892034,
       "time_scale": "Months"
     },
     {
@@ -1092,10 +957,7 @@
           "shape": 1.026828188532089
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7218998660302489,
-        "shape": 0.7999990746196285
-      },
+      "weibull_max_diff": 0.6721615540876733,
       "time_scale": "Months"
     },
     {
@@ -1115,10 +977,7 @@
           "shape": 1.2920007431912623
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.943909321120787,
-        "shape": 0.9668144869489064
-      },
+      "weibull_max_diff": 0.9528372591853231,
       "time_scale": "Months"
     },
     {
@@ -1138,10 +997,7 @@
           "shape": 0.9960342666252662
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9338996415808724,
-        "shape": 0.9872994554787904
-      },
+      "weibull_max_diff": 0.9294894121138964,
       "time_scale": "Months"
     },
     {
@@ -1161,10 +1017,7 @@
           "shape": 0.7934268387833388
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9062717077545253,
-        "shape": 0.9645484563728335
-      },
+      "weibull_max_diff": 0.9212353360070199,
       "time_scale": "Months"
     },
     {
@@ -1184,10 +1037,7 @@
           "shape": 1.11204355048102
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.6095006695614423,
-        "shape": 0.672307964238137
-      },
+      "weibull_max_diff": 0.6790144719252794,
       "time_scale": "Unknown"
     },
     {
@@ -1207,10 +1057,7 @@
           "shape": 1.1879373754721134
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8076294392396879,
-        "shape": 0.9560341298896208
-      },
+      "weibull_max_diff": 0.8186593609943909,
       "time_scale": "Unknown"
     },
     {
@@ -1238,10 +1085,7 @@
           "shape": 1.1297202235683794
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8070873906314685,
-        "shape": 0.8919547140421531
-      },
+      "weibull_max_diff": 0.8394365932876486,
       "time_scale": "Months"
     },
     {
@@ -1261,10 +1105,7 @@
           "shape": 0.9511840760940343
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.91452943931402,
-        "shape": 0.8848239258892151
-      },
+      "weibull_max_diff": 0.8748300951666622,
       "time_scale": "Months"
     },
     {
@@ -1284,10 +1125,7 @@
           "shape": 1.1290101269449675
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8749280187177099,
-        "shape": 0.9699683753128256
-      },
+      "weibull_max_diff": 0.883766332615463,
       "time_scale": "Months"
     },
     {
@@ -1307,10 +1145,7 @@
           "shape": 1.1792059177683776
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9158535308817405,
-        "shape": 0.8851464799503403
-      },
+      "weibull_max_diff": 0.9491382392906446,
       "time_scale": "Months"
     },
     {
@@ -1330,10 +1165,7 @@
           "shape": 1.2518668024973587
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7453577270072492,
-        "shape": 0.8206407027256579
-      },
+      "weibull_max_diff": 0.7855435122700433,
       "time_scale": "Months"
     },
     {
@@ -1353,10 +1185,7 @@
           "shape": 1.2633132201482347
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9768581760441855,
-        "shape": 0.8975591977284623
-      },
+      "weibull_max_diff": 0.948252970889826,
       "time_scale": "Months"
     },
     {
@@ -1376,10 +1205,7 @@
           "shape": 1.4347578549333835
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7819665009331065,
-        "shape": 0.9123321857171356
-      },
+      "weibull_max_diff": 0.7996761963241956,
       "time_scale": "Unknown"
     },
     {
@@ -1399,10 +1225,7 @@
           "shape": 1.4227398473731614
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.764664765138147,
-        "shape": 0.7119910875644748
-      },
+      "weibull_max_diff": 0.6889928800366703,
       "time_scale": "Unknown"
     },
     {
@@ -1422,10 +1245,7 @@
           "shape": 0.9786535086214679
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8491647368521488,
-        "shape": 0.9984312056542322
-      },
+      "weibull_max_diff": 0.8486659778756654,
       "time_scale": "Unknown"
     },
     {
@@ -1453,10 +1273,7 @@
           "shape": 1.1721253299511796
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.871208844207098,
-        "shape": 0.8815524955630168
-      },
+      "weibull_max_diff": 0.8678462695756858,
       "time_scale": "Months"
     },
     {
@@ -1476,10 +1293,7 @@
           "shape": 1.3050607884366419
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.6172113562749076,
-        "shape": 0.6642783579260354
-      },
+      "weibull_max_diff": 0.6782361258956012,
       "time_scale": "Months"
     },
     {
@@ -1499,10 +1313,7 @@
           "shape": 0.813038699710925
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7761373660483465,
-        "shape": 0.99070950416153
-      },
+      "weibull_max_diff": 0.7794253335283706,
       "time_scale": "Unknown"
     },
     {
@@ -1522,10 +1333,7 @@
           "shape": 1.1749192739733898
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.583235498847634,
-        "shape": 0.8164289876970543
-      },
+      "weibull_max_diff": 0.5437289431136192,
       "time_scale": "Months"
     },
     {
@@ -1545,10 +1353,7 @@
           "shape": 1.6296956339859818
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8767563095237471,
-        "shape": 0.9632156562216861
-      },
+      "weibull_max_diff": 0.8695331110127221,
       "time_scale": "Unknown"
     },
     {
@@ -1568,10 +1373,7 @@
           "shape": 1.188095047549703
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8589778664492931,
-        "shape": 0.9720151094601309
-      },
+      "weibull_max_diff": 0.8513825915443395,
       "time_scale": "Months"
     },
     {
@@ -1591,10 +1393,7 @@
           "shape": 1.0674825132991965
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9830744557225883,
-        "shape": 0.9935439266055692
-      },
+      "weibull_max_diff": 0.9852560039504944,
       "time_scale": "Months"
     },
     {
@@ -1614,10 +1413,7 @@
           "shape": 1.0289669317528278
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7245545059484594,
-        "shape": 0.7972471852938594
-      },
+      "weibull_max_diff": 0.7932537314684135,
       "time_scale": "Months"
     },
     {
@@ -1637,10 +1433,7 @@
           "shape": 1.137251962781001
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9707276662797163,
-        "shape": 0.9607805540106135
-      },
+      "weibull_max_diff": 0.9585352526318047,
       "time_scale": "Months"
     },
     {
@@ -1660,10 +1453,7 @@
           "shape": 1.225596474160705
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8190058182922727,
-        "shape": 0.9717710846713487
-      },
+      "weibull_max_diff": 0.825948981460891,
       "time_scale": "Months"
     },
     {
@@ -1683,10 +1473,7 @@
           "shape": 1.0115539658427501
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.6794971179625582,
-        "shape": 0.8199427228289916
-      },
+      "weibull_max_diff": 0.6365821335939731,
       "time_scale": "Months"
     },
     {
@@ -1706,10 +1493,7 @@
           "shape": 0.9311956770797367
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8679820049258884,
-        "shape": 0.9415784219285259
-      },
+      "weibull_max_diff": 0.8894400232326678,
       "time_scale": "Months"
     },
     {
@@ -1729,10 +1513,7 @@
           "shape": 0.8578595163378541
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.4645795496429312,
-        "shape": 0.772723251300067
-      },
+      "weibull_max_diff": 0.5119540069385574,
       "time_scale": "Months"
     },
     {
@@ -1752,10 +1533,7 @@
           "shape": 1.2509680836894392
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9599819464387543,
-        "shape": 0.8309274345337199
-      },
+      "weibull_max_diff": 0.9814012673022933,
       "time_scale": "Months"
     },
     {
@@ -1775,10 +1553,7 @@
           "shape": 0.9883715332715001
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8899361722478947,
-        "shape": 0.9773703184920438
-      },
+      "weibull_max_diff": 0.8824993840645133,
       "time_scale": "Months"
     },
     {
@@ -1798,10 +1573,7 @@
           "shape": 1.030729885932585
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7732807250206393,
-        "shape": 0.9334020332228656
-      },
+      "weibull_max_diff": 0.7918115626803103,
       "time_scale": "Months"
     },
     {
@@ -1821,10 +1593,7 @@
           "shape": 1.4647004294265074
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9972740641041432,
-        "shape": 0.9901208766952435
-      },
+      "weibull_max_diff": 0.9997670938653634,
       "time_scale": "Months"
     },
     {
@@ -1844,10 +1613,7 @@
           "shape": 1.1029425908544808
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8281834721817026,
-        "shape": 0.9350237810609766
-      },
+      "weibull_max_diff": 0.8475307028533817,
       "time_scale": "Months"
     },
     {
@@ -1867,10 +1633,7 @@
           "shape": 1.271287255045813
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9823510678402133,
-        "shape": 0.9317003804346076
-      },
+      "weibull_max_diff": 0.963196965189558,
       "time_scale": "Months"
     },
     {
@@ -1890,10 +1653,7 @@
           "shape": 1.2813614190774498
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8152569127218144,
-        "shape": 0.9730478748367949
-      },
+      "weibull_max_diff": 0.8215661994231425,
       "time_scale": "Months"
     },
     {
@@ -1913,10 +1673,7 @@
           "shape": 0.7925884617958551
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9734761570162246,
-        "shape": 0.9996429153690022
-      },
+      "weibull_max_diff": 0.9736369154913077,
       "time_scale": "Unknown"
     },
     {
@@ -1936,10 +1693,7 @@
           "shape": 1.6493301456212992
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8470162804762461,
-        "shape": 0.923195964522289
-      },
+      "weibull_max_diff": 0.8315011537822211,
       "time_scale": "Months"
     },
     {
@@ -1959,10 +1713,7 @@
           "shape": 1.1625926140548146
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7912918075406111,
-        "shape": 0.9651986170899053
-      },
+      "weibull_max_diff": 0.8000211085130661,
       "time_scale": "Months"
     },
     {
@@ -1986,10 +1737,7 @@
           "shape": 1.1632994307444589
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8136246897166486,
-        "shape": 0.7955647328476585
-      },
+      "weibull_max_diff": 0.8587901327489724,
       "time_scale": "Unknown"
     },
     {
@@ -2009,10 +1757,7 @@
           "shape": 1.0537881899040078
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8272374490121163,
-        "shape": 0.94112432699727
-      },
+      "weibull_max_diff": 0.844351633207428,
       "time_scale": "Months"
     },
     {
@@ -2032,10 +1777,7 @@
           "shape": 1.0354788051439112
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8893494508030669,
-        "shape": 0.8906554779526651
-      },
+      "weibull_max_diff": 0.9244447469602225,
       "time_scale": "Months"
     },
     {
@@ -2055,10 +1797,7 @@
           "shape": 1.3675290858036768
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7416292130983031,
-        "shape": 0.948944949829886
-      },
+      "weibull_max_diff": 0.7524006130710486,
       "time_scale": "Unknown"
     },
     {
@@ -2078,10 +1817,7 @@
           "shape": 0.9403674085691295
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9502549958598682,
-        "shape": 0.9542594392609903
-      },
+      "weibull_max_diff": 0.9681746652896391,
       "time_scale": "Months"
     },
     {
@@ -2101,10 +1837,7 @@
           "shape": 1.172988675955743
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.5943895863007964,
-        "shape": 0.9449362037967087
-      },
+      "weibull_max_diff": 0.6047047053753816,
       "time_scale": "Unknown"
     },
     {
@@ -2124,10 +1857,7 @@
           "shape": 1.6286831757885811
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9765662247136727,
-        "shape": 0.9527103642071044
-      },
+      "weibull_max_diff": 0.9870142268795672,
       "time_scale": "Months"
     },
     {
@@ -2147,10 +1877,7 @@
           "shape": 0.9573697578304633
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8568217341360063,
-        "shape": 0.931623663567941
-      },
+      "weibull_max_diff": 0.8346839534149735,
       "time_scale": "Months"
     },
     {
@@ -2174,10 +1901,7 @@
           "shape": 1.5220574496701038
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8687933248059098,
-        "shape": 0.8450656676729427
-      },
+      "weibull_max_diff": 0.8583640566096085,
       "time_scale": "Unknown"
     },
     {
@@ -2197,10 +1921,7 @@
           "shape": 1.0797383811766177
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9419872192314239,
-        "shape": 0.9664725411693458
-      },
+      "weibull_max_diff": 0.9313274588929646,
       "time_scale": "Months"
     },
     {
@@ -2220,10 +1941,7 @@
           "shape": 0.8414441275690921
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.739257963683335,
-        "shape": 0.9421234304708578
-      },
+      "weibull_max_diff": 0.7581312924197106,
       "time_scale": "Months"
     },
     {
@@ -2243,10 +1961,7 @@
           "shape": 1.286422608203459
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.758468353265043,
-        "shape": 0.8595466110828824
-      },
+      "weibull_max_diff": 0.7239670292791728,
       "time_scale": "Months"
     },
     {
@@ -2266,10 +1981,7 @@
           "shape": 1.349005325522123
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.5731761427839743,
-        "shape": 0.8014315433389992
-      },
+      "weibull_max_diff": 0.6130884724683436,
       "time_scale": "Unknown"
     },
     {
@@ -2289,10 +2001,7 @@
           "shape": 1.2359455912766415
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7644009562627736,
-        "shape": 0.9812754104736439
-      },
+      "weibull_max_diff": 0.7687386799460596,
       "time_scale": "Months"
     },
     {
@@ -2320,10 +2029,7 @@
           "shape": 0.7161369015744349
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.676418823208375,
-        "shape": 0.8910902101471443
-      },
+      "weibull_max_diff": 0.7120689116623117,
       "time_scale": "Months"
     },
     {
@@ -2343,10 +2049,7 @@
           "shape": 1.2064329312628073
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.741503374169317,
-        "shape": 0.9456913378058771
-      },
+      "weibull_max_diff": 0.753838851532133,
       "time_scale": "Unknown"
     },
     {
@@ -2366,10 +2069,7 @@
           "shape": 1.2598349170826646
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8449588116473641,
-        "shape": 0.8644774796043178
-      },
+      "weibull_max_diff": 0.8843872966741667,
       "time_scale": "Months"
     },
     {
@@ -2389,10 +2089,7 @@
           "shape": 1.4356845134224414
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8766379350051223,
-        "shape": 0.773787468291676
-      },
+      "weibull_max_diff": 0.9287535237174801,
       "time_scale": "Months"
     },
     {
@@ -2412,10 +2109,7 @@
           "shape": 0.9682270738293668
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8338560778844707,
-        "shape": 0.9478173312334334
-      },
+      "weibull_max_diff": 0.8504911954446575,
       "time_scale": "Months"
     },
     {
@@ -2435,10 +2129,7 @@
           "shape": 1.1026693373805827
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.6808515649363099,
-        "shape": 0.9969974776344437
-      },
+      "weibull_max_diff": 0.6815334418808289,
       "time_scale": "Unknown"
     },
     {
@@ -2466,10 +2157,7 @@
           "shape": 1.4793739737396174
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.4506362855001295,
-        "shape": 0.8431832148410123
-      },
+      "weibull_max_diff": 0.46681073619607655,
       "time_scale": "Unknown"
     },
     {
@@ -2489,10 +2177,7 @@
           "shape": 1.0076586838300396
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9691103056203967,
-        "shape": 0.916898041545606
-      },
+      "weibull_max_diff": 0.9988502690677877,
       "time_scale": "Months"
     },
     {
@@ -2512,10 +2197,7 @@
           "shape": 1.028424744141636
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8957799269686708,
-        "shape": 0.864045762062635
-      },
+      "weibull_max_diff": 0.9402506810010453,
       "time_scale": "Months"
     },
     {
@@ -2535,10 +2217,7 @@
           "shape": 0.918910108749442
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7004909179365398,
-        "shape": 0.6688384278060627
-      },
+      "weibull_max_diff": 0.6138162282405174,
       "time_scale": "Months"
     },
     {
@@ -2558,10 +2237,7 @@
           "shape": 1.087564180830555
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9010126144097896,
-        "shape": 0.9654538529999241
-      },
+      "weibull_max_diff": 0.9115636575779894,
       "time_scale": "Months"
     },
     {
@@ -2581,10 +2257,7 @@
           "shape": 0.9080208554765457
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.966908192418499,
-        "shape": 0.8550674382696235
-      },
+      "weibull_max_diff": 0.9119663292149931,
       "time_scale": "Months"
     },
     {
@@ -2604,10 +2277,7 @@
           "shape": 1.1301745644387302
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.6595117610049531,
-        "shape": 0.996128534808584
-      },
+      "weibull_max_diff": 0.6603403026119596,
       "time_scale": "Unknown"
     },
     {
@@ -2627,10 +2297,7 @@
           "shape": 0.9235388099287416
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8367506549892978,
-        "shape": 0.8874006096053365
-      },
+      "weibull_max_diff": 0.8001828443193322,
       "time_scale": "Months"
     },
     {
@@ -2650,10 +2317,7 @@
           "shape": 1.139763258267914
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9087456577451282,
-        "shape": 0.9765780944910929
-      },
+      "weibull_max_diff": 0.9017639995989009,
       "time_scale": "Unknown"
     },
     {
@@ -2673,10 +2337,7 @@
           "shape": 1.1178250460224664
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8871593336947622,
-        "shape": 0.9943646185789599
-      },
+      "weibull_max_diff": 0.8855216152997422,
       "time_scale": "Months"
     },
     {
@@ -2696,10 +2357,7 @@
           "shape": 0.9734174416015056
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8710921963494447,
-        "shape": 0.9250757276806392
-      },
+      "weibull_max_diff": 0.8449287857822468,
       "time_scale": "Months"
     },
     {
@@ -2719,10 +2377,7 @@
           "shape": 0.834790007027952
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9903083913037753,
-        "shape": 0.8623454214984669
-      },
+      "weibull_max_diff": 0.9322298714025169,
       "time_scale": "Unknown"
     },
     {
@@ -2742,10 +2397,7 @@
           "shape": 1.2351923900055464
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7271205021396712,
-        "shape": 0.9307419296148518
-      },
+      "weibull_max_diff": 0.7422178830962697,
       "time_scale": "Months"
     },
     {
@@ -2765,10 +2417,7 @@
           "shape": 1.2332198687646387
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7028406670810663,
-        "shape": 0.9304799057428638
-      },
+      "weibull_max_diff": 0.6874060391514106,
       "time_scale": "Months"
     },
     {
@@ -2788,10 +2437,7 @@
           "shape": 1.1060309517851954
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8345764317160133,
-        "shape": 0.9180534507885596
-      },
+      "weibull_max_diff": 0.8102519473246872,
       "time_scale": "Months"
     },
     {
@@ -2811,10 +2457,7 @@
           "shape": 1.2438443387317037
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9557104766476143,
-        "shape": 0.9470504879188978
-      },
+      "weibull_max_diff": 0.9400946149842485,
       "time_scale": "Months"
     },
     {
@@ -2834,10 +2477,7 @@
           "shape": 1.507759835561018
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.5105213671775299,
-        "shape": 0.6828487773531582
-      },
+      "weibull_max_diff": 0.5715396159096268,
       "time_scale": "Unknown"
     },
     {
@@ -2865,10 +2505,7 @@
           "shape": 1.293220905662079
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7700828640367632,
-        "shape": 0.906549565737591
-      },
+      "weibull_max_diff": 0.7550546537881432,
       "time_scale": "Months"
     },
     {
@@ -2888,10 +2525,7 @@
           "shape": 1.459265590140184
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9245181918948294,
-        "shape": 0.8792827601371377
-      },
+      "weibull_max_diff": 0.9569536764688938,
       "time_scale": "Unknown"
     },
     {
@@ -2911,10 +2545,7 @@
           "shape": 0.7567390906373587
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8779832332872675,
-        "shape": 0.9062266064074662
-      },
+      "weibull_max_diff": 0.8350656926361466,
       "time_scale": "Unknown"
     },
     {
@@ -2934,10 +2565,7 @@
           "shape": 0.9080720110943096
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8874266672565643,
-        "shape": 0.9650249422276518
-      },
+      "weibull_max_diff": 0.874987303745984,
       "time_scale": "Months"
     },
     {
@@ -2961,10 +2589,7 @@
           "shape": 0.9090301096607823
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.2825516663300134,
-        "shape": 0.6192670362066047
-      },
+      "weibull_max_diff": 0.24257986267712034,
       "time_scale": "Months"
     },
     {
@@ -2984,10 +2609,7 @@
           "shape": 1.3018978325620683
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9647031808492861,
-        "shape": 0.9473427640265061
-      },
+      "weibull_max_diff": 0.9791106321189467,
       "time_scale": "Unknown"
     },
     {
@@ -3007,10 +2629,7 @@
           "shape": 1.6317368016517566
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9746938380167237,
-        "shape": 0.9928035049770069
-      },
+      "weibull_max_diff": 0.976270648446306,
       "time_scale": "Months"
     },
     {
@@ -3030,10 +2649,7 @@
           "shape": 1.1017574914383874
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9646189946654173,
-        "shape": 0.8939777751817992
-      },
+      "weibull_max_diff": 0.9965755529271078,
       "time_scale": "Unknown"
     },
     {
@@ -3053,10 +2669,7 @@
           "shape": 1.1955072532174589
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8945419069366395,
-        "shape": 0.9679144463788644
-      },
+      "weibull_max_diff": 0.8854969731029723,
       "time_scale": "Months"
     },
     {
@@ -3076,10 +2689,7 @@
           "shape": 1.1590612250526213
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7819283018671274,
-        "shape": 0.8880138786498816
-      },
+      "weibull_max_diff": 0.7547233989574499,
       "time_scale": "Unknown"
     },
     {
@@ -3099,10 +2709,7 @@
           "shape": 1.1181223719372857
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9774116453355376,
-        "shape": 0.8929153641606417
-      },
+      "weibull_max_diff": 0.9836709213391905,
       "time_scale": "Months"
     },
     {
@@ -3122,10 +2729,7 @@
           "shape": 0.9885228304239696
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9365981210455671,
-        "shape": 0.9838996001555461
-      },
+      "weibull_max_diff": 0.9310237366964371,
       "time_scale": "Months"
     },
     {
@@ -3145,10 +2749,7 @@
           "shape": 1.2866366974887846
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.532834923644953,
-        "shape": 0.8429763442337808
-      },
+      "weibull_max_diff": 0.5618717357337745,
       "time_scale": "Unknown"
     },
     {
@@ -3168,10 +2769,7 @@
           "shape": 1.475698875410506
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.7606245878391358,
-        "shape": 0.9127243174759131
-      },
+      "weibull_max_diff": 0.7427733344874813,
       "time_scale": "Months"
     },
     {
@@ -3199,10 +2797,7 @@
           "shape": 1.3254224535839838
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9077004312467084,
-        "shape": 0.9157763261839753
-      },
+      "weibull_max_diff": 0.9309857132792448,
       "time_scale": "Unknown"
     },
     {
@@ -3222,10 +2817,7 @@
           "shape": 1.2920482584947715
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.865229278549599,
-        "shape": 0.9008560368827191
-      },
+      "weibull_max_diff": 0.8899083829206745,
       "time_scale": "Months"
     },
     {
@@ -3245,10 +2837,7 @@
           "shape": 1.2158796392581603
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.86795658003615,
-        "shape": 0.9894786022367884
-      },
+      "weibull_max_diff": 0.8651789915422565,
       "time_scale": "Months"
     },
     {
@@ -3268,10 +2857,7 @@
           "shape": -0.003182196501220569
         }
       },
-      "weibull_max_diff": {
-        "scale": null,
-        "shape": null
-      },
+      "weibull_max_diff": null,
       "time_scale": "Months"
     },
     {
@@ -3291,10 +2877,7 @@
           "shape": 1.166187765212033
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8415342039474528,
-        "shape": 0.8705997592497531
-      },
+      "weibull_max_diff": 0.803127678545206,
       "time_scale": "Months"
     },
     {
@@ -3314,10 +2897,7 @@
           "shape": 0.9785884339489221
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8952859475928996,
-        "shape": 0.9569631549524682
-      },
+      "weibull_max_diff": 0.8803324155706448,
       "time_scale": "Unknown"
     },
     {
@@ -3337,10 +2917,7 @@
           "shape": 0.9214294680300211
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9502424236758165,
-        "shape": 0.9813703115978191
-      },
+      "weibull_max_diff": 0.9432269164327338,
       "time_scale": "Months"
     },
     {
@@ -3360,10 +2937,7 @@
           "shape": 1.0896215906786064
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8480125835588636,
-        "shape": 0.9996415871339914
-      },
+      "weibull_max_diff": 0.8479103180994387,
       "time_scale": "Months"
     },
     {
@@ -3383,10 +2957,7 @@
           "shape": 1.3550152823215065
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.9551518556988413,
-        "shape": 0.8389070265644174
-      },
+      "weibull_max_diff": 0.9939625315578966,
       "time_scale": "Unknown"
     },
     {
@@ -3406,10 +2977,7 @@
           "shape": 1.3860668368451337
         }
       },
-      "weibull_max_diff": {
-        "scale": 0.8803749497002761,
-        "shape": 0.951933987772762
-      },
+      "weibull_max_diff": 0.8916358661327319,
       "time_scale": "Unknown"
     }
   ]

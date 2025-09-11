@@ -16,10 +16,7 @@
         "shape": 1.4227398473731614
       }
     },
-    "weibull_max_diff": {
-      "scale": 0.764664765138147,
-      "shape": 0.7119910875644748
-    },
+    "weibull_max_diff": 0.6889928800366703,
     "time_scale": "Unknown"
   },
   "arms": [

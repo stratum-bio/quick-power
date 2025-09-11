@@ -16,10 +16,7 @@
         "shape": 1.6286831757885811
       }
     },
-    "weibull_max_diff": {
-      "scale": 0.9765662247136727,
-      "shape": 0.9527103642071044
-    },
+    "weibull_max_diff": 0.9870142268795672,
     "time_scale": "Months"
   },
   "arms": [

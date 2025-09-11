@@ -103,20 +103,19 @@ const TrialList: React.FC = () => {
               </h2>
               {!collapsedStates[disease] && (
                 <>
-                  <div className="grid grid-cols-5 md:grid-cols-6 pl-8 pr-4 md:gap-4 font-bold border-b pb-4 pt-3 uppercase text-xs text-right">
+                  <div className="grid grid-cols-4 md:grid-cols-5 pl-8 pr-4 md:gap-4 font-bold border-b pb-4 pt-3 uppercase text-xs text-right">
                     <div>Trial Name</div>
-                    <div className="hidden md:block">Date</div>
+                    <div className="hidden md:block">Year</div>
                     <div>Subjects</div>
                     <div>Arms</div>
-                    <div>Weibull Min Scale Ratio</div>
-                    <div>Weibull Min Shape Ratio</div>
+                    <div>Min Hazard Ratio</div>
                   </div>
                   <div className="text-right">
                     {trials.map((trial) => (
                       <Link
                         to={`/trial-detail/${trial.identifier}`}
                         key={trial.identifier}
-                        className="grid grid-cols-5 md:grid-cols-6 pl-8 pr-4 md:gap-4 pb-3 pt-3 hover:bg-gray-200"
+                        className="grid grid-cols-4 md:grid-cols-5 pl-8 pr-4 md:gap-4 pb-3 pt-3 hover:bg-gray-200"
                       >
                         <div>{trial.identifier}</div>
                         <div className="hidden md:block">
@@ -124,8 +123,7 @@ const TrialList: React.FC = () => {
                         </div>
                         <div>{trial.subjects}</div>
                         <div>{trial.arms}</div>
-                        <div>{trial.weibull_max_diff.scale ? trial.weibull_max_diff.scale.toFixed(3): "N/A"}</div>
-                        <div>{trial.weibull_max_diff.shape ? trial.weibull_max_diff.shape.toFixed(3): "N/A"}</div>
+                        <div>{trial.weibull_max_diff ? trial.weibull_max_diff.toFixed(3): "N/A"}</div>
                       </Link>
                     ))}
                   </div>
