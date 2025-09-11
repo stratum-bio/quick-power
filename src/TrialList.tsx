@@ -124,8 +124,8 @@ const TrialList: React.FC = () => {
                         </div>
                         <div>{trial.subjects}</div>
                         <div>{trial.arms}</div>
-                        <div>{trial.weibull_max_diff.scale.toFixed(3)}</div>
-                        <div>{trial.weibull_max_diff.shape.toFixed(3)}</div>
+                        <div>{trial.weibull_max_diff.scale ? trial.weibull_max_diff.scale.toFixed(3): "N/A"}</div>
+                        <div>{trial.weibull_max_diff.shape ? trial.weibull_max_diff.shape.toFixed(3): "N/A"}</div>
                       </Link>
                     ))}
                   </div>

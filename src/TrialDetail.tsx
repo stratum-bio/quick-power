@@ -128,11 +128,15 @@ const TrialDetail: React.FC = () => {
                 <p></p>
                 <p>Scale</p>
                 <p>
-                  {trialData.meta.weibull_by_arm[arm.arm_name].scale.toFixed(3)}
+                  {trialData.meta.weibull_by_arm[arm.arm_name].scale ?
+                    trialData.meta.weibull_by_arm[arm.arm_name].scale.toFixed(3)
+                    : "N/A" }
                 </p>
                 <p>Shape</p>
                 <p>
-                  {trialData.meta.weibull_by_arm[arm.arm_name].shape.toFixed(3)}
+                  {trialData.meta.weibull_by_arm[arm.arm_name].shape ?
+                    trialData.meta.weibull_by_arm[arm.arm_name].shape.toFixed(3)
+                    : "N/A" }
                 </p>
               </div>
             </div>
