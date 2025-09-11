@@ -31,8 +31,8 @@ const SimulateFromTrial: React.FC = () => {
   // New state variables for the simulation form
   const [controlArm, setControlArm] = useState<string>("");
   const [treatmentArm, setTreatmentArm] = useState<string>("");
-  const [accrualPeriod, setAccrualPeriod] = useState<number>(2);
-  const [followUpPeriod, setFollowUpPeriod] = useState<number>(3);
+  const [accrualPeriod, setAccrualPeriod] = useState<number>(24);
+  const [followUpPeriod, setFollowUpPeriod] = useState<number>(12);
   const [largestSampleSize, setLargestSampleSize] = useState<number>(500);
   const [beta, setBeta] = useState<number>(0.8);
   const [showTTEDistributionPlot, setShowTTEDistributionPlot] =
@@ -64,18 +64,6 @@ const SimulateFromTrial: React.FC = () => {
         }
         const treatIdx = (controlIdx + 1) % arms.length;
 
-        const maxTime = Math.max(...data.arms[0].time);
-
-        let defaultAccrual = 24;
-        let defaultFollowup = 12; 
-        if (maxTime < 12) {
-          // assume the time variable is in years
-          defaultAccrual = 2;
-          defaultFollowup = 1;
-        }
-
-        setAccrualPeriod(defaultAccrual);
-        setFollowUpPeriod(defaultFollowup);
         setControlArm(arms[controlIdx]);
         setTreatmentArm(arms[treatIdx]);
 

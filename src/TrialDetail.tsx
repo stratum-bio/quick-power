@@ -101,22 +101,24 @@ const TrialDetail: React.FC = () => {
               <h3 className="text-xl font-semibold mb-2 bg-theme-light p-4 pb-2 pt-2 rounded-t-lg">
                 {arm.arm_name}
               </h3>
-              <div className="grid grid-cols-2 gap-x-2">
-                <p className="text-right">
+              <div className="grid grid-cols-2 gap-x-2 p-2">
+                <p className="">
                   <span className="font-semibold">Events</span>
                 </p>
                 <p>{arm.events.filter(Boolean).length}</p>
-                <p className="text-right">
+                <p className="">
                   <span className="font-semibold">Subjects</span>
                 </p>
                 <p>{arm.time.length}</p>
                 {lambdaByArm !== null ? (
                   <>
-                    <p className="text-right">
+                    <p className="">
                       <span className="font-semibold">Mean TTE</span>
                     </p>
                     <p>
-                      {( 1.0 / lambdaByArm[arm.arm_name]).toFixed(3)}
+                      {( 1.0 / lambdaByArm[arm.arm_name]).toFixed(1)}
+                      {" "}
+                       Months
                     </p>
                   </>
                 ) : null}
