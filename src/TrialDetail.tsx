@@ -110,18 +110,14 @@ const TrialDetail: React.FC = () => {
                   <span className="font-semibold">Subjects</span>
                 </p>
                 <p>{arm.time.length}</p>
-                {lambdaByArm !== null ? (
-                  <>
-                    <p className="">
-                      <span className="font-semibold">Mean TTE</span>
-                    </p>
-                    <p>
-                      {( 1.0 / lambdaByArm[arm.arm_name]).toFixed(1)}
-                      {" "}
-                       Months
-                    </p>
-                  </>
-                ) : null}
+                <p className="pt-2">
+                  <span className="font-semibold">Weibull</span>
+                </p>
+                <p></p>
+                <p>Scale</p>
+                <p>{trialData.meta.weibull_by_arm[arm.arm_name].scale.toFixed(3)}</p>
+                <p>Shape</p>
+                <p>{trialData.meta.weibull_by_arm[arm.arm_name].shape.toFixed(3)}</p>
               </div>
             </div>
           ))}
