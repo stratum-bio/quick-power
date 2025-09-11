@@ -54,15 +54,27 @@ const TrialDetail: React.FC = () => {
   }, [trialName]);
 
   if (loading) {
-    return <div className="text-black">Loading trial details...</div>;
+    return (
+      <div className="text-black w-full text-center pt-16">
+        Loading trial details...
+      </div>
+    );
   }
 
   if (error) {
-    return <div className="text-red-500">Error: {error}</div>;
+    return (
+      <div className="text-red-500 w-full text-center pt-16">
+        Error: {error}
+      </div>
+    );
   }
 
   if (!trialData) {
-    return <div className="text-black">No trial data found.</div>;
+    return (
+      <div className="text-black w-full text-center pt-16">
+        No trial data found.
+      </div>
+    );
   }
 
   return (
@@ -115,9 +127,13 @@ const TrialDetail: React.FC = () => {
                 </p>
                 <p></p>
                 <p>Scale</p>
-                <p>{trialData.meta.weibull_by_arm[arm.arm_name].scale.toFixed(3)}</p>
+                <p>
+                  {trialData.meta.weibull_by_arm[arm.arm_name].scale.toFixed(3)}
+                </p>
                 <p>Shape</p>
-                <p>{trialData.meta.weibull_by_arm[arm.arm_name].shape.toFixed(3)}</p>
+                <p>
+                  {trialData.meta.weibull_by_arm[arm.arm_name].shape.toFixed(3)}
+                </p>
               </div>
             </div>
           ))}
@@ -136,14 +152,17 @@ const TrialDetail: React.FC = () => {
 
       {lambdaByArm !== null ? (
         <>
-          <h2 className="text-xl font-bold mb-3 mt-8">
-            Fitted Exponential Survival
-          </h2>
+          <h2 className="text-xl font-bold mb-3 mt-8">Parametric Survival</h2>
+          <p>
+            Here we a Weibull (solid) and exponential (dashed) models fit to the
+            data.
+          </p>
           <div className="max-w-3xl">
             <MultiSurvivalPlot
               names={Object.keys(lambdaByArm)}
               lambdas={Object.values(lambdaByArm)}
               maxTime={Math.max(...trialData.arms[0].time)}
+              weibulls={trialData.meta.weibull_by_arm}
             />
           </div>
         </>

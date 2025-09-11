@@ -103,7 +103,11 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName }) => {
         <CartesianGrid stroke="#f5f5f5" />
         <XAxis
           dataKey="time"
-          label={{ value: "Time (Months)", position: "insideBottom", offset: -10 }}
+          label={{
+            value: "Time (Months)",
+            position: "insideBottom",
+            offset: -10,
+          }}
           domain={[0, "dataMax"]}
           type="number"
         />
@@ -137,6 +141,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName }) => {
                 stroke={color}
                 dot={false}
                 name={`\\text{${armName.replace(/_/g, "\\_")}}`}
+                legendType="plainline"
               />
             </React.Fragment>
           );

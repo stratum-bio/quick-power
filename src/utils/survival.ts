@@ -59,6 +59,16 @@ export function evaluateExponential(time: number[], lambda: number): number[] {
   return result;
 }
 
+export function evaluateWeibull(
+  time: number[],
+  scale: number,
+  shape: number,
+): number[] {
+  return time.map((t) => {
+    return Math.E ** (-1 * (t / scale) ** shape);
+  });
+}
+
 export function evalExponentialCurve(
   maxTime: number,
   numEvalPoints: number,

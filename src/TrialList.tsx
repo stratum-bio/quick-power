@@ -65,9 +65,9 @@ const TrialList: React.FC = () => {
       </h2>
       <div className="text-left m-4 mb-8 text-black md:w-196">
         <p>
-          Explores the cancer trials listed here to find a trial which
-          would make a good starting point for performing power analysis
-          and sample size estimation.
+          Explores the cancer trials listed here to find a trial which would
+          make a good starting point for performing power analysis and sample
+          size estimation.
         </p>
       </div>
       {trialIndex && trialIndex.trials.length > 0 ? (
@@ -82,7 +82,10 @@ const TrialList: React.FC = () => {
         )
           .sort(([diseaseA], [diseaseB]) => diseaseA.localeCompare(diseaseB))
           .map(([disease, trials]) => (
-            <div key={disease} className="m-4 mb-6 shadow-md rounded-lg md:w-196">
+            <div
+              key={disease}
+              className="m-4 mb-6 shadow-md rounded-lg md:w-196"
+            >
               <h2
                 className="text-xl font-bold text-left cursor-pointer bg-theme-light rounded-t-lg p-4 flex justify-between items-center"
                 onClick={() => toggleCollapse(disease)}
@@ -116,7 +119,9 @@ const TrialList: React.FC = () => {
                         className="grid grid-cols-5 md:grid-cols-6 pl-8 pr-4 md:gap-4 pb-3 pt-3 hover:bg-gray-200"
                       >
                         <div>{trial.identifier}</div>
-                        <div className="hidden md:block">{new Date(trial.publication_date).getFullYear()}</div>
+                        <div className="hidden md:block">
+                          {new Date(trial.publication_date).getFullYear()}
+                        </div>
                         <div>{trial.subjects}</div>
                         <div>{trial.arms}</div>
                         <div>{trial.weibull_max_diff.scale.toFixed(3)}</div>
@@ -132,7 +137,7 @@ const TrialList: React.FC = () => {
         <div>No trials found.</div>
       )}
       <div className="m-4">
-      <CitationFooter />
+        <CitationFooter />
       </div>
     </div>
   );

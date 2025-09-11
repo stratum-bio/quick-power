@@ -28,7 +28,10 @@ self.onmessage = (e) => {
   );
 
   const percentiles = [2.5, 97.5];
-  const baseInterval = getPercentiles(pValueDist.controlHazardDist, percentiles);
+  const baseInterval = getPercentiles(
+    pValueDist.controlHazardDist,
+    percentiles,
+  );
   const treatInterval = getPercentiles(pValueDist.treatHazardDist, percentiles);
   const pvalueInterval = getPercentiles(pValueDist.pValueDist, [beta * 100]);
 

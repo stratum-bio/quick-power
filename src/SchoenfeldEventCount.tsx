@@ -49,12 +49,12 @@ const SchoenfeldEventCount: React.FC<SchoenfeldEventCountProps> = ({
 
   const alphaLabel = (
     <span>
-    Alpha, <InlineMath math="\alpha" />
+      Alpha, <InlineMath math="\alpha" />
     </span>
   );
   const betaLabel = (
     <span>
-    Beta, <InlineMath math="\beta" />
+      Beta, <InlineMath math="\beta" />
     </span>
   );
   const groupALabel = (
@@ -113,12 +113,12 @@ const SchoenfeldEventCount: React.FC<SchoenfeldEventCountProps> = ({
           />
           <div className="mb-4 flex flex-col items-center lg:items-end">
             <div className="block w-48 text-left">
-            <label
-              className="block font-medium text-gray-700 mb-1"
-              htmlFor="group2Proportion"
-            >
-              {groupBLabel}
-            </label>
+              <label
+                className="block font-medium text-gray-700 mb-1"
+                htmlFor="group2Proportion"
+              >
+                {groupBLabel}
+              </label>
             </div>
             <input
               className="mt-1 block w-48 pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md text-right text-gray-400"

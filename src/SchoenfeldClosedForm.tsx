@@ -86,11 +86,12 @@ const SchoenfeldClosedForm: React.FC = () => {
       <div className="text-left mx-auto mb-4 px-4 text-black">
         <p>
           Enter the information about the 2-arm trial for which you would like
-          to estimate the sample size for a survival endpoint.  This page starts
-          with taking inputs to Schoenfeld's formula for producing a quick closed
-          form estimate of sample size.  After the Schoenfeld method, We can compare
-          simulation with permutation testing to compare sample size estimate results and
-          understand the sampling distributions of parameters we care about.
+          to estimate the sample size for a survival endpoint. This page starts
+          with taking inputs to Schoenfeld's formula for producing a quick
+          closed form estimate of sample size. After the Schoenfeld method, We
+          can compare simulation with permutation testing to compare sample size
+          estimate results and understand the sampling distributions of
+          parameters we care about.
         </p>
         <br />
         <h3 className="text-xl mb-4">Estimate the event count</h3>

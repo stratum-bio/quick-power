@@ -127,21 +127,20 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
       results.push(e.data);
       setCompleted(results.length);
       if (results.length === jobs.length) {
-        const processedData = results
-          .map((result) => ({
-            sample_size: result.sampleSize,
-            true_baseline_tte: 1 / baselineHazard,
-            true_treat_tte: 1 / (baselineHazard * hazardRatio),
-            control_hazard: [
-              1 / result.baseInterval[1],
-              1 / result.baseInterval[0],
-            ],
-            treat_hazard: [
-              1 / result.treatInterval[1],
-              1 / result.treatInterval[0],
-            ],
-            pvalue_upper: result.pvalueInterval[0],
-          }));
+        const processedData = results.map((result) => ({
+          sample_size: result.sampleSize,
+          true_baseline_tte: 1 / baselineHazard,
+          true_treat_tte: 1 / (baselineHazard * hazardRatio),
+          control_hazard: [
+            1 / result.baseInterval[1],
+            1 / result.baseInterval[0],
+          ],
+          treat_hazard: [
+            1 / result.treatInterval[1],
+            1 / result.treatInterval[0],
+          ],
+          pvalue_upper: result.pvalueInterval[0],
+        }));
         processedData.sort((a, b) => a.sample_size - b.sample_size);
         // @ts-expect-error I have no idea how else to handle this
         setData(processedData);
@@ -217,7 +216,10 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
       <div className="pt-4 pl-4 justify-center">
         <p className="font-bold text-red-950 italic"> {mismatchMessage} </p>
       </div>
-      <h3 className="font-bold text-l">Distribution of estimated mean time-to-event as a function of sample size</h3>
+      <h3 className="font-bold text-l">
+        Distribution of estimated mean time-to-event as a function of sample
+        size
+      </h3>
       <ResponsiveContainer width="100%" height={400}>
         <ComposedChart
           data={data}
@@ -296,7 +298,9 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
           />
         </ComposedChart>
       </ResponsiveContainer>
-      <h3 className="font-bold text-l">P-Value distribution as a function of sample size</h3>
+      <h3 className="font-bold text-l">
+        P-Value distribution as a function of sample size
+      </h3>
       <ResponsiveContainer width="100%" height={400}>
         <ComposedChart
           data={data}

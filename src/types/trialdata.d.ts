@@ -16,7 +16,7 @@ export interface TrialMeta {
   arms: number;
   disease: string;
   subjects: number;
-  weibull_by_arm: {[key: string]: Weibull};
+  weibull_by_arm: { [key: string]: Weibull };
   weibull_max_diff: Weibull;
 }
 
