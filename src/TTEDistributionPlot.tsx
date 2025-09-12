@@ -11,6 +11,7 @@ import {
   ReferenceLine,
   ResponsiveContainer,
 } from "recharts";
+import { InlineMath } from "react-katex";
 
 import { linspace } from "./utils/survival";
 import { formatLegend } from "./utils/formatters.tsx";
@@ -119,10 +120,6 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
       maxSampleSize,
       evaluationCount,
     ).map((s) => Math.round(s));
-    if (!sampleEvalPoints.includes(totalSampleSize)) {
-      sampleEvalPoints.push(totalSampleSize);
-      sampleEvalPoints.sort();
-    }
     const jobs = sampleEvalPoints;
     setTotal(jobs.length);
     setCompleted(0);
@@ -145,6 +142,14 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             1 / result.treatInterval[0],
           ],
           pvalue_upper: result.pvalueInterval[0],
+        })).map((result) => ({
+          // convert the means to medians
+          // this assumes the exponential distribution
+          ...result,
+          true_baseline_tte: result.true_baseline_tte * Math.log(2),
+          true_treat_tte: result.true_treat_tte * Math.log(2),
+          control_hazard: result.control_hazard.map((v) => v * Math.log(2)),
+          treat_hazard: result.treat_hazard.map((v) => v * Math.log(2)),
         }));
         processedData.sort((a, b) => a.sample_size - b.sample_size);
         // @ts-expect-error I have no idea how else to handle this
@@ -222,9 +227,12 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
         <p className="font-bold text-red-950 italic"> {mismatchMessage} </p>
       </div>
       <h3 className="font-bold text-l">
-        Distribution of estimated mean time-to-event as a function of sample
+        Distribution of estimated median time-to-event as a function of sample
         size
       </h3>
+      <p>
+      Each iteration of the simulation fits an exponential distribution and computes the median TTE proportional to the inverse exponential hazard rate.
+      </p>
       <ResponsiveContainer width="100%" height={400}>
         <ComposedChart
           data={data}
@@ -249,7 +257,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
           />
           <YAxis
             label={{
-              value: "Estimated Mean TTE",
+              value: "Estimated Median TTE",
               angle: -90,
               position: "insideLeft",
               dy: 60,
@@ -306,6 +314,10 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
       <h3 className="font-bold text-l">
         P-Value distribution as a function of sample size
       </h3>
+      <p>
+        Here we have the sampling distribution of p-values.
+        In order to reach our target <InlineMath math="\beta" /> threshold set above, we want the estimated p-value to be at most <InlineMath math="\alpha=0.05" /> at the {beta * 100}th percentile of the p-value sampling distribution (green).
+      </p>
       <ResponsiveContainer width="100%" height={400}>
         <ComposedChart
           data={data}
@@ -440,7 +452,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
           <br />
           <ul>
             <li><span className="font-bold">Quick, Noisy</span></li>
-            <li>Quick simulation taking less than a minute</li>
+            <li>Quick simulation taking less than a minute while being the most unstable estimates</li>
             <li> <br /> </li>
             <li><span className="font-bold">Slow, Less Noisy</span></li>
             <li>More accurate simulation taking around 5 minutes</li>

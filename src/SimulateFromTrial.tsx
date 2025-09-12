@@ -179,7 +179,7 @@ const SimulateFromTrial: React.FC = () => {
               className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md"
               value={accrualPeriod}
               onChange={(e) => setAccrualPeriod(parseFloat(e.target.value))}
-              step="0.1"
+              step="1"
             />
           </div>
           <div>
@@ -196,7 +196,7 @@ const SimulateFromTrial: React.FC = () => {
               className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md"
               value={followUpPeriod}
               onChange={(e) => setFollowUpPeriod(parseFloat(e.target.value))}
-              step="0.1"
+              step="1"
             />
           </div>
           <div>
@@ -213,7 +213,7 @@ const SimulateFromTrial: React.FC = () => {
               className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md"
               value={largestSampleSize}
               onChange={(e) => setLargestSampleSize(parseInt(e.target.value))}
-              step="1"
+              step="50"
             />
           </div>
           <div>
