@@ -31,7 +31,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName }) => {
   const [armNames, setArmNames] = useState<string[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
-  const [timeScale, setTimeScale] = useState<string | null> (null);
+  const [timeScale, setTimeScale] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchData = async () => {

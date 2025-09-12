@@ -51,7 +51,9 @@ const SimulateFromTrial: React.FC = () => {
       try {
         const response = await fetch(`/ct1.v1/${trialName}.json`);
         if (!response.ok) {
-          throw new Error(`Data not found  Response status: ${response.status}`);
+          throw new Error(
+            `Data not found  Response status: ${response.status}`,
+          );
         }
         const data: Trial = await response.json();
         setTrialData(data);
@@ -69,7 +71,7 @@ const SimulateFromTrial: React.FC = () => {
         let defaultAccrual = 24;
         let defaultFollowup = 12;
         if (maxTime < defaultAccrual + defaultFollowup) {
-          defaultAccrual = Math.round(maxTime * 2 / 3);
+          defaultAccrual = Math.round((maxTime * 2) / 3);
           defaultFollowup = Math.round(maxTime / 3);
           if (defaultAccrual === 0) {
             defaultAccrual = 1;

@@ -45,11 +45,14 @@ const MultiSurvivalPlot: React.FC<MultiSurvivalProps> = ({
   const allCurvesData = lambdas.map((lambda_entry, idx) => ({
     name: names[idx],
     exponential: evaluateExponential(timepoints, lambda_entry),
-    weibull: names[idx] in weibulls ? evaluateWeibull(
-      timepoints,
-      weibulls[names[idx]].scale,
-      weibulls[names[idx]].shape,
-    ) : (new Array(timepoints.length).fill(0)),
+    weibull:
+      names[idx] in weibulls
+        ? evaluateWeibull(
+            timepoints,
+            weibulls[names[idx]].scale,
+            weibulls[names[idx]].shape,
+          )
+        : new Array(timepoints.length).fill(0),
   }));
 
   const chartData = [];
@@ -80,7 +83,11 @@ const MultiSurvivalPlot: React.FC<MultiSurvivalProps> = ({
           dataKey="time"
           type="number"
           domain={[0, maxTime]}
-          label={{ value: `Time (${timeScale})`, position: "insideBottom", offset: -10 }}
+          label={{
+            value: `Time (${timeScale})`,
+            position: "insideBottom",
+            offset: -10,
+          }}
         />
         <YAxis
           type="number"

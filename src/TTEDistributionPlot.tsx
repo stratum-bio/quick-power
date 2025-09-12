@@ -129,28 +129,30 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
       results.push(e.data);
       setCompleted(results.length);
       if (results.length === jobs.length) {
-        const processedData = results.map((result) => ({
-          sample_size: result.sampleSize,
-          true_baseline_tte: 1 / baselineHazard,
-          true_treat_tte: 1 / (baselineHazard * hazardRatio),
-          control_hazard: [
-            1 / result.baseInterval[1],
-            1 / result.baseInterval[0],
-          ],
-          treat_hazard: [
-            1 / result.treatInterval[1],
-            1 / result.treatInterval[0],
-          ],
-          pvalue_upper: result.pvalueInterval[0],
-        })).map((result) => ({
-          // convert the means to medians
-          // this assumes the exponential distribution
-          ...result,
-          true_baseline_tte: result.true_baseline_tte * Math.log(2),
-          true_treat_tte: result.true_treat_tte * Math.log(2),
-          control_hazard: result.control_hazard.map((v) => v * Math.log(2)),
-          treat_hazard: result.treat_hazard.map((v) => v * Math.log(2)),
-        }));
+        const processedData = results
+          .map((result) => ({
+            sample_size: result.sampleSize,
+            true_baseline_tte: 1 / baselineHazard,
+            true_treat_tte: 1 / (baselineHazard * hazardRatio),
+            control_hazard: [
+              1 / result.baseInterval[1],
+              1 / result.baseInterval[0],
+            ],
+            treat_hazard: [
+              1 / result.treatInterval[1],
+              1 / result.treatInterval[0],
+            ],
+            pvalue_upper: result.pvalueInterval[0],
+          }))
+          .map((result) => ({
+            // convert the means to medians
+            // this assumes the exponential distribution
+            ...result,
+            true_baseline_tte: result.true_baseline_tte * Math.log(2),
+            true_treat_tte: result.true_treat_tte * Math.log(2),
+            control_hazard: result.control_hazard.map((v) => v * Math.log(2)),
+            treat_hazard: result.treat_hazard.map((v) => v * Math.log(2)),
+          }));
         processedData.sort((a, b) => a.sample_size - b.sample_size);
         // @ts-expect-error I have no idea how else to handle this
         setData(processedData);
@@ -231,7 +233,9 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
         size
       </h3>
       <p>
-      Each iteration of the simulation fits an exponential distribution and computes the median TTE proportional to the inverse exponential hazard rate.
+        Each iteration of the simulation fits an exponential distribution and
+        computes the median TTE proportional to the inverse exponential hazard
+        rate.
       </p>
       <ResponsiveContainer width="100%" height={400}>
         <ComposedChart
@@ -315,8 +319,10 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
         P-Value distribution as a function of sample size
       </h3>
       <p>
-        Here we have the sampling distribution of p-values.
-        In order to reach our target <InlineMath math="\beta" /> threshold set above, we want the estimated p-value to be at most <InlineMath math="\alpha=0.05" /> at the {beta * 100}th percentile of the p-value sampling distribution (green).
+        Here we have the sampling distribution of p-values. In order to reach
+        our target <InlineMath math="\beta" /> threshold set above, we want the
+        estimated p-value to be at most <InlineMath math="\alpha=0.05" /> at the{" "}
+        {beta * 100}th percentile of the p-value sampling distribution (green).
       </p>
       <ResponsiveContainer width="100%" height={400}>
         <ComposedChart
@@ -408,7 +414,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             keyValue="maxSampleSize"
             description="Maximum sample size for evaluation."
           />
-          </div>
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           <button
             className="bg-indigo-600 text-white rounded hover:bg-indigo-700"
@@ -445,22 +451,42 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
           </button>
         </div>
       </div>
-        <div className="mt-8">
-          <p>
-            Update the sample size evaluation range and press a button to re-run the simulation.
-          </p>
-          <br />
-          <ul>
-            <li><span className="font-bold">Quick, Noisy</span></li>
-            <li>Quick simulation taking less than a minute while being the most unstable estimates</li>
-            <li> <br /> </li>
-            <li><span className="font-bold">Slow, Less Noisy</span></li>
-            <li>More accurate simulation taking around 5 minutes</li>
-            <li> <br /> </li>
-            <li><span className="font-bold">Very Slow, Accurate</span></li>
-            <li> Most accurate simulation taking around 30 minutes (just leave tab open while you work on something else)</li>
-          </ul>
-        </div>
+      <div className="mt-8">
+        <p>
+          Update the sample size evaluation range and press a button to re-run
+          the simulation.
+        </p>
+        <br />
+        <ul>
+          <li>
+            <span className="font-bold">Quick, Noisy</span>
+          </li>
+          <li>
+            Quick simulation taking less than a minute while being the most
+            unstable estimates
+          </li>
+          <li>
+            {" "}
+            <br />{" "}
+          </li>
+          <li>
+            <span className="font-bold">Slow, Less Noisy</span>
+          </li>
+          <li>More accurate simulation taking around 5 minutes</li>
+          <li>
+            {" "}
+            <br />{" "}
+          </li>
+          <li>
+            <span className="font-bold">Very Slow, Accurate</span>
+          </li>
+          <li>
+            {" "}
+            Most accurate simulation taking around 30 minutes (just leave tab
+            open while you work on something else)
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

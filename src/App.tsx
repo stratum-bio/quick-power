@@ -9,7 +9,6 @@ import { useState } from "react";
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-
   return (
     <>
       {/* Hamburger menu for mobile */}

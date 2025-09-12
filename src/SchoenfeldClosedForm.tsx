@@ -180,7 +180,7 @@ const SchoenfeldClosedForm: React.FC = () => {
       </div>
       <div className="text-left mx-auto mt-8 mb-8 px-4 text-black">
         <h3 className="text-xl mb-4">
-          Fit a parametric (exponential) curve to the data
+          Fit a parametric (exponential) model to the data
         </h3>
       </div>
       <div className="text-left mx-auto m-8 m-8 px-4 text-black">
@@ -202,19 +202,20 @@ const SchoenfeldClosedForm: React.FC = () => {
       </div>
       <div className="text-left mx-auto mt-8 mb-8 px-4 text-black">
         <h3 className="text-xl mb-4">
-          Estimate the mean survival sampling distribution
+          Estimate the median survival sampling distribution
         </h3>
       </div>
       <div className="text-left mx-auto mt-8 mb-8 px-4 text-black">
         <p>
           Using the hazard rates produced by fitting the exponential model, we
           can then simulate these hazard rates at varying sample sizes to
-          estimate the sampling distribution at different sample sizes. This is
-          naively sampling from exponential distributions and then re-fitting
-          the exponential distribution to see the range of values that result.
-          Since the simulation and permutation testing makes fewer assumptions
-          about the generating distributions, this leads to a larger sample size
-          estimate compared to Schoenfeld's formula.
+          estimate the sampling distribution of the exponential hazard rate.
+          This is naively generating trial simulations by sampling from
+          exponential distributions, and then re-fitting the exponential
+          distribution to see the range of values that result. Since the
+          simulation and permutation testing makes fewer assumptions about the
+          generating distributions, this leads to a larger sample size estimate
+          compared to Schoenfeld's formula.
         </p>
       </div>
       <div className="m-8">
@@ -228,8 +229,8 @@ const SchoenfeldClosedForm: React.FC = () => {
           beta={parameters.beta}
           controlProportion={parameters.group2Proportion}
           treatProportion={parameters.group1Proportion}
-          controlLabel="1 / \lambda_B"
-          treatLabel="1 / \lambda_A"
+          controlLabel="log(2) / \lambda_B"
+          treatLabel="log(2) / \lambda_A"
           forceUpdate={false}
         />
       </div>
@@ -243,14 +244,16 @@ const SchoenfeldClosedForm: React.FC = () => {
         <p>
           The default parameters of this simulation are such that the simulation
           is quick, which means the estimates will be noisy and non-monotonic.
-          There are 3 main variables which determine the speed and accuracy. The number of
-          random permutations used to estimate the p-value for every simulated
-          clinical trial, and the number of simulated clinical
-          trials, and the number of sample sizes evaluated. These scale multiplicatively, so increasing each by a factor
-          The permutation count and simulation count scale multiplicatively, while the
-          number of sample sizes scales linearly in amount of computation.
-          The different buttons correspond to simulation and permutation counts of 100, 500, and 1000 respectively.
-          This means the most accurate button here is expected to make around 1M times more computations.
+          There are 3 main variables which determine the speed and accuracy. The
+          number of random permutations used to estimate the p-value for every
+          simulated clinical trial, and the number of simulated clinical trials,
+          and the number of sample sizes evaluated. These scale
+          multiplicatively, so increasing each by a factor The permutation count
+          and simulation count scale multiplicatively, while the number of
+          sample sizes scales linearly in amount of computation. The different
+          buttons correspond to simulation and permutation counts of 100, 500,
+          and 1000 respectively. This means the most accurate button here is
+          expected to make around 1M times more computations.
         </p>
       </div>
     </div>

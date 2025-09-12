@@ -71,7 +71,11 @@ const TrialDetail: React.FC = () => {
     );
   }
 
-  const armWeibull = Object.fromEntries(Object.entries(trialData.meta.weibull_by_arm).filter(([, value]) => value !== null));
+  const armWeibull = Object.fromEntries(
+    Object.entries(trialData.meta.weibull_by_arm).filter(
+      ([, value]) => value !== null,
+    ),
+  );
   console.log(armWeibull);
 
   return (
@@ -125,15 +129,15 @@ const TrialDetail: React.FC = () => {
                 <p></p>
                 <p>Scale</p>
                 <p>
-                  {arm.arm_name in armWeibull ?
-                    armWeibull[arm.arm_name].scale.toFixed(3)
-                    : "N/A" }
+                  {arm.arm_name in armWeibull
+                    ? armWeibull[arm.arm_name].scale.toFixed(3)
+                    : "N/A"}
                 </p>
                 <p>Shape</p>
                 <p>
-                  {arm.arm_name in armWeibull ?
-                    armWeibull[arm.arm_name].shape.toFixed(3)
-                    : "N/A" }
+                  {arm.arm_name in armWeibull
+                    ? armWeibull[arm.arm_name].shape.toFixed(3)
+                    : "N/A"}
                 </p>
               </div>
             </div>
