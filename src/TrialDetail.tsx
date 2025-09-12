@@ -6,6 +6,7 @@ import CitationFooter from "./CitationFooter";
 import { samplesToLambda } from "./utils/simulate";
 import MultiSurvivalPlot from "./MultiSurvivalPlot";
 import KaplanMeierPlot from "./KaplanMeierPlot";
+import AppError from "./AppError"; // Import the AppError component
 
 import { DISEASE_VAL_TO_NAME } from "./constants";
 
@@ -42,7 +43,7 @@ const TrialDetail: React.FC = () => {
         setLambdaByArm(fitLambdaPerArm(data));
       } catch (e: unknown) {
         if (e instanceof Error) {
-          setError(e.message);
+          setError("Trial data not found");
         } else {
           setError("An unknown error occurred");
         }
@@ -59,11 +60,7 @@ const TrialDetail: React.FC = () => {
   }
 
   if (error) {
-    return (
-      <div className="text-red-500 w-full text-center pt-16">
-        Error: {error}
-      </div>
-    );
+    return <AppError errorMessage={error} />;
   }
 
   if (!trialData) {

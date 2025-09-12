@@ -15,6 +15,7 @@ import type { KaplanMeierByArm } from "./types/trialdata";
 import { InlineMathTooltip } from "./InlineMathTooltip";
 import { PLOT_COLORS } from "./constants";
 import { formatLegend } from "./utils/formatters.tsx";
+import AppError from "./AppError"; // Import the AppError component
 
 interface KaplanMeierPlotProps {
   trialName: string;
@@ -38,7 +39,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName }) => {
         setLoading(true);
         const response = await fetch(`/ct1.v1/${trialName}-kmcurve.json`);
         if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
+          throw new Error(`Data not found.  Return status: ${response.status}`);
         }
         const data: KaplanMeierByArm = await response.json(); // Changed type to KaplanMeierByArm
 
@@ -74,8 +75,8 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName }) => {
         setPlotData(transformedData);
         setArmNames(data.arm_names);
         setTimeScale(data.time_scale);
-      } catch (e: unknown) {
-        setError(e instanceof Error ? e.message : String(e));
+      } catch {
+        setError("Trial data not found");
       } finally {
         setLoading(false);
       }
@@ -89,7 +90,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName }) => {
   }
 
   if (error) {
-    return <div>Error: {error}</div>;
+    return <AppError errorMessage={error} />;
   }
 
   return (

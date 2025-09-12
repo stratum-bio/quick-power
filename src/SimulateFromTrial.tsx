@@ -6,6 +6,7 @@ import CitationFooter from "./CitationFooter";
 import { samplesToLambda } from "./utils/simulate";
 import KaplanMeierPlot from "./KaplanMeierPlot";
 import TTEDistributionPlot from "./TTEDistributionPlot";
+import AppError from "./AppError"; // Import the AppError component
 
 function fitLambdaPerArm(data: Trial): Record<string, number> {
   const result: Record<string, number> = {};
@@ -50,7 +51,7 @@ const SimulateFromTrial: React.FC = () => {
       try {
         const response = await fetch(`/ct1.v1/${trialName}.json`);
         if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
+          throw new Error(`Data not found  Response status: ${response.status}`);
         }
         const data: Trial = await response.json();
         setTrialData(data);
@@ -86,7 +87,7 @@ const SimulateFromTrial: React.FC = () => {
         setLambdaByArm(fitLambdaPerArm(data));
       } catch (e: unknown) {
         if (e instanceof Error) {
-          setError(e.message);
+          setError("Trial data not found");
         } else {
           setError("An unknown error occurred");
         }
@@ -103,7 +104,7 @@ const SimulateFromTrial: React.FC = () => {
   }
 
   if (error) {
-    return <div className="text-red-500">Error: {error}</div>;
+    return <AppError errorMessage={error} />;
   }
 
   if (!trialData || trialName === undefined) {

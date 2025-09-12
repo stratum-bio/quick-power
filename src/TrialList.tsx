@@ -3,6 +3,7 @@ import Loading from "./Loading";
 import { Link } from "react-router-dom";
 import type { TrialIndex, TrialMeta } from "./types/trialdata";
 import CitationFooter from "./CitationFooter";
+import AppError from "./AppError"; // Import the AppError component
 
 import { DISEASE_VAL_TO_NAME } from "./constants";
 
@@ -32,7 +33,7 @@ const TrialList: React.FC = () => {
         setCollapsedStates(initialCollapsedStates);
       } catch (e: unknown) {
         if (e instanceof Error) {
-          setError(e.message);
+          setError("Index data not found");
         } else {
           setError("An unknown error occurred");
         }
@@ -56,7 +57,7 @@ const TrialList: React.FC = () => {
   }
 
   if (error) {
-    return <div>Error: {error}</div>;
+    return <AppError errorMessage={error} />;
   }
 
   return (
