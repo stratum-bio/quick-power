@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Loading from "./Loading";
 import { useParams } from "react-router-dom";
 import type { Trial } from "./types/trialdata";
 import CitationFooter from "./CitationFooter";
@@ -98,7 +99,7 @@ const SimulateFromTrial: React.FC = () => {
   }, [trialName]);
 
   if (loading) {
-    return <div className="text-black">Loading trial details...</div>;
+    return <Loading message="Loading trial details..." />;
   }
 
   if (error) {

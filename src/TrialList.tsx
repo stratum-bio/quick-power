@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Loading from "./Loading";
 import { Link } from "react-router-dom";
 import type { TrialIndex, TrialMeta } from "./types/trialdata";
 import CitationFooter from "./CitationFooter";
@@ -51,7 +52,7 @@ const TrialList: React.FC = () => {
   };
 
   if (loading) {
-    return <div>Loading trials...</div>;
+    return <Loading message="Loading trials..." />;
   }
 
   if (error) {

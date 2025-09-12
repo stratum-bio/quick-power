@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Loading from "./Loading";
 import {
   Legend,
   ComposedChart,
@@ -84,7 +85,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName }) => {
   }, [trialName]);
 
   if (loading) {
-    return <div>Loading plot data...</div>;
+    return <Loading message="Loading plot data..." />;
   }
 
   if (error) {
