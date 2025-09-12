@@ -7,14 +7,8 @@
     "disease": "prostate_cancer",
     "subjects": 293,
     "weibull_by_arm": {
-      "delayed_adt": {
-        "scale": null,
-        "shape": null
-      },
-      "immediate_adt": {
-        "scale": 8.512709804218717e16,
-        "shape": -0.003182196501220569
-      }
+      "delayed_adt": null,
+      "immediate_adt": null
     },
     "weibull_max_diff": null,
     "time_scale": "Months"

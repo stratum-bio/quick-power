@@ -71,6 +71,9 @@ const TrialDetail: React.FC = () => {
     );
   }
 
+  const armWeibull = Object.fromEntries(Object.entries(trialData.meta.weibull_by_arm).filter(([key, value]) => value !== null));
+  console.log(armWeibull);
+
   return (
     <div className="p-6 text-black text-left w-full">
       <h2 className="text-3xl font-bold mb-4">{trialData.meta.identifier}</h2>
@@ -122,14 +125,14 @@ const TrialDetail: React.FC = () => {
                 <p></p>
                 <p>Scale</p>
                 <p>
-                  {trialData.meta.weibull_by_arm[arm.arm_name].scale ?
-                    trialData.meta.weibull_by_arm[arm.arm_name].scale.toFixed(3)
+                  {arm.arm_name in armWeibull ?
+                    armWeibull[arm.arm_name].scale.toFixed(3)
                     : "N/A" }
                 </p>
                 <p>Shape</p>
                 <p>
-                  {trialData.meta.weibull_by_arm[arm.arm_name].shape ?
-                    trialData.meta.weibull_by_arm[arm.arm_name].shape.toFixed(3)
+                  {arm.arm_name in armWeibull ?
+                    armWeibull[arm.arm_name].shape.toFixed(3)
                     : "N/A" }
                 </p>
               </div>
@@ -160,7 +163,7 @@ const TrialDetail: React.FC = () => {
               names={Object.keys(lambdaByArm)}
               lambdas={Object.values(lambdaByArm)}
               maxTime={Math.max(...trialData.arms[0].time)}
-              weibulls={trialData.meta.weibull_by_arm}
+              weibulls={armWeibull}
               timeScale={trialData.meta.time_scale}
             />
           </div>

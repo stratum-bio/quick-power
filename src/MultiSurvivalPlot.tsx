@@ -45,11 +45,11 @@ const MultiSurvivalPlot: React.FC<MultiSurvivalProps> = ({
   const allCurvesData = lambdas.map((lambda_entry, idx) => ({
     name: names[idx],
     exponential: evaluateExponential(timepoints, lambda_entry),
-    weibull: evaluateWeibull(
+    weibull: names[idx] in weibulls ? evaluateWeibull(
       timepoints,
       weibulls[names[idx]].scale,
       weibulls[names[idx]].shape,
-    ),
+    ) : (new Array(timepoints.length).fill(0)),
   }));
 
   const chartData = [];

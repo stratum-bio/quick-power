@@ -7,20 +7,14 @@
     "disease": "prostate_cancer",
     "subjects": 6432,
     "weibull_by_arm": {
-      "57gy": {
-        "scale": 4.0957034011724314e17,
-        "shape": -0.0029442449978913914
-      },
-      "60gy": {
-        "scale": 6.373412817325568e16,
-        "shape": -0.0023449699007454766
-      },
+      "57gy": null,
+      "60gy": null,
       "74gy": {
         "scale": 270.4558808158743,
         "shape": 1.5520253065168723
       }
     },
-    "weibull_max_diff": 4.426145271497564e-83,
+    "weibull_max_diff": null,
     "time_scale": "Months"
   },
   "arms": [
