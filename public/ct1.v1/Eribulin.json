@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.9294894121138964,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "E7389 Versus Capecitabine in Patients With Locally Advanced or Metastatic Breast Cancer Previously Treated With Anthracyclines and Taxanes",
+    "condition_list": [
+      "Metastatic Breast Cancer"
+    ]
   },
   "arms": [
     {

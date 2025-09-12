@@ -17,7 +17,12 @@
       }
     },
     "weibull_max_diff": 0.8581254028022476,
-    "time_scale": "Unknown"
+    "time_scale": "Unknown",
+    "title": "Study to Evaluate Treatment Customized According to RAP80 and BRCA1 in Patients With Advanced Lung Carcinoma",
+    "condition_list": [
+      "Non Small Cell Lung Cancer",
+      "BRCA1 Mutation"
+    ]
   },
   "arms": [
     {

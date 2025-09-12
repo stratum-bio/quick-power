@@ -19,6 +19,8 @@ export interface TrialMeta {
   weibull_by_arm: { [key: string]: Weibull };
   weibull_max_diff: number;
   time_scale: string;
+  title: string | null;
+  condition_list: string[] | null;
 }
 
 export interface Trial {

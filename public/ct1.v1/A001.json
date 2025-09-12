@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.9698232864186046,
-    "time_scale": "Unknown"
+    "time_scale": "Unknown",
+    "title": "Adjuvant Oophorectomy and Tamoxifen in Premenopausal Women With Hormone Receptor-Positive Breast Cancer",
+    "condition_list": [
+      "Breast Cancer"
+    ]
   },
   "arms": [
     {

@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.759129812422177,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "ELDA: Elderly Breast Cancer - Docetaxel in Adjuvant Treatment",
+    "condition_list": [
+      "Breast Cancer"
+    ]
   },
   "arms": [
     {

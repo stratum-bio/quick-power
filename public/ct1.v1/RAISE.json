@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.7422178830962697,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "A Study in Second Line Metastatic Colorectal Cancer",
+    "condition_list": [
+      "Colorectal Cancer"
+    ]
   },
   "arms": [
     {

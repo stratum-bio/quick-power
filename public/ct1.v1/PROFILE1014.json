@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.6603403026119596,
-    "time_scale": "Unknown"
+    "time_scale": "Unknown",
+    "title": "A Clinical Trial Testing The Efficacy Of Crizotinib Versus Standard Chemotherapy Pemetrexed Plus Cisplatin Or Carboplatin In Patients With ALK Positive Non Squamous Cancer Of The Lung",
+    "condition_list": [
+      "Non Squamous Lung Cancer"
+    ]
   },
   "arms": [
     {

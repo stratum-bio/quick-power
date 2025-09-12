@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.7372425533093419,
-    "time_scale": "Unknown"
+    "time_scale": "Unknown",
+    "title": "Clinical Trials of Adjuvant Androgen Deprivation in Localized Prostate Cancer",
+    "condition_list": [
+      "Prostate Adenocarcinoma"
+    ]
   },
   "arms": [
     {

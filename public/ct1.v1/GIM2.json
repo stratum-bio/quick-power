@@ -25,7 +25,11 @@
       }
     },
     "weibull_max_diff": 0.8678462695756858,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Combination Chemotherapy With or Without Fluorouracil and/or Pegfilgrastim in Treating Women With Node-Positive Breast Cancer",
+    "condition_list": [
+      "Breast Cancer"
+    ]
   },
   "arms": [
     {

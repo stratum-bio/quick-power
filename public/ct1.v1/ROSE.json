@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.9400946149842485,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Phase III Study of Docetaxel + Ramucirumab or Placebo in Breast Cancer",
+    "condition_list": [
+      "Breast Cancer"
+    ]
   },
   "arms": [
     {

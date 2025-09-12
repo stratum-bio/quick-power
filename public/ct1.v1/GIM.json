@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.8486659778756654,
-    "time_scale": "Unknown"
+    "time_scale": "Unknown",
+    "title": "Triptorelin in Preventing Early Menopause in Premenopausal Women Who Are Receiving Chemotherapy for Stage I, Stage II, or Stage III Breast Cancer That Has Been Removed By Surgery",
+    "condition_list": [
+      "Breast Cancer"
+    ]
   },
   "arms": [
     {

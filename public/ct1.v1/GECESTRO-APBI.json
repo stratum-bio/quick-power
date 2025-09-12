@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.7855435122700433,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "APBI Versus EBRT Therapy After Breast Conserving Surgery for Low-risk Breast Cancer",
+    "condition_list": [
+      "Breast Cancer"
+    ]
   },
   "arms": [
     {

@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.8504911954446575,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Optimized Chemotherapy Followed by Maintenance With Bevacizumab With or Without Erlotinib in Treating Patients With Metastatic Colorectal Cancer That Cannot be Removed by Surgery (DREAM)",
+    "condition_list": [
+      "Colorectal Cancer"
+    ]
   },
   "arms": [
     {

@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.7918115626803103,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "LUX-Breast 1: BIBW 2992 (Afatinib) in HER2-positive Metastatic Breast Cancer Patients After One Prior Herceptin Treatment",
+    "condition_list": [
+      "Breast Neoplasms"
+    ]
   },
   "arms": [
     {

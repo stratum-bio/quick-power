@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.6961055115748959,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Maintenance Treatment Versus Observation After Induction in Advanced Colorectal Carcinoma",
+    "condition_list": [
+      "Colorectal Cancer Metastatic"
+    ]
   },
   "arms": [
     {

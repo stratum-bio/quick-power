@@ -17,7 +17,12 @@
       }
     },
     "weibull_max_diff": 0.8880536929893998,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Zoledronate in Preventing Skeletal (Bone)-Related Events in Men Who Are Receiving Androgen Deprivation Therapy For Prostate Cancer and Bone Metastases",
+    "condition_list": [
+      "Metastatic Cancer",
+      "Prostate Cancer"
+    ]
   },
   "arms": [
     {

@@ -17,7 +17,14 @@
       }
     },
     "weibull_max_diff": 0.883766332615463,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Carboplatin And Paclitaxel With Or Without CP-751, 871 (An IGF-1R Inhibitor) For Advanced NSCLC Of Squamous, Large Cell And Adenosquamous Carcinoma Histology",
+    "condition_list": [
+      "Carcinoma, Squamous Cell",
+      "Carcinoma, Adenosquamous",
+      "Carcinoma, Large Cell",
+      "Carcinoma, Non-Small-Cell Lung"
+    ]
   },
   "arms": [
     {

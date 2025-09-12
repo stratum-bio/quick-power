@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.6790144719252794,
-    "time_scale": "Unknown"
+    "time_scale": "Unknown",
+    "title": "Study Evaluating The Effects Of Neratinib After Adjuvant Trastuzumab In Women With Early Stage Breast Cancer",
+    "condition_list": [
+      "Breast Cancer"
+    ]
   },
   "arms": [
     {

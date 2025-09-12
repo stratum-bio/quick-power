@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.9015101561499155,
-    "time_scale": "Unknown"
+    "time_scale": "Unknown",
+    "title": "Everolimus in Combination With Trastuzumab and Paclitaxel in the Treatment of HER2 Positive Locally Advanced or Metastatic Breast Cancer",
+    "condition_list": [
+      "Breast Cancer"
+    ]
   },
   "arms": [
     {

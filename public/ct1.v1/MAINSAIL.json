@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.8315011537822211,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Study to Evaluate Safety and Effectiveness of Lenalidomide in Combination With Docetaxel and Prednisone for Patients With Castrate-Resistant Prostate Cancer",
+    "condition_list": [
+      "Prostate Cancer"
+    ]
   },
   "arms": [
     {

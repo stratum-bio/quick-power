@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.8186593609943909,
-    "time_scale": "Unknown"
+    "time_scale": "Unknown",
+    "title": "A Global Study to Compare the Effects of Fulvestrant and Arimidex in a Subset of Patients With Breast Cancer.",
+    "condition_list": [
+      "Hormone Receptor Positive Breast Cancer"
+    ]
   },
   "arms": [
     {

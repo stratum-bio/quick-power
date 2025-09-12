@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.9585352526318047,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Sequential Treatment Strategy for Metastatic Colorectal Cancer",
+    "condition_list": [
+      "Metastatic Colorectal Cancer"
+    ]
   },
   "arms": [
     {

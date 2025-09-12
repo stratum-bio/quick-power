@@ -11,7 +11,11 @@
       "immediate_adt": null
     },
     "weibull_max_diff": null,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Androgen Deprivation Therapy in Treating Patients With Prostate Cancer",
+    "condition_list": [
+      "Prostate Cancer"
+    ]
   },
   "arms": [
     {

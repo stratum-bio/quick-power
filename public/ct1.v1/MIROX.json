@@ -17,7 +17,13 @@
       }
     },
     "weibull_max_diff": 0.9681746652896391,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Combination Chemotherapy in Treating Patients With Colorectal Cancer and Resectable Metastases",
+    "condition_list": [
+      "Colorectal Cancer",
+      "Metastatic Cancer",
+      "Chemotherapy"
+    ]
   },
   "arms": [
     {

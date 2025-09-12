@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.8001828443193322,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Study of Blood and Tissue Samples in Predicting Response to Second-Line Therapy Using Erlotinib Hydrochloride or Chemotherapy in Patients With Advanced Non-Small Cell Lung Cancer",
+    "condition_list": [
+      "Lung Cancer"
+    ]
   },
   "arms": [
     {

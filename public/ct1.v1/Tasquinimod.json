@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.9836709213391905,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "A Study of Tasquinimod in Men With Metastatic Castrate Resistant Prostate Cancer",
+    "condition_list": [
+      "Prostate Cancer"
+    ]
   },
   "arms": [
     {

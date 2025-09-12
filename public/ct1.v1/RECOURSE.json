@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.6874060391514106,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Study of TAS-102 in Patients With Metastatic Colorectal Cancer Refractory to Standard Chemotherapies",
+    "condition_list": [
+      "Colorectal Cancer"
+    ]
   },
   "arms": [
     {

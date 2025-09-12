@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.7581312924197106,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "A Study of Xeloda (Capecitabine) Plus Oxaliplatin in Patients With Colon Cancer",
+    "condition_list": [
+      "Colorectal Cancer"
+    ]
   },
   "arms": [
     {

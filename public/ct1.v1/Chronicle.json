@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.8598538255857687,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Capecitabine and Oxaliplatin or Standard Follow-Up Care in Treating Patients Who Have Undergone Surgery for Locally Advanced Rectal Cancer",
+    "condition_list": [
+      "Colorectal Cancer"
+    ]
   },
   "arms": [
     {

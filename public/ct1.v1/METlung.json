@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.9244447469602225,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "A Study of Onartuzumab (MetMAb) in Combination With Tarceva (Erlotinib) in Participants With Met Diagnostic-Positive Non-Small Cell Lung Cancer Who Have Received Chemotherapy For Advanced or Metastatic Disease (MetLung)",
+    "condition_list": [
+      "Non-Squamous Non-Small Cell Lung Cancer"
+    ]
   },
   "arms": [
     {

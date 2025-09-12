@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.9736369154913077,
-    "time_scale": "Unknown"
+    "time_scale": "Unknown",
+    "title": "GSK1572932A Antigen-Specific Cancer Immunotherapeutic as Adjuvant Therapy in Patients With Non-Small Cell Lung Cancer",
+    "condition_list": [
+      "Lung Cancer, Non-Small Cell"
+    ]
   },
   "arms": [
     {

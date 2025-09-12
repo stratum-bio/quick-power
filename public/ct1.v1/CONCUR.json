@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.5645553982940328,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Asian Subjects With Metastatic Colorectal Cancer Treated With Regorafenib or Placebo After Failure of Standard Therapy",
+    "condition_list": [
+      "Colorectal Neoplasms"
+    ]
   },
   "arms": [
     {

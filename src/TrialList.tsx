@@ -67,7 +67,7 @@ const TrialList: React.FC = () => {
       </h2>
       <div className="text-left m-4 mb-8 text-black md:w-196">
         <p>
-          Explores the cancer trials listed here to find a trial which would
+          Explore the cancer trials listed here to find a trial which would
           make a good starting point for performing power analysis and sample
           size estimation.
         </p>
@@ -113,12 +113,16 @@ const TrialList: React.FC = () => {
                     <div>Min Hazard Ratio</div>
                   </div>
                   <div className="text-right">
-                    {trials.map((trial) => (
+                    {trials.map((trial, idx) => (
                       <Link
                         to={`/trial-detail/${trial.identifier}`}
                         key={trial.identifier}
-                        className="grid grid-cols-4 md:grid-cols-5 pl-8 pr-4 md:gap-4 pb-3 pt-3 hover:bg-gray-200"
+                        className={`grid pr-4 ${idx % 2 == 0 ? "bg-gray-100": ""} hover:bg-blue-50`}
                       >
+                      {trial.title && (<div className="text-left italic mt-4 ml-4" >
+                        {trial.title ? trial.title : ""}
+                      </div>)} 
+                      <div className="grid grid-cols-4 md:grid-cols-5 md:gap-4 mt-2 mb-2">
                         <div>{trial.identifier}</div>
                         <div className="hidden md:block">
                           {new Date(trial.publication_date).getFullYear()}
@@ -130,6 +134,7 @@ const TrialList: React.FC = () => {
                             ? trial.weibull_max_diff.toFixed(3)
                             : "N/A"}
                         </div>
+                      </div>
                       </Link>
                     ))}
                   </div>

@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.9322298714025169,
-    "time_scale": "Unknown"
+    "time_scale": "Unknown",
+    "title": "A Study of Erlotinib (Tarceva) After Surgery With or Without Adjuvant Chemotherapy in Non-Small Cell Lung Carcinoma (NSCLC) Patients Who Have Epidermal Growth Factor Receptor (EGFR) Positive Tumors",
+    "condition_list": [
+      "Non-small Cell Lung Cancer"
+    ]
   },
   "arms": [
     {

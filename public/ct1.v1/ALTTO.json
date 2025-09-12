@@ -25,7 +25,11 @@
       }
     },
     "weibull_max_diff": 0.6893489856727604,
-    "time_scale": "Unknown"
+    "time_scale": "Unknown",
+    "title": "ALTTO (Adjuvant Lapatinib And/Or Trastuzumab Treatment Optimisation) Study; BIG 2-06/N063D",
+    "condition_list": [
+      "Neoplasms, Breast"
+    ]
   },
   "arms": [
     {

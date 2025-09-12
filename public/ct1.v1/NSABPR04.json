@@ -25,7 +25,11 @@
       }
     },
     "weibull_max_diff": 0.7120689116623117,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Radiation Therapy and Either Capecitabine or Fluorouracil With or Without Oxaliplatin Before Surgery in Treating Patients With Resectable Rectal Cancer",
+    "condition_list": [
+      "Colorectal Cancer"
+    ]
   },
   "arms": [
     {

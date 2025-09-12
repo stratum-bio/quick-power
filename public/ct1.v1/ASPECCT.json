@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.9940859797902283,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "ASPECCT: A Study of Panitumumab Efficacy and Safety Compared to Cetuximab in Patients With KRAS Wild-Type Metastatic Colorectal Cancer",
+    "condition_list": [
+      "Metastatic Colorectal Cancer"
+    ]
   },
   "arms": [
     {

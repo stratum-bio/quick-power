@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.6389038278699026,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Study of BMS-936558 (Nivolumab) Compared to Docetaxel in Previously Treated Advanced or Metastatic Squamous Cell Non-small Cell Lung Cancer (NSCLC) (CheckMate 017)",
+    "condition_list": [
+      "Squamous Cell Non-small Cell Lung Cancer"
+    ]
   },
   "arms": [
     {

@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.8018944669608372,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Comparison of Complete Axillary Lymph Node Dissection With Axillary Radiation Therapy in Treating Women With Invasive Breast Cancer",
+    "condition_list": [
+      "Breast Cancer"
+    ]
   },
   "arms": [
     {

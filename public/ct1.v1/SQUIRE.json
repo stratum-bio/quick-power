@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.8854969731029723,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "First-line Treatment of Participants With Stage IV Squamous Non-Small Cell Lung Cancer With Necitumumab and Gemcitabine-Cisplatin",
+    "condition_list": [
+      "Non Small Cell Lung Cancer"
+    ]
   },
   "arms": [
     {

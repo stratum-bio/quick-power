@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.7095793144706508,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "A Study to Evaluate Pertuzumab + Trastuzumab + Docetaxel vs. Placebo + Trastuzumab + Docetaxel in Previously Untreated HER2-Positive Metastatic Breast Cancer",
+    "condition_list": [
+      "Metastatic Breast Cancer"
+    ]
   },
   "arms": [
     {

@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.803127678545206,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "2-arm Trial of Paclitaxel Plus Bevacizumab vs. Capecitabine Plus Bevacizumab",
+    "condition_list": [
+      "Metastatic Breast Cancer"
+    ]
   },
   "arms": [
     {

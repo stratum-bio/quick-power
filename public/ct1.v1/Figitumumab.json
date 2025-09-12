@@ -17,7 +17,14 @@
       }
     },
     "weibull_max_diff": 0.8748300951666622,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Trial Of CP-751, 871 And Erlotinib In Refractory Lung Cancer",
+    "condition_list": [
+      "Carcinoma, Large Cell",
+      "Carcinoma, Non-Small-Cell Lung",
+      "Carcinoma, Squamous Cell",
+      "Carcinoma, Adenosquamous Cell"
+    ]
   },
   "arms": [
     {

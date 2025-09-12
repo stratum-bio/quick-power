@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.9814012673022933,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Bevacizumab + Endocrine Treatment vs Endocrine Treatment as First Line in Postmenopausal Women",
+    "condition_list": [
+      "Breast Cancer"
+    ]
   },
   "arms": [
     {

@@ -17,7 +17,14 @@
       }
     },
     "weibull_max_diff": 0.8298236029911665,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Tamoxifen Citrate or Letrozole With or Without Bevacizumab in Treating Women With Stage IIIB or Stage IV Breast Cancer",
+    "condition_list": [
+      "Invasive Breast Carcinoma",
+      "Recurrent Breast Carcinoma",
+      "Stage III Breast Cancer AJCC v6",
+      "Stage IV Breast Cancer AJCC v6 and v7"
+    ]
   },
   "arms": [
     {

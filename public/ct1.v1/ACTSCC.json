@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.8329289749814315,
-    "time_scale": "Unknown"
+    "time_scale": "Unknown",
+    "title": "Tegafur-Uracil and Leucovorin or S-1 in Treating Patients With Stage III Colon Cancer That Has Been Completely Removed by Surgery",
+    "condition_list": [
+      "Colorectal Cancer"
+    ]
   },
   "arms": [
     {

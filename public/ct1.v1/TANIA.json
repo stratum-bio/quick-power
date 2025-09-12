@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.7547233989574499,
-    "time_scale": "Unknown"
+    "time_scale": "Unknown",
+    "title": "A Study of Avastin (Bevacizumab) in Combination With Chemotherapy in Patients With Breast Cancer Progressing After First-Line Therapy With Avastin and Chemotherapy (TANIA)",
+    "condition_list": [
+      "Breast Cancer"
+    ]
   },
   "arms": [
     {

@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.9038516923691202,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Second-Line Combination Chemotherapy With or Without Bevacizumab in Treating Patients With Metastatic Colorectal Cancer Who Have Received First-Line Chemotherapy and Bevacizumab",
+    "condition_list": [
+      "Colorectal Cancer"
+    ]
   },
   "arms": [
     {

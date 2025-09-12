@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.9528372591853231,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Randomized Boost Versus no Boost Irradiation of Early Breast Cancer",
+    "condition_list": [
+      "Breast Cancer"
+    ]
   },
   "arms": [
     {

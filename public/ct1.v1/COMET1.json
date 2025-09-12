@@ -17,7 +17,14 @@
       }
     },
     "weibull_max_diff": 0.8122776633038625,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Study of Cabozantinib (XL184) Versus Prednisone in Men With Metastatic Castration-resistant Prostate Cancer Previously Treated With Docetaxel and Abiraterone or MDV3100",
+    "condition_list": [
+      "Prostate Cancer",
+      "Castration Resistant Prostate Cancer",
+      "Pain",
+      "Prostatic Neoplasms"
+    ]
   },
   "arms": [
     {

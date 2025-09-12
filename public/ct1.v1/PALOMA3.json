@@ -25,7 +25,11 @@
       }
     },
     "weibull_max_diff": 0.46681073619607655,
-    "time_scale": "Unknown"
+    "time_scale": "Unknown",
+    "title": "Palbociclib (PD-0332991) Combined With Fulvestrant In Hormone Receptor+ HER2-Negative Metastatic Breast Cancer After Endocrine Failure (PALOMA-3)",
+    "condition_list": [
+      "Metastatic Breast Cancer"
+    ]
   },
   "arms": [
     {

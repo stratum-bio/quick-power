@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.7794253335283706,
-    "time_scale": "Unknown"
+    "time_scale": "Unknown",
+    "title": "Low-dose Oral Cyclophosphamide and Methotrexate Maintenance for Hormone Receptor-negative Early Breast Cancer",
+    "condition_list": [
+      "Breast Cancer"
+    ]
   },
   "arms": [
     {

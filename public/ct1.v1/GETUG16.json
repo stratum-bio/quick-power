@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.6889928800366703,
-    "time_scale": "Unknown"
+    "time_scale": "Unknown",
+    "title": "Radiation Therapy With or Without Goserelin in Treating Patients Who Have Undergone Surgery for Recurrent or Refractory Prostate Cancer",
+    "condition_list": [
+      "Prostate Cancer"
+    ]
   },
   "arms": [
     {

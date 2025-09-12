@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.9287535237174801,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Erlotinib Versus Gemcitabine/Carboplatin in Chemo-naive Stage IIIB/IV Non-Small Cell Lung Cancer Patients With Epidermal Growth Factor Receptor (EGFR) Exon 19 or 21 Mutation",
+    "condition_list": [
+      "Non-small Cell Lung Cancer"
+    ]
   },
   "arms": [
     {

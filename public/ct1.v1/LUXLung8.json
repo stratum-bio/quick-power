@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.8475307028533817,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "LUX-Lung 8: A Phase III Trial of Afatinib (BIBW 2992) Versus Erlotinib for the Treatment of Squamous Cell Lung Cancer After at Least One Prior Platinum Based Chemotherapy",
+    "condition_list": [
+      "Carcinoma, Non-Small-Cell Lung"
+    ]
   },
   "arms": [
     {

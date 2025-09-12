@@ -17,7 +17,12 @@
       }
     },
     "weibull_max_diff": 0.9923310393697637,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Chemotherapy and/or Hormone Therapy With or Without Zoledronate in Treating Women With Stage II or Stage III Breast Cancer",
+    "condition_list": [
+      "Breast Cancer",
+      "Metastatic Cancer"
+    ]
   },
   "arms": [
     {

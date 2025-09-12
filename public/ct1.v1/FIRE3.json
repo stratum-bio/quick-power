@@ -17,7 +17,12 @@
       }
     },
     "weibull_max_diff": 0.9491382392906446,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "5-FU, Folinic Acid and Irinotecan (FOLFIRI) Plus Cetuximab Versus FOLFIRI Plus Bevacizumab in First Line Treatment Colorectal Cancer (CRC)",
+    "condition_list": [
+      "Neoplasm Metastasis",
+      "Colorectal Cancer"
+    ]
   },
   "arms": [
     {

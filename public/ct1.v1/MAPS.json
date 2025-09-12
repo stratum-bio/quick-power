@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.8000211085130661,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Mesothelioma Avastin Plus Pemetrexed-cisplatin Study",
+    "condition_list": [
+      "Mesothelioma"
+    ]
   },
   "arms": [
     {

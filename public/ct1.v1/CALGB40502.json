@@ -21,7 +21,19 @@
       }
     },
     "weibull_max_diff": 0.7580304559429134,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Paclitaxel, Nab-paclitaxel, or Ixabepilone With or Without Bevacizumab in Treating Patients With Stage IIIC or Stage IV Breast Cancer",
+    "condition_list": [
+      "Estrogen Receptor Negative",
+      "Estrogen Receptor Positive",
+      "HER2/Neu Negative",
+      "HER2/Neu Positive",
+      "Progesterone Receptor Negative",
+      "Progesterone Receptor Positive",
+      "Recurrent Breast Carcinoma",
+      "Stage IIIC Breast Cancer AJCC v6",
+      "Stage IV Breast Cancer AJCC v6 and v7"
+    ]
   },
   "arms": [
     {

@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.7615389493515234,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "A Phase 3, Randomized, Double-Blinded, Placebo-Controlled Study of ARQ 197 Plus Erlotinib Versus Placebo Plus Erlotinib",
+    "condition_list": [
+      "Non-small-cell Lung Cancer"
+    ]
   },
   "arms": [
     {

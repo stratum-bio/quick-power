@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.948252970889826,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "EC Followed Docetaxel Versus ET Followed Capecitabine as Adjuvant Chemotherapy for Node Positive Operable Breast Cancer",
+    "condition_list": [
+      "Breast Cancer"
+    ]
   },
   "arms": [
     {

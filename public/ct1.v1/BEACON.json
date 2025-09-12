@@ -17,7 +17,12 @@
       }
     },
     "weibull_max_diff": 0.9089075942898485,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "The BEACON Study (Breast Cancer Outcomes With NKTR-102)",
+    "condition_list": [
+      "Locally Recurrent Breast Cancer",
+      "Metastatic Breast Cancer"
+    ]
   },
   "arms": [
     {

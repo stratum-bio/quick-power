@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.8346839534149735,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "PF-00299804 in Stage IIIB or Stage IV Non-Small Cell Lung Cancer Not Responding to Standard Therapy for Advanced or Metastatic Cancer",
+    "condition_list": [
+      "Lung Cancer"
+    ]
   },
   "arms": [
     {

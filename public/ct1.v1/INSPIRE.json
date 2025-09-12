@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.9852560039504944,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "First-line Treatment of Patients With Stage IV Nonsquamous Non-Small Cell Lung Cancer With Necitumumab (IMC-11F8) and Pemetrexed-Cisplatin",
+    "condition_list": [
+      "Non Small Cell Lung Cancer"
+    ]
   },
   "arms": [
     {

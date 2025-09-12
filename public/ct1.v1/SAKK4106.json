@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.874987303745984,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Bevacizumab in Treating Patients Who Have Undergone First-Line Therapy for Metastatic Colorectal Cancer",
+    "condition_list": [
+      "Colorectal Cancer"
+    ]
   },
   "arms": [
     {

@@ -17,7 +17,9 @@
       }
     },
     "weibull_max_diff": 0.753838851532133,
-    "time_scale": "Unknown"
+    "time_scale": "Unknown",
+    "title": null,
+    "condition_list": null
   },
   "arms": [
     {

@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.6130884724683436,
-    "time_scale": "Unknown"
+    "time_scale": "Unknown",
+    "title": "Anastrozole or Tamoxifen in Treating Postmenopausal Women With Ductal Carcinoma in Situ Who Are Undergoing Lumpectomy and Radiation Therapy",
+    "condition_list": [
+      "Breast Cancer"
+    ]
   },
   "arms": [
     {

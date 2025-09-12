@@ -25,7 +25,11 @@
       }
     },
     "weibull_max_diff": 0.8152314913439899,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Avastin and Chemotherapy Followed by a KRAS Stratified Randomization to Maintenance Treatment for First Line Treatment of Metastatic Colorectal Cancer.",
+    "condition_list": [
+      "Colorectal Cancer"
+    ]
   },
   "arms": [
     {

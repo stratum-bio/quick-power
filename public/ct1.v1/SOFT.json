@@ -17,7 +17,18 @@
       }
     },
     "weibull_max_diff": 0.9965755529271078,
-    "time_scale": "Unknown"
+    "time_scale": "Unknown",
+    "title": "Suppression of Ovarian Function With Either Tamoxifen or Exemestane Compared With Tamoxifen Alone in Treating Premenopausal Women With Hormone-Responsive Breast Cancer",
+    "condition_list": [
+      "Estrogen Receptor Positive Breast Cancer",
+      "Progesterone Receptor Positive Tumor",
+      "Recurrent Breast Carcinoma",
+      "Stage IA Breast Cancer",
+      "Stage IB Breast Cancer",
+      "Stage IIA Breast Cancer",
+      "Stage IIB Breast Cancer",
+      "Stage IIIA Breast Cancer"
+    ]
   },
   "arms": [
     {

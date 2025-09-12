@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.8720496755892034,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "Study Comparing Orteronel Plus Prednisone in Participants With Metastatic Castration-Resistant Prostate Cancer.",
+    "condition_list": [
+      "Prostate Cancer"
+    ]
   },
   "arms": [
     {

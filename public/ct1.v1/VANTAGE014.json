@@ -17,7 +17,12 @@
       }
     },
     "weibull_max_diff": 0.8803324155706448,
-    "time_scale": "Unknown"
+    "time_scale": "Unknown",
+    "title": "Suberoylanilide Hydroxamic Acid (Vorinostat, MK-0683) Versus Placebo in Advanced Malignant Pleural Mesothelioma (MK-0683-014)",
+    "condition_list": [
+      "Mesothelioma",
+      "Lung Cancer"
+    ]
   },
   "arms": [
     {

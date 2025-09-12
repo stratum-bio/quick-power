@@ -17,7 +17,11 @@
       }
     },
     "weibull_max_diff": 0.7427733344874813,
-    "time_scale": "Months"
+    "time_scale": "Months",
+    "title": "A Study of Trastuzumab Emtansine in Comparison With Treatment of Physician's Choice in Participants With HER2-positive Breast Cancer Who Have Received at Least Two Prior Regimens of HER2-directed Therapy",
+    "condition_list": [
+      "Breast Cancer"
+    ]
   },
   "arms": [
     {
