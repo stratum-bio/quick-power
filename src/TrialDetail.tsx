@@ -71,7 +71,7 @@ const TrialDetail: React.FC = () => {
     );
   }
 
-  const armWeibull = Object.fromEntries(Object.entries(trialData.meta.weibull_by_arm).filter(([key, value]) => value !== null));
+  const armWeibull = Object.fromEntries(Object.entries(trialData.meta.weibull_by_arm).filter(([, value]) => value !== null));
   console.log(armWeibull);
 
   return (
