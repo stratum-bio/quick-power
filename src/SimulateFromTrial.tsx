@@ -118,6 +118,9 @@ const SimulateFromTrial: React.FC = () => {
       <h2 className="text-3xl font-bold mb-4">
         Simulate from trial {trialData.meta.identifier}
       </h2>
+      {trialData.meta.title && (
+        <div className="max-w-3xl">{trialData.meta.title}</div>
+      )}
       <div className="mt-8 max-w-3xl">
         <KaplanMeierPlot trialName={trialName} />
       </div>

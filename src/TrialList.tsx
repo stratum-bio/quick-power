@@ -67,9 +67,9 @@ const TrialList: React.FC = () => {
       </h2>
       <div className="text-left m-4 mb-8 text-black md:w-196">
         <p>
-          Explore the cancer trials listed here to find a trial which would
-          make a good starting point for performing power analysis and sample
-          size estimation.
+          Explore the cancer trials listed here to find a trial which would make
+          a good starting point for performing power analysis and sample size
+          estimation.
         </p>
       </div>
       {trialIndex && trialIndex.trials.length > 0 ? (
@@ -117,24 +117,26 @@ const TrialList: React.FC = () => {
                       <Link
                         to={`/trial-detail/${trial.identifier}`}
                         key={trial.identifier}
-                        className={`grid pr-4 ${idx % 2 == 0 ? "bg-gray-100": ""} hover:bg-blue-50`}
+                        className={`grid pr-4 ${idx % 2 == 0 ? "bg-gray-100" : ""} hover:bg-blue-50`}
                       >
-                      {trial.title && (<div className="text-left italic mt-4 ml-4" >
-                        {trial.title ? trial.title : ""}
-                      </div>)} 
-                      <div className="grid grid-cols-4 md:grid-cols-5 md:gap-4 mt-2 mb-2">
-                        <div>{trial.identifier}</div>
-                        <div className="hidden md:block">
-                          {new Date(trial.publication_date).getFullYear()}
+                        {trial.title && (
+                          <div className="text-left italic mt-4 ml-4">
+                            {trial.title ? trial.title : ""}
+                          </div>
+                        )}
+                        <div className="grid grid-cols-4 md:grid-cols-5 md:gap-4 mt-2 mb-2">
+                          <div>{trial.identifier}</div>
+                          <div className="hidden md:block">
+                            {new Date(trial.publication_date).getFullYear()}
+                          </div>
+                          <div>{trial.subjects}</div>
+                          <div>{trial.arms}</div>
+                          <div>
+                            {trial.weibull_max_diff
+                              ? trial.weibull_max_diff.toFixed(3)
+                              : "N/A"}
+                          </div>
                         </div>
-                        <div>{trial.subjects}</div>
-                        <div>{trial.arms}</div>
-                        <div>
-                          {trial.weibull_max_diff
-                            ? trial.weibull_max_diff.toFixed(3)
-                            : "N/A"}
-                        </div>
-                      </div>
                       </Link>
                     ))}
                   </div>

@@ -76,12 +76,27 @@ const TrialDetail: React.FC = () => {
       ([, value]) => value !== null,
     ),
   );
-  console.log(armWeibull);
+
+  const conditionsLabel = trialData.meta.condition_list
+    ? trialData.meta.condition_list.join(", ")
+    : null;
 
   return (
     <div className="p-6 text-black text-left w-full">
       <h2 className="text-3xl font-bold mb-4">{trialData.meta.identifier}</h2>
-      <div className="mb-4 grid grid-cols-[auto_1fr] gap-x-4">
+      <div className="mb-4 grid grid-cols-[auto_1fr] gap-x-4 md:w-3xl">
+        {trialData.meta.title && (
+          <React.Fragment>
+            <div className="font-semibold">Title</div>
+            <div className="pb-2">{trialData.meta.title}</div>
+          </React.Fragment>
+        )}
+        {conditionsLabel && (
+          <React.Fragment>
+            <div className="font-semibold">Conditions</div>
+            <div className="pb-2">{conditionsLabel}</div>
+          </React.Fragment>
+        )}
         <div className="font-semibold">PubMed ID</div>
         <div>{trialData.meta.pubmed}</div>
 
