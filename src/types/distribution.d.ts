@@ -1,6 +1,6 @@
 import { type PValueDist } from "./simulation.d";
 
-export type TTEDistributionWorkerResult = PValueDist & {
+export type DistributionWorkerResult = PValueDist & {
   sampleSize: number;
   baseInterval: number[];
   treatInterval: number[];

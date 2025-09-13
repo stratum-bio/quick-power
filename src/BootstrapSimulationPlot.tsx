@@ -16,26 +16,30 @@ import { InlineMath } from "react-katex";
 import { linspace } from "./utils/survival";
 import { formatLegend } from "./utils/formatters.tsx";
 import { InlineMathTooltip } from "./InlineMathTooltip";
+import type { Trial, TrialArmData } from "./types/trialdata.d";
+import { samplesToLambda } from "./utils/simulate";
 
 import type { DistributionWorkerResult } from "./types/distribution";
 
 import { ValidatedInputField } from "./ValidatedInputField";
 
-import Worker from "./workers/tteDistribution.worker.ts?worker";
+import Worker from "./workers/bootstrappedSimulation.worker.ts?worker";
 
-interface TTEDistributionProps {
-  baselineHazard: number;
-  hazardRatio: number;
+interface TrackedBootstrapSimulationProps {
+  controlArmName: string;
+  treatArmName: string;
   totalSampleSize: number;
   accrual: number;
   followup: number;
   alpha: number;
   beta: number;
-  controlProportion: number;
-  treatProportion: number;
   controlLabel: string;
   treatLabel: string;
   forceUpdate: boolean;
+}
+
+interface BootstrapSimulationProps extends TrackedBootstrapSimulationProps {
+  trial: Trial;
 }
 
 interface HazardDistPlotData {
@@ -48,14 +52,14 @@ interface HazardDistPlotData {
 }
 
 function propsAreEqual(
-  a: TTEDistributionProps,
-  b: TTEDistributionProps,
+  a: TrackedBootstrapSimulationProps,
+  b: TrackedBootstrapSimulationProps,
 ): boolean {
   const keys = Object.keys(a);
 
   // Check if all properties and their values are the same
   for (const key of keys) {
-    const propKey = key as keyof TTEDistributionProps;
+    const propKey = key as keyof TrackedBootstrapSimulationProps;
     if (a[propKey] !== b[propKey]) {
       return false;
     }
@@ -64,39 +68,46 @@ function propsAreEqual(
   return true;
 }
 
+function findArm(trial: Trial, name: string): TrialArmData {
+  for (const arm of trial.arms) {
+    if (arm.arm_name === name) {
+      return arm;
+    }
+  }
+
+  throw new Error("Invalid arm: " + name);
+}
+
 const MIN_SAMPLE_SIZE = 100;
 
-const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
+const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
+  trial,
+  controlArmName,
+  treatArmName,
   totalSampleSize,
-  baselineHazard,
-  hazardRatio,
   accrual,
   followup,
   alpha,
   beta,
-  controlProportion,
-  treatProportion,
   controlLabel,
   treatLabel,
   forceUpdate = false,
 }) => {
   const allProperties = {
+    controlArmName,
+    treatArmName,
     totalSampleSize,
-    baselineHazard,
-    hazardRatio,
     accrual,
     followup,
     alpha,
     beta,
-    controlProportion,
-    treatProportion,
     controlLabel,
     treatLabel,
     forceUpdate,
   };
 
   const [properties, setProperties] =
-    useState<TTEDistributionProps>(allProperties);
+    useState<TrackedBootstrapSimulationProps>(allProperties);
   const [data, setData] = useState<HazardDistPlotData[]>([]);
   const [loading, setLoading] = useState(true);
   const [completed, setCompleted] = useState(0);
@@ -109,6 +120,19 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
 
   const [minSampleSize, setMinSampleSize] = useState(MIN_SAMPLE_SIZE);
   const [maxSampleSize, setMaxSampleSize] = useState(totalSampleSize);
+
+  const controlArm = findArm(trial, controlArmName);
+  const treatArm = findArm(trial, treatArmName);
+
+  const controlTimes = new Float64Array(controlArm.time);
+  const controlEvents = new Uint8Array(
+    controlArm.events.map((e) => (e ? 1 : 0)),
+  );
+  const treatTimes = new Float64Array(treatArm.time);
+  const treatEvents = new Uint8Array(treatArm.events.map((e) => (e ? 1 : 0)));
+
+  const baselineHazard = samplesToLambda(controlTimes, controlEvents);
+  const treatHazard = samplesToLambda(treatTimes, treatEvents);
 
   /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
@@ -133,7 +157,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
           .map((result) => ({
             sample_size: result.sampleSize,
             true_baseline_tte: 1 / baselineHazard,
-            true_treat_tte: 1 / (baselineHazard * hazardRatio),
+            true_treat_tte: 1 / treatHazard,
             control_hazard: [
               1 / result.baseInterval[1],
               1 / result.baseInterval[0],
@@ -159,15 +183,13 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
         setLoading(false);
 
         setProperties({
+          controlArmName,
+          treatArmName,
           totalSampleSize,
-          baselineHazard,
-          hazardRatio,
           accrual,
           followup,
           alpha,
           beta,
-          controlProportion,
-          treatProportion,
           controlLabel,
           treatLabel,
           forceUpdate,
@@ -180,15 +202,15 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
     jobs.forEach((sampleSize) => {
       worker.postMessage({
         sampleSize,
-        controlProportion,
-        treatProportion,
-        baselineHazard,
-        hazardRatio,
         accrual,
         followup,
         permutationCount,
         datasetSimCount,
         beta,
+        controlTimes,
+        controlEvents,
+        treatTimes,
+        treatEvents,
       });
     });
 
@@ -491,4 +513,4 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   );
 };
 
-export default TTEDistributionPlot;
+export default BootstrapSimulationPlot;

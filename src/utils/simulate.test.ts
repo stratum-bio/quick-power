@@ -185,7 +185,6 @@ describe("samplePValueDistribution", () => {
   });
 });
 
-
 describe("samplePValueDistributioniFromData", () => {
   it("should return smaller pvalues with greater sample size", () => {
     const totalSampleSize = 100;
@@ -196,8 +195,22 @@ describe("samplePValueDistributioniFromData", () => {
 
     const rng = random.clone(123);
 
-    const [controlTimes, controlEvents] = sampleDataset(1.0 / 2, 1, totalSampleSize, accrual, followup, rng);
-    const [treatTimes, treatEvents] = sampleDataset(1.0 / 3, 1, totalSampleSize, accrual, followup, rng);
+    const [controlTimes, controlEvents] = sampleDataset(
+      1.0 / 2,
+      1,
+      totalSampleSize,
+      accrual,
+      followup,
+      rng,
+    );
+    const [treatTimes, treatEvents] = sampleDataset(
+      1.0 / 3,
+      1,
+      totalSampleSize,
+      accrual,
+      followup,
+      rng,
+    );
 
     const result = samplePValueDistributionFromData(
       100,
@@ -230,9 +243,9 @@ describe("samplePValueDistributioniFromData", () => {
     );
 
     expect(
-      result.pValueDist.reduce((a, b) => a+b) / datasetSimCount
+      result.pValueDist.reduce((a, b) => a + b) / datasetSimCount,
     ).toBeGreaterThan(
-      result2.pValueDist.reduce((a, b) => a+b) / datasetSimCount
+      result2.pValueDist.reduce((a, b) => a + b) / datasetSimCount,
     );
   });
 });

@@ -17,8 +17,6 @@ export function getPercentiles(
   return percentiles.map((p) => jStat.percentile(data, p / 100));
 }
 
-
-
 export function samplesToLambda(
   times: Float64Array,
   events: Uint8Array,
@@ -151,10 +149,15 @@ export function sampleDataset(
   return [timeSamples, events];
 }
 
-export function resample(times: Float64Array, events: Uint8Array, size: number, rng: typeof random): [Float64Array, Uint8Array] {
+export function resample(
+  times: Float64Array,
+  events: Uint8Array,
+  size: number,
+  rng: typeof random,
+): [Float64Array, Uint8Array] {
   const resampledTimes = new Float64Array(size);
   const resampledEvents = new Uint8Array(size);
-  
+
   for (let i = 0; i < size; i++) {
     const selectedIndex = rng.int(0, times.length - 1);
     resampledTimes[i] = times[selectedIndex];
@@ -179,12 +182,19 @@ export function resampleDataset(
   const uniformEnroll = rng.uniform(0, accrual);
 
   for (let i = 0; i < simCount; i++) {
-    const [resampledTimes, resampledEvents] = resample(times, events, sampleSize, rng);
+    const [resampledTimes, resampledEvents] = resample(
+      times,
+      events,
+      sampleSize,
+      rng,
+    );
     const enrollmentTimes = new Float64Array(
       Array.from({ length: sampleSize }, () => uniformEnroll()),
     );
 
-    const samplesWithEnrollment = resampledTimes.map((s, j) => s + enrollmentTimes[j]);
+    const samplesWithEnrollment = resampledTimes.map(
+      (s, j) => s + enrollmentTimes[j],
+    );
 
     const [censoredSamples, censoredEvents] = censor(
       new Float64Array(samplesWithEnrollment),
@@ -194,7 +204,9 @@ export function resampleDataset(
     // if a sample was censored (e == 0), that means we mark it as such
     // otherwise (sample was not censored artificially), we propagate the
     // original event label
-    const combinedEvents = censoredEvents.map((e, idx) => e == 0 ? 0 : resampledEvents[idx]);
+    const combinedEvents = censoredEvents.map((e, idx) =>
+      e == 0 ? 0 : resampledEvents[idx],
+    );
 
     resampledTimesDataset.push(censoredTimes);
     resampledEventsDataset.push(combinedEvents);
@@ -300,7 +312,6 @@ export function samplePValueDistribution(
     pValueDist: pValues,
   };
 }
-
 
 export function samplePValueDistributionFromData(
   totalSampleSize: number,

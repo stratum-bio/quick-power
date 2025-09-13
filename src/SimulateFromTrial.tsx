@@ -5,7 +5,7 @@ import type { Trial } from "./types/trialdata";
 import CitationFooter from "./CitationFooter";
 import { samplesToLambda } from "./utils/simulate";
 import KaplanMeierPlot from "./KaplanMeierPlot";
-import TTEDistributionPlot from "./TTEDistributionPlot";
+import BootstrapSimulationPlot from "./BootstrapSimulationPlot";
 import AppError from "./AppError"; // Import the AppError component
 
 function fitLambdaPerArm(data: Trial): Record<string, number> {
@@ -36,7 +36,7 @@ const SimulateFromTrial: React.FC = () => {
   const [followUpPeriod, setFollowUpPeriod] = useState<number>(12);
   const [largestSampleSize, setLargestSampleSize] = useState<number>(500);
   const [beta, setBeta] = useState<number>(0.8);
-  const [showTTEDistributionPlot, setShowTTEDistributionPlot] =
+  const [showBootstrapSimulationPlot, setShowBootstrapSimulationPlot] =
     useState<boolean>(false);
   const [forceSimulation, setForceSimulation] = useState<boolean>(false);
 
@@ -244,7 +244,7 @@ const SimulateFromTrial: React.FC = () => {
             type="submit"
             className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             onClick={() => {
-              setShowTTEDistributionPlot(true);
+              setShowBootstrapSimulationPlot(true);
               setForceSimulation(true);
             }}
           >
@@ -252,19 +252,18 @@ const SimulateFromTrial: React.FC = () => {
           </button>
         </div>
       </div>
-      {showTTEDistributionPlot && lambdaByArm !== null && (
+      {showBootstrapSimulationPlot && lambdaByArm !== null && (
         <div className="mt-8 max-w-3xl">
           <h2 className="text-xl font-semibold mb-4">Results</h2>
-          <TTEDistributionPlot
+          <BootstrapSimulationPlot
+            trial={trialData}
+            controlArmName={controlArm}
+            treatArmName={treatmentArm}
             totalSampleSize={largestSampleSize}
-            baselineHazard={lambdaByArm[controlArm]}
-            hazardRatio={lambdaByArm[treatmentArm] / lambdaByArm[controlArm]}
             accrual={accrualPeriod}
             followup={followUpPeriod}
             alpha={0.05}
             beta={beta}
-            controlProportion={0.5}
-            treatProportion={0.5}
             controlLabel={`\\text{Control}`}
             treatLabel={`\\text{Treatment}`}
             forceUpdate={forceSimulation}

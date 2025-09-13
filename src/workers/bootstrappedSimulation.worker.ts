@@ -1,26 +1,29 @@
-import { samplePValueDistribution, getPercentiles } from "../utils/simulate";
+import {
+  samplePValueDistributionFromData,
+  getPercentiles,
+} from "../utils/simulate";
 import { type DistributionWorkerResult } from "../types/distribution.d";
 
 self.onmessage = (e) => {
   const {
     sampleSize,
-    controlProportion,
-    treatProportion,
-    baselineHazard,
-    hazardRatio,
     accrual,
     followup,
     permutationCount,
     datasetSimCount,
     beta,
+    controlTimes,
+    controlEvents,
+    treatTimes,
+    treatEvents,
   } = e.data;
 
-  const pValueDist = samplePValueDistribution(
+  const pValueDist = samplePValueDistributionFromData(
     sampleSize,
-    controlProportion,
-    treatProportion,
-    baselineHazard,
-    hazardRatio,
+    controlTimes,
+    controlEvents,
+    treatTimes,
+    treatEvents,
     accrual,
     followup,
     permutationCount,
