@@ -17,7 +17,7 @@ import { linspace } from "./utils/survival";
 import { formatLegend } from "./utils/formatters.tsx";
 import { InlineMathTooltip } from "./InlineMathTooltip";
 import type { Trial, TrialArmData } from "./types/trialdata.d";
-import { samplesToLambda } from "./utils/simulate";
+import { weibullToMedian } from "./utils/survival";
 
 import type { SimulationWorkerResult } from "./types/simulationWorker.d";
 
@@ -131,8 +131,15 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
   const treatTimes = new Float64Array(treatArm.time);
   const treatEvents = new Uint8Array(treatArm.events.map((e) => (e ? 1 : 0)));
 
-  const baselineHazard = samplesToLambda(controlTimes, controlEvents);
-  const treatHazard = samplesToLambda(treatTimes, treatEvents);
+  let baseMedianTTE = null;
+  let treatMedianTTE = null;
+  const weibullByArm = trial.meta.weibull_by_arm;
+  if (controlArmName in weibullByArm) {
+      baseMedianTTE = weibullToMedian(weibullByArm[controlArmName]);
+  }
+  if (treatArmName in weibullByArm) {
+      treatMedianTTE = weibullToMedian(weibullByArm[treatArmName]);
+  }
 
   /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
@@ -156,8 +163,8 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
         const processedData = results
           .map((result) => ({
             sample_size: result.sampleSize,
-            true_baseline_tte: 1 / baselineHazard,
-            true_treat_tte: 1 / treatHazard,
+            true_baseline_tte: baseMedianTTE,
+            true_treat_tte: treatMedianTTE,
             control_hazard: [
               1 / result.baseInterval[1],
               1 / result.baseInterval[0],
@@ -172,8 +179,6 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
             // convert the means to medians
             // this assumes the exponential distribution
             ...result,
-            true_baseline_tte: result.true_baseline_tte * Math.log(2),
-            true_treat_tte: result.true_treat_tte * Math.log(2),
             control_hazard: result.control_hazard.map((v) => v * Math.log(2)),
             treat_hazard: result.treat_hazard.map((v) => v * Math.log(2)),
           }));

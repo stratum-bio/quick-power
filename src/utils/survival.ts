@@ -1,3 +1,5 @@
+import type { Weibull } from "../types/trialdata.d";
+
 export interface SurvivalPoint {
   time: number;
   survProb: number;
@@ -94,4 +96,9 @@ export function fitExponentialPerGroup(
   }));
   const treatLambda = fitExponential(treatSurv);
   return [baseLambda, treatLambda];
+}
+
+
+export function weibullToMedian(w: Weibull): number {
+  return w.scale * ( Math.log(2) ** (1.0 / w.shape) )
 }
