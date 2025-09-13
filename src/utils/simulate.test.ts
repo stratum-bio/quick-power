@@ -7,6 +7,7 @@ import {
   getPercentiles,
   randomPermutation,
   samplePValueDistribution,
+  samplePValueDistributionFromData,
 } from "./simulate";
 import random from "random";
 
@@ -181,5 +182,57 @@ describe("samplePValueDistribution", () => {
     expect(result.controlHazardDist.length).toBe(datasetSimCount);
     expect(result.treatHazardDist.length).toBe(datasetSimCount);
     expect(result.pValueDist.length).toBe(datasetSimCount);
+  });
+});
+
+
+describe("samplePValueDistributioniFromData", () => {
+  it("should return smaller pvalues with greater sample size", () => {
+    const totalSampleSize = 100;
+    const accrual = 2;
+    const followup = 1;
+    const pValueSimCount = 100;
+    const datasetSimCount = 100;
+
+    const rng = random.clone(123);
+
+    const [controlTimes, controlEvents] = sampleDataset(1.0 / 2, 1, totalSampleSize, accrual, followup, rng);
+    const [treatTimes, treatEvents] = sampleDataset(1.0 / 3, 1, totalSampleSize, accrual, followup, rng);
+
+    const result = samplePValueDistributionFromData(
+      100,
+      controlTimes[0],
+      controlEvents[0],
+      treatTimes[0],
+      treatEvents[0],
+      accrual,
+      followup,
+      pValueSimCount,
+      datasetSimCount,
+      123,
+    );
+
+    expect(result.controlHazardDist.length).toBe(datasetSimCount);
+    expect(result.treatHazardDist.length).toBe(datasetSimCount);
+    expect(result.pValueDist.length).toBe(datasetSimCount);
+
+    const result2 = samplePValueDistributionFromData(
+      500,
+      controlTimes[0],
+      controlEvents[0],
+      treatTimes[0],
+      treatEvents[0],
+      accrual,
+      followup,
+      pValueSimCount,
+      datasetSimCount,
+      123,
+    );
+
+    expect(
+      result.pValueDist.reduce((a, b) => a+b) / datasetSimCount
+    ).toBeGreaterThan(
+      result2.pValueDist.reduce((a, b) => a+b) / datasetSimCount
+    );
   });
 });
