@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import {
   Area,
   ComposedChart,
@@ -198,45 +198,8 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   }, [triggerUpdate, forceUpdate]);
   /* eslint-enable react-hooks/exhaustive-deps */
 
-  if (loading) {
-    const percentage = total > 0 ? (completed / total) * 100 : 0;
+  const memoMedianHazardPlot = useMemo(() => {
     return (
-      <div className="flex h-[500px] flex-col items-center justify-center">
-        <p className="mb-2 text-gray-600">
-          {completed}/{total}{" "}
-        </p>
-        <div className="h-2.5 w-1/2 rounded-full bg-gray-200 dark:bg-gray-700">
-          <div
-            className="h-2.5 rounded-full bg-blue-600"
-            style={{ width: `${percentage}%` }}
-          ></div>
-        </div>
-      </div>
-    );
-  }
-
-  let containerClass = "";
-  let mismatchMessage = "";
-  if (!propsAreEqual(allProperties, properties)) {
-    containerClass = "bg-red-100 rounded-lg";
-    mismatchMessage =
-      "Input values don't match simulation results, press the Update button to re-run the simulation";
-  }
-
-  return (
-    <div className={containerClass}>
-      <div className="pt-4 pl-4 justify-center">
-        <p className="font-bold text-red-950 italic"> {mismatchMessage} </p>
-      </div>
-      <h3 className="font-bold text-l">
-        Distribution of estimated median time-to-event as a function of sample
-        size
-      </h3>
-      <p>
-        Each iteration of the simulation fits an exponential distribution and
-        computes the median TTE proportional to the inverse exponential hazard
-        rate.
-      </p>
       <ResponsiveContainer width="100%" height={400}>
         <ComposedChart
           data={data}
@@ -315,15 +278,11 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
           />
         </ComposedChart>
       </ResponsiveContainer>
-      <h3 className="font-bold text-l">
-        P-Value distribution as a function of sample size
-      </h3>
-      <p>
-        Here we have the sampling distribution of p-values. In order to reach
-        our target <InlineMath math="\beta" /> threshold set above, we want the
-        estimated p-value to be at most <InlineMath math="\alpha=0.05" /> at the{" "}
-        {beta * 100}th percentile of the p-value sampling distribution (green).
-      </p>
+    );
+  }, [data]);
+
+  const memoPValuePlot = useMemo(() => {
+    return (
       <ResponsiveContainer width="100%" height={400}>
         <ComposedChart
           data={data}
@@ -392,6 +351,60 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
           />
         </ComposedChart>
       </ResponsiveContainer>
+    );
+  }, [data]);
+
+  if (loading) {
+    const percentage = total > 0 ? (completed / total) * 100 : 0;
+    return (
+      <div className="flex h-[500px] flex-col items-center justify-center">
+        <p className="mb-2 text-gray-600">
+          {completed}/{total}{" "}
+        </p>
+        <div className="h-2.5 w-1/2 rounded-full bg-gray-200 dark:bg-gray-700">
+          <div
+            className="h-2.5 rounded-full bg-blue-600"
+            style={{ width: `${percentage}%` }}
+          ></div>
+        </div>
+      </div>
+    );
+  }
+
+  let containerClass = "";
+  let mismatchMessage = "";
+  if (!propsAreEqual(allProperties, properties)) {
+    containerClass = "bg-red-100 rounded-lg";
+    mismatchMessage =
+      "Input values don't match simulation results, press the Update button to re-run the simulation";
+  }
+
+
+  return (
+    <div className={containerClass}>
+      <div className="pt-4 pb-4 text-center">
+        <p className="font-bold text-red-950 italic"> {mismatchMessage} </p>
+      </div>
+      <h3 className="font-bold text-l">
+        Distribution of estimated median time-to-event as a function of sample
+        size
+      </h3>
+      <p>
+        Each iteration of the simulation fits an exponential distribution and
+        computes the median TTE proportional to the inverse exponential hazard
+        rate.
+      </p>
+        {memoMedianHazardPlot} 
+      <h3 className="font-bold text-l">
+        P-Value distribution as a function of sample size
+      </h3>
+      <p>
+        Here we have the sampling distribution of p-values. In order to reach
+        our target <InlineMath math="\beta" /> threshold set above, we want the
+        estimated p-value to be at most <InlineMath math="\alpha=0.05" /> at the{" "}
+        {beta * 100}th percentile of the p-value sampling distribution (green).
+      </p>
+        {memoPValuePlot}
       <div className="flex flex-col items-center lg:items-end justify-center mt-4 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <ValidatedInputField
