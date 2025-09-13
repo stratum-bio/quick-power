@@ -98,7 +98,6 @@ export function fitExponentialPerGroup(
   return [baseLambda, treatLambda];
 }
 
-
 export function weibullToMedian(w: Weibull): number {
-  return w.scale * ( Math.log(2) ** (1.0 / w.shape) )
+  return w.scale * Math.log(2) ** (1.0 / w.shape);
 }

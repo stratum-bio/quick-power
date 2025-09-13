@@ -25,6 +25,8 @@ import { ValidatedInputField } from "./ValidatedInputField";
 
 import Worker from "./workers/bootstrappedSimulation.worker.ts?worker";
 
+const MIN_SAMPLE_SIZE = 100;
+
 interface TrackedBootstrapSimulationProps {
   controlArmName: string;
   treatArmName: string;
@@ -44,10 +46,10 @@ interface BootstrapSimulationProps extends TrackedBootstrapSimulationProps {
 
 interface HazardDistPlotData {
   sample_size: number;
-  true_baseline_tte: number;
-  true_treat_tte: number;
-  control_hazard: [number, number];
-  treat_hazard: [number, number];
+  true_baseline_tte: number | null;
+  true_treat_tte: number | null;
+  control_hazard: number[];
+  treat_hazard: number[];
   pvalue_upper: number;
 }
 
@@ -78,7 +80,23 @@ function findArm(trial: Trial, name: string): TrialArmData {
   throw new Error("Invalid arm: " + name);
 }
 
-const MIN_SAMPLE_SIZE = 100;
+function correctBounds(results: HazardDistPlotData[]) {
+  for (let i = results.length - 2; i >= 0; i--) {
+    const r = results[i];
+    if (!isFinite(r.control_hazard[0])) {
+      r.control_hazard[0] = results[i + 1].control_hazard[0];
+    }
+    if (!isFinite(r.control_hazard[1])) {
+      r.control_hazard[1] = results[i + 1].control_hazard[1];
+    }
+    if (!isFinite(r.treat_hazard[0])) {
+      r.treat_hazard[0] = results[i + 1].treat_hazard[0];
+    }
+    if (!isFinite(r.treat_hazard[1])) {
+      r.treat_hazard[1] = results[i + 1].treat_hazard[1];
+    }
+  }
+}
 
 const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
   trial,
@@ -135,10 +153,10 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
   let treatMedianTTE = null;
   const weibullByArm = trial.meta.weibull_by_arm;
   if (controlArmName in weibullByArm) {
-      baseMedianTTE = weibullToMedian(weibullByArm[controlArmName]);
+    baseMedianTTE = weibullToMedian(weibullByArm[controlArmName]);
   }
   if (treatArmName in weibullByArm) {
-      treatMedianTTE = weibullToMedian(weibullByArm[treatArmName]);
+    treatMedianTTE = weibullToMedian(weibullByArm[treatArmName]);
   }
 
   /* eslint-disable react-hooks/exhaustive-deps */
@@ -160,7 +178,7 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
       results.push(e.data);
       setCompleted(results.length);
       if (results.length === jobs.length) {
-        const processedData = results
+        const processedData: HazardDistPlotData[] = results
           .map((result) => ({
             sample_size: result.sampleSize,
             true_baseline_tte: baseMedianTTE,
@@ -183,7 +201,8 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
             treat_hazard: result.treat_hazard.map((v) => v * Math.log(2)),
           }));
         processedData.sort((a, b) => a.sample_size - b.sample_size);
-        // @ts-expect-error I have no idea how else to handle this
+
+        correctBounds(processedData);
         setData(processedData);
         setLoading(false);
 
