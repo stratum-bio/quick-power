@@ -19,7 +19,7 @@ import { InlineMathTooltip } from "./InlineMathTooltip";
 import type { Trial, TrialArmData } from "./types/trialdata.d";
 import { samplesToLambda } from "./utils/simulate";
 
-import type { DistributionWorkerResult } from "./types/distribution";
+import type { SimulationWorkerResult } from "./types/simulationWorker.d";
 
 import { ValidatedInputField } from "./ValidatedInputField";
 
@@ -148,7 +148,7 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
     setTotal(jobs.length);
     setCompleted(0);
 
-    const results: DistributionWorkerResult[] = [];
+    const results: SimulationWorkerResult[] = [];
     worker.onmessage = (e) => {
       results.push(e.data);
       setCompleted(results.length);
@@ -402,7 +402,7 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
             }}
           />
           <Area
-            type="monotone"
+            type="linear"
             dataKey="pvalue_upper"
             stroke="green"
             fill="green"

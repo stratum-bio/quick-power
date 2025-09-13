@@ -2,7 +2,7 @@ import {
   samplePValueDistributionFromData,
   getPercentiles,
 } from "../utils/simulate";
-import { type DistributionWorkerResult } from "../types/distribution.d";
+import { type SimulationWorkerResult } from "../types/simulationWorker.d";
 
 self.onmessage = (e) => {
   const {
@@ -38,7 +38,7 @@ self.onmessage = (e) => {
   const treatInterval = getPercentiles(pValueDist.treatHazardDist, percentiles);
   const pvalueInterval = getPercentiles(pValueDist.pValueDist, [beta * 100]);
 
-  const result: DistributionWorkerResult = {
+  const result: SimulationWorkerResult = {
     ...pValueDist,
     sampleSize,
     baseInterval,
