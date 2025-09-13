@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Loading from "./Loading";
 import { useParams } from "react-router-dom";
 import type { Trial } from "./types/trialdata";
@@ -36,8 +36,14 @@ const SimulateFromTrial: React.FC = () => {
   const [followUpPeriod, setFollowUpPeriod] = useState<number>(12);
   const [largestSampleSize, setLargestSampleSize] = useState<number>(500);
   const [beta, setBeta] = useState<number>(0.8);
-  const [showBootstrapSimulationPlot, setShowBootstrapSimulationPlot] =
-    useState<boolean>(false);
+  const [simulationPlotParameters, setSimulationPlotParameters] = useState<{ 
+    controlArm: string;
+    treatmentArm: string;
+    accrualPeriod: number;
+    followUpPeriod: number;
+    largestSampleSize: number;
+    beta: number;
+  } | null>(null);
   const [forceSimulation, setForceSimulation] = useState<boolean>(false);
 
   useEffect(() => {
@@ -101,6 +107,32 @@ const SimulateFromTrial: React.FC = () => {
     fetchTrial();
   }, [trialName]);
 
+  const memoizedKaplanMeierPlot = useMemo(() => {
+    return trialName ? <KaplanMeierPlot trialName={trialName} /> : <></>;
+  }, [trialName]);
+
+  const memoizedBootstrapSimulationPlot = useMemo(() => {
+    if (!simulationPlotParameters || !lambdaByArm || !trialData) {
+      return null;
+    }
+    return (
+      <BootstrapSimulationPlot
+        trial={trialData}
+        controlArmName={simulationPlotParameters.controlArm}
+        treatArmName={simulationPlotParameters.treatmentArm}
+        totalSampleSize={simulationPlotParameters.largestSampleSize}
+        accrual={simulationPlotParameters.accrualPeriod}
+        followup={simulationPlotParameters.followUpPeriod}
+        alpha={0.05}
+        beta={simulationPlotParameters.beta}
+        controlLabel={`\\text{Control}`}
+        treatLabel={`\\text{Treatment}`}
+        forceUpdate={forceSimulation}
+      />
+    );
+  }, [simulationPlotParameters, lambdaByArm, trialData, forceSimulation]);
+
+
   if (loading) {
     return <Loading message="Loading trial details..." />;
   }
@@ -122,7 +154,7 @@ const SimulateFromTrial: React.FC = () => {
         <div className="max-w-3xl">{trialData.meta.title}</div>
       )}
       <div className="mt-8 max-w-3xl">
-        <KaplanMeierPlot trialName={trialName} />
+        {memoizedKaplanMeierPlot}
       </div>
 
       <div className="mt-8 p-4 border rounded-lg shadow-md bg-white max-w-3xl">
@@ -244,7 +276,14 @@ const SimulateFromTrial: React.FC = () => {
             type="submit"
             className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             onClick={() => {
-              setShowBootstrapSimulationPlot(true);
+              setSimulationPlotParameters({
+                controlArm,
+                treatmentArm,
+                accrualPeriod,
+                followUpPeriod,
+                largestSampleSize,
+                beta,
+              });
               setForceSimulation(true);
             }}
           >
@@ -252,23 +291,10 @@ const SimulateFromTrial: React.FC = () => {
           </button>
         </div>
       </div>
-      {showBootstrapSimulationPlot && lambdaByArm !== null && (
+      {memoizedBootstrapSimulationPlot && (
         <div className="mt-8 max-w-3xl">
           <h2 className="text-xl font-semibold mb-4">Results</h2>
-          <BootstrapSimulationPlot
-            trial={trialData}
-            controlArmName={controlArm}
-            treatArmName={treatmentArm}
-            totalSampleSize={largestSampleSize}
-            accrual={accrualPeriod}
-            followup={followUpPeriod}
-            alpha={0.05}
-            beta={beta}
-            controlLabel={`\\text{Control}`}
-            treatLabel={`\\text{Treatment}`}
-            forceUpdate={forceSimulation}
-          />
-
+          {memoizedBootstrapSimulationPlot}
           <br />
         </div>
       )}
