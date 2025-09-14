@@ -121,7 +121,6 @@ const SimulateFromTrial: React.FC = () => {
         totalSampleSize={simulationPlotParameters.largestSampleSize}
         accrual={simulationPlotParameters.accrualPeriod}
         followup={simulationPlotParameters.followUpPeriod}
-        alpha={0.05}
         controlLabel={`\\text{Control}`}
         treatLabel={`\\text{Treatment}`}
         forceUpdate={forceSimulation}
