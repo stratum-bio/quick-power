@@ -2,6 +2,7 @@ import random from "random";
 import { jStat } from "jstat";
 
 import type { PValueDist } from "../types/simulation";
+import { logRankTest } from "./logrank";
 
 const MIN_LAMBDA = 1e-6;
 
@@ -369,6 +370,67 @@ export function samplePValueDistributionFromData(
       pValueSimCount,
       rng,
     );
+
+    controlHazardDist[i] = controlHazard;
+    treatHazardDist[i] = treatHazard;
+    pValues[i] = pValue;
+  }
+
+  return {
+    controlHazardDist,
+    treatHazardDist,
+    pValueDist: pValues,
+  };
+}
+
+export function logrankPValueDistributionFromData(
+  totalSampleSize: number,
+  controlTimes: Float64Array,
+  controlEvents: Uint8Array,
+  treatTimes: Float64Array,
+  treatEvents: Uint8Array,
+  accrual: number,
+  followup: number,
+  simCount: number,
+  seed: string | number = 123,
+): PValueDist {
+  // TODO: call this from the worker to actually enable
+  // the use of smapling from the data
+  const rng = random.clone(seed);
+
+  const [controlTime, controlEvent] = resampleDataset(
+    controlTimes,
+    controlEvents,
+    simCount,
+    Math.round(totalSampleSize * 0.5),
+    accrual,
+    followup,
+    rng,
+  );
+  const [treatTime, treatEvent] = resampleDataset(
+    treatTimes,
+    treatEvents,
+    simCount,
+    Math.round(totalSampleSize * 0.5),
+    accrual,
+    followup,
+    rng,
+  );
+
+  const controlHazardDist = new Float64Array(simCount);
+  const treatHazardDist = new Float64Array(simCount);
+  const pValues = new Float64Array(simCount);
+
+  for (let i = 0; i < simCount; i++) {
+    const cTime = controlTime[i];
+    const cEvent = controlEvent[i];
+    const tTime = treatTime[i];
+    const tEvent = treatEvent[i];
+
+    const controlHazard = samplesToLambda(cTime, cEvent);
+    const treatHazard = samplesToLambda(tTime, tEvent);
+
+    const [, pValue] = logRankTest(cTime, cEvent, tTime, tEvent);
 
     controlHazardDist[i] = controlHazard;
     treatHazardDist[i] = treatHazard;

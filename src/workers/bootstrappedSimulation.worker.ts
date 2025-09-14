@@ -1,5 +1,6 @@
 import {
-  samplePValueDistributionFromData,
+  // samplePValueDistributionFromData,
+  logrankPValueDistributionFromData,
   getPercentiles,
 } from "../utils/simulate";
 import { type SimulationWorkerResult } from "../types/simulationWorker.d";
@@ -9,15 +10,14 @@ self.onmessage = (e) => {
     sampleSize,
     accrual,
     followup,
-    permutationCount,
     datasetSimCount,
-    beta,
     controlTimes,
     controlEvents,
     treatTimes,
     treatEvents,
   } = e.data;
 
+  /*
   const pValueDist = samplePValueDistributionFromData(
     sampleSize,
     controlTimes,
@@ -29,6 +29,17 @@ self.onmessage = (e) => {
     permutationCount,
     datasetSimCount,
   );
+  */
+  const pValueDist = logrankPValueDistributionFromData(
+    sampleSize,
+    controlTimes,
+    controlEvents,
+    treatTimes,
+    treatEvents,
+    accrual,
+    followup,
+    datasetSimCount,
+  );
 
   const percentiles = [2.5, 97.5];
   const baseInterval = getPercentiles(
@@ -36,7 +47,7 @@ self.onmessage = (e) => {
     percentiles,
   );
   const treatInterval = getPercentiles(pValueDist.treatHazardDist, percentiles);
-  const pvalueInterval = getPercentiles(pValueDist.pValueDist, [beta * 100]);
+  const pvalueInterval = getPercentiles(pValueDist.pValueDist, [80, 90]);
 
   const result: SimulationWorkerResult = {
     ...pValueDist,

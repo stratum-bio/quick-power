@@ -26,6 +26,7 @@ import { ValidatedInputField } from "./ValidatedInputField";
 import Worker from "./workers/bootstrappedSimulation.worker.ts?worker";
 
 const MIN_SAMPLE_SIZE = 100;
+const ALPHA = 0.05;
 
 interface TrackedBootstrapSimulationProps {
   controlArmName: string;
@@ -33,8 +34,6 @@ interface TrackedBootstrapSimulationProps {
   totalSampleSize: number;
   accrual: number;
   followup: number;
-  alpha: number;
-  beta: number;
   controlLabel: string;
   treatLabel: string;
   forceUpdate: boolean;
@@ -50,7 +49,8 @@ interface HazardDistPlotData {
   true_treat_tte: number | null;
   control_hazard: number[];
   treat_hazard: number[];
-  pvalue_upper: number;
+  pvalue_80: number;
+  pvalue_90: number;
 }
 
 function propsAreEqual(
@@ -105,8 +105,6 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
   totalSampleSize,
   accrual,
   followup,
-  alpha,
-  beta,
   controlLabel,
   treatLabel,
   forceUpdate = false,
@@ -117,8 +115,6 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
     totalSampleSize,
     accrual,
     followup,
-    alpha,
-    beta,
     controlLabel,
     treatLabel,
     forceUpdate,
@@ -131,8 +127,7 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
   const [completed, setCompleted] = useState(0);
   const [total, setTotal] = useState(0);
 
-  const [permutationCount, setPermutationCount] = useState(100);
-  const [datasetSimCount, setDatasetSimCount] = useState(100);
+  const [datasetSimCount, setDatasetSimCount] = useState(500);
   const [evaluationCount, setEvaluationCount] = useState(11);
   const [triggerUpdate, setTriggerUpdate] = useState(0);
 
@@ -191,7 +186,8 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
               1 / result.treatInterval[1],
               1 / result.treatInterval[0],
             ],
-            pvalue_upper: result.pvalueInterval[0],
+            pvalue_80: result.pvalueInterval[0],
+            pvalue_90: result.pvalueInterval[1] - result.pvalueInterval[0],
           }))
           .map((result) => ({
             // convert the means to medians
@@ -212,8 +208,6 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
           totalSampleSize,
           accrual,
           followup,
-          alpha,
-          beta,
           controlLabel,
           treatLabel,
           forceUpdate,
@@ -228,9 +222,7 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
         sampleSize,
         accrual,
         followup,
-        permutationCount,
         datasetSimCount,
-        beta,
         controlTimes,
         controlEvents,
         treatTimes,
@@ -374,26 +366,39 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
           />
           <Legend verticalAlign="top" align="right" formatter={formatLegend} />
           <ReferenceLine
-            y={alpha}
+            y={ALPHA}
             stroke="darkred"
             strokeOpacity={0.5}
             name="\text{alpha}"
             label={{
               position: "insideBottomRight",
-              value: `alpha=${alpha}`,
+              value: `alpha=${ALPHA}`,
               fill: "darkred",
             }}
           />
           <Area
             type="linear"
-            dataKey="pvalue_upper"
-            stroke="green"
-            fill="green"
-            fillOpacity={0.2}
-            strokeOpacity={0.3}
+            dataKey="pvalue_80"
+            stroke="#8dd1e1"
+            fill="#8dd1e1"
+            fillOpacity={0.5}
+            strokeOpacity={0.7}
             strokeWidth={2}
-            name={`${beta * 100}\\%\\ \\text{One-sided Upper CI}`}
+            name="\text{80\% One-sided Upper CI}"
             legendType="plainline"
+            stackId="0"
+          />
+          <Area
+            type="linear"
+            dataKey="pvalue_90"
+            stroke="#a4de6c"
+            fill="#a4de6c"
+            fillOpacity={0.5}
+            strokeOpacity={0.7}
+            strokeWidth={2}
+            name="\text{90\% One-sided Upper CI}"
+            legendType="plainline"
+            stackId="0"
           />
         </ComposedChart>
       </ResponsiveContainer>
@@ -446,8 +451,7 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
       <p>
         Here we have the sampling distribution of p-values. In order to reach
         our target <InlineMath math="\beta" /> threshold set above, we want the
-        estimated p-value to be at most <InlineMath math="\alpha=0.05" /> at the{" "}
-        {beta * 100}th percentile of the p-value sampling distribution (green).
+        estimated p-value to be at most <InlineMath math="\alpha=0.05" /> at the 80th (green) or 90th (purple)  percentile of the p-value sampling distribution.
       </p>
         {memoPValuePlot}
       <div className="flex flex-col items-center lg:items-end justify-center mt-4 w-full">
@@ -477,8 +481,7 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
           <button
             className="bg-indigo-600 text-white rounded hover:bg-indigo-700"
             onClick={() => {
-              setPermutationCount(100);
-              setDatasetSimCount(100);
+              setDatasetSimCount(500);
               setEvaluationCount(11);
               setTriggerUpdate(triggerUpdate + 1);
             }}
@@ -488,9 +491,8 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
           <button
             className="bg-indigo-600 text-white rounded hover:bg-indigo-700"
             onClick={() => {
-              setPermutationCount(500);
-              setDatasetSimCount(500);
-              setEvaluationCount(25);
+              setDatasetSimCount(1000);
+              setEvaluationCount(21);
               setTriggerUpdate(triggerUpdate + 1);
             }}
           >
@@ -499,9 +501,8 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
           <button
             className="bg-indigo-600 text-white rounded hover:bg-indigo-700"
             onClick={() => {
-              setPermutationCount(1000);
-              setDatasetSimCount(1000);
-              setEvaluationCount(25);
+              setDatasetSimCount(10000);
+              setEvaluationCount(21);
               setTriggerUpdate(triggerUpdate + 1);
             }}
           >
@@ -530,7 +531,7 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
           <li>
             <span className="font-bold">Slow, Less Noisy</span>
           </li>
-          <li>More accurate simulation taking around 5 minutes</li>
+          <li>More accurate simulation taking a few minutes</li>
           <li>
             {" "}
             <br />{" "}
@@ -540,8 +541,7 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
           </li>
           <li>
             {" "}
-            Most accurate simulation taking around 30 minutes (just leave tab
-            open while you work on something else)
+            Most accurate simulation taking around 10 minutes (just leave tab open while you work on something else)
           </li>
         </ul>
       </div>

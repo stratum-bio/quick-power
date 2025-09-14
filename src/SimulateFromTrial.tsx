@@ -35,14 +35,12 @@ const SimulateFromTrial: React.FC = () => {
   const [accrualPeriod, setAccrualPeriod] = useState<number>(24);
   const [followUpPeriod, setFollowUpPeriod] = useState<number>(12);
   const [largestSampleSize, setLargestSampleSize] = useState<number>(500);
-  const [beta, setBeta] = useState<number>(0.8);
   const [simulationPlotParameters, setSimulationPlotParameters] = useState<{ 
     controlArm: string;
     treatmentArm: string;
     accrualPeriod: number;
     followUpPeriod: number;
     largestSampleSize: number;
-    beta: number;
   } | null>(null);
   const [forceSimulation, setForceSimulation] = useState<boolean>(false);
 
@@ -124,7 +122,6 @@ const SimulateFromTrial: React.FC = () => {
         accrual={simulationPlotParameters.accrualPeriod}
         followup={simulationPlotParameters.followUpPeriod}
         alpha={0.05}
-        beta={simulationPlotParameters.beta}
         controlLabel={`\\text{Control}`}
         treatLabel={`\\text{Treatment}`}
         forceUpdate={forceSimulation}
@@ -255,21 +252,6 @@ const SimulateFromTrial: React.FC = () => {
               step="50"
             />
           </div>
-          <div>
-            <label htmlFor="beta" className="block font-medium text-gray-700">
-              Beta
-            </label>
-            <select
-              id="beta"
-              name="beta"
-              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md"
-              value={beta}
-              onChange={(e) => setBeta(parseFloat(e.target.value))}
-            >
-              <option value={0.8}>0.8</option>
-              <option value={0.9}>0.9</option>
-            </select>
-          </div>
         </form>
         <div className="mt-4 flex justify-end">
           <button
@@ -282,7 +264,6 @@ const SimulateFromTrial: React.FC = () => {
                 accrualPeriod,
                 followUpPeriod,
                 largestSampleSize,
-                beta,
               });
               setForceSimulation(true);
             }}
