@@ -127,7 +127,7 @@ export function compareRMST(
   const zScore = difference / seDifference;
 
   // 4. Compute the two-sided p-value from the Z-score using jStat
-  const pValue = 2 * (1 - jStat.normal.cdf(Math.abs(zScore), 0, 1));
+  const pValue = 1 - jStat.normal.cdf(Math.abs(zScore), 0, 1);
 
   return { rmst1, rmst2, difference, zScore, pValue };
 }

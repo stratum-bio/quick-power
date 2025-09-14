@@ -49,12 +49,18 @@ self.onmessage = (e) => {
   const treatInterval = getPercentiles(pValueDist.treatHazardDist, percentiles);
   const pvalueInterval = getPercentiles(pValueDist.pValueDist, [80, 90]);
 
+  let rmstPValueInterval = null;
+  if (pValueDist.rmstPValueDist) {
+    rmstPValueInterval = getPercentiles(pValueDist.rmstPValueDist, [80, 90]);
+  }
+
   const result: SimulationWorkerResult = {
     ...pValueDist,
     sampleSize,
     baseInterval,
     treatInterval,
     pvalueInterval,
+    rmstPValueInterval,
   };
 
   self.postMessage(result);

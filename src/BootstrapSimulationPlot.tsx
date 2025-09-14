@@ -187,6 +187,12 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
             ],
             pvalue_80: result.pvalueInterval[0],
             pvalue_90: result.pvalueInterval[1] - result.pvalueInterval[0],
+            rmst_pvalue_80: result.rmstPValueInterval
+              ? result.rmstPValueInterval[0]
+              : null,
+            rmst_pvalue_90: result.rmstPValueInterval
+              ? result.rmstPValueInterval[1] - result.rmstPValueInterval[0]
+              : null,
           }))
           .map((result) => ({
             // convert the means to medians
@@ -382,9 +388,9 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
             fillOpacity={0.5}
             strokeOpacity={0.7}
             strokeWidth={2}
-            name="\text{80\% One-sided Upper CI}"
+            name="\text{80\% Upper CI, Log Rank}"
             legendType="plainline"
-            stackId="0"
+            stackId="1"
           />
           <Area
             type="linear"
@@ -394,7 +400,32 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
             fillOpacity={0.5}
             strokeOpacity={0.7}
             strokeWidth={2}
-            name="\text{90\% One-sided Upper CI}"
+            name="\text{90\% Upper CI, Log Rank}"
+            legendType="plainline"
+            stackId="1"
+          />
+
+          <Area
+            type="linear"
+            dataKey="rmst_pvalue_80"
+            stroke="#8dd1e1"
+            strokeOpacity={0.7}
+            strokeWidth={3}
+            strokeDasharray="5 5"
+            fill="none"
+            name="\text{80\% Upper CI, RMST}"
+            legendType="plainline"
+            stackId="0"
+          />
+          <Area
+            type="linear"
+            dataKey="rmst_pvalue_90"
+            stroke="#a4de6c"
+            strokeOpacity={0.7}
+            strokeWidth={3}
+            strokeDasharray="5 5"
+            fill="none"
+            name="\text{90\% Upper CI, RMST}"
             legendType="plainline"
             stackId="0"
           />
@@ -437,11 +468,12 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
         P-Value distribution as a function of sample size
       </h3>
       <p>
-        Here we have the sampling distribution of p-values from the log rank
-        test. In order to reach our target <InlineMath math="\beta" /> threshold
-        set above, we want the estimated p-value to be at most{" "}
-        <InlineMath math="\alpha=0.05" /> at the 80th (green) or 90th (purple)
-        percentile of the p-value sampling distribution.
+        Here we have the sampling distribution of p-values comparing log rank
+        test to the the RMST difference test. In order to reach our target
+        <InlineMath math="\beta" /> threshold set above, we want the estimated
+        p-value to be at most <InlineMath math="\alpha=0.05" /> at the 80th
+        (blue) or 90th (green) percentile of the p-value sampling distribution.
+        The RMST is dashed while the log rank test is solid.
       </p>
       {memoPValuePlot}
       <h3 className="font-bold text-l">
@@ -451,7 +483,10 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
       <p>
         Each iteration of the simulation fits an exponential distribution and
         computes the median TTE proportional to the inverse exponential hazard
-        rate.
+        rate. This is a slightly mixed analysis because the solid line is the
+        median derived from the Weibull model while the sampling distribution is
+        using the exponential model. This is a work in progress and will be
+        updated to estimate the Weibull parameters shortly.
       </p>
       {memoMedianDistPlot}
       <div className="flex flex-col items-center lg:items-end justify-center mt-4 w-full">

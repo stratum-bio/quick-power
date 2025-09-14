@@ -5,4 +5,5 @@ export type SimulationWorkerResult = PValueDist & {
   baseInterval: number[];
   treatInterval: number[];
   pvalueInterval: number[];
+  rmstPValueInterval?: number[];
 };

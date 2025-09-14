@@ -3,6 +3,8 @@ import { jStat } from "jstat";
 
 import type { PValueDist } from "../types/simulation";
 import { logRankTest } from "./logrank";
+import { calculateKaplanMeier } from "./kaplan-meier";
+import { compareRMST } from "./rmst";
 
 const MIN_LAMBDA = 1e-6;
 
@@ -420,6 +422,7 @@ export function logrankPValueDistributionFromData(
   const controlHazardDist = new Float64Array(simCount);
   const treatHazardDist = new Float64Array(simCount);
   const pValues = new Float64Array(simCount);
+  const rmstPValueDist = new Float64Array(simCount);
 
   for (let i = 0; i < simCount; i++) {
     const cTime = controlTime[i];
@@ -435,11 +438,17 @@ export function logrankPValueDistributionFromData(
     controlHazardDist[i] = controlHazard;
     treatHazardDist[i] = treatHazard;
     pValues[i] = pValue;
+    rmstPValueDist[i] = compareRMST(
+      calculateKaplanMeier(Array.from(cTime), Array.from(cEvent)),
+      calculateKaplanMeier(Array.from(tTime), Array.from(tEvent)),
+      accrual + followup,
+    ).pValue;
   }
 
   return {
     controlHazardDist,
     treatHazardDist,
     pValueDist: pValues,
+    rmstPValueDist: rmstPValueDist,
   };
 }
