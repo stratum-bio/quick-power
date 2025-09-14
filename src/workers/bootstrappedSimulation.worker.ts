@@ -49,7 +49,7 @@ self.onmessage = (e) => {
   const treatInterval = getPercentiles(pValueDist.treatHazardDist, percentiles);
   const pvalueInterval = getPercentiles(pValueDist.pValueDist, [80, 90]);
 
-  let rmstPValueInterval = null;
+  let rmstPValueInterval = undefined;
   if (pValueDist.rmstPValueDist) {
     rmstPValueInterval = getPercentiles(pValueDist.rmstPValueDist, [80, 90]);
   }
