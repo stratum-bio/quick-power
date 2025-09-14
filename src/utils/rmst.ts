@@ -8,8 +8,8 @@ import { jStat } from "jstat";
  * The final result of the two-arm RMST comparison.
  */
 export interface RMSTComparisonResult {
-  rmst1: number;
-  rmst2: number;
+  controlRMST: number;
+  treatRMST: number;
   difference: number;
   zScore: number;
   pValue: number;
@@ -96,38 +96,38 @@ export function calculateRMSTVariance(km: KaplanMeier, tau: number): number {
 /**
  * Compares two Kaplan-Meier curves using RMST and computes a p-value.
  *
- * @param {KaplanMeier} km1 - Complete data for the first arm.
- * @param {KaplanMeier} km2 - Complete data for the second arm.
+ * @param {KaplanMeier} control - Complete data for the first arm.
+ * @param {KaplanMeier} treatment - Complete data for the second arm.
  * @param {number} tau - The pre-defined time point to restrict the analysis.
  * @returns {RMSTComparisonResult} An object with the RMST values, difference, Z-score, and p-value.
  */
 export function compareRMST(
-  km1: KaplanMeier,
-  km2: KaplanMeier,
+  control: KaplanMeier,
+  treatment: KaplanMeier,
   tau: number,
 ): RMSTComparisonResult {
   // 1. Calculate RMST for each arm
-  const rmst1 = calculateRMST(km1, tau);
-  const rmst2 = calculateRMST(km2, tau);
+  const controlRMST = calculateRMST(control, tau);
+  const treatRMST = calculateRMST(treatment, tau);
 
   // 2. Calculate the variance of RMST for each arm
-  const variance1 = calculateRMSTVariance(km1, tau); // This will throw an error if data is missing
-  const variance2 = calculateRMSTVariance(km2, tau);
+  const controlVar = calculateRMSTVariance(control, tau); // This will throw an error if data is missing
+  const treatVar = calculateRMSTVariance(treatment, tau);
 
   // 3. Compute the difference and the Z-score
-  const difference = rmst1 - rmst2;
-  const seDifference = Math.sqrt(variance1 + variance2);
+  const difference = treatRMST - controlRMST;
+  const seDifference = Math.sqrt(controlVar + treatVar);
 
   // Handle case where there is no variance (e.g., no events)
   if (seDifference === 0) {
     const pValue = difference === 0 ? 1.0 : 0.0;
-    return { rmst1, rmst2, difference, zScore: Infinity, pValue };
+    return { controlRMST, treatRMST, difference, zScore: Infinity, pValue };
   }
 
   const zScore = difference / seDifference;
 
   // 4. Compute the two-sided p-value from the Z-score using jStat
-  const pValue = 1 - jStat.normal.cdf(Math.abs(zScore), 0, 1);
+  const pValue = 2 * (1 - jStat.normal.cdf(Math.abs(zScore), 0, 1));
 
-  return { rmst1, rmst2, difference, zScore, pValue };
+  return { controlRMST, treatRMST, difference, zScore, pValue };
 }
