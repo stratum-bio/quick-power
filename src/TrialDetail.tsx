@@ -165,7 +165,13 @@ const TrialDetail: React.FC = () => {
         <>
           <h2 className="text-xl font-bold mb-3 mt-8">Kaplan-Meier</h2>
           <div className="max-w-3xl">
-            <KaplanMeierPlot trialName={trialName} />
+            <KaplanMeierPlot
+            trialName={trialName}
+            // Only uncomment this if you want to test/verify the
+            // typescript KM estimator against the sksurv
+            // KM estimator
+            // trialData={trialData}
+            />
           </div>
         </>
       )}

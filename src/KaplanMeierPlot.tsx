@@ -11,14 +11,16 @@ import {
   ResponsiveContainer,
   Area,
 } from "recharts";
-import type { KaplanMeierByArm } from "./types/trialdata";
+import type { KaplanMeierByArm, Trial } from "./types/trialdata";
 import { InlineMathTooltip } from "./InlineMathTooltip";
 import { PLOT_COLORS } from "./constants";
 import { formatLegend } from "./utils/formatters.tsx";
+import { calculateKaplanMeier } from "./utils/kaplan-meier";
 import AppError from "./AppError"; // Import the AppError component
 
 interface KaplanMeierPlotProps {
   trialName: string;
+  trialData?: Trial;
 }
 
 interface TransformedPlotDataItem {
@@ -26,7 +28,7 @@ interface TransformedPlotDataItem {
   [key: string]: number | [number, number] | number; // time, armName_probability, armName_interval
 }
 
-const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName }) => {
+const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName, trialData }) => {
   const [plotData, setPlotData] = useState<TransformedPlotDataItem[]>([]); // Changed type to any[] for dynamic keys
   const [armNames, setArmNames] = useState<string[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
@@ -58,6 +60,21 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName }) => {
             timePoint[`${armName}_interval`] = curve.interval[i];
           });
         });
+
+        if (trialData) {
+          trialData.arms.map((arm) => {
+            const arm_events = arm.events.map((e) => e ? 1 : 0 );
+            const ts_km = calculateKaplanMeier(arm.time, arm_events);
+            ts_km.time.map((time, idx) => {
+              let timePoint = timePointMap.get(time);
+              if (!timePoint) {
+                timePoint = { time: time }
+                timePointMap.set(time, timePoint);
+              }
+              timePoint[`ts_${arm.arm_name}_probability`] = ts_km.probability[idx];
+            });
+          });
+        }
 
         const sortedData: TransformedPlotDataItem[] = Array.from(
           timePointMap.values(),
@@ -147,6 +164,16 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName }) => {
                 name={`\\text{${armName.replace(/_/g, "\\_")}}`}
                 legendType="plainline"
               />
+              { trialData && (
+                <Line
+                  type="monotone"
+                  dataKey={`ts_${armName}_probability`}
+                  dot={{stroke: color, strokeWidth: 2}}
+                  stroke={color}
+                  strokeOpacity={0.2}
+                  name={`\\text{TS ${armName.replace(/_/g, "\\_")}}`}
+                />
+              )}
             </React.Fragment>
           );
         })}

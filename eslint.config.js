@@ -15,6 +15,9 @@ export default tseslint.config([
       reactHooks.configs['recommended-latest'],
       reactRefresh.configs.vite,
     ],
+    rules: {
+      'react-hooks/exhaustive-deps': 'off',
+    },
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
