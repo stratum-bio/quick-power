@@ -154,7 +154,6 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
     treatMedianTTE = weibullToMedian(weibullByArm[treatArmName]);
   }
 
-  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     setLoading(true);
 
@@ -234,7 +233,6 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
       worker.terminate();
     };
   }, [triggerUpdate, forceUpdate]);
-  /* eslint-enable react-hooks/exhaustive-deps */
 
   const memoMedianDistPlot = useMemo(() => {
     return (
@@ -439,11 +437,13 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
         P-Value distribution as a function of sample size
       </h3>
       <p>
-        Here we have the sampling distribution of p-values from the log rank test. In order to reach
-        our target <InlineMath math="\beta" /> threshold set above, we want the
-        estimated p-value to be at most <InlineMath math="\alpha=0.05" /> at the 80th (green) or 90th (purple)  percentile of the p-value sampling distribution.
+        Here we have the sampling distribution of p-values from the log rank
+        test. In order to reach our target <InlineMath math="\beta" /> threshold
+        set above, we want the estimated p-value to be at most{" "}
+        <InlineMath math="\alpha=0.05" /> at the 80th (green) or 90th (purple)
+        percentile of the p-value sampling distribution.
       </p>
-        {memoPValuePlot}
+      {memoPValuePlot}
       <h3 className="font-bold text-l">
         Distribution of estimated median time-to-event as a function of sample
         size
@@ -541,7 +541,8 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
           </li>
           <li>
             {" "}
-            Most accurate simulation taking around 10 minutes (just leave tab open while you work on something else)
+            Most accurate simulation taking around 10 minutes (just leave tab
+            open while you work on something else)
           </li>
         </ul>
       </div>

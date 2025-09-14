@@ -24,7 +24,7 @@ export function calculateKaplanMeier(
       "The 'times' and 'events' arrays must be of the same length.",
     );
   }
-  
+
   // 1. Combine times and events into a single array of objects and sort by time.
   const observations = times
     .map((time, index) => ({
@@ -34,7 +34,9 @@ export function calculateKaplanMeier(
     .sort((a, b) => a.time - b.time);
 
   // 2. Identify the unique event times to define the steps in the curve.
-  const uniqueEventTimes = new Set(observations.filter(obs => obs.isEvent).map(obs => obs.time));
+  const uniqueEventTimes = new Set(
+    observations.filter((obs) => obs.isEvent).map((obs) => obs.time),
+  );
 
   // 3. Calculate the survival probability at each unique event time.
   const points: KaplanMeierPoint[] = [{ time: 0, probability: 1.0 }];
@@ -43,24 +45,25 @@ export function calculateKaplanMeier(
   for (const timePoint of uniqueEventTimes) {
     // Number of events (d_i) at the current time point.
     const eventsAtTime = observations.filter(
-      obs => obs.time === timePoint && obs.isEvent,
+      (obs) => obs.time === timePoint && obs.isEvent,
     ).length;
 
     // Number of individuals at risk (n_i) just before the current time point.
     // This is the count of all individuals whose observation time is >= the current event time.
-    const atRiskCount = observations.filter(obs => obs.time >= timePoint).length;
+    const atRiskCount = observations.filter(
+      (obs) => obs.time >= timePoint,
+    ).length;
 
     if (atRiskCount > 0) {
       // The core Kaplan-Meier formula: S(t_i) = S(t_{i-1}) * (1 - d_i / n_i)
-      cumulativeProbability *= (1 - eventsAtTime / atRiskCount);
+      cumulativeProbability *= 1 - eventsAtTime / atRiskCount;
     }
-    
+
     points.push({ time: timePoint, probability: cumulativeProbability });
   }
 
   return {
     time: points.map((p) => p.time),
     probability: points.map((p) => p.probability),
-    interval: points.map((p) => [p.probability, p.probability]),
-  }
-};
+  };
+}

@@ -28,7 +28,10 @@ interface TransformedPlotDataItem {
   [key: string]: number | [number, number] | number; // time, armName_probability, armName_interval
 }
 
-const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName, trialData }) => {
+const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
+  trialName,
+  trialData,
+}) => {
   const [plotData, setPlotData] = useState<TransformedPlotDataItem[]>([]); // Changed type to any[] for dynamic keys
   const [armNames, setArmNames] = useState<string[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
@@ -57,21 +60,24 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName, trialData 
               timePointMap.set(time, timePoint);
             }
             timePoint[`${armName}_probability`] = curve.probability[i];
-            timePoint[`${armName}_interval`] = curve.interval[i];
+            if (curve.interval) {
+              timePoint[`${armName}_interval`] = curve.interval[i];
+            }
           });
         });
 
         if (trialData) {
           trialData.arms.map((arm) => {
-            const arm_events = arm.events.map((e) => e ? 1 : 0 );
+            const arm_events = arm.events.map((e) => (e ? 1 : 0));
             const ts_km = calculateKaplanMeier(arm.time, arm_events);
             ts_km.time.map((time, idx) => {
               let timePoint = timePointMap.get(time);
               if (!timePoint) {
-                timePoint = { time: time }
+                timePoint = { time: time };
                 timePointMap.set(time, timePoint);
               }
-              timePoint[`ts_${arm.arm_name}_probability`] = ts_km.probability[idx];
+              timePoint[`ts_${arm.arm_name}_probability`] =
+                ts_km.probability[idx];
             });
           });
         }
@@ -164,11 +170,11 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({ trialName, trialData 
                 name={`\\text{${armName.replace(/_/g, "\\_")}}`}
                 legendType="plainline"
               />
-              { trialData && (
+              {trialData && (
                 <Line
                   type="monotone"
                   dataKey={`ts_${armName}_probability`}
-                  dot={{stroke: color, strokeWidth: 2}}
+                  dot={{ stroke: color, strokeWidth: 2 }}
                   stroke={color}
                   strokeOpacity={0.2}
                   name={`\\text{TS ${armName.replace(/_/g, "\\_")}}`}

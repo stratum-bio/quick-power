@@ -35,7 +35,7 @@ export interface TrialIndex {
 export interface KaplanMeier {
   time: number[];
   probability: number[];
-  interval: [number, number][];
+  interval?: [number, number][];
 }
 
 export interface KaplanMeierByArm {

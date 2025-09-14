@@ -35,7 +35,7 @@ const SimulateFromTrial: React.FC = () => {
   const [accrualPeriod, setAccrualPeriod] = useState<number>(24);
   const [followUpPeriod, setFollowUpPeriod] = useState<number>(12);
   const [largestSampleSize, setLargestSampleSize] = useState<number>(500);
-  const [simulationPlotParameters, setSimulationPlotParameters] = useState<{ 
+  const [simulationPlotParameters, setSimulationPlotParameters] = useState<{
     controlArm: string;
     treatmentArm: string;
     accrualPeriod: number;
@@ -128,7 +128,6 @@ const SimulateFromTrial: React.FC = () => {
     );
   }, [simulationPlotParameters, lambdaByArm, trialData, forceSimulation]);
 
-
   if (loading) {
     return <Loading message="Loading trial details..." />;
   }
@@ -149,9 +148,7 @@ const SimulateFromTrial: React.FC = () => {
       {trialData.meta.title && (
         <div className="max-w-3xl">{trialData.meta.title}</div>
       )}
-      <div className="mt-8 max-w-3xl">
-        {memoizedKaplanMeierPlot}
-      </div>
+      <div className="mt-8 max-w-3xl">{memoizedKaplanMeierPlot}</div>
 
       <div className="mt-8 p-4 border rounded-lg shadow-md bg-white max-w-3xl">
         <h2 className="text-xl font-semibold mb-4">Simulation Parameters</h2>

@@ -110,7 +110,6 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   const [minSampleSize, setMinSampleSize] = useState(MIN_SAMPLE_SIZE);
   const [maxSampleSize, setMaxSampleSize] = useState(totalSampleSize);
 
-  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     setLoading(true);
 
@@ -196,7 +195,6 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
       worker.terminate();
     };
   }, [triggerUpdate, forceUpdate]);
-  /* eslint-enable react-hooks/exhaustive-deps */
 
   const memoMedianHazardPlot = useMemo(() => {
     return (
@@ -379,7 +377,6 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
       "Input values don't match simulation results, press the Update button to re-run the simulation";
   }
 
-
   return (
     <div className={containerClass}>
       <div className="pt-4 pb-4 text-center">
@@ -394,7 +391,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
         computes the median TTE proportional to the inverse exponential hazard
         rate.
       </p>
-        {memoMedianHazardPlot} 
+      {memoMedianHazardPlot}
       <h3 className="font-bold text-l">
         P-Value distribution as a function of sample size
       </h3>
@@ -404,7 +401,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
         estimated p-value to be at most <InlineMath math="\alpha=0.05" /> at the{" "}
         {beta * 100}th percentile of the p-value sampling distribution (green).
       </p>
-        {memoPValuePlot}
+      {memoPValuePlot}
       <div className="flex flex-col items-center lg:items-end justify-center mt-4 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <ValidatedInputField

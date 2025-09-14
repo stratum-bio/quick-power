@@ -1,4 +1,4 @@
-import jStat from 'jstat';
+import jStat from "jstat";
 
 interface DetailedResult {
   time: number;
@@ -19,7 +19,7 @@ export function logRankTest(
   controlTime: Float64Array,
   controlEvent: Uint8Array,
   treatTime: Float64Array,
-  treatEvent: Uint8Array
+  treatEvent: Uint8Array,
 ): [number, number] {
   // 1. Combine data and sort by time
   const controlData = Array.from(controlTime).map((time, i) => ({
@@ -34,14 +34,12 @@ export function logRankTest(
   }));
 
   const combinedData = [...controlData, ...treatData].sort(
-    (a, b) => a.time - b.time
+    (a, b) => a.time - b.time,
   );
 
   // 2. Get unique event times
   const uniqueEventTimes = Array.from(
-      combinedData
-        .filter((d) => d.event === 1)
-        .map((d) => d.time)
+    combinedData.filter((d) => d.event === 1).map((d) => d.time),
   );
 
   // 3. Perform log-rank calculations
@@ -67,10 +65,7 @@ export function logRankTest(
     // Variance
     const variance =
       atRiskAll > 1
-        ? (atRiskTreat *
-            atRiskControl *
-            eventsAll *
-            (atRiskAll - eventsAll)) /
+        ? (atRiskTreat * atRiskControl * eventsAll * (atRiskAll - eventsAll)) /
           (atRiskAll ** 2 * (atRiskAll - 1))
         : 0;
 
