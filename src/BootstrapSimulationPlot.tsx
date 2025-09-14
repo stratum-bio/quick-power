@@ -449,7 +449,7 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
         P-Value distribution as a function of sample size
       </h3>
       <p>
-        Here we have the sampling distribution of p-values. In order to reach
+        Here we have the sampling distribution of p-values from the log rank test. In order to reach
         our target <InlineMath math="\beta" /> threshold set above, we want the
         estimated p-value to be at most <InlineMath math="\alpha=0.05" /> at the 80th (green) or 90th (purple)  percentile of the p-value sampling distribution.
       </p>
