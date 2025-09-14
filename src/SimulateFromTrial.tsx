@@ -209,7 +209,7 @@ const SimulateFromTrial: React.FC = () => {
               htmlFor="accrualPeriod"
               className="block font-medium text-gray-700"
             >
-              Enrollemnt Period
+              Enrollment Period
             </label>
             <input
               type="number"
