@@ -1,5 +1,20 @@
 import type { KaplanMeier } from "../types/trialdata.d";
 
+// This is Gemini-generated code now
+
+import { jStat } from "jstat";
+
+/**
+ * The final result of the two-arm RMST comparison.
+ */
+export interface RMSTComparisonResult {
+  rmst1: number;
+  rmst2: number;
+  difference: number;
+  zScore: number;
+  pValue: number;
+}
+
 /**
  * Computes the Restricted Mean Survival Time (RMST) from a Kaplan-Meier curve.
  *
@@ -7,7 +22,7 @@ import type { KaplanMeier } from "../types/trialdata.d";
  * @param {number} tau - The pre-defined time point to restrict the mean survival time.
  * @returns {number} The calculated RMST value.
  */
-export const calculateRMST = (km: KaplanMeier, tau: number): number => {
+export function calculateRMST(km: KaplanMeier, tau: number): number {
   if (tau < 0) {
     throw new Error("tau must be a non-negative number.");
   }
@@ -21,26 +36,98 @@ export const calculateRMST = (km: KaplanMeier, tau: number): number => {
   // Iterate through the time points to calculate the area of each rectangle under the curve.
   for (let i = 0; i < times.length; i++) {
     const startTime = times[i];
-
-    // Stop if the current time point is beyond our cutoff tau.
     if (startTime >= tau) {
       break;
     }
-
-    // The height of the rectangle is the survival probability at the start of the interval.
     const height = probabilities[i];
-
-    // Determine the end time for this rectangle.
-    // It's either the next time point or tau, whichever comes first.
     const nextTime = i + 1 < times.length ? times[i + 1] : tau;
     const endTime = Math.min(nextTime, tau);
-
-    // The width of the rectangle is the duration of this interval.
     const width = endTime - startTime;
-
-    // Add the area of this rectangle to the total RMST.
     rmst += height * width;
   }
 
   return rmst;
-};
+}
+
+/**
+ * Computes the variance of the RMST estimator.
+ * @param {KaplanMeier} km - The complete Kaplan-Meier data.
+ * @param {number} tau - The pre-defined time point.
+ * @returns {number} The calculated variance of the RMST.
+ */
+export function calculateRMSTVariance(km: KaplanMeier, tau: number): number {
+  // Validate that the necessary data for variance calculation is present.
+  if (
+    !km.events_at_time ||
+    !km.at_risk_at_time ||
+    km.events_at_time.length !== km.time.length ||
+    km.at_risk_at_time.length !== km.time.length
+  ) {
+    throw new Error(
+      "To calculate variance, the KaplanMeier object must include 'events_at_time' and 'at_risk_at_time' arrays with the same length as 'time'.",
+    );
+  }
+
+  let variance = 0;
+
+  for (let i = 0; i < km.time.length; i++) {
+    const t_i = km.time[i];
+    if (t_i > tau) continue; // Only sum up to tau
+
+    const d_i = km.events_at_time[i];
+    const n_i = km.at_risk_at_time[i];
+
+    // Avoid division by zero; if n_i equals d_i, this term contributes 0 to the variance sum.
+    if (n_i === 0 || n_i === d_i) continue;
+
+    const greenwoodComponent = d_i / (n_i * (n_i - d_i));
+
+    // Calculate the integral term: ∫[t_i to τ] S(t) dt.
+    // This is equivalent to RMST(τ) - RMST(t_i).
+    const areaUntilTau = calculateRMST(km, tau);
+    const areaUntilT_i = calculateRMST(km, t_i);
+    const remainingArea = areaUntilTau - areaUntilT_i;
+
+    variance += greenwoodComponent * Math.pow(remainingArea, 2);
+  }
+  return variance;
+}
+
+/**
+ * Compares two Kaplan-Meier curves using RMST and computes a p-value.
+ *
+ * @param {KaplanMeier} km1 - Complete data for the first arm.
+ * @param {KaplanMeier} km2 - Complete data for the second arm.
+ * @param {number} tau - The pre-defined time point to restrict the analysis.
+ * @returns {RMSTComparisonResult} An object with the RMST values, difference, Z-score, and p-value.
+ */
+export function compareRMST(
+  km1: KaplanMeier,
+  km2: KaplanMeier,
+  tau: number,
+): RMSTComparisonResult {
+  // 1. Calculate RMST for each arm
+  const rmst1 = calculateRMST(km1, tau);
+  const rmst2 = calculateRMST(km2, tau);
+
+  // 2. Calculate the variance of RMST for each arm
+  const variance1 = calculateRMSTVariance(km1, tau); // This will throw an error if data is missing
+  const variance2 = calculateRMSTVariance(km2, tau);
+
+  // 3. Compute the difference and the Z-score
+  const difference = rmst1 - rmst2;
+  const seDifference = Math.sqrt(variance1 + variance2);
+
+  // Handle case where there is no variance (e.g., no events)
+  if (seDifference === 0) {
+    const pValue = difference === 0 ? 1.0 : 0.0;
+    return { rmst1, rmst2, difference, zScore: Infinity, pValue };
+  }
+
+  const zScore = difference / seDifference;
+
+  // 4. Compute the two-sided p-value from the Z-score using jStat
+  const pValue = 2 * (1 - jStat.normal.cdf(Math.abs(zScore), 0, 1));
+
+  return { rmst1, rmst2, difference, zScore, pValue };
+}

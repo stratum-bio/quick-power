@@ -6,6 +6,8 @@ import type { KaplanMeier } from "../types/trialdata.d";
 interface KaplanMeierPoint {
   time: number;
   probability: number;
+  eventsAtTime: number;
+  atRiskAtTime: number;
 }
 
 /**
@@ -39,7 +41,9 @@ export function calculateKaplanMeier(
   );
 
   // 3. Calculate the survival probability at each unique event time.
-  const points: KaplanMeierPoint[] = [{ time: 0, probability: 1.0 }];
+  const points: KaplanMeierPoint[] = [
+    { time: 0, probability: 1.0, eventsAtTime: 0, atRiskAtTime: 0 },
+  ];
   let cumulativeProbability = 1.0;
 
   for (const timePoint of uniqueEventTimes) {
@@ -59,11 +63,18 @@ export function calculateKaplanMeier(
       cumulativeProbability *= 1 - eventsAtTime / atRiskCount;
     }
 
-    points.push({ time: timePoint, probability: cumulativeProbability });
+    points.push({
+      time: timePoint,
+      probability: cumulativeProbability,
+      eventsAtTime: eventsAtTime,
+      atRiskAtTime: atRiskCount,
+    });
   }
 
   return {
     time: points.map((p) => p.time),
     probability: points.map((p) => p.probability),
+    events_at_time: points.map((p) => p.eventsAtTime),
+    at_risk_at_time: points.map((p) => p.atRiskAtTime),
   };
 }

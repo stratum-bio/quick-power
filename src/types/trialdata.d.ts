@@ -36,6 +36,8 @@ export interface KaplanMeier {
   time: number[];
   probability: number[];
   interval?: [number, number][];
+  events_at_time?: number[];
+  at_risk_at_time?: number[];
 }
 
 export interface KaplanMeierByArm {
