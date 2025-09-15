@@ -86,7 +86,7 @@ const TrialList: React.FC = () => {
           .map(([disease, trials]) => (
             <div
               key={disease}
-              className="m-4 mb-6 shadow-md rounded-lg md:w-196"
+              className="m-4 mb-6 shadow-lg shadow-gemini-blue/30 irounded-lg md:w-196"
             >
               <h2
                 className={`text-xl font-bold text-left cursor-pointer border border-gemini-blue ${!collapsedStates[disease] ? "rounded-t-sm bg-gemini-blue text-white hover:bg-gemini-blue-hover" : "rounded-sm hover:bg-medium-azure-alpha"} p-4 flex justify-between items-center`}
