@@ -78,14 +78,20 @@ describe("RMST Calculations", () => {
       expect(calculateRMST(km, tau)).toBeCloseTo(5); // Only the initial 1 * tau contributes
     });
 
-    it('should calculate RMST for PREVAIL data control arm correctly', () => {
-      const controlKm = calculateKaplanMeier(PrevailData.controlTime, PrevailData.controlEvent);
+    it("should calculate RMST for PREVAIL data control arm correctly", () => {
+      const controlKm = calculateKaplanMeier(
+        PrevailData.controlTime,
+        PrevailData.controlEvent,
+      );
       const rmst = calculateRMST(controlKm, PrevailData.rmst_tau);
       expect(rmst).toBeCloseTo(PrevailData.control_rmst, 2); // Using precision of 2 for floating point comparison
     });
 
-    it('should calculate RMST for PREVAIL data treatment arm correctly', () => {
-      const treatKm = calculateKaplanMeier(PrevailData.treatTime, PrevailData.treatEvent);
+    it("should calculate RMST for PREVAIL data treatment arm correctly", () => {
+      const treatKm = calculateKaplanMeier(
+        PrevailData.treatTime,
+        PrevailData.treatEvent,
+      );
       const rmst = calculateRMST(treatKm, PrevailData.rmst_tau);
       expect(rmst).toBeCloseTo(PrevailData.treat_rmst, 2); // Using precision of 2 for floating point comparison
     });
@@ -180,7 +186,6 @@ describe("RMST Calculations", () => {
       expect(result.pValue).toBeCloseTo(1.0);
     });
 
-
     it("should compare RMST for PREVAIL data and match expected results", () => {
       const controlKm = calculateKaplanMeier(
         PrevailData.controlTime,
@@ -200,7 +205,10 @@ describe("RMST Calculations", () => {
 
       expect(result.controlRMST).toBeCloseTo(expectedControlRMST, 3);
       expect(result.treatRMST).toBeCloseTo(expectedTreatRMST, 3);
-      expect(result.difference).toBeCloseTo(PrevailData.rmst_result.estimate, 2);
+      expect(result.difference).toBeCloseTo(
+        PrevailData.rmst_result.estimate,
+        2,
+      );
 
       expect(result.zScore).toBeCloseTo(PrevailData.rmst_result.z, 3);
     });

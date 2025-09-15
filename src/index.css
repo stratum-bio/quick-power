@@ -67,4 +67,6 @@ button:focus-visible {
   --color-theme-light: #bfdbfe;
   --color-dark-azure: #10273c;
   --color-theme-dark: #1a4063;
+  --color-gemini-blue: #1c2d51;
+  --color-gemini-blue-hover: #3d507c;
 }

@@ -46,6 +46,6 @@ export const PrevailData = {
     tau: 32.74,
     estimate: 6.3814,
     se: 2.011,
-    z: 3.1732
-  }
-}
+    z: 3.1732,
+  },
+};

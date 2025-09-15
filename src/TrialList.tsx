@@ -89,7 +89,7 @@ const TrialList: React.FC = () => {
               className="m-4 mb-6 shadow-md rounded-lg md:w-196"
             >
               <h2
-                className="text-xl font-bold text-left cursor-pointer bg-theme-light rounded-t-lg p-4 flex justify-between items-center"
+                className={`text-xl font-bold text-left cursor-pointer border border-gemini-blue ${!collapsedStates[disease] ? "rounded-t-sm bg-gemini-blue text-white hover:bg-gemini-blue-hover" : "rounded-sm hover:bg-dark-azure-alpha"} p-4 flex justify-between items-center`}
                 onClick={() => toggleCollapse(disease)}
               >
                 <span>

@@ -90,8 +90,8 @@ export function calculateRMSTVariance(km: KaplanMeier, tau: number): number {
 
     variance += greenwoodComponent * Math.pow(remainingArea, 2);
   }
-  const totalEvents = km.events_at_time.reduce((a, b) => a+b);
-  let biasCorrection = 1; 
+  const totalEvents = km.events_at_time.reduce((a, b) => a + b);
+  let biasCorrection = 1;
   if (totalEvents > 0) {
     biasCorrection = totalEvents / (totalEvents - 1);
   }

@@ -14,7 +14,7 @@ function App() {
     <>
       {/* Hamburger menu for mobile */}
       <button
-        className={`md:hidden p-4 text-black focus:outline-none z-50 fixed top-4 left-4 bg-theme-light ${isNavOpen ? "hidden" : ""}`}
+        className={`md:hidden p-4 text-white focus:outline-none z-50 fixed top-4 left-4 bg-gemini-blue ${isNavOpen ? "hidden" : ""}`}
         onClick={() => setIsNavOpen(!isNavOpen)}
       >
         <svg
@@ -52,10 +52,10 @@ function App() {
       <div className="flex rounded-r-lg min-h-screen w-full">
         {/* Left Navigation Bar */}
         <nav
-          className={`transform ${isNavOpen ? "translate-x-0" : "-translate-x-full"} z-40 transition-transform duration-300 ease-in-out w-64 text-dark-azure p-4 space-y-4 rounded-r-lg bg-theme-light md:relative md:translate-x-0 md:block md:h-auto md:min-h-full fixed inset-y-0 left-0`}
+          className={`transform ${isNavOpen ? "translate-x-0" : "-translate-x-full"} z-40 transition-transform duration-300 ease-in-out w-64 text-white p-4 space-y-4 rounded-r-lg bg-gemini-blue md:relative md:translate-x-0 md:block md:h-auto md:min-h-full fixed inset-y-0 left-0`}
         >
           <img
-            src="/stratum-logo-light.svg"
+            src="/stratum-logo-dark.svg"
             alt="Stratum Logo"
             className="p-4 md:pt-4 mb-8"
           />
@@ -64,7 +64,7 @@ function App() {
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `block py-2 px-4 rounded ${isActive ? "bg-medium-azure-alpha" : "hover:bg-medium-azure-alpha"}`
+                  `block py-2 px-4 rounded ${isActive ? "bg-gemini-blue-hover" : "hover:bg-gemini-blue-hover"}`
                 }
                 onClick={() => setIsNavOpen(false)} // Close nav on link click
               >
@@ -75,7 +75,7 @@ function App() {
               <NavLink
                 to="/schoenfeld"
                 className={({ isActive }) =>
-                  `block py-2 px-4 rounded ${isActive ? "bg-medium-azure-alpha" : "hover:bg-medium-azure-alpha"}`
+                  `block py-2 px-4 rounded ${isActive ? "bg-gemini-blue-hover" : "hover:bg-gemini-blue-hover"}`
                 }
                 onClick={() => setIsNavOpen(false)} // Close nav on link click
               >
@@ -86,7 +86,7 @@ function App() {
               <NavLink
                 to="/trials"
                 className={({ isActive }) =>
-                  `block py-2 px-4 rounded ${isActive ? "bg-medium-azure-alpha" : "hover:bg-medium-azure-alpha"}`
+                  `block py-2 px-4 rounded ${isActive ? "bg-gemini-blue-hover" : "hover:bg-gemini-blue-hover"}`
                 }
                 onClick={() => setIsNavOpen(false)} // Close nav on link click
               >
