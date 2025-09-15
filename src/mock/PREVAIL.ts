@@ -37,7 +37,15 @@ export const PrevailData = {
   // lifelines.statistics.log_rank_test()
   logrank_test_statistic: 10.722916224739615,
   logrank_p: 0.001058167673752566,
+  // lifelines.utils.restricted_mean_survival_time()
   rmst_tau: 33,
   control_rmst: 21.165374339195825,
   treat_rmst: 27.584245396978936,
-};
+  // R library simtrial.rmst()
+  rmst_result: {
+    tau: 32.74,
+    estimate: 6.3814,
+    se: 2.011,
+    z: 3.1732
+  }
+}

@@ -255,5 +255,33 @@ describe("RMST Calculations", () => {
       // pValue = 2 * (1 - 0.999) = 2 * 0.001 = 0.002
       expect(result.pValue).toBeCloseTo(0.002);
     });
+
+    it("should compare RMST for PREVAIL data and match expected results", () => {
+      // Restore jStat.normal.cdf mock for this specific test to get actual p-value
+      // based on the calculated z-score, as the default mock is too generic.
+      (jStat.normal.cdf as vi.Mock).mockRestore();
+
+      const controlKm = calculateKaplanMeier(
+        PrevailData.controlTime,
+        PrevailData.controlEvent,
+      );
+      const treatKm = calculateKaplanMeier(
+        PrevailData.treatTime,
+        PrevailData.treatEvent,
+      );
+      const tau = PrevailData.rmst_result.tau;
+
+      const result = compareRMST(controlKm, treatKm, tau);
+
+      // Calculate expected RMST values using the same tau as compareRMST
+      const expectedControlRMST = calculateRMST(controlKm, tau);
+      const expectedTreatRMST = calculateRMST(treatKm, tau);
+
+      expect(result.controlRMST).toBeCloseTo(expectedControlRMST, 3);
+      expect(result.treatRMST).toBeCloseTo(expectedTreatRMST, 3);
+      expect(result.difference).toBeCloseTo(PrevailData.rmst_result.estimate, 2);
+
+      expect(result.zScore).toBeCloseTo(PrevailData.rmst_result.z, 3);
+    });
   });
 });
