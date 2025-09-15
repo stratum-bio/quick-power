@@ -21,7 +21,7 @@ import type { SimulationWorkerResult } from "./types/simulationWorker.d";
 
 import { ValidatedInputField } from "./ValidatedInputField";
 
-import Worker from "./workers/tteDistribution.worker.ts?worker";
+import Worker from "./workers/freeformSimulation.worker.ts?worker";
 
 interface FreeFormSimulationProps {
   baselineHazard: number;
