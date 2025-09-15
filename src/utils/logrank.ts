@@ -39,7 +39,7 @@ export function logRankTest(
 
   // 2. Get unique event times
   const uniqueEventTimes = Array.from(
-    combinedData.filter((d) => d.event === 1).map((d) => d.time),
+    new Set(combinedData.filter((d) => d.event === 1).map((d) => d.time)),
   );
 
   // 3. Perform log-rank calculations
