@@ -441,7 +441,7 @@ export function logrankPValueDistributionFromData(
     rmstPValueDist[i] = compareRMST(
       calculateKaplanMeier(Array.from(cTime), Array.from(cEvent)),
       calculateKaplanMeier(Array.from(tTime), Array.from(tEvent)),
-      accrual + followup,
+      Math.min(Math.max(...cTime), Math.max(...tTime)),
     ).pValue;
   }
 
