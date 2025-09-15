@@ -33,6 +33,11 @@ export const PrevailData = {
     0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0,
   ],
+  // These values were produced using the python
+  // lifelines.statistics.log_rank_test()
   logrank_test_statistic: 10.722916224739615,
   logrank_p: 0.001058167673752566,
+  rmst_tau: 33,
+  control_rmst: 21.165374339195825,
+  treat_rmst: 27.584245396978936,
 };

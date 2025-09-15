@@ -33,6 +33,8 @@ export const ConceptData = {
     1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
     1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
   ],
+  // These values were produced using the python
+  // lifelines.statistics.log_rank_test()
   logrank_test_statistic: 6.679030768950335,
   logrank_p: 0.009755365517318447,
 };
