@@ -441,7 +441,7 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
         <p className="mb-2 text-gray-600">
           {completed}/{total}{" "}
         </p>
-        <div className="h-2.5 w-1/2 rounded-full bg-gray-200 dark:bg-gray-700">
+        <div className="h-2.5 w-1/2 rounded-full bg-gray-200">
           <div
             className="h-2.5 rounded-full bg-gemini-blue-hover"
             style={{ width: `${percentage}%` }}
