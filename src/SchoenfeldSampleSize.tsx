@@ -15,7 +15,7 @@ function DerivationRow({
   value: string;
 }): React.ReactElement {
   return (
-    <div className="flex justify-between items-center py-1 border-b border-gray-100 hover:bg-blue-200 rounded-lg pl-2 pr-2">
+    <div className="flex justify-between items-center py-1 border-b border-gray-100 hover:bg-medium-azure-alpha rounded-lg pl-2 pr-2">
       <span className="font-medium text-gray-700">
         <InlineMath math={label} />
       </span>
@@ -158,7 +158,7 @@ const SchoenfeldSampleSize: React.FC<SchoenfeldSampleSizeProps> = ({
             </>
           );
         })()}
-        <div className="flex flex-col gap-2 items-center py-1 text-theme-dark border rounded-lg pt-2 pb-2 pl-6 pr-6 mt-2 hover:bg-blue-200 text-center">
+        <div className="flex flex-col gap-2 items-center py-1 text-theme-dark border rounded-lg pt-2 pb-2 pl-6 pr-6 mt-2 hover:bg-medium-azure-alpha text-center">
           <div className="font-bold">Sample Size</div>
           <span className="text-2xl">
             <InlineMath

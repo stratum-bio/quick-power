@@ -57,7 +57,7 @@ function App() {
           <img
             src="/stratum-logo-dark.svg"
             alt="Stratum Logo"
-            className="p-4 md:pt-4 mb-8"
+            className="p-4 md:pt-4 mb-8 drop-shadow-md drop-shadow-gemini-blue-hover"
           />
           <ul className="space-y-3">
             <li>

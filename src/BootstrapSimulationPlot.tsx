@@ -443,7 +443,7 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
         </p>
         <div className="h-2.5 w-1/2 rounded-full bg-gray-200 dark:bg-gray-700">
           <div
-            className="h-2.5 rounded-full bg-blue-600"
+            className="h-2.5 rounded-full bg-gemini-blue-hover"
             style={{ width: `${percentage}%` }}
           ></div>
         </div>
