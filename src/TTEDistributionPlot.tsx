@@ -383,16 +383,6 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
         <p className="font-bold text-red-950 italic"> {mismatchMessage} </p>
       </div>
       <h3 className="font-bold text-l">
-        Distribution of estimated median time-to-event as a function of sample
-        size
-      </h3>
-      <p>
-        Each iteration of the simulation fits an exponential distribution and
-        computes the median TTE proportional to the inverse exponential hazard
-        rate.
-      </p>
-      {memoMedianHazardPlot}
-      <h3 className="font-bold text-l">
         P-Value distribution as a function of sample size
       </h3>
       <p>
@@ -402,6 +392,16 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
         {beta * 100}th percentile of the p-value sampling distribution (green).
       </p>
       {memoPValuePlot}
+      <h3 className="font-bold text-l">
+        Distribution of estimated median time-to-event as a function of sample
+        size
+      </h3>
+      <p>
+        Each iteration of the simulation fits an exponential distribution and
+        computes the median TTE proportional to the inverse exponential hazard
+        rate.
+      </p>
+      {memoMedianHazardPlot}
       <div className="flex flex-col items-center lg:items-end justify-center mt-4 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <ValidatedInputField
