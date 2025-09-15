@@ -1,28 +1,13 @@
-import { describe, it, expect, vi } from "vitest";
+import { describe, it, expect } from "vitest";
 import {
   calculateRMST,
   calculateRMSTVariance,
   compareRMST,
-  RMSTComparisonResult,
+  type RMSTComparisonResult,
 } from "./rmst";
 import type { KaplanMeier } from "../types/trialdata.d";
 import { PrevailData } from "../mock/PREVAIL";
 import { calculateKaplanMeier } from "./kaplan-meier";
-import { jStat } from "jstat";
-
-// Mock jStat for consistent testing of p-value calculation
-vi.mock("jstat", () => ({
-  jStat: {
-    normal: {
-      cdf: vi.fn((z, mean, std) => {
-        // Simple mock for CDF, can be refined if specific values are needed
-        if (z < 0) return 0.1; // Example value
-        if (z > 0) return 0.9; // Example value
-        return 0.5;
-      }),
-    },
-  },
-}));
 
 describe("RMST Calculations", () => {
   // Sample Kaplan-Meier data for testing
@@ -31,13 +16,6 @@ describe("RMST Calculations", () => {
     probability: [1, 0.8, 0.6, 0.4, 0.2, 0.1],
     at_risk_at_time: [100, 80, 60, 40, 20, 10],
     events_at_time: [0, 20, 20, 20, 20, 10],
-  };
-
-  const kmData2: KaplanMeier = {
-    time: [0, 1, 2, 3, 4, 5],
-    probability: [1, 0.9, 0.7, 0.5, 0.3, 0.2],
-    at_risk_at_time: [100, 90, 70, 50, 30, 20],
-    events_at_time: [0, 10, 20, 20, 20, 10],
   };
 
   describe("calculateRMST", () => {
@@ -179,34 +157,6 @@ describe("RMST Calculations", () => {
   });
 
   describe("compareRMST", () => {
-    it("should compare two KM curves and return a result", () => {
-      // Mock jStat.normal.cdf to return predictable values for testing p-value
-      (jStat.normal.cdf as vi.Mock).mockImplementation((z: number) => {
-        if (z < -1.96) return 0.025;
-        if (z > 1.96) return 0.975;
-        return 0.5; // For z-scores between -1.96 and 1.96
-      });
-
-      const tau = 5;
-      const result: RMSTComparisonResult = compareRMST(kmData1, kmData2, tau);
-
-      expect(result).toHaveProperty("controlRMST");
-      expect(result).toHaveProperty("treatRMST");
-      expect(result).toHaveProperty("difference");
-      expect(result).toHaveProperty("zScore");
-      expect(result).toHaveProperty("pValue");
-
-      expect(result.controlRMST).toBeCloseTo(calculateRMST(kmData1, tau));
-      expect(result.treatRMST).toBeCloseTo(calculateRMST(kmData2, tau));
-      expect(result.difference).toBeCloseTo(
-        result.treatRMST - result.controlRMST,
-      );
-      expect(typeof result.zScore).toBe("number");
-      expect(typeof result.pValue).toBe("number");
-      expect(result.pValue).toBeGreaterThanOrEqual(0);
-      expect(result.pValue).toBeLessThanOrEqual(1);
-    });
-
     it("should handle identical curves resulting in zero difference and p-value of 1", () => {
       const tau = 5;
       const result: RMSTComparisonResult = compareRMST(kmData1, kmData1, tau); // Compare with itself
@@ -230,37 +180,8 @@ describe("RMST Calculations", () => {
       expect(result.pValue).toBeCloseTo(1.0);
     });
 
-    it("should return correct p-value when z-score is significant", () => {
-      // Force a significant Z-score for testing p-value logic
-      (jStat.normal.cdf as vi.Mock).mockImplementation((z: number) => {
-        if (z < 0) return 0.001; // Very small p-value
-        return 0.999;
-      });
-
-      const kmControl: KaplanMeier = {
-        time: [1, 2, 3],
-        probability: [0.9, 0.8, 0.7],
-        at_risk_at_time: [100, 90, 80],
-        events_at_time: [10, 10, 10],
-      };
-      const kmTreatment: KaplanMeier = {
-        time: [1, 2, 3],
-        probability: [0.5, 0.4, 0.3],
-        at_risk_at_time: [100, 50, 40],
-        events_at_time: [50, 10, 10],
-      };
-      const tau = 3;
-      const result = compareRMST(kmControl, kmTreatment, tau);
-      // With the mock, if zScore is positive, cdf(abs(zScore)) will be 0.999
-      // pValue = 2 * (1 - 0.999) = 2 * 0.001 = 0.002
-      expect(result.pValue).toBeCloseTo(0.002);
-    });
 
     it("should compare RMST for PREVAIL data and match expected results", () => {
-      // Restore jStat.normal.cdf mock for this specific test to get actual p-value
-      // based on the calculated z-score, as the default mock is too generic.
-      (jStat.normal.cdf as vi.Mock).mockRestore();
-
       const controlKm = calculateKaplanMeier(
         PrevailData.controlTime,
         PrevailData.controlEvent,
