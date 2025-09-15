@@ -427,7 +427,7 @@ const FreeFormSimulationPlot: React.FC<FreeFormSimulationProps> = ({
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           <button
-            className="bg-gemini-blue text-white rounded hover:bg-gemini-blue-hover" 
+            className="bg-gemini-blue text-white rounded hover:bg-gemini-blue-hover"
             onClick={() => {
               setPermutationCount(100);
               setDatasetSimCount(100);
@@ -438,7 +438,7 @@ const FreeFormSimulationPlot: React.FC<FreeFormSimulationProps> = ({
             Quick, Noisy
           </button>
           <button
-            className="bg-gemini-blue text-white rounded hover:bg-gemini-blue-hover" 
+            className="bg-gemini-blue text-white rounded hover:bg-gemini-blue-hover"
             onClick={() => {
               setPermutationCount(500);
               setDatasetSimCount(500);
@@ -449,7 +449,7 @@ const FreeFormSimulationPlot: React.FC<FreeFormSimulationProps> = ({
             Slow, Less Noisy
           </button>
           <button
-            className="bg-gemini-blue text-white rounded hover:bg-gemini-blue-hover" 
+            className="bg-gemini-blue text-white rounded hover:bg-gemini-blue-hover"
             onClick={() => {
               setPermutationCount(1000);
               setDatasetSimCount(1000);
