@@ -3,7 +3,8 @@ import SchoenfeldClosedForm from "./SchoenfeldClosedForm";
 import TrialList from "./TrialList";
 import TrialDetail from "./TrialDetail";
 import SimulateFromTrial from "./SimulateFromTrial";
-import { Routes, Route, Link } from "react-router-dom";
+import LandingPage from "./LandingPage"; // Import the new LandingPage component
+import { Routes, Route, NavLink } from "react-router-dom";
 import { useState } from "react";
 
 function App() {
@@ -48,10 +49,10 @@ function App() {
           onClick={() => setIsNavOpen(false)}
         ></div>
       )}
-      <div className="flex rounded-lg md:m-4 min-h-screen">
+      <div className="flex rounded-r-lg min-h-screen w-full">
         {/* Left Navigation Bar */}
         <nav
-          className={`transform ${isNavOpen ? "translate-x-0" : "-translate-x-full"} z-40 transition-transform duration-300 ease-in-out w-64 text-dark-azure p-4 space-y-4 rounded-lg bg-theme-light md:relative md:translate-x-0 md:block md:h-auto md:min-h-full fixed inset-y-0 left-0`}
+          className={`transform ${isNavOpen ? "translate-x-0" : "-translate-x-full"} z-40 transition-transform duration-300 ease-in-out w-64 text-dark-azure p-4 space-y-4 rounded-r-lg bg-theme-light md:relative md:translate-x-0 md:block md:h-auto md:min-h-full fixed inset-y-0 left-0`}
         >
           <img
             src="/stratum-logo-light.svg"
@@ -60,22 +61,37 @@ function App() {
           />
           <ul className="space-y-3">
             <li>
-              <Link
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  `block py-2 px-4 rounded ${isActive ? "bg-medium-azure-alpha" : "hover:bg-medium-azure-alpha"}`
+                }
+                onClick={() => setIsNavOpen(false)} // Close nav on link click
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
                 to="/schoenfeld"
-                className="block py-2 px-4 rounded hover:bg-medium-azure-alpha"
+                className={({ isActive }) =>
+                  `block py-2 px-4 rounded ${isActive ? "bg-medium-azure-alpha" : "hover:bg-medium-azure-alpha"}`
+                }
                 onClick={() => setIsNavOpen(false)} // Close nav on link click
               >
                 Free-form
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/trials"
-                className="block py-2 px-4 rounded hover:bg-medium-azure-alpha"
+                className={({ isActive }) =>
+                  `block py-2 px-4 rounded ${isActive ? "bg-medium-azure-alpha" : "hover:bg-medium-azure-alpha"}`
+                }
                 onClick={() => setIsNavOpen(false)} // Close nav on link click
               >
                 Start from a Trial
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>
@@ -83,6 +99,7 @@ function App() {
         {/* Main Content Area */}
         <main className="md:p-6 w-full pt-16 md:pt-6">
           <Routes>
+            <Route path="/" element={<LandingPage />} />
             <Route path="/schoenfeld" element={<SchoenfeldClosedForm />} />
             <Route path="/trials" element={<TrialList />} />
             <Route path="/trial-detail/:trialName" element={<TrialDetail />} />
@@ -90,8 +107,8 @@ function App() {
               path="/simulate-from-trial/:trialName"
               element={<SimulateFromTrial />}
             />
-            {/* Default route or redirect */}
-            <Route path="*" element={<SchoenfeldClosedForm />} />
+            {/* Fallback route for any unmatched paths, redirects to LandingPage */}
+            <Route path="*" element={<LandingPage />} />
           </Routes>
         </main>
       </div>
