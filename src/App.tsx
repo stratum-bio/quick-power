@@ -73,17 +73,6 @@ function App() {
             </li>
             <li>
               <NavLink
-                to="/schoenfeld"
-                className={({ isActive }) =>
-                  `block py-2 px-4 rounded-md ${isActive ? "bg-gemini-blue-hover" : "hover:bg-gemini-blue-hover"}`
-                }
-                onClick={() => setIsNavOpen(false)} // Close nav on link click
-              >
-                Free-form
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
                 to="/trials"
                 className={({ isActive }) =>
                   `block py-2 px-4 rounded-md ${isActive ? "bg-gemini-blue-hover" : "hover:bg-gemini-blue-hover"}`
@@ -91,6 +80,17 @@ function App() {
                 onClick={() => setIsNavOpen(false)} // Close nav on link click
               >
                 Start from a Trial
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/schoenfeld"
+                className={({ isActive }) =>
+                  `block py-2 px-4 rounded-md ${isActive ? "bg-gemini-blue-hover" : "hover:bg-gemini-blue-hover"}`
+                }
+                onClick={() => setIsNavOpen(false)} // Close nav on link click
+              >
+                Free-form
               </NavLink>
             </li>
           </ul>
