@@ -150,7 +150,7 @@ const SimulateFromTrial: React.FC = () => {
       )}
       <div className="mt-8 max-w-3xl">{memoizedKaplanMeierPlot}</div>
 
-      <div className="mt-8 p-4 border rounded-lg shadow-md bg-white max-w-3xl">
+      <div className="mt-8 p-4 ring ring-gemini-blue shadow-xl shadow-gemini-blue/30 rounded-md shadow-md bg-white max-w-3xl">
         <h2 className="text-xl font-semibold mb-4">Simulation Parameters</h2>
         <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
@@ -252,7 +252,7 @@ const SimulateFromTrial: React.FC = () => {
         <div className="mt-4 flex justify-end">
           <button
             type="submit"
-            className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm font-medium rounded-md text-white bg-gemini-blue hover:bg-gemini-blue-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gemini-blue"
             onClick={() => {
               setSimulationPlotParameters({
                 controlArm,

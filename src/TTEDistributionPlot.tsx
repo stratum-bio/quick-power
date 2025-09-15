@@ -427,7 +427,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           <button
-            className="bg-indigo-600 text-white rounded hover:bg-indigo-700"
+            className="bg-gemini-blue text-white rounded hover:bg-gemini-blue-hover" 
             onClick={() => {
               setPermutationCount(100);
               setDatasetSimCount(100);
@@ -438,7 +438,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             Quick, Noisy
           </button>
           <button
-            className="bg-indigo-600 text-white rounded hover:bg-indigo-700"
+            className="bg-gemini-blue text-white rounded hover:bg-gemini-blue-hover" 
             onClick={() => {
               setPermutationCount(500);
               setDatasetSimCount(500);
@@ -449,7 +449,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
             Slow, Less Noisy
           </button>
           <button
-            className="bg-indigo-600 text-white rounded hover:bg-indigo-700"
+            className="bg-gemini-blue text-white rounded hover:bg-gemini-blue-hover" 
             onClick={() => {
               setPermutationCount(1000);
               setDatasetSimCount(1000);

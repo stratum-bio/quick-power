@@ -117,7 +117,7 @@ const TrialDetail: React.FC = () => {
       </div>
       <Link
         to={`/simulate-from-trial/${trialName}`}
-        className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4"
+        className="inline-block bg-gemini-blue hover:bg-gemini-blue-hover text-white font-bold py-2 px-4 rounded mb-4"
       >
         Simulate from this Trial
       </Link>
@@ -125,8 +125,8 @@ const TrialDetail: React.FC = () => {
       {trialData.arms.length > 0 ? (
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {trialData.arms.map((arm, index) => (
-            <div key={index} className="border rounded-md">
-              <h3 className="text-xl font-semibold mb-2 bg-theme-light p-4 pb-2 pt-2 rounded-t-lg">
+            <div key={index} className="rounded-md shadow-xl/30 shadow-gemini-blue ring ring-gemini-blue">
+              <h3 className="text-xl font-semibold mb-2 p-4 pb-2 pt-2">
                 {arm.arm_name}
               </h3>
               <div className="grid grid-cols-2 p-2 pl-4 pr-4">

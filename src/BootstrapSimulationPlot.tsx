@@ -514,7 +514,7 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           <button
-            className="bg-indigo-600 text-white rounded hover:bg-indigo-700"
+            className="bg-gemini-blue text-white rounded hover:bg-gemini-blue-hover" 
             onClick={() => {
               setDatasetSimCount(500);
               setEvaluationCount(11);
@@ -524,7 +524,7 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
             Quick, Noisy
           </button>
           <button
-            className="bg-indigo-600 text-white rounded hover:bg-indigo-700"
+            className="bg-gemini-blue text-white rounded hover:bg-gemini-blue-hover" 
             onClick={() => {
               setDatasetSimCount(1000);
               setEvaluationCount(21);
@@ -534,7 +534,7 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
             Slow, Less Noisy
           </button>
           <button
-            className="bg-indigo-600 text-white rounded hover:bg-indigo-700"
+            className="bg-gemini-blue text-white rounded hover:bg-gemini-blue-hover" 
             onClick={() => {
               setDatasetSimCount(10000);
               setEvaluationCount(21);
