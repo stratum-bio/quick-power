@@ -23,7 +23,7 @@ import { ValidatedInputField } from "./ValidatedInputField";
 
 import Worker from "./workers/tteDistribution.worker.ts?worker";
 
-interface TTEDistributionProps {
+interface FreeFormSimulationProps {
   baselineHazard: number;
   hazardRatio: number;
   totalSampleSize: number;
@@ -48,14 +48,14 @@ interface HazardDistPlotData {
 }
 
 function propsAreEqual(
-  a: TTEDistributionProps,
-  b: TTEDistributionProps,
+  a: FreeFormSimulationProps,
+  b: FreeFormSimulationProps,
 ): boolean {
   const keys = Object.keys(a);
 
   // Check if all properties and their values are the same
   for (const key of keys) {
-    const propKey = key as keyof TTEDistributionProps;
+    const propKey = key as keyof FreeFormSimulationProps;
     if (a[propKey] !== b[propKey]) {
       return false;
     }
@@ -66,7 +66,7 @@ function propsAreEqual(
 
 const MIN_SAMPLE_SIZE = 100;
 
-const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
+const FreeFormSimulationPlot: React.FC<FreeFormSimulationProps> = ({
   totalSampleSize,
   baselineHazard,
   hazardRatio,
@@ -96,7 +96,7 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   };
 
   const [properties, setProperties] =
-    useState<TTEDistributionProps>(allProperties);
+    useState<FreeFormSimulationProps>(allProperties);
   const [data, setData] = useState<HazardDistPlotData[]>([]);
   const [loading, setLoading] = useState(true);
   const [completed, setCompleted] = useState(0);
@@ -501,4 +501,4 @@ const TTEDistributionPlot: React.FC<TTEDistributionProps> = ({
   );
 };
 
-export default TTEDistributionPlot;
+export default FreeFormSimulationPlot;

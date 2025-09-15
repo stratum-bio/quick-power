@@ -16,7 +16,7 @@ import { fitExponentialPerGroup } from "./utils/survival";
 import EventsPlot from "./EventsPlot";
 import ExponentialSurvivalPlot from "./ExponentialSurvivalPlot";
 import SurvivalPlot from "./SurvivalPlot";
-import TTEDistributionPlot from "./TTEDistributionPlot";
+import FreeFormSimulationPlot from "./FreeFormSimulationPlot";
 
 const DEFAULT_PARAMS: SchoenfeldParameters = {
   alpha: 0.05,
@@ -219,7 +219,7 @@ const SchoenfeldClosedForm: React.FC = () => {
         </p>
       </div>
       <div className="m-8">
-        <TTEDistributionPlot
+        <FreeFormSimulationPlot
           totalSampleSize={Math.round(derivedParameters.sampleSize) * 1.5}
           baselineHazard={baseHazard}
           hazardRatio={parameters.hazardRatio}
