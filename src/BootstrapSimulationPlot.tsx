@@ -34,8 +34,6 @@ interface TrackedBootstrapSimulationProps {
   totalSampleSize: number;
   accrual: number;
   followup: number;
-  controlLabel: string;
-  treatLabel: string;
   forceUpdate: boolean;
 }
 
@@ -105,8 +103,6 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
   totalSampleSize,
   accrual,
   followup,
-  controlLabel,
-  treatLabel,
   forceUpdate = false,
 }) => {
   const allProperties = {
@@ -115,8 +111,6 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
     totalSampleSize,
     accrual,
     followup,
-    controlLabel,
-    treatLabel,
     forceUpdate,
   };
 
@@ -156,6 +150,11 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
 
   useEffect(() => {
     setLoading(true);
+
+    if (forceUpdate) {
+      setMinSampleSize(MIN_SAMPLE_SIZE);
+      setMaxSampleSize(totalSampleSize);
+    }
 
     const worker = new Worker();
     const sampleEvalPoints = linspace(
@@ -213,8 +212,6 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
           totalSampleSize,
           accrual,
           followup,
-          controlLabel,
-          treatLabel,
           forceUpdate,
         });
 
@@ -297,7 +294,7 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
             dataKey="true_baseline_tte"
             stroke="black"
             dot={false}
-            name={controlLabel}
+            name={`\\text{${controlArmName.replace(/_/g, "\\_")}}`}
             strokeWidth={2}
           />
 
@@ -315,7 +312,7 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
             dataKey="true_treat_tte"
             stroke="blue"
             dot={false}
-            name={treatLabel}
+            name={`\\text{${treatArmName.replace(/_/g, "\\_")}}`}
             strokeWidth={2}
           />
         </ComposedChart>
