@@ -113,7 +113,9 @@ const TrialList: React.FC = () => {
                     <div>Min Hazard Ratio</div>
                   </div>
                   <div className="text-right">
-                    {trials.map((trial, idx) => (
+                    {trials
+                      .sort((a, b) => (a.weibull_max_diff || Infinity) - (b.weibull_max_diff || Infinity))
+                      .map((trial, idx) => (
                       <Link
                         to={`/trial-detail/${trial.identifier}`}
                         key={trial.identifier}
