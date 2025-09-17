@@ -114,33 +114,37 @@ const TrialList: React.FC = () => {
                   </div>
                   <div className="text-right">
                     {trials
-                      .sort((a, b) => (a.weibull_max_diff || Infinity) - (b.weibull_max_diff || Infinity))
+                      .sort(
+                        (a, b) =>
+                          (a.weibull_max_diff || Infinity) -
+                          (b.weibull_max_diff || Infinity),
+                      )
                       .map((trial, idx) => (
-                      <Link
-                        to={`/trial-detail/${trial.identifier}`}
-                        key={trial.identifier}
-                        className={`grid pr-4 ${idx % 2 == 0 ? "bg-gray-100" : ""} hover:bg-medium-azure-alpha`}
-                      >
-                        {trial.title && (
-                          <div className="text-left italic mt-4 ml-4">
-                            {trial.title ? trial.title : ""}
+                        <Link
+                          to={`/trial-detail/${trial.identifier}`}
+                          key={trial.identifier}
+                          className={`grid pr-4 ${idx % 2 == 0 ? "bg-gray-100" : ""} hover:bg-medium-azure-alpha`}
+                        >
+                          {trial.title && (
+                            <div className="text-left italic mt-4 ml-4">
+                              {trial.title ? trial.title : ""}
+                            </div>
+                          )}
+                          <div className="grid grid-cols-4 md:grid-cols-5 md:gap-4 mt-2 mb-2">
+                            <div>{trial.identifier}</div>
+                            <div className="hidden md:block">
+                              {new Date(trial.publication_date).getFullYear()}
+                            </div>
+                            <div>{trial.subjects}</div>
+                            <div>{trial.arms}</div>
+                            <div>
+                              {trial.weibull_max_diff
+                                ? trial.weibull_max_diff.toFixed(3)
+                                : "N/A"}
+                            </div>
                           </div>
-                        )}
-                        <div className="grid grid-cols-4 md:grid-cols-5 md:gap-4 mt-2 mb-2">
-                          <div>{trial.identifier}</div>
-                          <div className="hidden md:block">
-                            {new Date(trial.publication_date).getFullYear()}
-                          </div>
-                          <div>{trial.subjects}</div>
-                          <div>{trial.arms}</div>
-                          <div>
-                            {trial.weibull_max_diff
-                              ? trial.weibull_max_diff.toFixed(3)
-                              : "N/A"}
-                          </div>
-                        </div>
-                      </Link>
-                    ))}
+                        </Link>
+                      ))}
                   </div>
                 </>
               )}
