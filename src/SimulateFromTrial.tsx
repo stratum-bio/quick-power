@@ -7,6 +7,7 @@ import { samplesToLambda } from "./utils/simulate";
 import KaplanMeierPlot from "./KaplanMeierPlot";
 import BootstrapSimulationPlot from "./BootstrapSimulationPlot";
 import AppError from "./AppError"; // Import the AppError component
+import PrognosticFactorAllocation from "./PrognosticFactorAllocation";
 
 function fitLambdaPerArm(data: Trial): Record<string, number> {
   const result: Record<string, number> = {};
@@ -43,6 +44,7 @@ const SimulateFromTrial: React.FC = () => {
     largestSampleSize: number;
   } | null>(null);
   const [forceSimulation, setForceSimulation] = useState<boolean>(false);
+  const [showPrognosticFactors, setShowPrognosticFactors] = useState<boolean>(false);
 
   useEffect(() => {
     if (forceSimulation) {
@@ -147,6 +149,16 @@ const SimulateFromTrial: React.FC = () => {
         <div className="max-w-3xl">{trialData.meta.title}</div>
       )}
       <div className="mt-8 max-w-3xl">{memoizedKaplanMeierPlot}</div>
+
+      <div className="mt-8 p-4 ring ring-gemini-blue shadow-xl shadow-gemini-blue/30 rounded-md shadow-md bg-white max-w-3xl">
+        <h2
+          className="text-xl font-semibold mb-4 cursor-pointer"
+          onClick={() => setShowPrognosticFactors(!showPrognosticFactors)}
+        >
+          Prognostic Factors {showPrognosticFactors ? "▲" : "▼"}
+        </h2>
+        {showPrognosticFactors && <PrognosticFactorAllocation />}
+      </div>
 
       <div className="mt-8 p-4 ring ring-gemini-blue shadow-xl shadow-gemini-blue/30 rounded-md shadow-md bg-white max-w-3xl">
         <h2 className="text-xl font-semibold mb-4">Simulation Parameters</h2>

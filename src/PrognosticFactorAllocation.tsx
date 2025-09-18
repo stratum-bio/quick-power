@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Biomarker, type PrognosticFactorTable, type GroupType, type PrognosticFactor, RelationalOperator } from './types/prognostic-factors.d';
+import { Biomarker, type PrognosticFactorTable, type GroupType, type PrognosticFactor } from './types/prognostic-factors.d';
 import { loadPrognosticFactors } from './utils/prognosticFactorsStorage';
 
 const formatGroup = (group: GroupType): string => {
@@ -54,13 +54,11 @@ const PrognosticFactorAllocation: React.FC = () => {
 
   return (
     <div className="p-4">
-      <h2 className="text-xl font-bold mb-4">Prognostic Factor Allocation</h2>
-
       <div className="mb-4">
-        <label htmlFor="biomarker-select" className="block text-sm font-medium text-gray-700">Select Biomarker:</label>
+        <label htmlFor="biomarker-select" className="block">Biomarker</label>
         <select
           id="biomarker-select"
-          className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+          className="mt-1 block w-full pl-3 pr-10 py-2 border border-gray-300 focus:border-gemini-blue rounded-md"
           value={selectedBiomarker}
           onChange={handleBiomarkerChange}
         >
@@ -72,7 +70,7 @@ const PrognosticFactorAllocation: React.FC = () => {
       </div>
 
       {selectedBiomarker && currentFactor && (
-        <div className="border p-4 rounded-md">
+        <div className="p-4 bg-">
           <h3 className="text-lg font-semibold mb-2">{currentFactor.biomarker}</h3>
 
           <div className="mb-2">
