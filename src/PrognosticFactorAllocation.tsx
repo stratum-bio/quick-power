@@ -17,7 +17,7 @@ const formatGroup = (group: GroupType): string => {
 const PrognosticFactorAllocation: React.FC = () => {
   const [prognosticFactors, setPrognosticFactors] = useState<PrognosticFactorTable | null>(null);
   const [selectedBiomarker, setSelectedBiomarker] = useState<Biomarker | ''>('');
-  const [allocations, setAllocations] = useState<Record<string, number>>({});
+  const [allocations, setAllocations] = useState<Record<string, { original: number; target: number }>>({});
 
   useEffect(() => {
     setPrognosticFactors(loadPrognosticFactors());
@@ -27,12 +27,12 @@ const PrognosticFactorAllocation: React.FC = () => {
     if (selectedBiomarker && prognosticFactors) {
       const factor = prognosticFactors[selectedBiomarker];
       if (factor) {
-        const initialAllocations: Record<string, number> = {};
+        const initialAllocations: Record<string, { original: number; target: number }> = {};
         // Initialize reference group allocation
-        initialAllocations[`${selectedBiomarker}-reference`] = 0;
+        initialAllocations[`${selectedBiomarker}-reference`] = { original: 0, target: 0 };
         // Initialize comparison group allocations
         factor.comparison_group_list.forEach((_comp, index) => {
-          initialAllocations[`${selectedBiomarker}-comparison-${index}`] = 0;
+          initialAllocations[`${selectedBiomarker}-comparison-${index}`] = { original: 0, target: 0 };
         });
         setAllocations(initialAllocations);
       }
@@ -43,10 +43,10 @@ const PrognosticFactorAllocation: React.FC = () => {
     setSelectedBiomarker(event.target.value as Biomarker);
   };
 
-  const handleAllocationChange = (key: string, value: string) => {
+  const handleAllocationChange = (key: string, type: 'original' | 'target', value: string) => {
     setAllocations(prev => ({
       ...prev,
-      [key]: parseFloat(value) || 0,
+      [key]: { ...prev[key], [type]: parseFloat(value) || 0 },
     }));
   };
 
@@ -71,33 +71,57 @@ const PrognosticFactorAllocation: React.FC = () => {
 
       {selectedBiomarker && currentFactor && (
         <div className="p-4 bg-">
-          <h3 className="text-lg font-semibold mb-2">{currentFactor.biomarker}</h3>
-
           <div className="mb-2">
             <p className="font-medium">Reference Group:</p>
             <div className="flex items-center space-x-2">
               <span>{formatGroup(currentFactor.reference_group)}</span>
-              <input
-                type="number"
-                className="w-24 p-1 border rounded"
-                value={allocations[`${selectedBiomarker}-reference`] ?? 0}
-                onChange={(e) => handleAllocationChange(`${selectedBiomarker}-reference`, e.target.value)}
-                min="0"
-              />
+              <div className="flex flex-col">
+                <label className="text-xs">Original</label>
+                <input
+                  type="number"
+                  className="w-24 p-1 border rounded"
+                  value={allocations[`${selectedBiomarker}-reference`]?.original ?? 0}
+                  onChange={(e) => handleAllocationChange(`${selectedBiomarker}-reference`, 'original', e.target.value)}
+                  min="0"
+                />
+              </div>
+              <div className="flex flex-col">
+                <label className="text-xs">Target</label>
+                <input
+                  type="number"
+                  className="w-24 p-1 border rounded"
+                  value={allocations[`${selectedBiomarker}-reference`]?.target ?? 0}
+                  onChange={(e) => handleAllocationChange(`${selectedBiomarker}-reference`, 'target', e.target.value)}
+                  min="0"
+                />
+              </div>
             </div>
           </div>
 
           <p className="font-medium mt-4">Comparison Groups:</p>
           {currentFactor.comparison_group_list.map((comparison, index) => (
             <div key={index} className="flex items-center space-x-2 mb-2">
-              <span>{formatGroup(comparison.group)}</span>
-              <input
-                type="number"
-                className="w-24 p-1 border rounded"
-                value={allocations[`${selectedBiomarker}-comparison-${index}`] ?? 0}
-                onChange={(e) => handleAllocationChange(`${selectedBiomarker}-comparison-${index}`, e.target.value)}
-                min="0"
-              />
+              <span>{formatGroup(comparison.group)} (HR: {comparison.hazard_ratio})</span>
+              <div className="flex flex-col">
+                <label className="text-xs">Original</label>
+                <input
+                  type="number"
+                  className="w-24 p-1 border rounded"
+                  value={allocations[`${selectedBiomarker}-comparison-${index}`]?.original ?? 0}
+                  onChange={(e) => handleAllocationChange(`${selectedBiomarker}-comparison-${index}`, 'original', e.target.value)}
+                  min="0"
+                />
+              </div>
+              <div className="flex flex-col">
+                <label className="text-xs">Target</label>
+                <input
+                  type="number"
+                  className="w-24 p-1 border rounded"
+                  value={allocations[`${selectedBiomarker}-comparison-${index}`]?.target ?? 0}
+                  onChange={(e) => handleAllocationChange(`${selectedBiomarker}-comparison-${index}`, 'target', e.target.value)}
+                  min="0"
+                />
+              </div>
             </div>
           ))}
         </div>
