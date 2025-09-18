@@ -1,8 +1,5 @@
 import type { PrognosticFactorTable } from "../types/prognostic-factors.d";
-import {
-  Biomarker,
-  RelationalOperator,
-} from "../types/prognostic-factors.d";
+import { Biomarker, RelationalOperator } from "../types/prognostic-factors.d";
 
 export const ProstateFactors: PrognosticFactorTable = {
   // ECOG from https://pubmed.ncbi.nlm.nih.gov/38162494/

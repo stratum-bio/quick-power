@@ -59,7 +59,7 @@ export interface Comparison {
   hazard_ratio: number;
   ci_lower?: number;
   ci_upper?: number;
-  patient_population: string; 
+  patient_population: string;
 }
 
 export interface PrognosticFactor {
@@ -71,4 +71,4 @@ export interface PrognosticFactor {
 /**
  * The top-level model representing a list of PrognosticFactor objects.
  */
-export type PrognosticFactorTable =  Record<Biomarker, PrognosticFactor>;
+export type PrognosticFactorTable = Record<Biomarker, PrognosticFactor>;

@@ -1,49 +1,72 @@
-import React, { useState } from 'react';
-import { ProstateFactors } from './mock/prostate-prognostic';
-import { RelationalOperator, type GroupType, type PrognosticFactorTable, type PrognosticFactor, Biomarker } from './types/prognostic-factors.d';
+import React, { useState } from "react";
+import { ProstateFactors } from "./mock/prostate-prognostic";
+import {
+  RelationalOperator,
+  type GroupType,
+  type PrognosticFactorTable,
+  type PrognosticFactor,
+  Biomarker,
+} from "./types/prognostic-factors.d";
 
 const formatGroup = (group: GroupType): string => {
   if (group.type === "numerical") {
-    const operator = group.operator === RelationalOperator.EQUAL ? "=" :
-                     group.operator === RelationalOperator.GREATER_THAN ? ">" :
-                     group.operator === RelationalOperator.GREATER_THAN_OR_EQUAL ? ">=" :
-                     group.operator === RelationalOperator.LESS_THAN ? "<" :
-                     group.operator === RelationalOperator.LESS_THAN_OR_EQUAL ? "<=" : "";
-    return `${operator} ${group.value} ${group.unit || ''}`.trim();
+    const operator =
+      group.operator === RelationalOperator.EQUAL
+        ? "="
+        : group.operator === RelationalOperator.GREATER_THAN
+          ? ">"
+          : group.operator === RelationalOperator.GREATER_THAN_OR_EQUAL
+            ? ">="
+            : group.operator === RelationalOperator.LESS_THAN
+              ? "<"
+              : group.operator === RelationalOperator.LESS_THAN_OR_EQUAL
+                ? "<="
+                : "";
+    return `${operator} ${group.value} ${group.unit || ""}`.trim();
   } else if (group.type === "range") {
-    return `${group.lower_bound}-${group.upper_bound} ${group.unit || ''}`.trim();
-  } else { // categorical
-    return group.category || '';
+    return `${group.lower_bound}-${group.upper_bound} ${group.unit || ""}`.trim();
+  } else {
+    // categorical
+    return group.category || "";
   }
 };
 
 interface SavedDifference {
   biomarkerKey: Biomarker;
   comparisonIndex: number;
-  field: 'hazard_ratio' | 'ci_lower' | 'ci_upper';
+  field: "hazard_ratio" | "ci_lower" | "ci_upper";
   value: number | undefined;
 }
 
 const PrognosticFactorsGrid: React.FC = () => {
-  const [editableFactors, setEditableFactors] = useState<PrognosticFactorTable>(() => {
-    const initialFactors = JSON.parse(JSON.stringify(ProstateFactors)); // Deep copy of defaults
-    const savedDifferences = localStorage.getItem('prostateFactorsDifferences');
+  const [editableFactors, setEditableFactors] = useState<PrognosticFactorTable>(
+    () => {
+      const initialFactors = JSON.parse(JSON.stringify(ProstateFactors)); // Deep copy of defaults
+      const savedDifferences = localStorage.getItem(
+        "prostateFactorsDifferences",
+      );
 
-    if (savedDifferences) {
-      const differences: SavedDifference[] = JSON.parse(savedDifferences);
-      differences.forEach(diff => {
-        const factor = initialFactors[diff.biomarkerKey];
-        if (factor && factor.comparison_group_list[diff.comparisonIndex]) {
-          (factor.comparison_group_list[diff.comparisonIndex] as any)[diff.field] = diff.value;
-        }
-      });
-    }
-    return initialFactors;
-  });
+      if (savedDifferences) {
+        const differences: SavedDifference[] = JSON.parse(savedDifferences);
+        differences.forEach((diff) => {
+          const factor = initialFactors[diff.biomarkerKey];
+          if (factor && factor.comparison_group_list[diff.comparisonIndex]) {
+            (factor.comparison_group_list[diff.comparisonIndex] as Comparison)[
+              diff.field
+            ] = diff.value;
+          }
+        });
+      }
+      return initialFactors;
+    },
+  );
 
-  const [message, setMessage] = useState<{ text: string; type: 'success' | 'error' | 'neutral'} | null>(null);
+  const [message, setMessage] = useState<{
+    text: string;
+    type: "success" | "error" | "neutral";
+  } | null>(null);
 
-  const showMessage = (text: string, type: 'success' | 'error' | 'neutral') => {
+  const showMessage = (text: string, type: "success" | "error" | "neutral") => {
     setMessage({ text, type });
     setTimeout(() => {
       setMessage(null);
@@ -53,15 +76,16 @@ const PrognosticFactorsGrid: React.FC = () => {
   const handleInputChange = (
     biomarkerKey: Biomarker,
     comparisonIndex: number,
-    field: 'hazard_ratio' | 'ci_lower' | 'ci_upper',
-    value: string
+    field: "hazard_ratio" | "ci_lower" | "ci_upper",
+    value: string,
   ) => {
-    setEditableFactors(prevFactors => {
+    setEditableFactors((prevFactors) => {
       const newFactors = { ...prevFactors };
       const factor: PrognosticFactor = newFactors[biomarkerKey];
       if (factor) {
         const comparison = { ...factor.comparison_group_list[comparisonIndex] };
-        (comparison as any)[field] = value === '' ? undefined : parseFloat(value);
+        (comparison as Comparison)[field] =
+          value === "" ? undefined : parseFloat(value);
         factor.comparison_group_list[comparisonIndex] = comparison;
       }
       return newFactors;
@@ -81,7 +105,7 @@ const PrognosticFactorsGrid: React.FC = () => {
             differencesToSave.push({
               biomarkerKey: biomarkerKey as Biomarker,
               comparisonIndex: index,
-              field: 'hazard_ratio',
+              field: "hazard_ratio",
               value: comparison.hazard_ratio,
             });
           }
@@ -90,7 +114,7 @@ const PrognosticFactorsGrid: React.FC = () => {
             differencesToSave.push({
               biomarkerKey: biomarkerKey as Biomarker,
               comparisonIndex: index,
-              field: 'ci_lower',
+              field: "ci_lower",
               value: comparison.ci_lower,
             });
           }
@@ -99,7 +123,7 @@ const PrognosticFactorsGrid: React.FC = () => {
             differencesToSave.push({
               biomarkerKey: biomarkerKey as Biomarker,
               comparisonIndex: index,
-              field: 'ci_upper',
+              field: "ci_upper",
               value: comparison.ci_upper,
             });
           }
@@ -107,15 +131,18 @@ const PrognosticFactorsGrid: React.FC = () => {
       });
     });
 
-    localStorage.setItem('prostateFactorsDifferences', JSON.stringify(differencesToSave));
-    console.log('Differences saved to local storage:', differencesToSave);
-    showMessage('Prognostic factor updates saved.', 'success');
+    localStorage.setItem(
+      "prostateFactorsDifferences",
+      JSON.stringify(differencesToSave),
+    );
+    console.log("Differences saved to local storage:", differencesToSave);
+    showMessage("Prognostic factor updates saved.", "success");
   };
 
   const handleReset = () => {
-    localStorage.removeItem('prostateFactorsDifferences');
+    localStorage.removeItem("prostateFactorsDifferences");
     setEditableFactors(JSON.parse(JSON.stringify(ProstateFactors)));
-    showMessage('Data reset to defaults.', 'neutral');
+    showMessage("Data reset to defaults.", "neutral");
   };
 
   return (
@@ -134,13 +161,13 @@ const PrognosticFactorsGrid: React.FC = () => {
           </tr>
         </thead>
         <tbody>
-          {Object.entries(editableFactors).map(([biomarkerKeyStr, factor]) => (
+          {Object.entries(editableFactors).map(([biomarkerKeyStr, factor]) =>
             factor.comparison_group_list.map((comparison, index) => (
               <tr key={`${biomarkerKeyStr}-${index}`}>
                 {index === 0 && (
                   <>
                     <td rowSpan={factor.comparison_group_list.length}>
-                      {biomarkerKeyStr.replace(/_/g, ' ')}
+                      {biomarkerKeyStr.replace(/_/g, " ")}
                     </td>
                     <td rowSpan={factor.comparison_group_list.length}>
                       {formatGroup(factor.reference_group)}
@@ -151,36 +178,57 @@ const PrognosticFactorsGrid: React.FC = () => {
                 <td>
                   <input
                     type="number"
-                    value={comparison.hazard_ratio ?? ''}
-                    onChange={(e) => handleInputChange(biomarkerKeyStr as Biomarker, index, 'hazard_ratio', e.target.value)}
+                    value={comparison.hazard_ratio ?? ""}
+                    onChange={(e) =>
+                      handleInputChange(
+                        biomarkerKeyStr as Biomarker,
+                        index,
+                        "hazard_ratio",
+                        e.target.value,
+                      )
+                    }
                     className="w-24 p-1 border rounded"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
-                    value={comparison.ci_lower ?? ''}
-                    onChange={(e) => handleInputChange(biomarkerKeyStr as Biomarker, index, 'ci_lower', e.target.value)}
+                    value={comparison.ci_lower ?? ""}
+                    onChange={(e) =>
+                      handleInputChange(
+                        biomarkerKeyStr as Biomarker,
+                        index,
+                        "ci_lower",
+                        e.target.value,
+                      )
+                    }
                     className="w-24 p-1 border rounded"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
-                    value={comparison.ci_upper ?? ''}
-                    onChange={(e) => handleInputChange(biomarkerKeyStr as Biomarker, index, 'ci_upper', e.target.value)}
+                    value={comparison.ci_upper ?? ""}
+                    onChange={(e) =>
+                      handleInputChange(
+                        biomarkerKeyStr as Biomarker,
+                        index,
+                        "ci_upper",
+                        e.target.value,
+                      )
+                    }
                     className="w-24 p-1 border rounded"
                   />
                 </td>
                 <td>{comparison.patient_population}</td>
               </tr>
-            ))
-          ))}
+            )),
+          )}
         </tbody>
       </table>
       {message && (
         <div
-          className={`p-3 mb-4 rounded ${message.type === 'success' ? 'text-success bg-success-2' : 'text-error bg-error-2'}`}
+          className={`p-3 mb-4 rounded ${message.type === "success" ? "text-success bg-success-2" : "text-error bg-error-2"}`}
         >
           {message.text}
         </div>
