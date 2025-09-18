@@ -180,7 +180,7 @@ const PrognosticFactorsGrid: React.FC = () => {
       </table>
       {message && (
         <div
-          className={`p-3 mb-4 rounded text-white ${message.type === 'success' ? 'bg-green-500' : 'bg-red-500'}`}
+          className={`p-3 mb-4 rounded ${message.type === 'success' ? 'text-success bg-success-2' : 'text-error bg-error-2'}`}
         >
           {message.text}
         </div>

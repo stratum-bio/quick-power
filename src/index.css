@@ -61,4 +61,8 @@ button:focus-visible {
   --color-medium-azure-alpha: #29649b2f;
   --color-gemini-blue: #1c2d51;
   --color-gemini-blue-hover: #3d507c;
+  --color-success: #155724;
+  --color-success-2: #d4edda;
+  --color-error: #721c24;
+  --color-error-2: #f8d7da;
 }
