@@ -4,6 +4,7 @@ import TrialList from "./TrialList";
 import TrialDetail from "./TrialDetail";
 import SimulateFromTrial from "./SimulateFromTrial";
 import LandingPage from "./LandingPage"; // Import the new LandingPage component
+import PrognosticFactorsGrid from "./PrognosticFactorsGrid";
 import { Routes, Route, NavLink } from "react-router-dom";
 import { useState } from "react";
 
@@ -93,6 +94,17 @@ function App() {
                 Free-form
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/prognostic-factors"
+                className={({ isActive }) =>
+                  `block py-2 px-4 rounded-md ${isActive ? "bg-gemini-blue-hover" : "hover:bg-gemini-blue-hover"}`
+                }
+                onClick={() => setIsNavOpen(false)} // Close nav on link click
+              >
+                Prognostic Factors
+              </NavLink>
+            </li>
           </ul>
         </nav>
 
@@ -106,6 +118,10 @@ function App() {
             <Route
               path="/simulate-from-trial/:trialName"
               element={<SimulateFromTrial />}
+            />
+            <Route
+              path="/prognostic-factors"
+              element={<PrognosticFactorsGrid />}
             />
             {/* Fallback route for any unmatched paths, redirects to LandingPage */}
             <Route path="*" element={<LandingPage />} />

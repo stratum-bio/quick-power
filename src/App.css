@@ -53,3 +53,20 @@ body {
     display: inline;
   }
 }
+
+.prognostic-factors-grid table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.prognostic-factors-grid th,
+.prognostic-factors-grid td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.prognostic-factors-grid th {
+  background-color: #f2f2f2;
+}
