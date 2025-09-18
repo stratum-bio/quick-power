@@ -5,7 +5,6 @@ import {
 } from "./utils/prognosticFactorsStorage";
 import React, { useState } from "react";
 import {
-  RelationalOperator,
   type GroupType,
   type PrognosticFactorTable,
   type PrognosticFactor,
@@ -15,18 +14,7 @@ import {
 
 const formatGroup = (group: GroupType): string => {
   if (group.type === "numerical") {
-    const operator =
-      group.operator === RelationalOperator.EQUAL
-        ? "="
-        : group.operator === RelationalOperator.GREATER_THAN
-          ? ">"
-          : group.operator === RelationalOperator.GREATER_THAN_OR_EQUAL
-            ? ">="
-            : group.operator === RelationalOperator.LESS_THAN
-              ? "<"
-              : group.operator === RelationalOperator.LESS_THAN_OR_EQUAL
-                ? "<="
-                : "";
+    const operator = group.operator;
     return `${operator} ${group.value} ${group.unit || ""}`.trim();
   } else if (group.type === "range") {
     return `${group.lower_bound}-${group.upper_bound} ${group.unit || ""}`.trim();
