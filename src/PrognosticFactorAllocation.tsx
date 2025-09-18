@@ -18,6 +18,7 @@ const PrognosticFactorAllocation: React.FC = () => {
   const [prognosticFactors, setPrognosticFactors] = useState<PrognosticFactorTable | null>(null);
   const [selectedBiomarker, setSelectedBiomarker] = useState<Biomarker | ''>('');
   const [allocations, setAllocations] = useState<Record<string, { original: number; target: number }>>({});
+  const [validationMessage, setValidationMessage] = useState<{ text: string; type: 'success' | 'error' } | null>(null);
 
   useEffect(() => {
     setPrognosticFactors(loadPrognosticFactors());
@@ -48,6 +49,22 @@ const PrognosticFactorAllocation: React.FC = () => {
       ...prev,
       [key]: { ...prev[key], [type]: parseFloat(value) || 0 },
     }));
+  };
+
+  const handleUpdate = () => {
+    let originalSum = 0;
+    let targetSum = 0;
+
+    Object.values(allocations).forEach(group => {
+      originalSum += group.original;
+      targetSum += group.target;
+    });
+
+    if (originalSum === 100 && targetSum === 100) {
+      setValidationMessage({ text: 'Allocations updated successfully!', type: 'success' });
+    } else {
+      setValidationMessage({ text: `Error: Original sum is ${originalSum}%, Target sum is ${targetSum}%. Both must be 100%.`, type: 'error' });
+    }
   };
 
   const currentFactor: PrognosticFactor | undefined = selectedBiomarker && prognosticFactors ? prognosticFactors[selectedBiomarker] : undefined;
@@ -131,6 +148,21 @@ const PrognosticFactorAllocation: React.FC = () => {
               </div>
             </div>
           ))}
+        </div>
+      )}
+
+      <div className="mt-4 flex justify-end">
+        <button
+          className="px-4 py-2 bg-gemini-blue text-white rounded hover:bg-gemini-blue-hover"
+          onClick={handleUpdate}
+        >
+          Update
+        </button>
+      </div>
+
+      {validationMessage && (
+        <div className={`mt-2 p-2 rounded ${validationMessage.type === 'success' ? 'bg-success-2 text-success' : 'bg-error-2 text-error'}`}>
+          {validationMessage.text}
         </div>
       )}
     </div>
