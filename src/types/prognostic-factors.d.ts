@@ -56,12 +56,11 @@ export type GroupType =
 
 export interface Comparison {
   group: GroupType;
-  hazard_ratio: number;
-  ci_lower?: number;
-  ci_upper?: number;
+  hazard_ratio: number | undefined;
+  ci_lower?: number | undefined;
+  ci_upper?: number | undefined;
   patient_population: string;
 }
-
 export interface PrognosticFactor {
   biomarker: Biomarker;
   reference_group: GroupType;
