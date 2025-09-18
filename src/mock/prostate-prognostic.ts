@@ -1,581 +1,416 @@
 import type { PrognosticFactorTable } from "../types/prognostic-factors.d";
 import {
-  FactorName,
   Biomarker,
   RelationalOperator,
 } from "../types/prognostic-factors.d";
 
-export const ProstateFactors: PrognosticFactorTable = [
-  {
-    factor: FactorName.PS,
-    comparison: {
-      biomarker: Biomarker.ECOG_PS,
-      comparison_group: {
-        type: "numerical",
-        operator: RelationalOperator.GREATER_THAN_OR_EQUAL,
-        value: 2,
-        unit: undefined,
-      },
-      reference_group: {
-        type: "numerical",
-        operator: RelationalOperator.LESS_THAN,
-        value: 2,
-        unit: undefined,
-      },
+export const ProstateFactors: PrognosticFactorTable = {
+  // ECOG from https://pubmed.ncbi.nlm.nih.gov/38162494/
+  [Biomarker.ECOG_PS]: {
+    biomarker: Biomarker.ECOG_PS,
+    reference_group: {
+      type: "numerical",
+      operator: RelationalOperator.EQUAL,
+      value: 0,
+      unit: undefined,
     },
-    hazard_ratio: 2.1,
-    ci_lower: 1.87,
-    ci_upper: 2.37,
-    patient_population: "mCRPC",
-    data_source_type: "Meta-analysis",
-    reference: 12,
+    comparison_group_list: [
+      {
+        group: {
+          type: "numerical",
+          operator: RelationalOperator.GREATER_THAN_OR_EQUAL,
+          value: 1,
+          unit: undefined,
+        },
+        hazard_ratio: 1.68,
+        ci_lower: 1.44,
+        ci_upper: 1.94,
+        patient_population: "mCRPC",
+      },
+      {
+        group: {
+          type: "numerical",
+          operator: RelationalOperator.GREATER_THAN_OR_EQUAL,
+          value: 2,
+          unit: undefined,
+        },
+        hazard_ratio: 2.1,
+        ci_lower: 1.87,
+        ci_upper: 2.37,
+        patient_population: "mCRPC",
+      },
+    ],
   },
-  {
-    factor: FactorName.PS,
-    comparison: {
-      biomarker: Biomarker.ECOG_PS,
-      comparison_group: {
-        type: "numerical",
-        operator: RelationalOperator.GREATER_THAN_OR_EQUAL,
-        value: 1,
-        unit: undefined,
-      },
-      reference_group: {
-        type: "numerical",
-        operator: RelationalOperator.LESS_THAN,
-        value: 1,
-        unit: undefined,
-      },
+  // the rest have not been validated / verified
+  [Biomarker.AGE]: {
+    biomarker: Biomarker.AGE,
+    reference_group: {
+      type: "numerical",
+      operator: RelationalOperator.LESS_THAN,
+      value: 60,
+      unit: "years",
     },
-    hazard_ratio: 1.68,
-    ci_lower: 1.44,
-    ci_upper: 1.94,
-    patient_population: "mCRPC",
-    data_source_type: "Meta-analysis",
-    reference: 12,
+    comparison_group_list: [
+      {
+        group: {
+          type: "numerical",
+          operator: RelationalOperator.GREATER_THAN,
+          value: 70,
+          unit: "years",
+        },
+        hazard_ratio: 2.8,
+        ci_lower: 1.22,
+        ci_upper: 6.5,
+        patient_population: "High-Risk Localized",
+      },
+      {
+        group: {
+          type: "numerical",
+          operator: RelationalOperator.GREATER_THAN,
+          value: 70,
+          unit: "years",
+        },
+        hazard_ratio: 1.56,
+        ci_lower: 1.43,
+        ci_upper: 1.7,
+        patient_population: "Locally Advanced",
+      },
+      {
+        group: {
+          type: "categorical",
+          category: "Per unit increase",
+        },
+        hazard_ratio: 1.11,
+        ci_lower: 1.01,
+        ci_upper: 1.21,
+        patient_population: "mHSPC (ARPIs)",
+      },
+    ],
   },
-  {
-    factor: FactorName.PS,
-    comparison: {
-      biomarker: Biomarker.ECOG_PS,
-      comparison_group: {
-        type: "numerical",
-        operator: RelationalOperator.GREATER_THAN,
-        value: 0,
-        unit: undefined,
-      },
-      reference_group: {
-        type: "numerical",
-        operator: RelationalOperator.EQUAL,
-        value: 0,
-        unit: undefined,
-      },
+  [Biomarker.ISUP_GRADE]: {
+    biomarker: Biomarker.ISUP_GRADE,
+    reference_group: {
+      type: "categorical",
+      category: "Lower Grades",
     },
-    hazard_ratio: 1.37,
-    ci_lower: undefined,
-    ci_upper: undefined,
-    patient_population: "mCRPC (Docetaxel)",
-    data_source_type: "Pooled Analysis",
-    reference: 14,
+    comparison_group_list: [
+      {
+        group: {
+          type: "categorical",
+          category: "Grade 5 (GS 9-10)",
+        },
+        hazard_ratio: 2.04,
+        ci_lower: 1.12,
+        ci_upper: 3.72,
+        patient_population: "De Novo Oligometastatic",
+      },
+    ],
   },
-  {
-    factor: FactorName.AGE,
-    comparison: {
-      biomarker: Biomarker.AGE,
-      comparison_group: {
-        type: "numerical",
-        operator: RelationalOperator.GREATER_THAN,
-        value: 70,
-        unit: "years",
-      },
-      reference_group: {
-        type: "numerical",
-        operator: RelationalOperator.LESS_THAN,
-        value: 60,
-        unit: "years",
-      },
+  [Biomarker.T_STAGE]: {
+    biomarker: Biomarker.T_STAGE,
+    reference_group: {
+      type: "categorical",
+      category: "T1/T2",
     },
-    hazard_ratio: 2.8,
-    ci_lower: 1.22,
-    ci_upper: 6.5,
-    patient_population: "High-Risk Localized",
-    data_source_type: "Single Study",
-    reference: 15,
+    comparison_group_list: [
+      {
+        group: {
+          type: "categorical",
+          category: "T3/T4",
+        },
+        hazard_ratio: 1.49,
+        ci_lower: 1.135,
+        ci_upper: 1.958,
+        patient_population: "PCa w/ Lung Mets",
+      },
+      {
+        group: {
+          type: "categorical",
+          category: "T3/T4",
+        },
+        hazard_ratio: 1.785,
+        ci_lower: 1.007,
+        ci_upper: 3.163,
+        patient_population: "PCa w/ Brain Mets",
+      },
+    ],
   },
-  {
-    factor: FactorName.AGE,
-    comparison: {
-      biomarker: Biomarker.AGE,
-      comparison_group: {
-        type: "numerical",
-        operator: RelationalOperator.GREATER_THAN,
-        value: 70,
-        unit: "years",
-      },
-      reference_group: {
-        type: "numerical",
-        operator: RelationalOperator.LESS_THAN_OR_EQUAL,
-        value: 70,
-        unit: "years",
-      },
+  [Biomarker.METASTATIC_STATUS]: {
+    biomarker: Biomarker.METASTATIC_STATUS,
+    reference_group: {
+      type: "categorical",
+      category: "No Distant Metastasis",
     },
-    hazard_ratio: 1.56,
-    ci_lower: 1.43,
-    ci_upper: 1.7,
-    patient_population: "Locally Advanced",
-    data_source_type: "Meta-analysis",
-    reference: 16,
+    comparison_group_list: [
+      {
+        group: {
+          type: "categorical",
+          category: "Non-regional Lymph Node",
+        },
+        hazard_ratio: 2.15,
+        ci_lower: 1.11,
+        ci_upper: 4.16,
+        patient_population: "De Novo Oligometastatic",
+      },
+    ],
   },
-  {
-    factor: FactorName.AGE,
-    comparison: {
-      biomarker: Biomarker.AGE,
-      comparison_group: {
-        type: "categorical",
-        category: "Per unit increase",
-      },
-      reference_group: {
-        type: "categorical",
-        category: "Baseline",
-      },
+  [Biomarker.METASTATIC_VOLUME]: {
+    biomarker: Biomarker.METASTATIC_VOLUME,
+    reference_group: {
+      type: "categorical",
+      category: "Low",
     },
-    hazard_ratio: 1.11,
-    ci_lower: 1.01,
-    ci_upper: 1.21,
-    patient_population: "mHSPC (ARPIs)",
-    data_source_type: "Meta-analysis",
-    reference: 18,
+    comparison_group_list: [
+      {
+        group: {
+          type: "categorical",
+          category: "High",
+        },
+        hazard_ratio: 1.92,
+        ci_lower: 1.17,
+        ci_upper: 3.13,
+        patient_population: "Metastatic PCa",
+      },
+      {
+        group: {
+          type: "categorical",
+          category: "High",
+        },
+        hazard_ratio: 2.1,
+        ci_lower: undefined,
+        ci_upper: undefined,
+        patient_population: "Metastatic PCa",
+      },
+    ],
   },
-  {
-    factor: FactorName.GLEASON_ISUP,
-    comparison: {
-      biomarker: Biomarker.ISUP_GRADE,
-      comparison_group: {
-        type: "categorical",
-        category: "Grade 5 (GS 9-10)",
-      },
-      reference_group: {
-        type: "categorical",
-        category: "Lower Grades",
-      },
+  [Biomarker.METASTATIC_SITE]: {
+    biomarker: Biomarker.METASTATIC_SITE,
+    reference_group: {
+      type: "categorical",
+      category: "Bone +/- Lymph Node",
     },
-    hazard_ratio: 2.04,
-    ci_lower: 1.12,
-    ci_upper: 3.72,
-    patient_population: "De Novo Oligometastatic",
-    data_source_type: "Single Study",
-    reference: 19,
+    comparison_group_list: [
+      {
+        group: {
+          type: "categorical",
+          category: "Lung",
+        },
+        hazard_ratio: 1.14,
+        ci_lower: 1.04,
+        ci_upper: 1.25,
+        patient_population: "mCRPC",
+      },
+      {
+        group: {
+          type: "categorical",
+          category: "Liver",
+        },
+        hazard_ratio: 1.52,
+        ci_lower: 1.35,
+        ci_upper: 1.73,
+        patient_population: "mCRPC",
+      },
+    ],
   },
-  {
-    factor: FactorName.TNM,
-    comparison: {
-      biomarker: Biomarker.T_STAGE,
-      comparison_group: {
-        type: "categorical",
-        category: "T3/T4",
-      },
-      reference_group: {
-        type: "categorical",
-        category: "T1/T2",
-      },
+  [Biomarker.PSA]: {
+    biomarker: Biomarker.PSA,
+    reference_group: {
+      type: "range",
+      lower_bound: 4.1,
+      upper_bound: 10,
+      unit: "ng/mL",
     },
-    hazard_ratio: 1.49,
-    ci_lower: 1.135,
-    ci_upper: 1.958,
-    patient_population: "PCa w/ Lung Mets",
-    data_source_type: "Single Study",
-    reference: 20,
+    comparison_group_list: [
+      {
+        group: {
+          type: "numerical",
+          operator: RelationalOperator.GREATER_THAN,
+          value: 80.1,
+          unit: "ng/mL",
+        },
+        hazard_ratio: 1.544,
+        ci_lower: undefined,
+        ci_upper: undefined,
+        patient_population: "Metastatic PCa",
+      },
+      {
+        group: {
+          type: "numerical",
+          operator: RelationalOperator.LESS_THAN,
+          value: 4,
+          unit: "ng/mL",
+        },
+        hazard_ratio: 1.331,
+        ci_lower: undefined,
+        ci_upper: undefined,
+        patient_population: "Metastatic PCa",
+      },
+    ],
   },
-  {
-    factor: FactorName.TNM,
-    comparison: {
-      biomarker: Biomarker.T_STAGE,
-      comparison_group: {
-        type: "categorical",
-        category: "T3/T4",
-      },
-      reference_group: {
-        type: "categorical",
-        category: "T1/T2",
-      },
+  [Biomarker.PSA_AT_RT]: {
+    biomarker: Biomarker.PSA_AT_RT,
+    reference_group: {
+      type: "categorical",
+      category: "Higher",
     },
-    hazard_ratio: 1.785,
-    ci_lower: 1.007,
-    ci_upper: 3.163,
-    patient_population: "PCa w/ Brain Mets",
-    data_source_type: "Single Study",
-    reference: 20,
+    comparison_group_list: [
+      {
+        group: {
+          type: "categorical",
+          category: "Lower",
+        },
+        hazard_ratio: 0.51,
+        ci_lower: 0.33,
+        ci_upper: 0.78,
+        patient_population: "Metastatic PCa",
+      },
+    ],
   },
-  {
-    factor: FactorName.TNM,
-    comparison: {
-      biomarker: Biomarker.METASTATIC_STATUS,
-      comparison_group: {
-        type: "categorical",
-        category: "Non-regional Lymph Node",
-      },
-      reference_group: {
-        type: "categorical",
-        category: "No Distant Metastasis",
-      },
+  [Biomarker.ALP]: {
+    biomarker: Biomarker.ALP,
+    reference_group: {
+      type: "categorical",
+      category: "Low",
     },
-    hazard_ratio: 2.15,
-    ci_lower: 1.11,
-    ci_upper: 4.16,
-    patient_population: "De Novo Oligometastatic",
-    data_source_type: "Single Study",
-    reference: 19,
+    comparison_group_list: [
+      {
+        group: {
+          type: "categorical",
+          category: "High",
+        },
+        hazard_ratio: 1.74,
+        ci_lower: 1.47,
+        ci_upper: 2.06,
+        patient_population: "Prostate Cancer",
+      },
+      {
+        group: {
+          type: "categorical",
+          category: "High",
+        },
+        hazard_ratio: 1.72,
+        ci_lower: 1.37,
+        ci_upper: 2.14,
+        patient_population: "mHSPC",
+      },
+      {
+        group: {
+          type: "categorical",
+          category: "High",
+        },
+        hazard_ratio: 2.136,
+        ci_lower: 1.38,
+        ci_upper: 3.31,
+        patient_population: "Metastatic PCa",
+      },
+    ],
   },
-  {
-    factor: FactorName.MET_BURDEN,
-    comparison: {
-      biomarker: Biomarker.METASTATIC_VOLUME,
-      comparison_group: {
-        type: "categorical",
-        category: "High",
-      },
-      reference_group: {
-        type: "categorical",
-        category: "Low",
-      },
+  [Biomarker.LDH]: {
+    biomarker: Biomarker.LDH,
+    reference_group: {
+      type: "categorical",
+      category: "Low",
     },
-    hazard_ratio: 1.92,
-    ci_lower: 1.17,
-    ci_upper: 3.13,
-    patient_population: "Metastatic PCa",
-    data_source_type: "Single Study",
-    reference: 21,
+    comparison_group_list: [
+      {
+        group: {
+          type: "categorical",
+          category: "High",
+        },
+        hazard_ratio: 2.07,
+        ci_lower: 1.75,
+        ci_upper: 2.44,
+        patient_population: "Metastatic PCa",
+      },
+      {
+        group: {
+          type: "categorical",
+          category: "High",
+        },
+        hazard_ratio: 2.25,
+        ci_lower: 1.78,
+        ci_upper: 2.84,
+        patient_population: "mHSPC",
+      },
+      {
+        group: {
+          type: "numerical",
+          operator: RelationalOperator.GREATER_THAN_OR_EQUAL,
+          value: 230,
+          unit: "IU/L",
+        },
+        hazard_ratio: 8.53,
+        ci_lower: 1.83,
+        ci_upper: 39.7,
+        patient_population: "cN1 Prostate Cancer",
+      },
+    ],
   },
-  {
-    factor: FactorName.MET_BURDEN,
-    comparison: {
-      biomarker: Biomarker.METASTATIC_VOLUME,
-      comparison_group: {
-        type: "categorical",
-        category: "High",
-      },
-      reference_group: {
-        type: "categorical",
-        category: "Low",
-      },
+  [Biomarker.HB]: {
+    biomarker: Biomarker.HB,
+    reference_group: {
+      type: "categorical",
+      category: "Normal",
     },
-    hazard_ratio: 2.1,
-    ci_lower: undefined,
-    ci_upper: undefined,
-    patient_population: "Metastatic PCa",
-    data_source_type: "Single Study",
-    reference: 22,
+    comparison_group_list: [
+      {
+        group: {
+          type: "categorical",
+          category: "Low",
+        },
+        hazard_ratio: 1.21,
+        ci_lower: 1.15,
+        ci_upper: 1.29,
+        patient_population: "mHSPC",
+      },
+      {
+        group: {
+          type: "categorical",
+          category: "High (Quintile 5)",
+        },
+        hazard_ratio: 0.42,
+        ci_lower: 0.33,
+        ci_upper: 0.52,
+        patient_population: "De Novo mCSPC",
+      },
+    ],
   },
-  {
-    factor: FactorName.MET_SITE,
-    comparison: {
-      biomarker: Biomarker.METASTATIC_SITE,
-      comparison_group: {
-        type: "categorical",
-        category: "Lung",
-      },
-      reference_group: {
-        type: "categorical",
-        category: "Bone +/- Lymph Node",
-      },
+  [Biomarker.ALBUMIN]: {
+    biomarker: Biomarker.ALBUMIN,
+    reference_group: {
+      type: "categorical",
+      category: "Low (Quintile 1)",
     },
-    hazard_ratio: 1.14,
-    ci_lower: 1.04,
-    ci_upper: 1.25,
-    patient_population: "mCRPC",
-    data_source_type: "Meta-analysis",
-    reference: 23,
+    comparison_group_list: [
+      {
+        group: {
+          type: "categorical",
+          category: "High (Quintile 5)",
+        },
+        hazard_ratio: 0.48,
+        ci_lower: 0.36,
+        ci_upper: 0.63,
+        patient_population: "De Novo mCSPC",
+      },
+    ],
   },
-  {
-    factor: FactorName.MET_SITE,
-    comparison: {
-      biomarker: Biomarker.METASTATIC_SITE,
-      comparison_group: {
-        type: "categorical",
-        category: "Liver",
-      },
-      reference_group: {
-        type: "categorical",
-        category: "Lung",
-      },
+  [Biomarker.AGR]: {
+    biomarker: Biomarker.AGR,
+    reference_group: {
+      type: "categorical",
+      category: "High",
     },
-    hazard_ratio: 1.52,
-    ci_lower: 1.35,
-    ci_upper: 1.73,
-    patient_population: "mCRPC",
-    data_source_type: "Meta-analysis",
-    reference: 23,
+    comparison_group_list: [
+      {
+        group: {
+          type: "categorical",
+          category: "Low",
+        },
+        hazard_ratio: 2.43,
+        ci_lower: undefined,
+        ci_upper: undefined,
+        patient_population: "Metastatic PCa",
+      },
+    ],
   },
-  {
-    factor: FactorName.PSA,
-    comparison: {
-      biomarker: Biomarker.PSA,
-      comparison_group: {
-        type: "numerical",
-        operator: RelationalOperator.GREATER_THAN,
-        value: 80.1,
-        unit: "ng/mL",
-      },
-      reference_group: {
-        type: "range",
-        lower_bound: 4.1,
-        upper_bound: 10,
-        unit: "ng/mL",
-      },
-    },
-    hazard_ratio: 1.544,
-    ci_lower: undefined,
-    ci_upper: undefined,
-    patient_population: "Metastatic PCa",
-    data_source_type: "Single Study",
-    reference: 24,
-  },
-  {
-    factor: FactorName.PSA,
-    comparison: {
-      biomarker: Biomarker.PSA,
-      comparison_group: {
-        type: "numerical",
-        operator: RelationalOperator.LESS_THAN,
-        value: 4,
-        unit: "ng/mL",
-      },
-      reference_group: {
-        type: "range",
-        lower_bound: 4.1,
-        upper_bound: 10,
-        unit: "ng/mL",
-      },
-    },
-    hazard_ratio: 1.331,
-    ci_lower: undefined,
-    ci_upper: undefined,
-    patient_population: "Metastatic PCa",
-    data_source_type: "Single Study",
-    reference: 24,
-  },
-  {
-    factor: FactorName.PSA,
-    comparison: {
-      biomarker: Biomarker.PSA_AT_RT,
-      comparison_group: {
-        type: "categorical",
-        category: "Lower",
-      },
-      reference_group: {
-        type: "categorical",
-        category: "Higher",
-      },
-    },
-    hazard_ratio: 0.51,
-    ci_lower: 0.33,
-    ci_upper: 0.78,
-    patient_population: "Metastatic PCa",
-    data_source_type: "Single Study",
-    reference: 25,
-  },
-  {
-    factor: FactorName.ALP,
-    comparison: {
-      biomarker: Biomarker.ALP,
-      comparison_group: {
-        type: "categorical",
-        category: "High",
-      },
-      reference_group: {
-        type: "categorical",
-        category: "Low",
-      },
-    },
-    hazard_ratio: 1.74,
-    ci_lower: 1.47,
-    ci_upper: 2.06,
-    patient_population: "Prostate Cancer",
-    data_source_type: "Meta-analysis",
-    reference: 26,
-  },
-  {
-    factor: FactorName.ALP,
-    comparison: {
-      biomarker: Biomarker.ALP,
-      comparison_group: {
-        type: "categorical",
-        category: "High",
-      },
-      reference_group: {
-        type: "categorical",
-        category: "Low",
-      },
-    },
-    hazard_ratio: 1.72,
-    ci_lower: 1.37,
-    ci_upper: 2.14,
-    patient_population: "mHSPC",
-    data_source_type: "Meta-analysis",
-    reference: 27,
-  },
-  {
-    factor: FactorName.ALP,
-    comparison: {
-      biomarker: Biomarker.ALP,
-      comparison_group: {
-        type: "categorical",
-        category: "High",
-      },
-      reference_group: {
-        type: "categorical",
-        category: "Normal",
-      },
-    },
-    hazard_ratio: 2.136,
-    ci_lower: 1.38,
-    ci_upper: 3.31,
-    patient_population: "Metastatic PCa",
-    data_source_type: "Single Study",
-    reference: 21,
-  },
-  {
-    factor: FactorName.LDH,
-    comparison: {
-      biomarker: Biomarker.LDH,
-      comparison_group: {
-        type: "categorical",
-        category: "High",
-      },
-      reference_group: {
-        type: "categorical",
-        category: "Low",
-      },
-    },
-    hazard_ratio: 2.07,
-    ci_lower: 1.75,
-    ci_upper: 2.44,
-    patient_population: "Metastatic PCa",
-    data_source_type: "Meta-analysis",
-    reference: 28,
-  },
-  {
-    factor: FactorName.LDH,
-    comparison: {
-      biomarker: Biomarker.LDH,
-      comparison_group: {
-        type: "categorical",
-        category: "High",
-      },
-      reference_group: {
-        type: "categorical",
-        category: "Low",
-      },
-    },
-    hazard_ratio: 2.25,
-    ci_lower: 1.78,
-    ci_upper: 2.84,
-    patient_population: "mHSPC",
-    data_source_type: "Meta-analysis",
-    reference: 28,
-  },
-  {
-    factor: FactorName.LDH,
-    comparison: {
-      biomarker: Biomarker.LDH,
-      comparison_group: {
-        type: "numerical",
-        operator: RelationalOperator.GREATER_THAN_OR_EQUAL,
-        value: 230,
-        unit: "IU/L",
-      },
-      reference_group: {
-        type: "numerical",
-        operator: RelationalOperator.LESS_THAN,
-        value: 230,
-        unit: "IU/L",
-      },
-    },
-    hazard_ratio: 8.53,
-    ci_lower: 1.83,
-    ci_upper: 39.7,
-    patient_population: "cN1 Prostate Cancer",
-    data_source_type: "Single Study",
-    reference: 29,
-  },
-  {
-    factor: FactorName.HB,
-    comparison: {
-      biomarker: Biomarker.HB,
-      comparison_group: {
-        type: "categorical",
-        category: "Low",
-      },
-      reference_group: {
-        type: "categorical",
-        category: "Normal",
-      },
-    },
-    hazard_ratio: 1.21,
-    ci_lower: 1.15,
-    ci_upper: 1.29,
-    patient_population: "mHSPC",
-    data_source_type: "Meta-analysis",
-    reference: 30,
-  },
-  {
-    factor: FactorName.HB,
-    comparison: {
-      biomarker: Biomarker.HB,
-      comparison_group: {
-        type: "categorical",
-        category: "High (Quintile 5)",
-      },
-      reference_group: {
-        type: "categorical",
-        category: "Low (Quintile 1)",
-      },
-    },
-    hazard_ratio: 0.42,
-    ci_lower: 0.33,
-    ci_upper: 0.52,
-    patient_population: "De Novo mCSPC",
-    data_source_type: "Single Study",
-    reference: 31,
-  },
-  {
-    factor: FactorName.ALBUMIN,
-    comparison: {
-      biomarker: Biomarker.ALBUMIN,
-      comparison_group: {
-        type: "categorical",
-        category: "High (Quintile 5)",
-      },
-      reference_group: {
-        type: "categorical",
-        category: "Low (Quintile 1)",
-      },
-    },
-    hazard_ratio: 0.48,
-    ci_lower: 0.36,
-    ci_upper: 0.63,
-    patient_population: "De Novo mCSPC",
-    data_source_type: "Single Study",
-    reference: 31,
-  },
-  {
-    factor: FactorName.ALBUMIN,
-    comparison: {
-      biomarker: Biomarker.AGR,
-      comparison_group: {
-        type: "categorical",
-        category: "Low",
-      },
-      reference_group: {
-        type: "categorical",
-        category: "High",
-      },
-    },
-    hazard_ratio: 2.43,
-    ci_lower: undefined,
-    ci_upper: undefined,
-    patient_population: "Metastatic PCa",
-    data_source_type: "Meta-analysis",
-    reference: 32,
-  },
-];
+};

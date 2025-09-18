@@ -1,17 +1,3 @@
-export enum FactorName {
-  PS = "Performance Status",
-  AGE = "Age",
-  GLEASON_ISUP = "Gleason/ISUP Grade",
-  TNM = "TNM Stage",
-  MET_BURDEN = "Metastatic Burden",
-  MET_SITE = "Metastatic Site",
-  PSA = "PSA Level",
-  ALP = "Alkaline Phosphatase (ALP)",
-  LDH = "Lactate Dehydrogenase (LDH)",
-  HB = "Hemoglobin (Hb)",
-  ALBUMIN = "Albumin",
-}
-
 export enum Biomarker {
   ECOG_PS = "ECOG PS",
   AGE = "Age",
@@ -68,24 +54,21 @@ export type GroupType =
 
 // --- MAIN MODELS ---
 
-export interface ComparisonDetail {
-  biomarker: Biomarker;
-  comparison_group: GroupType;
-  reference_group: GroupType;
-}
-
-export interface PrognosticFactor {
-  factor: FactorName;
-  comparison: ComparisonDetail;
+export interface Comparison {
+  group: GroupType;
   hazard_ratio: number;
   ci_lower?: number;
   ci_upper?: number;
-  patient_population: string;
-  data_source_type: "Meta-analysis" | "Pooled Analysis" | "Single Study";
-  reference: number;
+  patient_population: string; 
+}
+
+export interface PrognosticFactor {
+  biomarker: Biomarker;
+  reference_group: GroupType;
+  comparison_group_list: Comparison[];
 }
 
 /**
  * The top-level model representing a list of PrognosticFactor objects.
  */
-export type PrognosticFactorTable = PrognosticFactor[];
+export type PrognosticFactorTable =  Record<Biomarker, PrognosticFactor>;
