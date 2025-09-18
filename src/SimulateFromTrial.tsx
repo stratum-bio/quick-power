@@ -152,10 +152,11 @@ const SimulateFromTrial: React.FC = () => {
 
       <div className="mt-8 p-4 ring ring-gemini-blue shadow-xl shadow-gemini-blue/30 rounded-md shadow-md bg-white max-w-3xl">
         <h2
-          className="text-xl font-semibold mb-4 cursor-pointer"
+          className="text-xl font-semibold cursor-pointer flex justify-between items-center"
           onClick={() => setShowPrognosticFactors(!showPrognosticFactors)}
         >
-          Prognostic Factors {showPrognosticFactors ? "▲" : "▼"}
+          <span>Prognostic Factors</span>
+          <span>{showPrognosticFactors ? "▲" : "▼"}</span>
         </h2>
         {showPrognosticFactors && <PrognosticFactorAllocation />}
       </div>
@@ -166,7 +167,7 @@ const SimulateFromTrial: React.FC = () => {
           <div>
             <label
               htmlFor="controlArm"
-              className="block font-medium text-gray-700"
+              className="block font-semibold text-gray-700"
             >
               Control Arm
             </label>
@@ -188,7 +189,7 @@ const SimulateFromTrial: React.FC = () => {
           <div>
             <label
               htmlFor="treatmentArm"
-              className="block font-medium text-gray-700"
+              className="block font-semibold text-gray-700"
             >
               Treatment Arm
             </label>
@@ -210,7 +211,7 @@ const SimulateFromTrial: React.FC = () => {
           <div>
             <label
               htmlFor="accrualPeriod"
-              className="block font-medium text-gray-700"
+              className="block font-semibold text-gray-700"
             >
               Enrollment Period
             </label>
@@ -227,7 +228,7 @@ const SimulateFromTrial: React.FC = () => {
           <div>
             <label
               htmlFor="followUpPeriod"
-              className="block font-medium text-gray-700"
+              className="block font-semibold text-gray-700"
             >
               Follow-up Period
             </label>
@@ -244,7 +245,7 @@ const SimulateFromTrial: React.FC = () => {
           <div>
             <label
               htmlFor="largestSampleSize"
-              className="block font-medium text-gray-700"
+              className="block font-semibold text-gray-700"
             >
               Largest Sample Size
             </label>
@@ -262,7 +263,7 @@ const SimulateFromTrial: React.FC = () => {
         <div className="mt-4 flex justify-end">
           <button
             type="submit"
-            className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm font-medium rounded-md text-white bg-gemini-blue hover:bg-gemini-blue-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gemini-blue"
+            className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm font-semibold rounded-md text-white bg-gemini-blue hover:bg-gemini-blue-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gemini-blue"
             onClick={() => {
               setSimulationPlotParameters({
                 controlArm,

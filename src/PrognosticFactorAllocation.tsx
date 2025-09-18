@@ -53,13 +53,13 @@ const PrognosticFactorAllocation: React.FC = () => {
   const currentFactor: PrognosticFactor | undefined = selectedBiomarker && prognosticFactors ? prognosticFactors[selectedBiomarker] : undefined;
 
   return (
-    <div className="">
+    <div className="mt-4">
       <p>
       Verify the original subgroup allocation according to Table 1 of the trial publication,
       then specify a target subgroup allocation distribution for simulation.
       </p>
       <div className="mb-4">
-        <label htmlFor="biomarker-select" className="block font-bold mt-4">Biomarker</label>
+        <label htmlFor="biomarker-select" className="block mt-4 font-semibold text-gray-700">Biomarker</label>
         <select
           id="biomarker-select"
           className="mt-1 block w-full pl-3 pr-10 py-2 border border-gray-300 focus:border-gemini-blue rounded-md"
@@ -75,7 +75,7 @@ const PrognosticFactorAllocation: React.FC = () => {
 
       {selectedBiomarker && currentFactor && (
         <div className="p-4 bg-">
-          <div className="grid grid-cols-4 gap-2 items-center font-bold mb-2">
+          <div className="grid grid-cols-4 gap-2 items-center font-semibold text-gray-700 mb-2">
             <div>Group</div>
             <div>Hazard Ratio</div>
             <div>Original (%)</div>
