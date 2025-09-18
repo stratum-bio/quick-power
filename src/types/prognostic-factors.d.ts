@@ -67,6 +67,17 @@ export interface PrognosticFactor {
   comparison_group_list: Comparison[];
 }
 
+export interface Allocation {
+  reference: number;
+  comparisons: number[];
+}
+
+export interface AllocationChange {
+  biomarker: Biomarker;
+  original: Allocation;
+  target: Allocation;
+}
+
 /**
  * The top-level model representing a list of PrognosticFactor objects.
  */

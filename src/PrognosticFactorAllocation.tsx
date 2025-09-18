@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Biomarker, type PrognosticFactorTable, type GroupType, type PrognosticFactor } from './types/prognostic-factors.d';
+import { Biomarker, type PrognosticFactorTable, type GroupType, type PrognosticFactor, type AllocationChange, type Allocation } from './types/prognostic-factors.d';
 import { loadPrognosticFactors } from './utils/prognosticFactorsStorage';
 
 const formatGroup = (group: GroupType): string => {
@@ -14,7 +14,11 @@ const formatGroup = (group: GroupType): string => {
 };
 
 
-const PrognosticFactorAllocation: React.FC = () => {
+interface PrognosticFactorAllocationProps {
+  onUpdate: (allocationChange: AllocationChange) => void;
+}
+
+const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({ onUpdate }) => {
   const [prognosticFactors, setPrognosticFactors] = useState<PrognosticFactorTable | null>(null);
   const [selectedBiomarker, setSelectedBiomarker] = useState<Biomarker | ''>('');
   const [allocations, setAllocations] = useState<Record<string, { original: number; target: number }>>({});
@@ -61,7 +65,28 @@ const PrognosticFactorAllocation: React.FC = () => {
     });
 
     if (originalSum === 100 && targetSum === 100) {
+      if (!currentFactor) {
+        throw new Error("currentFactor is " + currentFactor);
+      }
+
       setValidationMessage({ text: 'Allocations updated successfully!', type: 'success' });
+
+      const originalAllocation: Allocation = {
+        reference: allocations[`${selectedBiomarker}-reference`]?.original ?? 0,
+        comparisons: currentFactor.comparison_group_list.map((_, index) => allocations[`${selectedBiomarker}-comparison-${index}`]?.original ?? 0)
+      };
+
+      const targetAllocation: Allocation = {
+        reference: allocations[`${selectedBiomarker}-reference`]?.target ?? 0,
+        comparisons: currentFactor.comparison_group_list.map((_, index) => allocations[`${selectedBiomarker}-comparison-${index}`]?.target ?? 0)
+      };
+
+      onUpdate({
+        biomarker: selectedBiomarker as Biomarker,
+        original: originalAllocation,
+        target: targetAllocation,
+      });
+
     } else {
       setValidationMessage({ text: `Error: Original sum is ${originalSum}%, Target sum is ${targetSum}%. Both must be 100%.`, type: 'error' });
     }
@@ -79,7 +104,7 @@ const PrognosticFactorAllocation: React.FC = () => {
         <label htmlFor="biomarker-select" className="block mt-4 font-semibold text-gray-700">Biomarker</label>
         <select
           id="biomarker-select"
-          className="mt-1 block w-full pl-3 pr-10 py-2 border border-gray-300 focus:border-gemini-blue rounded-md"
+          className="mt-1 block w-full pl-3 pr-10 py-2 border border-gray-300 focus:outline-none focus:border-gemini-blue focus:ring-gemini-blue rounded-md"
           value={selectedBiomarker}
           onChange={handleBiomarkerChange}
         >
@@ -106,7 +131,7 @@ const PrognosticFactorAllocation: React.FC = () => {
             <div>
               <input
                 type="number"
-                className="w-24 p-1 border border-gray-300 rounded"
+                className="w-24 p-1 border border-gray-300 focus:outline-none focus:border-gemini-blue focus:ring-gemini-blue rounded-md"
                 value={allocations[`${selectedBiomarker}-reference`]?.original ?? 0}
                 onChange={(e) => handleAllocationChange(`${selectedBiomarker}-reference`, 'original', e.target.value)}
                 min="0"
@@ -115,7 +140,7 @@ const PrognosticFactorAllocation: React.FC = () => {
             <div>
               <input
                 type="number"
-                className="w-24 p-1 border border-gray-300 rounded"
+                className="w-24 p-1 border border-gray-300 focus:outline-none focus:border-gemini-blue focus:ring-gemini-blue rounded-md"
                 value={allocations[`${selectedBiomarker}-reference`]?.target ?? 0}
                 onChange={(e) => handleAllocationChange(`${selectedBiomarker}-reference`, 'target', e.target.value)}
                 min="0"
@@ -131,7 +156,7 @@ const PrognosticFactorAllocation: React.FC = () => {
               <div>
                 <input
                   type="number"
-                  className="w-24 p-1 border border-gray-300 rounded"
+                  className="w-24 p-1 border border-gray-300 focus:outline-none focus:border-gemini-blue focus:ring-gemini-blue rounded-md"
                   value={allocations[`${selectedBiomarker}-comparison-${index}`]?.original ?? 0}
                   onChange={(e) => handleAllocationChange(`${selectedBiomarker}-comparison-${index}`, 'original', e.target.value)}
                   min="0"
@@ -140,7 +165,7 @@ const PrognosticFactorAllocation: React.FC = () => {
               <div>
                 <input
                   type="number"
-                  className="w-24 p-1 border border-gray-300 rounded"
+                  className="w-24 p-1 border border-gray-300 focus:outline-none focus:border-gemini-blue focus:ring-gemini-blue rounded-md"
                   value={allocations[`${selectedBiomarker}-comparison-${index}`]?.target ?? 0}
                   onChange={(e) => handleAllocationChange(`${selectedBiomarker}-comparison-${index}`, 'target', e.target.value)}
                   min="0"

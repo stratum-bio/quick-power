@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import Loading from "./Loading";
 import { useParams } from "react-router-dom";
 import type { Trial } from "./types/trialdata";
+import { type AllocationChange } from "./types/prognostic-factors.d";
 import CitationFooter from "./CitationFooter";
 import { samplesToLambda } from "./utils/simulate";
 import KaplanMeierPlot from "./KaplanMeierPlot";
@@ -45,6 +46,12 @@ const SimulateFromTrial: React.FC = () => {
   } | null>(null);
   const [forceSimulation, setForceSimulation] = useState<boolean>(false);
   const [showPrognosticFactors, setShowPrognosticFactors] = useState<boolean>(false);
+  const [prognosticFactorAllocation, setPrognosticFactorAllocation] = useState<AllocationChange | null>(null);
+
+  const handlePrognosticFactorUpdate = (allocationChange: AllocationChange) => {
+    setPrognosticFactorAllocation(allocationChange);
+    console.log("Prognostic Factor Allocation Updated:", allocationChange);
+  };
 
   useEffect(() => {
     if (forceSimulation) {
@@ -158,7 +165,7 @@ const SimulateFromTrial: React.FC = () => {
           <span>Prognostic Factors</span>
           <span>{showPrognosticFactors ? "▲" : "▼"}</span>
         </h2>
-        {showPrognosticFactors && <PrognosticFactorAllocation />}
+        {showPrognosticFactors && <PrognosticFactorAllocation onUpdate={handlePrognosticFactorUpdate} />}
       </div>
 
       <div className="mt-8 p-4 ring ring-gemini-blue shadow-xl shadow-gemini-blue/30 rounded-md shadow-md bg-white max-w-3xl">
@@ -174,7 +181,7 @@ const SimulateFromTrial: React.FC = () => {
             <select
               id="controlArm"
               name="controlArm"
-              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md"
+              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-md"
               value={controlArm}
               onChange={(e) => setControlArm(e.target.value)}
             >
@@ -196,7 +203,7 @@ const SimulateFromTrial: React.FC = () => {
             <select
               id="treatmentArm"
               name="treatmentArm"
-              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md"
+              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-md"
               value={treatmentArm}
               onChange={(e) => setTreatmentArm(e.target.value)}
             >
@@ -219,7 +226,7 @@ const SimulateFromTrial: React.FC = () => {
               type="number"
               id="accrualPeriod"
               name="accrualPeriod"
-              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md"
+              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-md"
               value={accrualPeriod}
               onChange={(e) => setAccrualPeriod(parseFloat(e.target.value))}
               step="1"
@@ -236,7 +243,7 @@ const SimulateFromTrial: React.FC = () => {
               type="number"
               id="followUpPeriod"
               name="followUpPeriod"
-              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md"
+              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-md"
               value={followUpPeriod}
               onChange={(e) => setFollowUpPeriod(parseFloat(e.target.value))}
               step="1"
@@ -253,7 +260,7 @@ const SimulateFromTrial: React.FC = () => {
               type="number"
               id="largestSampleSize"
               name="largestSampleSize"
-              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md"
+              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-md"
               value={largestSampleSize}
               onChange={(e) => setLargestSampleSize(parseInt(e.target.value))}
               step="50"
