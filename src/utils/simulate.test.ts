@@ -1,7 +1,6 @@
 import { describe, it, expect } from "vitest";
 import {
   sum,
-  sampleDataset,
   samplesToLambda,
   likelihoodRatio,
   getPercentiles,
@@ -9,6 +8,7 @@ import {
   samplePValueDistribution,
   samplePValueDistributionFromData,
 } from "./simulate";
+import { sampleDataset, resample, resampleDataset } from "./sampling-data";
 import random from "random";
 
 describe("sampleDataset", () => {
