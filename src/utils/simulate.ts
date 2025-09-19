@@ -1,12 +1,17 @@
 import random from "random";
 import { jStat } from "jstat";
 
-import { sampleDataset, resampleDataset } from "./dataset-gen";
+import {
+  sampleDataset,
+  resampleDataset,
+  sampleKaplanMeierDataset,
+} from "./dataset-gen";
 import type { PValueDist } from "../types/simulation";
 import { logRankTest } from "./logrank";
 import { calculateKaplanMeier } from "./kaplan-meier";
 import { compareRMST } from "./rmst";
 import { permutationTestPValue } from "./permutation-test";
+import type { KaplanMeier } from "../types/trialdata.d";
 
 export function sum(arr: Float64Array | Uint8Array): number {
   // @ts-expect-error This isn't a valid error
@@ -195,6 +200,70 @@ export function logrankPValueDistributionFromData(
   const [treatTime, treatEvent] = resampleDataset(
     treatTimes,
     treatEvents,
+    simCount,
+    Math.round(totalSampleSize * 0.5),
+    accrual,
+    followup,
+    rng,
+  );
+
+  const controlHazardDist = new Float64Array(simCount);
+  const treatHazardDist = new Float64Array(simCount);
+  const pValues = new Float64Array(simCount);
+  const rmstPValueDist = new Float64Array(simCount);
+
+  for (let i = 0; i < simCount; i++) {
+    const cTime = controlTime[i];
+    const cEvent = controlEvent[i];
+    const tTime = treatTime[i];
+    const tEvent = treatEvent[i];
+
+    const controlHazard = samplesToLambda(cTime, cEvent);
+    const treatHazard = samplesToLambda(tTime, tEvent);
+
+    const [, pValue] = logRankTest(cTime, cEvent, tTime, tEvent);
+
+    controlHazardDist[i] = controlHazard;
+    treatHazardDist[i] = treatHazard;
+    pValues[i] = pValue;
+    rmstPValueDist[i] = compareRMST(
+      calculateKaplanMeier(Array.from(cTime), Array.from(cEvent)),
+      calculateKaplanMeier(Array.from(tTime), Array.from(tEvent)),
+      Math.min(Math.max(...cTime), Math.max(...tTime)),
+    ).pValue;
+  }
+
+  return {
+    controlHazardDist,
+    treatHazardDist,
+    pValueDist: pValues,
+    rmstPValueDist: rmstPValueDist,
+  };
+}
+
+export function kaplanMeierPValueDistributionFromData(
+  totalSampleSize: number,
+  controlKM: KaplanMeier,
+  treatKM: KaplanMeier,
+  accrual: number,
+  followup: number,
+  simCount: number,
+  seed: string | number = 123,
+): PValueDist {
+  // TODO: call this from the worker to actually enable
+  // the use of smapling from the data
+  const rng = random.clone(seed);
+
+  const [controlTime, controlEvent] = sampleKaplanMeierDataset(
+    controlKM,
+    simCount,
+    Math.round(totalSampleSize * 0.5),
+    accrual,
+    followup,
+    rng,
+  );
+  const [treatTime, treatEvent] = sampleKaplanMeierDataset(
+    treatKM,
     simCount,
     Math.round(totalSampleSize * 0.5),
     accrual,

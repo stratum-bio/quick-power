@@ -91,7 +91,7 @@ export function permutationTestPValue(
 
   let sumNullWins = 0;
   for (let i = 0; i < pValueSimCount; i++) {
-    const [permControlTime, permControlEvent, permTreatTime, permTreatEvent] = 
+    const [permControlTime, permControlEvent, permTreatTime, permTreatEvent] =
       randomPermutation(controlTime, controlEvent, treatTime, treatEvent, rng);
     const testStatNull = likelihoodRatio(
       permControlTime,

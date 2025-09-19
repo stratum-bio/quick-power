@@ -6,7 +6,11 @@ import {
   samplePValueDistribution,
   samplePValueDistributionFromData,
 } from "./simulate";
-import { likelihoodRatio, randomPermutation, permutationTestPValue } from "./permutation-test";
+import {
+  likelihoodRatio,
+  randomPermutation,
+  permutationTestPValue,
+} from "./permutation-test";
 import { sampleDataset, resample, resampleDataset } from "./dataset-gen";
 import random from "random";
 

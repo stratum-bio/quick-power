@@ -1,5 +1,8 @@
 import random from "random";
 
+import type { KaplanMeier } from "../types/trialdata.d";
+import { sample_kaplan_meier } from "./sampling";
+
 // censor function, moved from simulate.ts
 function censor(
   samples: Float64Array,
@@ -111,4 +114,46 @@ export function resampleDataset(
   }
 
   return [resampledTimesDataset, resampledEventsDataset];
+}
+
+export function sampleKaplanMeierDataset(
+  km: KaplanMeier,
+  simCount: number,
+  sampleSize: number,
+  accrual: number,
+  followup: number,
+  rng: typeof random,
+): [Float64Array[], Uint8Array[]] {
+  const timeSamples: Float64Array[] = [];
+  const events: Uint8Array[] = [];
+
+  const kmSeed = rng.uniformInt(0, 99999);
+  const uniformEnroll = rng.uniform(0, accrual);
+
+  for (let i = 0; i < simCount; i++) {
+    const [kmEvents, kmSamples] = sample_kaplan_meier(km, sampleSize, kmSeed());
+
+    const enrollmentTimes = new Float64Array(
+      Array.from({ length: sampleSize }, () => uniformEnroll()),
+    );
+
+    const samplesWithEnrollment = kmSamples.map(
+      (s, j) => s + enrollmentTimes[j],
+    );
+
+    const [censoredSamples, eventArr] = censor(
+      new Float64Array(samplesWithEnrollment),
+      accrual + followup,
+    );
+
+    const finalSamples = censoredSamples.map((s, j) => s - enrollmentTimes[j]);
+    const finalEvents = eventArr.map((indicator, idx) =>
+      indicator == 0 ? 0 : kmEvents[idx],
+    );
+
+    timeSamples.push(new Float64Array(finalSamples));
+    events.push(finalEvents);
+  }
+
+  return [timeSamples, events];
 }
