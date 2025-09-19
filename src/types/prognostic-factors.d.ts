@@ -1,18 +1,15 @@
+export enum CancerType {
+  BREAST = "breast",
+  COLORECTAL = "colorectal",
+  LUNG = "lung",
+  PROSTATE = "prostate",
+}
+
 export enum Biomarker {
   ECOG_PS = "ECOG PS",
-  AGE = "Age",
-  ISUP_GRADE = "ISUP Grade",
-  T_STAGE = "T-Stage",
   METASTATIC_STATUS = "Metastatic Status",
   METASTATIC_VOLUME = "Metastatic Volume",
   METASTATIC_SITE = "Metastatic Site",
-  PSA = "PSA",
-  PSA_AT_RT = "PSA at Radiotherapy Start",
-  ALP = "Alkaline Phosphatase (ALP)",
-  LDH = "Lactate Dehydrogenase (LDH)",
-  HB = "Hemoglobin (Hb)",
-  ALBUMIN = "Albumin",
-  AGR = "Albumin-to-Globulin Ratio (AGR)",
 }
 
 export enum RelationalOperator {
@@ -83,4 +80,4 @@ export interface AllocationChange {
 /**
  * The top-level model representing a list of PrognosticFactor objects.
  */
-export type PrognosticFactorTable = Record<Biomarker, PrognosticFactor>;
+  export type PrognosticFactorTable = Record<CancerType, Record<Biomarker, PrognosticFactor>>;

@@ -1,7 +1,7 @@
-import type { PrognosticFactorTable } from "../types/prognostic-factors.d";
-import { Biomarker, RelationalOperator } from "../types/prognostic-factors.d";
+import type { PrognosticFactorTable, PrognosticFactor } from "../types/prognostic-factors.d";
+import { Biomarker, CancerType, RelationalOperator } from "../types/prognostic-factors.d";
 
-export const ProstateFactors: PrognosticFactorTable = {
+export const ProstateFactors: Record<Biomarker, PrognosticFactor> = {
   // ECOG from https://pubmed.ncbi.nlm.nih.gov/38162494/
   [Biomarker.ECOG_PS]: {
     biomarker: Biomarker.ECOG_PS,
@@ -74,17 +74,7 @@ export const ProstateFactors: PrognosticFactorTable = {
         ci_lower: 1.17,
         ci_upper: 3.13,
         patient_population: "Metastatic PCa",
-      },
-      {
-        group: {
-          type: "categorical",
-          category: "High",
-        },
-        hazard_ratio: 2.1,
-        ci_lower: undefined,
-        ci_upper: undefined,
-        patient_population: "Metastatic PCa",
-      },
+      }
     ],
   },
   [Biomarker.METASTATIC_SITE]: {
@@ -116,4 +106,12 @@ export const ProstateFactors: PrognosticFactorTable = {
       },
     ],
   },
+};
+
+
+export const AllFactors: PrognosticFactorTable = {
+  [CancerType.BREAST]: null,
+  [CancerType.COLORECTAL]: null,
+  [CancerType.LUNG]: null,
+  [CancerType.PROSTATE]: ProstateFactors,
 };
