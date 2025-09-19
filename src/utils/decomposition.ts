@@ -1,4 +1,4 @@
-import type { KaplanMeier } from "../../types/trialdata";
+import type { KaplanMeier } from "../types/trialdata.d";
 
 const TOLERANCE = 1e-3;
 const MAX_ITERATIONS = 100;
@@ -15,6 +15,10 @@ function _validate(proportions: number[], hazard_ratios: number[]): void {
     throw new Error(
       "First hazard ratio must be 1 to represent the reference survival curve",
     );
+  }
+  const sum_proportions = proportions.reduce((sum, p) => sum + p, 0);
+  if (Math.abs(sum_proportions - 1) > 1e-6) {
+    throw new Error("Proportions must sum to 1");
   }
 }
 
@@ -80,7 +84,6 @@ export function fit_reference_survival(
     const deriv = derivative(s_fit, proportions, hazard_ratios);
 
     const avg_error = e.reduce((sum, val) => sum + Math.abs(val), 0) / e.length;
-    console.log(`Error: ${avg_error.toFixed(3)}`);
 
     if (avg_error < TOLERANCE) {
       return s_fit;
@@ -92,4 +95,26 @@ export function fit_reference_survival(
   }
 
   throw new Error("Failed to converge");
+}
+
+
+export function recompose_survival(
+  s_orig: KaplanMeier,
+  proportions_original: number[],
+  proportions_target: number[],
+  hazard_ratios: number[]
+): KaplanMeier {
+  const s_reference = fit_reference_survival(s_orig, proportions_original, hazard_ratios);
+  return {
+    time: s_reference.time,
+    probability: s_reference.probability.map((p) => {
+      let estimate = 0;
+      for (let i = 0; i < proportions_target.length; i++) {
+        const weight = proportions_target[i];
+        const hazard_ratio = hazard_ratios[i];
+        estimate += weight * (p ** hazard_ratio);
+      }
+      return estimate;
+    }),
+  }
 }

@@ -74,7 +74,6 @@ export const savePrognosticFactors = (
   });
 
   localStorage.setItem(STORAGE_KEY, JSON.stringify(differencesToSave));
-  console.log("Differences saved to local storage:", differencesToSave);
 };
 
 export const resetPrognosticFactors = () => {
