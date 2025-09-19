@@ -59,6 +59,7 @@ export function sample_kaplan_meier(
     }
   }
 
+
   // Handle 'censored' events: cases where not_censored is false.
   // This means the event did not occur by the last observed time point, so it's censored.
   const censored: boolean[] = not_censored.map((val) => !val);

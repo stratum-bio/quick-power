@@ -2,6 +2,20 @@
 import { describe, it, expect } from "vitest";
 import { sample_kaplan_meier } from "./sampling";
 import type { KaplanMeier } from "../types/trialdata.d";
+import { PrevailData } from "../mock/PREVAIL";
+import { calculateKaplanMeier } from "./kaplan-meier";
+
+// Helper function to get the median survival time from a Kaplan-Meier curve
+function getMedianSurvivalTime(km: KaplanMeier): number | undefined {
+  // Find the first time point where probability drops below or equals 0.5
+  for (let i = 0; i < km.probability.length; i++) {
+    if (km.probability[i] <= 0.5) {
+      return km.time[i];
+    }
+  }
+  // If probability never drops below 0.5, median survival is undefined
+  return undefined;
+}
 
 describe("sample_kaplan_meier", () => {
   // Define a sample Kaplan-Meier curve for testing
@@ -100,5 +114,32 @@ describe("sample_kaplan_meier", () => {
     // Expect more than just the boundary times if interpolation is happening
     // This is a weak check, but better than nothing without mocking random
     expect(uniqueEventTimes.size).toBeGreaterThan(2); // Should be more than just kmCurve.time[0] and kmCurve.time[last]
+  });
+
+  it("should produce a Kaplan-Meier curve from samples that matches the original in median survival time", () => {
+    const kmOriginal = calculateKaplanMeier(
+      PrevailData.controlTime,
+      PrevailData.controlEvent,
+    );
+    const sampleCount = 1000;
+    const seed = 122;
+
+    const [sampledEvents, sampledTimes] = sample_kaplan_meier(
+      kmOriginal,
+      sampleCount,
+      seed,
+    );
+
+    const kmFromSamples = calculateKaplanMeier(Array.from(sampledTimes), Array.from(sampledEvents));
+    const medianOriginal = getMedianSurvivalTime(kmOriginal);
+    const medianFromSamples = getMedianSurvivalTime(kmFromSamples);
+
+
+    expect(medianOriginal).toBeDefined();
+    expect(medianFromSamples).toBeDefined();
+    
+    const ratio = medianFromSamples / medianOriginal;
+    expect(ratio).toBeGreaterThan(0.9);
+    expect(ratio).toBeLessThan(1.1);
   });
 });

@@ -9,9 +9,8 @@ import {
 import {
   likelihoodRatio,
   randomPermutation,
-  permutationTestPValue,
 } from "./permutation-test";
-import { sampleDataset, resample, resampleDataset } from "./dataset-gen";
+import { sampleDataset } from "./dataset-gen";
 import random from "random";
 
 describe("sampleDataset", () => {
