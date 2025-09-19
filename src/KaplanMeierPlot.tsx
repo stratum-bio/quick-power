@@ -77,6 +77,8 @@ function kaplanMeierToTimePoints(
   return timePointMap;
 }
 
+// TODO: update this to separate curve recomposition 
+// and the time point augmentation
 function addFactorAllocation(
   data: KaplanMeierByArm,
   timePointMap: Map<number, TransformedPlotDataItem>,
@@ -170,7 +172,6 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
     }
 
     const timePointMap = kaplanMeierToTimePoints(data);
-
     if (prognosticFactorAllocation) {
       addFactorAllocation(data, timePointMap, prognosticFactorAllocation);
     }
@@ -266,7 +267,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
                   dot={false}
                   stroke={color}
                   legendType="plainline"
-                  name={`\\text{Recomposed ${armName.replace(/_/g, "\\_")}}`}
+                  name={`\\text{target ${armName.replace(/_/g, "\\_")}}`}
                   strokeWidth={2.5}
                 />
               )}
