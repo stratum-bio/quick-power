@@ -2,12 +2,11 @@ import { describe, it, expect } from "vitest";
 import {
   sum,
   samplesToLambda,
-  likelihoodRatio,
   getPercentiles,
-  randomPermutation,
   samplePValueDistribution,
   samplePValueDistributionFromData,
 } from "./simulate";
+import { likelihoodRatio, randomPermutation, permutationTestPValue } from "./permutation-test";
 import { sampleDataset, resample, resampleDataset } from "./dataset-gen";
 import random from "random";
 
