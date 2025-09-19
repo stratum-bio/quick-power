@@ -45,8 +45,10 @@ const SimulateFromTrial: React.FC = () => {
     largestSampleSize: number;
   } | null>(null);
   const [forceSimulation, setForceSimulation] = useState<boolean>(false);
-  const [showPrognosticFactors, setShowPrognosticFactors] = useState<boolean>(false);
-  const [prognosticFactorAllocation, setPrognosticFactorAllocation] = useState<AllocationChange | null>(null);
+  const [showPrognosticFactors, setShowPrognosticFactors] =
+    useState<boolean>(false);
+  const [prognosticFactorAllocation, setPrognosticFactorAllocation] =
+    useState<AllocationChange | null>(null);
 
   const handlePrognosticFactorUpdate = (allocationChange: AllocationChange) => {
     setPrognosticFactorAllocation(allocationChange);
@@ -165,7 +167,9 @@ const SimulateFromTrial: React.FC = () => {
           <span>Prognostic Factors</span>
           <span>{showPrognosticFactors ? "▲" : "▼"}</span>
         </h2>
-        {showPrognosticFactors && <PrognosticFactorAllocation onUpdate={handlePrognosticFactorUpdate} />}
+        {showPrognosticFactors && (
+          <PrognosticFactorAllocation onUpdate={handlePrognosticFactorUpdate} />
+        )}
       </div>
 
       <div className="mt-8 p-4 ring ring-gemini-blue shadow-xl shadow-gemini-blue/30 rounded-md shadow-md bg-white max-w-3xl">
