@@ -97,14 +97,17 @@ export function fit_reference_survival(
   throw new Error("Failed to converge");
 }
 
-
 export function recompose_survival(
   s_orig: KaplanMeier,
   proportions_original: number[],
   proportions_target: number[],
-  hazard_ratios: number[]
+  hazard_ratios: number[],
 ): KaplanMeier {
-  const s_reference = fit_reference_survival(s_orig, proportions_original, hazard_ratios);
+  const s_reference = fit_reference_survival(
+    s_orig,
+    proportions_original,
+    hazard_ratios,
+  );
   return {
     time: s_reference.time,
     probability: s_reference.probability.map((p) => {
@@ -112,9 +115,9 @@ export function recompose_survival(
       for (let i = 0; i < proportions_target.length; i++) {
         const weight = proportions_target[i];
         const hazard_ratio = hazard_ratios[i];
-        estimate += weight * (p ** hazard_ratio);
+        estimate += weight * p ** hazard_ratio;
       }
       return estimate;
     }),
-  }
+  };
 }
