@@ -17,11 +17,11 @@ import { linspace } from "./utils/survival";
 import { formatLegend } from "./utils/formatters.tsx";
 import { InlineMathTooltip } from "./InlineMathTooltip";
 import type { Trial, TrialArmData } from "./types/trialdata.d";
-import { weibullToMedian } from "./utils/survival";
 
 import type { SimulationWorkerResult } from "./types/simulationWorker.d";
 
 import { ValidatedInputField } from "./ValidatedInputField";
+import type { AllocationChange } from "./types/prognostic-factors.d"; 
 
 import Worker from "./workers/bootstrappedSimulation.worker.ts?worker";
 
@@ -35,9 +35,11 @@ interface TrackedBootstrapSimulationProps {
   accrual: number;
   followup: number;
   forceUpdate: boolean;
+  allocationChange?: AllocationChange;
 }
 
 interface BootstrapSimulationProps extends TrackedBootstrapSimulationProps {
+  trialName?: string;
   trial: Trial;
 }
 
@@ -97,6 +99,7 @@ function correctBounds(results: HazardDistPlotData[]) {
 }
 
 const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
+  trialName,
   trial,
   controlArmName,
   treatArmName,
@@ -104,6 +107,7 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
   accrual,
   followup,
   forceUpdate = false,
+  allocationChange, 
 }) => {
   const allProperties = {
     controlArmName,
@@ -138,16 +142,6 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
   const treatTimes = new Float64Array(treatArm.time);
   const treatEvents = new Uint8Array(treatArm.events.map((e) => (e ? 1 : 0)));
 
-  let baseMedianTTE = null;
-  let treatMedianTTE = null;
-  const weibullByArm = trial.meta.weibull_by_arm;
-  if (controlArmName in weibullByArm) {
-    baseMedianTTE = weibullToMedian(weibullByArm[controlArmName]);
-  }
-  if (treatArmName in weibullByArm) {
-    treatMedianTTE = weibullToMedian(weibullByArm[treatArmName]);
-  }
-
   useEffect(() => {
     setLoading(true);
 
@@ -174,8 +168,8 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
         const processedData: HazardDistPlotData[] = results
           .map((result) => ({
             sample_size: result.sampleSize,
-            true_baseline_tte: baseMedianTTE,
-            true_treat_tte: treatMedianTTE,
+            true_baseline_tte: Math.log(2) / result.baseInterval[2],
+            true_treat_tte: Math.log(2) / result.treatInterval[2],
             control_hazard: [
               1 / result.baseInterval[1],
               1 / result.baseInterval[0],
@@ -220,16 +214,32 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
     };
 
     jobs.forEach((sampleSize) => {
-      worker.postMessage({
-        sampleSize,
-        accrual,
-        followup,
-        datasetSimCount,
-        controlTimes,
-        controlEvents,
-        treatTimes,
-        treatEvents,
-      });
+      if (!allocationChange) {
+        worker.postMessage({
+          simulationType: "bootstrap",
+          sampleSize,
+          accrual,
+          followup,
+          datasetSimCount,
+          controlTimes,
+          controlEvents,
+          treatTimes,
+          treatEvents,
+        });
+      }
+      else {
+        worker.postMessage({
+          simulationType: "kaplan-meier",
+          sampleSize,
+          accrual,
+          followup,
+          datasetSimCount,
+          trialName,
+          controlArmName,
+          treatArmName,
+          allocation: allocationChange,
+        });
+      }
     });
 
     return () => {

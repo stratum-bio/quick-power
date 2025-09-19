@@ -47,7 +47,7 @@ const SimulateFromTrial: React.FC = () => {
   const [forceSimulation, setForceSimulation] = useState<boolean>(false);
   const [showPrognosticFactors, setShowPrognosticFactors] =
     useState<boolean>(false);
-  const [prognosticFactorAllocation, setPrognosticFactorAllocation] = useState<
+  const [allocationChange, setPrognosticFactorAllocation] = useState<
     AllocationChange | undefined
   >(undefined);
 
@@ -121,12 +121,12 @@ const SimulateFromTrial: React.FC = () => {
     return trialName ? (
       <KaplanMeierPlot
         trialName={trialName}
-        prognosticFactorAllocation={prognosticFactorAllocation}
+        allocationChange={allocationChange}
       />
     ) : (
       <></>
     );
-  }, [trialName, prognosticFactorAllocation]);
+  }, [trialName, allocationChange]);
 
   const memoizedBootstrapSimulationPlot = useMemo(() => {
     if (!simulationPlotParameters || !lambdaByArm || !trialData) {
@@ -141,9 +141,11 @@ const SimulateFromTrial: React.FC = () => {
         accrual={simulationPlotParameters.accrualPeriod}
         followup={simulationPlotParameters.followUpPeriod}
         forceUpdate={forceSimulation}
+        allocationChange={allocationChange}
+        trialName={trialName ?? ""}
       />
     );
-  }, [simulationPlotParameters, lambdaByArm, trialData, forceSimulation]);
+  }, [simulationPlotParameters, lambdaByArm, trialData, forceSimulation, allocationChange]);
 
   if (loading) {
     return <Loading message="Loading trial details..." />;

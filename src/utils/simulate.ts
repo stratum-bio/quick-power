@@ -241,7 +241,7 @@ export function logrankPValueDistributionFromData(
   };
 }
 
-export function kaplanMeierPValueDistributionFromData(
+export function kaplanMeierPValueDistribution(
   totalSampleSize: number,
   controlKM: KaplanMeier,
   treatKM: KaplanMeier,

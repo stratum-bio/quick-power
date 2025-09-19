@@ -23,7 +23,7 @@ import { recompose_survival } from "./utils/decomposition";
 interface KaplanMeierPlotProps {
   trialName: string;
   trialData?: Trial;
-  prognosticFactorAllocation?: AllocationChange;
+  allocationChange?: AllocationChange;
 }
 
 interface TransformedPlotDataItem {
@@ -82,23 +82,23 @@ function kaplanMeierToTimePoints(
 function addFactorAllocation(
   data: KaplanMeierByArm,
   timePointMap: Map<number, TransformedPlotDataItem>,
-  prognosticFactorAllocation: AllocationChange,
+  allocationChange: AllocationChange,
 ) {
   data.curves.forEach((curve, armIndex) => {
     const armName = data.arm_names[armIndex];
     const originalAllocations = [
-      prognosticFactorAllocation.original.reference,
-      ...prognosticFactorAllocation.original.comparisons,
+      allocationChange.original.reference,
+      ...allocationChange.original.comparisons,
     ];
     const targetAllocations = [
-      prognosticFactorAllocation.target.reference,
-      ...prognosticFactorAllocation.target.comparisons,
+      allocationChange.target.reference,
+      ...allocationChange.target.comparisons,
     ];
     const recomposedCurve = recompose_survival(
       curve,
       originalAllocations.map((val) => val / 100),
       targetAllocations.map((val) => val / 100),
-      prognosticFactorAllocation.hazardRatios,
+      allocationChange.hazardRatios,
     );
 
     recomposedCurve.time.forEach((time, i) => {
@@ -134,7 +134,7 @@ function addDebugTrialData(
 const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
   trialName,
   trialData,
-  prognosticFactorAllocation,
+  allocationChange,
 }) => {
   const [data, setData] = useState<KaplanMeierByArm | null>(null);
   const [plotData, setPlotData] = useState<TransformedPlotDataItem[]>([]); // Changed type to any[] for dynamic keys
@@ -172,8 +172,8 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
     }
 
     const timePointMap = kaplanMeierToTimePoints(data);
-    if (prognosticFactorAllocation) {
-      addFactorAllocation(data, timePointMap, prognosticFactorAllocation);
+    if (allocationChange) {
+      addFactorAllocation(data, timePointMap, allocationChange);
     }
 
     if (trialData) {
@@ -184,7 +184,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
       Array.from(timePointMap.values()),
     );
     setPlotData(transformedData);
-  }, [data, trialData, prognosticFactorAllocation]);
+  }, [data, trialData, allocationChange]);
 
   if (loading) {
     return <Loading message="Loading plot data..." />;
@@ -245,7 +245,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
                 dataKey={`${armName}_probability`}
                 stroke={color}
                 dot={false}
-                strokeOpacity={prognosticFactorAllocation ? 0.5 : 1.0}
+                strokeOpacity={allocationChange ? 0.5 : 1.0}
                 name={`\\text{${armName.replace(/_/g, "\\_")}}`}
                 legendType="plainline"
               />
@@ -259,7 +259,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
                   name={`\\text{TS ${armName.replace(/_/g, "\\_")}}`}
                 />
               )}
-              {prognosticFactorAllocation && (
+              {allocationChange && (
                 <Line
                   type="monotone"
                   dataKey={`recomposed_${armName}_probability`}
