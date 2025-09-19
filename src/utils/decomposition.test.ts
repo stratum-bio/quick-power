@@ -22,11 +22,6 @@ describe("decomposition", () => {
     [1.0, 0.9, 0.8, 0.7, 0.6, 0.5],
   );
 
-  const s_reference_initial: KaplanMeier = createKaplanMeier(
-    [0, 1, 2, 3, 4, 5],
-    [1.0, 0.95, 0.9, 0.85, 0.8, 0.75],
-  );
-
   const proportions_two_groups = [0.5, 0.5];
   const hazard_ratios_two_groups = [1.0, 2.0]; // First HR must be 1
 
@@ -70,7 +65,7 @@ describe("decomposition", () => {
 
   describe("fit_reference_survival", () => {
     it("should converge and return a KaplanMeier object for two groups", () => {
-      const result = fit_reference_survival(
+      const result: KaplanMeier = fit_reference_survival(
         s_original,
         proportions_two_groups,
         hazard_ratios_two_groups,
@@ -86,7 +81,7 @@ describe("decomposition", () => {
     });
 
     it("should converge and return a KaplanMeier object for three groups", () => {
-      const result = fit_reference_survival(
+      const result: KaplanMeier = fit_reference_survival(
         s_original,
         proportions_three_groups,
         hazard_ratios_three_groups,
