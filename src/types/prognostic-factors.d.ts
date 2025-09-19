@@ -76,6 +76,8 @@ export interface AllocationChange {
   biomarker: Biomarker;
   original: Allocation;
   target: Allocation;
+  // hazard ratios associated with each stratum
+  hazardRatios: number[];
 }
 
 /**

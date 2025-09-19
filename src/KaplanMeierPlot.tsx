@@ -17,10 +17,13 @@ import { PLOT_COLORS } from "./constants";
 import { formatLegend } from "./utils/formatters.tsx";
 import { calculateKaplanMeier } from "./utils/kaplan-meier";
 import AppError from "./AppError"; // Import the AppError component
+import { type AllocationChange } from "./types/prognostic-factors.d";
+import { recompose_survival } from "./utils/decomposition";
 
 interface KaplanMeierPlotProps {
   trialName: string;
   trialData?: Trial;
+  prognosticFactorAllocation?: AllocationChange;
 }
 
 interface TransformedPlotDataItem {
@@ -31,7 +34,9 @@ interface TransformedPlotDataItem {
 const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
   trialName,
   trialData,
+  prognosticFactorAllocation,
 }) => {
+  const [data, setData] = useState<KaplanMeierByArm | null>(null);
   const [plotData, setPlotData] = useState<TransformedPlotDataItem[]>([]); // Changed type to any[] for dynamic keys
   const [armNames, setArmNames] = useState<string[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
@@ -47,6 +52,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
           throw new Error(`Data not found.  Return status: ${response.status}`);
         }
         const data: KaplanMeierByArm = await response.json(); // Changed type to KaplanMeierByArm
+        setData(data);
 
         // Transform KaplanMeierByArm into a format suitable for Recharts with multiple lines/areas
         const timePointMap = new Map<number, TransformedPlotDataItem>();
@@ -65,6 +71,35 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
             }
           });
         });
+
+        if (prognosticFactorAllocation) {
+          console.log("adding prognostic factors");
+          data.curves.forEach((curve, armIndex) => {
+            const armName = data.arm_names[armIndex];
+            const originalAllocations = 
+              [prognosticFactorAllocation.original.reference, ...prognosticFactorAllocation.original.comparisons];
+            const targetAllocations = 
+              [prognosticFactorAllocation.target.reference, ...prognosticFactorAllocation.target.comparisons];
+            const recomposedCurve = recompose_survival(
+              curve,
+              originalAllocations.map(val => val / 100),
+              targetAllocations.map(val => val / 100),
+              prognosticFactorAllocation.hazardRatios,
+            );
+
+            console.log("recomposed ", recomposedCurve);
+
+            recomposedCurve.time.forEach((time, i) => {
+              let timePoint = timePointMap.get(time);
+              if (!timePoint) {
+                timePoint = { time: time };
+                timePointMap.set(time, timePoint);
+              }
+              timePoint[`recomposed_${armName}_probability`] =
+                recomposedCurve.probability[i];
+            });
+          });
+        }
 
         if (trialData) {
           trialData.arms.map((arm) => {
@@ -98,7 +133,8 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
         setPlotData(transformedData);
         setArmNames(data.arm_names);
         setTimeScale(data.time_scale);
-      } catch {
+      } catch (error) {
+        console.log(error);
         setError("Trial data not found");
       } finally {
         setLoading(false);
@@ -106,7 +142,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
     };
 
     fetchData();
-  }, [trialName]);
+  }, [trialName, prognosticFactorAllocation]);
 
   if (loading) {
     return <Loading message="Loading plot data..." />;
@@ -167,6 +203,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
                 dataKey={`${armName}_probability`}
                 stroke={color}
                 dot={false}
+                strokeOpacity={ prognosticFactorAllocation ? 0.5 : 1.0 }
                 name={`\\text{${armName.replace(/_/g, "\\_")}}`}
                 legendType="plainline"
               />
@@ -178,6 +215,18 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
                   stroke={color}
                   strokeOpacity={0.2}
                   name={`\\text{TS ${armName.replace(/_/g, "\\_")}}`}
+                />
+              )}
+              {prognosticFactorAllocation && (
+                <Line
+                  type="monotone"
+                  dataKey={`recomposed_${armName}_probability`}
+                  // dot={{ stroke: color, strokeWidth: 2 }}
+                  dot={false}
+                  stroke={color}
+                  legendType="plainline"
+                  name={`\\text{Recomposed ${armName.replace(/_/g, "\\_")}}`}
+                  strokeWidth={2.5}
                 />
               )}
             </React.Fragment>
