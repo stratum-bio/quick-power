@@ -1,9 +1,9 @@
 // src/utils/sampling.test.ts
 import { describe, it, expect } from "vitest";
-import { sample_km } from "./sampling";
+import { sample_kaplan_meier } from "./sampling";
 import type { KaplanMeier } from "../types/trialdata.d";
 
-describe("sample_km", () => {
+describe("sample_kaplan_meier", () => {
   // Define a sample Kaplan-Meier curve for testing
   const kmCurve: KaplanMeier = {
     time: [0, 10, 20, 30, 40, 50],
@@ -12,7 +12,7 @@ describe("sample_km", () => {
 
   it("should return arrays of the correct length", () => {
     const count = 100;
-    const [events, times] = sample_km(kmCurve, count);
+    const [events, times] = sample_kaplan_meier(kmCurve, count);
     expect(events.length).toBe(count);
     expect(times.length).toBe(count);
     expect(events).toBeInstanceOf(Uint8Array);
@@ -23,8 +23,8 @@ describe("sample_km", () => {
     const count = 50;
     const seed = 42;
 
-    const [events1, times1] = sample_km(kmCurve, count, seed);
-    const [events2, times2] = sample_km(kmCurve, count, seed);
+    const [events1, times1] = sample_kaplan_meier(kmCurve, count, seed);
+    const [events2, times2] = sample_kaplan_meier(kmCurve, count, seed);
 
     expect(events1).toEqual(events2);
     expect(times1).toEqual(times2);
@@ -35,8 +35,8 @@ describe("sample_km", () => {
     const seed1 = 42;
     const seed2 = 43;
 
-    const [events1, times1] = sample_km(kmCurve, count, seed1);
-    const [events2, times2] = sample_km(kmCurve, count, seed2);
+    const [events1, times1] = sample_kaplan_meier(kmCurve, count, seed1);
+    const [events2, times2] = sample_kaplan_meier(kmCurve, count, seed2);
 
     expect(events1).not.toEqual(events2);
     expect(times1).not.toEqual(times2);
@@ -44,7 +44,7 @@ describe("sample_km", () => {
 
   it("should have events and times within reasonable bounds", () => {
     const count = 1000;
-    const [events, times] = sample_km(kmCurve, count);
+    const [events, times] = sample_kaplan_meier(kmCurve, count);
 
     // Events should be 0 or 1
     events.forEach((e) => {
@@ -65,7 +65,7 @@ describe("sample_km", () => {
       probability: [1.0, 1.0, 1.0],
     };
     const count = 10;
-    const [events, times] = sample_km(noEventKm, count);
+    const [events, times] = sample_kaplan_meier(noEventKm, count);
 
     // All should be censored (event = 0) and time should be max time
     events.forEach((e) => expect(e).toBe(0));
@@ -80,7 +80,7 @@ describe("sample_km", () => {
       probability: [0.0, 0.0, 0.0],
     };
     const count = 10;
-    const [events, times] = sample_km(immediateEventKm, count);
+    const [events, times] = sample_kaplan_meier(immediateEventKm, count);
 
     // All should have events (event = 1) and time should be min time (0)
     events.forEach((e) => expect(e).toBe(1));
@@ -91,7 +91,7 @@ describe("sample_km", () => {
     // This test is harder to make deterministic without controlling the random numbers
     // but we can check if the interpolation logic is generally applied.
     const count = 1000;
-    const [events, times] = sample_km(kmCurve, count);
+    const [events, times] = sample_kaplan_meier(kmCurve, count);
 
     // Check that for events (event = 1), times are not just boundary values
     const eventTimes = times.filter((_, i) => events[i] === 1);

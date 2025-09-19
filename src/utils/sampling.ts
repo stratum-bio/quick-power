@@ -12,7 +12,7 @@ import type { KaplanMeier } from "../types/trialdata.d";
  *          - result_event: A boolean array indicating if an event occurred (true) or if censored (false).
  *          - result_time: A number array representing the sampled times.
  */
-export function sample_km(
+export function sample_kaplan_meier(
   km: KaplanMeier,
   count: number,
   seed: number = 123,
