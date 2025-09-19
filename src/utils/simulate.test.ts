@@ -8,7 +8,7 @@ import {
   samplePValueDistribution,
   samplePValueDistributionFromData,
 } from "./simulate";
-import { sampleDataset, resample, resampleDataset } from "./sampling-data";
+import { sampleDataset, resample, resampleDataset } from "./dataset-gen";
 import random from "random";
 
 describe("sampleDataset", () => {

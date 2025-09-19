@@ -1,7 +1,7 @@
 import random from "random";
 import { jStat } from "jstat";
 
-import { sampleDataset, resampleDataset } from "./sampling-data";
+import { sampleDataset, resample, resampleDataset } from "./dataset-gen";
 import type { PValueDist } from "../types/simulation";
 import { logRankTest } from "./logrank";
 import { calculateKaplanMeier } from "./kaplan-meier";
