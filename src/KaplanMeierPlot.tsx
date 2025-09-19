@@ -77,7 +77,7 @@ function kaplanMeierToTimePoints(
   return timePointMap;
 }
 
-// TODO: update this to separate curve recomposition 
+// TODO: update this to separate curve recomposition
 // and the time point augmentation
 function addFactorAllocation(
   data: KaplanMeierByArm,

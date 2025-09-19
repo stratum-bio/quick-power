@@ -4,9 +4,7 @@ import {
   getPercentiles,
 } from "../utils/simulate";
 import { type SimulationWorkerResult } from "../types/simulationWorker.d";
-import {
-  recompose_survival
-} from "../utils/decomposition";
+import { recompose_survival } from "../utils/decomposition";
 import { type KaplanMeierByArm } from "../types/trialdata";
 
 self.onmessage = async (e) => {
@@ -35,8 +33,7 @@ self.onmessage = async (e) => {
       followup,
       datasetSimCount,
     );
-  }
-  else if (simulationType == "kaplan-meier") {
+  } else if (simulationType == "kaplan-meier") {
     const {
       accrual,
       followup,
@@ -83,10 +80,16 @@ self.onmessage = async (e) => {
       allocation.hazardRatios,
     );
 
-    pValueDist = kaplanMeierPValueDistribution(sampleSize, controlKM, treatKM, accrual, followup, datasetSimCount);
-  }
-  else {
-    throw new Error("Unknown simulation: " + simulationType); 
+    pValueDist = kaplanMeierPValueDistribution(
+      sampleSize,
+      controlKM,
+      treatKM,
+      accrual,
+      followup,
+      datasetSimCount,
+    );
+  } else {
+    throw new Error("Unknown simulation: " + simulationType);
   }
 
   const percentiles = [2.5, 97.5, 50];

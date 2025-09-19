@@ -145,7 +145,13 @@ const SimulateFromTrial: React.FC = () => {
         trialName={trialName ?? ""}
       />
     );
-  }, [simulationPlotParameters, lambdaByArm, trialData, forceSimulation, allocationChange]);
+  }, [
+    simulationPlotParameters,
+    lambdaByArm,
+    trialData,
+    forceSimulation,
+    allocationChange,
+  ]);
 
   if (loading) {
     return <Loading message="Loading trial details..." />;

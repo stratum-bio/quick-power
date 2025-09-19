@@ -21,7 +21,7 @@ import type { Trial, TrialArmData } from "./types/trialdata.d";
 import type { SimulationWorkerResult } from "./types/simulationWorker.d";
 
 import { ValidatedInputField } from "./ValidatedInputField";
-import type { AllocationChange } from "./types/prognostic-factors.d"; 
+import type { AllocationChange } from "./types/prognostic-factors.d";
 
 import Worker from "./workers/bootstrappedSimulation.worker.ts?worker";
 
@@ -107,7 +107,7 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
   accrual,
   followup,
   forceUpdate = false,
-  allocationChange, 
+  allocationChange,
 }) => {
   const allProperties = {
     controlArmName,
@@ -226,8 +226,7 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
           treatTimes,
           treatEvents,
         });
-      }
-      else {
+      } else {
         worker.postMessage({
           simulationType: "kaplan-meier",
           sampleSize,

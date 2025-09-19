@@ -9,6 +9,32 @@ import {
 } from "./types/prognostic-factors.d";
 import { loadPrognosticFactors } from "./utils/prognosticFactorsStorage";
 
+type AllocationState = Record<string, { original: number; target: number }>;
+
+function initializeAllocations(
+  selectedBiomarker: Biomarker,
+  prognosticFactors: PrognosticFactorTable,
+): AllocationState {
+  const initialAllocations: AllocationState = {};
+  const factor = prognosticFactors[selectedBiomarker];
+
+  if (factor) {
+    // Initialize reference group allocation
+    initialAllocations[`${selectedBiomarker}-reference`] = {
+      original: 0,
+      target: 0,
+    };
+    // Initialize comparison group allocations
+    factor.comparison_group_list.forEach((_comp, index) => {
+      initialAllocations[`${selectedBiomarker}-comparison-${index}`] = {
+        original: 0,
+        target: 0,
+      };
+    });
+  }
+  return initialAllocations;
+}
+
 const formatGroup = (group: GroupType): string => {
   if (group.type === "numerical") {
     const operator = group.operator;
@@ -22,7 +48,7 @@ const formatGroup = (group: GroupType): string => {
 };
 
 interface PrognosticFactorAllocationProps {
-  onUpdate: (allocationChange: AllocationChange) => void;
+  onUpdate: (allocationChange: AllocationChange | null) => void;
 }
 
 const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
@@ -33,9 +59,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
   const [selectedBiomarker, setSelectedBiomarker] = useState<Biomarker | "">(
     "",
   );
-  const [allocations, setAllocations] = useState<
-    Record<string, { original: number; target: number }>
-  >({});
+  const [allocations, setAllocations] = useState<AllocationState>({});
   const [validationMessage, setValidationMessage] = useState<{
     text: string;
     type: "success" | "error";
@@ -47,26 +71,12 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
 
   useEffect(() => {
     if (selectedBiomarker && prognosticFactors) {
-      const factor = prognosticFactors[selectedBiomarker];
-      if (factor) {
-        const initialAllocations: Record<
-          string,
-          { original: number; target: number }
-        > = {};
-        // Initialize reference group allocation
-        initialAllocations[`${selectedBiomarker}-reference`] = {
-          original: 0,
-          target: 0,
-        };
-        // Initialize comparison group allocations
-        factor.comparison_group_list.forEach((_comp, index) => {
-          initialAllocations[`${selectedBiomarker}-comparison-${index}`] = {
-            original: 0,
-            target: 0,
-          };
-        });
-        setAllocations(initialAllocations);
-      }
+      setAllocations(
+        initializeAllocations(
+          selectedBiomarker as Biomarker,
+          prognosticFactors,
+        ),
+      );
     }
   }, [selectedBiomarker, prognosticFactors]);
 
@@ -74,6 +84,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
     event: React.ChangeEvent<HTMLSelectElement>,
   ) => {
     setSelectedBiomarker(event.target.value as Biomarker);
+    setValidationMessage(null);
   };
 
   const handleAllocationChange = (
@@ -85,6 +96,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
       ...prev,
       [key]: { ...prev[key], [type]: parseFloat(value) || 0 },
     }));
+    setValidationMessage(null);
   };
 
   const handleUpdate = () => {
@@ -138,6 +150,19 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
         text: `Error: Original sum is ${originalSum}%, Target sum is ${targetSum}%. Both must be 100%.`,
         type: "error",
       });
+    }
+  };
+
+  const handleReset = () => {
+    setValidationMessage(null);
+    onUpdate(null);
+    if ((selectedBiomarker as Biomarker) && prognosticFactors) {
+      setAllocations(
+        initializeAllocations(
+          selectedBiomarker as Biomarker,
+          prognosticFactors,
+        ),
+      );
     }
   };
 
@@ -274,12 +299,18 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
         </div>
       )}
 
-      <div className="mt-4 flex justify-end">
+      <div className="mt-4 flex justify-end space-x-2">
         <button
           className="px-4 py-2 bg-gemini-blue text-white rounded hover:bg-gemini-blue-hover"
           onClick={handleUpdate}
         >
           Update
+        </button>
+        <button
+          className="px-4 py-2 bg-gray-300 text-gray-800 rounded hover:bg-gray-400"
+          onClick={handleReset}
+        >
+          Reset
         </button>
       </div>
 
