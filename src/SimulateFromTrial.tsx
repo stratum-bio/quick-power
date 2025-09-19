@@ -47,8 +47,9 @@ const SimulateFromTrial: React.FC = () => {
   const [forceSimulation, setForceSimulation] = useState<boolean>(false);
   const [showPrognosticFactors, setShowPrognosticFactors] =
     useState<boolean>(false);
-  const [prognosticFactorAllocation, setPrognosticFactorAllocation] =
-    useState<AllocationChange | undefined>(undefined);
+  const [prognosticFactorAllocation, setPrognosticFactorAllocation] = useState<
+    AllocationChange | undefined
+  >(undefined);
 
   const handlePrognosticFactorUpdate = (allocationChange: AllocationChange) => {
     setPrognosticFactorAllocation(allocationChange);
@@ -117,7 +118,14 @@ const SimulateFromTrial: React.FC = () => {
   }, [trialName]);
 
   const memoizedKaplanMeierPlot = useMemo(() => {
-    return trialName ? <KaplanMeierPlot trialName={trialName} prognosticFactorAllocation={prognosticFactorAllocation}/> : <></>;
+    return trialName ? (
+      <KaplanMeierPlot
+        trialName={trialName}
+        prognosticFactorAllocation={prognosticFactorAllocation}
+      />
+    ) : (
+      <></>
+    );
   }, [trialName, prognosticFactorAllocation]);
 
   const memoizedBootstrapSimulationPlot = useMemo(() => {

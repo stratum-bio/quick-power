@@ -123,7 +123,9 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
             0,
         ),
       };
-      const hazardRatios = currentFactor.comparison_group_list.map(compare => compare.hazard_ratio ?? 1.0);
+      const hazardRatios = currentFactor.comparison_group_list.map(
+        (compare) => compare.hazard_ratio ?? 1.0,
+      );
 
       onUpdate({
         biomarker: selectedBiomarker as Biomarker,

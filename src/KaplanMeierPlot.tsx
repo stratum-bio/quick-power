@@ -31,6 +31,104 @@ interface TransformedPlotDataItem {
   [key: string]: number | [number, number] | number; // time, armName_probability, armName_interval
 }
 
+function accumulatePoints(
+  data: TransformedPlotDataItem[],
+): TransformedPlotDataItem[] {
+  const transformedData: TransformedPlotDataItem[] = [];
+  let cumulativeData = { ...data[0] };
+  for (let i = 0; i < data.length; i++) {
+    const entry = data[i];
+    cumulativeData = {
+      ...cumulativeData,
+      ...entry,
+    };
+    transformedData.push(cumulativeData);
+  }
+  return transformedData;
+}
+
+function sortAndAccumulate(
+  data: TransformedPlotDataItem[],
+): TransformedPlotDataItem[] {
+  const sortedData = data.sort((a, b) => a.time - b.time);
+  return accumulatePoints(sortedData);
+}
+
+function kaplanMeierToTimePoints(
+  data: KaplanMeierByArm,
+): Map<number, TransformedPlotDataItem> {
+  const timePointMap = new Map<number, TransformedPlotDataItem>();
+
+  data.curves.forEach((curve, armIndex) => {
+    const armName = data.arm_names[armIndex];
+    curve.time.forEach((time, i) => {
+      let timePoint = timePointMap.get(time);
+      if (!timePoint) {
+        timePoint = { time };
+        timePointMap.set(time, timePoint);
+      }
+      timePoint[`${armName}_probability`] = curve.probability[i];
+      if (curve.interval) {
+        timePoint[`${armName}_interval`] = curve.interval[i];
+      }
+    });
+  });
+
+  return timePointMap;
+}
+
+function addFactorAllocation(
+  data: KaplanMeierByArm,
+  timePointMap: Map<number, TransformedPlotDataItem>,
+  prognosticFactorAllocation: AllocationChange,
+) {
+  data.curves.forEach((curve, armIndex) => {
+    const armName = data.arm_names[armIndex];
+    const originalAllocations = [
+      prognosticFactorAllocation.original.reference,
+      ...prognosticFactorAllocation.original.comparisons,
+    ];
+    const targetAllocations = [
+      prognosticFactorAllocation.target.reference,
+      ...prognosticFactorAllocation.target.comparisons,
+    ];
+    const recomposedCurve = recompose_survival(
+      curve,
+      originalAllocations.map((val) => val / 100),
+      targetAllocations.map((val) => val / 100),
+      prognosticFactorAllocation.hazardRatios,
+    );
+
+    recomposedCurve.time.forEach((time, i) => {
+      let timePoint = timePointMap.get(time);
+      if (!timePoint) {
+        timePoint = { time: time };
+        timePointMap.set(time, timePoint);
+      }
+      timePoint[`recomposed_${armName}_probability`] =
+        recomposedCurve.probability[i];
+    });
+  });
+}
+
+function addDebugTrialData(
+  trialData: Trial,
+  timePointMap: Map<number, TransformedPlotDataItem>,
+) {
+  trialData.arms.map((arm) => {
+    const arm_events = arm.events.map((e) => (e ? 1 : 0));
+    const ts_km = calculateKaplanMeier(arm.time, arm_events);
+    ts_km.time.map((time, idx) => {
+      let timePoint = timePointMap.get(time);
+      if (!timePoint) {
+        timePoint = { time: time };
+        timePointMap.set(time, timePoint);
+      }
+      timePoint[`ts_${arm.arm_name}_probability`] = ts_km.probability[idx];
+    });
+  });
+}
+
 const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
   trialName,
   trialData,
@@ -51,86 +149,8 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
         if (!response.ok) {
           throw new Error(`Data not found.  Return status: ${response.status}`);
         }
-        const data: KaplanMeierByArm = await response.json(); // Changed type to KaplanMeierByArm
+        const data: KaplanMeierByArm = await response.json();
         setData(data);
-
-        // Transform KaplanMeierByArm into a format suitable for Recharts with multiple lines/areas
-        const timePointMap = new Map<number, TransformedPlotDataItem>();
-
-        data.curves.forEach((curve, armIndex) => {
-          const armName = data.arm_names[armIndex];
-          curve.time.forEach((time, i) => {
-            let timePoint = timePointMap.get(time);
-            if (!timePoint) {
-              timePoint = { time };
-              timePointMap.set(time, timePoint);
-            }
-            timePoint[`${armName}_probability`] = curve.probability[i];
-            if (curve.interval) {
-              timePoint[`${armName}_interval`] = curve.interval[i];
-            }
-          });
-        });
-
-        if (prognosticFactorAllocation) {
-          console.log("adding prognostic factors");
-          data.curves.forEach((curve, armIndex) => {
-            const armName = data.arm_names[armIndex];
-            const originalAllocations = 
-              [prognosticFactorAllocation.original.reference, ...prognosticFactorAllocation.original.comparisons];
-            const targetAllocations = 
-              [prognosticFactorAllocation.target.reference, ...prognosticFactorAllocation.target.comparisons];
-            const recomposedCurve = recompose_survival(
-              curve,
-              originalAllocations.map(val => val / 100),
-              targetAllocations.map(val => val / 100),
-              prognosticFactorAllocation.hazardRatios,
-            );
-
-            console.log("recomposed ", recomposedCurve);
-
-            recomposedCurve.time.forEach((time, i) => {
-              let timePoint = timePointMap.get(time);
-              if (!timePoint) {
-                timePoint = { time: time };
-                timePointMap.set(time, timePoint);
-              }
-              timePoint[`recomposed_${armName}_probability`] =
-                recomposedCurve.probability[i];
-            });
-          });
-        }
-
-        if (trialData) {
-          trialData.arms.map((arm) => {
-            const arm_events = arm.events.map((e) => (e ? 1 : 0));
-            const ts_km = calculateKaplanMeier(arm.time, arm_events);
-            ts_km.time.map((time, idx) => {
-              let timePoint = timePointMap.get(time);
-              if (!timePoint) {
-                timePoint = { time: time };
-                timePointMap.set(time, timePoint);
-              }
-              timePoint[`ts_${arm.arm_name}_probability`] =
-                ts_km.probability[idx];
-            });
-          });
-        }
-
-        const sortedData: TransformedPlotDataItem[] = Array.from(
-          timePointMap.values(),
-        ).sort((a, b) => a.time - b.time);
-        const transformedData: TransformedPlotDataItem[] = [];
-        let cumulativeData = { ...sortedData[0] };
-        for (let i = 0; i < sortedData.length; i++) {
-          const entry = sortedData[i];
-          cumulativeData = {
-            ...cumulativeData,
-            ...entry,
-          };
-          transformedData.push(cumulativeData);
-        }
-        setPlotData(transformedData);
         setArmNames(data.arm_names);
         setTimeScale(data.time_scale);
       } catch (error) {
@@ -142,7 +162,28 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
     };
 
     fetchData();
-  }, [trialName, prognosticFactorAllocation]);
+  }, [trialName]);
+
+  useEffect(() => {
+    if (!data) {
+      return;
+    }
+
+    const timePointMap = kaplanMeierToTimePoints(data);
+
+    if (prognosticFactorAllocation) {
+      addFactorAllocation(data, timePointMap, prognosticFactorAllocation);
+    }
+
+    if (trialData) {
+      addDebugTrialData(trialData, timePointMap);
+    }
+
+    const transformedData = sortAndAccumulate(
+      Array.from(timePointMap.values()),
+    );
+    setPlotData(transformedData);
+  }, [data, trialData, prognosticFactorAllocation]);
 
   if (loading) {
     return <Loading message="Loading plot data..." />;
@@ -203,7 +244,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
                 dataKey={`${armName}_probability`}
                 stroke={color}
                 dot={false}
-                strokeOpacity={ prognosticFactorAllocation ? 0.5 : 1.0 }
+                strokeOpacity={prognosticFactorAllocation ? 0.5 : 1.0}
                 name={`\\text{${armName.replace(/_/g, "\\_")}}`}
                 legendType="plainline"
               />
