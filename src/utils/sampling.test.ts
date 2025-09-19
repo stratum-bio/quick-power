@@ -130,14 +130,16 @@ describe("sample_kaplan_meier", () => {
       seed,
     );
 
-    const kmFromSamples = calculateKaplanMeier(Array.from(sampledTimes), Array.from(sampledEvents));
+    const kmFromSamples = calculateKaplanMeier(
+      Array.from(sampledTimes),
+      Array.from(sampledEvents),
+    );
     const medianOriginal = getMedianSurvivalTime(kmOriginal);
     const medianFromSamples = getMedianSurvivalTime(kmFromSamples);
 
-
     expect(medianOriginal).toBeDefined();
     expect(medianFromSamples).toBeDefined();
-    
+
     const ratio = medianFromSamples / medianOriginal;
     expect(ratio).toBeGreaterThan(0.9);
     expect(ratio).toBeLessThan(1.1);
