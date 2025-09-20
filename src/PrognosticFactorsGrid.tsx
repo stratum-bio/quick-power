@@ -137,7 +137,10 @@ const PrognosticFactorsGrid: React.FC = () => {
                     <div className="col-start-3 p-2">
                       {formatGroup(comparison.group)}
                     </div>
-                    <div className="p-2">
+                    <div
+                      className="p-2"
+                      onClick={(e) => e.stopPropagation()}
+                    >
                       <input
                         type="number"
                         value={comparison.hazard_ratio ?? ""}
