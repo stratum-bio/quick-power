@@ -66,7 +66,8 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
     type: "success" | "error";
   } | null>(null);
 
-  const prognosticFactors: DiseasePrognosticFactorTable = loadPrognosticFactors(disease);
+  const prognosticFactors: DiseasePrognosticFactorTable =
+    loadPrognosticFactors(disease);
 
   useEffect(() => {
     if (selectedBiomarker && prognosticFactors) {
@@ -187,9 +188,9 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
       </p>
       <br />
       <p className="italic">
-        Disclaimer: the default hazard ratios have not been thoroughly reviewed, please
-        verify these are correct for your investigation and update them as needed in
-        the Prognostic Factors Parameters page.
+        Disclaimer: the default hazard ratios have not been thoroughly reviewed,
+        please verify these are correct for your investigation and update them
+        as needed in the Prognostic Factors Parameters page.
       </p>
       <div className="mb-4">
         <label

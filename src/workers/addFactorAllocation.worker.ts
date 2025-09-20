@@ -1,6 +1,6 @@
 import type { KaplanMeierByArm } from "../types/trialdata";
 import type { AllocationChange } from "../types/prognostic-factors.d";
-import {recompose_survival } from "../utils/decomposition"; 
+import { recompose_survival } from "../utils/decomposition";
 interface TransformedPlotDataItem {
   time: number;
   [key: string]: number | [number, number] | number; // time, armName_probability, armName_interval
@@ -42,7 +42,9 @@ function addFactorAllocation(
 
 onmessage = (event) => {
   const { data, timePointMapArray, allocationChange } = event.data;
-  const timePointMap = new Map<number, TransformedPlotDataItem>(timePointMapArray);
+  const timePointMap = new Map<number, TransformedPlotDataItem>(
+    timePointMapArray,
+  );
 
   addFactorAllocation(data, timePointMap, allocationChange);
 

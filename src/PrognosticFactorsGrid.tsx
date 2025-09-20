@@ -75,11 +75,15 @@ const PrognosticFactorsGrid: React.FC = () => {
   ) => {
     setEditableFactors((prevFactors) => {
       const newFactors = { ...prevFactors };
-      if (
-        newFactors[cancerType] &&
-        biomarkerKey in newFactors[cancerType]
-      ) {
-        console.log("input change ", cancerType, biomarkerKey, comparisonIndex, field, value);
+      if (newFactors[cancerType] && biomarkerKey in newFactors[cancerType]) {
+        console.log(
+          "input change ",
+          cancerType,
+          biomarkerKey,
+          comparisonIndex,
+          field,
+          value,
+        );
         const factor: PrognosticFactor | undefined =
           newFactors[cancerType][biomarkerKey];
         if (factor) {
@@ -113,7 +117,10 @@ const PrognosticFactorsGrid: React.FC = () => {
           return null; // Don't render if no factors for this cancer type
         }
         return (
-          <div key={cancerType} className="border border-gemini-blue rounded-md shadow-lg mt-4 mb-4 ml-2 mr-2 md:ml-0 md:mr-0">
+          <div
+            key={cancerType}
+            className="border border-gemini-blue rounded-md shadow-lg mt-4 mb-4 ml-2 mr-2 md:ml-0 md:mr-0"
+          >
             <h3
               className={`pt-4 pb-4 text-2xl capitalize px-2 cursor-pointer flex justify-between items-center ${expandedCancerTypes[cancerType] ? "bg-gemini-blue text-white" : ""}`}
               onClick={() => toggleCancerType(cancerType as DiseaseType)}
@@ -225,9 +232,7 @@ const PrognosticFactorsGrid: React.FC = () => {
                       {/* Mobile expanded view */}
                       <div className="col-span-4 sm:hidden text-center mb-2">
                         {expandedRows[biomarkerKeyStr] && (
-                          <div
-                            className="grid grid-cols-4 border-t border-dashed border-gemini-blue/30 gap-x-4 gap-y-2"
-                          >
+                          <div className="grid grid-cols-4 border-t border-dashed border-gemini-blue/30 gap-x-4 gap-y-2">
                             {factor.comparison_group_list.map(
                               (comparison, index) => (
                                 <>
@@ -277,8 +282,14 @@ const PrognosticFactorsGrid: React.FC = () => {
                             )}
                           </div>
                         )}
-                        <div className={expandedRows[biomarkerKeyStr] ? "border-b border-dashed border-gemini-blue/30": ""}>
-                        {!expandedRows[biomarkerKeyStr] ? "\u25BC" : "\u25B2"}
+                        <div
+                          className={
+                            expandedRows[biomarkerKeyStr]
+                              ? "border-b border-dashed border-gemini-blue/30"
+                              : ""
+                          }
+                        >
+                          {!expandedRows[biomarkerKeyStr] ? "\u25BC" : "\u25B2"}
                         </div>
                       </div>
                     </div>

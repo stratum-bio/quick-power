@@ -192,7 +192,7 @@ const SimulateFromTrial: React.FC = () => {
         </h2>
         {showPrognosticFactors && (
           <PrognosticFactorAllocation
-            onUpdate={handlePrognosticFactorUpdate} 
+            onUpdate={handlePrognosticFactorUpdate}
             disease={trialData.meta.disease as DiseaseType}
           />
         )}

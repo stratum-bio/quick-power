@@ -77,8 +77,6 @@ function kaplanMeierToTimePoints(
   return timePointMap;
 }
 
-
-
 function addDebugTrialData(
   trialData: Trial,
   timePointMap: Map<number, TransformedPlotDataItem>,
