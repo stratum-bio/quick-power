@@ -99,6 +99,14 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
   };
 
   const handleUpdate = () => {
+    if (!selectedBiomarker) {
+      setValidationMessage({
+        text: "Select a biomarker to start",
+        type: "error",
+      });
+      return;
+    }
+
     let originalSum = 0;
     let targetSum = 0;
 
