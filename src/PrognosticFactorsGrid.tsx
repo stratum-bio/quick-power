@@ -98,7 +98,7 @@ const PrognosticFactorsGrid: React.FC = () => {
           return null; // Don't render if no factors for this cancer type
         }
         return (
-          <div key={cancerType} className="mb-8">
+          <div key={cancerType} className="mb-8 border-b">
             <h3 className="text-2xl capitalize mb-4 px-2">
               {cancerType.replace(/_/g, " ")}
             </h3>
