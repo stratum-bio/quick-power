@@ -60,53 +60,62 @@ function App() {
             alt="Stratum Logo"
             className="p-4 md:pt-4 mb-8 drop-shadow-md drop-shadow-gemini-blue-hover"
           />
-          <ul className="space-y-3">
-            <li>
-              <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  `block py-2 px-4 rounded-md ${isActive ? "bg-gemini-blue-hover" : "hover:bg-gemini-blue-hover"}`
-                }
-                onClick={() => setIsNavOpen(false)} // Close nav on link click
-              >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/trials"
-                className={({ isActive }) =>
-                  `block py-2 px-4 rounded-md ${isActive ? "bg-gemini-blue-hover" : "hover:bg-gemini-blue-hover"}`
-                }
-                onClick={() => setIsNavOpen(false)} // Close nav on link click
-              >
-                Start from a Trial
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/schoenfeld"
-                className={({ isActive }) =>
-                  `block py-2 px-4 rounded-md ${isActive ? "bg-gemini-blue-hover" : "hover:bg-gemini-blue-hover"}`
-                }
-                onClick={() => setIsNavOpen(false)} // Close nav on link click
-              >
-                Free-form
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/prognostic-factors"
-                className={({ isActive }) =>
-                  `block py-2 px-4 rounded-md ${isActive ? "bg-gemini-blue-hover" : "hover:bg-gemini-blue-hover"}`
-                }
-                onClick={() => setIsNavOpen(false)} // Close nav on link click
-              >
-                Prognostic Factors
-              </NavLink>
-            </li>
-          </ul>
-        </nav>
+                    <ul className="space-y-3">
+                      <li>
+                        <NavLink
+                          to="/"
+                          className={({ isActive }) =>
+                            `block py-2 px-4 rounded-md ${isActive ? "bg-gemini-blue-hover" : "hover:bg-gemini-blue-hover"}`
+                          }
+                          onClick={() => setIsNavOpen(false)} // Close nav on link click
+                        >
+                          Home
+                        </NavLink>
+                      </li>
+                      <li className="pt-4">
+                        <h3 className="text-xs uppercase mb-2">Simulation</h3>
+                        <ul className="space-y-2">
+                          <li>
+                            <NavLink
+                              to="/trials"
+                              className={({ isActive }) =>
+                                `block py-2 pl-4 rounded-md ${isActive ? "bg-gemini-blue-hover" : "hover:bg-gemini-blue-hover"}`
+                              }
+                              onClick={() => setIsNavOpen(false)} // Close nav on link click
+                            >
+                              Start from a Trial
+                            </NavLink>
+                          </li>
+                          <li>
+                            <NavLink
+                              to="/schoenfeld"
+                              className={({ isActive }) =>
+                                `block py-2 pl-4 rounded-md ${isActive ? "bg-gemini-blue-hover" : "hover:bg-gemini-blue-hover"}`
+                              }
+                              onClick={() => setIsNavOpen(false)} // Close nav on link click
+                            >
+                              Free-form
+                            </NavLink>
+                          </li>
+                        </ul>
+                      </li>
+                      <li className="pt-4">
+                        <h3 className="text-xs uppercase mb-2">Parameters</h3>
+                        <ul className="space-y-2">
+                          <li>
+                            <NavLink
+                              to="/prognostic-factors"
+                              className={({ isActive }) =>
+                                `block py-2 pl-4 rounded-md ${isActive ? "bg-gemini-blue-hover" : "hover:bg-gemini-blue-hover"}`
+                              }
+                              onClick={() => setIsNavOpen(false)} // Close nav on link click
+                            >
+                              Prognostic Factors
+                            </NavLink>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>        </nav>
 
         {/* Main Content Area */}
         <main className="md:p-6 w-full pt-16 md:pt-6">
