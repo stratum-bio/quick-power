@@ -61,10 +61,10 @@ const PrognosticFactorsGrid: React.FC = () => {
     setEditableFactors((prevFactors) => {
       const newFactors = { ...prevFactors };
       if (
-        cancerType in Object.keys(newFactors) &&
         newFactors[cancerType] &&
         biomarkerKey in newFactors[cancerType]
       ) {
+        console.log("input change ", cancerType, biomarkerKey, comparisonIndex, field, value);
         const factor: PrognosticFactor | undefined =
           newFactors[cancerType][biomarkerKey];
         if (factor) {
@@ -114,7 +114,7 @@ const PrognosticFactorsGrid: React.FC = () => {
 
             {Object.entries(factors).map(([biomarkerKeyStr, factor], index) => (
               <div
-                key={biomarkerKeyStr}
+                key={cancerType + "-" + biomarkerKeyStr}
                 className={`grid grid-cols-4 sm:grid-cols-8 gap-x-4 gap-y-2 py-2 ${index % 2 !== 0 ? "bg-gray-100" : ""} hover:bg-medium-azure-alpha`}
                 onClick={() => toggleRow(biomarkerKeyStr)}
               >
@@ -132,7 +132,7 @@ const PrognosticFactorsGrid: React.FC = () => {
 
                 {/* Comparison groups */}
                 {factor.comparison_group_list.map((comparison, index) => (
-                  <React.Fragment key={`${biomarkerKeyStr}-${index}`}>
+                  <React.Fragment key={`${cancerType}-${biomarkerKeyStr}-${index}`}>
                     {/* These divs will occupy columns 3 to 7 */}
                     <div className="col-start-3 p-2">
                       {formatGroup(comparison.group)}
@@ -254,11 +254,11 @@ const PrognosticFactorsGrid: React.FC = () => {
           {message.text}
         </div>
       )}
-      <div className="flex space-x-2 mt-4">
-        <button className="px-4 py-2 mb-4 ml-4" onClick={handleSave}>
+      <div className="flex space-x-2 mt-4 md:mt-0">
+        <button className="px-4 py-2 mb-4 ml-4 md:ml-0" onClick={handleSave}>
           Save
         </button>
-        <button className="px-4 py-2 mb-4 ml-2" onClick={handleReset}>
+        <button className="px-4 py-2 mb-4 ml-2 md:ml-0" onClick={handleReset}>
           Reset to Defaults
         </button>
       </div>
