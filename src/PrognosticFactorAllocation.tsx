@@ -93,7 +93,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
   ) => {
     setAllocations((prev) => ({
       ...prev,
-      [key]: { ...prev[key], [type]: parseFloat(value) || 0 },
+      [key]: { ...prev[key], [type]: parseFloat(value) || null },
     }));
     setValidationMessage(null);
   };
@@ -229,10 +229,9 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
             {/* Reference group doesn't have a hazard ratio */}
             <div>
               <input
-                type="number"
                 className="w-20 md:w-24 p-1"
                 value={
-                  allocations[`${selectedBiomarker}-reference`]?.original ?? 0
+                  allocations[`${selectedBiomarker}-reference`]?.original ?? ""
                 }
                 onChange={(e) =>
                   handleAllocationChange(
@@ -247,10 +246,9 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
             </div>
             <div>
               <input
-                type="number"
                 className="w-20 md:w-24 p-1"
                 value={
-                  allocations[`${selectedBiomarker}-reference`]?.target ?? 0
+                  allocations[`${selectedBiomarker}-reference`]?.target ?? ""
                 }
                 onChange={(e) =>
                   handleAllocationChange(
@@ -275,11 +273,10 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
               <div>{comparison.hazard_ratio}</div>
               <div>
                 <input
-                  type="number"
                   className="w-20 md:w-24 p-1"
                   value={
                     allocations[`${selectedBiomarker}-comparison-${index}`]
-                      ?.original ?? 0
+                      ?.original ?? ""
                   }
                   onChange={(e) =>
                     handleAllocationChange(
@@ -294,11 +291,10 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
               </div>
               <div>
                 <input
-                  type="number"
                   className="w-20 md:w-24 p-1"
                   value={
                     allocations[`${selectedBiomarker}-comparison-${index}`]
-                      ?.target ?? 0
+                      ?.target ?? ""
                   }
                   onChange={(e) =>
                     handleAllocationChange(
