@@ -77,7 +77,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
         ),
       );
     }
-  }, [selectedBiomarker, prognosticFactors]);
+  }, [selectedBiomarker]);
 
   const handleBiomarkerChange = (
     event: React.ChangeEvent<HTMLSelectElement>,
@@ -185,6 +185,12 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
         trial publication, then specify a target subgroup allocation
         distribution for simulation.
       </p>
+      <br />
+      <p className="italic">
+        Disclaimer: the default hazard ratios have not been thoroughly reviewed, please
+        verify these are correct for your investigation and update them as needed in
+        the Prognostic Factors Parameters page.
+      </p>
       <div className="mb-4">
         <label
           htmlFor="biomarker-select"
@@ -224,7 +230,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
             <div>
               <input
                 type="number"
-                className="w-24 p-1 border border-gray-300 focus:outline-none focus:border-gemini-blue focus:ring-gemini-blue rounded-md"
+                className="w-20 md:w-24 p-1"
                 value={
                   allocations[`${selectedBiomarker}-reference`]?.original ?? 0
                 }
@@ -241,7 +247,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
             <div>
               <input
                 type="number"
-                className="w-24 p-1 border border-gray-300 focus:outline-none focus:border-gemini-blue focus:ring-gemini-blue rounded-md"
+                className="w-20 md:w-24 p-1"
                 value={
                   allocations[`${selectedBiomarker}-reference`]?.target ?? 0
                 }
@@ -268,7 +274,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
               <div>
                 <input
                   type="number"
-                  className="w-24 p-1 border border-gray-300 focus:outline-none focus:border-gemini-blue focus:ring-gemini-blue rounded-md"
+                  className="w-20 md:w-24 p-1"
                   value={
                     allocations[`${selectedBiomarker}-comparison-${index}`]
                       ?.original ?? 0
@@ -286,7 +292,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
               <div>
                 <input
                   type="number"
-                  className="w-24 p-1 border border-gray-300 focus:outline-none focus:border-gemini-blue focus:ring-gemini-blue rounded-md"
+                  className="w-20 md:w-24 p-1"
                   value={
                     allocations[`${selectedBiomarker}-comparison-${index}`]
                       ?.target ?? 0
