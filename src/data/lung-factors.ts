@@ -35,21 +35,21 @@ export const LungFactors: DiseasePrognosticFactorTable = {
       {
         group: {
           type: "categorical",
-          category: "Current Smoker",
-        },
-        hazard_ratio: 1.68,
-        ci_lower: 1.5,
-        ci_upper: 1.89,
-        patient_population: "Large, multivariate-adjusted cohort study.",
-      },
-      {
-        group: {
-          type: "categorical",
           category: "Former Smoker",
         },
         hazard_ratio: 1.26,
         ci_lower: 1.13,
         ci_upper: 1.4,
+        patient_population: "Large, multivariate-adjusted cohort study.",
+      },
+      {
+        group: {
+          type: "categorical",
+          category: "Current Smoker",
+        },
+        hazard_ratio: 1.68,
+        ci_lower: 1.5,
+        ci_upper: 1.89,
         patient_population: "Large, multivariate-adjusted cohort study.",
       },
     ],
