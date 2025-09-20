@@ -230,7 +230,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
             {/* Reference group doesn't have a hazard ratio */}
             <div>
               <input
-                className="w-20 md:w-24 p-1"
+                className="w-16 md:w-20 md:w-24 p-1"
                 value={
                   allocations[`${selectedBiomarker}-reference`]?.original ?? ""
                 }
@@ -247,7 +247,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
             </div>
             <div>
               <input
-                className="w-20 md:w-24 p-1"
+                className="w-16 md:w-20 md:w-24 p-1"
                 value={
                   allocations[`${selectedBiomarker}-reference`]?.target ?? ""
                 }
@@ -274,7 +274,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
               <div>{comparison.hazard_ratio}</div>
               <div>
                 <input
-                  className="w-20 md:w-24 p-1"
+                  className="w-16 md:w-20 md:w-24 p-1"
                   value={
                     allocations[`${selectedBiomarker}-comparison-${index}`]
                       ?.original ?? ""
@@ -292,7 +292,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
               </div>
               <div>
                 <input
-                  className="w-20 md:w-24 p-1"
+                  className="w-16 md:w-20 md:w-24 p-1"
                   value={
                     allocations[`${selectedBiomarker}-comparison-${index}`]
                       ?.target ?? ""
