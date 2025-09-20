@@ -22,7 +22,7 @@ export const LungFactors: DiseasePrognosticFactorTable = {
         ci_lower: 2.03,
         ci_upper: 3.63,
         patient_population:
-          "High - Consistent across meta-analysis of real-world data.",
+          "Meta-analysis of real-world data.",
       },
     ],
   },
@@ -42,7 +42,7 @@ export const LungFactors: DiseasePrognosticFactorTable = {
         ci_lower: 1.5,
         ci_upper: 1.89,
         patient_population:
-          "High - Based on large, multivariate-adjusted cohort study.",
+          "Large, multivariate-adjusted cohort study.",
       },
       {
         group: {
@@ -53,7 +53,7 @@ export const LungFactors: DiseasePrognosticFactorTable = {
         ci_lower: 1.13,
         ci_upper: 1.4,
         patient_population:
-          "High - Based on large, multivariate-adjusted cohort study.",
+          "Large, multivariate-adjusted cohort study.",
       },
     ],
   },
@@ -73,7 +73,7 @@ export const LungFactors: DiseasePrognosticFactorTable = {
         ci_lower: 1.43,
         ci_upper: 1.91,
         patient_population:
-          "High - Consistent across systematic review and meta-analysis.",
+          "Systematic review and meta-analysis.",
       },
     ],
   },

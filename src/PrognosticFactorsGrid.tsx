@@ -83,95 +83,95 @@ const PrognosticFactorsGrid: React.FC = () => {
   };
 
   return (
-    <div className="prognostic-factors-grid">
+    <div>
       {Object.entries(editableFactors).map(([cancerType, factors]) => {
         if (Object.keys(factors).length === 0) {
           return null; // Don't render if no factors for this cancer type
         }
         return (
           <div key={cancerType} className="mb-8">
-            <h3 className="text-2xl capitalize">{cancerType.replace(/_/g, " ")}</h3>
-            <table className="table table-striped">
-              <thead>
-                <tr>
-                  <th>Biomarker</th>
-                  <th>Reference Group</th>
-                  <th>Comparison Group</th>
-                  <th>Hazard Ratio (HR)</th>
-                  <th>CI Lower</th>
-                  <th>CI Upper</th>
-                  <th>Patient Population</th>
-                </tr>
-              </thead>
-              <tbody>
-                {Object.entries(factors).map(([biomarkerKeyStr, factor]) =>
-                  factor.comparison_group_list.map((comparison, index) => (
-                    <tr key={`${biomarkerKeyStr}-${index}`}>
-                      {index === 0 && (
-                        <>
-                          <td rowSpan={factor.comparison_group_list.length}>
-                            {biomarkerKeyStr.replace(/_/g, " ")}
-                          </td>
-                          <td rowSpan={factor.comparison_group_list.length}>
-                            {formatGroup(factor.reference_group)}
-                          </td>
-                        </>
-                      )}
-                      <td>{formatGroup(comparison.group)}</td>
-                      <td>
-                        <input
-                          type="number"
-                          value={comparison.hazard_ratio ?? ""}
-                          onChange={(e) =>
-                            handleInputChange(
-                              cancerType as DiseaseType,
-                              biomarkerKeyStr as Biomarker,
-                              index,
-                              "hazard_ratio",
-                              e.target.value,
-                            )
-                          }
-                          className="w-24 p-1 border rounded"
-                        />
-                      </td>
-                      <td>
-                        <input
-                          type="number"
-                          value={comparison.ci_lower ?? ""}
-                          onChange={(e) =>
-                            handleInputChange(
-                              cancerType as DiseaseType,
-                              biomarkerKeyStr as Biomarker,
-                              index,
-                              "ci_lower",
-                              e.target.value,
-                            )
-                          }
-                          className="w-24 p-1 border rounded"
-                        />
-                      </td>
-                      <td>
-                        <input
-                          type="number"
-                          value={comparison.ci_upper ?? ""}
-                          onChange={(e) =>
-                            handleInputChange(
-                              cancerType as DiseaseType,
-                              biomarkerKeyStr as Biomarker,
-                              index,
-                              "ci_upper",
-                              e.target.value,
-                            )
-                          }
-                          className="w-24 p-1 border rounded"
-                        />
-                      </td>
-                      <td>{comparison.patient_population}</td>
-                    </tr>
-                  )),
-                )}
-              </tbody>
-            </table>
+            <h3 className="text-2xl capitalize mb-2">{cancerType.replace(/_/g, " ")}</h3>
+            <div className="grid grid-cols-7 gap-x-4 gap-y-2 font-bold border-b pb-2">
+              <div className="p-2">Biomarker</div>
+              <div className="p-2">Reference Group</div>
+              <div className="p-2">Comparison Group</div>
+              <div className="p-2">Hazard Ratio (HR)</div>
+              <div className="p-2">CI Lower</div>
+              <div className="p-2">CI Upper</div>
+              <div className="p-2">Patient Population</div>
+            </div>
+
+            {Object.entries(factors).map(([biomarkerKeyStr, factor]) => (
+              <div
+                key={biomarkerKeyStr}
+                className={`grid grid-cols-7 grid-rows-${factor.comparison_group_list.length} gap-x-4 gap-y-2 border-b py-2`}
+              >
+                {/* Biomarker and Reference Group cells with rowSpan */}
+                <div className={`row-span-${factor.comparison_group_list.length} items-center p-2`}>
+                  {biomarkerKeyStr.replace(/_/g, " ")}
+                </div>
+                <div className={`row-span-${factor.comparison_group_list.length} items-center p-2`}>
+                  {formatGroup(factor.reference_group)}
+                </div>
+
+                {/* Comparison groups */}
+                {factor.comparison_group_list.map((comparison, index) => (
+                  <React.Fragment key={`${biomarkerKeyStr}-${index}`}>
+                    {/* These divs will occupy columns 3 to 7 */}
+                    <div className="col-start-3 p-2">{formatGroup(comparison.group)}</div>
+                    <div className="p-2">
+                      <input
+                        type="number"
+                        value={comparison.hazard_ratio ?? ""}
+                        onChange={(e) =>
+                          handleInputChange(
+                            cancerType as DiseaseType,
+                            biomarkerKeyStr as Biomarker,
+                            index,
+                            "hazard_ratio",
+                            e.target.value,
+                          )
+                        }
+                        className="w-24 p-1 border rounded"
+                      />
+                    </div>
+                    <div className="p-2">
+                      <input
+                        type="number"
+                        value={comparison.ci_lower ?? ""}
+                        onChange={(e) =>
+                          handleInputChange(
+                            cancerType as DiseaseType,
+                            biomarkerKeyStr as Biomarker,
+                            index,
+                            "ci_lower",
+                            e.target.value,
+                          )
+                        }
+                        className="w-24 p-1 border rounded"
+                      />
+                    </div>
+                    <div className="p-2">
+                      <input
+                        type="number"
+                        value={comparison.ci_upper ?? ""}
+                        onChange={(e) =>
+                          handleInputChange(
+                            cancerType as DiseaseType,
+                            biomarkerKeyStr as Biomarker,
+                            index,
+                            "ci_upper",
+                            e.target.value,
+                          )
+                        }
+                        className="w-24 p-1 border rounded"
+                      />
+                    </div>
+                    <div className="p-2">{comparison.patient_population}</div>
+                  </React.Fragment>
+                ))}
+              </div>
+            ))}
           </div>
         );
       })}
