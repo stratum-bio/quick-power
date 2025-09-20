@@ -92,7 +92,7 @@ const PrognosticFactorsGrid: React.FC = () => {
   };
 
   return (
-    <div className="md:w-4xl">
+    <div className="md:w-5xl">
       {Object.entries(editableFactors).map(([cancerType, factors]) => {
         if (Object.keys(factors).length === 0) {
           return null; // Don't render if no factors for this cancer type
@@ -102,20 +102,20 @@ const PrognosticFactorsGrid: React.FC = () => {
             <h3 className="text-2xl capitalize mb-4 px-2">
               {cancerType.replace(/_/g, " ")}
             </h3>
-            <div className="grid grid-cols-4 sm:grid-cols-7 gap-x-4 gap-y-2 font-bold border-t border-b pb-2 uppercase text-xs">
+            <div className="grid grid-cols-4 sm:grid-cols-8 gap-x-4 gap-y-2 font-bold border-t border-b pb-2 uppercase text-xs">
               <div className="p-2">Biomarker</div>
               <div className="p-2">Reference Group</div>
               <div className="p-2">Comparison Group</div>
               <div className="p-2">Hazard Ratio (HR)</div>
               <div className="p-2 hidden sm:block">CI Lower</div>
               <div className="p-2 hidden sm:block">CI Upper</div>
-              <div className="p-2 hidden sm:block sm:min-w-24">Patient Population</div>
+              <div className="p-2 hidden sm:block col-span-2">Patient Population</div>
             </div>
 
             {Object.entries(factors).map(([biomarkerKeyStr, factor], index) => (
               <div
                 key={biomarkerKeyStr}
-                className={`grid grid-cols-4 sm:grid-cols-7 gap-x-4 gap-y-2 py-2 ${index % 2 !== 0 ? "bg-gray-100" : ""} hover:bg-medium-azure-alpha`}
+                className={`grid grid-cols-4 sm:grid-cols-8 gap-x-4 gap-y-2 py-2 ${index % 2 !== 0 ? "bg-gray-100" : ""} hover:bg-medium-azure-alpha`}
                 onClick={() => toggleRow(biomarkerKeyStr)}
               >
                 {/* Biomarker and Reference Group cells with rowSpan */}
@@ -186,7 +186,7 @@ const PrognosticFactorsGrid: React.FC = () => {
                         className="w-12 md:w-20 p-1 border rounded"
                       />
                     </div>
-                    <div className="p-2 hidden sm:block">
+                    <div className="p-2 hidden sm:block col-span-2">
                       {comparison.patient_population}
                     </div>
                   </React.Fragment>
