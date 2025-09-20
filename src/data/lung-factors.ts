@@ -21,8 +21,7 @@ export const LungFactors: DiseasePrognosticFactorTable = {
         hazard_ratio: 2.72,
         ci_lower: 2.03,
         ci_upper: 3.63,
-        patient_population:
-          "Meta-analysis of real-world data.",
+        patient_population: "Meta-analysis of real-world data.",
       },
     ],
   },
@@ -41,8 +40,7 @@ export const LungFactors: DiseasePrognosticFactorTable = {
         hazard_ratio: 1.68,
         ci_lower: 1.5,
         ci_upper: 1.89,
-        patient_population:
-          "Large, multivariate-adjusted cohort study.",
+        patient_population: "Large, multivariate-adjusted cohort study.",
       },
       {
         group: {
@@ -52,8 +50,7 @@ export const LungFactors: DiseasePrognosticFactorTable = {
         hazard_ratio: 1.26,
         ci_lower: 1.13,
         ci_upper: 1.4,
-        patient_population:
-          "Large, multivariate-adjusted cohort study.",
+        patient_population: "Large, multivariate-adjusted cohort study.",
       },
     ],
   },
@@ -72,8 +69,7 @@ export const LungFactors: DiseasePrognosticFactorTable = {
         hazard_ratio: 1.65,
         ci_lower: 1.43,
         ci_upper: 1.91,
-        patient_population:
-          "Systematic review and meta-analysis.",
+        patient_population: "Systematic review and meta-analysis.",
       },
     ],
   },
