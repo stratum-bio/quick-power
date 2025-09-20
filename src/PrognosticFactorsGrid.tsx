@@ -90,8 +90,8 @@ const PrognosticFactorsGrid: React.FC = () => {
         }
         return (
           <div key={cancerType} className="mb-8">
-            <h3 className="text-2xl capitalize mb-2">{cancerType.replace(/_/g, " ")}</h3>
-            <div className="grid grid-cols-7 gap-x-4 gap-y-2 font-bold border-b pb-2">
+            <h3 className="text-2xl capitalize mb-4 px-2">{cancerType.replace(/_/g, " ")}</h3>
+            <div className="grid grid-cols-7 gap-x-4 gap-y-2 font-bold border-t border-b pb-2 uppercase text-xs">
               <div className="p-2">Biomarker</div>
               <div className="p-2">Reference Group</div>
               <div className="p-2">Comparison Group</div>
@@ -101,10 +101,10 @@ const PrognosticFactorsGrid: React.FC = () => {
               <div className="p-2">Patient Population</div>
             </div>
 
-            {Object.entries(factors).map(([biomarkerKeyStr, factor]) => (
+            {Object.entries(factors).map(([biomarkerKeyStr, factor], index) => (
               <div
                 key={biomarkerKeyStr}
-                className={`grid grid-cols-7 grid-rows-${factor.comparison_group_list.length} gap-x-4 gap-y-2 border-b py-2`}
+                className={`grid grid-cols-7 grid-rows-${factor.comparison_group_list.length} gap-x-4 gap-y-2 py-2 ${index % 2 !== 0 ? "bg-gray-100" : ""} hover:bg-medium-azure-alpha`}
               >
                 {/* Biomarker and Reference Group cells with rowSpan */}
                 <div className={`row-span-${factor.comparison_group_list.length} items-center p-2`}>
@@ -132,7 +132,7 @@ const PrognosticFactorsGrid: React.FC = () => {
                             e.target.value,
                           )
                         }
-                        className="w-24 p-1 border rounded"
+                        className="w-12 md:w-20 p-1 border rounded"
                       />
                     </div>
                     <div className="p-2">
@@ -148,7 +148,7 @@ const PrognosticFactorsGrid: React.FC = () => {
                             e.target.value,
                           )
                         }
-                        className="w-24 p-1 border rounded"
+                        className="w-12 md:w-20 p-1 border rounded"
                       />
                     </div>
                     <div className="p-2">
@@ -164,7 +164,7 @@ const PrognosticFactorsGrid: React.FC = () => {
                             e.target.value,
                           )
                         }
-                        className="w-24 p-1 border rounded"
+                        className="w-12 md:w-20 p-1 border rounded"
                       />
                     </div>
                     <div className="p-2">{comparison.patient_population}</div>

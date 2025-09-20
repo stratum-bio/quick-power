@@ -48,12 +48,27 @@ button {
   font-family: inherit;
   cursor: pointer;
   transition: border-color 0.25s;
+
+  background-color: #1c2d51;
+  color: white;
 }
 button:hover {
+  background-color: #3d507c;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+input {
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--color-gray-400);
+  border-radius: var(--radius-md);
+}
+input:focus {
+  border-color: var(--color-gemini-blue);
+  outline-style: none;
 }
 
 
