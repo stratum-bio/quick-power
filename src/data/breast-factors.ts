@@ -1,6 +1,6 @@
 import {
   Biomarker,
-  DiseasePrognosticFactorTable,
+  type DiseasePrognosticFactorTable,
 } from "../types/prognostic-factors.d";
 
 export const BreastFactors: DiseasePrognosticFactorTable = {

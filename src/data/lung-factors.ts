@@ -2,7 +2,7 @@ import {
   Biomarker,
   RelationalOperator,
   type DiseasePrognosticFactorTable,
-} from "../types/prognostic-factors";
+} from "../types/prognostic-factors.d";
 
 export const LungFactors: DiseasePrognosticFactorTable = {
   [Biomarker.ECOG_PS]: {

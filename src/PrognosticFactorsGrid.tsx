@@ -90,7 +90,7 @@ const PrognosticFactorsGrid: React.FC = () => {
         }
         return (
           <div key={cancerType} className="mb-8">
-            <h1>Prognostic Factors for {cancerType.replace(/_/g, " ")}</h1>
+            <h3 className="text-2xl capitalize">{cancerType.replace(/_/g, " ")}</h3>
             <table className="table table-striped">
               <thead>
                 <tr>
