@@ -51,9 +51,10 @@ const SimulateFromTrial: React.FC = () => {
     AllocationChange | undefined
   >(undefined);
 
-  const handlePrognosticFactorUpdate = (allocationChange: AllocationChange) => {
+  const handlePrognosticFactorUpdate = (
+    allocationChange: AllocationChange | undefined,
+  ) => {
     setPrognosticFactorAllocation(allocationChange);
-    console.log("Prognostic Factor Allocation Updated:", allocationChange);
   };
 
   useEffect(() => {

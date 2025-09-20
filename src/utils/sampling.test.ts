@@ -140,7 +140,7 @@ describe("sample_kaplan_meier", () => {
     expect(medianOriginal).toBeDefined();
     expect(medianFromSamples).toBeDefined();
 
-    const ratio = medianFromSamples / medianOriginal;
+    const ratio = (medianFromSamples ?? 0) / (medianOriginal ?? 0);
     expect(ratio).toBeGreaterThan(0.9);
     expect(ratio).toBeLessThan(1.1);
   });

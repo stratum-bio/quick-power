@@ -5,7 +5,7 @@ import {
 } from "../utils/simulate";
 import { type SimulationWorkerResult } from "../types/simulationWorker.d";
 import { recompose_survival } from "../utils/decomposition";
-import { type KaplanMeierByArm } from "../types/trialdata";
+import { type KaplanMeierByArm } from "../types/trialdata.d";
 
 self.onmessage = async (e) => {
   const simulationType = e.data.simulationType;

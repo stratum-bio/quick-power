@@ -1,15 +1,32 @@
-export enum CancerType {
-  BREAST = "breast",
-  COLORECTAL = "colorectal",
-  LUNG = "lung",
-  PROSTATE = "prostate",
+export enum DiseaseType {
+  BREAST_CANCER = "breast_cancer",
+  COLORECTAL_CANCER = "colorectal_cancer",
+  LUNG_CANCER = "lung_cancer",
+  PROSTATE_CANCER = "prostate_cancer",
 }
 
 export enum Biomarker {
+  // Prostate
   ECOG_PS = "ECOG PS",
+
   METASTATIC_STATUS = "Metastatic Status",
   METASTATIC_VOLUME = "Metastatic Volume",
   METASTATIC_SITE = "Metastatic Site",
+
+  // Brease
+  BREAST_M_STAGE = "Metastasis (M Stage)",
+  BREAST_MOLECULAR_SUBTYPE = "Molecular Subtype",
+
+  // Colorectal
+  COLORECTAL_AJCC = "AJCC TNM Stage",
+  COLORECTAL_PRIMARY_LOC = "Primary Tumor Location",
+  COLORECTAL_HISTOLOGICAL_GRADE = "Histological Grade",
+  COLORECTAL_LVI = "Lymphovascular Invasion (LVI)",
+  COLORECTAL_PNI = "Perineural Invasion (PNI)",
+
+  // Lung
+  SMOKING_STATUS = "Smoking Status",
+  WEIGHT_LOSS = "Weight Loss",
 }
 
 export enum RelationalOperator {
@@ -80,4 +97,9 @@ export interface AllocationChange {
 /**
  * The top-level model representing a list of PrognosticFactor objects.
  */
-  export type PrognosticFactorTable = Record<CancerType, Record<Biomarker, PrognosticFactor>>;
+export type DiseasePrognosticFactorTable = Partial<
+  Record<Biomarker, PrognosticFactor>
+>;
+export type PrognosticFactorTable = Partial<
+  Record<DiseaseType, DiseasePrognosticFactorTable>
+>;

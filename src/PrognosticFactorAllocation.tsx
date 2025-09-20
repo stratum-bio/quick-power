@@ -1,22 +1,25 @@
 import React, { useState, useEffect } from "react";
 import {
   Biomarker,
-  type PrognosticFactorTable,
+  type DiseasePrognosticFactorTable,
   type GroupType,
   type PrognosticFactor,
   type AllocationChange,
   type Allocation,
 } from "./types/prognostic-factors.d";
 import { loadPrognosticFactors } from "./utils/prognosticFactorsStorage";
+import { DiseaseType } from "./types/prognostic-factors.d";
 
 type AllocationState = Record<string, { original: number; target: number }>;
 
+const CANCER_TYPE = DiseaseType.PROSTATE_CANCER;
+
 function initializeAllocations(
   selectedBiomarker: Biomarker,
-  prognosticFactors: PrognosticFactorTable,
+  diseaseFactors: DiseasePrognosticFactorTable,
 ): AllocationState {
   const initialAllocations: AllocationState = {};
-  const factor = prognosticFactors[selectedBiomarker];
+  const factor = diseaseFactors[selectedBiomarker];
 
   if (factor) {
     // Initialize reference group allocation
@@ -48,14 +51,14 @@ const formatGroup = (group: GroupType): string => {
 };
 
 interface PrognosticFactorAllocationProps {
-  onUpdate: (allocationChange: AllocationChange | null) => void;
+  onUpdate: (allocationChange: AllocationChange | undefined) => void;
 }
 
 const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
   onUpdate,
 }) => {
   const [prognosticFactors, setPrognosticFactors] =
-    useState<PrognosticFactorTable | null>(null);
+    useState<DiseasePrognosticFactorTable | null>(null);
   const [selectedBiomarker, setSelectedBiomarker] = useState<Biomarker | "">(
     "",
   );
@@ -66,7 +69,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
   } | null>(null);
 
   useEffect(() => {
-    setPrognosticFactors(loadPrognosticFactors());
+    setPrognosticFactors(loadPrognosticFactors(CANCER_TYPE));
   }, []);
 
   useEffect(() => {
@@ -155,7 +158,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
 
   const handleReset = () => {
     setValidationMessage(null);
-    onUpdate(null);
+    onUpdate(undefined);
     if ((selectedBiomarker as Biomarker) && prognosticFactors) {
       setAllocations(
         initializeAllocations(

@@ -1,10 +1,11 @@
 import {
-  loadPrognosticFactors,
-  savePrognosticFactors,
-  resetPrognosticFactors,
+  loadAllPrognosticFactors,
+  saveAllPrognosticFactors,
+  resetAllPrognosticFactors,
 } from "./utils/prognosticFactorsStorage";
 import React, { useState } from "react";
 import {
+  DiseaseType,
   type GroupType,
   type PrognosticFactorTable,
   type PrognosticFactor,
@@ -26,7 +27,7 @@ const formatGroup = (group: GroupType): string => {
 
 const PrognosticFactorsGrid: React.FC = () => {
   const [editableFactors, setEditableFactors] = useState<PrognosticFactorTable>(
-    () => loadPrognosticFactors(),
+    () => loadAllPrognosticFactors(),
   );
 
   const [message, setMessage] = useState<{
@@ -42,6 +43,7 @@ const PrognosticFactorsGrid: React.FC = () => {
   };
 
   const handleInputChange = (
+    cancerType: DiseaseType,
     biomarkerKey: Biomarker,
     comparisonIndex: number,
     field: "hazard_ratio" | "ci_lower" | "ci_upper",
@@ -49,109 +51,131 @@ const PrognosticFactorsGrid: React.FC = () => {
   ) => {
     setEditableFactors((prevFactors) => {
       const newFactors = { ...prevFactors };
-      const factor: PrognosticFactor = newFactors[biomarkerKey];
-      if (factor) {
-        const comparison = { ...factor.comparison_group_list[comparisonIndex] };
-        (comparison as Comparison)[field] =
-          value === "" ? undefined : parseFloat(value);
-        factor.comparison_group_list[comparisonIndex] = comparison;
+      if (
+        cancerType in Object.keys(newFactors) &&
+        newFactors[cancerType] &&
+        biomarkerKey in newFactors[cancerType]
+      ) {
+        const factor: PrognosticFactor | undefined =
+          newFactors[cancerType][biomarkerKey];
+        if (factor) {
+          const comparison = {
+            ...factor.comparison_group_list[comparisonIndex],
+          };
+          (comparison as Comparison)[field] =
+            value === "" ? undefined : parseFloat(value);
+          factor.comparison_group_list[comparisonIndex] = comparison;
+        }
       }
       return newFactors;
     });
   };
 
   const handleSave = () => {
-    savePrognosticFactors(editableFactors);
+    saveAllPrognosticFactors(editableFactors);
     showMessage("Prognostic factor updates saved.", "success");
   };
 
   const handleReset = () => {
-    resetPrognosticFactors();
-    setEditableFactors(loadPrognosticFactors());
+    resetAllPrognosticFactors();
+    setEditableFactors(loadAllPrognosticFactors());
     showMessage("Data reset to defaults.", "neutral");
   };
 
   return (
     <div className="prognostic-factors-grid">
-      <h1>Prognostic Factors for Prostate Cancer</h1>
-      <table className="table table-striped">
-        <thead>
-          <tr>
-            <th>Biomarker</th>
-            <th>Reference Group</th>
-            <th>Comparison Group</th>
-            <th>Hazard Ratio (HR)</th>
-            <th>CI Lower</th>
-            <th>CI Upper</th>
-            <th>Patient Population</th>
-          </tr>
-        </thead>
-        <tbody>
-          {Object.entries(editableFactors).map(([biomarkerKeyStr, factor]) =>
-            factor.comparison_group_list.map((comparison, index) => (
-              <tr key={`${biomarkerKeyStr}-${index}`}>
-                {index === 0 && (
-                  <>
-                    <td rowSpan={factor.comparison_group_list.length}>
-                      {biomarkerKeyStr.replace(/_/g, " ")}
-                    </td>
-                    <td rowSpan={factor.comparison_group_list.length}>
-                      {formatGroup(factor.reference_group)}
-                    </td>
-                  </>
+      {Object.entries(editableFactors).map(([cancerType, factors]) => {
+        if (Object.keys(factors).length === 0) {
+          return null; // Don't render if no factors for this cancer type
+        }
+        return (
+          <div key={cancerType} className="mb-8">
+            <h1>Prognostic Factors for {cancerType.replace(/_/g, " ")}</h1>
+            <table className="table table-striped">
+              <thead>
+                <tr>
+                  <th>Biomarker</th>
+                  <th>Reference Group</th>
+                  <th>Comparison Group</th>
+                  <th>Hazard Ratio (HR)</th>
+                  <th>CI Lower</th>
+                  <th>CI Upper</th>
+                  <th>Patient Population</th>
+                </tr>
+              </thead>
+              <tbody>
+                {Object.entries(factors).map(([biomarkerKeyStr, factor]) =>
+                  factor.comparison_group_list.map((comparison, index) => (
+                    <tr key={`${biomarkerKeyStr}-${index}`}>
+                      {index === 0 && (
+                        <>
+                          <td rowSpan={factor.comparison_group_list.length}>
+                            {biomarkerKeyStr.replace(/_/g, " ")}
+                          </td>
+                          <td rowSpan={factor.comparison_group_list.length}>
+                            {formatGroup(factor.reference_group)}
+                          </td>
+                        </>
+                      )}
+                      <td>{formatGroup(comparison.group)}</td>
+                      <td>
+                        <input
+                          type="number"
+                          value={comparison.hazard_ratio ?? ""}
+                          onChange={(e) =>
+                            handleInputChange(
+                              cancerType as DiseaseType,
+                              biomarkerKeyStr as Biomarker,
+                              index,
+                              "hazard_ratio",
+                              e.target.value,
+                            )
+                          }
+                          className="w-24 p-1 border rounded"
+                        />
+                      </td>
+                      <td>
+                        <input
+                          type="number"
+                          value={comparison.ci_lower ?? ""}
+                          onChange={(e) =>
+                            handleInputChange(
+                              cancerType as DiseaseType,
+                              biomarkerKeyStr as Biomarker,
+                              index,
+                              "ci_lower",
+                              e.target.value,
+                            )
+                          }
+                          className="w-24 p-1 border rounded"
+                        />
+                      </td>
+                      <td>
+                        <input
+                          type="number"
+                          value={comparison.ci_upper ?? ""}
+                          onChange={(e) =>
+                            handleInputChange(
+                              cancerType as DiseaseType,
+                              biomarkerKeyStr as Biomarker,
+                              index,
+                              "ci_upper",
+                              e.target.value,
+                            )
+                          }
+                          className="w-24 p-1 border rounded"
+                        />
+                      </td>
+                      <td>{comparison.patient_population}</td>
+                    </tr>
+                  )),
                 )}
-                <td>{formatGroup(comparison.group)}</td>
-                <td>
-                  <input
-                    type="number"
-                    value={comparison.hazard_ratio ?? ""}
-                    onChange={(e) =>
-                      handleInputChange(
-                        biomarkerKeyStr as Biomarker,
-                        index,
-                        "hazard_ratio",
-                        e.target.value,
-                      )
-                    }
-                    className="w-24 p-1 border rounded"
-                  />
-                </td>
-                <td>
-                  <input
-                    type="number"
-                    value={comparison.ci_lower ?? ""}
-                    onChange={(e) =>
-                      handleInputChange(
-                        biomarkerKeyStr as Biomarker,
-                        index,
-                        "ci_lower",
-                        e.target.value,
-                      )
-                    }
-                    className="w-24 p-1 border rounded"
-                  />
-                </td>
-                <td>
-                  <input
-                    type="number"
-                    value={comparison.ci_upper ?? ""}
-                    onChange={(e) =>
-                      handleInputChange(
-                        biomarkerKeyStr as Biomarker,
-                        index,
-                        "ci_upper",
-                        e.target.value,
-                      )
-                    }
-                    className="w-24 p-1 border rounded"
-                  />
-                </td>
-                <td>{comparison.patient_population}</td>
-              </tr>
-            )),
-          )}
-        </tbody>
-      </table>
+              </tbody>
+            </table>
+          </div>
+        );
+      })}
+
       {message && (
         <div
           className={`p-3 mb-4 rounded ${message.type === "success" ? "text-success bg-success-2" : "text-error bg-error-2"}`}
