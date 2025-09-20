@@ -92,13 +92,13 @@ const PrognosticFactorsGrid: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="md:w-4xl">
       {Object.entries(editableFactors).map(([cancerType, factors]) => {
         if (Object.keys(factors).length === 0) {
           return null; // Don't render if no factors for this cancer type
         }
         return (
-          <div key={cancerType} className="mb-8 border-b">
+          <div key={cancerType} className="mb-8 border-b border-gray-400">
             <h3 className="text-2xl capitalize mb-4 px-2">
               {cancerType.replace(/_/g, " ")}
             </h3>
@@ -109,7 +109,7 @@ const PrognosticFactorsGrid: React.FC = () => {
               <div className="p-2">Hazard Ratio (HR)</div>
               <div className="p-2 hidden sm:block">CI Lower</div>
               <div className="p-2 hidden sm:block">CI Upper</div>
-              <div className="p-2 hidden sm:block">Patient Population</div>
+              <div className="p-2 hidden sm:block sm:min-w-24">Patient Population</div>
             </div>
 
             {Object.entries(factors).map(([biomarkerKeyStr, factor], index) => (
@@ -120,12 +120,12 @@ const PrognosticFactorsGrid: React.FC = () => {
               >
                 {/* Biomarker and Reference Group cells with rowSpan */}
                 <div
-                  className={`row-span-${factor.comparison_group_list.length} items-center p-2 flex justify-between items-center`}
+                  className={`row-span-${factor.comparison_group_list.length} p-2`}
                 >
                   {biomarkerKeyStr.replace(/_/g, " ")}
                 </div>
                 <div
-                  className={`row-span-${factor.comparison_group_list.length} items-center p-2`}
+                  className={`row-span-${factor.comparison_group_list.length} p-2`}
                 >
                   {formatGroup(factor.reference_group)}
                 </div>
