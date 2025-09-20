@@ -9,6 +9,7 @@ import KaplanMeierPlot from "./KaplanMeierPlot";
 import BootstrapSimulationPlot from "./BootstrapSimulationPlot";
 import AppError from "./AppError"; // Import the AppError component
 import PrognosticFactorAllocation from "./PrognosticFactorAllocation";
+import { DiseaseType } from "./types/prognostic-factors.d";
 
 function fitLambdaPerArm(data: Trial): Record<string, number> {
   const result: Record<string, number> = {};
@@ -185,7 +186,10 @@ const SimulateFromTrial: React.FC = () => {
           <span>{showPrognosticFactors ? "▲" : "▼"}</span>
         </h2>
         {showPrognosticFactors && (
-          <PrognosticFactorAllocation onUpdate={handlePrognosticFactorUpdate} />
+          <PrognosticFactorAllocation
+            onUpdate={handlePrognosticFactorUpdate} 
+            disease={trialData.meta.disease as DiseaseType}
+          />
         )}
       </div>
 

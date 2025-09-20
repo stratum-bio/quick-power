@@ -12,8 +12,6 @@ import { DiseaseType } from "./types/prognostic-factors.d";
 
 type AllocationState = Record<string, { original: number; target: number }>;
 
-const CANCER_TYPE = DiseaseType.PROSTATE_CANCER;
-
 function initializeAllocations(
   selectedBiomarker: Biomarker,
   diseaseFactors: DiseasePrognosticFactorTable,
@@ -52,13 +50,13 @@ const formatGroup = (group: GroupType): string => {
 
 interface PrognosticFactorAllocationProps {
   onUpdate: (allocationChange: AllocationChange | undefined) => void;
+  disease: DiseaseType;
 }
 
 const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
   onUpdate,
+  disease,
 }) => {
-  const [prognosticFactors, setPrognosticFactors] =
-    useState<DiseasePrognosticFactorTable | null>(null);
   const [selectedBiomarker, setSelectedBiomarker] = useState<Biomarker | "">(
     "",
   );
@@ -68,9 +66,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
     type: "success" | "error";
   } | null>(null);
 
-  useEffect(() => {
-    setPrognosticFactors(loadPrognosticFactors(CANCER_TYPE));
-  }, []);
+  const prognosticFactors: DiseasePrognosticFactorTable = loadPrognosticFactors(disease);
 
   useEffect(() => {
     if (selectedBiomarker && prognosticFactors) {
@@ -195,7 +191,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
           onChange={handleBiomarkerChange}
         >
           <option value="">-- Select --</option>
-          {Object.values(Biomarker).map((bm) => (
+          {Object.keys(prognosticFactors).map((bm) => (
             <option key={bm} value={bm}>
               {bm}
             </option>
