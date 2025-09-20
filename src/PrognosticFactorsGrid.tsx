@@ -148,7 +148,7 @@ const PrognosticFactorsGrid: React.FC = () => {
                   ([biomarkerKeyStr, factor], index) => (
                     <div
                       key={cancerType + "-" + biomarkerKeyStr}
-                      className={`grid grid-cols-4 sm:grid-cols-8 gap-x-4 gap-y-2 py-2 ${index % 2 !== 0 ? "bg-gray-100" : ""} hover:bg-medium-azure-alpha`}
+                      className={`grid grid-cols-4 sm:grid-cols-8 gap-x-4 gap-y-2 py-2 ${index % 2 !== 0 ? "bg-gray-100" : ""} hover:bg-medium-azure-alpha ${index == Object.entries(factors).length - 1 ? "rounded-b-md" : ""} `}
                       onClick={() => toggleRow(biomarkerKeyStr)}
                     >
                       {/* Biomarker and Reference Group cells with rowSpan */}
