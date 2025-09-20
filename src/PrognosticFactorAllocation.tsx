@@ -242,6 +242,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
                   )
                 }
                 min="0"
+                step="10"
               />
             </div>
             <div>
@@ -259,6 +260,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
                   )
                 }
                 min="0"
+                step="10"
               />
             </div>
           </div>
@@ -287,6 +289,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
                     )
                   }
                   min="0"
+                  step="10"
                 />
               </div>
               <div>
@@ -305,6 +308,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
                     )
                   }
                   min="0"
+                  step="10"
                 />
               </div>
             </div>
