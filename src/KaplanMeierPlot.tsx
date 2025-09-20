@@ -18,7 +18,7 @@ import { formatLegend } from "./utils/formatters.tsx";
 import { calculateKaplanMeier } from "./utils/kaplan-meier";
 import AppError from "./AppError"; // Import the AppError component
 import { type AllocationChange } from "./types/prognostic-factors.d";
-import { recompose_survival } from "./utils/decomposition";
+import AddFactorAllocationWorker from "./workers/addFactorAllocation.worker?worker";
 
 interface KaplanMeierPlotProps {
   trialName: string;
@@ -77,41 +77,7 @@ function kaplanMeierToTimePoints(
   return timePointMap;
 }
 
-// TODO: update this to separate curve recomposition
-// and the time point augmentation
-function addFactorAllocation(
-  data: KaplanMeierByArm,
-  timePointMap: Map<number, TransformedPlotDataItem>,
-  allocationChange: AllocationChange,
-) {
-  data.curves.forEach((curve, armIndex) => {
-    const armName = data.arm_names[armIndex];
-    const originalAllocations = [
-      allocationChange.original.reference,
-      ...allocationChange.original.comparisons,
-    ];
-    const targetAllocations = [
-      allocationChange.target.reference,
-      ...allocationChange.target.comparisons,
-    ];
-    const recomposedCurve = recompose_survival(
-      curve,
-      originalAllocations.map((val) => val / 100),
-      targetAllocations.map((val) => val / 100),
-      allocationChange.hazardRatios,
-    );
 
-    recomposedCurve.time.forEach((time, i) => {
-      let timePoint = timePointMap.get(time);
-      if (!timePoint) {
-        timePoint = { time: time };
-        timePointMap.set(time, timePoint);
-      }
-      timePoint[`recomposed_${armName}_probability`] =
-        recomposedCurve.probability[i];
-    });
-  });
-}
 
 function addDebugTrialData(
   trialData: Trial,
@@ -173,17 +139,43 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
 
     const timePointMap = kaplanMeierToTimePoints(data);
     if (allocationChange) {
-      addFactorAllocation(data, timePointMap, allocationChange);
-    }
+      const worker = new AddFactorAllocationWorker();
+      worker.postMessage({
+        data: data,
+        timePointMapArray: Array.from(timePointMap.entries()),
+        allocationChange: allocationChange,
+      });
 
-    if (trialData) {
-      addDebugTrialData(trialData, timePointMap);
-    }
+      worker.onmessage = (event) => {
+        const updatedTimePointMap = new Map<number, TransformedPlotDataItem>(
+          event.data.timePointMapArray,
+        );
+        if (trialData) {
+          addDebugTrialData(trialData, updatedTimePointMap);
+        }
 
-    const transformedData = sortAndAccumulate(
-      Array.from(timePointMap.values()),
-    );
-    setPlotData(transformedData);
+        const transformedData = sortAndAccumulate(
+          Array.from(updatedTimePointMap.values()),
+        );
+        setPlotData(transformedData);
+        worker.terminate();
+      };
+
+      worker.onerror = (error) => {
+        console.error("Worker error:", error);
+        setError("Error processing allocation change in worker.");
+        worker.terminate();
+      };
+    } else {
+      if (trialData) {
+        addDebugTrialData(trialData, timePointMap);
+      }
+
+      const transformedData = sortAndAccumulate(
+        Array.from(timePointMap.values()),
+      );
+      setPlotData(transformedData);
+    }
   }, [data, trialData, allocationChange]);
 
   if (loading) {
