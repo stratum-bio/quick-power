@@ -24,6 +24,7 @@ export const ProstateFactors: DiseasePrognosticFactorTable = {
         ci_upper: 1.94,
         patient_population: "mCRPC",
       },
+      /*
       {
         group: {
           type: "numerical",
@@ -36,6 +37,7 @@ export const ProstateFactors: DiseasePrognosticFactorTable = {
         ci_upper: 2.37,
         patient_population: "mCRPC",
       },
+      */
     ],
   },
   // the rest have not been validated / verified
