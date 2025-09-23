@@ -139,8 +139,12 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
     let targetSum = 0;
 
     Object.values(allocations).forEach((group) => {
-      originalSum += group.original;
-      targetSum += group.target;
+      if (group.original) {
+        originalSum += group.original;
+      }
+      if (group.target) {
+        targetSum += group.target;
+      }
     });
 
     if (originalSum === 100 && targetSum === 100) {
