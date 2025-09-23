@@ -9,6 +9,7 @@ import {
 
 interface SavedDifference {
   biomarkerKey: Biomarker;
+  referenceIndex: number;
   comparisonIndex: number;
   field: "hazard_ratio" | "ci_lower" | "ci_upper";
   value: number | undefined;
@@ -27,10 +28,13 @@ export function loadPrognosticFactors(
   const initialFactors = JSON.parse(JSON.stringify(defaultFactors)); // Deep copy of defaults
   const savedDifferences = localStorage.getItem(getStorageKey(cancerType));
 
+  console.log("initial ", initialFactors);
+  console.log("diffs ", savedDifferences);
+
   if (savedDifferences) {
     const differences: SavedDifference[] = JSON.parse(savedDifferences);
     differences.forEach((diff) => {
-      const factor = initialFactors[diff.biomarkerKey];
+      const factor = initialFactors[diff.biomarkerKey][diff.referenceIndex];
       if (factor && factor.comparison_group_list[diff.comparisonIndex]) {
         (factor.comparison_group_list[diff.comparisonIndex] as Comparison)[
           diff.field
@@ -74,6 +78,7 @@ export function savePrognosticFactors(
           if (comparison.hazard_ratio !== defaultComparison.hazard_ratio) {
             differencesToSave.push({
               biomarkerKey: biomarkerKey as Biomarker,
+              referenceIndex: factorIndex,
               comparisonIndex: index,
               field: "hazard_ratio",
               value: comparison.hazard_ratio,
@@ -83,6 +88,7 @@ export function savePrognosticFactors(
           if (comparison.ci_lower !== defaultComparison.ci_lower) {
             differencesToSave.push({
               biomarkerKey: biomarkerKey as Biomarker,
+              referenceIndex: factorIndex,
               comparisonIndex: index,
               field: "ci_lower",
               value: comparison.ci_lower,
@@ -92,6 +98,7 @@ export function savePrognosticFactors(
           if (comparison.ci_upper !== defaultComparison.ci_upper) {
             differencesToSave.push({
               biomarkerKey: biomarkerKey as Biomarker,
+              referenceIndex: factorIndex,
               comparisonIndex: index,
               field: "ci_upper",
               value: comparison.ci_upper,

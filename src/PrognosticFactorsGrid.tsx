@@ -153,167 +153,170 @@ const PrognosticFactorsGrid: React.FC = () => {
                   </div>
                 </div>
 
-                {Object.entries(factors).map(
-                  ([biomarkerKeyStr, factor_list], biomarkerIndex) =>
-                    factor_list.map((factor, factorIndex) => (
+                {Object.entries(factors)
+                  .sort(([a], [b]) => a.localeCompare(b))
+                  .map(([biomarkerKeyStr, factor_list], biomarkerIndex) => (
+                    <div
+                      key={cancerType + "-" + biomarkerKeyStr}
+                      className={`grid grid-cols-4 sm:grid-cols-8 gap-x-4 gap-y-2 py-2 ${biomarkerIndex % 2 !== 0 ? "bg-gray-100" : ""} hover:bg-medium-azure-alpha ${biomarkerIndex == Object.entries(factors).length - 1 ? "rounded-b-md" : ""} `}
+                      onClick={() => toggleRow(biomarkerKeyStr)}
+                    >
+                      {/* Biomarker and Reference Group cells with rowSpan */}
                       <div
-                        key={cancerType + "-" + biomarkerKeyStr}
-                        className={`grid grid-cols-4 sm:grid-cols-8 gap-x-4 gap-y-2 py-2 ${factorIndex % 2 !== 0 ? "bg-gray-100" : ""} hover:bg-medium-azure-alpha ${biomarkerIndex == Object.entries(factors).length - 1 && factorIndex == factor_list.length - 1 ? "rounded-b-md" : ""} `}
-                        onClick={() => toggleRow(biomarkerKeyStr)}
+                        className={`row-span-${factor_list.reduce((a, b) => a + b.comparison_group_list.length, 0)} p-2`}
                       >
-                        {/* Biomarker and Reference Group cells with rowSpan */}
-                        <div
-                          className={`row-span-${factor.comparison_group_list.length} p-2`}
-                        >
-                          {biomarkerKeyStr.replace(/_/g, " ")}
-                        </div>
-                        <div
-                          className={`row-span-${factor.comparison_group_list.length} p-2`}
-                        >
-                          {formatGroup(factor.reference_group)}
-                        </div>
-
-                        {/* Comparison groups */}
-                        {factor.comparison_group_list.map(
-                          (comparison, compareIndex) => (
-                            <React.Fragment
-                              key={`${cancerType}-${biomarkerKeyStr}-${factorIndex}-${compareIndex}`}
-                            >
-                              {/* These divs will occupy columns 3 to 7 */}
-                              <div className="col-start-3 p-2">
-                                {formatGroup(comparison.group)}
-                              </div>
-                              <div
-                                className="p-2"
-                                onClick={(e) => e.stopPropagation()}
-                              >
-                                <input
-                                  type="number"
-                                  value={comparison.hazard_ratio ?? ""}
-                                  onChange={(e) =>
-                                    handleInputChange(
-                                      cancerType as DiseaseType,
-                                      biomarkerKeyStr as Biomarker,
-                                      factorIndex,
-                                      compareIndex,
-                                      "hazard_ratio",
-                                      e.target.value,
-                                    )
-                                  }
-                                  className="w-20 p-1 border rounded"
-                                />
-                              </div>
-                              {/* Desktop view */}
-                              <div className="p-2 hidden sm:block">
-                                <input
-                                  type="number"
-                                  value={comparison.ci_lower ?? ""}
-                                  onChange={(e) =>
-                                    handleInputChange(
-                                      cancerType as DiseaseType,
-                                      biomarkerKeyStr as Biomarker,
-                                      factorIndex,
-                                      compareIndex,
-                                      "ci_lower",
-                                      e.target.value,
-                                    )
-                                  }
-                                  className="w-12 md:w-20 p-1 border rounded"
-                                />
-                              </div>
-                              <div className="p-2 hidden sm:block">
-                                <input
-                                  type="number"
-                                  value={comparison.ci_upper ?? ""}
-                                  onChange={(e) =>
-                                    handleInputChange(
-                                      cancerType as DiseaseType,
-                                      biomarkerKeyStr as Biomarker,
-                                      factorIndex,
-                                      compareIndex,
-                                      "ci_upper",
-                                      e.target.value,
-                                    )
-                                  }
-                                  className="w-12 md:w-20 p-1 border rounded"
-                                />
-                              </div>
-                              <div className="p-2 hidden sm:block col-span-2">
-                                {comparison.patient_population}
-                              </div>
-                            </React.Fragment>
-                          ),
-                        )}
-                        {/* Mobile expanded view */}
-                        <div className="col-span-4 sm:hidden text-center mb-2">
-                          {expandedRows[biomarkerKeyStr] && (
-                            <div className="grid grid-cols-4 border-t border-dashed border-gemini-blue/30 gap-x-4 gap-y-2">
-                              {factor.comparison_group_list.map(
-                                (comparison, compareIndex) => (
-                                  <>
-                                    <div className="p-2 col-span-2 text-right">
-                                      {formatGroup(comparison.group)} Group CI
-                                    </div>
-                                    <div
-                                      className="p-2 text-left sm:hidden"
-                                      onClick={(e) => e.stopPropagation()}
-                                    >
-                                      <input
-                                        type="number"
-                                        value={comparison.ci_lower ?? ""}
-                                        onChange={(e) =>
-                                          handleInputChange(
-                                            cancerType as DiseaseType,
-                                            biomarkerKeyStr as Biomarker,
-                                            factorIndex,
-                                            compareIndex,
-                                            "ci_lower",
-                                            e.target.value,
-                                          )
-                                        }
-                                        className="w-20 p-1 border rounded"
-                                      />
-                                    </div>
-                                    <div
-                                      className="p-2 text-left sm:hidden"
-                                      onClick={(e) => e.stopPropagation()}
-                                    >
-                                      <input
-                                        type="number"
-                                        value={comparison.ci_upper ?? ""}
-                                        onChange={(e) =>
-                                          handleInputChange(
-                                            cancerType as DiseaseType,
-                                            biomarkerKeyStr as Biomarker,
-                                            factorIndex,
-                                            compareIndex,
-                                            "ci_upper",
-                                            e.target.value,
-                                          )
-                                        }
-                                        className="w-20 p-1 border rounded"
-                                      />
-                                    </div>
-                                  </>
-                                ),
-                              )}
-                            </div>
-                          )}
-                          <div
-                            className={
-                              expandedRows[biomarkerKeyStr]
-                                ? "border-b border-dashed border-gemini-blue/30"
-                                : ""
-                            }
-                          >
-                            {!expandedRows[biomarkerKeyStr]
-                              ? "\u25BC"
-                              : "\u25B2"}
-                          </div>
-                        </div>
+                        {biomarkerKeyStr.replace(/_/g, " ")}
                       </div>
-                    )),
-                )}
+                      {factor_list.map((factor, factorIndex) => (
+                        <>
+                          <div
+                            className={`row-span-${factor.comparison_group_list.length} col-start-2 p-2`}
+                          >
+                            {formatGroup(factor.reference_group)}
+                          </div>
+
+                          {/* Comparison groups */}
+                          {factor.comparison_group_list.map(
+                            (comparison, compareIndex) => (
+                              <React.Fragment
+                                key={`${cancerType}-${biomarkerKeyStr}-${factorIndex}-${compareIndex}`}
+                              >
+                                {/* These divs will occupy columns 3 to 7 */}
+                                <div className="col-start-3 p-2">
+                                  {formatGroup(comparison.group)}
+                                </div>
+                                <div
+                                  className="p-2"
+                                  onClick={(e) => e.stopPropagation()}
+                                >
+                                  <input
+                                    type="number"
+                                    value={comparison.hazard_ratio ?? ""}
+                                    onChange={(e) =>
+                                      handleInputChange(
+                                        cancerType as DiseaseType,
+                                        biomarkerKeyStr as Biomarker,
+                                        factorIndex,
+                                        compareIndex,
+                                        "hazard_ratio",
+                                        e.target.value,
+                                      )
+                                    }
+                                    className="w-20 p-1 border rounded"
+                                  />
+                                </div>
+                                {/* Desktop view */}
+                                <div className="p-2 hidden sm:block">
+                                  <input
+                                    type="number"
+                                    value={comparison.ci_lower ?? ""}
+                                    onChange={(e) =>
+                                      handleInputChange(
+                                        cancerType as DiseaseType,
+                                        biomarkerKeyStr as Biomarker,
+                                        factorIndex,
+                                        compareIndex,
+                                        "ci_lower",
+                                        e.target.value,
+                                      )
+                                    }
+                                    className="w-12 md:w-20 p-1 border rounded"
+                                  />
+                                </div>
+                                <div className="p-2 hidden sm:block">
+                                  <input
+                                    type="number"
+                                    value={comparison.ci_upper ?? ""}
+                                    onChange={(e) =>
+                                      handleInputChange(
+                                        cancerType as DiseaseType,
+                                        biomarkerKeyStr as Biomarker,
+                                        factorIndex,
+                                        compareIndex,
+                                        "ci_upper",
+                                        e.target.value,
+                                      )
+                                    }
+                                    className="w-12 md:w-20 p-1 border rounded"
+                                  />
+                                </div>
+                                <div className="p-2 hidden sm:block col-span-2">
+                                  {comparison.patient_population}
+                                </div>
+                              </React.Fragment>
+                            ),
+                          )}
+                          {/* Mobile expanded view */}
+                          <div className="col-span-4 sm:hidden text-center mb-2">
+                            {expandedRows[biomarkerKeyStr] && (
+                              <div className="grid grid-cols-4 border-t border-dashed border-gemini-blue/30 gap-x-4 gap-y-2">
+                                {factor.comparison_group_list.map(
+                                  (comparison, compareIndex) => (
+                                    <>
+                                      <div className="p-2 col-span-2 text-right">
+                                        {formatGroup(comparison.group)} Group CI
+                                      </div>
+                                      <div
+                                        className="p-2 text-left sm:hidden"
+                                        onClick={(e) => e.stopPropagation()}
+                                      >
+                                        <input
+                                          type="number"
+                                          value={comparison.ci_lower ?? ""}
+                                          onChange={(e) =>
+                                            handleInputChange(
+                                              cancerType as DiseaseType,
+                                              biomarkerKeyStr as Biomarker,
+                                              factorIndex,
+                                              compareIndex,
+                                              "ci_lower",
+                                              e.target.value,
+                                            )
+                                          }
+                                          className="w-20 p-1 border rounded"
+                                        />
+                                      </div>
+                                      <div
+                                        className="p-2 text-left sm:hidden"
+                                        onClick={(e) => e.stopPropagation()}
+                                      >
+                                        <input
+                                          type="number"
+                                          value={comparison.ci_upper ?? ""}
+                                          onChange={(e) =>
+                                            handleInputChange(
+                                              cancerType as DiseaseType,
+                                              biomarkerKeyStr as Biomarker,
+                                              factorIndex,
+                                              compareIndex,
+                                              "ci_upper",
+                                              e.target.value,
+                                            )
+                                          }
+                                          className="w-20 p-1 border rounded"
+                                        />
+                                      </div>
+                                    </>
+                                  ),
+                                )}
+                              </div>
+                            )}
+                            <div
+                              className={
+                                expandedRows[biomarkerKeyStr]
+                                  ? "border-b border-dashed border-gemini-blue/30"
+                                  : ""
+                              }
+                            >
+                              {!expandedRows[biomarkerKeyStr]
+                                ? "\u25BC"
+                                : "\u25B2"}
+                            </div>
+                          </div>
+                        </>
+                      ))}
+                    </div>
+                  ))}
               </>
             )}
           </div>

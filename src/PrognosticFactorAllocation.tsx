@@ -39,6 +39,21 @@ function initializeAllocations(
   return initialAllocations;
 }
 
+function formatNumberInput(value: number | undefined | null): string {
+  if (value || value == 0) {
+    return value.toString();
+  }
+  return "";
+}
+
+function parseNumberInput(value: string): number | null {
+  const parsed = parseFloat(value);
+  if (parsed || parsed === 0) {
+    return parsed;
+  }
+  return null;
+}
+
 const formatGroup = (group: GroupType): string => {
   if (group.type === "numerical") {
     const operator = group.operator;
@@ -106,7 +121,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
   ) => {
     setAllocations((prev) => ({
       ...prev,
-      [key]: { ...prev[key], [type]: parseFloat(value) || null },
+      [key]: { ...prev[key], [type]: parseNumberInput(value) },
     }));
     setValidationMessage(null);
   };
@@ -243,12 +258,11 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
             value={selectedFactorRefIdx}
             onChange={handleFactorRefChange}
           >
-            {currentRefList
-              .map((ref, refIdx) => (
-                <option key={`ref-${refIdx}`} value={refIdx}>
-                  {formatGroup(ref.reference_group)}
-                </option>
-              ))}
+            {currentRefList.map((ref, refIdx) => (
+              <option key={`ref-${refIdx}`} value={refIdx}>
+                {formatGroup(ref.reference_group)}
+              </option>
+            ))}
           </select>
         </div>
       )}
@@ -270,9 +284,9 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
             <div>
               <input
                 className="w-16 md:w-20 md:w-24 p-1"
-                value={
-                  allocations[`${selectedBiomarker}-reference`]?.original ?? ""
-                }
+                value={formatNumberInput(
+                  allocations[`${selectedBiomarker}-reference`]?.original,
+                )}
                 onChange={(e) =>
                   handleAllocationChange(
                     `${selectedBiomarker}-reference`,
@@ -287,9 +301,9 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
             <div>
               <input
                 className="w-16 md:w-20 md:w-24 p-1"
-                value={
-                  allocations[`${selectedBiomarker}-reference`]?.target ?? ""
-                }
+                value={formatNumberInput(
+                  allocations[`${selectedBiomarker}-reference`]?.target,
+                )}
                 onChange={(e) =>
                   handleAllocationChange(
                     `${selectedBiomarker}-reference`,
@@ -314,10 +328,10 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
               <div>
                 <input
                   className="w-16 md:w-20 md:w-24 p-1"
-                  value={
+                  value={formatNumberInput(
                     allocations[`${selectedBiomarker}-comparison-${index}`]
-                      ?.original ?? ""
-                  }
+                      ?.original,
+                  )}
                   onChange={(e) =>
                     handleAllocationChange(
                       `${selectedBiomarker}-comparison-${index}`,
@@ -332,10 +346,10 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
               <div>
                 <input
                   className="w-16 md:w-20 md:w-24 p-1"
-                  value={
+                  value={formatNumberInput(
                     allocations[`${selectedBiomarker}-comparison-${index}`]
-                      ?.target ?? ""
-                  }
+                      ?.target,
+                  )}
                   onChange={(e) =>
                     handleAllocationChange(
                       `${selectedBiomarker}-comparison-${index}`,
