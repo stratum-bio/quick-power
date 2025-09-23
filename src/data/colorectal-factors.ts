@@ -228,9 +228,9 @@ export const ColorectalFactors: DiseasePrognosticFactorTable = {
       ],
     },
   ],
-  [Biomarker.COLORECTAL_KRAS_MUTATION]: [
+  [Biomarker.KRAS_MUTATION]: [
     {
-      biomarker: Biomarker.COLORECTAL_KRAS_MUTATION,
+      biomarker: Biomarker.KRAS_MUTATION,
       reference_group: { type: "categorical", category: "Wild-Type" },
       comparison_group_list: [
         {

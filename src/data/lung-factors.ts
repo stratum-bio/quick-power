@@ -48,9 +48,9 @@ export const LungFactors: DiseasePrognosticFactorTable = {
       ],
     },
   ],
-  [Biomarker.LUNG_KRAS_MUTATION]: [
+  [Biomarker.KRAS_MUTATION]: [
     {
-      biomarker: Biomarker.LUNG_KRAS_MUTATION,
+      biomarker: Biomarker.KRAS_MUTATION,
       reference_group: { type: "categorical", category: "KRAS Wild-Type" },
       comparison_group_list: [
         {

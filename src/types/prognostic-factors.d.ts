@@ -41,7 +41,6 @@ export enum Biomarker {
   COLORECTAL_METASTATIC_SITE = "Site of Metastasis (vs. Liver-only)",
   COLORECTAL_PRIMARY_TUMOR_RESECTION = "Primary Tumor Resection (RCT data)",
   COLORECTAL_SERUM_CEA = "Serum CEA Level",
-  COLORECTAL_KRAS_MUTATION = "KRAS Mutation",
   COLORECTAL_BRAF_MUTATION = "BRAF V600E Mutation",
   COLORECTAL_MSI = "Microsatellite Instability (MSI)",
 
@@ -49,13 +48,13 @@ export enum Biomarker {
   SMOKING_STATUS = "Smoking Status",
   WEIGHT_LOSS = "Weight Loss",
   LUNG_TNM_STAGE = "TNM Stage (Pathological)",
-  LUNG_KRAS_MUTATION = "KRAS Mutation",
   LUNG_PDL1_EXPRESSION = "PD-L1 Expression",
   LUNG_EGFR_MUTATION = "EGFR Mutation",
   LUNG_ALK_REARRANGEMENT = "ALK Rearrangement",
 
   // Common
   HISTOLOGICAL_GRADE = "Histological Grade",
+  KRAS_MUTATION = "KRAS Mutation",
 }
 
 export enum RelationalOperator {
