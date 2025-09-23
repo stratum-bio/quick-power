@@ -244,11 +244,6 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
             onChange={handleFactorRefChange}
           >
             {currentRefList
-              .sort((a, b) =>
-                formatGroup(a.reference_group).localeCompare(
-                  formatGroup(b.reference_group),
-                ),
-              )
               .map((ref, refIdx) => (
                 <option key={`ref-${refIdx}`} value={refIdx}>
                   {formatGroup(ref.reference_group)}

@@ -48,23 +48,6 @@ export const ProstateFactors: DiseasePrognosticFactorTable = {
         },
       ],
     },
-    {
-      biomarker: Biomarker.ECOG_PS,
-      reference_group: { type: "categorical", category: "0" },
-      comparison_group_list: [
-        {
-          group: {
-            type: "numerical",
-            operator: RelationalOperator.GREATER_THAN,
-            value: 0,
-          },
-          hazard_ratio: 1.37,
-          ci_lower: undefined,
-          ci_upper: undefined,
-          patient_population: "mCRPC (Docetaxel)",
-        },
-      ],
-    },
   ],
   [Biomarker.BREAST_AGE_AT_DIAGNOSIS]: [
     {
@@ -110,19 +93,6 @@ export const ProstateFactors: DiseasePrognosticFactorTable = {
           ci_lower: 1.43,
           ci_upper: 1.7,
           patient_population: "Locally Advanced",
-        },
-      ],
-    },
-    {
-      biomarker: Biomarker.BREAST_AGE_AT_DIAGNOSIS,
-      reference_group: { type: "categorical", category: "Increasing Age" }, // This is a bit ambiguous, treating as categorical
-      comparison_group_list: [
-        {
-          group: { type: "categorical", category: "Interaction HR" }, // This is also ambiguous, treating as categorical
-          hazard_ratio: 1.11,
-          ci_lower: 1.01,
-          ci_upper: 1.21,
-          patient_population: "mHSPC (ARPIs)",
         },
       ],
     },
@@ -187,13 +157,6 @@ export const ProstateFactors: DiseasePrognosticFactorTable = {
           hazard_ratio: 1.92,
           ci_lower: 1.17,
           ci_upper: 3.13,
-          patient_population: "Metastatic PCa",
-        },
-        {
-          group: { type: "categorical", category: "High Volume" },
-          hazard_ratio: 2.1,
-          ci_lower: undefined,
-          ci_upper: undefined,
           patient_population: "Metastatic PCa",
         },
       ],
@@ -287,13 +250,6 @@ export const ProstateFactors: DiseasePrognosticFactorTable = {
           ci_upper: 2.06,
           patient_population: "Prostate Cancer",
         },
-        {
-          group: { type: "categorical", category: "High" },
-          hazard_ratio: 1.72,
-          ci_lower: 1.37,
-          ci_upper: 2.14,
-          patient_population: "mHSPC",
-        },
       ],
     },
     {
@@ -315,13 +271,6 @@ export const ProstateFactors: DiseasePrognosticFactorTable = {
       biomarker: Biomarker.PROSTATE_LDH,
       reference_group: { type: "categorical", category: "Low LDH" },
       comparison_group_list: [
-        {
-          group: { type: "categorical", category: "High" },
-          hazard_ratio: 2.07,
-          ci_lower: 1.75,
-          ci_upper: 2.44,
-          patient_population: "Metastatic PCa",
-        },
         {
           group: { type: "categorical", category: "High" },
           hazard_ratio: 2.25,
