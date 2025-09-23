@@ -116,6 +116,18 @@ function App() {
               </ul>
             </li>
           </ul>{" "}
+          <div className="absolute bottom-4 left-0 w-full px-4 text-center text-md">
+            <p>
+              Requests? Bugs?
+              <br />
+              <a
+                href="mailto:feedback@stratum.bio"
+                className="text-white hover:text-gemini-blue-hover"
+              >
+                feedback@stratum.bio
+              </a>
+            </p>
+          </div>
         </nav>
 
         {/* Main Content Area */}
