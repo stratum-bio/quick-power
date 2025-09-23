@@ -12,21 +12,50 @@ export enum Biomarker {
   METASTATIC_STATUS = "Metastatic Status",
   METASTATIC_VOLUME = "Metastatic Volume",
   METASTATIC_SITE = "Metastatic Site",
+  PROSTATE_TNM_STAGE = "TNM Stage",
+  PROSTATE_PSA_LEVEL = "PSA Level",
+  PROSTATE_ALP = "Alkaline Phosphatase (ALP)",
+  PROSTATE_LDH = "Lactate Dehydrogenase (LDH)",
+  PROSTATE_HEMOGLOBIN = "Hemoglobin (Hb)",
+  PROSTATE_ALBUMIN = "Albumin",
 
-  // Brease
+  // Breast
   BREAST_M_STAGE = "Metastasis (M Stage)",
   BREAST_MOLECULAR_SUBTYPE = "Molecular Subtype",
+  BREAST_NODAL_STATUS = "Nodal Status (N Stage)",
+  BREAST_AGE_AT_DIAGNOSIS = "Age at Diagnosis",
+  BREAST_KI67_PROLIFERATION = "Ki-67 Proliferation",
+  BREAST_HORMONE_RECEPTORS = "Hormone Receptors",
+  BREAST_HER2_STATUS = "HER2 Status",
+  BREAST_COMORBIDITY = "Comorbidity",
 
   // Colorectal
   COLORECTAL_AJCC = "AJCC TNM Stage",
   COLORECTAL_PRIMARY_LOC = "Primary Tumor Location",
-  COLORECTAL_HISTOLOGICAL_GRADE = "Histological Grade",
   COLORECTAL_LVI = "Lymphovascular Invasion (LVI)",
   COLORECTAL_PNI = "Perineural Invasion (PNI)",
+  COLORECTAL_AGE_COMORBIDITY = "Age + Comorbidity",
+  COLORECTAL_EARLY_ONSET_AGE = "Early-Onset Age (Stage-Adjusted)",
+  COLORECTAL_SEX = "Sex",
+  COLORECTAL_NUM_METASTATIC_SITES = "Number of Metastatic Sites",
+  COLORECTAL_METASTATIC_SITE = "Site of Metastasis (vs. Liver-only)",
+  COLORECTAL_PRIMARY_TUMOR_RESECTION = "Primary Tumor Resection (RCT data)",
+  COLORECTAL_SERUM_CEA = "Serum CEA Level",
+  COLORECTAL_KRAS_MUTATION = "KRAS Mutation",
+  COLORECTAL_BRAF_MUTATION = "BRAF V600E Mutation",
+  COLORECTAL_MSI = "Microsatellite Instability (MSI)",
 
   // Lung
   SMOKING_STATUS = "Smoking Status",
   WEIGHT_LOSS = "Weight Loss",
+  LUNG_TNM_STAGE = "TNM Stage (Pathological)",
+  LUNG_KRAS_MUTATION = "KRAS Mutation",
+  LUNG_PDL1_EXPRESSION = "PD-L1 Expression",
+  LUNG_EGFR_MUTATION = "EGFR Mutation",
+  LUNG_ALK_REARRANGEMENT = "ALK Rearrangement",
+
+  // Common
+  HISTOLOGICAL_GRADE = "Histological Grade",
 }
 
 export enum RelationalOperator {
@@ -98,7 +127,7 @@ export interface AllocationChange {
  * The top-level model representing a list of PrognosticFactor objects.
  */
 export type DiseasePrognosticFactorTable = Partial<
-  Record<Biomarker, PrognosticFactor>
+  Record<Biomarker, PrognosticFactor[]>
 >;
 export type PrognosticFactorTable = Partial<
   Record<DiseaseType, DiseasePrognosticFactorTable>
