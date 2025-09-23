@@ -13,7 +13,7 @@ export const BreastFactors: DiseasePrognosticFactorTable = {
         {
           group: { type: "categorical", category: "M1 (Stage IV)" },
           hazard_ratio: 12.12,
-          ci_lower: 5.70,
+          ci_lower: 5.7,
           ci_upper: 25.76,
           patient_population: "Pooled meta-analysis",
         },
@@ -56,10 +56,18 @@ export const BreastFactors: DiseasePrognosticFactorTable = {
     },
     {
       biomarker: Biomarker.BREAST_NODAL_STATUS,
-      reference_group: { type: "numerical", operator: RelationalOperator.LESS_THAN_OR_EQUAL, value: 0.68 },
+      reference_group: {
+        type: "numerical",
+        operator: RelationalOperator.LESS_THAN_OR_EQUAL,
+        value: 0.68,
+      },
       comparison_group_list: [
         {
-          group: { type: "numerical", operator: RelationalOperator.GREATER_THAN, value: 0.68 },
+          group: {
+            type: "numerical",
+            operator: RelationalOperator.GREATER_THAN,
+            value: 0.68,
+          },
           hazard_ratio: 2.156,
           ci_lower: 1.146,
           ci_upper: 4.044,
@@ -71,12 +79,22 @@ export const BreastFactors: DiseasePrognosticFactorTable = {
   [Biomarker.BREAST_AGE_AT_DIAGNOSIS]: [
     {
       biomarker: Biomarker.BREAST_AGE_AT_DIAGNOSIS,
-      reference_group: { type: "range", lower_bound: 45, upper_bound: 55, unit: "years" },
+      reference_group: {
+        type: "range",
+        lower_bound: 45,
+        upper_bound: 55,
+        unit: "years",
+      },
       comparison_group_list: [
         {
-          group: { type: "numerical", operator: RelationalOperator.LESS_THAN_OR_EQUAL, value: 35, unit: "years" },
+          group: {
+            type: "numerical",
+            operator: RelationalOperator.LESS_THAN_OR_EQUAL,
+            value: 35,
+            unit: "years",
+          },
           hazard_ratio: 1.22,
-          ci_lower: 1.00,
+          ci_lower: 1.0,
           ci_upper: 1.48,
           patient_population: "Metastatic BC",
         },
@@ -84,10 +102,20 @@ export const BreastFactors: DiseasePrognosticFactorTable = {
     },
     {
       biomarker: Biomarker.BREAST_AGE_AT_DIAGNOSIS,
-      reference_group: { type: "range", lower_bound: 44, upper_bound: 50, unit: "years" },
+      reference_group: {
+        type: "range",
+        lower_bound: 44,
+        upper_bound: 50,
+        unit: "years",
+      },
       comparison_group_list: [
         {
-          group: { type: "range", lower_bound: 59, upper_bound: 90, unit: "years" },
+          group: {
+            type: "range",
+            lower_bound: 59,
+            upper_bound: 90,
+            unit: "years",
+          },
           hazard_ratio: 3.38,
           ci_lower: 1.51,
           ci_upper: 7.54,
@@ -97,10 +125,20 @@ export const BreastFactors: DiseasePrognosticFactorTable = {
     },
     {
       biomarker: Biomarker.BREAST_AGE_AT_DIAGNOSIS,
-      reference_group: { type: "range", lower_bound: 15, upper_bound: 49, unit: "years" },
+      reference_group: {
+        type: "range",
+        lower_bound: 15,
+        upper_bound: 49,
+        unit: "years",
+      },
       comparison_group_list: [
         {
-          group: { type: "numerical", operator: RelationalOperator.GREATER_THAN_OR_EQUAL, value: 80, unit: "years" },
+          group: {
+            type: "numerical",
+            operator: RelationalOperator.GREATER_THAN_OR_EQUAL,
+            value: 80,
+            unit: "years",
+          },
           hazard_ratio: 7.87,
           ci_lower: 3.68,
           ci_upper: 11.81,
@@ -118,7 +156,7 @@ export const BreastFactors: DiseasePrognosticFactorTable = {
           group: { type: "categorical", category: "Grade 3" },
           hazard_ratio: 2.43,
           ci_lower: 1.79,
-          ci_upper: 3.30,
+          ci_upper: 3.3,
           patient_population: "Pooled meta-analysis",
         },
       ],
@@ -138,7 +176,7 @@ export const BreastFactors: DiseasePrognosticFactorTable = {
         },
         {
           group: { type: "categorical", category: "HER2-Enriched" },
-          hazard_ratio: 2.30,
+          hazard_ratio: 2.3,
           ci_lower: 1.34,
           ci_upper: 3.94,
           patient_population: "Meta-analysis",
@@ -162,7 +200,10 @@ export const BreastFactors: DiseasePrognosticFactorTable = {
   [Biomarker.BREAST_KI67_PROLIFERATION]: [
     {
       biomarker: Biomarker.BREAST_KI67_PROLIFERATION,
-      reference_group: { type: "categorical", category: "Low (various cutoffs)" },
+      reference_group: {
+        type: "categorical",
+        category: "Low (various cutoffs)",
+      },
       comparison_group_list: [
         {
           group: { type: "categorical", category: "High (various cutoffs)" },
@@ -222,7 +263,7 @@ export const BreastFactors: DiseasePrognosticFactorTable = {
       comparison_group_list: [
         {
           group: { type: "categorical", category: "HER2-low" },
-          hazard_ratio: 0.90,
+          hazard_ratio: 0.9,
           ci_lower: 0.85,
           ci_upper: 0.95,
           patient_population: "Meta-analysis",
@@ -249,7 +290,11 @@ export const BreastFactors: DiseasePrognosticFactorTable = {
       reference_group: { type: "categorical", category: "Low Index" },
       comparison_group_list: [
         {
-          group: { type: "numerical", operator: RelationalOperator.GREATER_THAN_OR_EQUAL, value: 3 },
+          group: {
+            type: "numerical",
+            operator: RelationalOperator.GREATER_THAN_OR_EQUAL,
+            value: 3,
+          },
           hazard_ratio: 3.29,
           ci_lower: undefined,
           ci_upper: undefined,

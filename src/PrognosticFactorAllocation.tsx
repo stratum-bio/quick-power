@@ -17,17 +17,20 @@ function initializeAllocations(
   diseaseFactors: DiseasePrognosticFactorTable,
 ): AllocationState {
   const initialAllocations: AllocationState = {};
-  const factor = diseaseFactors[selectedBiomarker];
+  const factorList = diseaseFactors[selectedBiomarker] ?? [];
 
-  if (factor) {
+  for (let factorRefIdx = 0; factorRefIdx < factorList.length; factorRefIdx++) {
+    const factor = factorList[factorRefIdx];
     // Initialize reference group allocation
-    initialAllocations[`${selectedBiomarker}-reference`] = {
+    initialAllocations[`${selectedBiomarker}-${factorRefIdx}-reference`] = {
       original: 0,
       target: 0,
     };
     // Initialize comparison group allocations
     factor.comparison_group_list.forEach((_comp, index) => {
-      initialAllocations[`${selectedBiomarker}-comparison-${index}`] = {
+      initialAllocations[
+        `${selectedBiomarker}-${factorRefIdx}-comparison-${index}`
+      ] = {
         original: 0,
         target: 0,
       };
@@ -60,6 +63,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
   const [selectedBiomarker, setSelectedBiomarker] = useState<Biomarker | "">(
     "",
   );
+  const [selectedFactorRefIdx, setSelectedFactorRefIdx] = useState<number>(0);
   const [allocations, setAllocations] = useState<AllocationState>({});
   const [validationMessage, setValidationMessage] = useState<{
     text: string;
@@ -84,7 +88,15 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
     event: React.ChangeEvent<HTMLSelectElement>,
   ) => {
     setSelectedBiomarker(event.target.value as Biomarker);
+    setSelectedFactorRefIdx(0);
     setValidationMessage(null);
+  };
+
+  const handleFactorRefChange = (
+    event: React.ChangeEvent<HTMLSelectElement>,
+  ) => {
+    console.log(event);
+    setSelectedFactorRefIdx(parseInt(event.target.value));
   };
 
   const handleAllocationChange = (
@@ -171,13 +183,15 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
           prognosticFactors,
         ),
       );
+      setSelectedFactorRefIdx(0);
     }
   };
 
+  const currentRefList: PrognosticFactor[] | undefined = selectedBiomarker
+    ? prognosticFactors?.[selectedBiomarker]
+    : undefined;
   const currentFactor: PrognosticFactor | undefined =
-    selectedBiomarker && prognosticFactors
-      ? prognosticFactors[selectedBiomarker]
-      : undefined;
+    currentRefList?.[selectedFactorRefIdx];
 
   return (
     <div className="mt-4">
@@ -206,13 +220,43 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
           onChange={handleBiomarkerChange}
         >
           <option value="">-- Select --</option>
-          {Object.keys(prognosticFactors).map((bm) => (
-            <option key={bm} value={bm}>
-              {bm}
-            </option>
-          ))}
+          {Object.keys(prognosticFactors)
+            .sort()
+            .map((bm) => (
+              <option key={bm} value={bm}>
+                {bm}
+              </option>
+            ))}
         </select>
       </div>
+      {selectedBiomarker && currentRefList && currentRefList.length > 1 && (
+        <div className="mb-4">
+          <label
+            htmlFor="biomarker-ref-select"
+            className="block mt-4 font-semibold text-gray-700"
+          >
+            Available reference group
+          </label>
+          <select
+            id="biomarker-ref-select"
+            className="mt-1 block w-full pl-3 pr-10 py-2 border border-gray-300 focus:outline-none focus:border-gemini-blue focus:ring-gemini-blue rounded-md"
+            value={selectedFactorRefIdx}
+            onChange={handleFactorRefChange}
+          >
+            {currentRefList
+              .sort((a, b) =>
+                formatGroup(a.reference_group).localeCompare(
+                  formatGroup(b.reference_group),
+                ),
+              )
+              .map((ref, refIdx) => (
+                <option key={`ref-${refIdx}`} value={refIdx}>
+                  {formatGroup(ref.reference_group)}
+                </option>
+              ))}
+          </select>
+        </div>
+      )}
 
       {selectedBiomarker && currentFactor && (
         <div className="p-4 bg-">

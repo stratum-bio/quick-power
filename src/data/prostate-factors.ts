@@ -8,11 +8,19 @@ export const ProstateFactors: DiseasePrognosticFactorTable = {
   [Biomarker.ECOG_PS]: [
     {
       biomarker: Biomarker.ECOG_PS,
-      reference_group: { type: "numerical", operator: RelationalOperator.LESS_THAN, value: 2 },
+      reference_group: {
+        type: "numerical",
+        operator: RelationalOperator.LESS_THAN,
+        value: 2,
+      },
       comparison_group_list: [
         {
-          group: { type: "numerical", operator: RelationalOperator.GREATER_THAN_OR_EQUAL, value: 2 },
-          hazard_ratio: 2.10,
+          group: {
+            type: "numerical",
+            operator: RelationalOperator.GREATER_THAN_OR_EQUAL,
+            value: 2,
+          },
+          hazard_ratio: 2.1,
           ci_lower: 1.87,
           ci_upper: 2.37,
           patient_population: "mCRPC",
@@ -21,10 +29,18 @@ export const ProstateFactors: DiseasePrognosticFactorTable = {
     },
     {
       biomarker: Biomarker.ECOG_PS,
-      reference_group: { type: "numerical", operator: RelationalOperator.LESS_THAN, value: 1 },
+      reference_group: {
+        type: "numerical",
+        operator: RelationalOperator.LESS_THAN,
+        value: 1,
+      },
       comparison_group_list: [
         {
-          group: { type: "numerical", operator: RelationalOperator.GREATER_THAN_OR_EQUAL, value: 1 },
+          group: {
+            type: "numerical",
+            operator: RelationalOperator.GREATER_THAN_OR_EQUAL,
+            value: 1,
+          },
           hazard_ratio: 1.68,
           ci_lower: 1.44,
           ci_upper: 1.94,
@@ -37,7 +53,11 @@ export const ProstateFactors: DiseasePrognosticFactorTable = {
       reference_group: { type: "categorical", category: "0" },
       comparison_group_list: [
         {
-          group: { type: "numerical", operator: RelationalOperator.GREATER_THAN, value: 0 },
+          group: {
+            type: "numerical",
+            operator: RelationalOperator.GREATER_THAN,
+            value: 0,
+          },
           hazard_ratio: 1.37,
           ci_lower: undefined,
           ci_upper: undefined,
@@ -49,10 +69,20 @@ export const ProstateFactors: DiseasePrognosticFactorTable = {
   [Biomarker.BREAST_AGE_AT_DIAGNOSIS]: [
     {
       biomarker: Biomarker.BREAST_AGE_AT_DIAGNOSIS,
-      reference_group: { type: "numerical", operator: RelationalOperator.LESS_THAN, value: 60, unit: "years" },
+      reference_group: {
+        type: "numerical",
+        operator: RelationalOperator.LESS_THAN,
+        value: 60,
+        unit: "years",
+      },
       comparison_group_list: [
         {
-          group: { type: "numerical", operator: RelationalOperator.GREATER_THAN, value: 70, unit: "years" },
+          group: {
+            type: "numerical",
+            operator: RelationalOperator.GREATER_THAN,
+            value: 70,
+            unit: "years",
+          },
           hazard_ratio: 2.8,
           ci_lower: 1.22,
           ci_upper: 6.5,
@@ -62,13 +92,23 @@ export const ProstateFactors: DiseasePrognosticFactorTable = {
     },
     {
       biomarker: Biomarker.BREAST_AGE_AT_DIAGNOSIS,
-      reference_group: { type: "numerical", operator: RelationalOperator.LESS_THAN_OR_EQUAL, value: 70, unit: "years" },
+      reference_group: {
+        type: "numerical",
+        operator: RelationalOperator.LESS_THAN_OR_EQUAL,
+        value: 70,
+        unit: "years",
+      },
       comparison_group_list: [
         {
-          group: { type: "numerical", operator: RelationalOperator.GREATER_THAN, value: 70, unit: "years" },
+          group: {
+            type: "numerical",
+            operator: RelationalOperator.GREATER_THAN,
+            value: 70,
+            unit: "years",
+          },
           hazard_ratio: 1.56,
           ci_lower: 1.43,
-          ci_upper: 1.70,
+          ci_upper: 1.7,
           patient_population: "Locally Advanced",
         },
       ],
@@ -193,14 +233,24 @@ export const ProstateFactors: DiseasePrognosticFactorTable = {
       reference_group: { type: "categorical", category: "4.1-10 ng/mL" },
       comparison_group_list: [
         {
-          group: { type: "numerical", operator: RelationalOperator.GREATER_THAN, value: 80.1, unit: "ng/mL" },
+          group: {
+            type: "numerical",
+            operator: RelationalOperator.GREATER_THAN,
+            value: 80.1,
+            unit: "ng/mL",
+          },
           hazard_ratio: 1.544,
           ci_lower: undefined,
           ci_upper: undefined,
           patient_population: "Metastatic PCa",
         },
         {
-          group: { type: "numerical", operator: RelationalOperator.LESS_THAN, value: 4.0, unit: "ng/mL" },
+          group: {
+            type: "numerical",
+            operator: RelationalOperator.LESS_THAN,
+            value: 4.0,
+            unit: "ng/mL",
+          },
           hazard_ratio: 1.331,
           ci_lower: undefined,
           ci_upper: undefined,
@@ -210,7 +260,10 @@ export const ProstateFactors: DiseasePrognosticFactorTable = {
     },
     {
       biomarker: Biomarker.PROSTATE_PSA_LEVEL,
-      reference_group: { type: "categorical", category: "Higher PSA at RT start" },
+      reference_group: {
+        type: "categorical",
+        category: "Higher PSA at RT start",
+      },
       comparison_group_list: [
         {
           group: { type: "categorical", category: "Lower PSA" },
@@ -280,10 +333,20 @@ export const ProstateFactors: DiseasePrognosticFactorTable = {
     },
     {
       biomarker: Biomarker.PROSTATE_LDH,
-      reference_group: { type: "numerical", operator: RelationalOperator.LESS_THAN, value: 230, unit: "IU/L" },
+      reference_group: {
+        type: "numerical",
+        operator: RelationalOperator.LESS_THAN,
+        value: 230,
+        unit: "IU/L",
+      },
       comparison_group_list: [
         {
-          group: { type: "numerical", operator: RelationalOperator.GREATER_THAN_OR_EQUAL, value: 230, unit: "IU/L" },
+          group: {
+            type: "numerical",
+            operator: RelationalOperator.GREATER_THAN_OR_EQUAL,
+            value: 230,
+            unit: "IU/L",
+          },
           hazard_ratio: 8.53,
           ci_lower: 1.83,
           ci_upper: 39.7,
@@ -323,7 +386,10 @@ export const ProstateFactors: DiseasePrognosticFactorTable = {
   [Biomarker.PROSTATE_ALBUMIN]: [
     {
       biomarker: Biomarker.PROSTATE_ALBUMIN,
-      reference_group: { type: "categorical", category: "Low Albumin (Q5 vs. Q1)" },
+      reference_group: {
+        type: "categorical",
+        category: "Low Albumin (Q5 vs. Q1)",
+      },
       comparison_group_list: [
         {
           group: { type: "categorical", category: "High" },

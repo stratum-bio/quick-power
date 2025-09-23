@@ -62,40 +62,43 @@ export function savePrognosticFactors(
     return; // No default factors to compare against
   }
 
-  Object.entries(editableFactors).forEach(([biomarkerKey, factor]) => {
-    factor.comparison_group_list.forEach((comparison, index) => {
-      const defaultFactor = defaultFactors[biomarkerKey as Biomarker];
-      const defaultComparison = defaultFactor?.comparison_group_list[index];
+  Object.entries(editableFactors).forEach(([biomarkerKey, factor_list]) => {
+    factor_list.forEach((factor, factorIndex) => {
+      factor.comparison_group_list.forEach((comparison, index) => {
+        const defaultFactor =
+          defaultFactors[biomarkerKey as Biomarker]?.[factorIndex];
+        const defaultComparison = defaultFactor?.comparison_group_list[index];
 
-      if (defaultComparison) {
-        // Check hazard_ratio
-        if (comparison.hazard_ratio !== defaultComparison.hazard_ratio) {
-          differencesToSave.push({
-            biomarkerKey: biomarkerKey as Biomarker,
-            comparisonIndex: index,
-            field: "hazard_ratio",
-            value: comparison.hazard_ratio,
-          });
+        if (defaultComparison) {
+          // Check hazard_ratio
+          if (comparison.hazard_ratio !== defaultComparison.hazard_ratio) {
+            differencesToSave.push({
+              biomarkerKey: biomarkerKey as Biomarker,
+              comparisonIndex: index,
+              field: "hazard_ratio",
+              value: comparison.hazard_ratio,
+            });
+          }
+          // Check ci_lower
+          if (comparison.ci_lower !== defaultComparison.ci_lower) {
+            differencesToSave.push({
+              biomarkerKey: biomarkerKey as Biomarker,
+              comparisonIndex: index,
+              field: "ci_lower",
+              value: comparison.ci_lower,
+            });
+          }
+          // Check ci_upper
+          if (comparison.ci_upper !== defaultComparison.ci_upper) {
+            differencesToSave.push({
+              biomarkerKey: biomarkerKey as Biomarker,
+              comparisonIndex: index,
+              field: "ci_upper",
+              value: comparison.ci_upper,
+            });
+          }
         }
-        // Check ci_lower
-        if (comparison.ci_lower !== defaultComparison.ci_lower) {
-          differencesToSave.push({
-            biomarkerKey: biomarkerKey as Biomarker,
-            comparisonIndex: index,
-            field: "ci_lower",
-            value: comparison.ci_lower,
-          });
-        }
-        // Check ci_upper
-        if (comparison.ci_upper !== defaultComparison.ci_upper) {
-          differencesToSave.push({
-            biomarkerKey: biomarkerKey as Biomarker,
-            comparisonIndex: index,
-            field: "ci_upper",
-            value: comparison.ci_upper,
-          });
-        }
-      }
+      });
     });
   });
 

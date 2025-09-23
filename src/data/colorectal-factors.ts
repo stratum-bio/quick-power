@@ -8,10 +8,20 @@ export const ColorectalFactors: DiseasePrognosticFactorTable = {
   [Biomarker.BREAST_AGE_AT_DIAGNOSIS]: [
     {
       biomarker: Biomarker.BREAST_AGE_AT_DIAGNOSIS,
-      reference_group: { type: "numerical", operator: RelationalOperator.LESS_THAN, value: 70, unit: "years" },
+      reference_group: {
+        type: "numerical",
+        operator: RelationalOperator.LESS_THAN,
+        value: 70,
+        unit: "years",
+      },
       comparison_group_list: [
         {
-          group: { type: "numerical", operator: RelationalOperator.GREATER_THAN_OR_EQUAL, value: 70, unit: "years" },
+          group: {
+            type: "numerical",
+            operator: RelationalOperator.GREATER_THAN_OR_EQUAL,
+            value: 70,
+            unit: "years",
+          },
           hazard_ratio: 1.32,
           ci_lower: undefined,
           ci_upper: undefined,
@@ -23,10 +33,16 @@ export const ColorectalFactors: DiseasePrognosticFactorTable = {
   [Biomarker.COLORECTAL_AGE_COMORBIDITY]: [
     {
       biomarker: Biomarker.COLORECTAL_AGE_COMORBIDITY,
-      reference_group: { type: "categorical", category: "<70 years with 0 comorbidities" },
+      reference_group: {
+        type: "categorical",
+        category: "<70 years with 0 comorbidities",
+      },
       comparison_group_list: [
         {
-          group: { type: "categorical", category: "≥70 years with ≥1 comorbidity" },
+          group: {
+            type: "categorical",
+            category: "≥70 years with ≥1 comorbidity",
+          },
           hazard_ratio: 1.51,
           ci_lower: 1.22,
           ci_upper: 1.86,
@@ -38,10 +54,20 @@ export const ColorectalFactors: DiseasePrognosticFactorTable = {
   [Biomarker.COLORECTAL_EARLY_ONSET_AGE]: [
     {
       biomarker: Biomarker.COLORECTAL_EARLY_ONSET_AGE,
-      reference_group: { type: "numerical", operator: RelationalOperator.LESS_THAN, value: 50, unit: "years" },
+      reference_group: {
+        type: "numerical",
+        operator: RelationalOperator.LESS_THAN,
+        value: 50,
+        unit: "years",
+      },
       comparison_group_list: [
         {
-          group: { type: "range", lower_bound: 51, upper_bound: 55, unit: "years" },
+          group: {
+            type: "range",
+            lower_bound: 51,
+            upper_bound: 55,
+            unit: "years",
+          },
           hazard_ratio: 0.95,
           ci_lower: 0.93,
           ci_upper: 0.96,
@@ -68,11 +94,19 @@ export const ColorectalFactors: DiseasePrognosticFactorTable = {
   [Biomarker.ECOG_PS]: [
     {
       biomarker: Biomarker.ECOG_PS,
-      reference_group: { type: "numerical", operator: RelationalOperator.LESS_THAN, value: 2 },
+      reference_group: {
+        type: "numerical",
+        operator: RelationalOperator.LESS_THAN,
+        value: 2,
+      },
       comparison_group_list: [
         {
-          group: { type: "numerical", operator: RelationalOperator.GREATER_THAN_OR_EQUAL, value: 2 },
-          hazard_ratio: 2.10,
+          group: {
+            type: "numerical",
+            operator: RelationalOperator.GREATER_THAN_OR_EQUAL,
+            value: 2,
+          },
+          hazard_ratio: 2.1,
           ci_lower: 1.87,
           ci_upper: 2.37,
           patient_population: "Advanced Cancer",
@@ -86,7 +120,10 @@ export const ColorectalFactors: DiseasePrognosticFactorTable = {
       reference_group: { type: "categorical", category: "Lower Stage (I)" },
       comparison_group_list: [
         {
-          group: { type: "categorical", category: "Higher Stage (II, III, IV)" },
+          group: {
+            type: "categorical",
+            category: "Higher Stage (II, III, IV)",
+          },
           hazard_ratio: 50,
           ci_lower: undefined,
           ci_upper: undefined,
@@ -113,10 +150,16 @@ export const ColorectalFactors: DiseasePrognosticFactorTable = {
   [Biomarker.HISTOLOGICAL_GRADE]: [
     {
       biomarker: Biomarker.HISTOLOGICAL_GRADE,
-      reference_group: { type: "categorical", category: "Well-differentiated (G1)" },
+      reference_group: {
+        type: "categorical",
+        category: "Well-differentiated (G1)",
+      },
       comparison_group_list: [
         {
-          group: { type: "categorical", category: "Poorly-differentiated (G3)" },
+          group: {
+            type: "categorical",
+            category: "Poorly-differentiated (G3)",
+          },
           hazard_ratio: 3.17,
           ci_lower: 1.01,
           ci_upper: 9.96,
@@ -161,7 +204,12 @@ export const ColorectalFactors: DiseasePrognosticFactorTable = {
       reference_group: { type: "categorical", category: "1−2 sites" },
       comparison_group_list: [
         {
-          group: { type: "numerical", operator: RelationalOperator.GREATER_THAN, value: 2, unit: "sites" },
+          group: {
+            type: "numerical",
+            operator: RelationalOperator.GREATER_THAN,
+            value: 2,
+            unit: "sites",
+          },
           hazard_ratio: 3.46,
           ci_lower: 1.71,
           ci_upper: 6.99,
@@ -205,7 +253,7 @@ export const ColorectalFactors: DiseasePrognosticFactorTable = {
       comparison_group_list: [
         {
           group: { type: "categorical", category: "PTR + Chemo" },
-          hazard_ratio: 1.10,
+          hazard_ratio: 1.1,
           ci_lower: 0.76,
           ci_upper: 1.59,
           patient_population: "Synchronous mCRC",
@@ -220,7 +268,7 @@ export const ColorectalFactors: DiseasePrognosticFactorTable = {
       comparison_group_list: [
         {
           group: { type: "categorical", category: "Elevated" },
-          hazard_ratio: 1.70,
+          hazard_ratio: 1.7,
           ci_lower: 1.65,
           ci_upper: 1.75,
           patient_population: "All CRC",
