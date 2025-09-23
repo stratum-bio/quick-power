@@ -2,7 +2,7 @@ import {
   type DiseasePrognosticFactorTable,
   Biomarker,
   RelationalOperator,
-} from "../types/prognostic-factors";
+} from "../types/prognostic-factors.d";
 
 export const BreastFactors: DiseasePrognosticFactorTable = {
   [Biomarker.BREAST_M_STAGE]: [
