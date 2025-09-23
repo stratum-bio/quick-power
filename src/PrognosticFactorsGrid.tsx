@@ -112,6 +112,17 @@ const PrognosticFactorsGrid: React.FC = () => {
 
   return (
     <div className="md:w-5xl">
+      <h2 className="text-3xl m-4 mb-8 text-black text-left">
+        Modify prognostic factor parameters
+      </h2>
+      <div className="text-left m-4 mb-8 text-black md:w-196">
+        <p>
+          These are currently placeholder prognostic factors and not meant for
+          legitimate insights. Update the hazard ratios here in order to use
+          them when estimating the effects of changing the prognostic factor
+          distribution for a trial simulation.
+        </p>
+      </div>
       {Object.entries(editableFactors).map(([cancerType, factors]) => {
         if (Object.keys(factors).length === 0) {
           return null; // Don't render if no factors for this cancer type

@@ -189,88 +189,88 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
   }
 
   return (
-    <div ref={plotContainerRef} tabIndex={-1} style={{ outline: 'none' }}>
+    <div ref={plotContainerRef} tabIndex={-1} style={{ outline: "none" }}>
       <ResponsiveContainer width="100%" height={400}>
-      <ComposedChart
-        data={plotData}
-        margin={{
-          top: 15,
-          right: 10,
-          bottom: 10,
-          left: 10,
-        }}
-      >
-        <CartesianGrid stroke="#f5f5f5" />
-        <XAxis
-          dataKey="time"
-          label={{
-            value: `Time (${timeScale})`,
-            position: "insideBottom",
-            offset: -10,
+        <ComposedChart
+          data={plotData}
+          margin={{
+            top: 15,
+            right: 10,
+            bottom: 10,
+            left: 10,
           }}
-          domain={[0, "dataMax"]}
-          type="number"
-        />
-        <YAxis
-          label={{ value: "Probability", angle: -90, position: "insideLeft" }}
-        />
-        <Tooltip
-          content={(props) => (
-            <InlineMathTooltip {...props} round={true} xName="\text{Time}" />
-          )}
-        />
-        <Legend verticalAlign="top" align="right" formatter={formatLegend} />
-        {armNames.map((armName, index) => {
-          const color = PLOT_COLORS[index % PLOT_COLORS.length];
-          return (
-            <React.Fragment key={armName}>
-              <Area
-                type="monotone"
-                dataKey={`${armName}_interval`}
-                stroke={color}
-                strokeOpacity={allocationChange ? 0.1 : 0.3}
-                fill={color}
-                fillOpacity={allocationChange ? 0.1 : 0.3}
-                yAxisId={0}
-                name={`\\text{${armName.replace(/_/g, "\\_")} log-log CI}`}
-                legendType="none"
-              />
-              <Line
-                type="monotone"
-                dataKey={`${armName}_probability`}
-                stroke={color}
-                dot={false}
-                strokeOpacity={allocationChange ? 0.3 : 1.0}
-                name={`\\text{${armName.replace(/_/g, "\\_")}}`}
-                legendType="plainline"
-              />
-              {trialData && (
-                <Line
+        >
+          <CartesianGrid stroke="#f5f5f5" />
+          <XAxis
+            dataKey="time"
+            label={{
+              value: `Time (${timeScale})`,
+              position: "insideBottom",
+              offset: -10,
+            }}
+            domain={[0, "dataMax"]}
+            type="number"
+          />
+          <YAxis
+            label={{ value: "Probability", angle: -90, position: "insideLeft" }}
+          />
+          <Tooltip
+            content={(props) => (
+              <InlineMathTooltip {...props} round={true} xName="\text{Time}" />
+            )}
+          />
+          <Legend verticalAlign="top" align="right" formatter={formatLegend} />
+          {armNames.map((armName, index) => {
+            const color = PLOT_COLORS[index % PLOT_COLORS.length];
+            return (
+              <React.Fragment key={armName}>
+                <Area
                   type="monotone"
-                  dataKey={`ts_${armName}_probability`}
-                  dot={{ stroke: color, strokeWidth: 2 }}
+                  dataKey={`${armName}_interval`}
                   stroke={color}
-                  strokeOpacity={0.2}
-                  name={`\\text{TS ${armName.replace(/_/g, "\\_")}}`}
+                  strokeOpacity={allocationChange ? 0.1 : 0.3}
+                  fill={color}
+                  fillOpacity={allocationChange ? 0.1 : 0.3}
+                  yAxisId={0}
+                  name={`\\text{${armName.replace(/_/g, "\\_")} log-log CI}`}
+                  legendType="none"
                 />
-              )}
-              {allocationChange && (
                 <Line
                   type="monotone"
-                  dataKey={`recomposed_${armName}_probability`}
-                  // dot={{ stroke: color, strokeWidth: 2 }}
+                  dataKey={`${armName}_probability`}
+                  stroke={color}
                   dot={false}
-                  stroke={color}
+                  strokeOpacity={allocationChange ? 0.3 : 1.0}
+                  name={`\\text{${armName.replace(/_/g, "\\_")}}`}
                   legendType="plainline"
-                  name={`\\text{target ${armName.replace(/_/g, "\\_")}}`}
-                  strokeWidth={2.5}
                 />
-              )}
-            </React.Fragment>
-          );
-        })}
-      </ComposedChart>
-    </ResponsiveContainer>
+                {trialData && (
+                  <Line
+                    type="monotone"
+                    dataKey={`ts_${armName}_probability`}
+                    dot={{ stroke: color, strokeWidth: 2 }}
+                    stroke={color}
+                    strokeOpacity={0.2}
+                    name={`\\text{TS ${armName.replace(/_/g, "\\_")}}`}
+                  />
+                )}
+                {allocationChange && (
+                  <Line
+                    type="monotone"
+                    dataKey={`recomposed_${armName}_probability`}
+                    // dot={{ stroke: color, strokeWidth: 2 }}
+                    dot={false}
+                    stroke={color}
+                    legendType="plainline"
+                    name={`\\text{target ${armName.replace(/_/g, "\\_")}}`}
+                    strokeWidth={2.5}
+                  />
+                )}
+              </React.Fragment>
+            );
+          })}
+        </ComposedChart>
+      </ResponsiveContainer>
     </div>
   );
 };
