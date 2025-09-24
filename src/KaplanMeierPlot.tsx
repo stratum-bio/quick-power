@@ -330,7 +330,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
                 stroke="#008080"
                 legendType="plainline"
                 strokeOpacity={1.0}
-                name="\text{overall control}"
+                name="\text{target control}"
                 strokeWidth={2.5}
               />
               <Line
@@ -340,7 +340,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
                 stroke="#FF7F50"
                 legendType="plainline"
                 strokeOpacity={1.0}
-                name="\text{overall treatment}"
+                name="\text{target treatment}"
                 strokeWidth={2.5}
               />
             </React.Fragment>

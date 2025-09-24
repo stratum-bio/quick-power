@@ -258,7 +258,7 @@ const SimulateFromTrial: React.FC = () => {
               htmlFor="controlHazardRatio"
               className="block font-semibold text-gray-700"
             >
-              Control Hazard Ratio
+              Control Hazard Adjustment Multiplier
             </label>
             <input
               type="number"
@@ -277,7 +277,7 @@ const SimulateFromTrial: React.FC = () => {
               htmlFor="treatHazardRatio"
               className="block font-semibold text-gray-700"
             >
-              Treatment Hazard Ratio
+              Treatment Hazard Adjustment Multiplier
             </label>
             <input
               type="number"
