@@ -42,6 +42,8 @@ interface MobileExpandedViewProps {
   factorIndex: number;
 }
 
+// TODO: move the component state handling internally instead of to the
+// parent container
 const MobileExpandedView: React.FC<MobileExpandedViewProps> = ({
   expandedRows,
   biomarkerKeyStr,
@@ -136,6 +138,8 @@ interface FactorRowProps {
   expandedRows: Record<string, boolean>;
 }
 
+// TODO: move the component state handling internally instead of to the
+// parent container
 const FactorRow: React.FC<FactorRowProps> = ({
   cancerType,
   biomarkerKeyStr,
