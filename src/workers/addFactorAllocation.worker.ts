@@ -1,15 +1,23 @@
 import type { KaplanMeierByArm } from "../types/trialdata";
 import type { AllocationChange } from "../types/prognostic-factors.d";
-import { recompose_survival } from "../utils/decomposition";
-interface TransformedPlotDataItem {
-  time: number;
-  [key: string]: number | [number, number] | number; // time, armName_probability, armName_interval
+import { recompose_survival, applyHazardRatio } from "../utils/decomposition";
+
+import {
+  type TransformedPlotDataItem,
+  addCurveToMap,
+} from "../utils/rechartsHelp";
+
+interface HazardSpec {
+  armType: "control" | "treatment";
+  armName: string;
+  hazardRatio: number;
 }
 
 function addFactorAllocation(
   data: KaplanMeierByArm,
   timePointMap: Map<number, TransformedPlotDataItem>,
   allocationChange: AllocationChange,
+  hazardRatios: HazardSpec[],
 ) {
   data.curves.forEach((curve, armIndex) => {
     const armName = data.arm_names[armIndex];
@@ -28,25 +36,26 @@ function addFactorAllocation(
       allocationChange.hazardRatios,
     );
 
-    recomposedCurve.time.forEach((time, i) => {
-      let timePoint = timePointMap.get(time);
-      if (!timePoint) {
-        timePoint = { time: time };
-        timePointMap.set(time, timePoint);
+    addCurveToMap(timePointMap, recomposedCurve, `recomposed_${armName}`);
+
+    for (const spec of hazardRatios) {
+      if (spec.armName !== armName) {
+        continue;
       }
-      timePoint[`recomposed_${armName}_probability`] =
-        recomposedCurve.probability[i];
-    });
+      const adjustedCurve = applyHazardRatio(recomposedCurve, spec.hazardRatio);
+      addCurveToMap(timePointMap, adjustedCurve, spec.armType);
+    }
   });
 }
 
 onmessage = (event) => {
-  const { data, timePointMapArray, allocationChange } = event.data;
+  const { data, timePointMapArray, allocationChange, hazardRatios } =
+    event.data;
   const timePointMap = new Map<number, TransformedPlotDataItem>(
     timePointMapArray,
   );
 
-  addFactorAllocation(data, timePointMap, allocationChange);
+  addFactorAllocation(data, timePointMap, allocationChange, hazardRatios);
 
   postMessage({ timePointMapArray: Array.from(timePointMap.entries()) });
 };

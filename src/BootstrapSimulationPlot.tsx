@@ -16,7 +16,7 @@ import { InlineMath } from "react-katex";
 import { linspace } from "./utils/survival";
 import { formatLegend } from "./utils/formatters.tsx";
 import { InlineMathTooltip } from "./InlineMathTooltip";
-import type { 
+import type {
   Trial,
   // TrialArmData
 } from "./types/trialdata.d";

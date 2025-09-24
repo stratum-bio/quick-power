@@ -38,7 +38,7 @@ const SimulateFromTrial: React.FC = () => {
   const [accrualPeriod, setAccrualPeriod] = useState<number>(24);
   const [followUpPeriod, setFollowUpPeriod] = useState<number>(12);
   const [largestSampleSize, setLargestSampleSize] = useState<number>(500);
-  const [simulationPlotParameters, setSimulationPlotParameters] = useState<{
+  const [simulationParameters, setSimulationParameters] = useState<{
     controlArm: string;
     treatmentArm: string;
     accrualPeriod: number;
@@ -126,24 +126,28 @@ const SimulateFromTrial: React.FC = () => {
       <KaplanMeierPlot
         trialName={trialName}
         allocationChange={allocationChange}
+        controlArm={simulationParameters?.controlArm}
+        treatArm={simulationParameters?.treatmentArm}
+        controlHazardRatio={controlHazardRatio}
+        treatHazardRatio={treatHazardRatio}
       />
     ) : (
       <></>
     );
-  }, [trialName, allocationChange]);
+  }, [trialName, allocationChange, simulationParameters]);
 
   const memoizedBootstrapSimulationPlot = useMemo(() => {
-    if (!simulationPlotParameters || !lambdaByArm || !trialData) {
+    if (!simulationParameters || !lambdaByArm || !trialData) {
       return null;
     }
     return (
       <BootstrapSimulationPlot
         trial={trialData}
-        controlArmName={simulationPlotParameters.controlArm}
-        treatArmName={simulationPlotParameters.treatmentArm}
-        totalSampleSize={simulationPlotParameters.largestSampleSize}
-        accrual={simulationPlotParameters.accrualPeriod}
-        followup={simulationPlotParameters.followUpPeriod}
+        controlArmName={simulationParameters.controlArm}
+        treatArmName={simulationParameters.treatmentArm}
+        totalSampleSize={simulationParameters.largestSampleSize}
+        accrual={simulationParameters.accrualPeriod}
+        followup={simulationParameters.followUpPeriod}
         forceUpdate={forceSimulation}
         allocationChange={allocationChange}
         trialName={trialName ?? ""}
@@ -152,7 +156,7 @@ const SimulateFromTrial: React.FC = () => {
       />
     );
   }, [
-    simulationPlotParameters,
+    simulationParameters,
     lambdaByArm,
     trialData,
     forceSimulation,
@@ -342,7 +346,7 @@ const SimulateFromTrial: React.FC = () => {
             type="submit"
             className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm font-semibold rounded-md text-white bg-gemini-blue hover:bg-gemini-blue-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gemini-blue"
             onClick={() => {
-              setSimulationPlotParameters({
+              setSimulationParameters({
                 controlArm,
                 treatmentArm,
                 accrualPeriod,

@@ -16,6 +16,11 @@ import { InlineMathTooltip } from "./InlineMathTooltip";
 import { PLOT_COLORS } from "./constants";
 import { formatLegend } from "./utils/formatters.tsx";
 import { calculateKaplanMeier } from "./utils/kaplan-meier";
+import { applyHazardRatio } from "./utils/decomposition";
+import {
+  type TransformedPlotDataItem,
+  addCurveToMap,
+} from "./utils/rechartsHelp";
 import AppError from "./AppError"; // Import the AppError component
 import { type AllocationChange } from "./types/prognostic-factors.d";
 import AddFactorAllocationWorker from "./workers/addFactorAllocation.worker?worker";
@@ -24,11 +29,10 @@ interface KaplanMeierPlotProps {
   trialName: string;
   trialData?: Trial;
   allocationChange?: AllocationChange;
-}
-
-interface TransformedPlotDataItem {
-  time: number;
-  [key: string]: number | [number, number] | number; // time, armName_probability, armName_interval
+  controlArm?: string;
+  treatArm?: string;
+  controlHazardRatio?: number;
+  treatHazardRatio?: number;
 }
 
 function accumulatePoints(
@@ -61,17 +65,7 @@ function kaplanMeierToTimePoints(
 
   data.curves.forEach((curve, armIndex) => {
     const armName = data.arm_names[armIndex];
-    curve.time.forEach((time, i) => {
-      let timePoint = timePointMap.get(time);
-      if (!timePoint) {
-        timePoint = { time };
-        timePointMap.set(time, timePoint);
-      }
-      timePoint[`${armName}_probability`] = curve.probability[i];
-      if (curve.interval) {
-        timePoint[`${armName}_interval`] = curve.interval[i];
-      }
-    });
+    addCurveToMap(timePointMap, curve, armName);
   });
 
   return timePointMap;
@@ -84,21 +78,31 @@ function addDebugTrialData(
   trialData.arms.map((arm) => {
     const arm_events = arm.events.map((e) => (e ? 1 : 0));
     const ts_km = calculateKaplanMeier(arm.time, arm_events);
-    ts_km.time.map((time, idx) => {
-      let timePoint = timePointMap.get(time);
-      if (!timePoint) {
-        timePoint = { time: time };
-        timePointMap.set(time, timePoint);
-      }
-      timePoint[`ts_${arm.arm_name}_probability`] = ts_km.probability[idx];
-    });
+    addCurveToMap(timePointMap, ts_km, `ts_${arm.arm_name}`);
   });
+}
+
+function addHazardAdjustedCurves(
+  timePointMap: Map<number, TransformedPlotDataItem>,
+  data: KaplanMeierByArm,
+  armName: string,
+  hazardRatio: number,
+  prefix: string,
+) {
+  const armIdx = data.arm_names.indexOf(armName);
+  const km = data.curves[armIdx];
+  const adjustedKM = applyHazardRatio(km, hazardRatio);
+  addCurveToMap(timePointMap, adjustedKM, prefix);
 }
 
 const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
   trialName,
   trialData,
   allocationChange,
+  controlArm,
+  treatArm,
+  controlHazardRatio,
+  treatHazardRatio,
 }) => {
   const [data, setData] = useState<KaplanMeierByArm | null>(null);
   const [plotData, setPlotData] = useState<TransformedPlotDataItem[]>([]); // Changed type to any[] for dynamic keys
@@ -107,6 +111,13 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
   const [error, setError] = useState<string | null>(null);
   const [timeScale, setTimeScale] = useState<string | null>(null);
   const plotContainerRef = useRef<HTMLDivElement>(null);
+
+  const hasAdjustedHazard =
+    controlArm &&
+    treatArm &&
+    controlHazardRatio &&
+    treatHazardRatio &&
+    (controlHazardRatio != 1.0 || treatHazardRatio != 1.0);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -143,6 +154,18 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
         data: data,
         timePointMapArray: Array.from(timePointMap.entries()),
         allocationChange: allocationChange,
+        hazardRatios: [
+          {
+            armName: controlArm,
+            armType: "control",
+            hazardRatio: controlHazardRatio,
+          },
+          {
+            armName: treatArm,
+            armType: "treatment",
+            hazardRatio: treatHazardRatio,
+          },
+        ],
       });
 
       worker.onmessage = (event) => {
@@ -173,12 +196,42 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
         addDebugTrialData(trialData, timePointMap);
       }
 
+      const availableArms = new Set(data.arm_names);
+      if (
+        hasAdjustedHazard &&
+        availableArms.has(controlArm) &&
+        availableArms.has(treatArm)
+      ) {
+        addHazardAdjustedCurves(
+          timePointMap,
+          data,
+          controlArm,
+          controlHazardRatio,
+          "control",
+        );
+        addHazardAdjustedCurves(
+          timePointMap,
+          data,
+          treatArm,
+          treatHazardRatio,
+          "treatment",
+        );
+      }
+
       const transformedData = sortAndAccumulate(
         Array.from(timePointMap.values()),
       );
       setPlotData(transformedData);
     }
-  }, [data, trialData, allocationChange]);
+  }, [
+    data,
+    trialData,
+    allocationChange,
+    controlArm,
+    treatArm,
+    controlHazardRatio,
+    treatHazardRatio,
+  ]);
 
   if (loading) {
     return <Loading message="Loading plot data..." />;
@@ -242,7 +295,9 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
                   dot={false}
                   strokeOpacity={allocationChange ? 0.3 : 1.0}
                   name={`\\text{${armName.replace(/_/g, "\\_")}}`}
-                  legendType="plainline"
+                  legendType={
+                    allocationChange || hasAdjustedHazard ? "none" : "plainline"
+                  }
                 />
                 {trialData && (
                   <Line
@@ -262,13 +317,38 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
                     dot={false}
                     stroke={color}
                     legendType="plainline"
-                    name={`\\text{target ${armName.replace(/_/g, "\\_")}}`}
-                    strokeWidth={2.5}
+                    strokeOpacity={hasAdjustedHazard ? 0.7 : 1.0}
+                    name={`\\text{adjusted ${armName.replace(/_/g, "\\_")}}`}
+                    strokeWidth={hasAdjustedHazard ? 1.5 : 2.5}
                   />
                 )}
               </React.Fragment>
             );
           })}
+          {hasAdjustedHazard && (
+            <React.Fragment>
+              <Line
+                type="monotone"
+                dataKey="control_probability"
+                dot={false}
+                stroke="#008080"
+                legendType="plainline"
+                strokeOpacity={1.0}
+                name="\text{overall control}"
+                strokeWidth={2.5}
+              />
+              <Line
+                type="monotone"
+                dataKey="treatment_probability"
+                dot={false}
+                stroke="#FF7F50"
+                legendType="plainline"
+                strokeOpacity={1.0}
+                name="\text{overall treatment}"
+                strokeWidth={2.5}
+              />
+            </React.Fragment>
+          )}
         </ComposedChart>
       </ResponsiveContainer>
     </div>
