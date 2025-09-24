@@ -28,9 +28,6 @@ export function loadPrognosticFactors(
   const initialFactors = JSON.parse(JSON.stringify(defaultFactors)); // Deep copy of defaults
   const savedDifferences = localStorage.getItem(getStorageKey(cancerType));
 
-  console.log("initial ", initialFactors);
-  console.log("diffs ", savedDifferences);
-
   if (savedDifferences) {
     const differences: SavedDifference[] = JSON.parse(savedDifferences);
     differences.forEach((diff) => {
