@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import Loading from "./Loading";
 import {
   Legend,
@@ -110,7 +110,6 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const [timeScale, setTimeScale] = useState<string | null>(null);
-  const plotContainerRef = useRef<HTMLDivElement>(null);
 
   const hasAdjustedHazard =
     controlArm &&
@@ -180,9 +179,6 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
           Array.from(updatedTimePointMap.values()),
         );
         setPlotData(transformedData);
-        if (plotContainerRef.current) {
-          plotContainerRef.current.focus();
-        }
         worker.terminate();
       };
 
@@ -242,7 +238,7 @@ const KaplanMeierPlot: React.FC<KaplanMeierPlotProps> = ({
   }
 
   return (
-    <div ref={plotContainerRef} tabIndex={-1} style={{ outline: "none" }}>
+    <div style={{ outline: "none" }}>
       <ResponsiveContainer width="100%" height={400}>
         <ComposedChart
           data={plotData}
