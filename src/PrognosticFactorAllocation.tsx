@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   Biomarker,
   type DiseasePrognosticFactorTable,
@@ -223,7 +224,8 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
       <p className="italic">
         Disclaimer: the default hazard ratios have not been thoroughly reviewed,
         please verify these are correct for your investigation and update them
-        as needed in the Prognostic Factors Parameters page.
+        as needed. {" "}
+        <Link to="/prognostic-factors" className="text-gemini-blue font-bold">Update the prognostic factor hazard ratios here.</Link>
       </p>
       <div className="mb-4">
         <label

@@ -65,7 +65,7 @@ function App() {
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `block py-2 px-4 rounded-md ${isActive ? "bg-gemini-blue-hover" : "hover:bg-gemini-blue-hover"}`
+                  `font-medium block py-2 px-4 rounded-md ${isActive ? "bg-gemini-blue-hover" : "hover:bg-gemini-blue-hover"}`
                 }
                 onClick={() => setIsNavOpen(false)} // Close nav on link click
               >
@@ -79,7 +79,7 @@ function App() {
                   <NavLink
                     to="/trials"
                     className={({ isActive }) =>
-                      `block py-2 pl-4 rounded-md ${isActive ? "bg-gemini-blue-hover" : "hover:bg-gemini-blue-hover"}`
+                      `font-medium block py-2 pl-4 rounded-md ${isActive ? "bg-gemini-blue-hover" : "hover:bg-gemini-blue-hover"}`
                     }
                     onClick={() => setIsNavOpen(false)} // Close nav on link click
                   >
@@ -90,7 +90,7 @@ function App() {
                   <NavLink
                     to="/schoenfeld"
                     className={({ isActive }) =>
-                      `block py-2 pl-4 rounded-md ${isActive ? "bg-gemini-blue-hover" : "hover:bg-gemini-blue-hover"}`
+                      `font-medium block py-2 pl-4 rounded-md ${isActive ? "bg-gemini-blue-hover" : "hover:bg-gemini-blue-hover"}`
                     }
                     onClick={() => setIsNavOpen(false)} // Close nav on link click
                   >
@@ -106,7 +106,7 @@ function App() {
                   <NavLink
                     to="/prognostic-factors"
                     className={({ isActive }) =>
-                      `block py-2 pl-4 rounded-md ${isActive ? "bg-gemini-blue-hover" : "hover:bg-gemini-blue-hover"}`
+                      `font-medium block py-2 pl-4 rounded-md ${isActive ? "bg-gemini-blue-hover" : "hover:bg-gemini-blue-hover"}`
                     }
                     onClick={() => setIsNavOpen(false)} // Close nav on link click
                   >
