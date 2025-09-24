@@ -121,3 +121,13 @@ export function recompose_survival(
     }),
   };
 }
+
+export function applyHazardRatio(
+  km: KaplanMeier,
+  hazardRatio: number,
+): KaplanMeier {
+  return {
+    time: km.time,
+    probability: km.probability.map((p) => p ** hazardRatio),
+  };
+}

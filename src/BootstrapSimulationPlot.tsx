@@ -16,7 +16,10 @@ import { InlineMath } from "react-katex";
 import { linspace } from "./utils/survival";
 import { formatLegend } from "./utils/formatters.tsx";
 import { InlineMathTooltip } from "./InlineMathTooltip";
-import type { Trial, TrialArmData } from "./types/trialdata.d";
+import type { 
+  Trial,
+  // TrialArmData
+} from "./types/trialdata.d";
 
 import type { SimulationWorkerResult } from "./types/simulationWorker.d";
 
@@ -36,6 +39,8 @@ interface TrackedBootstrapSimulationProps {
   followup: number;
   forceUpdate: boolean;
   allocationChange?: AllocationChange;
+  controlHazardRatio: number;
+  treatHazardRatio: number;
 }
 
 interface BootstrapSimulationProps extends TrackedBootstrapSimulationProps {
@@ -70,6 +75,7 @@ function propsAreEqual(
   return true;
 }
 
+/*
 function findArm(trial: Trial, name: string): TrialArmData {
   for (const arm of trial.arms) {
     if (arm.arm_name === name) {
@@ -79,6 +85,7 @@ function findArm(trial: Trial, name: string): TrialArmData {
 
   throw new Error("Invalid arm: " + name);
 }
+*/
 
 function correctBounds(results: HazardDistPlotData[]) {
   for (let i = results.length - 2; i >= 0; i--) {
@@ -100,7 +107,7 @@ function correctBounds(results: HazardDistPlotData[]) {
 
 const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
   trialName,
-  trial,
+  // trial,
   controlArmName,
   treatArmName,
   totalSampleSize,
@@ -108,6 +115,8 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
   followup,
   forceUpdate = false,
   allocationChange,
+  controlHazardRatio,
+  treatHazardRatio,
 }) => {
   const allProperties = {
     controlArmName,
@@ -116,6 +125,8 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
     accrual,
     followup,
     forceUpdate,
+    controlHazardRatio,
+    treatHazardRatio,
   };
 
   const [properties, setProperties] =
@@ -132,6 +143,11 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
   const [minSampleSize, setMinSampleSize] = useState(MIN_SAMPLE_SIZE);
   const [maxSampleSize, setMaxSampleSize] = useState(totalSampleSize);
 
+  /*
+   * Keeping this for now in case we want to
+   * bring back the bootstrap resampling
+   * simulation method
+   *
   const controlArm = findArm(trial, controlArmName);
   const treatArm = findArm(trial, treatArmName);
 
@@ -141,6 +157,7 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
   );
   const treatTimes = new Float64Array(treatArm.time);
   const treatEvents = new Uint8Array(treatArm.events.map((e) => (e ? 1 : 0)));
+  */
 
   useEffect(() => {
     setLoading(true);
@@ -207,6 +224,8 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
           accrual,
           followup,
           forceUpdate,
+          controlHazardRatio,
+          treatHazardRatio,
         });
 
         worker.terminate();
@@ -214,7 +233,10 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
     };
 
     jobs.forEach((sampleSize) => {
-      if (!allocationChange) {
+      /*
+       * This is the old function call
+       * for the pure bootstrapping method
+       *
         worker.postMessage({
           simulationType: "bootstrap",
           sampleSize,
@@ -226,19 +248,20 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
           treatTimes,
           treatEvents,
         });
-      } else {
-        worker.postMessage({
-          simulationType: "kaplan-meier",
-          sampleSize,
-          accrual,
-          followup,
-          datasetSimCount,
-          trialName,
-          controlArmName,
-          treatArmName,
-          allocation: allocationChange,
-        });
-      }
+      */
+      worker.postMessage({
+        simulationType: "kaplan-meier",
+        sampleSize,
+        accrual,
+        followup,
+        datasetSimCount,
+        trialName,
+        controlArmName,
+        treatArmName,
+        controlHazardRatio,
+        treatHazardRatio,
+        allocation: allocationChange,
+      });
     });
 
     return () => {

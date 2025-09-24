@@ -51,6 +51,8 @@ const SimulateFromTrial: React.FC = () => {
   const [allocationChange, setPrognosticFactorAllocation] = useState<
     AllocationChange | undefined
   >(undefined);
+  const [controlHazardRatio, setControlHazardRatio] = useState<number>(1.0);
+  const [treatHazardRatio, setTreatHazardRatio] = useState<number>(1.0);
 
   const handlePrognosticFactorUpdate = (
     allocationChange: AllocationChange | undefined,
@@ -145,6 +147,8 @@ const SimulateFromTrial: React.FC = () => {
         forceUpdate={forceSimulation}
         allocationChange={allocationChange}
         trialName={trialName ?? ""}
+        controlHazardRatio={controlHazardRatio}
+        treatHazardRatio={treatHazardRatio}
       />
     );
   }, [
@@ -244,6 +248,42 @@ const SimulateFromTrial: React.FC = () => {
                 </option>
               ))}
             </select>
+          </div>
+          <div>
+            <label
+              htmlFor="controlHazardRatio"
+              className="block font-semibold text-gray-700"
+            >
+              Control Hazard Ratio
+            </label>
+            <input
+              type="number"
+              id="controlHazardRatio"
+              name="controlHazardRatio"
+              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-md"
+              value={controlHazardRatio}
+              onChange={(e) =>
+                setControlHazardRatio(parseFloat(e.target.value))
+              }
+              step="0.1"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="treatHazardRatio"
+              className="block font-semibold text-gray-700"
+            >
+              Treatment Hazard Ratio
+            </label>
+            <input
+              type="number"
+              id="controlHazardRatio"
+              name="controlHazardRatio"
+              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-md"
+              value={treatHazardRatio}
+              onChange={(e) => setTreatHazardRatio(parseFloat(e.target.value))}
+              step="0.1"
+            />
           </div>
           <div>
             <label
