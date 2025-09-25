@@ -129,13 +129,13 @@ const TrialDetail: React.FC = () => {
         publication KM plots by original authors, see footer citation.
       </p>
       {trialData.arms.length > 0 ? (
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:max-w-3xl">
           {trialData.arms.map((arm, index) => (
             <div
               key={index}
-              className="rounded-md shadow-xl/30 shadow-gemini-blue ring ring-gemini-blue col-span-1"
+              className="rounded-md shadow-xl/30 shadow-gemini-blue ring ring-gemini-blue"
             >
-              <h3 className="text-xl font-semibold mb-2 p-4 pb-2 pt-2">
+              <h3 className="text-lg font-semibold p-4 pb-2 pt-2">
                 {arm.arm_name}
               </h3>
               <div className="grid grid-cols-2 p-2 pl-4 pr-4">
