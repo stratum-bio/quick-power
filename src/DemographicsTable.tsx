@@ -77,7 +77,7 @@ const DemographicsTable: React.FC<DemographicsTableProps> = ({
       <h2 className="text-xl font-semibold mb-4">Patient Characteristics</h2>
 
       <p className="italic mb-4 ">
-      Disclaimer: data is in the process of being cleaned and verified.  Reference the original publication for accurate and most legible information.
+      Disclaimer: data is in the process of being cleaned and verified.  Reference the original publication for accurate and most legible information.  This data was extracted from the publication.
       </p>
 
       <div

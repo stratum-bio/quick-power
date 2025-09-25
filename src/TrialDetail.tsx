@@ -124,12 +124,16 @@ const TrialDetail: React.FC = () => {
         Simulate from this Trial
       </Link>
       <h2 className="text-xl font-bold mb-3">Trial Arms</h2>
+      <p className="italic mb-4">
+        Data source: automated extraction from
+        publication KM plots by original authors, see footer citation.
+      </p>
       {trialData.arms.length > 0 ? (
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {trialData.arms.map((arm, index) => (
             <div
               key={index}
-              className="rounded-md shadow-xl/30 shadow-gemini-blue ring ring-gemini-blue"
+              className="rounded-md shadow-xl/30 shadow-gemini-blue ring ring-gemini-blue col-span-1"
             >
               <h3 className="text-xl font-semibold mb-2 p-4 pb-2 pt-2">
                 {arm.arm_name}
@@ -143,22 +147,6 @@ const TrialDetail: React.FC = () => {
                   <span className="font-semibold">Subjects</span>
                 </p>
                 <p>{arm.time.length}</p>
-                <p className="pt-2">
-                  <span className="font-semibold">Weibull</span>
-                </p>
-                <p></p>
-                <p>Scale</p>
-                <p>
-                  {arm.arm_name in armWeibull
-                    ? armWeibull[arm.arm_name].scale.toFixed(3)
-                    : "N/A"}
-                </p>
-                <p>Shape</p>
-                <p>
-                  {arm.arm_name in armWeibull
-                    ? armWeibull[arm.arm_name].shape.toFixed(3)
-                    : "N/A"}
-                </p>
               </div>
             </div>
           ))}
