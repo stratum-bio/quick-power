@@ -11,7 +11,6 @@ import AppError from "./AppError"; // Import the AppError component
 import { DISEASE_VAL_TO_NAME } from "./constants";
 import DemographicsTable from "./DemographicsTable";
 
-
 function fitLambdaPerArm(data: Trial): Record<string, number> {
   const result: Record<string, number> = {};
   for (let i = 0; i < data.arms.length; i++) {
@@ -125,8 +124,8 @@ const TrialDetail: React.FC = () => {
       </Link>
       <h2 className="text-xl font-bold mb-3">Trial Arms</h2>
       <p className="italic mb-4">
-        Data source: automated extraction from
-        publication KM plots by original authors, see footer citation.
+        Data source: automated extraction from publication KM plots by original
+        authors, see footer citation.
       </p>
       {trialData.arms.length > 0 ? (
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:max-w-3xl">
@@ -155,7 +154,7 @@ const TrialDetail: React.FC = () => {
         <p>No arm data available.</p>
       )}
 
-      <DemographicsTable pubmed={trialData.meta.pubmed}/>
+      <DemographicsTable pubmed={trialData.meta.pubmed} />
 
       {trialName !== undefined && (
         <>

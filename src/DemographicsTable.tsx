@@ -30,9 +30,7 @@ function renderGroupData(data: GroupData) {
   }
 }
 
-const DemographicsTable: React.FC<DemographicsTableProps> = ({
-  pubmed,
-}) => {
+const DemographicsTable: React.FC<DemographicsTableProps> = ({ pubmed }) => {
   const [studyTable, setStudyTable] = useState<StudyTable | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [, setError] = useState<string | null>(null);
@@ -77,12 +75,16 @@ const DemographicsTable: React.FC<DemographicsTableProps> = ({
       <h2 className="text-xl font-semibold mb-4">Patient Characteristics</h2>
 
       <p className="italic mb-4 ">
-      Disclaimer: data is in the process of being cleaned and verified.  Reference the original publication for accurate and most legible information.  This data was extracted from the publication.
+        Disclaimer: data is in the process of being cleaned and verified.
+        Reference the original publication for accurate and most legible
+        information. This data was extracted from the publication.
       </p>
 
       <div
         className={`grid gap-x-4 items-center border-b pb-2 mb-2 rounded-md shadow-xl/30 shadow-gemini-blue ring ring-gemini-blue`}
-        style={{ gridTemplateColumns: `repeat(${groupCount + 1}, minmax(0, 1fr))` }}
+        style={{
+          gridTemplateColumns: `repeat(${groupCount + 1}, minmax(0, 1fr))`,
+        }}
       >
         {/* Header Row */}
         <div className="font-bold p-4">Characteristic</div>
@@ -98,8 +100,11 @@ const DemographicsTable: React.FC<DemographicsTableProps> = ({
             key={charIndex}
             className={`pl-4 hover:bg-medium-azure-alpha col-span-full ${characteristic.group_data[0]?.data_type === DataType.Header ? "bg-medium-azure-alpha" : ""}`}
           >
-            <div className={`grid gap-x-4 items-center`}
-              style={{ gridTemplateColumns: `repeat(${groupCount + 1}, minmax(0, 1fr))` }}
+            <div
+              className={`grid gap-x-4 items-center`}
+              style={{
+                gridTemplateColumns: `repeat(${groupCount + 1}, minmax(0, 1fr))`,
+              }}
             >
               <div
                 className={`${characteristic.is_sub_characteristic ? "pl-4" : ""} ${characteristic.group_data[0]?.data_type === DataType.Header ? "pt-1 pb-1 font-semibold col-span-3" : "col-span-1"}`}
@@ -107,11 +112,12 @@ const DemographicsTable: React.FC<DemographicsTableProps> = ({
                 {characteristic.original_label}{" "}
                 {characteristic.unit ? `(${characteristic.unit})` : ""}
               </div>
-              {(characteristic.group_data[0]?.data_type != DataType.Header) && (characteristic.group_data.map((data, dataIndex) => (
-                <div key={dataIndex} className="col-span-1 text-center">
-                  {renderGroupData(data)}
-                </div>
-              )))}
+              {characteristic.group_data[0]?.data_type != DataType.Header &&
+                characteristic.group_data.map((data, dataIndex) => (
+                  <div key={dataIndex} className="col-span-1 text-center">
+                    {renderGroupData(data)}
+                  </div>
+                ))}
             </div>
           </div>
         ))}
