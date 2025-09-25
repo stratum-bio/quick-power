@@ -1,0 +1,1567 @@
+import { type StudyTable, DataType } from '../types/study_table.d';
+
+export const CerebelStudyTable: StudyTable = {
+  study_id: "EGF111438",
+  study_title: "CEREBEL (EGF111438): A Phase III, Randomized, Open-Label Study of Lapatinib Plus Capecitabine Versus Trastuzumab Plus Capecitabine in Patients With Human Epidermal Growth Factor Receptor 2–Positive Metastatic Breast Cancer",
+  table_name: "Table 1",
+  table_title: "Patient Demographics and Disease and Treatment Characteristics",
+  footnotes: [
+    "Abbreviations: CISH, chromogenic in situ hybridization; ECOG, European Cooperative Oncology Group; FISH, fluorescence in situ hybridization; HER2, human epidermal growth factor receptor 2; IHC, immunohistochemistry; MET, metastatic; SISH, silver in situ hybridization."
+  ],
+  groups: [
+    {
+      name: "Lapatinib plus Capecitabine",
+      n: 271,
+      type: "intervention"
+    },
+    {
+      name: "Trastuzumab plus Capecitabine",
+      n: 269,
+      type: "intervention"
+    },
+    {
+      name: "Total",
+      n: 540,
+      type: "total"
+    }
+  ],
+  characteristics: [
+    {
+      original_label: "Age, years",
+      standardized_name: "Age",
+      unit: "years",
+      category: "Demographics",
+      is_sub_characteristic: false,
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.Header,
+          raw_string: "Age, years"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.Header,
+          raw_string: "Age, years"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.Header,
+          raw_string: "Age, years"
+        }
+      ]
+    },
+    {
+      original_label: "Median",
+      standardized_name: "Age",
+      unit: "years",
+      category: "Demographics",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Age, years",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.NumericSingle,
+          value: 53.0,
+          raw_string: "53"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.NumericSingle,
+          value: 56.0,
+          raw_string: "56"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.NumericSingle,
+          value: 55.0,
+          raw_string: "55"
+        }
+      ]
+    },
+    {
+      original_label: "Range",
+      standardized_name: "Age Range",
+      unit: "years",
+      category: "Demographics",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Age, years",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.NumericMeanRange,
+          range_min: 27.0,
+          range_max: 83.0,
+          raw_string: "27-83"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.NumericMeanRange,
+          range_min: 31.0,
+          range_max: 79.0,
+          raw_string: "31-79"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.NumericMeanRange,
+          range_min: 27.0,
+          range_max: 83.0,
+          raw_string: "27-83"
+        }
+      ]
+    },
+    {
+      original_label: "ECOG performance status at baseline",
+      standardized_name: "ECOG Performance Status",
+      category: "Baseline Characteristics",
+      is_sub_characteristic: false,
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.Header,
+          raw_string: "ECOG performance status at baseline"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.Header,
+          raw_string: "ECOG performance status at baseline"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.Header,
+          raw_string: "ECOG performance status at baseline"
+        }
+      ]
+    },
+    {
+      original_label: "0",
+      standardized_name: "ECOG 0",
+      category: "Baseline Characteristics",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "ECOG performance status at baseline",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 260.0,
+          percentage: 96.0,
+          raw_string: "260 96"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 261.0,
+          percentage: 98.0,
+          raw_string: "261 98"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 521.0,
+          percentage: 96.0,
+          raw_string: "521 96"
+        }
+      ]
+    },
+    {
+      original_label: "1",
+      standardized_name: "ECOG 1",
+      category: "Baseline Characteristics",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "ECOG performance status at baseline",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 9.0,
+          percentage: 3.0,
+          raw_string: "9 3"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 5.0,
+          percentage: 2.0,
+          raw_string: "5 2"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 14.0,
+          percentage: 3.0,
+          raw_string: "14 3"
+        }
+      ]
+    },
+    {
+      original_label: "2",
+      standardized_name: "ECOG 2",
+      category: "Baseline Characteristics",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "ECOG performance status at baseline",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 2.0,
+          percentage: 1.0,
+          raw_string: "2 1"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 3.0,
+          percentage: 1.0,
+          raw_string: "3 1"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 5.0,
+          percentage: 1.0,
+          raw_string: "5 1"
+        }
+      ]
+    },
+    {
+      original_label: "Race",
+      standardized_name: "Race",
+      category: "Demographics",
+      is_sub_characteristic: false,
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 266.0,
+          percentage: 98.0,
+          raw_string: "266 98"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 261.0,
+          percentage: 97.0,
+          raw_string: "261 97"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 527.0,
+          percentage: 98.0,
+          raw_string: "527 98"
+        }
+      ]
+    },
+    {
+      original_label: "HER2 status",
+      standardized_name: "HER2 Status",
+      category: "Disease Characteristics",
+      is_sub_characteristic: false,
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.Header,
+          raw_string: "HER2 status"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.Header,
+          raw_string: "HER2 status"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.Header,
+          raw_string: "HER2 status"
+        }
+      ]
+    },
+    {
+      original_label: "IHC 3+ and/or FISH positive",
+      standardized_name: "IHC 3+ and/or FISH Positive",
+      category: "Disease Characteristics",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "HER2 status",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 233.0,
+          percentage: 86.0,
+          raw_string: "233 86"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 228.0,
+          percentage: 85.0,
+          raw_string: "228 85"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 461.0,
+          percentage: 85.0,
+          raw_string: "461 85"
+        }
+      ]
+    },
+    {
+      original_label: "CISH positive",
+      standardized_name: "CISH Positive",
+      category: "Disease Characteristics",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "HER2 status",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 29.0,
+          percentage: 11.0,
+          raw_string: "29 11"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 40.0,
+          percentage: 15.0,
+          raw_string: "40 15"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 69.0,
+          percentage: 13.0,
+          raw_string: "69 13"
+        }
+      ]
+    },
+    {
+      original_label: "SISH positive",
+      standardized_name: "SISH Positive",
+      category: "Disease Characteristics",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "HER2 status",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 2.0,
+          raw_string: "2 < 1",
+          notes: "Percentage is less than 1"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 0.0,
+          percentage: 0.0,
+          raw_string: "0 0"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 2.0,
+          raw_string: "2 < 1",
+          notes: "Percentage is less than 1"
+        }
+      ]
+    },
+    {
+      original_label: "Not HER2 positive",
+      standardized_name: "Not HER2 Positive",
+      category: "Disease Characteristics",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "HER2 status",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 3.0,
+          percentage: 1.0,
+          raw_string: "3 1"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 4.0,
+          percentage: 1.0,
+          raw_string: "4 1"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 7.0,
+          percentage: 1.0,
+          raw_string: "7 1"
+        }
+      ]
+    },
+    {
+      original_label: "Estrogen receptor status",
+      standardized_name: "Estrogen Receptor Status",
+      category: "Disease Characteristics",
+      is_sub_characteristic: false,
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.Header,
+          raw_string: "Estrogen receptor status"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.Header,
+          raw_string: "Estrogen receptor status"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.Header,
+          raw_string: "Estrogen receptor status"
+        }
+      ]
+    },
+    {
+      original_label: "Positive",
+      standardized_name: "Positive",
+      category: "Disease Characteristics",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Estrogen receptor status",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 133.0,
+          percentage: 49.0,
+          raw_string: "133 49"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 122.0,
+          percentage: 45.0,
+          raw_string: "122 45"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 255.0,
+          percentage: 47.0,
+          raw_string: "255 47"
+        }
+      ]
+    },
+    {
+      original_label: "Negative",
+      standardized_name: "Negative",
+      category: "Disease Characteristics",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Estrogen receptor status",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 135.0,
+          percentage: 50.0,
+          raw_string: "135 50"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 144.0,
+          percentage: 54.0,
+          raw_string: "144 54"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 279.0,
+          percentage: 52.0,
+          raw_string: "279 52"
+        }
+      ]
+    },
+    {
+      original_label: "Unknown",
+      standardized_name: "Unknown",
+      category: "Disease Characteristics",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Estrogen receptor status",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 3.0,
+          percentage: 1.0,
+          raw_string: "3 1"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 3.0,
+          percentage: 1.0,
+          raw_string: "3 1"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 6.0,
+          percentage: 1.0,
+          raw_string: "6 1"
+        }
+      ]
+    },
+    {
+      original_label: "Progesterone receptor status",
+      standardized_name: "Progesterone Receptor Status",
+      category: "Disease Characteristics",
+      is_sub_characteristic: false,
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.Header,
+          raw_string: "Progesterone receptor status"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.Header,
+          raw_string: "Progesterone receptor status"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.Header,
+          raw_string: "Progesterone receptor status"
+        }
+      ]
+    },
+    {
+      original_label: "Positive",
+      standardized_name: "Positive",
+      category: "Disease Characteristics",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Progesterone receptor status",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 98.0,
+          percentage: 36.0,
+          raw_string: "98 36"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 80.0,
+          percentage: 30.0,
+          raw_string: "80 30"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 178.0,
+          percentage: 33.0,
+          raw_string: "178 33"
+        }
+      ]
+    },
+    {
+      original_label: "Negative",
+      standardized_name: "Negative",
+      category: "Disease Characteristics",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Progesterone receptor status",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 158.0,
+          percentage: 58.0,
+          raw_string: "158 58"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 173.0,
+          percentage: 64.0,
+          raw_string: "173 64"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 331.0,
+          percentage: 61.0,
+          raw_string: "331 61"
+        }
+      ]
+    },
+    {
+      original_label: "Unknown",
+      standardized_name: "Unknown",
+      category: "Disease Characteristics",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Progesterone receptor status",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 15.0,
+          percentage: 6.0,
+          raw_string: "15 6"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 16.0,
+          percentage: 6.0,
+          raw_string: "16 6"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 31.0,
+          percentage: 6.0,
+          raw_string: "31 6"
+        }
+      ]
+    },
+    {
+      original_label: "No. of involved sites",
+      standardized_name: "Number of Involved Sites",
+      category: "Disease Characteristics",
+      is_sub_characteristic: false,
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.Header,
+          raw_string: "No. of involved sites"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.Header,
+          raw_string: "No. of involved sites"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.Header,
+          raw_string: "No. of involved sites"
+        }
+      ]
+    },
+    {
+      original_label: "<= 2",
+      standardized_name: "<= 2",
+      category: "Disease Characteristics",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "No. of involved sites",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 77.0,
+          percentage: 28.0,
+          raw_string: "77 28"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 78.0,
+          percentage: 29.0,
+          raw_string: "78 29"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 155.0,
+          percentage: 29.0,
+          raw_string: "155 29"
+        }
+      ]
+    },
+    {
+      original_label: ">= 3",
+      standardized_name: ">= 3",
+      category: "Disease Characteristics",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "No. of involved sites",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 194.0,
+          percentage: 72.0,
+          raw_string: "194 72"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 191.0,
+          percentage: 71.0,
+          raw_string: "191 71"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 385.0,
+          percentage: 71.0,
+          raw_string: "385 71"
+        }
+      ]
+    },
+    {
+      original_label: "Stage IV at initial diagnosis",
+      standardized_name: "Stage IV at Initial Diagnosis",
+      category: "Disease Characteristics",
+      is_sub_characteristic: false,
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 104.0,
+          percentage: 38.0,
+          raw_string: "104 38"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 98.0,
+          percentage: 36.0,
+          raw_string: "98 36"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 202.0,
+          percentage: 37.0,
+          raw_string: "202 37"
+        }
+      ]
+    },
+    {
+      original_label: "Prior treatment",
+      standardized_name: "Prior Treatment",
+      category: "Treatment History",
+      is_sub_characteristic: false,
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.Header,
+          raw_string: "Prior treatment"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.Header,
+          raw_string: "Prior treatment"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.Header,
+          raw_string: "Prior treatment"
+        }
+      ]
+    },
+    {
+      original_label: "Trastuzumab naive prior met treatment",
+      standardized_name: "Trastuzumab Naive Prior Metastatic Treatment",
+      category: "Treatment History",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Prior treatment",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 59.0,
+          percentage: 22.0,
+          raw_string: "59 22"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 58.0,
+          percentage: 22.0,
+          raw_string: "58 22"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 117.0,
+          percentage: 22.0,
+          raw_string: "117 22"
+        }
+      ]
+    },
+    {
+      original_label: "Prior trastuzumab/<= 1 prior met treatment",
+      standardized_name: "Prior Trastuzumab and <= 1 Prior Metastatic Treatment",
+      category: "Treatment History",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Prior treatment",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 108.0,
+          percentage: 40.0,
+          raw_string: "108 40"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 101.0,
+          percentage: 38.0,
+          raw_string: "101 38"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 209.0,
+          percentage: 39.0,
+          raw_string: "209 39"
+        }
+      ]
+    },
+    {
+      original_label: "Prior trastuzumab/>= 2 prior met treatment",
+      standardized_name: "Prior Trastuzumab and >= 2 Prior Metastatic Treatments",
+      category: "Treatment History",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Prior treatment",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 58.0,
+          percentage: 21.0,
+          raw_string: "58 21"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 63.0,
+          percentage: 23.0,
+          raw_string: "63 23"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 121.0,
+          percentage: 22.0,
+          raw_string: "121 22"
+        }
+      ]
+    },
+    {
+      original_label: "No prior trastuzumab/>= 1 prior met treatment",
+      standardized_name: "No Prior Trastuzumab and >= 1 Prior Metastatic Treatment",
+      category: "Treatment History",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Prior treatment",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 46.0,
+          percentage: 17.0,
+          raw_string: "46 17"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 47.0,
+          percentage: 17.0,
+          raw_string: "47 17"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 93.0,
+          percentage: 17.0,
+          raw_string: "93 17"
+        }
+      ]
+    },
+    {
+      original_label: "Patients who received prior chemotherapy",
+      standardized_name: "Prior Chemotherapy Use",
+      category: "Treatment History",
+      is_sub_characteristic: false,
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 249.0,
+          percentage: 92.0,
+          raw_string: "249 92"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 245.0,
+          percentage: 91.0,
+          raw_string: "245 91"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 494.0,
+          percentage: 91.0,
+          raw_string: "494 91"
+        }
+      ]
+    },
+    {
+      original_label: "Adjuvant",
+      standardized_name: "Adjuvant Setting",
+      category: "Treatment History",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Patients who received prior chemotherapy",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 158.0,
+          percentage: 58.0,
+          raw_string: "158 58"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 173.0,
+          percentage: 64.0,
+          raw_string: "173 64"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 331.0,
+          percentage: 61.0,
+          raw_string: "331 61"
+        }
+      ]
+    },
+    {
+      original_label: "Metastatic",
+      standardized_name: "Metastatic Setting",
+      category: "Treatment History",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Patients who received prior chemotherapy",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 91.0,
+          percentage: 34.0,
+          raw_string: "91 34"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 72.0,
+          percentage: 27.0,
+          raw_string: "72 27"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 163.0,
+          percentage: 30.0,
+          raw_string: "163 30"
+        }
+      ]
+    },
+    {
+      original_label: "No. of prior treatments for metastatic disease",
+      standardized_name: "No Prior Treatments for Metastatic Disease",
+      category: "Treatment History",
+      is_sub_characteristic: false,
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 117.0,
+          percentage: 43.0,
+          raw_string: "117 43"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 121.0,
+          percentage: 45.0,
+          raw_string: "121 45"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 238.0,
+          percentage: 44.0,
+          raw_string: "238 44"
+        }
+      ]
+    },
+    {
+      original_label: "Patients who received prior trastuzumab",
+      standardized_name: "Prior Trastuzumab Use",
+      category: "Treatment History",
+      is_sub_characteristic: false,
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 154.0,
+          percentage: 57.0,
+          raw_string: "154 57"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 148.0,
+          percentage: 55.0,
+          raw_string: "148 55"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 302.0,
+          percentage: 56.0,
+          raw_string: "302 56"
+        }
+      ]
+    },
+    {
+      original_label: "Adjuvant",
+      standardized_name: "Adjuvant Setting",
+      category: "Treatment History",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Patients who received prior trastuzumab",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 73.0,
+          percentage: 27.0,
+          raw_string: "73 27"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 78.0,
+          percentage: 29.0,
+          raw_string: "78 29"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 151.0,
+          percentage: 28.0,
+          raw_string: "151 28"
+        }
+      ]
+    },
+    {
+      original_label: "Metastatic",
+      standardized_name: "Metastatic Setting",
+      category: "Treatment History",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Patients who received prior trastuzumab",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 81.0,
+          percentage: 30.0,
+          raw_string: "81 30"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 70.0,
+          percentage: 26.0,
+          raw_string: "70 26"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 151.0,
+          percentage: 28.0,
+          raw_string: "151 28"
+        }
+      ]
+    },
+    {
+      original_label: "Duration of prior trastuzumab treatment, months",
+      standardized_name: "Duration of Prior Trastuzumab Treatment",
+      unit: "months",
+      category: "Treatment History",
+      is_sub_characteristic: false,
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.Header,
+          raw_string: "Duration of prior trastuzumab treatment, months"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.Header,
+          raw_string: "Duration of prior trastuzumab treatment, months"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.Header,
+          raw_string: "Duration of prior trastuzumab treatment, months"
+        }
+      ]
+    },
+    {
+      original_label: "Median",
+      standardized_name: "Duration of Prior Trastuzumab Treatment",
+      unit: "months",
+      category: "Treatment History",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Duration of prior trastuzumab treatment, months",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.NumericSingle,
+          value: 11.9,
+          raw_string: "11.9"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.NumericSingle,
+          value: 11.8,
+          raw_string: "11.8"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.NumericSingle,
+          value: 11.8,
+          raw_string: "11.8"
+        }
+      ]
+    },
+    {
+      original_label: "Range",
+      standardized_name: "Duration of Prior Trastuzumab Treatment Range",
+      unit: "months",
+      category: "Treatment History",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Duration of prior trastuzumab treatment, months",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.NumericMeanRange,
+          range_min: 1.0,
+          range_max: 69.5,
+          raw_string: "1.0-69.5"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.NumericMeanRange,
+          range_min: 0.0,
+          range_max: 96.1,
+          raw_string: "0.0-96.1"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.NumericMeanRange,
+          range_min: 0.0,
+          range_max: 96.1,
+          raw_string: "0.0-96.1"
+        }
+      ]
+    },
+    {
+      original_label: "Duration of prior metastatic trastuzumab treatment, months",
+      standardized_name: "Duration of Prior Metastatic Trastuzumab Treatment",
+      unit: "months",
+      category: "Treatment History",
+      is_sub_characteristic: false,
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.Header,
+          raw_string: "Duration of prior metastatic trastuzumab treatment, months"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.Header,
+          raw_string: "Duration of prior metastatic trastuzumab treatment, months"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.Header,
+          raw_string: "Duration of prior metastatic trastuzumab treatment, months"
+        }
+      ]
+    },
+    {
+      original_label: "Median",
+      standardized_name: "Duration of Prior Metastatic Trastuzumab Treatment",
+      unit: "months",
+      category: "Treatment History",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Duration of prior metastatic trastuzumab treatment, months",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.NumericSingle,
+          value: 11.8,
+          raw_string: "11.8"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.NumericSingle,
+          value: 13.4,
+          raw_string: "13.4"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.NumericSingle,
+          value: 12.1,
+          raw_string: "12.1"
+        }
+      ]
+    },
+    {
+      original_label: "Range",
+      standardized_name: "Duration of Prior Metastatic Trastuzumab Treatment Range",
+      unit: "months",
+      category: "Treatment History",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Duration of prior metastatic trastuzumab treatment, months",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.NumericMeanRange,
+          range_min: 1.0,
+          range_max: 69.5,
+          raw_string: "1.0-69.5"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.NumericMeanRange,
+          range_min: 0.0,
+          range_max: 96.1,
+          raw_string: "0.0-96.1"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.NumericMeanRange,
+          range_min: 0.0,
+          range_max: 96.1,
+          raw_string: "0.0-96.1"
+        }
+      ]
+    },
+    {
+      original_label: "Duration of most recent prior metastatic trastuzumab treatment, months",
+      standardized_name: "Duration of Most Recent Prior Metastatic Trastuzumab Treatment",
+      unit: "months",
+      category: "Treatment History",
+      is_sub_characteristic: false,
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.Header,
+          raw_string: "Duration of most recent prior metastatic trastuzumab treatment, months"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.Header,
+          raw_string: "Duration of most recent prior metastatic trastuzumab treatment, months"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.Header,
+          raw_string: "Duration of most recent prior metastatic trastuzumab treatment, months"
+        }
+      ]
+    },
+    {
+      original_label: "Median",
+      standardized_name: "Duration of Most Recent Prior Metastatic Trastuzumab Treatment",
+      unit: "months",
+      category: "Treatment History",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Duration of most recent prior metastatic trastuzumab treatment, months",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.NumericSingle,
+          value: 10.4,
+          raw_string: "10.4"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.NumericSingle,
+          value: 10.9,
+          raw_string: "10.9"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.NumericSingle,
+          value: 10.6,
+          raw_string: "10.6"
+        }
+      ]
+    },
+    {
+      original_label: "Range",
+      standardized_name: "Duration of Most Recent Prior Metastatic Trastuzumab Treatment Range",
+      unit: "months",
+      category: "Treatment History",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Duration of most recent prior metastatic trastuzumab treatment, months",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.NumericMeanRange,
+          range_min: 0.0,
+          range_max: 69.5,
+          raw_string: "0.0-69.5"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.NumericMeanRange,
+          range_min: 0.0,
+          range_max: 96.1,
+          raw_string: "0.0-96.1"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.NumericMeanRange,
+          range_min: 0.0,
+          range_max: 96.1,
+          raw_string: "0.0-96.1"
+        }
+      ]
+    },
+    {
+      original_label: "Patients who also received prior anthracycline and taxane",
+      standardized_name: "Prior Anthracycline and Taxane Use",
+      category: "Treatment History",
+      is_sub_characteristic: false,
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 238.0,
+          percentage: 88.0,
+          raw_string: "238 88"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 234.0,
+          percentage: 87.0,
+          raw_string: "234 87"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 472.0,
+          percentage: 87.0,
+          raw_string: "472 87"
+        }
+      ]
+    },
+    {
+      original_label: "Anthracycline",
+      standardized_name: "Prior Anthracycline Use",
+      category: "Treatment History",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Patients who also received prior anthracycline and taxane",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 258.0,
+          percentage: 95.0,
+          raw_string: "258 95"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 253.0,
+          percentage: 94.0,
+          raw_string: "253 94"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 511.0,
+          percentage: 95.0,
+          raw_string: "511 95"
+        }
+      ]
+    },
+    {
+      original_label: "Metastatic",
+      standardized_name: "Metastatic Setting",
+      category: "Treatment History",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Anthracycline",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 56.0,
+          percentage: 21.0,
+          raw_string: "56 21"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 55.0,
+          percentage: 20.0,
+          raw_string: "55 20"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 111.0,
+          percentage: 21.0,
+          raw_string: "111 21"
+        }
+      ]
+    },
+    {
+      original_label: "Taxane",
+      standardized_name: "Prior Taxane Use",
+      category: "Treatment History",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Patients who also received prior anthracycline and taxane",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 249.0,
+          percentage: 92.0,
+          raw_string: "249 92"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 249.0,
+          percentage: 93.0,
+          raw_string: "249 93"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 498.0,
+          percentage: 92.0,
+          raw_string: "498 92"
+        }
+      ]
+    },
+    {
+      original_label: "Adjuvant",
+      standardized_name: "Adjuvant Setting",
+      category: "Treatment History",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Taxane",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 47.0,
+          percentage: 17.0,
+          raw_string: "47 17"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 61.0,
+          percentage: 23.0,
+          raw_string: "61 23"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.CategoricalCountPercentage,
+          count: 108.0,
+          percentage: 20.0,
+          raw_string: "108 20"
+        }
+      ]
+    },
+    {
+      original_label: "Time since initial diagnosis, years",
+      standardized_name: "Time Since Initial Diagnosis",
+      unit: "years",
+      category: "Disease Characteristics",
+      is_sub_characteristic: false,
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.Header,
+          raw_string: "Time since initial diagnosis, years"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.Header,
+          raw_string: "Time since initial diagnosis, years"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.Header,
+          raw_string: "Time since initial diagnosis, years"
+        }
+      ]
+    },
+    {
+      original_label: "Median",
+      standardized_name: "Time Since Initial Diagnosis",
+      unit: "years",
+      category: "Disease Characteristics",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Time since initial diagnosis, years",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.NumericSingle,
+          value: 2.6,
+          raw_string: "2.6"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.NumericSingle,
+          value: 3.0,
+          raw_string: "3.0"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.NumericSingle,
+          value: 2.8,
+          raw_string: "2.8"
+        }
+      ]
+    },
+    {
+      original_label: "Range",
+      standardized_name: "Time Since Initial Diagnosis Range",
+      unit: "years",
+      category: "Disease Characteristics",
+      is_sub_characteristic: true,
+      sub_characteristic_of: "Time since initial diagnosis, years",
+      group_data: [
+        {
+          group_name: "Lapatinib plus Capecitabine",
+          data_type: DataType.NumericMeanRange,
+          range_min: 0.0,
+          range_max: 18.0,
+          raw_string: "0-18"
+        },
+        {
+          group_name: "Trastuzumab plus Capecitabine",
+          data_type: DataType.NumericMeanRange,
+          range_min: 0.0,
+          range_max: 25.0,
+          raw_string: "0-25"
+        },
+        {
+          group_name: "Total",
+          data_type: DataType.NumericMeanRange,
+          range_min: 0.0,
+          range_max: 25.0,
+          raw_string: "0-25"
+        }
+      ]
+    }
+  ]
+};

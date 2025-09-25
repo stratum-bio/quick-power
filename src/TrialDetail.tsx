@@ -9,6 +9,8 @@ import KaplanMeierPlot from "./KaplanMeierPlot";
 import AppError from "./AppError"; // Import the AppError component
 
 import { DISEASE_VAL_TO_NAME } from "./constants";
+import DemographicsTable from "./DemographicsTable";
+import { CerebelStudyTable } from "./data/25605838";
 
 function fitLambdaPerArm(data: Trial): Record<string, number> {
   const result: Record<string, number> = {};
@@ -164,6 +166,9 @@ const TrialDetail: React.FC = () => {
       ) : (
         <p>No arm data available.</p>
       )}
+
+      <DemographicsTable studyTable={CerebelStudyTable} />
+
       {trialName !== undefined && (
         <>
           <h2 className="text-xl font-bold mb-3 mt-8">Kaplan-Meier</h2>
