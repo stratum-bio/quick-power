@@ -1,7 +1,6 @@
 import React from "react";
 import {
   type StudyTable,
-  type Characteristic,
   type GroupData,
   DataType,
 } from "./types/study_table.d";
@@ -34,21 +33,6 @@ function renderGroupData(data: GroupData) {
 const DemographicsTable: React.FC<DemographicsTableProps> = ({
   studyTable,
 }) => {
-  const dimByName: Record<string, Characteristic> = {};
-  for (const entry of studyTable.characteristics) {
-    dimByName[entry.original_label] = entry;
-  }
-  const dimByParent: Record<string, Characteristic[]> = {};
-  for (const entry of studyTable.characteristics) {
-    if (!entry.is_sub_characteristic || !entry.sub_characteristic_of) {
-      continue;
-    }
-
-    if (Object.keys(dimByParent).includes(entry.sub_characteristic_of)) {
-      dimByParent[entry.sub_characteristic_of].push(entry);
-    }
-  }
-
   const groupCount = studyTable.groups.length;
 
   return (
@@ -56,10 +40,10 @@ const DemographicsTable: React.FC<DemographicsTableProps> = ({
       <h2 className="text-xl font-semibold mb-4">{studyTable.table_title}</h2>
 
       <div
-        className={`grid grid-cols-${groupCount + 1} gap-x-4 gap-y-2 items-center border-b pb-2 mb-2 rounded-md shadow-xl/30 shadow-gemini-blue ring ring-gemini-blue p-4`}
+        className={`grid grid-cols-${groupCount + 1} gap-x-4 items-center border-b pb-2 mb-2 rounded-md shadow-xl/30 shadow-gemini-blue ring ring-gemini-blue`}
       >
         {/* Header Row */}
-        <div className="font-bold">Characteristic</div>
+        <div className="font-bold p-4">Characteristic</div>
         {studyTable.groups.map((group, index) => (
           <div key={index} className="font-bold text-center">
             {group.name} (N={group.n})
@@ -68,19 +52,24 @@ const DemographicsTable: React.FC<DemographicsTableProps> = ({
 
         {/* Characteristics */}
         {studyTable.characteristics.map((characteristic, charIndex) => (
-          <React.Fragment key={charIndex}>
-            <div
-              className={`${characteristic.is_sub_characteristic ? "pl-4" : ""} ${characteristic.group_data[0]?.data_type === DataType.Header ? "font-semibold" : ""}`}
-            >
-              {characteristic.original_label}{" "}
-              {characteristic.unit ? `(${characteristic.unit})` : ""}
-            </div>
-            {characteristic.group_data.map((data, dataIndex) => (
-              <div key={dataIndex} className="col-span-1 text-center">
-                {renderGroupData(data)}
+          <div
+            key={charIndex}
+            className={`pl-4 hover:bg-medium-azure-alpha col-span-${groupCount + 1} ${characteristic.group_data[0]?.data_type === DataType.Header ? "bg-medium-azure-alpha" : ""}`}
+          >
+            <div className={`grid grid-cols-${groupCount + 1} gap-x-4 items-center`}>
+              <div
+                className={`${characteristic.is_sub_characteristic ? "pl-4" : ""} ${characteristic.group_data[0]?.data_type === DataType.Header ? "font-semibold col-span-" + (groupCount+1) : ""}`}
+              >
+                {characteristic.original_label}{" "}
+                {characteristic.unit ? `(${characteristic.unit})` : ""}
               </div>
-            ))}
-          </React.Fragment>
+              {characteristic.group_data.map((data, dataIndex) => (
+                <div key={dataIndex} className="col-span-1 text-center">
+                  {renderGroupData(data)}
+                </div>
+              ))}
+            </div>
+          </div>
         ))}
       </div>
 
