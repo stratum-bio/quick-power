@@ -1,4 +1,3 @@
-
 /**
  * Define enums for data_type for better validation and clarity
  */
@@ -13,7 +12,6 @@ export enum DataType {
   Header = "header",
   Other = "other",
 }
-
 
 /**
  * Captures statistics (like Z-scores or t-values and p-values)

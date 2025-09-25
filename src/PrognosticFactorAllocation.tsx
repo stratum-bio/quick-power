@@ -224,8 +224,10 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
       <p className="italic">
         Disclaimer: the default hazard ratios have not been thoroughly reviewed,
         please verify these are correct for your investigation and update them
-        as needed. {" "}
-        <Link to="/prognostic-factors" className="text-gemini-blue font-bold">Update the prognostic factor hazard ratios here.</Link>
+        as needed.{" "}
+        <Link to="/prognostic-factors" className="text-gemini-blue font-bold">
+          Update the prognostic factor hazard ratios here.
+        </Link>
       </p>
       <div className="mb-4">
         <label
