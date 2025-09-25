@@ -1,0 +1,861 @@
+{
+  "study_id": "10.1200/JCO.2016.66.9697",
+  "study_title": "Randomized, Double-Blind, Placebo-Controlled Phase III Study of Tasquinimod in Men With Metastatic Castration-Resistant Prostate Cancer",
+  "table_name": "Table 1",
+  "table_title": "Baseline Demographic and Disease Characteristics",
+  "description": "Baseline demographic and disease characteristics for patients in the Tasquinimod and Placebo groups.",
+  "footnotes": [
+    "*Data missing for one patient in the placebo group.",
+    "†According to interactive voice response system data, except for Europe, Middle East, and Asia-Pacific subcategories for geographic region.",
+    "‡Data missing for 20 patients in the tasquinimod group and one patient in the placebo group.",
+    "§According to electronic case report form data. Indicated location does not exclude other sites.",
+    "¶Abiraterone, enzalutamide, ketoconazole, or any other second-generation hormonal treatment."
+  ],
+  "groups": [
+    {
+      "name": "Tasquinimod",
+      "n": 832,
+      "type": "intervention"
+    },
+    {
+      "name": "Placebo",
+      "n": 413,
+      "type": "control"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Median age, years (range)",
+      "standardized_name": "Age",
+      "unit": "years",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "numeric_median_iqr",
+          "median": 71.0,
+          "iqr_min": 43.0,
+          "iqr_max": 92.0,
+          "raw_string": "71.0 (43-92)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "numeric_median_iqr",
+          "median": 71.0,
+          "iqr_min": 48.0,
+          "iqr_max": 92.0,
+          "raw_string": "71.0 (48-92)"
+        }
+      ]
+    },
+    {
+      "original_label": "Age group (years)",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Age group",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "≤ 65",
+      "standardized_name": "Age <= 65 years",
+      "category": "Age group",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age group (years)",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 214.0,
+          "percentage": 25.7,
+          "raw_string": "214 25.7"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 106.0,
+          "percentage": 25.7,
+          "raw_string": "106 25.7"
+        }
+      ]
+    },
+    {
+      "original_label": "66-75",
+      "standardized_name": "Age 66-75 years",
+      "category": "Age group",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age group (years)",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 371.0,
+          "percentage": 44.6,
+          "raw_string": "371 44.6"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 186.0,
+          "percentage": 45.0,
+          "raw_string": "186 45.0"
+        }
+      ]
+    },
+    {
+      "original_label": "76-80",
+      "standardized_name": "Age 76-80 years",
+      "category": "Age group",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age group (years)",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 144.0,
+          "percentage": 17.3,
+          "raw_string": "144 17.3"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 64.0,
+          "percentage": 15.5,
+          "raw_string": "64 15.5"
+        }
+      ]
+    },
+    {
+      "original_label": "> 80",
+      "standardized_name": "Age > 80 years",
+      "category": "Age group",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age group (years)",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 103.0,
+          "percentage": 12.4,
+          "raw_string": "103 12.4"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 57.0,
+          "percentage": 13.8,
+          "raw_string": "57 13.8"
+        }
+      ]
+    },
+    {
+      "original_label": "Race*",
+      "standardized_name": "Race",
+      "category": "Race",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "White",
+      "standardized_name": "White",
+      "category": "Race",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race*",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 729.0,
+          "percentage": 87.6,
+          "raw_string": "729 87.6"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 359.0,
+          "percentage": 86.9,
+          "raw_string": "359 86.9"
+        }
+      ]
+    },
+    {
+      "original_label": "Black",
+      "standardized_name": "Black or African American",
+      "category": "Race",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race*",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 20.0,
+          "percentage": 2.4,
+          "raw_string": "20 2.4"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 1.9,
+          "raw_string": "8 1.9"
+        }
+      ]
+    },
+    {
+      "original_label": "Asian",
+      "standardized_name": "Asian",
+      "category": "Race",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race*",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 46.0,
+          "percentage": 5.5,
+          "raw_string": "46 5.5"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 27.0,
+          "percentage": 6.5,
+          "raw_string": "27 6.5"
+        }
+      ]
+    },
+    {
+      "original_label": "Other",
+      "standardized_name": "Other Race",
+      "category": "Race",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race*",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 37.0,
+          "percentage": 4.4,
+          "raw_string": "37 4.4"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 18.0,
+          "percentage": 4.4,
+          "raw_string": "18 4.4"
+        }
+      ]
+    },
+    {
+      "original_label": "Ethnicity",
+      "standardized_name": "Ethnicity",
+      "category": "Ethnicity",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Hispanic/Latino",
+      "standardized_name": "Hispanic or Latino",
+      "category": "Ethnicity",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Ethnicity",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 97.0,
+          "percentage": 11.7,
+          "raw_string": "97 11.7"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 42.0,
+          "percentage": 10.2,
+          "raw_string": "42 10.2"
+        }
+      ]
+    },
+    {
+      "original_label": "Non-Hispanic/Latino",
+      "standardized_name": "Not Hispanic or Latino",
+      "category": "Ethnicity",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Ethnicity",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 735.0,
+          "percentage": 88.3,
+          "raw_string": "735 88.3"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 371.0,
+          "percentage": 89.8,
+          "raw_string": "371 89.8"
+        }
+      ]
+    },
+    {
+      "original_label": "Median time since diagnosis, months (range)",
+      "standardized_name": "Time Since Diagnosis",
+      "unit": "months",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "numeric_median_iqr",
+          "median": 45.7,
+          "iqr_min": 0.1,
+          "iqr_max": 299.6,
+          "raw_string": "45.7 (0.1-299.6)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "numeric_median_iqr",
+          "median": 57.7,
+          "iqr_min": 0.3,
+          "iqr_max": 319.9,
+          "raw_string": "57.7 (0.3-319.9)"
+        }
+      ]
+    },
+    {
+      "original_label": "Karnofsky performance status†",
+      "standardized_name": "Karnofsky Performance Status",
+      "category": "Karnofsky Performance Status",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "< 90%",
+      "standardized_name": "Karnofsky Performance Status < 90%",
+      "category": "Karnofsky Performance Status",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Karnofsky performance status†",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 187.0,
+          "percentage": 22.5,
+          "raw_string": "187 22.5"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 95.0,
+          "percentage": 23.0,
+          "raw_string": "95 23.0"
+        }
+      ]
+    },
+    {
+      "original_label": "≥ 90%",
+      "standardized_name": "Karnofsky Performance Status >= 90%",
+      "category": "Karnofsky Performance Status",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Karnofsky performance status†",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 645.0,
+          "percentage": 77.5,
+          "raw_string": "645 77.5"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 318.0,
+          "percentage": 77.0,
+          "raw_string": "318 77.0"
+        }
+      ]
+    },
+    {
+      "original_label": "Geographic region of enrollment†",
+      "standardized_name": "Geographic Region",
+      "category": "Geographic Region",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "North America",
+      "standardized_name": "North America",
+      "category": "Geographic Region",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Geographic region of enrollment†",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 143.0,
+          "percentage": 17.2,
+          "raw_string": "143 17.2"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 72.0,
+          "percentage": 17.4,
+          "raw_string": "72 17.4"
+        }
+      ]
+    },
+    {
+      "original_label": "Europe/Middle East/Africa",
+      "standardized_name": "Europe/Middle East/Africa",
+      "category": "Geographic Region",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Geographic region of enrollment†",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 505.0,
+          "percentage": 60.7,
+          "raw_string": "505 60.7"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 254.0,
+          "percentage": 61.5,
+          "raw_string": "254 61.5"
+        }
+      ]
+    },
+    {
+      "original_label": "Asia-Pacific",
+      "standardized_name": "Asia-Pacific",
+      "category": "Geographic Region",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Geographic region of enrollment†",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 94.0,
+          "percentage": 11.3,
+          "raw_string": "94 11.3"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 46.0,
+          "percentage": 11.1,
+          "raw_string": "46 11.1"
+        }
+      ]
+    },
+    {
+      "original_label": "Latin America",
+      "standardized_name": "Latin America",
+      "category": "Geographic Region",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Geographic region of enrollment†",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 90.0,
+          "percentage": 10.8,
+          "raw_string": "90 10.8"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 41.0,
+          "percentage": 9.9,
+          "raw_string": "41 9.9"
+        }
+      ]
+    },
+    {
+      "original_label": "Tumor pain (VAS)‡",
+      "standardized_name": "Tumor Pain (VAS)",
+      "category": "Tumor Pain (VAS)",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "0",
+      "standardized_name": "Tumor Pain (VAS) 0",
+      "category": "Tumor Pain (VAS)",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor pain (VAS)‡",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 371.0,
+          "percentage": 44.6,
+          "raw_string": "371 44.6"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 195.0,
+          "percentage": 47.2,
+          "raw_string": "195 47.2"
+        }
+      ]
+    },
+    {
+      "original_label": "1-3",
+      "standardized_name": "Tumor Pain (VAS) 1-3",
+      "category": "Tumor Pain (VAS)",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor pain (VAS)‡",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 286.0,
+          "percentage": 34.4,
+          "raw_string": "286 34.4"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 157.0,
+          "percentage": 38.0,
+          "raw_string": "157 38.0"
+        }
+      ]
+    },
+    {
+      "original_label": "4-10",
+      "standardized_name": "Tumor Pain (VAS) 4-10",
+      "category": "Tumor Pain (VAS)",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor pain (VAS)‡",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 155.0,
+          "percentage": 18.6,
+          "raw_string": "155 18.6"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 60.0,
+          "percentage": 14.5,
+          "raw_string": "60 14.5"
+        }
+      ]
+    },
+    {
+      "original_label": "Median PSA, μg/L (range)",
+      "standardized_name": "Prostate-Specific Antigen",
+      "unit": "μg/L",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "numeric_median_iqr",
+          "median": 54.3,
+          "iqr_min": 0.6,
+          "iqr_max": 8710.7,
+          "raw_string": "54.3 (0.6-8,710.7)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "numeric_median_iqr",
+          "median": 50.1,
+          "iqr_min": 0.2,
+          "iqr_max": 5679.5,
+          "raw_string": "50.1 (0.2-5,679.5)"
+        }
+      ]
+    },
+    {
+      "original_label": "Gleason score of 8 to 10 at diagnosis",
+      "standardized_name": "Gleason Score 8-10 at Diagnosis",
+      "time_point": "at diagnosis",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 398.0,
+          "percentage": 47.8,
+          "raw_string": "398 47.8"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 190.0,
+          "percentage": 46.0,
+          "raw_string": "190 46.0"
+        }
+      ]
+    },
+    {
+      "original_label": "Visceral disease present†",
+      "standardized_name": "Visceral Disease Present",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 176.0,
+          "percentage": 21.2,
+          "raw_string": "176 21.2"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 87.0,
+          "percentage": 21.1,
+          "raw_string": "87 21.1"
+        }
+      ]
+    },
+    {
+      "original_label": "Location of metastases§",
+      "standardized_name": "Location of Metastases",
+      "category": "Location of Metastases",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Visceral",
+      "standardized_name": "Visceral Metastases",
+      "category": "Location of Metastases",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Location of metastases§",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 161.0,
+          "percentage": 19.4,
+          "raw_string": "161 19.4"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 76.0,
+          "percentage": 18.4,
+          "raw_string": "76 18.4"
+        }
+      ]
+    },
+    {
+      "original_label": "Bone",
+      "standardized_name": "Bone Metastases",
+      "category": "Location of Metastases",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Location of metastases§",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 824.0,
+          "percentage": 99.0,
+          "raw_string": "824 99.0"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 409.0,
+          "percentage": 99.0,
+          "raw_string": "409 99.0"
+        }
+      ]
+    },
+    {
+      "original_label": "Node",
+      "standardized_name": "Nodal Metastases",
+      "category": "Location of Metastases",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Location of metastases§",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 297.0,
+          "percentage": 35.7,
+          "raw_string": "297 35.7"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 179.0,
+          "percentage": 43.3,
+          "raw_string": "179 43.3"
+        }
+      ]
+    },
+    {
+      "original_label": "No. of bone metastases",
+      "standardized_name": "Number of Bone Metastases",
+      "category": "Number of Bone Metastases",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "< 10",
+      "standardized_name": "Number of Bone Metastases < 10",
+      "category": "Number of Bone Metastases",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "No. of bone metastases",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 377.0,
+          "percentage": 45.3,
+          "raw_string": "377 45.3"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 194.0,
+          "percentage": 47.0,
+          "raw_string": "194 47.0"
+        }
+      ]
+    },
+    {
+      "original_label": "≥ 10",
+      "standardized_name": "Number of Bone Metastases >= 10",
+      "category": "Number of Bone Metastases",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "No. of bone metastases",
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 447.0,
+          "percentage": 53.7,
+          "raw_string": "447 53.7"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 215.0,
+          "percentage": 52.1,
+          "raw_string": "215 52.1"
+        }
+      ]
+    },
+    {
+      "original_label": "Previous second-generation hormonal therapy¶",
+      "standardized_name": "Previous Second-Generation Hormonal Therapy",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Tasquinimod",
+          "data_type": "categorical_count_percentage",
+          "count": 65.0,
+          "percentage": 7.8,
+          "raw_string": "65 7.8"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 48.0,
+          "percentage": 11.6,
+          "raw_string": "48 11.6"
+        }
+      ]
+    }
+  ]
+}

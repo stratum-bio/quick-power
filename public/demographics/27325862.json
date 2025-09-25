@@ -1,0 +1,1294 @@
+{
+  "study_id": "NCT00022516",
+  "study_title": "Low-Dose Oral Cyclophosphamide and Methotrexate Maintenance for Hormone Receptor-Negative Early Breast Cancer: International Breast Cancer Study Group Trial 22-00",
+  "table_name": "Table 1",
+  "table_title": "Patient, Disease, and Treatment Characteristics for the IBCSG Trial 22-00 Intent-To-Treat Population of 1,081 Patients",
+  "footnotes": [
+    "*One patient with HER2-negative breast cancer was not in the triple-negative cohort because receptor status was estrogen receptor positive and progesterone receptor negative.",
+    "†Before 2005, HER2 status determination was not required for eligibility. (Among the 62 patients without HER2 assessment, 38 were randomly assigned before 2005.)"
+  ],
+  "groups": [
+    {
+      "name": "CM Maintenance",
+      "n": 542,
+      "type": "intervention"
+    },
+    {
+      "name": "No CM",
+      "n": 539,
+      "type": "control"
+    },
+    {
+      "name": "Overall",
+      "n": 1081,
+      "type": "total"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Median (range) age, years",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "other",
+          "median": 52.0,
+          "raw_string": "52 (28-79)",
+          "notes": "Data represents median and range.",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "other",
+          "median": 52.0,
+          "raw_string": "52 (23-80)",
+          "notes": "Data represents median and range.",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "other",
+          "median": 52.0,
+          "raw_string": "52(23-80)",
+          "notes": "Data represents median and range.",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "Menopausal status",
+      "standardized_name": "Menopausal status",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Premenopausal",
+      "standardized_name": "Premenopausal",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Menopausal status",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 238.0,
+          "percentage": 43.9,
+          "raw_string": "238",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 245.0,
+          "percentage": 45.5,
+          "raw_string": "245",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 483.0,
+          "percentage": 44.7,
+          "raw_string": "483",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "Postmenopausal",
+      "standardized_name": "Postmenopausal",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Menopausal status",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 304.0,
+          "percentage": 56.1,
+          "raw_string": "304",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 294.0,
+          "percentage": 54.5,
+          "raw_string": "294",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 598.0,
+          "percentage": 55.3,
+          "raw_string": "598",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "Tumor size, cm",
+      "standardized_name": "Tumor size",
+      "unit": "cm",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "≤ 1",
+      "standardized_name": "≤ 1",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor size",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 39.0,
+          "percentage": 7.2,
+          "raw_string": "39",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 47.0,
+          "percentage": 8.7,
+          "raw_string": "47",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 86.0,
+          "percentage": 8.0,
+          "raw_string": "86",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": ">1 to ≤ 2",
+      "standardized_name": ">1 to ≤ 2",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor size",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 196.0,
+          "percentage": 36.2,
+          "raw_string": "196",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 211.0,
+          "percentage": 39.1,
+          "raw_string": "211",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 407.0,
+          "percentage": 37.7,
+          "raw_string": "407",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": ">2 to ≤ 5",
+      "standardized_name": ">2 to ≤ 5",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor size",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 285.0,
+          "percentage": 52.6,
+          "raw_string": "285",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 250.0,
+          "percentage": 46.4,
+          "raw_string": "250",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 535.0,
+          "percentage": 49.5,
+          "raw_string": "535",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "> 5",
+      "standardized_name": "> 5",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor size",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 22.0,
+          "percentage": 4.1,
+          "raw_string": "22",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 31.0,
+          "percentage": 5.8,
+          "raw_string": "31",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 53.0,
+          "percentage": 4.9,
+          "raw_string": "53",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "Tumor grade",
+      "standardized_name": "Tumor grade",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "Grade 1",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor grade",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 1.3,
+          "raw_string": "7",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 0.7,
+          "raw_string": "4",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 1.0,
+          "raw_string": "11",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "2",
+      "standardized_name": "Grade 2",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor grade",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 76.0,
+          "percentage": 14.0,
+          "raw_string": "76",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 78.0,
+          "percentage": 14.5,
+          "raw_string": "78",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 154.0,
+          "percentage": 14.2,
+          "raw_string": "154",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "3",
+      "standardized_name": "Grade 3",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor grade",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 456.0,
+          "percentage": 84.1,
+          "raw_string": "456",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 456.0,
+          "percentage": 84.6,
+          "raw_string": "456",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 912.0,
+          "percentage": 84.4,
+          "raw_string": "912",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown/not assessed",
+      "standardized_name": "Grade Unknown",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor grade",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 0.6,
+          "raw_string": "3",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.2,
+          "raw_string": "1",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 0.4,
+          "raw_string": "4",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "HER2 status",
+      "standardized_name": "HER2 status",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Positive",
+      "standardized_name": "HER2 positive",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "HER2 status",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 102.0,
+          "percentage": 18.8,
+          "raw_string": "102",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 102.0,
+          "percentage": 18.9,
+          "raw_string": "102",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 204.0,
+          "percentage": 18.9,
+          "raw_string": "204",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "Negative",
+      "standardized_name": "HER2 negative",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "HER2 status",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 409.0,
+          "percentage": 75.5,
+          "raw_string": "409",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 406.0,
+          "percentage": 75.3,
+          "raw_string": "406",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 815.0,
+          "percentage": 75.4,
+          "raw_string": "815*",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "Not assessed†",
+      "standardized_name": "HER2 status not assessed",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "HER2 status",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 31.0,
+          "percentage": 5.7,
+          "raw_string": "31",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 31.0,
+          "percentage": 5.8,
+          "raw_string": "31",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 62.0,
+          "percentage": 5.7,
+          "raw_string": "62",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "Triple negative",
+      "standardized_name": "Triple negative status",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Yes",
+      "standardized_name": "Triple negative",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Triple negative status",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 408.0,
+          "percentage": 75.3,
+          "raw_string": "408",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 406.0,
+          "percentage": 75.3,
+          "raw_string": "406",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 814.0,
+          "percentage": 75.3,
+          "raw_string": "814*",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "No",
+      "standardized_name": "Not triple negative",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Triple negative status",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 103.0,
+          "percentage": 19.0,
+          "raw_string": "103",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 102.0,
+          "percentage": 18.9,
+          "raw_string": "102",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 205.0,
+          "percentage": 19.0,
+          "raw_string": "205",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown/incomplete info",
+      "standardized_name": "Triple negative status unknown",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Triple negative status",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 31.0,
+          "percentage": 5.7,
+          "raw_string": "31",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 31.0,
+          "percentage": 5.8,
+          "raw_string": "31",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 62.0,
+          "percentage": 5.7,
+          "raw_string": "62",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "Lymph node status",
+      "standardized_name": "Lymph node status",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "N0",
+      "standardized_name": "N0",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Lymph node status",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 307.0,
+          "percentage": 56.6,
+          "raw_string": "307",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 305.0,
+          "percentage": 56.6,
+          "raw_string": "305",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 612.0,
+          "percentage": 56.6,
+          "raw_string": "612",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "N1-3",
+      "standardized_name": "N1-3",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Lymph node status",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 156.0,
+          "percentage": 28.8,
+          "raw_string": "156",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 122.0,
+          "percentage": 22.6,
+          "raw_string": "122",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 278.0,
+          "percentage": 25.7,
+          "raw_string": "278",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "N4+",
+      "standardized_name": "N4+",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Lymph node status",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 74.0,
+          "percentage": 13.7,
+          "raw_string": "74",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 106.0,
+          "percentage": 19.7,
+          "raw_string": "106",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 180.0,
+          "percentage": 16.7,
+          "raw_string": "180",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "Lymph node status unknown",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Lymph node status",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 0.9,
+          "raw_string": "5",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 1.1,
+          "raw_string": "6",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 1.0,
+          "raw_string": "11",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "Local therapy",
+      "standardized_name": "Local therapy",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Mastectomy with no RT",
+      "standardized_name": "Mastectomy with no radiotherapy",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Local therapy",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 88.0,
+          "percentage": 16.2,
+          "raw_string": "88",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 81.0,
+          "percentage": 15.0,
+          "raw_string": "81",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 169.0,
+          "percentage": 15.6,
+          "raw_string": "169",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "Mastectomy with RT",
+      "standardized_name": "Mastectomy with radiotherapy",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Local therapy",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 61.0,
+          "percentage": 11.3,
+          "raw_string": "61",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 58.0,
+          "percentage": 10.8,
+          "raw_string": "58",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 119.0,
+          "percentage": 11.0,
+          "raw_string": "119",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "Breast-conserving surgery, no RT",
+      "standardized_name": "Breast-conserving surgery with no radiotherapy",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Local therapy",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 13.0,
+          "percentage": 2.4,
+          "raw_string": "13",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 15.0,
+          "percentage": 2.8,
+          "raw_string": "15",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 28.0,
+          "percentage": 2.6,
+          "raw_string": "28",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "Breast-conserving surgery with RT",
+      "standardized_name": "Breast-conserving surgery with radiotherapy",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Local therapy",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 380.0,
+          "percentage": 70.1,
+          "raw_string": "380",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 383.0,
+          "percentage": 71.1,
+          "raw_string": "383",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 763.0,
+          "percentage": 70.6,
+          "raw_string": "763",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "Other",
+      "standardized_name": "Other local therapy",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Local therapy",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "raw_string": "—"
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 0.4,
+          "raw_string": "2",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 0.2,
+          "raw_string": "2",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "Standard adjuvant chemotherapy",
+      "standardized_name": "Standard adjuvant chemotherapy regimen",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "CMF alone",
+      "standardized_name": "CMF alone",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Standard adjuvant chemotherapy regimen",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 76.0,
+          "percentage": 14.0,
+          "raw_string": "76",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 73.0,
+          "percentage": 13.5,
+          "raw_string": "73",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 149.0,
+          "percentage": 13.8,
+          "raw_string": "149",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "Anthracycline ± CMF",
+      "standardized_name": "Anthracycline ± CMF",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Standard adjuvant chemotherapy regimen",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 311.0,
+          "percentage": 57.4,
+          "raw_string": "311",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 339.0,
+          "percentage": 62.9,
+          "raw_string": "339",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 650.0,
+          "percentage": 60.1,
+          "raw_string": "650",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "Anthracycline + taxane ± CMF",
+      "standardized_name": "Anthracycline + taxane ± CMF",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Standard adjuvant chemotherapy regimen",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 155.0,
+          "percentage": 28.6,
+          "raw_string": "155",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 127.0,
+          "percentage": 23.6,
+          "raw_string": "127",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 282.0,
+          "percentage": 26.1,
+          "raw_string": "282",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "Timing of random assignment",
+      "standardized_name": "Timing of random assignment",
+      "category": "Trial Procedure",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Before adjuvant therapy",
+      "standardized_name": "Randomized before adjuvant therapy",
+      "category": "Trial Procedure",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Timing of random assignment",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 119.0,
+          "percentage": 22.0,
+          "raw_string": "119",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 111.0,
+          "percentage": 20.6,
+          "raw_string": "111",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 230.0,
+          "percentage": 21.3,
+          "raw_string": "230",
+          "n_for_value": 1081
+        }
+      ]
+    },
+    {
+      "original_label": "During or after adjuvant therapy",
+      "standardized_name": "Randomized during or after adjuvant therapy",
+      "category": "Trial Procedure",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Timing of random assignment",
+      "group_data": [
+        {
+          "group_name": "CM Maintenance",
+          "data_type": "categorical_count_percentage",
+          "count": 423.0,
+          "percentage": 78.0,
+          "raw_string": "423",
+          "n_for_value": 542
+        },
+        {
+          "group_name": "No CM",
+          "data_type": "categorical_count_percentage",
+          "count": 428.0,
+          "percentage": 79.4,
+          "raw_string": "428",
+          "n_for_value": 539
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 851.0,
+          "percentage": 78.7,
+          "raw_string": "851",
+          "n_for_value": 1081
+        }
+      ]
+    }
+  ]
+}

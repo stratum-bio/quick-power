@@ -1,0 +1,1015 @@
+{
+  "study_id": "NCT00003140, NCT00754845",
+  "study_title": "Extending Aromatase-Inhibitor Adjuvant Therapy to 10 Years",
+  "table_name": "Table 1",
+  "table_title": "Baseline Characteristics.",
+  "description": "There were no significant differences between the groups in baseline characteristics, except as noted.",
+  "footnotes": [
+    "† P<0.05 for the comparison between treatment groups at baseline.",
+    "‡ T1–T2 indicates that the tumor is ≤50 mm in its greatest dimension, T3–T4 that the tumor is >50 mm in its greatest dimension, and TX that the size of the tumor cannot be assessed.",
+    "§ N0 indicates that there were no regional metastases to lymph nodes, N1 indicates nodal stage metastases, N2–N3 indicates advanced nodal stage metastases, and NX indicates that regional lymph nodes could not be assessed.",
+    "¶ Very few patients continued to take their original aromatase inhibitor after randomization."
+  ],
+  "groups": [
+    {
+      "name": "Letrozole",
+      "n": 959,
+      "type": "intervention"
+    },
+    {
+      "name": "Placebo",
+      "n": 959,
+      "type": "placebo"
+    },
+    {
+      "name": "Total",
+      "n": 1918,
+      "type": "total"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age — yr",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "numeric_single",
+          "value": 65.6,
+          "raw_string": "65.6"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "numeric_single",
+          "value": 64.8,
+          "raw_string": "64.8"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "numeric_single",
+          "value": 65.1,
+          "raw_string": "65.1"
+        }
+      ]
+    },
+    {
+      "original_label": "Interquartile range",
+      "standardized_name": "Age, interquartile range",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "numeric_mean_range",
+          "range_min": 60.3,
+          "range_max": 72.0,
+          "raw_string": "60.3–72.0"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "numeric_mean_range",
+          "range_min": 59.6,
+          "range_max": 71.1,
+          "raw_string": "59.6–71.1"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "numeric_mean_range",
+          "range_min": 60.0,
+          "range_max": 71.5,
+          "raw_string": "60.0–71.5"
+        }
+      ]
+    },
+    {
+      "original_label": "Time from first diagnosis of breast cancer — yr",
+      "standardized_name": "Time from first diagnosis of breast cancer",
+      "unit": "years",
+      "category": "Disease Characteristics",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Time from first diagnosis of breast cancer",
+      "unit": "years",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time from first diagnosis of breast cancer",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "numeric_single",
+          "value": 10.6,
+          "raw_string": "10.6"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "numeric_single",
+          "value": 10.6,
+          "raw_string": "10.6"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "numeric_single",
+          "value": 10.6,
+          "raw_string": "10.6"
+        }
+      ]
+    },
+    {
+      "original_label": "Interquartile range",
+      "standardized_name": "Time from first diagnosis of breast cancer, interquartile range",
+      "unit": "years",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time from first diagnosis of breast cancer",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "numeric_mean_range",
+          "range_min": 7.5,
+          "range_max": 11.5,
+          "raw_string": "7.5–11.5"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "numeric_mean_range",
+          "range_min": 7.8,
+          "range_max": 11.6,
+          "raw_string": "7.8–11.6"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "numeric_mean_range",
+          "range_min": 7.6,
+          "range_max": 11.5,
+          "raw_string": "7.6–11.5"
+        }
+      ]
+    },
+    {
+      "original_label": "Tumor stage at diagnosis — no. (%)",
+      "standardized_name": "Tumor stage at diagnosis",
+      "category": "Disease Characteristics",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "T1–T2",
+      "standardized_name": "T1-T2 Tumor Stage",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor stage at diagnosis",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "categorical_count_percentage",
+          "count": 865.0,
+          "percentage": 90.2,
+          "raw_string": "865 (90.2)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 870.0,
+          "percentage": 90.7,
+          "raw_string": "870 (90.7)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 1735.0,
+          "percentage": 90.5,
+          "raw_string": "1735 (90.5)"
+        }
+      ]
+    },
+    {
+      "original_label": "T3–T4",
+      "standardized_name": "T3-T4 Tumor Stage",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor stage at diagnosis",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "categorical_count_percentage",
+          "count": 87.0,
+          "percentage": 9.1,
+          "raw_string": "87 (9.1)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 79.0,
+          "percentage": 8.2,
+          "raw_string": "79 (8.2)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 166.0,
+          "percentage": 8.7,
+          "raw_string": "166 (8.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "TX",
+      "standardized_name": "TX Tumor Stage",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor stage at diagnosis",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 0.7,
+          "raw_string": "7 (0.7)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 10.0,
+          "percentage": 1.0,
+          "raw_string": "10 (1.0)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 17.0,
+          "percentage": 0.9,
+          "raw_string": "17 (0.9)"
+        }
+      ]
+    },
+    {
+      "original_label": "Nodal stage of disease at diagnosis — no. (%)",
+      "standardized_name": "Nodal stage of disease at diagnosis",
+      "category": "Disease Characteristics",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "N0",
+      "standardized_name": "N0 Nodal Stage",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Nodal stage of disease at diagnosis",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "categorical_count_percentage",
+          "count": 446.0,
+          "percentage": 46.5,
+          "raw_string": "446 (46.5)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 448.0,
+          "percentage": 46.7,
+          "raw_string": "448 (46.7)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 894.0,
+          "percentage": 46.6,
+          "raw_string": "894 (46.6)"
+        }
+      ]
+    },
+    {
+      "original_label": "N1",
+      "standardized_name": "N1 Nodal Stage",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Nodal stage of disease at diagnosis",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "categorical_count_percentage",
+          "count": 456.0,
+          "percentage": 47.5,
+          "raw_string": "456 (47.5)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 455.0,
+          "percentage": 47.4,
+          "raw_string": "455 (47.4)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 911.0,
+          "percentage": 47.5,
+          "raw_string": "911 (47.5)"
+        }
+      ]
+    },
+    {
+      "original_label": "N2–N3",
+      "standardized_name": "N2-N3 Nodal Stage",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Nodal stage of disease at diagnosis",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "categorical_count_percentage",
+          "count": 36.0,
+          "percentage": 3.8,
+          "raw_string": "36 (3.8)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 39.0,
+          "percentage": 4.0,
+          "raw_string": "39 (4.0)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 75.0,
+          "percentage": 3.9,
+          "raw_string": "75 (3.9)"
+        }
+      ]
+    },
+    {
+      "original_label": "NX",
+      "standardized_name": "NX Nodal Stage",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Nodal stage of disease at diagnosis",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "percentage": 2.2,
+          "raw_string": "21 (2.2)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 17.0,
+          "percentage": 1.8,
+          "raw_string": "17 (1.8)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 38.0,
+          "percentage": 2.0,
+          "raw_string": "38 (2.0)"
+        }
+      ]
+    },
+    {
+      "original_label": "Hormone-receptor status: estrogen, progesterone, or both — no. (%)",
+      "standardized_name": "Hormone-receptor status",
+      "category": "Disease Characteristics",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Positive",
+      "standardized_name": "Positive",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone-receptor status",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "categorical_count_percentage",
+          "count": 945.0,
+          "percentage": 98.5,
+          "raw_string": "945 (98.5)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 950.0,
+          "percentage": 99.1,
+          "raw_string": "950 (99.1)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 1895.0,
+          "percentage": 98.8,
+          "raw_string": "1895 (98.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "Negative",
+      "standardized_name": "Negative",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone-receptor status",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 0.3,
+          "raw_string": "3 (0.3)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 0.2,
+          "raw_string": "2 (0.2)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 0.3,
+          "raw_string": "5 (0.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown or missing",
+      "standardized_name": "Unknown or missing",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone-receptor status",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 1.1,
+          "raw_string": "11 (1.1)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 0.7,
+          "raw_string": "7 (0.7)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 18.0,
+          "percentage": 0.9,
+          "raw_string": "18 (0.9)"
+        }
+      ]
+    },
+    {
+      "original_label": "Treatment with tamoxifen — yr",
+      "standardized_name": "Duration of prior tamoxifen treatment",
+      "unit": "years",
+      "category": "Prior Treatment",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Duration of prior tamoxifen treatment",
+      "unit": "years",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Duration of prior tamoxifen treatment",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "numeric_single",
+          "value": 5.0,
+          "raw_string": "5.0"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "numeric_single",
+          "value": 5.0,
+          "raw_string": "5.0"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "numeric_single",
+          "value": 5.0,
+          "raw_string": "5.0"
+        }
+      ]
+    },
+    {
+      "original_label": "Interquartile range",
+      "standardized_name": "Duration of prior tamoxifen treatment, interquartile range",
+      "unit": "years",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Duration of prior tamoxifen treatment",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "numeric_mean_range",
+          "range_min": 2.0,
+          "range_max": 5.0,
+          "raw_string": "2.0–5.0"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "numeric_mean_range",
+          "range_min": 2.0,
+          "range_max": 5.0,
+          "raw_string": "2.0–5.0"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "numeric_mean_range",
+          "range_min": 2.0,
+          "range_max": 5.0,
+          "raw_string": "2.0–5.0"
+        }
+      ]
+    },
+    {
+      "original_label": "Duration of tamoxifen therapy — no. (%)",
+      "standardized_name": "Duration of prior tamoxifen therapy",
+      "category": "Prior Treatment",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "0 yr",
+      "standardized_name": "0 years",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Duration of prior tamoxifen therapy",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "categorical_count_percentage",
+          "count": 199.0,
+          "percentage": 20.8,
+          "raw_string": "199 (20.8)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 198.0,
+          "percentage": 20.6,
+          "raw_string": "198 (20.6)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 397.0,
+          "percentage": 20.7,
+          "raw_string": "397 (20.7)"
+        }
+      ]
+    },
+    {
+      "original_label": ">0 to <2 yr",
+      "standardized_name": ">0 to <2 years",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Duration of prior tamoxifen therapy",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "categorical_count_percentage",
+          "count": 40.0,
+          "percentage": 4.2,
+          "raw_string": "40 (4.2)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 40.0,
+          "percentage": 4.2,
+          "raw_string": "40 (4.2)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 80.0,
+          "percentage": 4.2,
+          "raw_string": "80 (4.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "2 to <4.5 yr",
+      "standardized_name": "2 to <4.5 years",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Duration of prior tamoxifen therapy",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "categorical_count_percentage",
+          "count": 43.0,
+          "percentage": 4.5,
+          "raw_string": "43 (4.5)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 29.0,
+          "percentage": 3.0,
+          "raw_string": "29 (3.0)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 72.0,
+          "percentage": 3.8,
+          "raw_string": "72 (3.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "4.5 to 6 yr",
+      "standardized_name": "4.5 to 6 years",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Duration of prior tamoxifen therapy",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "categorical_count_percentage",
+          "count": 670.0,
+          "percentage": 69.9,
+          "raw_string": "670 (69.9)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 684.0,
+          "percentage": 71.3,
+          "raw_string": "684 (71.3)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 1354.0,
+          "percentage": 70.6,
+          "raw_string": "1354 (70.6)"
+        }
+      ]
+    },
+    {
+      "original_label": ">6 yr",
+      "standardized_name": ">6 years",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Duration of prior tamoxifen therapy",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 0.7,
+          "raw_string": "7 (0.7)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 0.8,
+          "raw_string": "8 (0.8)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 15.0,
+          "percentage": 0.8,
+          "raw_string": "15 (0.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "Duration of previous aromatase-inhibitor therapy",
+      "standardized_name": "Duration of previous aromatase-inhibitor therapy",
+      "category": "Prior Treatment",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Median (interquartile range) — yr",
+      "standardized_name": "Duration of previous aromatase-inhibitor therapy",
+      "unit": "years",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Duration of previous aromatase-inhibitor therapy",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "numeric_median_iqr",
+          "median": 5.0,
+          "iqr_min": 5.0,
+          "iqr_max": 5.1,
+          "raw_string": "5.0 (5.0-5.1)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "numeric_median_iqr",
+          "median": 5.0,
+          "iqr_min": 5.0,
+          "iqr_max": 5.1,
+          "raw_string": "5.0 (5.0-5.1)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "numeric_median_iqr",
+          "median": 5.0,
+          "iqr_min": 5.0,
+          "iqr_max": 5.1,
+          "raw_string": "5.0 (5.0-5.1)"
+        }
+      ]
+    },
+    {
+      "original_label": "Distribution — no. (%)",
+      "standardized_name": "Distribution of duration of previous aromatase-inhibitor therapy",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Duration of previous aromatase-inhibitor therapy",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "<4.5 yr",
+      "standardized_name": "<4.5 years",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Duration of previous aromatase-inhibitor therapy",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 0.3,
+          "raw_string": "3 (0.3)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 0.2,
+          "raw_string": "2 (0.2)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 0.3,
+          "raw_string": "5 (0.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "4.5–6 yr",
+      "standardized_name": "4.5-6 years",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Duration of previous aromatase-inhibitor therapy",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "categorical_count_percentage",
+          "count": 949.0,
+          "percentage": 99.0,
+          "raw_string": "949 (99.0)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 950.0,
+          "percentage": 99.1,
+          "raw_string": "950 (99.1)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 1899.0,
+          "percentage": 99.0,
+          "raw_string": "1899 (99.0)"
+        }
+      ]
+    },
+    {
+      "original_label": ">6 yr",
+      "standardized_name": ">6 years",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Duration of previous aromatase-inhibitor therapy",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 0.7,
+          "raw_string": "7 (0.7)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 0.6,
+          "raw_string": "6 (0.6)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 13.0,
+          "percentage": 0.7,
+          "raw_string": "13 (0.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "Data missing",
+      "standardized_name": "Data missing",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Duration of previous aromatase-inhibitor therapy",
+      "group_data": [
+        {
+          "group_name": "Letrozole",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "raw_string": "0"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.1,
+          "raw_string": "1 (0.1)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.1,
+          "raw_string": "1 (0.1)"
+        }
+      ]
+    }
+  ]
+}

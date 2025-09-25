@@ -1,0 +1,675 @@
+{
+  "study_id": "French R98 Intergroup trial",
+  "study_title": "Postoperative irinotecan in resected stage II-III rectal cancer: final analysis of the French R98 Intergroup trial",
+  "table_name": "Table 1",
+  "table_title": "Characteristics of 357 assessable patients",
+  "footnotes": [],
+  "groups": [
+    {
+      "name": "Control arm",
+      "n": 178
+    },
+    {
+      "name": "LV5-FU2 + irinotecan arm",
+      "n": 179
+    },
+    {
+      "name": "All",
+      "n": 357
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Sex (%): male/female",
+      "standardized_name": "Sex",
+      "unit": "%",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "header",
+          "raw_string": "male/female"
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "header",
+          "raw_string": "male/female"
+        },
+        {
+          "group_name": "All",
+          "data_type": "header",
+          "raw_string": "male/female"
+        }
+      ]
+    },
+    {
+      "original_label": "male",
+      "standardized_name": "Sex, male",
+      "unit": "%",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sex",
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 68.0,
+          "raw_string": "68/32"
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 67.0,
+          "raw_string": "67/33"
+        },
+        {
+          "group_name": "All",
+          "data_type": "categorical_count_percentage",
+          "percentage": 68.0,
+          "raw_string": "68/32"
+        }
+      ]
+    },
+    {
+      "original_label": "female",
+      "standardized_name": "Sex, female",
+      "unit": "%",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sex",
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 32.0,
+          "raw_string": "68/32"
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 33.0,
+          "raw_string": "67/33"
+        },
+        {
+          "group_name": "All",
+          "data_type": "categorical_count_percentage",
+          "percentage": 32.0,
+          "raw_string": "68/32"
+        }
+      ]
+    },
+    {
+      "original_label": "Median age [range]",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "numeric_median_iqr",
+          "median": 64.0,
+          "iqr_min": 33.0,
+          "iqr_max": 82.0,
+          "raw_string": "64 [33-82]",
+          "notes": "The source reports a range, which is represented here as an interquartile range."
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "numeric_median_iqr",
+          "median": 61.0,
+          "iqr_min": 32.0,
+          "iqr_max": 80.0,
+          "raw_string": "61 [32-80]",
+          "notes": "The source reports a range, which is represented here as an interquartile range."
+        },
+        {
+          "group_name": "All",
+          "data_type": "numeric_median_iqr",
+          "median": 62.0,
+          "iqr_min": 32.0,
+          "iqr_max": 82.0,
+          "raw_string": "62 [32-82]",
+          "notes": "The source reports a range, which is represented here as an interquartile range."
+        }
+      ]
+    },
+    {
+      "original_label": "ECOG performance status (%): 0/1/2",
+      "standardized_name": "ECOG Performance Status",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "header",
+          "raw_string": "0/1/2"
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "header",
+          "raw_string": "0/1/2"
+        },
+        {
+          "group_name": "All",
+          "data_type": "header",
+          "raw_string": "0/1/2"
+        }
+      ]
+    },
+    {
+      "original_label": "0",
+      "standardized_name": "ECOG Performance Status, 0",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 58.0,
+          "raw_string": "58/28/2"
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 65.0,
+          "raw_string": "65/23/2"
+        },
+        {
+          "group_name": "All",
+          "data_type": "categorical_count_percentage",
+          "percentage": 62.0,
+          "raw_string": "62/26/2"
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "ECOG Performance Status, 1",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 28.0,
+          "raw_string": "58/28/2"
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 23.0,
+          "raw_string": "65/23/2"
+        },
+        {
+          "group_name": "All",
+          "data_type": "categorical_count_percentage",
+          "percentage": 26.0,
+          "raw_string": "62/26/2"
+        }
+      ]
+    },
+    {
+      "original_label": "2",
+      "standardized_name": "ECOG Performance Status, 2",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 2.0,
+          "raw_string": "58/28/2"
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 2.0,
+          "raw_string": "65/23/2"
+        },
+        {
+          "group_name": "All",
+          "data_type": "categorical_count_percentage",
+          "percentage": 2.0,
+          "raw_string": "62/26/2"
+        }
+      ]
+    },
+    {
+      "original_label": "Site of primary tumour (%): high/low rectum",
+      "standardized_name": "Primary Tumor Site",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "header",
+          "raw_string": "high/low rectum"
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "header",
+          "raw_string": "high/low rectum"
+        },
+        {
+          "group_name": "All",
+          "data_type": "header",
+          "raw_string": "high/low rectum"
+        }
+      ]
+    },
+    {
+      "original_label": "high rectum",
+      "standardized_name": "Primary Tumor Site, high rectum",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Primary Tumor Site",
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 47.0,
+          "raw_string": "47/53"
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 47.0,
+          "raw_string": "47/53"
+        },
+        {
+          "group_name": "All",
+          "data_type": "categorical_count_percentage",
+          "percentage": 47.0,
+          "raw_string": "47/53"
+        }
+      ]
+    },
+    {
+      "original_label": "low rectum",
+      "standardized_name": "Primary Tumor Site, low rectum",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Primary Tumor Site",
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 53.0,
+          "raw_string": "47/53"
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 53.0,
+          "raw_string": "47/53"
+        },
+        {
+          "group_name": "All",
+          "data_type": "categorical_count_percentage",
+          "percentage": 53.0,
+          "raw_string": "47/53"
+        }
+      ]
+    },
+    {
+      "original_label": "Number of involved nodes (%): 0/1-3/>3",
+      "standardized_name": "Number of Involved Nodes",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "header",
+          "raw_string": "0/1-3/>3"
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "header",
+          "raw_string": "0/1-3/>3"
+        },
+        {
+          "group_name": "All",
+          "data_type": "header",
+          "raw_string": "0/1-3/>3"
+        }
+      ]
+    },
+    {
+      "original_label": "0",
+      "standardized_name": "Number of Involved Nodes, 0",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of Involved Nodes",
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 32.0,
+          "raw_string": "32/48/20"
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 31.0,
+          "raw_string": "31/48/21"
+        },
+        {
+          "group_name": "All",
+          "data_type": "categorical_count_percentage",
+          "percentage": 32.0,
+          "raw_string": "32/48/20"
+        }
+      ]
+    },
+    {
+      "original_label": "1-3",
+      "standardized_name": "Number of Involved Nodes, 1-3",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of Involved Nodes",
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 48.0,
+          "raw_string": "32/48/20"
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 48.0,
+          "raw_string": "31/48/21"
+        },
+        {
+          "group_name": "All",
+          "data_type": "categorical_count_percentage",
+          "percentage": 48.0,
+          "raw_string": "32/48/20"
+        }
+      ]
+    },
+    {
+      "original_label": ">3",
+      "standardized_name": "Number of Involved Nodes, >3",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of Involved Nodes",
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 20.0,
+          "raw_string": "32/48/20"
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 21.0,
+          "raw_string": "31/48/21"
+        },
+        {
+          "group_name": "All",
+          "data_type": "categorical_count_percentage",
+          "percentage": 20.0,
+          "raw_string": "32/48/20"
+        }
+      ]
+    },
+    {
+      "original_label": "Preoperative radiotherapy (%): yes/no",
+      "standardized_name": "Preoperative Radiotherapy",
+      "unit": "%",
+      "category": "Treatment History",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "header",
+          "raw_string": "yes/no"
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "header",
+          "raw_string": "yes/no"
+        },
+        {
+          "group_name": "All",
+          "data_type": "header",
+          "raw_string": "yes/no"
+        }
+      ]
+    },
+    {
+      "original_label": "yes",
+      "standardized_name": "Preoperative Radiotherapy, yes",
+      "unit": "%",
+      "category": "Treatment History",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Preoperative Radiotherapy",
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 69.0,
+          "raw_string": "69/31"
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 69.0,
+          "raw_string": "69/31"
+        },
+        {
+          "group_name": "All",
+          "data_type": "categorical_count_percentage",
+          "percentage": 69.0,
+          "raw_string": "69/31"
+        }
+      ]
+    },
+    {
+      "original_label": "no",
+      "standardized_name": "Preoperative Radiotherapy, no",
+      "unit": "%",
+      "category": "Treatment History",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Preoperative Radiotherapy",
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 31.0,
+          "raw_string": "69/31"
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 31.0,
+          "raw_string": "69/31"
+        },
+        {
+          "group_name": "All",
+          "data_type": "categorical_count_percentage",
+          "percentage": 31.0,
+          "raw_string": "69/31"
+        }
+      ]
+    },
+    {
+      "original_label": "Sphincter conservation (%): yes/no",
+      "standardized_name": "Sphincter Conservation",
+      "unit": "%",
+      "category": "Surgical Details",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "header",
+          "raw_string": "yes/no"
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "header",
+          "raw_string": "yes/no"
+        },
+        {
+          "group_name": "All",
+          "data_type": "header",
+          "raw_string": "yes/no"
+        }
+      ]
+    },
+    {
+      "original_label": "yes",
+      "standardized_name": "Sphincter Conservation, yes",
+      "unit": "%",
+      "category": "Surgical Details",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sphincter Conservation",
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 80.0,
+          "raw_string": "80/20"
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 79.0,
+          "raw_string": "79/21"
+        },
+        {
+          "group_name": "All",
+          "data_type": "categorical_count_percentage",
+          "percentage": 80.0,
+          "raw_string": "80/20"
+        }
+      ]
+    },
+    {
+      "original_label": "no",
+      "standardized_name": "Sphincter Conservation, no",
+      "unit": "%",
+      "category": "Surgical Details",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sphincter Conservation",
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 20.0,
+          "raw_string": "80/20"
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 21.0,
+          "raw_string": "79/21"
+        },
+        {
+          "group_name": "All",
+          "data_type": "categorical_count_percentage",
+          "percentage": 20.0,
+          "raw_string": "80/20"
+        }
+      ]
+    },
+    {
+      "original_label": "Time from surgery (weeks): 0-4/>4",
+      "standardized_name": "Time from Surgery to Treatment",
+      "unit": "%",
+      "category": "Treatment History",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "header",
+          "raw_string": "0-4/>4"
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "header",
+          "raw_string": "0-4/>4"
+        },
+        {
+          "group_name": "All",
+          "data_type": "header",
+          "raw_string": "0-4/>4"
+        }
+      ]
+    },
+    {
+      "original_label": "0-4",
+      "standardized_name": "Time from Surgery to Treatment, 0-4 weeks",
+      "unit": "%",
+      "category": "Treatment History",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time from Surgery to Treatment",
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 44.0,
+          "raw_string": "44/56"
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 44.0,
+          "raw_string": "44/56"
+        },
+        {
+          "group_name": "All",
+          "data_type": "categorical_count_percentage",
+          "percentage": 44.0,
+          "raw_string": "44/56"
+        }
+      ]
+    },
+    {
+      "original_label": ">4",
+      "standardized_name": "Time from Surgery to Treatment, >4 weeks",
+      "unit": "%",
+      "category": "Treatment History",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time from Surgery to Treatment",
+      "group_data": [
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 56.0,
+          "raw_string": "44/56"
+        },
+        {
+          "group_name": "LV5-FU2 + irinotecan arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 56.0,
+          "raw_string": "44/56"
+        },
+        {
+          "group_name": "All",
+          "data_type": "categorical_count_percentage",
+          "percentage": 56.0,
+          "raw_string": "44/56"
+        }
+      ]
+    }
+  ]
+}

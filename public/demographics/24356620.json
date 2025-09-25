@@ -1,0 +1,225 @@
+{
+  "study_id": "WSG-ARA",
+  "study_title": "Final results from the prospective phase III WSG-ARA trial: impact of adjuvant darbepoetin alfa on event-free survival in early breast cancer",
+  "table_name": "Baseline Patient Characteristics",
+  "table_title": "Baseline Patient Characteristics (Reconstructed from Text)",
+  "description": "Patient characteristics for the WSG-ARA trial. As the original baseline characteristics table (Supplementary Table S2) was not provided, this information has been reconstructed from the text of the publication, including the CONSORT diagram and initial Quality of Life scores.",
+  "footnotes": [
+    "DA+: Darbepoetin alfa arm",
+    "DA-: No darbepoetin alfa arm (control)",
+    "ITT: Intention-to-treat",
+    "TAC: Docetaxel, Doxorubicin, Cyclophosphamide chemotherapy regimen",
+    "FEC: 5-Fluorouracil, Epirubicin, Cyclophosphamide chemotherapy regimen",
+    "FACT-An: Functional Assessment of Cancer Therapy-Anemia",
+    "PCI: Perceived cognitive impairment",
+    "QoL: Quality of life"
+  ],
+  "groups": [
+    {
+      "name": "DA+",
+      "n": 615,
+      "type": "Intervention"
+    },
+    {
+      "name": "DA-",
+      "n": 619,
+      "type": "Control"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Analysis Populations",
+      "standardized_name": "Analysis Population",
+      "category": "Sample Size",
+      "group_data": [
+        {
+          "group_name": "DA+",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "DA-",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "ITT population",
+      "standardized_name": "Intention-to-Treat Population Size",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Analysis Populations",
+      "group_data": [
+        {
+          "group_name": "DA+",
+          "data_type": "numeric_single",
+          "value": 585.0,
+          "raw_string": "585"
+        },
+        {
+          "group_name": "DA-",
+          "data_type": "numeric_single",
+          "value": 585.0,
+          "raw_string": "585"
+        }
+      ]
+    },
+    {
+      "original_label": "Safety population",
+      "standardized_name": "Safety Population Size",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Analysis Populations",
+      "group_data": [
+        {
+          "group_name": "DA+",
+          "data_type": "numeric_single",
+          "value": 598.0,
+          "raw_string": "598"
+        },
+        {
+          "group_name": "DA-",
+          "data_type": "numeric_single",
+          "value": 601.0,
+          "raw_string": "601"
+        }
+      ]
+    },
+    {
+      "original_label": "Chemotherapy Regimen (ITT Population)",
+      "standardized_name": "Chemotherapy Regimen",
+      "category": "Treatment",
+      "group_data": [
+        {
+          "group_name": "DA+",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "DA-",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "TAC",
+      "standardized_name": "TAC Chemotherapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Chemotherapy Regimen (ITT Population)",
+      "group_data": [
+        {
+          "group_name": "DA+",
+          "data_type": "categorical_count_percentage",
+          "count": 532.0,
+          "percentage": 90.94,
+          "raw_string": "N = 532",
+          "n_for_value": 585
+        },
+        {
+          "group_name": "DA-",
+          "data_type": "categorical_count_percentage",
+          "count": 534.0,
+          "percentage": 91.28,
+          "raw_string": "N = 534",
+          "n_for_value": 585
+        }
+      ]
+    },
+    {
+      "original_label": "FEC",
+      "standardized_name": "FEC Chemotherapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Chemotherapy Regimen (ITT Population)",
+      "group_data": [
+        {
+          "group_name": "DA+",
+          "data_type": "categorical_count_percentage",
+          "count": 53.0,
+          "percentage": 9.06,
+          "raw_string": "N = 53",
+          "n_for_value": 585
+        },
+        {
+          "group_name": "DA-",
+          "data_type": "categorical_count_percentage",
+          "count": 51.0,
+          "percentage": 8.72,
+          "raw_string": "N = 51",
+          "n_for_value": 585
+        }
+      ]
+    },
+    {
+      "original_label": "Initial FACT-An score, mean (±SD)",
+      "standardized_name": "FACT-An Score",
+      "category": "Quality of Life",
+      "time_point": "Baseline",
+      "group_data": [
+        {
+          "group_name": "DA+",
+          "data_type": "numeric_mean_sd",
+          "mean": 146.2,
+          "std_dev": 24.7,
+          "raw_string": "146.2 (±24.7)",
+          "n_for_value": 376
+        },
+        {
+          "group_name": "DA-",
+          "data_type": "numeric_mean_sd",
+          "mean": 145.5,
+          "std_dev": 24.8,
+          "raw_string": "145.5 (±24.8)",
+          "n_for_value": 387
+        }
+      ]
+    },
+    {
+      "original_label": "Initial Perceived cognitive impairment (PCI) score, mean (±SD)",
+      "standardized_name": "Perceived Cognitive Impairment Score",
+      "category": "Quality of Life",
+      "time_point": "Baseline",
+      "group_data": [
+        {
+          "group_name": "DA+",
+          "data_type": "numeric_mean_sd",
+          "mean": 64.0,
+          "std_dev": 11.1,
+          "raw_string": "64.0 (±11.1)",
+          "n_for_value": 372
+        },
+        {
+          "group_name": "DA-",
+          "data_type": "numeric_mean_sd",
+          "mean": 64.4,
+          "std_dev": 9.6,
+          "raw_string": "64.4 (±9.6)",
+          "n_for_value": 366
+        }
+      ]
+    },
+    {
+      "original_label": "Initial 'impact of PCI on QoL' score, mean (±SD)",
+      "standardized_name": "Impact of PCI on QoL Score",
+      "category": "Quality of Life",
+      "time_point": "Baseline",
+      "group_data": [
+        {
+          "group_name": "DA+",
+          "data_type": "numeric_mean_sd",
+          "mean": 13.9,
+          "std_dev": 3.7,
+          "raw_string": "13.9 ± 3.7",
+          "notes": "The source states this value was 'virtually identical in the arms'."
+        },
+        {
+          "group_name": "DA-",
+          "data_type": "numeric_mean_sd",
+          "mean": 13.9,
+          "std_dev": 3.7,
+          "raw_string": "13.9 ± 3.7",
+          "notes": "The source states this value was 'virtually identical in the arms'."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,806 @@
+{
+  "study_id": "NCT00719797",
+  "study_title": "Initial Therapy with FOLFOXIRI and Bevacizumab for Metastatic Colorectal Cancer",
+  "table_name": "Table 1",
+  "table_title": "Baseline Characteristics of the Patients in the Intention-to-Treat Population.",
+  "footnotes": [
+    "* ECOG denotes Eastern Cooperative Oncology Group; FOLFIRI fluorouracil, leucovorin, and irinotecan; and FOLFOXIRI fluorouracil, leucovorin, oxaliplatin, and irinotecan.",
+    "† A significantly higher percentage of patients in the group assigned to FOLFOXIRI plus bevacizumab than in the group assigned to FOLFIRI plus bevacizumab had a primary tumor in the right colon (P=0.02)."
+  ],
+  "groups": [
+    {
+      "name": "FOLFIRI plus Bevacizumab",
+      "n": 256,
+      "type": "control group"
+    },
+    {
+      "name": "FOLFOXIRI plus Bevacizumab",
+      "n": 252,
+      "type": "experimental group"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age - yr",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "header",
+          "raw_string": "Age - yr"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "header",
+          "raw_string": "Age - yr"
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Age, Median",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age - yr",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "numeric_single",
+          "value": 60.0,
+          "raw_string": "60.0"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "numeric_single",
+          "value": 60.5,
+          "raw_string": "60.5"
+        }
+      ]
+    },
+    {
+      "original_label": "Range",
+      "standardized_name": "Age, Range",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age - yr",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "numeric_mean_range",
+          "range_min": 29.0,
+          "range_max": 75.0,
+          "raw_string": "29-75"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "numeric_mean_range",
+          "range_min": 29.0,
+          "range_max": 75.0,
+          "raw_string": "29-75"
+        }
+      ]
+    },
+    {
+      "original_label": "Sex — no. (%)",
+      "standardized_name": "Sex",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "header",
+          "raw_string": "Sex - no. (%)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "header",
+          "raw_string": "Sex - no. (%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Male",
+      "standardized_name": "Male",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sex — no. (%)",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 156.0,
+          "percentage": 60.9,
+          "raw_string": "156 (60.9)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 150.0,
+          "percentage": 59.5,
+          "raw_string": "150 (59.5)"
+        }
+      ]
+    },
+    {
+      "original_label": "Female",
+      "standardized_name": "Female",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sex — no. (%)",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 100.0,
+          "percentage": 39.1,
+          "raw_string": "100 (39.1)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 102.0,
+          "percentage": 40.5,
+          "raw_string": "102 (40.5)"
+        }
+      ]
+    },
+    {
+      "original_label": "ECOG performance status — no. (%)",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "header",
+          "raw_string": "ECOG performance status - no. (%)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "header",
+          "raw_string": "ECOG performance status - no. (%)"
+        }
+      ]
+    },
+    {
+      "original_label": "0",
+      "standardized_name": "ECOG Performance Status 0",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG performance status — no. (%)",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 229.0,
+          "percentage": 89.5,
+          "raw_string": "229 (89.5)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 227.0,
+          "percentage": 90.1,
+          "raw_string": "227 (90.1)"
+        }
+      ]
+    },
+    {
+      "original_label": "1–2",
+      "standardized_name": "ECOG Performance Status 1-2",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG performance status — no. (%)",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 27.0,
+          "percentage": 10.5,
+          "raw_string": "27 (10.5)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 25.0,
+          "percentage": 9.9,
+          "raw_string": "25 (9.9)"
+        }
+      ]
+    },
+    {
+      "original_label": "Site of primary tumor — no. (%)",
+      "standardized_name": "Site of Primary Tumor",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "header",
+          "raw_string": "Site of primary tumor - no. (%)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "header",
+          "raw_string": "Site of primary tumor - no. (%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Right colon",
+      "standardized_name": "Right Colon",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Site of primary tumor — no. (%)",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 61.0,
+          "percentage": 23.8,
+          "raw_string": "61 (23.8)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 88.0,
+          "percentage": 34.9,
+          "raw_string": "88 (34.9)†"
+        }
+      ]
+    },
+    {
+      "original_label": "Left colon or rectum",
+      "standardized_name": "Left Colon or Rectum",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Site of primary tumor — no. (%)",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 179.0,
+          "percentage": 70.0,
+          "raw_string": "179 (70.0)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 152.0,
+          "percentage": 60.3,
+          "raw_string": "152 (60.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Missing data",
+      "standardized_name": "Site of Primary Tumor, Missing Data",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Site of primary tumor — no. (%)",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 6.2,
+          "raw_string": "16 (6.2)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 4.8,
+          "raw_string": "12 (4.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "Previous adjuvant therapy — no. (%)",
+      "standardized_name": "Previous Adjuvant Therapy",
+      "category": "Clinical History",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 32.0,
+          "percentage": 12.5,
+          "raw_string": "32 (12.5)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 32.0,
+          "percentage": 12.7,
+          "raw_string": "32 (12.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "Time to metastases — no. (%)",
+      "standardized_name": "Time to Metastases",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "header",
+          "raw_string": "Time to metastases - no. (%)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "header",
+          "raw_string": "Time to metastases - no. (%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Synchronous",
+      "standardized_name": "Synchronous",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time to metastases — no. (%)",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 207.0,
+          "percentage": 80.9,
+          "raw_string": "207 (80.9)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 197.0,
+          "percentage": 78.2,
+          "raw_string": "197 (78.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Metachronous",
+      "standardized_name": "Metachronous",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time to metastases — no. (%)",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 49.0,
+          "percentage": 19.1,
+          "raw_string": "49 (19.1)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 55.0,
+          "percentage": 21.8,
+          "raw_string": "55 (21.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "Metastases — no. (%)",
+      "standardized_name": "Metastases Location",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "header",
+          "raw_string": "Metastases - no. (%)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "header",
+          "raw_string": "Metastases - no. (%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Confined to liver",
+      "standardized_name": "Confined to Liver",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Metastases — no. (%)",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 46.0,
+          "percentage": 18.0,
+          "raw_string": "46 (18.0)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 59.0,
+          "percentage": 23.4,
+          "raw_string": "59 (23.4)"
+        }
+      ]
+    },
+    {
+      "original_label": "At multiple sites",
+      "standardized_name": "Multiple Sites",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Metastases — no. (%)",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 210.0,
+          "percentage": 82.0,
+          "raw_string": "210 (82.0)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 193.0,
+          "percentage": 76.6,
+          "raw_string": "193 (76.6)"
+        }
+      ]
+    },
+    {
+      "original_label": "Unresected primary tumor — no. (%)",
+      "standardized_name": "Unresected Primary Tumor",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 89.0,
+          "percentage": 34.8,
+          "raw_string": "89 (34.8)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 77.0,
+          "percentage": 30.6,
+          "raw_string": "77 (30.6)"
+        }
+      ]
+    },
+    {
+      "original_label": "Köhne prognostic score — no. (%)",
+      "standardized_name": "Köhne Prognostic Score",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "header",
+          "raw_string": "Köhne prognostic score - no. (%)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "header",
+          "raw_string": "Köhne prognostic score - no. (%)"
+        }
+      ]
+    },
+    {
+      "original_label": "High-risk",
+      "standardized_name": "High-risk",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Köhne prognostic score — no. (%)",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 29.0,
+          "percentage": 11.3,
+          "raw_string": "29 (11.3)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 18.0,
+          "percentage": 7.1,
+          "raw_string": "18 (7.1)"
+        }
+      ]
+    },
+    {
+      "original_label": "Intermediate-risk",
+      "standardized_name": "Intermediate-risk",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Köhne prognostic score — no. (%)",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 113.0,
+          "percentage": 44.2,
+          "raw_string": "113 (44.2)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 111.0,
+          "percentage": 44.0,
+          "raw_string": "111 (44.0)"
+        }
+      ]
+    },
+    {
+      "original_label": "Low-risk",
+      "standardized_name": "Low-risk",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Köhne prognostic score — no. (%)",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 105.0,
+          "percentage": 41.0,
+          "raw_string": "105 (41.0)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 108.0,
+          "percentage": 42.9,
+          "raw_string": "108 (42.9)"
+        }
+      ]
+    },
+    {
+      "original_label": "Missing data",
+      "standardized_name": "Köhne Prognostic Score, Missing Data",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Köhne prognostic score — no. (%)",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 9.0,
+          "percentage": 3.5,
+          "raw_string": "9 (3.5)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 15.0,
+          "percentage": 6.0,
+          "raw_string": "15 (6.0)"
+        }
+      ]
+    },
+    {
+      "original_label": "KRAS — no. (%)",
+      "standardized_name": "KRAS Mutation Status",
+      "category": "Biomarkers",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "header",
+          "raw_string": "KRAS - no. (%)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "header",
+          "raw_string": "KRAS - no. (%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Nonmutated",
+      "standardized_name": "KRAS Nonmutated",
+      "category": "Biomarkers",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "KRAS — no. (%)",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 99.0,
+          "percentage": 38.7,
+          "raw_string": "99 (38.7)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 94.0,
+          "percentage": 37.3,
+          "raw_string": "94 (37.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Mutated",
+      "standardized_name": "KRAS Mutated",
+      "category": "Biomarkers",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "KRAS — no. (%)",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 96.0,
+          "percentage": 37.5,
+          "raw_string": "96 (37.5)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 104.0,
+          "percentage": 41.3,
+          "raw_string": "104 (41.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Not definable",
+      "standardized_name": "KRAS Not Definable",
+      "category": "Biomarkers",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "KRAS — no. (%)",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 2.3,
+          "raw_string": "6 (2.3)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 3.2,
+          "raw_string": "8 (3.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Missing data",
+      "standardized_name": "KRAS, Missing Data",
+      "category": "Biomarkers",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "KRAS — no. (%)",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 55.0,
+          "percentage": 21.5,
+          "raw_string": "55 (21.5)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 46.0,
+          "percentage": 18.2,
+          "raw_string": "46 (18.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "BRAF — no. (%)",
+      "standardized_name": "BRAF Mutation Status",
+      "category": "Biomarkers",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "header",
+          "raw_string": "BRAF - no. (%)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "header",
+          "raw_string": "BRAF - no. (%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Nonmutated",
+      "standardized_name": "BRAF Nonmutated",
+      "category": "Biomarkers",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "BRAF — no. (%)",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 183.0,
+          "percentage": 71.5,
+          "raw_string": "183 (71.5)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 182.0,
+          "percentage": 72.2,
+          "raw_string": "182 (72.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Mutated",
+      "standardized_name": "BRAF Mutated",
+      "category": "Biomarkers",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "BRAF — no. (%)",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 4.7,
+          "raw_string": "12 (4.7)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 6.3,
+          "raw_string": "16 (6.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Not definable",
+      "standardized_name": "BRAF Not Definable",
+      "category": "Biomarkers",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "BRAF — no. (%)",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 2.3,
+          "raw_string": "6 (2.3)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 2.8,
+          "raw_string": "7 (2.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "Missing data",
+      "standardized_name": "BRAF, Missing Data",
+      "category": "Biomarkers",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "BRAF — no. (%)",
+      "group_data": [
+        {
+          "group_name": "FOLFIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 55.0,
+          "percentage": 21.5,
+          "raw_string": "55 (21.5)"
+        },
+        {
+          "group_name": "FOLFOXIRI plus Bevacizumab",
+          "data_type": "categorical_count_percentage",
+          "count": 47.0,
+          "percentage": 18.7,
+          "raw_string": "47 (18.7)"
+        }
+      ]
+    }
+  ]
+}

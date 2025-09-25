@@ -1,0 +1,239 @@
+{
+  "study_id": "ISRCTN 12808747",
+  "study_title": "Clinical Outcomes and Survival Following Treatment of Metastatic Castrate-Refractory Prostate Cancer With Docetaxel Alone or With Strontium-89, Zoledronic Acid, or Both",
+  "table_name": "Table S1",
+  "table_title": "Summary characteristics of participants included in the economic evaluation (n=707) and all study participants (n=757)",
+  "description": "Baseline characteristics for two patient cohorts: those included in the economic analysis subset and all participants in the TRAPEZE trial.",
+  "footnotes": [],
+  "groups": [
+    {
+      "name": "Economic analysis subset",
+      "n": 707,
+      "type": "analysis set"
+    },
+    {
+      "name": "All TRAPEZE trial participants",
+      "n": 757,
+      "type": "total population"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age median (IQR)",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Economic analysis subset",
+          "data_type": "numeric_median_iqr",
+          "median": 68.0,
+          "iqr_min": 64.0,
+          "iqr_max": 73.0,
+          "raw_string": "68 (64, 73)"
+        },
+        {
+          "group_name": "All TRAPEZE trial participants",
+          "data_type": "numeric_median_iqr",
+          "median": 68.0,
+          "iqr_min": 63.0,
+          "iqr_max": 73.0,
+          "raw_string": "68 (63, 73)"
+        }
+      ]
+    },
+    {
+      "original_label": "PSA median (IQR)",
+      "standardized_name": "Prostate-specific antigen",
+      "category": "Biomarker",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Economic analysis subset",
+          "data_type": "numeric_median_iqr",
+          "median": 143.75,
+          "iqr_min": 49.8,
+          "iqr_max": 347.6,
+          "raw_string": "143.75 (49.8, 347.6)"
+        },
+        {
+          "group_name": "All TRAPEZE trial participants",
+          "data_type": "numeric_median_iqr",
+          "median": 145.55,
+          "iqr_min": 51.2,
+          "iqr_max": 353.58,
+          "raw_string": "145.55 (51.2, 353.58)"
+        }
+      ]
+    },
+    {
+      "original_label": "ECOG n(%)",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Clinical Assessment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Economic analysis subset",
+          "data_type": "header",
+          "raw_string": "ECOG n(%)"
+        },
+        {
+          "group_name": "All TRAPEZE trial participants",
+          "data_type": "header",
+          "raw_string": "ECOG n(%)"
+        }
+      ]
+    },
+    {
+      "original_label": "0",
+      "standardized_name": "ECOG Performance Status 0",
+      "category": "Clinical Assessment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "Economic analysis subset",
+          "data_type": "categorical_count_percentage",
+          "count": 291.0,
+          "percentage": 41.16,
+          "raw_string": "291 (41.16)"
+        },
+        {
+          "group_name": "All TRAPEZE trial participants",
+          "data_type": "categorical_count_percentage",
+          "count": 305.0,
+          "percentage": 40.29,
+          "raw_string": "305 (40.29)"
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "ECOG Performance Status 1",
+      "category": "Clinical Assessment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "Economic analysis subset",
+          "data_type": "categorical_count_percentage",
+          "count": 361.0,
+          "percentage": 51.06,
+          "raw_string": "361 (51.06)"
+        },
+        {
+          "group_name": "All TRAPEZE trial participants",
+          "data_type": "categorical_count_percentage",
+          "count": 389.0,
+          "percentage": 51.39,
+          "raw_string": "389 (51.39)"
+        }
+      ]
+    },
+    {
+      "original_label": "2",
+      "standardized_name": "ECOG Performance Status 2",
+      "category": "Clinical Assessment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "Economic analysis subset",
+          "data_type": "categorical_count_percentage",
+          "count": 55.0,
+          "percentage": 7.78,
+          "raw_string": "55 (7.78)"
+        },
+        {
+          "group_name": "All TRAPEZE trial participants",
+          "data_type": "categorical_count_percentage",
+          "count": 63.0,
+          "percentage": 8.32,
+          "raw_string": "63 (8.32)"
+        }
+      ]
+    },
+    {
+      "original_label": "Prior Radiotherapy n (%)",
+      "standardized_name": "Prior Radiotherapy",
+      "category": "Medical History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Economic analysis subset",
+          "data_type": "categorical_count_percentage",
+          "count": 331.0,
+          "percentage": 44.3,
+          "raw_string": "331 (44.30%)"
+        },
+        {
+          "group_name": "All TRAPEZE trial participants",
+          "data_type": "categorical_count_percentage",
+          "count": 337.0,
+          "percentage": 44.87,
+          "raw_string": "337 (44.87%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Daily Present Pain Index (scale 0.5) median (IQR)",
+      "standardized_name": "Daily Present Pain Index",
+      "unit": "score",
+      "category": "Clinical Assessment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Economic analysis subset",
+          "data_type": "numeric_median_iqr",
+          "median": 1.43,
+          "iqr_min": 0.86,
+          "iqr_max": 2.0,
+          "raw_string": "1.43 (0.86, 2.00)"
+        },
+        {
+          "group_name": "All TRAPEZE trial participants",
+          "data_type": "numeric_median_iqr",
+          "median": 1.43,
+          "iqr_min": 0.86,
+          "iqr_max": 2.0,
+          "raw_string": "1.43 (0.86, 2.00)"
+        }
+      ]
+    },
+    {
+      "original_label": "Daily Analgesic Score median (IQR)",
+      "standardized_name": "Daily Analgesic Score",
+      "unit": "score",
+      "category": "Clinical Assessment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Economic analysis subset",
+          "data_type": "numeric_median_iqr",
+          "median": 10.01,
+          "iqr_min": 0.86,
+          "iqr_max": 27.63,
+          "raw_string": "10.01 (0.86, 27.63)"
+        },
+        {
+          "group_name": "All TRAPEZE trial participants",
+          "data_type": "numeric_median_iqr",
+          "median": 10.21,
+          "iqr_min": 0.88,
+          "iqr_max": 27.89,
+          "raw_string": "10.21 (0.88, 27.89)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1005 @@
+{
+  "study_id": "NCT01120184",
+  "study_title": "Trastuzumab Emtansine With or Without Pertuzumab Versus Trastuzumab Plus Taxane for Human Epidermal Growth Factor Receptor 2-Positive, Advanced Breast Cancer: Primary Results From the Phase III MARIANNE Study",
+  "table_name": "Table 1",
+  "table_title": "Demographic and Baseline Characteristics",
+  "description": "Abbreviations: ECOG PS, Eastern Cooperative Oncology Group performance status; ER, estrogen receptor; HER2, human epidermal growth factor receptor 2; LABC, locally advanced breast cancer; MBC, metastatic breast cancer; PR, progesterone receptor; T-DM1, trastuzumab emtansine.",
+  "footnotes": [
+    "*ECOG PS = 2 was an exclusion criterion (n = 2).",
+    "†Twenty-five patients had unknown ER/PR status."
+  ],
+  "groups": [
+    {
+      "name": "Trastuzumab + Taxane",
+      "n": 365
+    },
+    {
+      "name": "T-DM1",
+      "n": 367
+    },
+    {
+      "name": "T-DM1 + Pertuzumab",
+      "n": 363
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age, year",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "header",
+          "raw_string": "Age, year"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "header",
+          "raw_string": "Age, year"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "header",
+          "raw_string": "Age, year"
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, year",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "numeric_median_iqr",
+          "median": 55.0,
+          "raw_string": "55"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "numeric_median_iqr",
+          "median": 52.0,
+          "raw_string": "52"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "numeric_median_iqr",
+          "median": 52.0,
+          "raw_string": "52"
+        }
+      ]
+    },
+    {
+      "original_label": "Range",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, year",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "numeric_mean_range",
+          "range_min": 22.0,
+          "range_max": 88.0,
+          "raw_string": "(22-88)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "numeric_mean_range",
+          "range_min": 27.0,
+          "range_max": 82.0,
+          "raw_string": "(27-82)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "numeric_mean_range",
+          "range_min": 27.0,
+          "range_max": 86.0,
+          "raw_string": "(27-86)"
+        }
+      ]
+    },
+    {
+      "original_label": "Race",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "header",
+          "raw_string": "Race"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "header",
+          "raw_string": "Race"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "header",
+          "raw_string": "Race"
+        }
+      ]
+    },
+    {
+      "original_label": "White",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 232.0,
+          "percentage": 63.6,
+          "raw_string": "232 (63.6)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 239.0,
+          "percentage": 65.1,
+          "raw_string": "239 (65.1)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 233.0,
+          "percentage": 64.2,
+          "raw_string": "233 (64.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Black",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 23.0,
+          "percentage": 6.3,
+          "raw_string": "23 (6.3)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 3.0,
+          "raw_string": "11 (3.0)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 10.0,
+          "percentage": 2.8,
+          "raw_string": "10 (2.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "Asian",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 89.0,
+          "percentage": 24.4,
+          "raw_string": "89 (24.4)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 84.0,
+          "percentage": 22.9,
+          "raw_string": "84 (22.9)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 83.0,
+          "percentage": 22.9,
+          "raw_string": "83 (22.9)"
+        }
+      ]
+    },
+    {
+      "original_label": "Other",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "percentage": 5.8,
+          "raw_string": "21 (5.8)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 33.0,
+          "percentage": 9.0,
+          "raw_string": "33 (9.0)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 37.0,
+          "percentage": 10.2,
+          "raw_string": "37 (10.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "World region",
+      "standardized_name": "Geographic Region",
+      "category": "Demographics",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "header",
+          "raw_string": "World region"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "header",
+          "raw_string": "World region"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "header",
+          "raw_string": "World region"
+        }
+      ]
+    },
+    {
+      "original_label": "Western Europe, Canada, Australia/Pacific",
+      "standardized_name": "Geographic Region",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "World region",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 137.0,
+          "percentage": 37.5,
+          "raw_string": "137 (37.5)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 134.0,
+          "percentage": 36.5,
+          "raw_string": "134 (36.5)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 137.0,
+          "percentage": 37.7,
+          "raw_string": "137 (37.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "Asia",
+      "standardized_name": "Geographic Region",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "World region",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 76.0,
+          "percentage": 20.8,
+          "raw_string": "76 (20.8)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 77.0,
+          "percentage": 21.0,
+          "raw_string": "77 (21.0)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 74.0,
+          "percentage": 20.4,
+          "raw_string": "74 (20.4)"
+        }
+      ]
+    },
+    {
+      "original_label": "Eastern Europe",
+      "standardized_name": "Geographic Region",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "World region",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 56.0,
+          "percentage": 15.3,
+          "raw_string": "56 (15.3)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 59.0,
+          "percentage": 16.1,
+          "raw_string": "59 (16.1)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 56.0,
+          "percentage": 15.4,
+          "raw_string": "56 (15.4)"
+        }
+      ]
+    },
+    {
+      "original_label": "United States",
+      "standardized_name": "Geographic Region",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "World region",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 43.0,
+          "percentage": 11.8,
+          "raw_string": "43 (11.8)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 46.0,
+          "percentage": 12.5,
+          "raw_string": "46 (12.5)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 42.0,
+          "percentage": 11.6,
+          "raw_string": "42 (11.6)"
+        }
+      ]
+    },
+    {
+      "original_label": "Other",
+      "standardized_name": "Geographic Region",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "World region",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 53.0,
+          "percentage": 14.5,
+          "raw_string": "53 (14.5)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 51.0,
+          "percentage": 13.9,
+          "raw_string": "51 (13.9)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 54.0,
+          "percentage": 14.9,
+          "raw_string": "54 (14.9)"
+        }
+      ]
+    },
+    {
+      "original_label": "ECOG PS*",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Baseline Characteristics",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "header",
+          "raw_string": "ECOG PS*"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "header",
+          "raw_string": "ECOG PS*"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "header",
+          "raw_string": "ECOG PS*"
+        }
+      ]
+    },
+    {
+      "original_label": "0",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Baseline Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG PS*",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 245.0,
+          "percentage": 67.1,
+          "raw_string": "245 (67.1)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 239.0,
+          "percentage": 65.1,
+          "raw_string": "239 (65.1)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 235.0,
+          "percentage": 64.7,
+          "raw_string": "235 (64.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Baseline Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG PS*",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 119.0,
+          "percentage": 32.6,
+          "raw_string": "119 (32.6)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 128.0,
+          "percentage": 34.9,
+          "raw_string": "128 (34.9)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 127.0,
+          "percentage": 35.0,
+          "raw_string": "127 (35.0)"
+        }
+      ]
+    },
+    {
+      "original_label": "ER/PR statust",
+      "standardized_name": "Hormone Receptor Status",
+      "category": "Baseline Characteristics",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "header",
+          "raw_string": "ER/PR statust"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "header",
+          "raw_string": "ER/PR statust"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "header",
+          "raw_string": "ER/PR statust"
+        }
+      ]
+    },
+    {
+      "original_label": "ER and/or PR positive",
+      "standardized_name": "Hormone Receptor Status",
+      "category": "Baseline Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ER/PR statust",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 207.0,
+          "percentage": 56.7,
+          "raw_string": "207 (56.7)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 195.0,
+          "percentage": 53.1,
+          "raw_string": "195 (53.1)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 198.0,
+          "percentage": 54.5,
+          "raw_string": "198 (54.5)"
+        }
+      ]
+    },
+    {
+      "original_label": "ER and PR negative",
+      "standardized_name": "Hormone Receptor Status",
+      "category": "Baseline Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ER/PR statust",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 154.0,
+          "percentage": 42.2,
+          "raw_string": "154 (42.2)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 160.0,
+          "percentage": 43.6,
+          "raw_string": "160 (43.6)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 156.0,
+          "percentage": 43.0,
+          "raw_string": "156 (43.0)"
+        }
+      ]
+    },
+    {
+      "original_label": "Visceral involvement",
+      "standardized_name": "Visceral Involvement",
+      "category": "Baseline Characteristics",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "header",
+          "raw_string": "Visceral involvement"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "header",
+          "raw_string": "Visceral involvement"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "header",
+          "raw_string": "Visceral involvement"
+        }
+      ]
+    },
+    {
+      "original_label": "Yes",
+      "standardized_name": "Visceral Involvement",
+      "category": "Baseline Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Visceral involvement",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 241.0,
+          "percentage": 66.0,
+          "raw_string": "241 (66.0)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 251.0,
+          "percentage": 68.4,
+          "raw_string": "251 (68.4)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 259.0,
+          "percentage": 71.3,
+          "raw_string": "259 (71.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "No",
+      "standardized_name": "Visceral Involvement",
+      "category": "Baseline Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Visceral involvement",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 124.0,
+          "percentage": 34.0,
+          "raw_string": "124 (34.0)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 116.0,
+          "percentage": 31.6,
+          "raw_string": "116 (31.6)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 104.0,
+          "percentage": 28.7,
+          "raw_string": "104 (28.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "Measurable disease",
+      "standardized_name": "Measurable Disease",
+      "category": "Baseline Characteristics",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "header",
+          "raw_string": "Measurable disease"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "header",
+          "raw_string": "Measurable disease"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "header",
+          "raw_string": "Measurable disease"
+        }
+      ]
+    },
+    {
+      "original_label": "Yes",
+      "standardized_name": "Measurable Disease",
+      "category": "Baseline Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Measurable disease",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 287.0,
+          "percentage": 78.6,
+          "raw_string": "287 (78.6)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 303.0,
+          "percentage": 82.6,
+          "raw_string": "303 (82.6)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 299.0,
+          "percentage": 82.4,
+          "raw_string": "299 (82.4)"
+        }
+      ]
+    },
+    {
+      "original_label": "No",
+      "standardized_name": "Measurable Disease",
+      "category": "Baseline Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Measurable disease",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 78.0,
+          "percentage": 21.4,
+          "raw_string": "78 (21.4)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 64.0,
+          "percentage": 17.4,
+          "raw_string": "64 (17.4)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 64.0,
+          "percentage": 17.6,
+          "raw_string": "64 (17.6)"
+        }
+      ]
+    },
+    {
+      "original_label": "Prior neoadjuvant/adjuvant therapy",
+      "standardized_name": "Prior Neoadjuvant/Adjuvant Therapy",
+      "category": "Prior Therapy",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "header",
+          "raw_string": "Prior neoadjuvant/adjuvant therapy"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "header",
+          "raw_string": "Prior neoadjuvant/adjuvant therapy"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "header",
+          "raw_string": "Prior neoadjuvant/adjuvant therapy"
+        }
+      ]
+    },
+    {
+      "original_label": "None",
+      "standardized_name": "Prior Neoadjuvant/Adjuvant Therapy",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior neoadjuvant/adjuvant therapy",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 159.0,
+          "percentage": 43.6,
+          "raw_string": "159 (43.6)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 165.0,
+          "percentage": 45.0,
+          "raw_string": "165 (45.0)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 158.0,
+          "percentage": 43.5,
+          "raw_string": "158 (43.5)"
+        }
+      ]
+    },
+    {
+      "original_label": "HER2-directed (trastuzumab/lapatinib)",
+      "standardized_name": "Prior Neoadjuvant/Adjuvant Therapy",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior neoadjuvant/adjuvant therapy",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 113.0,
+          "percentage": 31.0,
+          "raw_string": "113 (31.0)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 113.0,
+          "percentage": 30.8,
+          "raw_string": "113 (30.8)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 117.0,
+          "percentage": 32.2,
+          "raw_string": "117 (32.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Taxane",
+      "standardized_name": "Prior Neoadjuvant/Adjuvant Therapy",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior neoadjuvant/adjuvant therapy",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 120.0,
+          "percentage": 32.9,
+          "raw_string": "120 (32.9)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 108.0,
+          "percentage": 29.4,
+          "raw_string": "108 (29.4)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 129.0,
+          "percentage": 35.5,
+          "raw_string": "129 (35.5)"
+        }
+      ]
+    },
+    {
+      "original_label": "Anthracycline",
+      "standardized_name": "Prior Neoadjuvant/Adjuvant Therapy",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior neoadjuvant/adjuvant therapy",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 152.0,
+          "percentage": 41.6,
+          "raw_string": "152 (41.6)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 162.0,
+          "percentage": 44.1,
+          "raw_string": "162 (44.1)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 168.0,
+          "percentage": 46.3,
+          "raw_string": "168 (46.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Hormonal",
+      "standardized_name": "Prior Neoadjuvant/Adjuvant Therapy",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior neoadjuvant/adjuvant therapy",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 86.0,
+          "percentage": 23.6,
+          "raw_string": "86 (23.6)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 85.0,
+          "percentage": 23.2,
+          "raw_string": "85 (23.2)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 90.0,
+          "percentage": 24.8,
+          "raw_string": "90 (24.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "Prior LABC/MBC therapy",
+      "standardized_name": "Prior Therapy for LABC/MBC",
+      "category": "Prior Therapy",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "header",
+          "raw_string": "Prior LABC/MBC therapy"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "header",
+          "raw_string": "Prior LABC/MBC therapy"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "header",
+          "raw_string": "Prior LABC/MBC therapy"
+        }
+      ]
+    },
+    {
+      "original_label": "Hormonal",
+      "standardized_name": "Prior Therapy for LABC/MBC",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior LABC/MBC therapy",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 26.0,
+          "percentage": 7.1,
+          "raw_string": "26 (7.1)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "percentage": 5.7,
+          "raw_string": "21 (5.7)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 20.0,
+          "percentage": 5.5,
+          "raw_string": "20 (5.5)"
+        }
+      ]
+    },
+    {
+      "original_label": "HER2 directed",
+      "standardized_name": "Prior Therapy for LABC/MBC",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior LABC/MBC therapy",
+      "group_data": [
+        {
+          "group_name": "Trastuzumab + Taxane",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 2.2,
+          "raw_string": "8 (2.2)"
+        },
+        {
+          "group_name": "T-DM1",
+          "data_type": "categorical_count_percentage",
+          "count": 9.0,
+          "percentage": 2.5,
+          "raw_string": "9 (2.5)"
+        },
+        {
+          "group_name": "T-DM1 + Pertuzumab",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 2.2,
+          "raw_string": "8 (2.2)"
+        }
+      ]
+    }
+  ]
+}

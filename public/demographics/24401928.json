@@ -1,0 +1,329 @@
+{
+  "study_id": "NCT00294996",
+  "study_title": "Phase III trial of nonpegylated liposomal doxorubicin in combination with trastuzumab and paclitaxel in HER2-positive metastatic breast cancer",
+  "table_name": "Table S1 (Reconstructed)",
+  "table_title": "Baseline Patient Demographics and Stratification Factors",
+  "description": "The primary baseline demographics table (Supplementary Table S1) was not available in the provided text. This table is reconstructed from demographic information mentioned in the main text and from subgroup totals presented in Figure 2. Individual group counts for stratification factors were not available; only totals across both groups are presented for those characteristics.",
+  "footnotes": [
+    "MPT: nonpegylated liposomal doxorubicin + trastuzumab + paclitaxel",
+    "PT: trastuzumab + paclitaxel"
+  ],
+  "groups": [
+    {
+      "name": "MPT",
+      "n": 181,
+      "type": "Intervention"
+    },
+    {
+      "name": "PT",
+      "n": 182,
+      "type": "Control"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Performance status of 0",
+      "standardized_name": "ECOG Performance Status = 0",
+      "category": "Baseline Condition",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "MPT",
+          "data_type": "categorical_count_percentage",
+          "count": 112.0,
+          "percentage": 62.0,
+          "raw_string": "62%",
+          "notes": "Count is calculated from percentage (0.62 * 181). Text states 'In both groups, 62% of the patients had a performance status of 0.'",
+          "n_for_value": 181
+        },
+        {
+          "group_name": "PT",
+          "data_type": "categorical_count_percentage",
+          "count": 113.0,
+          "percentage": 62.0,
+          "raw_string": "62%",
+          "notes": "Count is calculated from percentage (0.62 * 182). Text states 'In both groups, 62% of the patients had a performance status of 0.'",
+          "n_for_value": 182
+        }
+      ]
+    },
+    {
+      "original_label": "Prior exposure to anthracyclines",
+      "standardized_name": "Prior Anthracycline-based Chemotherapy",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "MPT",
+          "data_type": "text",
+          "text_value": "Approx. 33%",
+          "raw_string": "One-third of the patients",
+          "notes": "Text states 'One-third of the patients had prior exposure to anthracyclines'. Figure 2 indicates a total of 119 patients had prior AC."
+        },
+        {
+          "group_name": "PT",
+          "data_type": "text",
+          "text_value": "Approx. 33%",
+          "raw_string": "One-third of the patients",
+          "notes": "Text states 'One-third of the patients had prior exposure to anthracyclines'. Figure 2 indicates a total of 119 patients had prior AC."
+        }
+      ]
+    },
+    {
+      "original_label": "Received trastuzumab previously",
+      "standardized_name": "Prior Trastuzumab Treatment",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "MPT",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 1.0,
+          "raw_string": "1%",
+          "notes": "Count is calculated from percentage (0.01 * 181).",
+          "n_for_value": 181
+        },
+        {
+          "group_name": "PT",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 2.0,
+          "raw_string": "2%",
+          "notes": "Count is calculated from percentage (0.02 * 182).",
+          "n_for_value": 182
+        }
+      ]
+    },
+    {
+      "original_label": "Factor",
+      "standardized_name": "Hormone Receptor Status",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "MPT",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "PT",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "ER+ or PR+",
+      "standardized_name": "Estrogen Receptor Positive or Progesterone Receptor Positive",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone Receptor Status",
+      "group_data": [
+        {
+          "group_name": "MPT",
+          "data_type": "text",
+          "text_value": "Not reported",
+          "raw_string": "156",
+          "notes": "Value is the total number of patients (N) for this subgroup across both arms, as reported in Figure 2."
+        },
+        {
+          "group_name": "PT",
+          "data_type": "text",
+          "text_value": "Not reported",
+          "raw_string": "156",
+          "notes": "Value is the total number of patients (N) for this subgroup across both arms, as reported in Figure 2."
+        }
+      ]
+    },
+    {
+      "original_label": "Other HR status",
+      "standardized_name": "Hormone Receptor Negative (ER- and PR-)",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone Receptor Status",
+      "group_data": [
+        {
+          "group_name": "MPT",
+          "data_type": "text",
+          "text_value": "Not reported",
+          "raw_string": "207",
+          "notes": "Value is the total number of patients (N) for this subgroup across both arms, as reported in Figure 2."
+        },
+        {
+          "group_name": "PT",
+          "data_type": "text",
+          "text_value": "Not reported",
+          "raw_string": "207",
+          "notes": "Value is the total number of patients (N) for this subgroup across both arms, as reported in Figure 2."
+        }
+      ]
+    },
+    {
+      "original_label": "Factor",
+      "standardized_name": "Age",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "MPT",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "PT",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Age 50 or less",
+      "standardized_name": "Age <= 50 years",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "MPT",
+          "data_type": "text",
+          "text_value": "Not reported",
+          "raw_string": "147",
+          "notes": "Value is the total number of patients (N) for this subgroup across both arms, as reported in Figure 2."
+        },
+        {
+          "group_name": "PT",
+          "data_type": "text",
+          "text_value": "Not reported",
+          "raw_string": "147",
+          "notes": "Value is the total number of patients (N) for this subgroup across both arms, as reported in Figure 2."
+        }
+      ]
+    },
+    {
+      "original_label": "Age >50 years",
+      "standardized_name": "Age > 50 years",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "MPT",
+          "data_type": "text",
+          "text_value": "Not reported",
+          "raw_string": "216",
+          "notes": "Value is the total number of patients (N) for this subgroup across both arms, as reported in Figure 2."
+        },
+        {
+          "group_name": "PT",
+          "data_type": "text",
+          "text_value": "Not reported",
+          "raw_string": "216",
+          "notes": "Value is the total number of patients (N) for this subgroup across both arms, as reported in Figure 2."
+        }
+      ]
+    },
+    {
+      "original_label": "Factor",
+      "standardized_name": "Geographic Region",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "MPT",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "PT",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Europe",
+      "standardized_name": "Europe",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Geographic Region",
+      "group_data": [
+        {
+          "group_name": "MPT",
+          "data_type": "text",
+          "text_value": "Not reported",
+          "raw_string": "247",
+          "notes": "Value is the total number of patients (N) for this subgroup across both arms, as reported in Figure 2."
+        },
+        {
+          "group_name": "PT",
+          "data_type": "text",
+          "text_value": "Not reported",
+          "raw_string": "247",
+          "notes": "Value is the total number of patients (N) for this subgroup across both arms, as reported in Figure 2."
+        }
+      ]
+    },
+    {
+      "original_label": "North America",
+      "standardized_name": "North America",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Geographic Region",
+      "group_data": [
+        {
+          "group_name": "MPT",
+          "data_type": "text",
+          "text_value": "Not reported",
+          "raw_string": "31",
+          "notes": "Value is the total number of patients (N) for this subgroup across both arms, as reported in Figure 2."
+        },
+        {
+          "group_name": "PT",
+          "data_type": "text",
+          "text_value": "Not reported",
+          "raw_string": "31",
+          "notes": "Value is the total number of patients (N) for this subgroup across both arms, as reported in Figure 2."
+        }
+      ]
+    },
+    {
+      "original_label": "Rest of world",
+      "standardized_name": "Rest of World",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Geographic Region",
+      "group_data": [
+        {
+          "group_name": "MPT",
+          "data_type": "text",
+          "text_value": "Not reported",
+          "raw_string": "85",
+          "notes": "Value is the total number of patients (N) for this subgroup across both arms, as reported in Figure 2."
+        },
+        {
+          "group_name": "PT",
+          "data_type": "text",
+          "text_value": "Not reported",
+          "raw_string": "85",
+          "notes": "Value is the total number of patients (N) for this subgroup across both arms, as reported in Figure 2."
+        }
+      ]
+    }
+  ]
+}

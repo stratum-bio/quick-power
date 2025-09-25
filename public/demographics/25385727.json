@@ -1,0 +1,800 @@
+{
+  "study_id": "10.1200/JCO.2013.54.5392",
+  "study_title": "Randomized Phase III Trial of Amrubicin Versus Topotecan As Second-Line Treatment for Patients With Small-Cell Lung Cancer",
+  "table_name": "Table 1",
+  "table_title": "Patient Demographic and Clinical Characteristics at Baseline (ITT population)",
+  "description": "Patient demographic and clinical characteristics for the Intent-to-Treat (ITT) population at baseline.",
+  "footnotes": [
+    "Abbreviations: CR, complete response; ECOG PS, Eastern Cooperative Oncology Group performance status; ITT, intent to treat; PD, progressive disease; PR, partial response; SCLC, small-cell lung cancer; SD, stable disease."
+  ],
+  "groups": [
+    {
+      "name": "Amrubicin",
+      "n": 424,
+      "type": "intervention"
+    },
+    {
+      "name": "Topotecan",
+      "n": 213,
+      "type": "intervention"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age, years",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "header",
+          "raw_string": "Age, years"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "header",
+          "raw_string": "Age, years"
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, years",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "numeric_single",
+          "value": 62.0,
+          "raw_string": "62"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "numeric_single",
+          "value": 61.0,
+          "raw_string": "61"
+        }
+      ]
+    },
+    {
+      "original_label": "Range",
+      "standardized_name": "Age Range",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, years",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "numeric_mean_range",
+          "range_min": 22.0,
+          "range_max": 81.0,
+          "raw_string": "22-81"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "numeric_mean_range",
+          "range_min": 30.0,
+          "range_max": 81.0,
+          "raw_string": "30-81"
+        }
+      ]
+    },
+    {
+      "original_label": "≥ 65",
+      "standardized_name": "Age >= 65 years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, years",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "categorical_count_percentage",
+          "count": 169.0,
+          "percentage": 39.9,
+          "raw_string": "169"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "categorical_count_percentage",
+          "count": 74.0,
+          "percentage": 34.7,
+          "raw_string": "74"
+        }
+      ]
+    },
+    {
+      "original_label": "≥ 75",
+      "standardized_name": "Age >= 75 years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, years",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "categorical_count_percentage",
+          "count": 32.0,
+          "percentage": 7.5,
+          "raw_string": "32"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 5.6,
+          "raw_string": "12"
+        }
+      ]
+    },
+    {
+      "original_label": "Male sex",
+      "standardized_name": "Sex",
+      "category": "Demographics",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "categorical_count_percentage",
+          "male_count": 244.0,
+          "text_value": "Male",
+          "raw_string": "244",
+          "notes": "The table specifies counts for 'Male sex'",
+          "n_for_value": 424
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "categorical_count_percentage",
+          "male_count": 127.0,
+          "text_value": "Male",
+          "raw_string": "127",
+          "notes": "The table specifies counts for 'Male sex'",
+          "n_for_value": 213
+        }
+      ]
+    },
+    {
+      "original_label": "ECOG PS",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Baseline Characteristics",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "header",
+          "raw_string": "ECOG PS"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "header",
+          "raw_string": "ECOG PS"
+        }
+      ]
+    },
+    {
+      "original_label": "0",
+      "standardized_name": "ECOG Performance Status 0",
+      "category": "Baseline Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG PS",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "categorical_count_percentage",
+          "count": 126.0,
+          "percentage": 29.7,
+          "raw_string": "126"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "categorical_count_percentage",
+          "count": 72.0,
+          "percentage": 33.8,
+          "raw_string": "72"
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "ECOG Performance Status 1",
+      "category": "Baseline Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG PS",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "categorical_count_percentage",
+          "count": 289.0,
+          "percentage": 68.2,
+          "raw_string": "289"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "categorical_count_percentage",
+          "count": 137.0,
+          "percentage": 64.3,
+          "raw_string": "137"
+        }
+      ]
+    },
+    {
+      "original_label": "2",
+      "standardized_name": "ECOG Performance Status 2",
+      "category": "Baseline Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG PS",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "categorical_count_percentage",
+          "count": 9.0,
+          "percentage": 2.1,
+          "raw_string": "9"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 1.9,
+          "raw_string": "4"
+        }
+      ]
+    },
+    {
+      "original_label": "Actual disease stage",
+      "standardized_name": "Disease Stage",
+      "category": "Baseline Characteristics",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "header",
+          "raw_string": "Actual disease stage"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "header",
+          "raw_string": "Actual disease stage"
+        }
+      ]
+    },
+    {
+      "original_label": "Limited",
+      "standardized_name": "Limited Disease Stage",
+      "category": "Baseline Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Actual disease stage",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "categorical_count_percentage",
+          "count": 53.0,
+          "percentage": 12.5,
+          "raw_string": "53"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "categorical_count_percentage",
+          "count": 26.0,
+          "percentage": 12.2,
+          "raw_string": "26"
+        }
+      ]
+    },
+    {
+      "original_label": "Extensive",
+      "standardized_name": "Extensive Disease Stage",
+      "category": "Baseline Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Actual disease stage",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "categorical_count_percentage",
+          "count": 371.0,
+          "percentage": 87.5,
+          "raw_string": "371"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "categorical_count_percentage",
+          "count": 187.0,
+          "percentage": 87.8,
+          "raw_string": "187"
+        }
+      ]
+    },
+    {
+      "original_label": "Time from SCLC diagnosis, months",
+      "standardized_name": "Time from SCLC diagnosis",
+      "unit": "months",
+      "category": "Disease History",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "header",
+          "raw_string": "Time from SCLC diagnosis, months"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "header",
+          "raw_string": "Time from SCLC diagnosis, months"
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Time from SCLC diagnosis",
+      "unit": "months",
+      "category": "Disease History",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time from SCLC diagnosis, months",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "numeric_single",
+          "value": 8.4,
+          "raw_string": "8.4"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "numeric_single",
+          "value": 8.4,
+          "raw_string": "8.4"
+        }
+      ]
+    },
+    {
+      "original_label": "Range",
+      "standardized_name": "Time from SCLC diagnosis Range",
+      "unit": "months",
+      "category": "Disease History",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time from SCLC diagnosis, months",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "numeric_mean_range",
+          "range_min": 1.2,
+          "range_max": 108.0,
+          "raw_string": "1.2-108"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "numeric_mean_range",
+          "range_min": 1.6,
+          "range_max": 49.6,
+          "raw_string": "1.6-49.6"
+        }
+      ]
+    },
+    {
+      "original_label": "Smoking status",
+      "standardized_name": "Smoking Status",
+      "category": "Lifestyle Factors",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "header",
+          "raw_string": "Smoking status"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "header",
+          "raw_string": "Smoking status"
+        }
+      ]
+    },
+    {
+      "original_label": "Current",
+      "standardized_name": "Current Smoker",
+      "category": "Lifestyle Factors",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Smoking status",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "categorical_count_percentage",
+          "count": 126.0,
+          "percentage": 29.7,
+          "raw_string": "126"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "categorical_count_percentage",
+          "count": 49.0,
+          "percentage": 23.0,
+          "raw_string": "49"
+        }
+      ]
+    },
+    {
+      "original_label": "Former",
+      "standardized_name": "Former Smoker",
+      "category": "Lifestyle Factors",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Smoking status",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "categorical_count_percentage",
+          "count": 253.0,
+          "percentage": 59.7,
+          "raw_string": "253"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "categorical_count_percentage",
+          "count": 140.0,
+          "percentage": 65.7,
+          "raw_string": "140"
+        }
+      ]
+    },
+    {
+      "original_label": "Never",
+      "standardized_name": "Never Smoker",
+      "category": "Lifestyle Factors",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Smoking status",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "categorical_count_percentage",
+          "count": 45.0,
+          "percentage": 10.6,
+          "raw_string": "45"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "categorical_count_percentage",
+          "count": 24.0,
+          "percentage": 11.3,
+          "raw_string": "24"
+        }
+      ]
+    },
+    {
+      "original_label": "First-line chemotherapy",
+      "standardized_name": "First-line chemotherapy",
+      "category": "Prior Treatment",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "header",
+          "raw_string": "First-line chemotherapy"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "header",
+          "raw_string": "First-line chemotherapy"
+        }
+      ]
+    },
+    {
+      "original_label": "Median No. of cycles",
+      "standardized_name": "Median Number of First-line Chemotherapy Cycles",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "First-line chemotherapy",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "numeric_single",
+          "value": 6.0,
+          "raw_string": "6"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "numeric_single",
+          "value": 5.0,
+          "raw_string": "5"
+        }
+      ]
+    },
+    {
+      "original_label": "Response",
+      "standardized_name": "Response to First-line chemotherapy",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "First-line chemotherapy",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "header",
+          "raw_string": "Response"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "header",
+          "raw_string": "Response"
+        }
+      ]
+    },
+    {
+      "original_label": "CR",
+      "standardized_name": "Complete Response to First-line Chemotherapy",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Response",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "categorical_count_percentage",
+          "count": 54.0,
+          "percentage": 12.7,
+          "raw_string": "54"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "categorical_count_percentage",
+          "count": 33.0,
+          "percentage": 15.5,
+          "raw_string": "33"
+        }
+      ]
+    },
+    {
+      "original_label": "PR",
+      "standardized_name": "Partial Response to First-line Chemotherapy",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Response",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "categorical_count_percentage",
+          "count": 239.0,
+          "percentage": 56.4,
+          "raw_string": "239"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "categorical_count_percentage",
+          "count": 105.0,
+          "percentage": 49.3,
+          "raw_string": "105"
+        }
+      ]
+    },
+    {
+      "original_label": "SD",
+      "standardized_name": "Stable Disease to First-line Chemotherapy",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Response",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "categorical_count_percentage",
+          "count": 84.0,
+          "percentage": 19.8,
+          "raw_string": "84"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "categorical_count_percentage",
+          "count": 49.0,
+          "percentage": 23.0,
+          "raw_string": "49"
+        }
+      ]
+    },
+    {
+      "original_label": "PD",
+      "standardized_name": "Progressive Disease to First-line Chemotherapy",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Response",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "categorical_count_percentage",
+          "count": 47.0,
+          "percentage": 11.1,
+          "raw_string": "47"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "categorical_count_percentage",
+          "count": 25.0,
+          "percentage": 11.7,
+          "raw_string": "25"
+        }
+      ]
+    },
+    {
+      "original_label": "Missing",
+      "standardized_name": "Missing Response to First-line Chemotherapy",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Response",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.5,
+          "raw_string": "1"
+        }
+      ]
+    },
+    {
+      "original_label": "Prior radiotherapy",
+      "standardized_name": "Prior radiotherapy",
+      "category": "Prior Treatment",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "categorical_count_percentage",
+          "count": 200.0,
+          "percentage": 47.2,
+          "raw_string": "200"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "categorical_count_percentage",
+          "count": 106.0,
+          "percentage": 49.8,
+          "raw_string": "106"
+        }
+      ]
+    },
+    {
+      "original_label": "Response to prior first-line therapy",
+      "standardized_name": "Response to prior first-line therapy",
+      "category": "Prior Treatment",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "header",
+          "raw_string": "Response to prior first-line therapy"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "header",
+          "raw_string": "Response to prior first-line therapy"
+        }
+      ]
+    },
+    {
+      "original_label": "Sensitive",
+      "standardized_name": "Sensitive Response to prior first-line therapy",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Response to prior first-line therapy",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "categorical_count_percentage",
+          "count": 225.0,
+          "percentage": 53.1,
+          "raw_string": "225"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "categorical_count_percentage",
+          "count": 117.0,
+          "percentage": 54.9,
+          "raw_string": "117"
+        }
+      ]
+    },
+    {
+      "original_label": "Refractory",
+      "standardized_name": "Refractory Response to prior first-line therapy",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Response to prior first-line therapy",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "categorical_count_percentage",
+          "count": 199.0,
+          "percentage": 46.9,
+          "raw_string": "199"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "categorical_count_percentage",
+          "count": 96.0,
+          "percentage": 45.1,
+          "raw_string": "96"
+        }
+      ]
+    },
+    {
+      "original_label": "Time from end of first-line treatment to PD, days",
+      "standardized_name": "Time from end of first-line treatment to Progressive Disease",
+      "unit": "days",
+      "category": "Disease History",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "header",
+          "raw_string": "Time from end of first-line treatment to PD, days"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "header",
+          "raw_string": "Time from end of first-line treatment to PD, days"
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Time from end of first-line treatment to Progressive Disease",
+      "unit": "days",
+      "category": "Disease History",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time from end of first-line treatment to PD, days",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "numeric_single",
+          "value": 96.0,
+          "raw_string": "96.0"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "numeric_single",
+          "value": 107.0,
+          "raw_string": "107.0"
+        }
+      ]
+    },
+    {
+      "original_label": "< 90",
+      "standardized_name": "Time from end of first-line treatment to PD < 90 days",
+      "category": "Disease History",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time from end of first-line treatment to PD, days",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "categorical_count_percentage",
+          "count": 197.0,
+          "percentage": 46.5,
+          "raw_string": "197"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "categorical_count_percentage",
+          "count": 93.0,
+          "percentage": 43.7,
+          "raw_string": "93"
+        }
+      ]
+    },
+    {
+      "original_label": "≥ 90",
+      "standardized_name": "Time from end of first-line treatment to PD >= 90 days",
+      "category": "Disease History",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time from end of first-line treatment to PD, days",
+      "group_data": [
+        {
+          "group_name": "Amrubicin",
+          "data_type": "categorical_count_percentage",
+          "count": 227.0,
+          "percentage": 53.5,
+          "raw_string": "227"
+        },
+        {
+          "group_name": "Topotecan",
+          "data_type": "categorical_count_percentage",
+          "count": 120.0,
+          "percentage": 56.3,
+          "raw_string": "120"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1233 @@
+{
+  "study_id": "GEICAM/2003-10",
+  "study_title": "Epirubicin Plus Cyclophosphamide Followed by Docetaxel Versus Epirubicin Plus Docetaxel Followed by Capecitabine As Adjuvant Therapy for Node-Positive Early Breast Cancer: Results From the GEICAM/2003-10 Study",
+  "table_name": "Table 1",
+  "table_title": "Patient and Tumor Characteristics",
+  "footnotes": [
+    "*Premenopausal defined as menstruating women without hysterectomy during the 6 months before random assignment, women younger than age 40 years with hysterectomy, or women age 40 years or older with hysterectomy and with premenopausal LH and FSH values.",
+    "†Postmenopausal/perimenopausal defined as women without hysterectomy and not menstruating during the 6 months before random assignment, women older than age 55 years with hysterectomy, or women age 55 years or younger with hysterectomy andpostmenopausal LH and FSH values.",
+    "‡One patient had T1mic disease."
+  ],
+  "groups": [
+    {
+      "name": "EC-T",
+      "n": 669,
+      "type": "Control"
+    },
+    {
+      "name": "ET-X",
+      "n": 715,
+      "type": "Experimental"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Median (range) age, years",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "numeric_median_iqr",
+          "median": 51.0,
+          "iqr_min": 27.0,
+          "iqr_max": 73.0,
+          "raw_string": "51 (27-73)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "numeric_median_iqr",
+          "median": 51.0,
+          "iqr_min": 25.0,
+          "iqr_max": 73.0,
+          "raw_string": "51 (25-73)"
+        }
+      ]
+    },
+    {
+      "original_label": "Karnofsky PS",
+      "standardized_name": "Karnofsky Performance Status",
+      "category": "Baseline Clinical Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "header",
+          "raw_string": "Karnofsky PS"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "header",
+          "raw_string": "Karnofsky PS"
+        }
+      ]
+    },
+    {
+      "original_label": "80",
+      "standardized_name": "Karnofsky Performance Status 80",
+      "category": "Baseline Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Karnofsky Performance Status",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 9.0,
+          "percentage": 1.4,
+          "raw_string": "9 (1.4)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 1.0,
+          "raw_string": "7 (1.0)"
+        }
+      ]
+    },
+    {
+      "original_label": "90",
+      "standardized_name": "Karnofsky Performance Status 90",
+      "category": "Baseline Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Karnofsky Performance Status",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 75.0,
+          "percentage": 11.2,
+          "raw_string": "75 (11.2)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 76.0,
+          "percentage": 10.6,
+          "raw_string": "76 (10.6)"
+        }
+      ]
+    },
+    {
+      "original_label": "100",
+      "standardized_name": "Karnofsky Performance Status 100",
+      "category": "Baseline Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Karnofsky Performance Status",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 582.0,
+          "percentage": 87.0,
+          "raw_string": "582 (87.0)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 629.0,
+          "percentage": 88.0,
+          "raw_string": "629 (88.0)"
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "Karnofsky Performance Status Unknown",
+      "category": "Baseline Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Karnofsky Performance Status",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 0.4,
+          "raw_string": "3 (0.4)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 0.4,
+          "raw_string": "3 (0.4)"
+        }
+      ]
+    },
+    {
+      "original_label": "Menopausal status",
+      "standardized_name": "Menopausal Status",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "header",
+          "raw_string": "Menopausal status"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "header",
+          "raw_string": "Menopausal status"
+        }
+      ]
+    },
+    {
+      "original_label": "Premenopausal*",
+      "standardized_name": "Premenopausal",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Menopausal Status",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 349.0,
+          "percentage": 52.2,
+          "raw_string": "349 (52.2)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 382.0,
+          "percentage": 53.4,
+          "raw_string": "382 (53.4)"
+        }
+      ]
+    },
+    {
+      "original_label": "Postmenopausal†",
+      "standardized_name": "Postmenopausal",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Menopausal Status",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 320.0,
+          "percentage": 47.8,
+          "raw_string": "320 (47.8)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 333.0,
+          "percentage": 46.6,
+          "raw_string": "333 (46.6)"
+        }
+      ]
+    },
+    {
+      "original_label": "Histologic type",
+      "standardized_name": "Histologic Type",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "header",
+          "raw_string": "Histologic type"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "header",
+          "raw_string": "Histologic type"
+        }
+      ]
+    },
+    {
+      "original_label": "Invasive ductal carcinoma",
+      "standardized_name": "Invasive Ductal Carcinoma",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histologic Type",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 567.0,
+          "percentage": 84.7,
+          "raw_string": "567 (84.7)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 589.0,
+          "percentage": 82.4,
+          "raw_string": "589 (82.4)"
+        }
+      ]
+    },
+    {
+      "original_label": "Invasive lobular carcinoma",
+      "standardized_name": "Invasive Lobular Carcinoma",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histologic Type",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 66.0,
+          "percentage": 9.9,
+          "raw_string": "66 (9.9)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 77.0,
+          "percentage": 10.8,
+          "raw_string": "77 (10.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "Other",
+      "standardized_name": "Other Histologic Type",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histologic Type",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 36.0,
+          "percentage": 5.4,
+          "raw_string": "36 (5.4)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 49.0,
+          "percentage": 6.8,
+          "raw_string": "49 (6.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "Histopathologic grade",
+      "standardized_name": "Histopathologic Grade",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "header",
+          "raw_string": "Histopathologic grade"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "header",
+          "raw_string": "Histopathologic grade"
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "Histopathologic Grade 1",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histopathologic Grade",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 100.0,
+          "percentage": 15.0,
+          "raw_string": "100 (15.0)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 100.0,
+          "percentage": 14.0,
+          "raw_string": "100 (14.0)"
+        }
+      ]
+    },
+    {
+      "original_label": "2",
+      "standardized_name": "Histopathologic Grade 2",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histopathologic Grade",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 307.0,
+          "percentage": 45.9,
+          "raw_string": "307 (45.9)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 338.0,
+          "percentage": 47.2,
+          "raw_string": "338 (47.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "3",
+      "standardized_name": "Histopathologic Grade 3",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histopathologic Grade",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 235.0,
+          "percentage": 35.1,
+          "raw_string": "235 (35.1)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 243.0,
+          "percentage": 34.0,
+          "raw_string": "243 (34.0)"
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "Histopathologic Grade Unknown",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histopathologic Grade",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 27.0,
+          "percentage": 4.0,
+          "raw_string": "27 (4.0)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 34.0,
+          "percentage": 4.8,
+          "raw_string": "34 (4.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "Breast surgery",
+      "standardized_name": "Breast Surgery Type",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "header",
+          "raw_string": "Breast surgery"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "header",
+          "raw_string": "Breast surgery"
+        }
+      ]
+    },
+    {
+      "original_label": "Mastectomy",
+      "standardized_name": "Mastectomy",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Breast Surgery Type",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 309.0,
+          "percentage": 46.2,
+          "raw_string": "309 (46.2)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 327.0,
+          "percentage": 45.7,
+          "raw_string": "327 (45.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "Breast-conserving surgery",
+      "standardized_name": "Breast-conserving surgery",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Breast Surgery Type",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 360.0,
+          "percentage": 53.8,
+          "raw_string": "360 (53.8)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 388.0,
+          "percentage": 54.3,
+          "raw_string": "388 (54.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Axillary surgery",
+      "standardized_name": "Axillary Surgery Type",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "header",
+          "raw_string": "Axillary surgery"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "header",
+          "raw_string": "Axillary surgery"
+        }
+      ]
+    },
+    {
+      "original_label": "Lymphadenectomy",
+      "standardized_name": "Lymphadenectomy",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Axillary Surgery Type",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 618.0,
+          "percentage": 92.4,
+          "raw_string": "618 (92.4)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 676.0,
+          "percentage": 94.5,
+          "raw_string": "676 (94.5)"
+        }
+      ]
+    },
+    {
+      "original_label": "Sentinel node biopsy",
+      "standardized_name": "Sentinel node biopsy",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Axillary Surgery Type",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 0.4,
+          "raw_string": "3 (0.4)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 0.3,
+          "raw_string": "2 (0.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Both",
+      "standardized_name": "Both Lymphadenectomy and Sentinel node biopsy",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Axillary Surgery Type",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 48.0,
+          "percentage": 7.2,
+          "raw_string": "48 (7.2)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 37.0,
+          "percentage": 5.2,
+          "raw_string": "37 (5.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Median (range) tumor size, cm",
+      "standardized_name": "Tumor Size",
+      "unit": "cm",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "numeric_median_iqr",
+          "median": 2.0,
+          "iqr_min": 0.0,
+          "iqr_max": 13.0,
+          "raw_string": "2.0 (0.0-13)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "numeric_median_iqr",
+          "median": 2.2,
+          "iqr_min": 0.1,
+          "iqr_max": 13.0,
+          "raw_string": "2.2 (0.1-13)"
+        }
+      ]
+    },
+    {
+      "original_label": "Pathologic tumor size",
+      "standardized_name": "Pathologic Tumor Size (pT)",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "header",
+          "raw_string": "Pathologic tumor size"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "header",
+          "raw_string": "Pathologic tumor size"
+        }
+      ]
+    },
+    {
+      "original_label": "pT1",
+      "standardized_name": "pT1",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Pathologic Tumor Size (pT)",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 339.0,
+          "percentage": 50.6,
+          "raw_string": "339 (50.6)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 327.0,
+          "percentage": 45.7,
+          "raw_string": "327 (45.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "pT2",
+      "standardized_name": "pT2",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Pathologic Tumor Size (pT)",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 294.0,
+          "percentage": 44.0,
+          "raw_string": "294 (44.0)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 351.0,
+          "percentage": 49.1,
+          "raw_string": "351 (49.1)"
+        }
+      ]
+    },
+    {
+      "original_label": "pT3",
+      "standardized_name": "pT3",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Pathologic Tumor Size (pT)",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 36.0,
+          "percentage": 5.4,
+          "raw_string": "36 (5.4)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 37.0,
+          "percentage": 5.2,
+          "raw_string": "37 (5.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Regional lymph nodes",
+      "standardized_name": "Regional Lymph Nodes (pN)",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "header",
+          "raw_string": "Regional lymph nodes"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "header",
+          "raw_string": "Regional lymph nodes"
+        }
+      ]
+    },
+    {
+      "original_label": "pN1",
+      "standardized_name": "pN1",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Regional Lymph Nodes (pN)",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 450.0,
+          "percentage": 67.2,
+          "raw_string": "450 (67.2)‡"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 463.0,
+          "percentage": 64.8,
+          "raw_string": "463 (64.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "pN2",
+      "standardized_name": "pN2",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Regional Lymph Nodes (pN)",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 167.0,
+          "percentage": 25.0,
+          "raw_string": "167 (25.0)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 181.0,
+          "percentage": 25.3,
+          "raw_string": "181 (25.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "pN3",
+      "standardized_name": "pN3",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Regional Lymph Nodes (pN)",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 52.0,
+          "percentage": 7.8,
+          "raw_string": "52 (7.8)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 71.0,
+          "percentage": 9.9,
+          "raw_string": "71 (9.9)"
+        }
+      ]
+    },
+    {
+      "original_label": "Hormone receptor status",
+      "standardized_name": "Hormone Receptor Status",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "header",
+          "raw_string": "Hormone receptor status"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "header",
+          "raw_string": "Hormone receptor status"
+        }
+      ]
+    },
+    {
+      "original_label": "Negative",
+      "standardized_name": "Hormone Receptor Negative",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone Receptor Status",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 98.0,
+          "percentage": 14.6,
+          "raw_string": "98 (14.6)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 121.0,
+          "percentage": 16.9,
+          "raw_string": "121 (16.9)"
+        }
+      ]
+    },
+    {
+      "original_label": "Positive",
+      "standardized_name": "Hormone Receptor Positive",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone Receptor Status",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 571.0,
+          "percentage": 85.4,
+          "raw_string": "571 (85.4)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 594.0,
+          "percentage": 83.1,
+          "raw_string": "594 (83.1)"
+        }
+      ]
+    },
+    {
+      "original_label": "HER2 status",
+      "standardized_name": "HER2 Status",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "header",
+          "raw_string": "HER2 status"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "header",
+          "raw_string": "HER2 status"
+        }
+      ]
+    },
+    {
+      "original_label": "Negative",
+      "standardized_name": "HER2 Negative",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "HER2 Status",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 592.0,
+          "percentage": 88.5,
+          "raw_string": "592 (88.5)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 647.0,
+          "percentage": 90.5,
+          "raw_string": "647 (90.5)"
+        }
+      ]
+    },
+    {
+      "original_label": "Positive",
+      "standardized_name": "HER2 Positive",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "HER2 Status",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 77.0,
+          "percentage": 11.5,
+          "raw_string": "77 (11.5)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 65.0,
+          "percentage": 9.1,
+          "raw_string": "65 (9.1)"
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "HER2 Status Unknown",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "HER2 Status",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0 (0.0)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 0.4,
+          "raw_string": "3 (0.4)"
+        }
+      ]
+    },
+    {
+      "original_label": "Hormone receptor/HER2 subtype",
+      "standardized_name": "Hormone Receptor/HER2 Subtype",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "header",
+          "raw_string": "Hormone receptor/HER2 subtype"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "header",
+          "raw_string": "Hormone receptor/HER2 subtype"
+        }
+      ]
+    },
+    {
+      "original_label": "Hormone receptor positive/HER2 positive",
+      "standardized_name": "Hormone Receptor Positive/HER2 Positive",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone Receptor/HER2 Subtype",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 50.0,
+          "percentage": 7.5,
+          "raw_string": "50 (7.5)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 39.0,
+          "percentage": 5.5,
+          "raw_string": "39 (5.5)"
+        }
+      ]
+    },
+    {
+      "original_label": "Hormone receptor positive /HER2 negative",
+      "standardized_name": "Hormone Receptor Positive/HER2 Negative",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone Receptor/HER2 Subtype",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 521.0,
+          "percentage": 77.9,
+          "raw_string": "521 (77.9)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 552.0,
+          "percentage": 77.2,
+          "raw_string": "552 (77.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Hormone receptor negative/HER2 positive",
+      "standardized_name": "Hormone Receptor Negative/HER2 Positive",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone Receptor/HER2 Subtype",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 27.0,
+          "percentage": 4.0,
+          "raw_string": "27 (4.0)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 26.0,
+          "percentage": 3.6,
+          "raw_string": "26 (3.6)"
+        }
+      ]
+    },
+    {
+      "original_label": "Hormone receptor negative/HER2 negative",
+      "standardized_name": "Triple-Negative Breast Cancer",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone Receptor/HER2 Subtype",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 71.0,
+          "percentage": 10.6,
+          "raw_string": "71 (10.6)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 95.0,
+          "percentage": 13.3,
+          "raw_string": "95 (13.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Adjuvant endocrine therapy",
+      "standardized_name": "Adjuvant Endocrine Therapy",
+      "category": "Adjuvant Therapy",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 567.0,
+          "percentage": 84.8,
+          "raw_string": "567 (84.8)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 585.0,
+          "percentage": 81.8,
+          "raw_string": "585 (81.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "Tamoxifen",
+      "standardized_name": "Tamoxifen",
+      "category": "Adjuvant Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Adjuvant Endocrine Therapy",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 299.0,
+          "percentage": 44.7,
+          "raw_string": "299 (44.7)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 311.0,
+          "percentage": 43.5,
+          "raw_string": "311 (43.5)"
+        }
+      ]
+    },
+    {
+      "original_label": "Aromatase inhibitor",
+      "standardized_name": "Aromatase inhibitor",
+      "category": "Adjuvant Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Adjuvant Endocrine Therapy",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 187.0,
+          "percentage": 28.0,
+          "raw_string": "187 (28.0)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 184.0,
+          "percentage": 25.7,
+          "raw_string": "184 (25.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "TMX + AI",
+      "standardized_name": "Tamoxifen + Aromatase inhibitor",
+      "category": "Adjuvant Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Adjuvant Endocrine Therapy",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 79.0,
+          "percentage": 11.8,
+          "raw_string": "79 (11.8)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 90.0,
+          "percentage": 12.6,
+          "raw_string": "90 (12.6)"
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "Adjuvant Endocrine Therapy Unknown",
+      "category": "Adjuvant Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Adjuvant Endocrine Therapy",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 0.3,
+          "raw_string": "2 (0.3)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0 (0.0)"
+        }
+      ]
+    },
+    {
+      "original_label": "Adjuvant trastuzumab",
+      "standardized_name": "Adjuvant Trastuzumab",
+      "category": "Adjuvant Therapy",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "header",
+          "raw_string": "Adjuvant trastuzumab"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "header",
+          "raw_string": "Adjuvant trastuzumab"
+        }
+      ]
+    },
+    {
+      "original_label": "Yes",
+      "standardized_name": "Received Adjuvant Trastuzumab",
+      "category": "Adjuvant Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Adjuvant Trastuzumab",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 20.0,
+          "percentage": 3.0,
+          "raw_string": "20 (3.0)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 22.0,
+          "percentage": 3.1,
+          "raw_string": "22 (3.1)"
+        }
+      ]
+    },
+    {
+      "original_label": "No",
+      "standardized_name": "Did not receive Adjuvant Trastuzumab",
+      "category": "Adjuvant Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Adjuvant Trastuzumab",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 56.0,
+          "percentage": 8.4,
+          "raw_string": "56 (8.4)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 42.0,
+          "percentage": 5.9,
+          "raw_string": "42 (5.9)"
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "Adjuvant Trastuzumab Unknown",
+      "category": "Adjuvant Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Adjuvant Trastuzumab",
+      "group_data": [
+        {
+          "group_name": "EC-T",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.1,
+          "raw_string": "1 (0.1)"
+        },
+        {
+          "group_name": "ET-X",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.1,
+          "raw_string": "1 (0.1)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,633 @@
+{
+  "study_id": "EudraCT 2006-002046-10",
+  "study_title": "A randomized phase III study comparing pegylated liposomal doxorubicin with capecitabine as first-line chemotherapy in elderly patients with metastatic breast cancer: results of the OMEGA study of the Dutch Breast Cancer Research Group BOOG",
+  "table_name": "Table 1",
+  "table_title": "Patient pre-treatment characteristics by treatment arm",
+  "footnotes": [],
+  "groups": [
+    {
+      "name": "PLD",
+      "n": 40,
+      "type": "Intervention"
+    },
+    {
+      "name": "Capecitabine",
+      "n": 38,
+      "type": "Intervention"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age, years",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "<75",
+      "standardized_name": "Age <75 years",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "percentage": 52.0,
+          "raw_string": "21 52",
+          "n_for_value": 40
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "categorical_count_percentage",
+          "count": 15.0,
+          "percentage": 39.0,
+          "raw_string": "15 39",
+          "n_for_value": 38
+        }
+      ]
+    },
+    {
+      "original_label": "75-80",
+      "standardized_name": "Age 75-80 years",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 30.0,
+          "raw_string": "12 30",
+          "n_for_value": 40
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "categorical_count_percentage",
+          "count": 20.0,
+          "percentage": 53.0,
+          "raw_string": "20 53",
+          "n_for_value": 38
+        }
+      ]
+    },
+    {
+      "original_label": "≥80",
+      "standardized_name": "Age ≥80 years",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 18.0,
+          "raw_string": "7 18",
+          "n_for_value": 40
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 8.0,
+          "raw_string": "3 8",
+          "n_for_value": 38
+        }
+      ]
+    },
+    {
+      "original_label": "ECOG performance score",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "0",
+      "standardized_name": "ECOG Performance Status 0",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 30.0,
+          "raw_string": "12 30",
+          "n_for_value": 40
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 29.0,
+          "raw_string": "11 29",
+          "n_for_value": 38
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "ECOG Performance Status 1",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "categorical_count_percentage",
+          "count": 19.0,
+          "percentage": 48.0,
+          "raw_string": "19 48",
+          "n_for_value": 40
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "categorical_count_percentage",
+          "count": 18.0,
+          "percentage": 47.0,
+          "raw_string": "18 47",
+          "n_for_value": 38
+        }
+      ]
+    },
+    {
+      "original_label": "2",
+      "standardized_name": "ECOG Performance Status 2",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 20.0,
+          "raw_string": "8 20",
+          "n_for_value": 40
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "categorical_count_percentage",
+          "count": 9.0,
+          "percentage": 24.0,
+          "raw_string": "9 24",
+          "n_for_value": 38
+        }
+      ]
+    },
+    {
+      "original_label": "3",
+      "standardized_name": "ECOG Performance Status 3",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 2.0,
+          "raw_string": "1 2",
+          "n_for_value": 40
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0 0",
+          "n_for_value": 38
+        }
+      ]
+    },
+    {
+      "original_label": "ER receptor status",
+      "standardized_name": "Estrogen Receptor Status",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "ER+",
+      "standardized_name": "ER Positive",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Estrogen Receptor Status",
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "categorical_count_percentage",
+          "count": 25.0,
+          "percentage": 62.0,
+          "raw_string": "25 62",
+          "n_for_value": 40
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "categorical_count_percentage",
+          "count": 22.0,
+          "percentage": 58.0,
+          "raw_string": "22 58",
+          "n_for_value": 38
+        }
+      ]
+    },
+    {
+      "original_label": "ER-",
+      "standardized_name": "ER Negative",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Estrogen Receptor Status",
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "categorical_count_percentage",
+          "count": 10.0,
+          "percentage": 25.0,
+          "raw_string": "10 25",
+          "n_for_value": 40
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 32.0,
+          "raw_string": "12 32",
+          "n_for_value": 38
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "ER Status Unknown",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Estrogen Receptor Status",
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 12.0,
+          "raw_string": "5 12",
+          "n_for_value": 40
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 11.0,
+          "raw_string": "4 11",
+          "n_for_value": 38
+        }
+      ]
+    },
+    {
+      "original_label": "HER2 status",
+      "standardized_name": "HER2 Status",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "HER2-",
+      "standardized_name": "HER2 Negative",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "HER2 Status",
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "categorical_count_percentage",
+          "count": 25.0,
+          "percentage": 62.0,
+          "raw_string": "25 62",
+          "n_for_value": 40
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "categorical_count_percentage",
+          "count": 23.0,
+          "percentage": 61.0,
+          "raw_string": "23 61",
+          "n_for_value": 38
+        }
+      ]
+    },
+    {
+      "original_label": "HER2 overexpression",
+      "standardized_name": "HER2 Positive",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "HER2 Status",
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 2.0,
+          "raw_string": "1 2",
+          "n_for_value": 40
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 5.0,
+          "raw_string": "2 5",
+          "n_for_value": 38
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "HER2 Status Unknown",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "HER2 Status",
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "categorical_count_percentage",
+          "count": 14.0,
+          "percentage": 35.0,
+          "raw_string": "14 35",
+          "n_for_value": 40
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "categorical_count_percentage",
+          "count": 13.0,
+          "percentage": 34.0,
+          "raw_string": "13 34",
+          "n_for_value": 38
+        }
+      ]
+    },
+    {
+      "original_label": "Metastatic sites",
+      "standardized_name": "Metastatic Sites",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Lung",
+      "standardized_name": "Lung Metastases",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Metastatic Sites",
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "categorical_count_percentage",
+          "count": 15.0,
+          "percentage": 38.0,
+          "raw_string": "15 38",
+          "n_for_value": 40
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "categorical_count_percentage",
+          "count": 17.0,
+          "percentage": 45.0,
+          "raw_string": "17 45",
+          "n_for_value": 38
+        }
+      ]
+    },
+    {
+      "original_label": "Liver",
+      "standardized_name": "Liver Metastases",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Metastatic Sites",
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "categorical_count_percentage",
+          "count": 22.0,
+          "percentage": 55.0,
+          "raw_string": "22 55",
+          "n_for_value": 40
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 42.0,
+          "raw_string": "16 42",
+          "n_for_value": 38
+        }
+      ]
+    },
+    {
+      "original_label": "Bone only",
+      "standardized_name": "Bone Only Metastases",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Metastatic Sites",
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 8.0,
+          "raw_string": "3 8",
+          "n_for_value": 40
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 11.0,
+          "raw_string": "4 11",
+          "n_for_value": 38
+        }
+      ]
+    },
+    {
+      "original_label": "Visceral only",
+      "standardized_name": "Visceral Only Metastases",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Metastatic Sites",
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 30.0,
+          "raw_string": "12 30",
+          "n_for_value": 40
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 32.0,
+          "raw_string": "12 32",
+          "n_for_value": 38
+        }
+      ]
+    },
+    {
+      "original_label": "Prior systemic treatment",
+      "standardized_name": "Prior Systemic Treatment",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Adjuvant chemotherapy",
+      "standardized_name": "Adjuvant Chemotherapy",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior Systemic Treatment",
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 12.0,
+          "raw_string": "5 12",
+          "n_for_value": 40
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 13.0,
+          "raw_string": "5 13",
+          "n_for_value": 38
+        }
+      ]
+    },
+    {
+      "original_label": "Adjuvant hormonal therapy",
+      "standardized_name": "Adjuvant Hormonal Therapy",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior Systemic Treatment",
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "categorical_count_percentage",
+          "count": 19.0,
+          "percentage": 48.0,
+          "raw_string": "19 48",
+          "n_for_value": 40
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "categorical_count_percentage",
+          "count": 18.0,
+          "percentage": 47.0,
+          "raw_string": "18 47",
+          "n_for_value": 38
+        }
+      ]
+    },
+    {
+      "original_label": "Palliative hormonal therapy",
+      "standardized_name": "Palliative Hormonal Therapy",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior Systemic Treatment",
+      "group_data": [
+        {
+          "group_name": "PLD",
+          "data_type": "categorical_count_percentage",
+          "count": 24.0,
+          "percentage": 60.0,
+          "raw_string": "24 60",
+          "n_for_value": 40
+        },
+        {
+          "group_name": "Capecitabine",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "percentage": 55.0,
+          "raw_string": "21 55",
+          "n_for_value": 38
+        }
+      ]
+    }
+  ]
+}

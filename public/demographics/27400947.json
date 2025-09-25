@@ -1,0 +1,1305 @@
+{
+  "study_id": "COMET-1",
+  "study_title": "Phase III Study of Cabozantinib in Previously Treated Metastatic Castration-Resistant Prostate Cancer: COMET-1",
+  "table_name": "Table 1",
+  "table_title": "Baseline Demographic and Clinical Characteristics",
+  "footnotes": [
+    "*Excluding agents to maintain castration status.",
+    "†Excluding radionucleotides."
+  ],
+  "groups": [
+    {
+      "name": "Cabozantinib",
+      "n": 682,
+      "type": "intervention"
+    },
+    {
+      "name": "Prednisone",
+      "n": 346,
+      "type": "control"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age, years",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "header",
+          "raw_string": "Age, years"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "header",
+          "raw_string": "Age, years"
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "numeric_single",
+          "value": 69.5,
+          "raw_string": "69.5"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "numeric_single",
+          "value": 69.0,
+          "raw_string": "69.0"
+        }
+      ]
+    },
+    {
+      "original_label": "Range",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "numeric_mean_range",
+          "range_min": 35.0,
+          "range_max": 87.0,
+          "raw_string": "35-87"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "numeric_mean_range",
+          "range_min": 43.0,
+          "range_max": 89.0,
+          "raw_string": "43-89"
+        }
+      ]
+    },
+    {
+      "original_label": "Race",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "header",
+          "raw_string": "Race"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "header",
+          "raw_string": "Race"
+        }
+      ]
+    },
+    {
+      "original_label": "White",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 520.0,
+          "percentage": 76.0,
+          "raw_string": "520 (76)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 265.0,
+          "percentage": 77.0,
+          "raw_string": "265 (77)"
+        }
+      ]
+    },
+    {
+      "original_label": "Not reported",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 140.0,
+          "percentage": 21.0,
+          "raw_string": "140 (21)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 71.0,
+          "percentage": 21.0,
+          "raw_string": "71 (21)"
+        }
+      ]
+    },
+    {
+      "original_label": "Black or African American",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 14.0,
+          "percentage": 2.0,
+          "raw_string": "14 (2)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 2.0,
+          "raw_string": "6 (2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Asian",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 0.3,
+          "raw_string": "2 (0.3)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "raw_string": "0"
+        }
+      ]
+    },
+    {
+      "original_label": "American Indian or Alaska native",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "raw_string": "0"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.3,
+          "raw_string": "1 (0.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Other",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 0.9,
+          "raw_string": "6 (0.9)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 0.9,
+          "raw_string": "3 (0.9)"
+        }
+      ]
+    },
+    {
+      "original_label": "Time from diagnosis to study entry, years",
+      "standardized_name": "Time from diagnosis to study entry",
+      "unit": "years",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "header",
+          "raw_string": "Time from diagnosis to study entry, years"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "header",
+          "raw_string": "Time from diagnosis to study entry, years"
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Time from diagnosis to study entry",
+      "unit": "years",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time from diagnosis to study entry",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "numeric_single",
+          "value": 6.68,
+          "raw_string": "6.68"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "numeric_single",
+          "value": 6.98,
+          "raw_string": "6.98"
+        }
+      ]
+    },
+    {
+      "original_label": "Range",
+      "standardized_name": "Time from diagnosis to study entry",
+      "unit": "years",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time from diagnosis to study entry",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "numeric_mean_range",
+          "range_min": 0.09,
+          "range_max": 26.6,
+          "raw_string": "0.09-26.6"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "numeric_mean_range",
+          "range_min": 0.04,
+          "range_max": 22.2,
+          "raw_string": "0.04-22.2"
+        }
+      ]
+    },
+    {
+      "original_label": "ECOG PS",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "header",
+          "raw_string": "ECOG PS"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "header",
+          "raw_string": "ECOG PS"
+        }
+      ]
+    },
+    {
+      "original_label": "0 or 1",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 605.0,
+          "percentage": 89.0,
+          "raw_string": "605 (89)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 303.0,
+          "percentage": 88.0,
+          "raw_string": "303 (88)"
+        }
+      ]
+    },
+    {
+      "original_label": "2",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 76.0,
+          "percentage": 11.0,
+          "raw_string": "76 (11)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 43.0,
+          "percentage": 12.0,
+          "raw_string": "43 (12)"
+        }
+      ]
+    },
+    {
+      "original_label": "Missing",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.1,
+          "raw_string": "1 (0.1)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "raw_string": "0"
+        }
+      ]
+    },
+    {
+      "original_label": "Gleason score > 7 at diagnosis",
+      "standardized_name": "Gleason score > 7 at diagnosis",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 298.0,
+          "percentage": 44.0,
+          "raw_string": "298 (44)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 162.0,
+          "percentage": 47.0,
+          "raw_string": "162 (47)"
+        }
+      ]
+    },
+    {
+      "original_label": "Bone scan lesion area, mm²",
+      "standardized_name": "Bone scan lesion area",
+      "unit": "mm²",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "header",
+          "raw_string": "Bone scan lesion area, mm²"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "header",
+          "raw_string": "Bone scan lesion area, mm²"
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Bone scan lesion area",
+      "unit": "mm²",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Bone scan lesion area",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "numeric_single",
+          "value": 45635.5,
+          "raw_string": "45,635.5"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "numeric_single",
+          "value": 41746.0,
+          "raw_string": "41,746.0"
+        }
+      ]
+    },
+    {
+      "original_label": "Range",
+      "standardized_name": "Bone scan lesion area",
+      "unit": "mm²",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Bone scan lesion area",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "numeric_mean_range",
+          "range_min": 0.0,
+          "range_max": 388052.0,
+          "raw_string": "0-388,052"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "numeric_mean_range",
+          "range_min": 0.0,
+          "range_max": 283304.0,
+          "raw_string": "0-283,304"
+        }
+      ]
+    },
+    {
+      "original_label": "Extent of metastasis",
+      "standardized_name": "Extent of metastasis",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "header",
+          "raw_string": "Extent of metastasis"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "header",
+          "raw_string": "Extent of metastasis"
+        }
+      ]
+    },
+    {
+      "original_label": "None",
+      "standardized_name": "Extent of metastasis",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Extent of metastasis",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "raw_string": "0"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "raw_string": "0"
+        }
+      ]
+    },
+    {
+      "original_label": "Bone",
+      "standardized_name": "Bone metastases",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Extent of metastasis",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 681.0,
+          "percentage": 100.0,
+          "raw_string": "681 (100)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 346.0,
+          "percentage": 100.0,
+          "raw_string": "346 (100)"
+        }
+      ]
+    },
+    {
+      "original_label": "Lymph node",
+      "standardized_name": "Lymph node metastases",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Extent of metastasis",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 313.0,
+          "percentage": 46.0,
+          "raw_string": "313 (46)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 140.0,
+          "percentage": 40.0,
+          "raw_string": "140 (40)"
+        }
+      ]
+    },
+    {
+      "original_label": "Visceral",
+      "standardized_name": "Visceral metastases",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Extent of metastasis",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 133.0,
+          "percentage": 20.0,
+          "raw_string": "133 (20)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 58.0,
+          "percentage": 17.0,
+          "raw_string": "58 (17)"
+        }
+      ]
+    },
+    {
+      "original_label": "Liver",
+      "standardized_name": "Liver metastases",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Visceral metastases",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 91.0,
+          "percentage": 13.0,
+          "raw_string": "91 (13)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 35.0,
+          "percentage": 10.0,
+          "raw_string": "35 (10)"
+        }
+      ]
+    },
+    {
+      "original_label": "Lung",
+      "standardized_name": "Lung metastases",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Visceral metastases",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 69.0,
+          "percentage": 10.0,
+          "raw_string": "69 (10)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 29.0,
+          "percentage": 8.0,
+          "raw_string": "29 (8)"
+        }
+      ]
+    },
+    {
+      "original_label": "Other soft tissue",
+      "standardized_name": "Other soft tissue metastases",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Extent of metastasis",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 39.0,
+          "percentage": 6.0,
+          "raw_string": "39 (6)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 23.0,
+          "percentage": 7.0,
+          "raw_string": "23 (7)"
+        }
+      ]
+    },
+    {
+      "original_label": "BPI worst pain ≥ 4",
+      "standardized_name": "BPI worst pain >= 4",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 284.0,
+          "percentage": 42.0,
+          "raw_string": "284 (42)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 148.0,
+          "percentage": 43.0,
+          "raw_string": "148 (43)"
+        }
+      ]
+    },
+    {
+      "original_label": "Opioid narcotic use within last 24 hours",
+      "standardized_name": "Opioid narcotic use within last 24 hours",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 454.0,
+          "percentage": 67.0,
+          "raw_string": "454 (67)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 228.0,
+          "percentage": 66.0,
+          "raw_string": "228 (66)"
+        }
+      ]
+    },
+    {
+      "original_label": "No. of prior anticancer agents*",
+      "standardized_name": "Number of prior anticancer agents",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "header",
+          "raw_string": "No. of prior anticancer agents*"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "header",
+          "raw_string": "No. of prior anticancer agents*"
+        }
+      ]
+    },
+    {
+      "original_label": "2",
+      "standardized_name": "Number of prior anticancer agents",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of prior anticancer agents",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 57.0,
+          "percentage": 8.0,
+          "raw_string": "57 (8)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 31.0,
+          "percentage": 9.0,
+          "raw_string": "31 (9)"
+        }
+      ]
+    },
+    {
+      "original_label": "≥ 3",
+      "standardized_name": "Number of prior anticancer agents",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of prior anticancer agents",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 625.0,
+          "percentage": 92.0,
+          "raw_string": "625 (92)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 315.0,
+          "percentage": 91.0,
+          "raw_string": "315 (91)"
+        }
+      ]
+    },
+    {
+      "original_label": "Time from end of most recent prior systemic anticancer therapy to random assignment, weeks",
+      "standardized_name": "Time from end of most recent prior systemic anticancer therapy to random assignment",
+      "unit": "weeks",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "header",
+          "raw_string": "Time from end of most recent prior systemic anticancer therapy to random assignment, weeks"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "header",
+          "raw_string": "Time from end of most recent prior systemic anticancer therapy to random assignment, weeks"
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Time from end of most recent prior systemic anticancer therapy to random assignment",
+      "unit": "weeks",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time from end of most recent prior systemic anticancer therapy to random assignment",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "numeric_single",
+          "value": 4.71,
+          "raw_string": "4.71"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "numeric_single",
+          "value": 4.14,
+          "raw_string": "4.14"
+        }
+      ]
+    },
+    {
+      "original_label": "Range",
+      "standardized_name": "Time from end of most recent prior systemic anticancer therapy to random assignment",
+      "unit": "weeks",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time from end of most recent prior systemic anticancer therapy to random assignment",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "numeric_mean_range",
+          "range_min": -29.1,
+          "range_max": 77.4,
+          "raw_string": "-29.1-77.4"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "numeric_mean_range",
+          "range_min": 0.7,
+          "range_max": 66.9,
+          "raw_string": "0.7-66.9"
+        }
+      ]
+    },
+    {
+      "original_label": "Received prior docetaxel",
+      "standardized_name": "Received prior docetaxel",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 682.0,
+          "percentage": 100.0,
+          "raw_string": "682 (100)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 346.0,
+          "percentage": 100.0,
+          "raw_string": "346 (100)"
+        }
+      ]
+    },
+    {
+      "original_label": "Total cumulative dose, mg/m²",
+      "standardized_name": "Total cumulative dose of prior docetaxel",
+      "unit": "mg/m²",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Received prior docetaxel",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "header",
+          "raw_string": "Total cumulative dose, mg/m²"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "header",
+          "raw_string": "Total cumulative dose, mg/m²"
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Total cumulative dose of prior docetaxel",
+      "unit": "mg/m²",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Received prior docetaxel",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "numeric_single",
+          "value": 615.0,
+          "raw_string": "615.0"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "numeric_single",
+          "value": 613.0,
+          "raw_string": "613.0"
+        }
+      ]
+    },
+    {
+      "original_label": "Range",
+      "standardized_name": "Total cumulative dose of prior docetaxel",
+      "unit": "mg/m²",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Received prior docetaxel",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "numeric_mean_range",
+          "range_min": 140.0,
+          "range_max": 5625.0,
+          "raw_string": "140-5,625"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "numeric_mean_range",
+          "range_min": 225.0,
+          "range_max": 5400.0,
+          "raw_string": "225-5,400"
+        }
+      ]
+    },
+    {
+      "original_label": "Duration of treatment, months",
+      "standardized_name": "Duration of prior docetaxel treatment",
+      "unit": "months",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Received prior docetaxel",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "header",
+          "raw_string": "Duration of treatment, months"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "header",
+          "raw_string": "Duration of treatment, months"
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Duration of prior docetaxel treatment",
+      "unit": "months",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Received prior docetaxel",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "numeric_single",
+          "value": 5.68,
+          "raw_string": "5.68"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "numeric_single",
+          "value": 5.73,
+          "raw_string": "5.73"
+        }
+      ]
+    },
+    {
+      "original_label": "Range",
+      "standardized_name": "Duration of prior docetaxel treatment",
+      "unit": "months",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Received prior docetaxel",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "numeric_mean_range",
+          "range_min": 0.95,
+          "range_max": 59.1,
+          "raw_string": "0.95-59.10"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "numeric_mean_range",
+          "range_min": 1.28,
+          "range_max": 52.04,
+          "raw_string": "1.28-52.04"
+        }
+      ]
+    },
+    {
+      "original_label": "Received prior abiraterone",
+      "standardized_name": "Received prior abiraterone",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 626.0,
+          "percentage": 92.0,
+          "raw_string": "626 (92)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 320.0,
+          "percentage": 92.0,
+          "raw_string": "320 (92)"
+        }
+      ]
+    },
+    {
+      "original_label": "Duration of treatment, months",
+      "standardized_name": "Duration of prior abiraterone treatment",
+      "unit": "months",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Received prior abiraterone",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "header",
+          "raw_string": "Duration of treatment, months"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "header",
+          "raw_string": "Duration of treatment, months"
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Duration of prior abiraterone treatment",
+      "unit": "months",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Received prior abiraterone",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "numeric_single",
+          "value": 6.93,
+          "raw_string": "6.93"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "numeric_single",
+          "value": 7.51,
+          "raw_string": "7.51"
+        }
+      ]
+    },
+    {
+      "original_label": "Range",
+      "standardized_name": "Duration of prior abiraterone treatment",
+      "unit": "months",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Received prior abiraterone",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "numeric_mean_range",
+          "range_min": 0.03,
+          "range_max": 39.06,
+          "raw_string": "0.03-39.06"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "numeric_mean_range",
+          "range_min": 0.1,
+          "range_max": 62.59,
+          "raw_string": "0.10-62.59"
+        }
+      ]
+    },
+    {
+      "original_label": "Received prior enzalutamide",
+      "standardized_name": "Received prior enzalutamide",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 168.0,
+          "percentage": 25.0,
+          "raw_string": "168 (25)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 91.0,
+          "percentage": 26.0,
+          "raw_string": "91 (26)"
+        }
+      ]
+    },
+    {
+      "original_label": "Duration of treatment, months",
+      "standardized_name": "Duration of prior enzalutamide treatment",
+      "unit": "months",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Received prior enzalutamide",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "header",
+          "raw_string": "Duration of treatment, months"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "header",
+          "raw_string": "Duration of treatment, months"
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Duration of prior enzalutamide treatment",
+      "unit": "months",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Received prior enzalutamide",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "numeric_single",
+          "value": 4.04,
+          "raw_string": "4.04"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "numeric_single",
+          "value": 4.9,
+          "raw_string": "4.90"
+        }
+      ]
+    },
+    {
+      "original_label": "Range",
+      "standardized_name": "Duration of prior enzalutamide treatment",
+      "unit": "months",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Received prior enzalutamide",
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "numeric_mean_range",
+          "range_min": 0.82,
+          "range_max": 41.46,
+          "raw_string": "0.82-41.46"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "numeric_mean_range",
+          "range_min": 0.07,
+          "range_max": 34.53,
+          "raw_string": "0.07-34.53"
+        }
+      ]
+    },
+    {
+      "original_label": "Received prior docetaxel and abiraterone and enzalutamide",
+      "standardized_name": "Received prior docetaxel, abiraterone, and enzalutamide",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 112.0,
+          "percentage": 16.0,
+          "raw_string": "112 (16)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 66.0,
+          "percentage": 19.0,
+          "raw_string": "66 (19)"
+        }
+      ]
+    },
+    {
+      "original_label": "Prior radiation therapy for CRPC†",
+      "standardized_name": "Prior radiation therapy for CRPC",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 488.0,
+          "percentage": 72.0,
+          "raw_string": "488 (72)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 251.0,
+          "percentage": 73.0,
+          "raw_string": "251 (73)"
+        }
+      ]
+    },
+    {
+      "original_label": "Concomitant bisphosphonates or denosumab",
+      "standardized_name": "Concomitant bisphosphonates or denosumab",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 329.0,
+          "percentage": 48.0,
+          "raw_string": "329 (48)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 171.0,
+          "percentage": 49.0,
+          "raw_string": "171 (49)"
+        }
+      ]
+    },
+    {
+      "original_label": "Patients who had SSE before study random assignment",
+      "standardized_name": "Patients with prior SSE",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Cabozantinib",
+          "data_type": "categorical_count_percentage",
+          "count": 354.0,
+          "percentage": 52.0,
+          "raw_string": "354 (52)"
+        },
+        {
+          "group_name": "Prednisone",
+          "data_type": "categorical_count_percentage",
+          "count": 188.0,
+          "percentage": 54.0,
+          "raw_string": "188 (54)"
+        }
+      ]
+    }
+  ]
+}

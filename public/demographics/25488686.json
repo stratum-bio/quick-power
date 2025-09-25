@@ -1,0 +1,1554 @@
+{
+  "study_id": "NCT00331097",
+  "study_title": "Weekly docetaxel versus CMF as adjuvant chemotherapy for older women with early breast cancer: final results of the randomized phase III ELDA trial",
+  "table_name": "Table 1",
+  "table_title": "Baseline characteristics of patients",
+  "description": "Baseline demographic and clinical characteristics of patients enrolled in the ELDA trial.",
+  "footnotes": [
+    "aReported in ≥5% of cases in at least one arm."
+  ],
+  "groups": [
+    {
+      "name": "CMF",
+      "n": 152,
+      "type": "intervention"
+    },
+    {
+      "name": "Docetaxel",
+      "n": 147,
+      "type": "intervention"
+    },
+    {
+      "name": "Total",
+      "n": 299,
+      "type": "total"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Median age",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "numeric_single",
+          "value": 71.0,
+          "raw_string": "71"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "numeric_single",
+          "value": 71.0,
+          "raw_string": "71"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "numeric_single",
+          "value": 71.0,
+          "raw_string": "71"
+        }
+      ]
+    },
+    {
+      "original_label": "Age (years)",
+      "standardized_name": "Age",
+      "category": "Demographics",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "header",
+          "raw_string": "Age (years)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "header",
+          "raw_string": "Age (years)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": "Age (years)"
+        }
+      ]
+    },
+    {
+      "original_label": "65-69",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age (years)",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 65.0,
+          "percentage": 43.0,
+          "raw_string": "65 (43%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 60.0,
+          "percentage": 41.0,
+          "raw_string": "60 (41%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 125.0,
+          "percentage": 42.0,
+          "raw_string": "125 (42%)"
+        }
+      ]
+    },
+    {
+      "original_label": "70-74",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age (years)",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 54.0,
+          "percentage": 36.0,
+          "raw_string": "54 (36%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 51.0,
+          "percentage": 35.0,
+          "raw_string": "51 (35%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 105.0,
+          "percentage": 35.0,
+          "raw_string": "105 (35%)"
+        }
+      ]
+    },
+    {
+      "original_label": "75-79",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age (years)",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 33.0,
+          "percentage": 22.0,
+          "raw_string": "33 (22%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 36.0,
+          "percentage": 24.0,
+          "raw_string": "36 (24%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 69.0,
+          "percentage": 23.0,
+          "raw_string": "69 (23%)"
+        }
+      ]
+    },
+    {
+      "original_label": "ECOG performance status",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Clinical Characteristics",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "header",
+          "raw_string": "ECOG performance status"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "header",
+          "raw_string": "ECOG performance status"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": "ECOG performance status"
+        }
+      ]
+    },
+    {
+      "original_label": "0",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG performance status",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 127.0,
+          "percentage": 84.0,
+          "raw_string": "127 (84%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 120.0,
+          "percentage": 82.0,
+          "raw_string": "120 (82%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 247.0,
+          "percentage": 83.0,
+          "raw_string": "247 (83%)"
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG performance status",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 25.0,
+          "percentage": 16.0,
+          "raw_string": "25 (16%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 27.0,
+          "percentage": 18.0,
+          "raw_string": "27 (18%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 52.0,
+          "percentage": 17.0,
+          "raw_string": "52 (17%)"
+        }
+      ]
+    },
+    {
+      "original_label": "ADL (activity of daily living)",
+      "standardized_name": "Activities of Daily Living (ADL)",
+      "category": "Clinical Characteristics",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "header",
+          "raw_string": "ADL (activity of daily living)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "header",
+          "raw_string": "ADL (activity of daily living)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": "ADL (activity of daily living)"
+        }
+      ]
+    },
+    {
+      "original_label": "No impairment",
+      "standardized_name": "ADL Status",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ADL (activity of daily living)",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 133.0,
+          "percentage": 88.0,
+          "raw_string": "133 (88%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 125.0,
+          "percentage": 85.0,
+          "raw_string": "125 (85%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 258.0,
+          "percentage": 86.0,
+          "raw_string": "258 (86%)"
+        }
+      ]
+    },
+    {
+      "original_label": "At least one impairment",
+      "standardized_name": "ADL Status",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ADL (activity of daily living)",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 11.0,
+          "raw_string": "16 (11%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 22.0,
+          "percentage": 15.0,
+          "raw_string": "22 (15%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 38.0,
+          "percentage": 13.0,
+          "raw_string": "38 (13%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Missing",
+      "standardized_name": "ADL Status",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ADL (activity of daily living)",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 2.0,
+          "raw_string": "3 (2%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0 (0%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 1.0,
+          "raw_string": "3 (1%)"
+        }
+      ]
+    },
+    {
+      "original_label": "IADL (instrumental ADL)",
+      "standardized_name": "Instrumental Activities of Daily Living (IADL)",
+      "category": "Clinical Characteristics",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "header",
+          "raw_string": "IADL (instrumental ADL)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "header",
+          "raw_string": "IADL (instrumental ADL)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": "IADL (instrumental ADL)"
+        }
+      ]
+    },
+    {
+      "original_label": "No impairment",
+      "standardized_name": "IADL Status",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "IADL (instrumental ADL)",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 80.0,
+          "percentage": 53.0,
+          "raw_string": "80 (53%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 90.0,
+          "percentage": 61.0,
+          "raw_string": "90 (61%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 170.0,
+          "percentage": 57.0,
+          "raw_string": "170 (57%)"
+        }
+      ]
+    },
+    {
+      "original_label": "At least one impairment",
+      "standardized_name": "IADL Status",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "IADL (instrumental ADL)",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 69.0,
+          "percentage": 45.0,
+          "raw_string": "69 (45%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 56.0,
+          "percentage": 38.0,
+          "raw_string": "56 (38%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 125.0,
+          "percentage": 42.0,
+          "raw_string": "125 (42%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Missing",
+      "standardized_name": "IADL Status",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "IADL (instrumental ADL)",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 2.0,
+          "raw_string": "3 (2%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 1.0,
+          "raw_string": "1 (1%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 1.0,
+          "raw_string": "4 (1%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Number of comorbidities (whole set)",
+      "standardized_name": "Number of Comorbidities",
+      "category": "Comorbidities",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "header",
+          "raw_string": "Number of comorbidities (whole set)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "header",
+          "raw_string": "Number of comorbidities (whole set)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": "Number of comorbidities (whole set)"
+        }
+      ]
+    },
+    {
+      "original_label": "No comorbidity",
+      "standardized_name": "Number of Comorbidities",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of comorbidities (whole set)",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 20.0,
+          "percentage": 13.0,
+          "raw_string": "20 (13%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 10.0,
+          "percentage": 7.0,
+          "raw_string": "10 (7%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 30.0,
+          "percentage": 10.0,
+          "raw_string": "30 (10%)"
+        }
+      ]
+    },
+    {
+      "original_label": "1 comorbidity",
+      "standardized_name": "Number of Comorbidities",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of comorbidities (whole set)",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 30.0,
+          "percentage": 20.0,
+          "raw_string": "30 (20%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 41.0,
+          "percentage": 28.0,
+          "raw_string": "41 (28%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 71.0,
+          "percentage": 24.0,
+          "raw_string": "71 (24%)"
+        }
+      ]
+    },
+    {
+      "original_label": "2 comorbidities",
+      "standardized_name": "Number of Comorbidities",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of comorbidities (whole set)",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 32.0,
+          "percentage": 21.0,
+          "raw_string": "32 (21%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 37.0,
+          "percentage": 25.0,
+          "raw_string": "37 (25%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 69.0,
+          "percentage": 23.0,
+          "raw_string": "69 (23%)"
+        }
+      ]
+    },
+    {
+      "original_label": "3 comorbidities",
+      "standardized_name": "Number of Comorbidities",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of comorbidities (whole set)",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 29.0,
+          "percentage": 19.0,
+          "raw_string": "29 (19%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 25.0,
+          "percentage": 17.0,
+          "raw_string": "25 (17%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 54.0,
+          "percentage": 18.0,
+          "raw_string": "54 (18%)"
+        }
+      ]
+    },
+    {
+      "original_label": "4 comorbidities",
+      "standardized_name": "Number of Comorbidities",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of comorbidities (whole set)",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "percentage": 14.0,
+          "raw_string": "21 (14%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 15.0,
+          "percentage": 10.0,
+          "raw_string": "15 (10%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 36.0,
+          "percentage": 12.0,
+          "raw_string": "36 (12%)"
+        }
+      ]
+    },
+    {
+      "original_label": "5 comorbidities",
+      "standardized_name": "Number of Comorbidities",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of comorbidities (whole set)",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 7.0,
+          "raw_string": "11 (7%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 13.0,
+          "percentage": 9.0,
+          "raw_string": "13 (9%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 24.0,
+          "percentage": 8.0,
+          "raw_string": "24 (8%)"
+        }
+      ]
+    },
+    {
+      "original_label": "6 or more comorbidities",
+      "standardized_name": "Number of Comorbidities",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of comorbidities (whole set)",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 5.0,
+          "raw_string": "7 (5%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 4.0,
+          "raw_string": "6 (4%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 13.0,
+          "percentage": 4.0,
+          "raw_string": "13 (4%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "Number of Comorbidities",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of comorbidities (whole set)",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 1.0,
+          "raw_string": "2 (1%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0 (0%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 1.0,
+          "raw_string": "2 (1%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Number of comorbidities (Charlson's set)",
+      "standardized_name": "Number of Comorbidities (Charlson)",
+      "category": "Comorbidities",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "header",
+          "raw_string": "Number of comorbidities (Charlson's set)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "header",
+          "raw_string": "Number of comorbidities (Charlson's set)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": "Number of comorbidities (Charlson's set)"
+        }
+      ]
+    },
+    {
+      "original_label": "No comorbidity",
+      "standardized_name": "Number of Comorbidities (Charlson)",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of comorbidities (Charlson's set)",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 93.0,
+          "percentage": 61.0,
+          "raw_string": "93 (61%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 87.0,
+          "percentage": 59.0,
+          "raw_string": "87 (59%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 180.0,
+          "percentage": 60.0,
+          "raw_string": "180 (60%)"
+        }
+      ]
+    },
+    {
+      "original_label": "1 comorbidity",
+      "standardized_name": "Number of Comorbidities (Charlson)",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of comorbidities (Charlson's set)",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 47.0,
+          "percentage": 31.0,
+          "raw_string": "47 (31%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 47.0,
+          "percentage": 32.0,
+          "raw_string": "47 (32%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 94.0,
+          "percentage": 31.0,
+          "raw_string": "94 (31%)"
+        }
+      ]
+    },
+    {
+      "original_label": "2 or more comorbidities",
+      "standardized_name": "Number of Comorbidities (Charlson)",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of comorbidities (Charlson's set)",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 10.0,
+          "percentage": 7.0,
+          "raw_string": "10 (7%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 13.0,
+          "percentage": 9.0,
+          "raw_string": "13 (9%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 23.0,
+          "percentage": 8.0,
+          "raw_string": "23 (8%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "Number of Comorbidities (Charlson)",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of comorbidities (Charlson's set)",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 1.0,
+          "raw_string": "2 (1%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0 (0%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 1.0,
+          "raw_string": "2 (1%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Charlson score comorbidities",
+      "standardized_name": "Charlson Score Comorbidities",
+      "category": "Comorbidities",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "header",
+          "raw_string": "Charlson score comorbidities"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "header",
+          "raw_string": "Charlson score comorbidities"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": "Charlson score comorbidities"
+        }
+      ]
+    },
+    {
+      "original_label": "Diabetes",
+      "standardized_name": "Diabetes Mellitus",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Charlson score comorbidities",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 22.0,
+          "percentage": 14.0,
+          "raw_string": "22 (14%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 25.0,
+          "percentage": 17.0,
+          "raw_string": "25 (17%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 47.0,
+          "percentage": 16.0,
+          "raw_string": "47 (16%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Peripheral vascular disease",
+      "standardized_name": "Peripheral Vascular Disease",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Charlson score comorbidities",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 19.0,
+          "percentage": 13.0,
+          "raw_string": "19 (13%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 18.0,
+          "percentage": 12.0,
+          "raw_string": "18 (12%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 37.0,
+          "percentage": 12.0,
+          "raw_string": "37 (12%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Chronic pulmonary disease",
+      "standardized_name": "Chronic Pulmonary Disease",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Charlson score comorbidities",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 5.0,
+          "raw_string": "8 (5%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 15.0,
+          "percentage": 10.0,
+          "raw_string": "15 (10%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 23.0,
+          "percentage": 8.0,
+          "raw_string": "23 (8%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Mild liver disease",
+      "standardized_name": "Mild Liver Disease",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Charlson score comorbidities",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 4.0,
+          "raw_string": "6 (4%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 7.0,
+          "raw_string": "11 (7%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 17.0,
+          "percentage": 6.0,
+          "raw_string": "17 (6%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Cerebral vascular disease",
+      "standardized_name": "Cerebrovascular Disease",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Charlson score comorbidities",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 9.0,
+          "percentage": 6.0,
+          "raw_string": "9 (6%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 1.0,
+          "raw_string": "1 (1%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 10.0,
+          "percentage": 3.0,
+          "raw_string": "10 (3%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Ulcer disease",
+      "standardized_name": "Peptic Ulcer Disease",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Charlson score comorbidities",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 1.0,
+          "raw_string": "2 (1%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 3.0,
+          "raw_string": "5 (3%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 2.0,
+          "raw_string": "7 (2%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Previous cardiac infarction",
+      "standardized_name": "Previous Myocardial Infarction",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Charlson score comorbidities",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 1.0,
+          "raw_string": "2 (1%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0 (0%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 1.0,
+          "raw_string": "2 (1%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Congestive heart failure",
+      "standardized_name": "Congestive Heart Failure",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Charlson score comorbidities",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0 (0%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 1.0,
+          "raw_string": "1 (1%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.0,
+          "raw_string": "1 (0%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Dementia",
+      "standardized_name": "Dementia",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Charlson score comorbidities",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 1.0,
+          "raw_string": "1 (1%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0 (0%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.0,
+          "raw_string": "1 (0%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Other comorbiditiesa",
+      "standardized_name": "Other Comorbidities",
+      "category": "Comorbidities",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "header",
+          "raw_string": "Other comorbiditiesa"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "header",
+          "raw_string": "Other comorbiditiesa"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": "Other comorbiditiesa"
+        }
+      ]
+    },
+    {
+      "original_label": "Hypertension",
+      "standardized_name": "Hypertension",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Other comorbiditiesa",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 94.0,
+          "percentage": 62.0,
+          "raw_string": "94 (62%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 90.0,
+          "percentage": 61.0,
+          "raw_string": "90 (61%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 184.0,
+          "percentage": 62.0,
+          "raw_string": "184 (62%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Arthropathy",
+      "standardized_name": "Arthropathy",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Other comorbiditiesa",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 53.0,
+          "percentage": 35.0,
+          "raw_string": "53 (35%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 47.0,
+          "percentage": 32.0,
+          "raw_string": "47 (32%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 100.0,
+          "percentage": 33.0,
+          "raw_string": "100 (33%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Endocrine disease or dysmetabolism",
+      "standardized_name": "Endocrine Disease or Dysmetabolism",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Other comorbiditiesa",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 27.0,
+          "percentage": 18.0,
+          "raw_string": "27 (18%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 26.0,
+          "percentage": 18.0,
+          "raw_string": "26 (18%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 53.0,
+          "percentage": 18.0,
+          "raw_string": "53 (18%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Osteoporosis",
+      "standardized_name": "Osteoporosis",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Other comorbiditiesa",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 28.0,
+          "percentage": 18.0,
+          "raw_string": "28 (18%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 23.0,
+          "percentage": 16.0,
+          "raw_string": "23 (16%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 51.0,
+          "percentage": 17.0,
+          "raw_string": "51 (17%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Coronary syndrome",
+      "standardized_name": "Coronary Syndrome",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Other comorbiditiesa",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 13.0,
+          "percentage": 9.0,
+          "raw_string": "13 (9%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 5.0,
+          "raw_string": "7 (5%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 20.0,
+          "percentage": 7.0,
+          "raw_string": "20 (7%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Heart rhythm disease",
+      "standardized_name": "Heart Rhythm Disease",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Other comorbiditiesa",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 5.0,
+          "raw_string": "8 (5%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 7.0,
+          "raw_string": "11 (7%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 19.0,
+          "percentage": 6.0,
+          "raw_string": "19 (6%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Urinary incontinence",
+      "standardized_name": "Urinary Incontinence",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Other comorbiditiesa",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 5.0,
+          "raw_string": "8 (5%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 7.0,
+          "raw_string": "11 (7%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 19.0,
+          "percentage": 6.0,
+          "raw_string": "19 (6%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Depression",
+      "standardized_name": "Depression",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Other comorbiditiesa",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 5.0,
+          "raw_string": "7 (5%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 7.0,
+          "raw_string": "11 (7%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 18.0,
+          "percentage": 6.0,
+          "raw_string": "18 (6%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Gastritis",
+      "standardized_name": "Gastritis",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Other comorbiditiesa",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 5.0,
+          "raw_string": "8 (5%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 5.0,
+          "raw_string": "8 (5%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 5.0,
+          "raw_string": "16 (5%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Other gastrointestinal disease",
+      "standardized_name": "Other Gastrointestinal Disease",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Other comorbiditiesa",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 5.0,
+          "raw_string": "8 (5%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 5.0,
+          "raw_string": "8 (5%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 5.0,
+          "raw_string": "16 (5%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Kidney calculosis",
+      "standardized_name": "Nephrolithiasis",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Other comorbiditiesa",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 3.0,
+          "raw_string": "5 (3%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 7.0,
+          "raw_string": "11 (7%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 5.0,
+          "raw_string": "16 (5%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Colelithiasis",
+      "standardized_name": "Cholelithiasis",
+      "category": "Comorbidities",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Other comorbiditiesa",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 9.0,
+          "percentage": 6.0,
+          "raw_string": "9 (6%)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 3.0,
+          "raw_string": "5 (3%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 14.0,
+          "percentage": 5.0,
+          "raw_string": "14 (5%)"
+        }
+      ]
+    }
+  ]
+}

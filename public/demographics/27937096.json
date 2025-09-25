@@ -1,0 +1,459 @@
+{
+  "study_id": "METLung",
+  "study_title": "Results From the Phase III Randomized Trial of Onartuzumab Plus Erlotinib Versus Erlotinib in Previously Treated Stage IIIB or IV Non-Small-Cell Lung Cancer: METLung",
+  "table_name": "Table 1",
+  "table_title": "Baseline Characteristics of the ITT Population",
+  "description": "Baseline demographic and clinical characteristics of the Intent-to-Treat (ITT) population for the METLung study.",
+  "footnotes": [
+    "*Stratification factor"
+  ],
+  "groups": [
+    {
+      "name": "Onartuzumab + Erlotinib",
+      "n": 250,
+      "type": "intervention"
+    },
+    {
+      "name": "Placebo + Erlotinib",
+      "n": 249,
+      "type": "control"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Median age, years",
+      "standardized_name": "Age",
+      "unit": "years",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Onartuzumab + Erlotinib",
+          "data_type": "numeric_single",
+          "value": 62.0,
+          "raw_string": "62"
+        },
+        {
+          "group_name": "Placebo + Erlotinib",
+          "data_type": "numeric_single",
+          "value": 63.0,
+          "raw_string": "63"
+        }
+      ]
+    },
+    {
+      "original_label": "Sex",
+      "standardized_name": "Sex",
+      "group_data": [
+        {
+          "group_name": "Onartuzumab + Erlotinib",
+          "data_type": "header",
+          "raw_string": "Sex"
+        },
+        {
+          "group_name": "Placebo + Erlotinib",
+          "data_type": "header",
+          "raw_string": "Sex"
+        }
+      ]
+    },
+    {
+      "original_label": "Male",
+      "standardized_name": "Sex",
+      "category": "Male",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sex",
+      "group_data": [
+        {
+          "group_name": "Onartuzumab + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 139.0,
+          "percentage": 56.0,
+          "raw_string": "139 (56)"
+        },
+        {
+          "group_name": "Placebo + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 139.0,
+          "percentage": 56.0,
+          "raw_string": "139 (56)"
+        }
+      ]
+    },
+    {
+      "original_label": "Female",
+      "standardized_name": "Sex",
+      "category": "Female",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sex",
+      "group_data": [
+        {
+          "group_name": "Onartuzumab + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 111.0,
+          "percentage": 44.0,
+          "raw_string": "111 (44)"
+        },
+        {
+          "group_name": "Placebo + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 110.0,
+          "percentage": 44.0,
+          "raw_string": "110 (44)"
+        }
+      ]
+    },
+    {
+      "original_label": "ECOG PS",
+      "standardized_name": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "Onartuzumab + Erlotinib",
+          "data_type": "header",
+          "raw_string": "ECOG PS"
+        },
+        {
+          "group_name": "Placebo + Erlotinib",
+          "data_type": "header",
+          "raw_string": "ECOG PS"
+        }
+      ]
+    },
+    {
+      "original_label": "0",
+      "standardized_name": "ECOG Performance Status",
+      "category": "0",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG PS",
+      "group_data": [
+        {
+          "group_name": "Onartuzumab + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 93.0,
+          "percentage": 37.0,
+          "raw_string": "93 (37)"
+        },
+        {
+          "group_name": "Placebo + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 78.0,
+          "percentage": 31.0,
+          "raw_string": "78 (31)"
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "ECOG Performance Status",
+      "category": "1",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG PS",
+      "group_data": [
+        {
+          "group_name": "Onartuzumab + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 153.0,
+          "percentage": 61.0,
+          "raw_string": "153 (61)"
+        },
+        {
+          "group_name": "Placebo + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 169.0,
+          "percentage": 68.0,
+          "raw_string": "169 (68)"
+        }
+      ]
+    },
+    {
+      "original_label": "2",
+      "standardized_name": "ECOG Performance Status",
+      "category": "2",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG PS",
+      "group_data": [
+        {
+          "group_name": "Onartuzumab + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 2.0,
+          "raw_string": "4 (2)"
+        },
+        {
+          "group_name": "Placebo + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.5,
+          "raw_string": "1 (0.5)"
+        }
+      ]
+    },
+    {
+      "original_label": "Missing",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Missing",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG PS",
+      "group_data": [
+        {
+          "group_name": "Onartuzumab + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0 (0)"
+        },
+        {
+          "group_name": "Placebo + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.5,
+          "raw_string": "1 (0.5)"
+        }
+      ]
+    },
+    {
+      "original_label": "Asian race",
+      "standardized_name": "Race",
+      "category": "Asian",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Onartuzumab + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 35.0,
+          "percentage": 14.0,
+          "raw_string": "35 (14)"
+        },
+        {
+          "group_name": "Placebo + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 37.0,
+          "percentage": 15.0,
+          "raw_string": "37 (15)"
+        }
+      ]
+    },
+    {
+      "original_label": "Histology*",
+      "standardized_name": "Histology",
+      "group_data": [
+        {
+          "group_name": "Onartuzumab + Erlotinib",
+          "data_type": "header",
+          "raw_string": "Histology*"
+        },
+        {
+          "group_name": "Placebo + Erlotinib",
+          "data_type": "header",
+          "raw_string": "Histology*"
+        }
+      ]
+    },
+    {
+      "original_label": "Nonsquamous",
+      "standardized_name": "Histology",
+      "category": "Nonsquamous",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histology*",
+      "group_data": [
+        {
+          "group_name": "Onartuzumab + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 210.0,
+          "percentage": 84.0,
+          "raw_string": "210 (84)"
+        },
+        {
+          "group_name": "Placebo + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 218.0,
+          "percentage": 88.0,
+          "raw_string": "218 (88)"
+        }
+      ]
+    },
+    {
+      "original_label": "Squamous",
+      "standardized_name": "Histology",
+      "category": "Squamous",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histology*",
+      "group_data": [
+        {
+          "group_name": "Onartuzumab + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 40.0,
+          "percentage": 16.0,
+          "raw_string": "40 (16)"
+        },
+        {
+          "group_name": "Placebo + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 31.0,
+          "percentage": 12.0,
+          "raw_string": "31 (12)"
+        }
+      ]
+    },
+    {
+      "original_label": "Prior lines of therapy*",
+      "standardized_name": "Prior lines of therapy",
+      "group_data": [
+        {
+          "group_name": "Onartuzumab + Erlotinib",
+          "data_type": "header",
+          "raw_string": "Prior lines of therapy*"
+        },
+        {
+          "group_name": "Placebo + Erlotinib",
+          "data_type": "header",
+          "raw_string": "Prior lines of therapy*"
+        }
+      ]
+    },
+    {
+      "original_label": "Two",
+      "standardized_name": "Prior lines of therapy",
+      "category": "Two",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior lines of therapy*",
+      "group_data": [
+        {
+          "group_name": "Onartuzumab + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 161.0,
+          "percentage": 64.0,
+          "raw_string": "161 (64)"
+        },
+        {
+          "group_name": "Placebo + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 157.0,
+          "percentage": 63.0,
+          "raw_string": "157 (63)"
+        }
+      ]
+    },
+    {
+      "original_label": "Three",
+      "standardized_name": "Prior lines of therapy",
+      "category": "Three",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior lines of therapy*",
+      "group_data": [
+        {
+          "group_name": "Onartuzumab + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 89.0,
+          "percentage": 36.0,
+          "raw_string": "89 (36)"
+        },
+        {
+          "group_name": "Placebo + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 92.0,
+          "percentage": 37.0,
+          "raw_string": "92 (37)"
+        }
+      ]
+    },
+    {
+      "original_label": "EGFR mutation positive*",
+      "standardized_name": "EGFR mutation status",
+      "category": "Positive",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Onartuzumab + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 28.0,
+          "percentage": 11.2,
+          "raw_string": "28 (11.2)"
+        },
+        {
+          "group_name": "Placebo + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 29.0,
+          "percentage": 11.6,
+          "raw_string": "29 (11.6)"
+        }
+      ]
+    },
+    {
+      "original_label": "MET IHC*",
+      "standardized_name": "MET Immunohistochemistry Score",
+      "group_data": [
+        {
+          "group_name": "Onartuzumab + Erlotinib",
+          "data_type": "header",
+          "raw_string": "MET IHC*"
+        },
+        {
+          "group_name": "Placebo + Erlotinib",
+          "data_type": "header",
+          "raw_string": "MET IHC*"
+        }
+      ]
+    },
+    {
+      "original_label": "2+",
+      "standardized_name": "MET Immunohistochemistry Score",
+      "category": "2+",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "MET IHC*",
+      "group_data": [
+        {
+          "group_name": "Onartuzumab + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 198.0,
+          "percentage": 79.0,
+          "raw_string": "198 (79)"
+        },
+        {
+          "group_name": "Placebo + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 195.0,
+          "percentage": 78.0,
+          "raw_string": "195 (78)"
+        }
+      ]
+    },
+    {
+      "original_label": "3+",
+      "standardized_name": "MET Immunohistochemistry Score",
+      "category": "3+",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "MET IHC*",
+      "group_data": [
+        {
+          "group_name": "Onartuzumab + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 52.0,
+          "percentage": 21.0,
+          "raw_string": "52 (21)"
+        },
+        {
+          "group_name": "Placebo + Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 54.0,
+          "percentage": 22.0,
+          "raw_string": "54 (22)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,445 @@
+{
+  "study_id": "NCT00863655",
+  "study_title": "Everolimus plus exemestane for hormone-receptor-positive, human epidermal growth factor receptor-2-negative advanced breast cancer: overall survival results from BOLERO-2",
+  "table_name": "Table 1",
+  "table_title": "Summary of adverse events",
+  "description": "Although the user requested baseline demographics, that table was not present in the provided document. This JSON represents the 'Summary of adverse events' table found on page 3.",
+  "footnotes": [
+    "ªDeaths occurring >28 days after end of treatment are not included.",
+    "EVE, everolimus; EXE, exemestane; PBO, placebo."
+  ],
+  "groups": [
+    {
+      "name": "EVE + EXE",
+      "n": 482
+    },
+    {
+      "name": "PBO + EXE",
+      "n": 238
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Serious adverse events",
+      "standardized_name": "Serious Adverse Events",
+      "category": "Adverse Events",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "EVE + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 157.0,
+          "percentage": 32.6,
+          "raw_string": "157 (32.6)"
+        },
+        {
+          "group_name": "PBO + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 37.0,
+          "percentage": 15.5,
+          "raw_string": "37 (15.5)"
+        }
+      ]
+    },
+    {
+      "original_label": "Suspected to be drug-related",
+      "standardized_name": "Drug-Related Serious Adverse Events",
+      "category": "Adverse Events",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Serious Adverse Events",
+      "group_data": [
+        {
+          "group_name": "EVE + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 63.0,
+          "percentage": 13.1,
+          "raw_string": "63 (13.1)"
+        },
+        {
+          "group_name": "PBO + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 1.7,
+          "raw_string": "4 (1.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "Grade 3/4 adverse events",
+      "standardized_name": "Grade 3-4 Adverse Events",
+      "category": "Adverse Events",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "EVE + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 266.0,
+          "percentage": 55.2,
+          "raw_string": "266 (55.2)"
+        },
+        {
+          "group_name": "PBO + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 70.0,
+          "percentage": 29.4,
+          "raw_string": "70 (29.4)"
+        }
+      ]
+    },
+    {
+      "original_label": "Suspected to be drug-related",
+      "standardized_name": "Drug-Related Grade 3-4 Adverse Events",
+      "category": "Adverse Events",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Grade 3-4 Adverse Events",
+      "group_data": [
+        {
+          "group_name": "EVE + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 197.0,
+          "percentage": 40.9,
+          "raw_string": "197 (40.9)"
+        },
+        {
+          "group_name": "PBO + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 20.0,
+          "percentage": 8.4,
+          "raw_string": "20 (8.4)"
+        }
+      ]
+    },
+    {
+      "original_label": "Adverse events leading to treatment discontinuation",
+      "standardized_name": "Adverse Events Leading to Treatment Discontinuation",
+      "category": "Adverse Events",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "EVE + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 140.0,
+          "percentage": 29.0,
+          "raw_string": "140 (29.0)"
+        },
+        {
+          "group_name": "PBO + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 5.0,
+          "raw_string": "12 (5.0)"
+        }
+      ]
+    },
+    {
+      "original_label": "On-treatment deaths",
+      "standardized_name": "On-Treatment Deaths",
+      "category": "Adverse Events",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "EVE + EXE",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "PBO + EXE",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Total",
+      "standardized_name": "Total On-Treatment Deaths",
+      "category": "Adverse Events",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "On-Treatment Deaths",
+      "group_data": [
+        {
+          "group_name": "EVE + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 22.0,
+          "percentage": 4.6,
+          "raw_string": "22 (4.6)"
+        },
+        {
+          "group_name": "PBO + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 1.7,
+          "raw_string": "4 (1.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "Related to disease progression",
+      "standardized_name": "On-Treatment Deaths Related to Disease Progression",
+      "category": "Adverse Events",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Total On-Treatment Deaths",
+      "group_data": [
+        {
+          "group_name": "EVE + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 14.0,
+          "percentage": 2.9,
+          "raw_string": "14 (2.9)"
+        },
+        {
+          "group_name": "PBO + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 1.3,
+          "raw_string": "3 (1.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Related to adverse events",
+      "standardized_name": "On-Treatment Deaths Related to Adverse Events",
+      "category": "Adverse Events",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Total On-Treatment Deaths",
+      "group_data": [
+        {
+          "group_name": "EVE + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 1.7,
+          "raw_string": "8 (1.7)"
+        },
+        {
+          "group_name": "PBO + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.4,
+          "raw_string": "1 (0.4)"
+        }
+      ]
+    },
+    {
+      "original_label": "Total treatment exposure, patient-years",
+      "standardized_name": "Total Treatment Exposure",
+      "unit": "patient-years",
+      "category": "Treatment Exposure",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "EVE + EXE",
+          "data_type": "numeric_single",
+          "value": 378.0,
+          "raw_string": "378"
+        },
+        {
+          "group_name": "PBO + EXE",
+          "data_type": "numeric_single",
+          "value": 103.0,
+          "raw_string": "103"
+        }
+      ]
+    },
+    {
+      "original_label": "Exposure-adjusted on-treatment deaths (deaths per patient-year)",
+      "standardized_name": "Exposure-Adjusted On-Treatment Deaths",
+      "unit": "deaths per 100 patient-years",
+      "category": "Adverse Events",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "EVE + EXE",
+          "data_type": "other",
+          "value": 5.8,
+          "count": 22.0,
+          "raw_string": "22 (5.8)"
+        },
+        {
+          "group_name": "PBO + EXE",
+          "data_type": "other",
+          "value": 3.9,
+          "count": 4.0,
+          "raw_string": "4 (3.9)"
+        }
+      ]
+    },
+    {
+      "original_label": "On-treatment deaths <=4 months from randomization",
+      "standardized_name": "On-Treatment Deaths (<=4 months)",
+      "category": "Adverse Events",
+      "time_point": "<=4 months from randomization",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "EVE + EXE",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "PBO + EXE",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Total",
+      "standardized_name": "Total On-Treatment Deaths (<=4 months)",
+      "category": "Adverse Events",
+      "time_point": "<=4 months from randomization",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "On-Treatment Deaths (<=4 months)",
+      "group_data": [
+        {
+          "group_name": "EVE + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 2.3,
+          "raw_string": "11 (2.3)"
+        },
+        {
+          "group_name": "PBO + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 1.7,
+          "raw_string": "4 (1.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "Related to disease progression",
+      "standardized_name": "On-Treatment Deaths Related to Disease Progression (<=4 months)",
+      "category": "Adverse Events",
+      "time_point": "<=4 months from randomization",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Total On-Treatment Deaths (<=4 months)",
+      "group_data": [
+        {
+          "group_name": "EVE + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 1.2,
+          "raw_string": "6 (1.2)"
+        },
+        {
+          "group_name": "PBO + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 1.3,
+          "raw_string": "3 (1.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Related to adverse events",
+      "standardized_name": "On-Treatment Deaths Related to Adverse Events (<=4 months)",
+      "category": "Adverse Events",
+      "time_point": "<=4 months from randomization",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Total On-Treatment Deaths (<=4 months)",
+      "group_data": [
+        {
+          "group_name": "EVE + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 1.1,
+          "raw_string": "5 (1.1)"
+        },
+        {
+          "group_name": "PBO + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.4,
+          "raw_string": "1 (0.4)"
+        }
+      ]
+    },
+    {
+      "original_label": "On-treatment deaths >4 months after randomization",
+      "standardized_name": "On-Treatment Deaths (>4 months)",
+      "category": "Adverse Events",
+      "time_point": ">4 months after randomization",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "EVE + EXE",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "PBO + EXE",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Total",
+      "standardized_name": "Total On-Treatment Deaths (>4 months)",
+      "category": "Adverse Events",
+      "time_point": ">4 months after randomization",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "On-Treatment Deaths (>4 months)",
+      "group_data": [
+        {
+          "group_name": "EVE + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 2.3,
+          "raw_string": "11 (2.3)"
+        },
+        {
+          "group_name": "PBO + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "raw_string": "0"
+        }
+      ]
+    },
+    {
+      "original_label": "Related to disease progression",
+      "standardized_name": "On-Treatment Deaths Related to Disease Progression (>4 months)",
+      "category": "Adverse Events",
+      "time_point": ">4 months after randomization",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Total On-Treatment Deaths (>4 months)",
+      "group_data": [
+        {
+          "group_name": "EVE + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 1.7,
+          "raw_string": "8 (1.7)"
+        },
+        {
+          "group_name": "PBO + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "raw_string": "0"
+        }
+      ]
+    },
+    {
+      "original_label": "Related to adverse events",
+      "standardized_name": "On-Treatment Deaths Related to Adverse Events (>4 months)",
+      "category": "Adverse Events",
+      "time_point": ">4 months after randomization",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Total On-Treatment Deaths (>4 months)",
+      "group_data": [
+        {
+          "group_name": "EVE + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 0.6,
+          "raw_string": "3 (0.6)"
+        },
+        {
+          "group_name": "PBO + EXE",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "raw_string": "0"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,772 @@
+{
+  "study_id": "RTOG 9804",
+  "study_title": "RTOG 9804: A Prospective Randomized Trial for Good-Risk Ductal Carcinoma In Situ Comparing Radiotherapy With Observation",
+  "table_name": "Table 1",
+  "table_title": "Patient Demographics and Clinical Characteristics",
+  "footnotes": [
+    "Abbreviations: DCIS, ductal carcinoma in situ; Q1, first quartile; Q3, third quartile."
+  ],
+  "groups": [
+    {
+      "name": "Observation ± Tamoxifen",
+      "n": 298,
+      "type": "Observation"
+    },
+    {
+      "name": "Radiotherapy ± Tamoxifen",
+      "n": 287,
+      "type": "Intervention"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age, years",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, years",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "numeric_single",
+          "value": 58.0,
+          "raw_string": "58"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "numeric_single",
+          "value": 58.0,
+          "raw_string": "58"
+        }
+      ]
+    },
+    {
+      "original_label": "Range",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, years",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "numeric_mean_range",
+          "range_min": 35.0,
+          "range_max": 84.0,
+          "raw_string": "35-84"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "numeric_mean_range",
+          "range_min": 34.0,
+          "range_max": 85.0,
+          "raw_string": "34-85"
+        }
+      ]
+    },
+    {
+      "original_label": "Q1-Q3",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, years",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "numeric_median_iqr",
+          "iqr_min": 51.0,
+          "iqr_max": 68.0,
+          "raw_string": "51-68"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "numeric_median_iqr",
+          "iqr_min": 51.0,
+          "iqr_max": 67.0,
+          "raw_string": "51-67"
+        }
+      ]
+    },
+    {
+      "original_label": "Largest dimension of DCIS lesion on pathology slide, cm",
+      "standardized_name": "Largest dimension of DCIS lesion",
+      "unit": "cm",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Largest dimension of DCIS lesion",
+      "unit": "cm",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Largest dimension of DCIS lesion on pathology slide, cm",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "numeric_single",
+          "value": 0.5,
+          "raw_string": "0.5"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "numeric_single",
+          "value": 0.5,
+          "raw_string": "0.5"
+        }
+      ]
+    },
+    {
+      "original_label": "Range",
+      "standardized_name": "Largest dimension of DCIS lesion",
+      "unit": "cm",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Largest dimension of DCIS lesion on pathology slide, cm",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "numeric_mean_range",
+          "range_min": 0.1,
+          "range_max": 2.5,
+          "raw_string": "0.1-2.5"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "numeric_mean_range",
+          "range_min": 0.1,
+          "range_max": 2.5,
+          "raw_string": "0.1-2.5"
+        }
+      ]
+    },
+    {
+      "original_label": "Q1-Q3",
+      "standardized_name": "Largest dimension of DCIS lesion",
+      "unit": "cm",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Largest dimension of DCIS lesion on pathology slide, cm",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "numeric_median_iqr",
+          "iqr_min": 0.3,
+          "iqr_max": 0.8,
+          "raw_string": "0.3-0.8"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "numeric_median_iqr",
+          "iqr_min": 0.3,
+          "iqr_max": 0.8,
+          "raw_string": "0.3-0.8"
+        }
+      ]
+    },
+    {
+      "original_label": "Race",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "White",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 246.0,
+          "percentage": 82.6,
+          "raw_string": "246"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 227.0,
+          "percentage": 79.1,
+          "raw_string": "227"
+        }
+      ]
+    },
+    {
+      "original_label": "African American",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "percentage": 7.0,
+          "raw_string": "21"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 22.0,
+          "percentage": 7.7,
+          "raw_string": "22"
+        }
+      ]
+    },
+    {
+      "original_label": "Hispanic",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 4.0,
+          "raw_string": "12"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 17.0,
+          "percentage": 5.9,
+          "raw_string": "17"
+        }
+      ]
+    },
+    {
+      "original_label": "American Indian",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 1.7,
+          "raw_string": "5"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 0.7,
+          "raw_string": "2"
+        }
+      ]
+    },
+    {
+      "original_label": "Asian",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 13.0,
+          "percentage": 4.4,
+          "raw_string": "13"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 14.0,
+          "percentage": 4.9,
+          "raw_string": "14"
+        }
+      ]
+    },
+    {
+      "original_label": "Native Hawaiian or other Pacific Islander",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.3,
+          "raw_string": "1"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Other",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Age, years",
+      "standardized_name": "Age Groups",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "< 50",
+      "standardized_name": "Age Groups",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, years",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 61.0,
+          "percentage": 20.5,
+          "raw_string": "61"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "≥ 50",
+      "standardized_name": "Age Groups",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, years",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 237.0,
+          "percentage": 79.5,
+          "raw_string": "237"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Final microscopic margins, mm",
+      "standardized_name": "Final microscopic margins",
+      "unit": "mm",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "≥ 3-9",
+      "standardized_name": "Final microscopic margins",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Final microscopic margins, mm",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 106.0,
+          "percentage": 35.6,
+          "raw_string": "106"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "≥ 10",
+      "standardized_name": "Final microscopic margins",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Final microscopic margins, mm",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 48.0,
+          "percentage": 16.1,
+          "raw_string": "48"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Negative by negative re-excision",
+      "standardized_name": "Final microscopic margins",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Final microscopic margins, mm",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 144.0,
+          "percentage": 48.3,
+          "raw_string": "144"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Mammographic size of primary tumor, cm",
+      "standardized_name": "Mammographic size of primary tumor",
+      "unit": "cm",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "≤ 1",
+      "standardized_name": "Mammographic size of primary tumor",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Mammographic size of primary tumor, cm",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 217.0,
+          "percentage": 72.8,
+          "raw_string": "217"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "> 1",
+      "standardized_name": "Mammographic size of primary tumor",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Mammographic size of primary tumor, cm",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 81.0,
+          "percentage": 27.2,
+          "raw_string": "81"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Nuclear grade",
+      "standardized_name": "Nuclear grade",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "Nuclear grade",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Nuclear grade",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 131.0,
+          "percentage": 44.0,
+          "raw_string": "131"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 121.0,
+          "percentage": 42.2,
+          "raw_string": "",
+          "notes": "Value inferred as 287 (total N) - 166 (Grade 2 N) = 121. Percentage inferred as 100% - 57.8% = 42.2%."
+        }
+      ]
+    },
+    {
+      "original_label": "2",
+      "standardized_name": "Nuclear grade",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Nuclear grade",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 167.0,
+          "percentage": 56.0,
+          "raw_string": "167"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 166.0,
+          "percentage": 57.8,
+          "raw_string": "166"
+        }
+      ]
+    },
+    {
+      "original_label": "Tumor location",
+      "standardized_name": "Tumor location",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Left breast",
+      "standardized_name": "Tumor location",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor location",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 148.0,
+          "percentage": 49.7,
+          "raw_string": "148"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 142.0,
+          "percentage": 49.5,
+          "raw_string": "142"
+        }
+      ]
+    },
+    {
+      "original_label": "Right breast",
+      "standardized_name": "Tumor location",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor location",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 150.0,
+          "percentage": 50.3,
+          "raw_string": "150"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 145.0,
+          "percentage": 50.5,
+          "raw_string": "145"
+        }
+      ]
+    },
+    {
+      "original_label": "Intention to use tamoxifen",
+      "standardized_name": "Intention to use tamoxifen",
+      "category": "Treatment",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "No",
+      "standardized_name": "Intention to use tamoxifen",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Intention to use tamoxifen",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 91.0,
+          "percentage": 30.5,
+          "raw_string": "91"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 90.0,
+          "percentage": 31.4,
+          "raw_string": "90"
+        }
+      ]
+    },
+    {
+      "original_label": "Yes",
+      "standardized_name": "Intention to use tamoxifen",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Intention to use tamoxifen",
+      "group_data": [
+        {
+          "group_name": "Observation ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 207.0,
+          "percentage": 69.5,
+          "raw_string": "207"
+        },
+        {
+          "group_name": "Radiotherapy ± Tamoxifen",
+          "data_type": "categorical_count_percentage",
+          "count": 197.0,
+          "percentage": 68.6,
+          "raw_string": "197"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,750 @@
+{
+  "study_id": "NCT00058474",
+  "study_title": "Neoadjuvant 5-FU or Capecitabine Plus Radiation With or Without Oxaliplatin in Rectal Cancer Patients: A Phase III Randomized Clinical Trial",
+  "table_name": "Table 1",
+  "table_title": "Clinical characteristics and patient assignment: National Surgical Adjuvant Breast and Bowel Project R-04",
+  "description": "Baseline clinical characteristics and patient assignment for the National Surgical Adjuvant Breast and Bowel Project R-04 clinical trial, broken down by pre-amendment and post-amendment treatment groups.",
+  "footnotes": [
+    "* 5-FU = 5-flourouracil; CAPE = capecitabine; OX = oxaliplatin.",
+    "† As reported at the time of random assignment."
+  ],
+  "groups": [
+    {
+      "name": "5-FU (2 Arm) Grp 1",
+      "n": 147,
+      "type": "Pre-amendment"
+    },
+    {
+      "name": "CAPE (2 Arm) Grp 2",
+      "n": 146,
+      "type": "Pre-amendment"
+    },
+    {
+      "name": "5-FU (4 Arm) Grp 3",
+      "n": 330,
+      "type": "Post-amendment"
+    },
+    {
+      "name": "5-FU + OX (4 Arm) Grp 4",
+      "n": 329,
+      "type": "Post-amendment"
+    },
+    {
+      "name": "CAPE (4 Arm) Grp 5",
+      "n": 326,
+      "type": "Post-amendment"
+    },
+    {
+      "name": "CAPE + OX (4 Arm) Grp 6",
+      "n": 330,
+      "type": "Post-amendment"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Randomly assigned",
+      "standardized_name": "Number of patients randomized",
+      "category": "Patient Assignment",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "5-FU (2 Arm) Grp 1",
+          "data_type": "numeric_single",
+          "value": 147.0,
+          "raw_string": "147"
+        },
+        {
+          "group_name": "CAPE (2 Arm) Grp 2",
+          "data_type": "numeric_single",
+          "value": 146.0,
+          "raw_string": "146"
+        },
+        {
+          "group_name": "5-FU (4 Arm) Grp 3",
+          "data_type": "numeric_single",
+          "value": 330.0,
+          "raw_string": "330"
+        },
+        {
+          "group_name": "5-FU + OX (4 Arm) Grp 4",
+          "data_type": "numeric_single",
+          "value": 329.0,
+          "raw_string": "329"
+        },
+        {
+          "group_name": "CAPE (4 Arm) Grp 5",
+          "data_type": "numeric_single",
+          "value": 326.0,
+          "raw_string": "326"
+        },
+        {
+          "group_name": "CAPE + OX (4 Arm) Grp 6",
+          "data_type": "numeric_single",
+          "value": 330.0,
+          "raw_string": "330"
+        }
+      ]
+    },
+    {
+      "original_label": "Ineligible",
+      "standardized_name": "Number of ineligible patients",
+      "category": "Patient Assignment",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "5-FU (2 Arm) Grp 1",
+          "data_type": "numeric_single",
+          "value": 1.0,
+          "raw_string": "1"
+        },
+        {
+          "group_name": "CAPE (2 Arm) Grp 2",
+          "data_type": "numeric_single",
+          "value": 5.0,
+          "raw_string": "5"
+        },
+        {
+          "group_name": "5-FU (4 Arm) Grp 3",
+          "data_type": "numeric_single",
+          "value": 2.0,
+          "raw_string": "2"
+        },
+        {
+          "group_name": "5-FU + OX (4 Arm) Grp 4",
+          "data_type": "numeric_single",
+          "value": 2.0,
+          "raw_string": "2"
+        },
+        {
+          "group_name": "CAPE (4 Arm) Grp 5",
+          "data_type": "numeric_single",
+          "value": 1.0,
+          "raw_string": "1"
+        },
+        {
+          "group_name": "CAPE + OX (4 Arm) Grp 6",
+          "data_type": "numeric_single",
+          "value": 2.0,
+          "raw_string": "2"
+        }
+      ]
+    },
+    {
+      "original_label": "Age, y",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "5-FU (2 Arm) Grp 1",
+          "data_type": "header",
+          "raw_string": "Age, y"
+        },
+        {
+          "group_name": "CAPE (2 Arm) Grp 2",
+          "data_type": "header",
+          "raw_string": "Age, y"
+        },
+        {
+          "group_name": "5-FU (4 Arm) Grp 3",
+          "data_type": "header",
+          "raw_string": "Age, y"
+        },
+        {
+          "group_name": "5-FU + OX (4 Arm) Grp 4",
+          "data_type": "header",
+          "raw_string": "Age, y"
+        },
+        {
+          "group_name": "CAPE (4 Arm) Grp 5",
+          "data_type": "header",
+          "raw_string": "Age, y"
+        },
+        {
+          "group_name": "CAPE + OX (4 Arm) Grp 6",
+          "data_type": "header",
+          "raw_string": "Age, y"
+        }
+      ]
+    },
+    {
+      "original_label": "<59",
+      "standardized_name": "Age < 59 years",
+      "unit": "%",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, y",
+      "group_data": [
+        {
+          "group_name": "5-FU (2 Arm) Grp 1",
+          "data_type": "categorical_count_percentage",
+          "count": 86.0,
+          "percentage": 59.2,
+          "raw_string": "59.2",
+          "n_for_value": 146
+        },
+        {
+          "group_name": "CAPE (2 Arm) Grp 2",
+          "data_type": "categorical_count_percentage",
+          "count": 74.0,
+          "percentage": 52.7,
+          "raw_string": "52.7",
+          "n_for_value": 141
+        },
+        {
+          "group_name": "5-FU (4 Arm) Grp 3",
+          "data_type": "categorical_count_percentage",
+          "count": 184.0,
+          "percentage": 56.1,
+          "raw_string": "56.1",
+          "n_for_value": 328
+        },
+        {
+          "group_name": "5-FU + OX (4 Arm) Grp 4",
+          "data_type": "categorical_count_percentage",
+          "count": 201.0,
+          "percentage": 61.4,
+          "raw_string": "61.4",
+          "n_for_value": 327
+        },
+        {
+          "group_name": "CAPE (4 Arm) Grp 5",
+          "data_type": "categorical_count_percentage",
+          "count": 186.0,
+          "percentage": 57.1,
+          "raw_string": "57.1",
+          "n_for_value": 325
+        },
+        {
+          "group_name": "CAPE + OX (4 Arm) Grp 6",
+          "data_type": "categorical_count_percentage",
+          "count": 201.0,
+          "percentage": 61.2,
+          "raw_string": "61.2",
+          "n_for_value": 328
+        }
+      ]
+    },
+    {
+      "original_label": "≥60",
+      "standardized_name": "Age ≥ 60 years",
+      "unit": "%",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, y",
+      "group_data": [
+        {
+          "group_name": "5-FU (2 Arm) Grp 1",
+          "data_type": "categorical_count_percentage",
+          "count": 60.0,
+          "percentage": 40.8,
+          "raw_string": "40.8",
+          "n_for_value": 146
+        },
+        {
+          "group_name": "CAPE (2 Arm) Grp 2",
+          "data_type": "categorical_count_percentage",
+          "count": 67.0,
+          "percentage": 47.3,
+          "raw_string": "47.3",
+          "n_for_value": 141
+        },
+        {
+          "group_name": "5-FU (4 Arm) Grp 3",
+          "data_type": "categorical_count_percentage",
+          "count": 144.0,
+          "percentage": 43.9,
+          "raw_string": "43.9",
+          "n_for_value": 328
+        },
+        {
+          "group_name": "5-FU + OX (4 Arm) Grp 4",
+          "data_type": "categorical_count_percentage",
+          "count": 126.0,
+          "percentage": 38.6,
+          "raw_string": "38.6",
+          "n_for_value": 327
+        },
+        {
+          "group_name": "CAPE (4 Arm) Grp 5",
+          "data_type": "categorical_count_percentage",
+          "count": 139.0,
+          "percentage": 42.9,
+          "raw_string": "42.9",
+          "n_for_value": 325
+        },
+        {
+          "group_name": "CAPE + OX (4 Arm) Grp 6",
+          "data_type": "categorical_count_percentage",
+          "count": 127.0,
+          "percentage": 38.8,
+          "raw_string": "38.8",
+          "n_for_value": 328
+        }
+      ]
+    },
+    {
+      "original_label": "Sex",
+      "standardized_name": "Sex",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "5-FU (2 Arm) Grp 1",
+          "data_type": "header",
+          "raw_string": "Sex"
+        },
+        {
+          "group_name": "CAPE (2 Arm) Grp 2",
+          "data_type": "header",
+          "raw_string": "Sex"
+        },
+        {
+          "group_name": "5-FU (4 Arm) Grp 3",
+          "data_type": "header",
+          "raw_string": "Sex"
+        },
+        {
+          "group_name": "5-FU + OX (4 Arm) Grp 4",
+          "data_type": "header",
+          "raw_string": "Sex"
+        },
+        {
+          "group_name": "CAPE (4 Arm) Grp 5",
+          "data_type": "header",
+          "raw_string": "Sex"
+        },
+        {
+          "group_name": "CAPE + OX (4 Arm) Grp 6",
+          "data_type": "header",
+          "raw_string": "Sex"
+        }
+      ]
+    },
+    {
+      "original_label": "Male",
+      "standardized_name": "Sex, Male",
+      "unit": "%",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sex",
+      "group_data": [
+        {
+          "group_name": "5-FU (2 Arm) Grp 1",
+          "data_type": "categorical_count_percentage",
+          "count": 99.0,
+          "percentage": 68.0,
+          "raw_string": "68.0",
+          "n_for_value": 146
+        },
+        {
+          "group_name": "CAPE (2 Arm) Grp 2",
+          "data_type": "categorical_count_percentage",
+          "count": 96.0,
+          "percentage": 67.8,
+          "raw_string": "67.8",
+          "n_for_value": 141
+        },
+        {
+          "group_name": "5-FU (4 Arm) Grp 3",
+          "data_type": "categorical_count_percentage",
+          "count": 220.0,
+          "percentage": 67.0,
+          "raw_string": "67.0",
+          "n_for_value": 328
+        },
+        {
+          "group_name": "5-FU + OX (4 Arm) Grp 4",
+          "data_type": "categorical_count_percentage",
+          "count": 223.0,
+          "percentage": 68.1,
+          "raw_string": "68.1",
+          "n_for_value": 327
+        },
+        {
+          "group_name": "CAPE (4 Arm) Grp 5",
+          "data_type": "categorical_count_percentage",
+          "count": 220.0,
+          "percentage": 67.8,
+          "raw_string": "67.8",
+          "n_for_value": 325
+        },
+        {
+          "group_name": "CAPE + OX (4 Arm) Grp 6",
+          "data_type": "categorical_count_percentage",
+          "count": 222.0,
+          "percentage": 67.6,
+          "raw_string": "67.6",
+          "n_for_value": 328
+        }
+      ]
+    },
+    {
+      "original_label": "Female",
+      "standardized_name": "Sex, Female",
+      "unit": "%",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sex",
+      "group_data": [
+        {
+          "group_name": "5-FU (2 Arm) Grp 1",
+          "data_type": "categorical_count_percentage",
+          "count": 47.0,
+          "percentage": 32.0,
+          "raw_string": "32.0",
+          "n_for_value": 146
+        },
+        {
+          "group_name": "CAPE (2 Arm) Grp 2",
+          "data_type": "categorical_count_percentage",
+          "count": 45.0,
+          "percentage": 32.2,
+          "raw_string": "32.2",
+          "n_for_value": 141
+        },
+        {
+          "group_name": "5-FU (4 Arm) Grp 3",
+          "data_type": "categorical_count_percentage",
+          "count": 108.0,
+          "percentage": 33.0,
+          "raw_string": "33.0",
+          "n_for_value": 328
+        },
+        {
+          "group_name": "5-FU + OX (4 Arm) Grp 4",
+          "data_type": "categorical_count_percentage",
+          "count": 104.0,
+          "percentage": 31.9,
+          "raw_string": "31.9",
+          "n_for_value": 327
+        },
+        {
+          "group_name": "CAPE (4 Arm) Grp 5",
+          "data_type": "categorical_count_percentage",
+          "count": 105.0,
+          "percentage": 32.2,
+          "raw_string": "32.2",
+          "n_for_value": 325
+        },
+        {
+          "group_name": "CAPE + OX (4 Arm) Grp 6",
+          "data_type": "categorical_count_percentage",
+          "count": 106.0,
+          "percentage": 32.4,
+          "raw_string": "32.4",
+          "n_for_value": 328
+        }
+      ]
+    },
+    {
+      "original_label": "Clinical stage†",
+      "standardized_name": "Clinical Stage",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "5-FU (2 Arm) Grp 1",
+          "data_type": "header",
+          "raw_string": "Clinical stage†"
+        },
+        {
+          "group_name": "CAPE (2 Arm) Grp 2",
+          "data_type": "header",
+          "raw_string": "Clinical stage†"
+        },
+        {
+          "group_name": "5-FU (4 Arm) Grp 3",
+          "data_type": "header",
+          "raw_string": "Clinical stage†"
+        },
+        {
+          "group_name": "5-FU + OX (4 Arm) Grp 4",
+          "data_type": "header",
+          "raw_string": "Clinical stage†"
+        },
+        {
+          "group_name": "CAPE (4 Arm) Grp 5",
+          "data_type": "header",
+          "raw_string": "Clinical stage†"
+        },
+        {
+          "group_name": "CAPE + OX (4 Arm) Grp 6",
+          "data_type": "header",
+          "raw_string": "Clinical stage†"
+        }
+      ]
+    },
+    {
+      "original_label": "II",
+      "standardized_name": "Clinical Stage II",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Clinical stage†",
+      "group_data": [
+        {
+          "group_name": "5-FU (2 Arm) Grp 1",
+          "data_type": "categorical_count_percentage",
+          "count": 73.0,
+          "percentage": 49.7,
+          "raw_string": "49.7",
+          "n_for_value": 146
+        },
+        {
+          "group_name": "CAPE (2 Arm) Grp 2",
+          "data_type": "categorical_count_percentage",
+          "count": 66.0,
+          "percentage": 46.6,
+          "raw_string": "46.6",
+          "n_for_value": 141
+        },
+        {
+          "group_name": "5-FU (4 Arm) Grp 3",
+          "data_type": "categorical_count_percentage",
+          "count": 202.0,
+          "percentage": 61.5,
+          "raw_string": "61.5",
+          "n_for_value": 328
+        },
+        {
+          "group_name": "5-FU + OX (4 Arm) Grp 4",
+          "data_type": "categorical_count_percentage",
+          "count": 202.0,
+          "percentage": 61.7,
+          "raw_string": "61.7",
+          "n_for_value": 327
+        },
+        {
+          "group_name": "CAPE (4 Arm) Grp 5",
+          "data_type": "categorical_count_percentage",
+          "count": 202.0,
+          "percentage": 62.3,
+          "raw_string": "62.3",
+          "n_for_value": 325
+        },
+        {
+          "group_name": "CAPE + OX (4 Arm) Grp 6",
+          "data_type": "categorical_count_percentage",
+          "count": 202.0,
+          "percentage": 61.5,
+          "raw_string": "61.5",
+          "n_for_value": 328
+        }
+      ]
+    },
+    {
+      "original_label": "III",
+      "standardized_name": "Clinical Stage III",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Clinical stage†",
+      "group_data": [
+        {
+          "group_name": "5-FU (2 Arm) Grp 1",
+          "data_type": "categorical_count_percentage",
+          "count": 73.0,
+          "percentage": 50.3,
+          "raw_string": "50.3",
+          "n_for_value": 146
+        },
+        {
+          "group_name": "CAPE (2 Arm) Grp 2",
+          "data_type": "categorical_count_percentage",
+          "count": 75.0,
+          "percentage": 53.4,
+          "raw_string": "53.4",
+          "n_for_value": 141
+        },
+        {
+          "group_name": "5-FU (4 Arm) Grp 3",
+          "data_type": "categorical_count_percentage",
+          "count": 126.0,
+          "percentage": 38.5,
+          "raw_string": "38.5",
+          "n_for_value": 328
+        },
+        {
+          "group_name": "5-FU + OX (4 Arm) Grp 4",
+          "data_type": "categorical_count_percentage",
+          "count": 125.0,
+          "percentage": 38.3,
+          "raw_string": "38.3",
+          "n_for_value": 327
+        },
+        {
+          "group_name": "CAPE (4 Arm) Grp 5",
+          "data_type": "categorical_count_percentage",
+          "count": 123.0,
+          "percentage": 37.7,
+          "raw_string": "37.7",
+          "n_for_value": 325
+        },
+        {
+          "group_name": "CAPE + OX (4 Arm) Grp 6",
+          "data_type": "categorical_count_percentage",
+          "count": 126.0,
+          "percentage": 38.5,
+          "raw_string": "38.5",
+          "n_for_value": 328
+        }
+      ]
+    },
+    {
+      "original_label": "Surgical intent†",
+      "standardized_name": "Surgical Intent",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "5-FU (2 Arm) Grp 1",
+          "data_type": "header",
+          "raw_string": "Surgical intent†"
+        },
+        {
+          "group_name": "CAPE (2 Arm) Grp 2",
+          "data_type": "header",
+          "raw_string": "Surgical intent†"
+        },
+        {
+          "group_name": "5-FU (4 Arm) Grp 3",
+          "data_type": "header",
+          "raw_string": "Surgical intent†"
+        },
+        {
+          "group_name": "5-FU + OX (4 Arm) Grp 4",
+          "data_type": "header",
+          "raw_string": "Surgical intent†"
+        },
+        {
+          "group_name": "CAPE (4 Arm) Grp 5",
+          "data_type": "header",
+          "raw_string": "Surgical intent†"
+        },
+        {
+          "group_name": "CAPE + OX (4 Arm) Grp 6",
+          "data_type": "header",
+          "raw_string": "Surgical intent†"
+        }
+      ]
+    },
+    {
+      "original_label": "Sphincter sparing",
+      "standardized_name": "Surgical Intent, Sphincter Sparing",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Surgical intent†",
+      "group_data": [
+        {
+          "group_name": "5-FU (2 Arm) Grp 1",
+          "data_type": "categorical_count_percentage",
+          "count": 109.0,
+          "percentage": 74.8,
+          "raw_string": "74.8",
+          "n_for_value": 146
+        },
+        {
+          "group_name": "CAPE (2 Arm) Grp 2",
+          "data_type": "categorical_count_percentage",
+          "count": 101.0,
+          "percentage": 71.9,
+          "raw_string": "71.9",
+          "n_for_value": 141
+        },
+        {
+          "group_name": "5-FU (4 Arm) Grp 3",
+          "data_type": "categorical_count_percentage",
+          "count": 241.0,
+          "percentage": 73.6,
+          "raw_string": "73.6",
+          "n_for_value": 328
+        },
+        {
+          "group_name": "5-FU + OX (4 Arm) Grp 4",
+          "data_type": "categorical_count_percentage",
+          "count": 241.0,
+          "percentage": 73.6,
+          "raw_string": "73.6",
+          "n_for_value": 327
+        },
+        {
+          "group_name": "CAPE (4 Arm) Grp 5",
+          "data_type": "categorical_count_percentage",
+          "count": 241.0,
+          "percentage": 74.2,
+          "raw_string": "74.2",
+          "n_for_value": 325
+        },
+        {
+          "group_name": "CAPE + OX (4 Arm) Grp 6",
+          "data_type": "categorical_count_percentage",
+          "count": 240.0,
+          "percentage": 73.3,
+          "raw_string": "73.3",
+          "n_for_value": 328
+        }
+      ]
+    },
+    {
+      "original_label": "Nonsphincter sparing",
+      "standardized_name": "Surgical Intent, Nonsphincter Sparing",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Surgical intent†",
+      "group_data": [
+        {
+          "group_name": "5-FU (2 Arm) Grp 1",
+          "data_type": "categorical_count_percentage",
+          "count": 37.0,
+          "percentage": 25.2,
+          "raw_string": "25.2",
+          "n_for_value": 146
+        },
+        {
+          "group_name": "CAPE (2 Arm) Grp 2",
+          "data_type": "categorical_count_percentage",
+          "count": 40.0,
+          "percentage": 28.1,
+          "raw_string": "28.1",
+          "n_for_value": 141
+        },
+        {
+          "group_name": "5-FU (4 Arm) Grp 3",
+          "data_type": "categorical_count_percentage",
+          "count": 87.0,
+          "percentage": 26.4,
+          "raw_string": "26.4",
+          "n_for_value": 328
+        },
+        {
+          "group_name": "5-FU + OX (4 Arm) Grp 4",
+          "data_type": "categorical_count_percentage",
+          "count": 86.0,
+          "percentage": 26.4,
+          "raw_string": "26.4",
+          "n_for_value": 327
+        },
+        {
+          "group_name": "CAPE (4 Arm) Grp 5",
+          "data_type": "categorical_count_percentage",
+          "count": 84.0,
+          "percentage": 25.8,
+          "raw_string": "25.8",
+          "n_for_value": 325
+        },
+        {
+          "group_name": "CAPE + OX (4 Arm) Grp 6",
+          "data_type": "categorical_count_percentage",
+          "count": 88.0,
+          "percentage": 26.7,
+          "raw_string": "26.7",
+          "n_for_value": 328
+        }
+      ]
+    }
+  ]
+}

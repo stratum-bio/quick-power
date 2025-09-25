@@ -1,0 +1,943 @@
+{
+  "study_id": "EORTC 10981-22023 AMAROS",
+  "study_title": "Radiotherapy or surgery of the axilla after a positive sentinel node in breast cancer (EORTC 10981-22023 AMAROS):a randomised, multicentre, open-label, phase 3 non-inferiority trial",
+  "table_name": "Table 1",
+  "table_title": "Baseline and treatment characteristics",
+  "description": "This table shows the baseline and treatment characteristics for patients with sentinel-node-positive breast cancer, comparing the group assigned to axillary lymph node dissection with the group assigned to axillary radiotherapy.",
+  "footnotes": [
+    "Data are median (IQR) or number (%). Some percentages do not total 100 because of rounding.",
+    "72 patients did not have axillary lymph node dissection.",
+    "Additional metastatic lymph nodes in the axillary radiotherapy group were found in a group of patients who crossed over from axillary radiotherapy to axillary lymph node dissection and are thus not representative of the number of additional nodes in the whole group."
+  ],
+  "groups": [
+    {
+      "name": "Axillary lymph node dissection",
+      "n": 744,
+      "type": "Intervention"
+    },
+    {
+      "name": "Axillary radiotherapy",
+      "n": 681,
+      "type": "Intervention"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Baseline characteristics",
+      "standardized_name": "Baseline characteristics",
+      "category": "Header",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Age, years",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "numeric_median_iqr",
+          "median": 56.0,
+          "iqr_min": 48.0,
+          "iqr_max": 64.0,
+          "raw_string": "56 (48-64)"
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "numeric_median_iqr",
+          "median": 55.0,
+          "iqr_min": 48.0,
+          "iqr_max": 63.0,
+          "raw_string": "55 (48-63)"
+        }
+      ]
+    },
+    {
+      "original_label": "Menopausal status",
+      "standardized_name": "Menopausal status",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Premenopausal",
+      "standardized_name": "Menopausal status",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Menopausal status",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 283.0,
+          "percentage": 38.0,
+          "raw_string": "283 (38%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 289.0,
+          "percentage": 42.0,
+          "raw_string": "289 (42%)",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "Postmenopausal",
+      "standardized_name": "Menopausal status",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Menopausal status",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 449.0,
+          "percentage": 60.0,
+          "raw_string": "449 (60%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 384.0,
+          "percentage": 56.0,
+          "raw_string": "384 (56%)",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "Missing",
+      "standardized_name": "Menopausal status - Missing",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Menopausal status",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 2.0,
+          "raw_string": "12 (2%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 1.0,
+          "raw_string": "8 (1%)",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "Preoperative ultrasound axilla",
+      "standardized_name": "Preoperative ultrasound of axilla",
+      "category": "Clinical characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Done",
+      "standardized_name": "Preoperative ultrasound of axilla",
+      "category": "Clinical characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Preoperative ultrasound axilla",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 440.0,
+          "percentage": 59.0,
+          "raw_string": "440 (59%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 419.0,
+          "percentage": 62.0,
+          "raw_string": "419 (62%)",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "Not done",
+      "standardized_name": "Preoperative ultrasound of axilla",
+      "category": "Clinical characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Preoperative ultrasound axilla",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 304.0,
+          "percentage": 41.0,
+          "raw_string": "304 (41%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 262.0,
+          "percentage": 38.0,
+          "raw_string": "262 (38%)",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "Tumour on dominant side",
+      "standardized_name": "Tumor on dominant side",
+      "category": "Tumor characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Yes",
+      "standardized_name": "Tumor on dominant side",
+      "category": "Tumor characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumour on dominant side",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 377.0,
+          "percentage": 51.0,
+          "raw_string": "377 (51%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 329.0,
+          "percentage": 48.0,
+          "raw_string": "329 (48%)",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "No",
+      "standardized_name": "Tumor on dominant side",
+      "category": "Tumor characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumour on dominant side",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 352.0,
+          "percentage": 47.0,
+          "raw_string": "352 (47%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 336.0,
+          "percentage": 49.0,
+          "raw_string": "336 (49%)",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "Bilateral",
+      "standardized_name": "Tumor on dominant side",
+      "category": "Tumor characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumour on dominant side",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 1.0,
+          "raw_string": "8 (1%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "raw_string": "2 (<1%)",
+          "notes": "Percentage is less than 1%.",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "Missing",
+      "standardized_name": "Tumor on dominant side - Missing",
+      "category": "Tumor characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumour on dominant side",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 1.0,
+          "raw_string": "7 (1%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 14.0,
+          "percentage": 2.0,
+          "raw_string": "14 (2%)",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "Clinical tumour size",
+      "standardized_name": "Clinical tumor size",
+      "category": "Tumor characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Median (mm, IQR)",
+      "standardized_name": "Clinical tumor size",
+      "unit": "mm",
+      "category": "Tumor characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Clinical tumour size",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "numeric_median_iqr",
+          "median": 17.0,
+          "iqr_min": 13.0,
+          "iqr_max": 22.0,
+          "raw_string": "17 (13-22)"
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "numeric_median_iqr",
+          "median": 18.0,
+          "iqr_min": 13.0,
+          "iqr_max": 23.0,
+          "raw_string": "18 (13-23)"
+        }
+      ]
+    },
+    {
+      "original_label": "0-2 cm",
+      "standardized_name": "Clinical tumor size",
+      "category": "Tumor characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Clinical tumour size",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 612.0,
+          "percentage": 82.0,
+          "raw_string": "612 (82%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 533.0,
+          "percentage": 78.0,
+          "raw_string": "533 (78%)",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "2-5 cm",
+      "standardized_name": "Clinical tumor size",
+      "category": "Tumor characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Clinical tumour size",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 132.0,
+          "percentage": 18.0,
+          "raw_string": "132 (18%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 143.0,
+          "percentage": 21.0,
+          "raw_string": "143 (21%)",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": ">5 cm",
+      "standardized_name": "Clinical tumor size",
+      "category": "Tumor characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Clinical tumour size",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0 (0%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "raw_string": "1 (<1%)",
+          "notes": "Percentage is less than 1%.",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "Missing",
+      "standardized_name": "Clinical tumor size - Missing",
+      "category": "Tumor characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Clinical tumour size",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0 (0%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 1.0,
+          "raw_string": "4 (1%)",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "Tumour type",
+      "standardized_name": "Tumor type",
+      "category": "Tumor characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Infiltrating ductal",
+      "standardized_name": "Tumor type",
+      "category": "Tumor characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumour type",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 563.0,
+          "percentage": 76.0,
+          "raw_string": "563 (76%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 515.0,
+          "percentage": 76.0,
+          "raw_string": "515 (76%)",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "Infiltrating lobular",
+      "standardized_name": "Tumor type",
+      "category": "Tumor characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumour type",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 100.0,
+          "percentage": 13.0,
+          "raw_string": "100 (13%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 99.0,
+          "percentage": 15.0,
+          "raw_string": "99 (15%)",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "Other",
+      "standardized_name": "Tumor type",
+      "category": "Tumor characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumour type",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 81.0,
+          "percentage": 11.0,
+          "raw_string": "81 (11%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 66.0,
+          "percentage": 10.0,
+          "raw_string": "66 (10%)",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "Missing",
+      "standardized_name": "Tumor type - Missing",
+      "category": "Tumor characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumour type",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0 (0%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "raw_string": "1 (<1%)",
+          "notes": "Percentage is less than 1%.",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "Grade",
+      "standardized_name": "Tumor grade",
+      "category": "Tumor characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "I",
+      "standardized_name": "Tumor grade",
+      "category": "Tumor characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Grade",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 179.0,
+          "percentage": 24.0,
+          "raw_string": "179 (24%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 154.0,
+          "percentage": 23.0,
+          "raw_string": "154 (23%)",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "II",
+      "standardized_name": "Tumor grade",
+      "category": "Tumor characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Grade",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 356.0,
+          "percentage": 48.0,
+          "raw_string": "356 (48%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 311.0,
+          "percentage": 46.0,
+          "raw_string": "311 (46%)",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "III",
+      "standardized_name": "Tumor grade",
+      "category": "Tumor characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Grade",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 192.0,
+          "percentage": 26.0,
+          "raw_string": "192 (26%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 200.0,
+          "percentage": 29.0,
+          "raw_string": "200 (29%)",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "Missing",
+      "standardized_name": "Tumor grade - Missing",
+      "category": "Tumor characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Grade",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 17.0,
+          "percentage": 2.0,
+          "raw_string": "17 (2%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 2.0,
+          "raw_string": "16 (2%)",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "Type of breast surgery",
+      "standardized_name": "Type of breast surgery",
+      "category": "Treatment",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Breast-conserving surgery",
+      "standardized_name": "Type of breast surgery",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Type of breast surgery",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 609.0,
+          "percentage": 82.0,
+          "raw_string": "609 (82%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 557.0,
+          "percentage": 82.0,
+          "raw_string": "557 (82%)",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "Mastectomy",
+      "standardized_name": "Type of breast surgery",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Type of breast surgery",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 127.0,
+          "percentage": 17.0,
+          "raw_string": "127 (17%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 121.0,
+          "percentage": 18.0,
+          "raw_string": "121 (18%)",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "Missing",
+      "standardized_name": "Type of breast surgery - Missing",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Type of breast surgery",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 1.0,
+          "raw_string": "8 (1%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "raw_string": "3 (<1%)",
+          "notes": "Percentage is less than 1%.",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "Adjuvant radiotherapy",
+      "standardized_name": "Adjuvant radiotherapy",
+      "category": "Treatment",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Breast",
+      "standardized_name": "Adjuvant radiotherapy to breast",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Adjuvant radiotherapy",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 597.0,
+          "percentage": 80.0,
+          "raw_string": "597 (80%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 546.0,
+          "percentage": 80.0,
+          "raw_string": "546 (80%)",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "Chest wall",
+      "standardized_name": "Adjuvant radiotherapy to chest wall",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Adjuvant radiotherapy",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 34.0,
+          "percentage": 5.0,
+          "raw_string": "34 (5%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 51.0,
+          "percentage": 7.0,
+          "raw_string": "51 (7%)",
+          "n_for_value": 681
+        }
+      ]
+    },
+    {
+      "original_label": "Internal mammary chain",
+      "standardized_name": "Adjuvant radiotherapy to internal mammary chain",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Adjuvant radiotherapy",
+      "group_data": [
+        {
+          "group_name": "Axillary lymph node dissection",
+          "data_type": "categorical_count_percentage",
+          "count": 72.0,
+          "percentage": 10.0,
+          "raw_string": "72 (10%)",
+          "n_for_value": 744
+        },
+        {
+          "group_name": "Axillary radiotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 65.0,
+          "percentage": 10.0,
+          "raw_string": "65 (10%)",
+          "n_for_value": 681
+        }
+      ]
+    }
+  ]
+}

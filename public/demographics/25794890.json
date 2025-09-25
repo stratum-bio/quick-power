@@ -1,0 +1,1167 @@
+{
+  "study_id": "djv064",
+  "study_title": "Timing of Adjuvant Surgical Oophorectomy in the Menstrual Cycle and Disease-Free and Overall Survival in Premenopausal Women With Operable Breast Cancer",
+  "table_name": "Table 1",
+  "table_title": "Frequencies and column percentages of patient and disease characteristics by assigned group*",
+  "description": "Baseline characteristics of patients in a clinical trial comparing scheduled vs immediate surgical oophorectomy for operable breast cancer. Data is presented for three groups: scheduled surgery (A), immediate surgery (B), and nonrandomized immediate surgery (C).",
+  "footnotes": [
+    "* ER = estrogen receptor; HER2 = human epidermal growth factor receptor 2 (ERBB2); PR = progesterone receptor."
+  ],
+  "groups": [
+    {
+      "name": "Scheduled (A)",
+      "n": 244
+    },
+    {
+      "name": "Immediate (B)",
+      "n": 255
+    },
+    {
+      "name": "Nonrandomized (C)",
+      "n": 230
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age, y",
+      "standardized_name": "age",
+      "unit": "years",
+      "category": "Demographics",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "< 44",
+      "standardized_name": "age_less_than_44",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, y",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 135.0,
+          "percentage": 55.3,
+          "raw_string": "135 (55.3)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 140.0,
+          "percentage": 54.9,
+          "raw_string": "140 (54.9)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 131.0,
+          "percentage": 57.0,
+          "raw_string": "131 (57.0)"
+        }
+      ]
+    },
+    {
+      "original_label": "≥ 44",
+      "standardized_name": "age_greater_or_equal_44",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, y",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 109.0,
+          "percentage": 44.7,
+          "raw_string": "109 (44.7)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 115.0,
+          "percentage": 45.1,
+          "raw_string": "115 (45.1)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 99.0,
+          "percentage": 43.0,
+          "raw_string": "99 (43.0)"
+        }
+      ]
+    },
+    {
+      "original_label": "Core biopsy ER hormone receptor assay results",
+      "standardized_name": "core_biopsy_estrogen_receptor_status",
+      "category": "Disease Characteristics",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Positive",
+      "standardized_name": "core_biopsy_estrogen_receptor_status_positive",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Core biopsy ER hormone receptor assay results",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 226.0,
+          "percentage": 93.4,
+          "raw_string": "226 (93.4)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 235.0,
+          "percentage": 92.5,
+          "raw_string": "235 (92.5)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 217.0,
+          "percentage": 94.3,
+          "raw_string": "217 (94.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Negative",
+      "standardized_name": "core_biopsy_estrogen_receptor_status_negative",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Core biopsy ER hormone receptor assay results",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 6.6,
+          "raw_string": "16 (6.6)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 19.0,
+          "percentage": 7.5,
+          "raw_string": "19 (7.5)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 13.0,
+          "percentage": 5.7,
+          "raw_string": "13 (5.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "Mastectomy ER results",
+      "standardized_name": "mastectomy_estrogen_receptor_status",
+      "category": "Disease Characteristics",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Positive",
+      "standardized_name": "mastectomy_estrogen_receptor_status_positive",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Mastectomy ER results",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 176.0,
+          "percentage": 93.6,
+          "raw_string": "176 (93.6)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 188.0,
+          "percentage": 91.7,
+          "raw_string": "188 (91.7)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 174.0,
+          "percentage": 94.1,
+          "raw_string": "174 (94.1)"
+        }
+      ]
+    },
+    {
+      "original_label": "Negative",
+      "standardized_name": "mastectomy_estrogen_receptor_status_negative",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Mastectomy ER results",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 6.4,
+          "raw_string": "12 (6.4)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 17.0,
+          "percentage": 8.3,
+          "raw_string": "17 (8.3)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 5.9,
+          "raw_string": "11 (5.9)"
+        }
+      ]
+    },
+    {
+      "original_label": "Core biopsy PR hormone receptor assay results",
+      "standardized_name": "core_biopsy_progesterone_receptor_status",
+      "category": "Disease Characteristics",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Positive",
+      "standardized_name": "core_biopsy_progesterone_receptor_status_positive",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Core biopsy PR hormone receptor assay results",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 218.0,
+          "percentage": 89.7,
+          "raw_string": "218 (89.7)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 234.0,
+          "percentage": 92.1,
+          "raw_string": "234 (92.1)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 219.0,
+          "percentage": 95.2,
+          "raw_string": "219 (95.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Negative",
+      "standardized_name": "core_biopsy_progesterone_receptor_status_negative",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Core biopsy PR hormone receptor assay results",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 25.0,
+          "percentage": 10.3,
+          "raw_string": "25 (10.3)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 20.0,
+          "percentage": 7.9,
+          "raw_string": "20 (7.9)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 4.8,
+          "raw_string": "11 (4.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "Mastectomy PR results",
+      "standardized_name": "mastectomy_progesterone_receptor_status",
+      "category": "Disease Characteristics",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Positive",
+      "standardized_name": "mastectomy_progesterone_receptor_status_positive",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Mastectomy PR results",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 163.0,
+          "percentage": 86.7,
+          "raw_string": "163 (86.7)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 171.0,
+          "percentage": 83.4,
+          "raw_string": "171 (83.4)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 165.0,
+          "percentage": 88.2,
+          "raw_string": "165 (88.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Negative",
+      "standardized_name": "mastectomy_progesterone_receptor_status_negative",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Mastectomy PR results",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 25.0,
+          "percentage": 13.3,
+          "raw_string": "25 (13.3)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 34.0,
+          "percentage": 16.6,
+          "raw_string": "34 (16.6)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 22.0,
+          "percentage": 11.8,
+          "raw_string": "22 (11.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "Mastectomy HER2 result (Herceptest)",
+      "standardized_name": "mastectomy_her2_status",
+      "category": "Disease Characteristics",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Positive",
+      "standardized_name": "mastectomy_her2_status_positive",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Mastectomy HER2 result (Herceptest)",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 41.0,
+          "percentage": 21.9,
+          "raw_string": "41 (21.9)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 45.0,
+          "percentage": 22.0,
+          "raw_string": "45 (22.0)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 32.0,
+          "percentage": 17.3,
+          "raw_string": "32 (17.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Negative",
+      "standardized_name": "mastectomy_her2_status_negative",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Mastectomy HER2 result (Herceptest)",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 146.0,
+          "percentage": 78.1,
+          "raw_string": "146 (78.1)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 160.0,
+          "percentage": 78.0,
+          "raw_string": "160 (78.0)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 153.0,
+          "percentage": 82.7,
+          "raw_string": "153 (82.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "Combined site and reference pathologist histologic grade",
+      "standardized_name": "histologic_grade",
+      "category": "Disease Characteristics",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "histologic_grade_1",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Combined site and reference pathologist histologic grade",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 39.0,
+          "percentage": 18.8,
+          "raw_string": "39 (18.8)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 42.0,
+          "percentage": 18.8,
+          "raw_string": "42 (18.8)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 35.0,
+          "percentage": 16.7,
+          "raw_string": "35 (16.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "2",
+      "standardized_name": "histologic_grade_2",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Combined site and reference pathologist histologic grade",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 117.0,
+          "percentage": 56.3,
+          "raw_string": "117 (56.3)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 126.0,
+          "percentage": 56.5,
+          "raw_string": "126 (56.5)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 133.0,
+          "percentage": 63.6,
+          "raw_string": "133 (63.6)"
+        }
+      ]
+    },
+    {
+      "original_label": "3",
+      "standardized_name": "histologic_grade_3",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Combined site and reference pathologist histologic grade",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 52.0,
+          "percentage": 25.0,
+          "raw_string": "52 (25.0)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 55.0,
+          "percentage": 24.7,
+          "raw_string": "55 (24.7)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 41.0,
+          "percentage": 19.6,
+          "raw_string": "41 (19.6)"
+        }
+      ]
+    },
+    {
+      "original_label": "Surgical treatment received in protocol prescribed time window",
+      "standardized_name": "protocol_adherence_surgical_timing",
+      "category": "Treatment",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Received in window",
+      "standardized_name": "protocol_adherence_surgical_timing_in_window",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Surgical treatment received in protocol prescribed time window",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 223.0,
+          "percentage": 91.4,
+          "raw_string": "223 (91.4)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 244.0,
+          "percentage": 95.7,
+          "raw_string": "244 (95.7)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 217.0,
+          "percentage": 94.3,
+          "raw_string": "217 (94.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Received outside of window",
+      "standardized_name": "protocol_adherence_surgical_timing_outside_window",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Surgical treatment received in protocol prescribed time window",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 15.0,
+          "percentage": 6.1,
+          "raw_string": "15 (6.1)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 10.0,
+          "percentage": 3.9,
+          "raw_string": "10 (3.9)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 4.8,
+          "raw_string": "11 (4.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "No surgery received",
+      "standardized_name": "protocol_adherence_no_surgery",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Surgical treatment received in protocol prescribed time window",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 2.5,
+          "raw_string": "6 (2.5)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.4,
+          "raw_string": "1 (0.4)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 0.9,
+          "raw_string": "2 (0.9)"
+        }
+      ]
+    },
+    {
+      "original_label": "Pathological stage",
+      "standardized_name": "pathological_stage",
+      "category": "Disease Characteristics",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "I-II",
+      "standardized_name": "pathological_stage_1_2",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Pathological stage",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 136.0,
+          "percentage": 56.2,
+          "raw_string": "136 (56.2)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 162.0,
+          "percentage": 63.8,
+          "raw_string": "162 (63.8)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 143.0,
+          "percentage": 62.2,
+          "raw_string": "143 (62.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "III-IV",
+      "standardized_name": "pathological_stage_3_4",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Pathological stage",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 106.0,
+          "percentage": 43.8,
+          "raw_string": "106 (43.8)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 92.0,
+          "percentage": 36.2,
+          "raw_string": "92 (36.2)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 87.0,
+          "percentage": 37.8,
+          "raw_string": "87 (37.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "Pathologic tumor size, cm",
+      "standardized_name": "pathologic_tumor_size",
+      "unit": "cm",
+      "category": "Disease Characteristics",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "numeric_mean_range",
+          "mean_value": 4.5,
+          "range_min": 1.0,
+          "range_max": 22.0,
+          "raw_string": "4.5 (2.8) (1.0 - 22.0)",
+          "notes": "Value represents Mean (SD) (range)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "numeric_mean_range",
+          "mean_value": 4.7,
+          "range_min": 0.8,
+          "range_max": 20.3,
+          "raw_string": "4.7 (3.2) (0.8-20.3)",
+          "notes": "Value represents Mean (SD) (range)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "numeric_mean_range",
+          "mean_value": 4.1,
+          "range_min": 0.8,
+          "range_max": 15.0,
+          "raw_string": "4.1 (2.3) (0.8-15.0)",
+          "notes": "Value represents Mean (SD) (range)"
+        }
+      ]
+    },
+    {
+      "original_label": "Number of positive axillary nodes",
+      "standardized_name": "positive_axillary_nodes_count",
+      "category": "Disease Characteristics",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "None",
+      "standardized_name": "positive_axillary_nodes_none",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of positive axillary nodes",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 96.0,
+          "percentage": 40.5,
+          "raw_string": "96 (40.5)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 111.0,
+          "percentage": 43.7,
+          "raw_string": "111 (43.7)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 103.0,
+          "percentage": 45.4,
+          "raw_string": "103 (45.4)"
+        }
+      ]
+    },
+    {
+      "original_label": "1-3",
+      "standardized_name": "positive_axillary_nodes_1_to_3",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of positive axillary nodes",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 60.0,
+          "percentage": 25.3,
+          "raw_string": "60 (25.3)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 73.0,
+          "percentage": 28.7,
+          "raw_string": "73 (28.7)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 56.0,
+          "percentage": 24.7,
+          "raw_string": "56 (24.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "4+",
+      "standardized_name": "positive_axillary_nodes_4_or_more",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of positive axillary nodes",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 81.0,
+          "percentage": 34.2,
+          "raw_string": "81 (34.2)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 70.0,
+          "percentage": 27.6,
+          "raw_string": "70 (27.6)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 68.0,
+          "percentage": 30.0,
+          "raw_string": "68 (30.0)"
+        }
+      ]
+    },
+    {
+      "original_label": "Adjuvant radiotherapy given after surgical mastectomy",
+      "standardized_name": "adjuvant_radiotherapy_status",
+      "category": "Treatment",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "No",
+      "standardized_name": "adjuvant_radiotherapy_no",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Adjuvant radiotherapy given after surgical mastectomy",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 146.0,
+          "percentage": 60.1,
+          "raw_string": "146 (60.1)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 154.0,
+          "percentage": 60.9,
+          "raw_string": "154 (60.9)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 139.0,
+          "percentage": 60.4,
+          "raw_string": "139 (60.4)"
+        }
+      ]
+    },
+    {
+      "original_label": "Yes",
+      "standardized_name": "adjuvant_radiotherapy_yes",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Adjuvant radiotherapy given after surgical mastectomy",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 97.0,
+          "percentage": 39.9,
+          "raw_string": "97 (39.9)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 99.0,
+          "percentage": 39.1,
+          "raw_string": "99 (39.1)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 91.0,
+          "percentage": 39.6,
+          "raw_string": "91 (39.6)"
+        }
+      ]
+    },
+    {
+      "original_label": "Progesterone level on day of surgery, ng/mL",
+      "standardized_name": "progesterone_level_at_surgery",
+      "unit": "ng/mL",
+      "category": "Biomarkers",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "<2",
+      "standardized_name": "progesterone_level_less_than_2",
+      "category": "Biomarkers",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Progesterone level on day of surgery, ng/mL",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 75.0,
+          "percentage": 34.1,
+          "raw_string": "75 (34.1)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 158.0,
+          "percentage": 66.7,
+          "raw_string": "158 (66.7)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 74.0,
+          "percentage": 34.4,
+          "raw_string": "74 (34.4)"
+        }
+      ]
+    },
+    {
+      "original_label": "2- <5",
+      "standardized_name": "progesterone_level_2_to_less_than_5",
+      "category": "Biomarkers",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Progesterone level on day of surgery, ng/mL",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 27.0,
+          "percentage": 12.3,
+          "raw_string": "27 (12.3)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 22.0,
+          "percentage": 9.3,
+          "raw_string": "22 (9.3)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 24.0,
+          "percentage": 11.2,
+          "raw_string": "24 (11.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "≥5",
+      "standardized_name": "progesterone_level_greater_or_equal_5",
+      "category": "Biomarkers",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Progesterone level on day of surgery, ng/mL",
+      "group_data": [
+        {
+          "group_name": "Scheduled (A)",
+          "data_type": "categorical_count_percentage",
+          "count": 118.0,
+          "percentage": 53.6,
+          "raw_string": "118 (53.6)"
+        },
+        {
+          "group_name": "Immediate (B)",
+          "data_type": "categorical_count_percentage",
+          "count": 57.0,
+          "percentage": 24.1,
+          "raw_string": "57 (24.1)"
+        },
+        {
+          "group_name": "Nonrandomized (C)",
+          "data_type": "categorical_count_percentage",
+          "count": 117.0,
+          "percentage": 54.4,
+          "raw_string": "117 (54.4)"
+        }
+      ]
+    }
+  ]
+}

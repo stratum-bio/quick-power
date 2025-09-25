@@ -1,0 +1,1610 @@
+{
+  "study_id": "NCT01642004",
+  "study_title": "Nivolumab versus Docetaxel in Advanced Squamous-Cell Non-Small-Cell Lung Cancer",
+  "table_name": "Table 1",
+  "table_title": "Baseline Characteristics, Stratification Factors, and Prior Therapy",
+  "description": "Baseline demographic and clinical characteristics of patients in a randomized, open-label, international, phase 3 study comparing nivolumab with docetaxel in patients with advanced squamous-cell non-small-cell lung cancer (NSCLC).",
+  "footnotes": [
+    "Data from all patients who underwent randomization are included. There were no significant differences between the study groups at baseline.",
+    "Race was self-reported.",
+    "Eastern Cooperative Oncology Group (ECOG) performance-status scores range from 0 to 5, with higher numbers indicating greater disability; a score of 0 indicates no symptoms, and 1 mild symptoms.",
+    "The countries in the rest-of-the-world geographic region were Argentina, Australia, Chile, Mexico, and Peru.",
+    "Other systemic cancer therapy includes chemotherapy as part of prior first-line therapy.",
+    "All but one patient received only one line of prior cancer therapy, which could include multiple agents or a switch of agents within the first-line regimen."
+  ],
+  "groups": [
+    {
+      "name": "Nivolumab",
+      "n": 135,
+      "type": "Intervention"
+    },
+    {
+      "name": "Docetaxel",
+      "n": 137,
+      "type": "Active Comparator"
+    },
+    {
+      "name": "Total",
+      "n": 272,
+      "type": "Total"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age — yr",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age — yr",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "numeric_single",
+          "value": 62.0,
+          "raw_string": "62"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "numeric_single",
+          "value": 64.0,
+          "raw_string": "64"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "numeric_single",
+          "value": 63.0,
+          "raw_string": "63"
+        }
+      ]
+    },
+    {
+      "original_label": "Range",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age — yr",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "numeric_mean_range",
+          "range_min": 39.0,
+          "range_max": 85.0,
+          "raw_string": "39–85"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "numeric_mean_range",
+          "range_min": 42.0,
+          "range_max": 84.0,
+          "raw_string": "42–84"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "numeric_mean_range",
+          "range_min": 39.0,
+          "range_max": 85.0,
+          "raw_string": "39–85"
+        }
+      ]
+    },
+    {
+      "original_label": "Age category — no. (%)",
+      "standardized_name": "Age Category",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "<65 yr",
+      "standardized_name": "Age <65 years",
+      "unit": "participants",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age category — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 79.0,
+          "percentage": 59.0,
+          "raw_string": "79 (59)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 73.0,
+          "percentage": 53.0,
+          "raw_string": "73 (53)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 152.0,
+          "percentage": 56.0,
+          "raw_string": "152 (56)"
+        }
+      ]
+    },
+    {
+      "original_label": "≥65 to <75 yr",
+      "standardized_name": "Age 65 to <75 years",
+      "unit": "participants",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age category — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 45.0,
+          "percentage": 33.0,
+          "raw_string": "45 (33)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 46.0,
+          "percentage": 34.0,
+          "raw_string": "46 (34)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 91.0,
+          "percentage": 33.0,
+          "raw_string": "91 (33)"
+        }
+      ]
+    },
+    {
+      "original_label": "≥75 yr",
+      "standardized_name": "Age >=75 years",
+      "unit": "participants",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age category — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 8.0,
+          "raw_string": "11 (8)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 18.0,
+          "percentage": 13.0,
+          "raw_string": "18 (13)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 29.0,
+          "percentage": 11.0,
+          "raw_string": "29 (11)"
+        }
+      ]
+    },
+    {
+      "original_label": "Sex — no. (%)",
+      "standardized_name": "Sex",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Male",
+      "standardized_name": "Sex",
+      "unit": "participants",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sex — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 111.0,
+          "percentage": 82.0,
+          "raw_string": "111 (82)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 97.0,
+          "percentage": 71.0,
+          "raw_string": "97 (71)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 208.0,
+          "percentage": 76.0,
+          "raw_string": "208 (76)"
+        }
+      ]
+    },
+    {
+      "original_label": "Female",
+      "standardized_name": "Sex",
+      "unit": "participants",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sex — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 24.0,
+          "percentage": 18.0,
+          "raw_string": "24 (18)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 40.0,
+          "percentage": 29.0,
+          "raw_string": "40 (29)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 64.0,
+          "percentage": 24.0,
+          "raw_string": "64 (24)"
+        }
+      ]
+    },
+    {
+      "original_label": "Race — no. (%)",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "White",
+      "standardized_name": "Race",
+      "unit": "participants",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 122.0,
+          "percentage": 90.0,
+          "raw_string": "122 (90)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 130.0,
+          "percentage": 95.0,
+          "raw_string": "130 (95)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 252.0,
+          "percentage": 93.0,
+          "raw_string": "252 (93)"
+        }
+      ]
+    },
+    {
+      "original_label": "Black",
+      "standardized_name": "Race",
+      "unit": "participants",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 4.0,
+          "raw_string": "6 (4)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 1.0,
+          "raw_string": "2 (1)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 3.0,
+          "raw_string": "8 (3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Asian",
+      "standardized_name": "Race",
+      "unit": "participants",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 3.0,
+          "raw_string": "4 (3)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 1.0,
+          "raw_string": "2 (1)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 2.0,
+          "raw_string": "6 (2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Other",
+      "standardized_name": "Race",
+      "unit": "participants",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 1.0,
+          "raw_string": "1 (1)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 1.0,
+          "raw_string": "2 (1)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 1.0,
+          "raw_string": "3 (1)"
+        }
+      ]
+    },
+    {
+      "original_label": "Not reported",
+      "standardized_name": "Race",
+      "unit": "participants",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 1.0,
+          "raw_string": "2 (1)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 1.0,
+          "raw_string": "1 (1)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 1.0,
+          "raw_string": "3 (1)"
+        }
+      ]
+    },
+    {
+      "original_label": "Disease stage — no. (%)",
+      "standardized_name": "Disease Stage",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "IIIB",
+      "standardized_name": "Disease Stage",
+      "unit": "participants",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Disease stage — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 29.0,
+          "percentage": 21.0,
+          "raw_string": "29 (21)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 24.0,
+          "percentage": 18.0,
+          "raw_string": "24 (18)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 53.0,
+          "percentage": 19.0,
+          "raw_string": "53 (19)"
+        }
+      ]
+    },
+    {
+      "original_label": "IV",
+      "standardized_name": "Disease Stage",
+      "unit": "participants",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Disease stage — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 105.0,
+          "percentage": 78.0,
+          "raw_string": "105 (78)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 112.0,
+          "percentage": 82.0,
+          "raw_string": "112 (82)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 217.0,
+          "percentage": 80.0,
+          "raw_string": "217 (80)"
+        }
+      ]
+    },
+    {
+      "original_label": "Not reported",
+      "standardized_name": "Disease Stage",
+      "unit": "participants",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Disease stage — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 1.0,
+          "raw_string": "1 (1)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 1.0,
+          "raw_string": "1 (1)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 1.0,
+          "raw_string": "2 (1)"
+        }
+      ]
+    },
+    {
+      "original_label": "ECOG performance-status score — no. (%)",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "0",
+      "standardized_name": "ECOG Performance Status",
+      "unit": "participants",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG performance-status score — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 27.0,
+          "percentage": 20.0,
+          "raw_string": "27 (20)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 37.0,
+          "percentage": 27.0,
+          "raw_string": "37 (27)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 64.0,
+          "percentage": 24.0,
+          "raw_string": "64 (24)"
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "ECOG Performance Status",
+      "unit": "participants",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG performance-status score — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 106.0,
+          "percentage": 79.0,
+          "raw_string": "106 (79)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 100.0,
+          "percentage": 73.0,
+          "raw_string": "100 (73)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 206.0,
+          "percentage": 76.0,
+          "raw_string": "206 (76)"
+        }
+      ]
+    },
+    {
+      "original_label": "Not reported",
+      "standardized_name": "ECOG Performance Status",
+      "unit": "participants",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG performance-status score — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 1.0,
+          "raw_string": "2 (1)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 1.0,
+          "raw_string": "2 (1)"
+        }
+      ]
+    },
+    {
+      "original_label": "Central nervous system metastasis — no. (%)",
+      "standardized_name": "CNS Metastasis",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Yes",
+      "standardized_name": "CNS Metastasis",
+      "unit": "participants",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Central nervous system metastasis — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 9.0,
+          "percentage": 7.0,
+          "raw_string": "9 (7)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 6.0,
+          "raw_string": "8 (6)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 17.0,
+          "percentage": 6.0,
+          "raw_string": "17 (6)"
+        }
+      ]
+    },
+    {
+      "original_label": "No",
+      "standardized_name": "CNS Metastasis",
+      "unit": "participants",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Central nervous system metastasis — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 126.0,
+          "percentage": 93.0,
+          "raw_string": "126 (93)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 129.0,
+          "percentage": 94.0,
+          "raw_string": "129 (94)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 255.0,
+          "percentage": 94.0,
+          "raw_string": "255 (94)"
+        }
+      ]
+    },
+    {
+      "original_label": "Smoking status — no. (%)",
+      "standardized_name": "Smoking Status",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Current or former smoker",
+      "standardized_name": "Smoking Status",
+      "unit": "participants",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Smoking status — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 121.0,
+          "percentage": 90.0,
+          "raw_string": "121 (90)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 129.0,
+          "percentage": 94.0,
+          "raw_string": "129 (94)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 250.0,
+          "percentage": 92.0,
+          "raw_string": "250 (92)"
+        }
+      ]
+    },
+    {
+      "original_label": "Never smoked",
+      "standardized_name": "Smoking Status",
+      "unit": "participants",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Smoking status — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 10.0,
+          "percentage": 7.0,
+          "raw_string": "10 (7)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 5.0,
+          "raw_string": "7 (5)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 17.0,
+          "percentage": 6.0,
+          "raw_string": "17 (6)"
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "Smoking Status",
+      "unit": "participants",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Smoking status — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 3.0,
+          "raw_string": "4 (3)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 1.0,
+          "raw_string": "1 (1)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 2.0,
+          "raw_string": "5 (2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Geographic region — no. (%)",
+      "standardized_name": "Geographic Region",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "United States or Canada",
+      "standardized_name": "Geographic Region",
+      "unit": "participants",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Geographic region — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 43.0,
+          "percentage": 32.0,
+          "raw_string": "43 (32)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 43.0,
+          "percentage": 31.0,
+          "raw_string": "43 (31)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 86.0,
+          "percentage": 32.0,
+          "raw_string": "86 (32)"
+        }
+      ]
+    },
+    {
+      "original_label": "Europe",
+      "standardized_name": "Geographic Region",
+      "unit": "participants",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Geographic region — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 77.0,
+          "percentage": 57.0,
+          "raw_string": "77 (57)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 78.0,
+          "percentage": 57.0,
+          "raw_string": "78 (57)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 155.0,
+          "percentage": 57.0,
+          "raw_string": "155 (57)"
+        }
+      ]
+    },
+    {
+      "original_label": "Rest of world",
+      "standardized_name": "Geographic Region",
+      "unit": "participants",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Geographic region — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 15.0,
+          "percentage": 11.0,
+          "raw_string": "15 (11)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 12.0,
+          "raw_string": "16 (12)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 31.0,
+          "percentage": 11.0,
+          "raw_string": "31 (11)"
+        }
+      ]
+    },
+    {
+      "original_label": "Other systemic cancer therapy — no. (%)",
+      "standardized_name": "Prior Systemic Cancer Therapy",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Bevacizumab",
+      "standardized_name": "Prior Bevacizumab",
+      "unit": "participants",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Other systemic cancer therapy — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 1.0,
+          "raw_string": "1 (1)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 1.0,
+          "raw_string": "1 (1)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 1.0,
+          "raw_string": "2 (1)"
+        }
+      ]
+    },
+    {
+      "original_label": "Cetuximab",
+      "standardized_name": "Prior Cetuximab",
+      "unit": "participants",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Other systemic cancer therapy — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 1.0,
+          "raw_string": "2 (1)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 1.0,
+          "raw_string": "2 (1)"
+        }
+      ]
+    },
+    {
+      "original_label": "Etoposide",
+      "standardized_name": "Prior Etoposide",
+      "unit": "participants",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Other systemic cancer therapy — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 17.0,
+          "percentage": 13.0,
+          "raw_string": "17 (13)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 8.0,
+          "raw_string": "11 (8)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 28.0,
+          "percentage": 10.0,
+          "raw_string": "28 (10)"
+        }
+      ]
+    },
+    {
+      "original_label": "Fluorouracil",
+      "standardized_name": "Prior Fluorouracil",
+      "unit": "participants",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Other systemic cancer therapy — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 1.0,
+          "raw_string": "1 (1)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "raw_string": "1 (<1)",
+          "notes": "Percentage is <1%"
+        }
+      ]
+    },
+    {
+      "original_label": "Gemcitabine",
+      "standardized_name": "Prior Gemcitabine",
+      "unit": "participants",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Other systemic cancer therapy — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 60.0,
+          "percentage": 44.0,
+          "raw_string": "60 (44)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 71.0,
+          "percentage": 52.0,
+          "raw_string": "71 (52)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 131.0,
+          "percentage": 48.0,
+          "raw_string": "131 (48)"
+        }
+      ]
+    },
+    {
+      "original_label": "Paclitaxel",
+      "standardized_name": "Prior Paclitaxel",
+      "unit": "participants",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Other systemic cancer therapy — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 46.0,
+          "percentage": 34.0,
+          "raw_string": "46 (34)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 46.0,
+          "percentage": 34.0,
+          "raw_string": "46 (34)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 92.0,
+          "percentage": 34.0,
+          "raw_string": "92 (34)"
+        }
+      ]
+    },
+    {
+      "original_label": "Pemetrexed",
+      "standardized_name": "Prior Pemetrexed",
+      "unit": "participants",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Other systemic cancer therapy — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 2.0,
+          "raw_string": "3 (2)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 2.0,
+          "raw_string": "3 (2)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 2.0,
+          "raw_string": "6 (2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Vinorelbine",
+      "standardized_name": "Prior Vinorelbine",
+      "unit": "participants",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Other systemic cancer therapy — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 20.0,
+          "percentage": 15.0,
+          "raw_string": "20 (15)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 24.0,
+          "percentage": 18.0,
+          "raw_string": "24 (18)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 44.0,
+          "percentage": 16.0,
+          "raw_string": "44 (16)"
+        }
+      ]
+    },
+    {
+      "original_label": "Best response to most recent prior systemic regimen, according to the investigator — no. (%)",
+      "standardized_name": "Best Response to Prior Systemic Regimen",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Complete or partial response",
+      "standardized_name": "Best Response to Prior Systemic Regimen",
+      "unit": "participants",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Best response to most recent prior systemic regimen, according to the investigator — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 48.0,
+          "percentage": 36.0,
+          "raw_string": "48 (36)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 43.0,
+          "percentage": 31.0,
+          "raw_string": "43 (31)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 91.0,
+          "percentage": 33.0,
+          "raw_string": "91 (33)"
+        }
+      ]
+    },
+    {
+      "original_label": "Stable disease",
+      "standardized_name": "Best Response to Prior Systemic Regimen",
+      "unit": "participants",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Best response to most recent prior systemic regimen, according to the investigator — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 33.0,
+          "percentage": 24.0,
+          "raw_string": "33 (24)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 47.0,
+          "percentage": 34.0,
+          "raw_string": "47 (34)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 80.0,
+          "percentage": 29.0,
+          "raw_string": "80 (29)"
+        }
+      ]
+    },
+    {
+      "original_label": "Progressive disease",
+      "standardized_name": "Best Response to Prior Systemic Regimen",
+      "unit": "participants",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Best response to most recent prior systemic regimen, according to the investigator — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 44.0,
+          "percentage": 33.0,
+          "raw_string": "44 (33)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 41.0,
+          "percentage": 30.0,
+          "raw_string": "41 (30)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 85.0,
+          "percentage": 31.0,
+          "raw_string": "85 (31)"
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown or not reported",
+      "standardized_name": "Best Response to Prior Systemic Regimen",
+      "unit": "participants",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Best response to most recent prior systemic regimen, according to the investigator — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 10.0,
+          "percentage": 7.0,
+          "raw_string": "10 (7)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 4.0,
+          "raw_string": "6 (4)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 6.0,
+          "raw_string": "16 (6)"
+        }
+      ]
+    },
+    {
+      "original_label": "Time from completion of most recent prior systemic regimen — no. (%)",
+      "standardized_name": "Time from Completion of Prior Systemic Regimen",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "<3 mo",
+      "standardized_name": "Time from Completion of Prior Systemic Regimen",
+      "unit": "participants",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time from completion of most recent prior systemic regimen — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 64.0,
+          "percentage": 47.0,
+          "raw_string": "64 (47)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 59.0,
+          "percentage": 43.0,
+          "raw_string": "59 (43)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 123.0,
+          "percentage": 45.0,
+          "raw_string": "123 (45)"
+        }
+      ]
+    },
+    {
+      "original_label": "3–6 mo",
+      "standardized_name": "Time from Completion of Prior Systemic Regimen",
+      "unit": "participants",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time from completion of most recent prior systemic regimen — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 35.0,
+          "percentage": 26.0,
+          "raw_string": "35 (26)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 40.0,
+          "percentage": 29.0,
+          "raw_string": "40 (29)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 75.0,
+          "percentage": 28.0,
+          "raw_string": "75 (28)"
+        }
+      ]
+    },
+    {
+      "original_label": ">6 mo",
+      "standardized_name": "Time from Completion of Prior Systemic Regimen",
+      "unit": "participants",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time from completion of most recent prior systemic regimen — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 35.0,
+          "percentage": 26.0,
+          "raw_string": "35 (26)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 37.0,
+          "percentage": 27.0,
+          "raw_string": "37 (27)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 72.0,
+          "percentage": 27.0,
+          "raw_string": "72 (27)"
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "Time from Completion of Prior Systemic Regimen",
+      "unit": "participants",
+      "category": "Prior Therapy",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time from completion of most recent prior systemic regimen — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Nivolumab",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 1.0,
+          "raw_string": "1 (1)"
+        },
+        {
+          "group_name": "Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 1.0,
+          "raw_string": "1 (1)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 1.0,
+          "raw_string": "2 (1)"
+        }
+      ]
+    }
+  ]
+}

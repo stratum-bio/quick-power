@@ -1,0 +1,814 @@
+{
+  "study_id": "ISRCTN36266738",
+  "study_title": "Adjuvant chemotherapy for rectal cancer patients treated with preoperative (chemo)radiotherapy and total mesorectal excision: a Dutch Colorectal Cancer Group (DCCG) randomized phase III trial",
+  "table_name": "Table 1",
+  "table_title": "Patient characteristics",
+  "description": "Baseline characteristics of patients enrolled in the PROCTOR-SCRIPT trial, comparing observation versus adjuvant chemotherapy for rectal cancer.",
+  "footnotes": [
+    "Data are presented as median ± SD or as n (%)."
+  ],
+  "groups": [
+    {
+      "name": "Total",
+      "n": 437,
+      "type": "Total"
+    },
+    {
+      "name": "Observation",
+      "n": 221,
+      "type": "Control"
+    },
+    {
+      "name": "Chemotherapy",
+      "n": 216,
+      "type": "Intervention"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age (years)",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "numeric_mean_sd",
+          "mean": 61.08,
+          "std_dev": 9.03,
+          "raw_string": "61.08 ± 9.03"
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "numeric_mean_sd",
+          "mean": 61.08,
+          "std_dev": 9.13,
+          "raw_string": "61.08 ± 9.13"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "numeric_mean_sd",
+          "mean": 61.13,
+          "std_dev": 8.94,
+          "raw_string": "61.13 ± 8.94"
+        }
+      ]
+    },
+    {
+      "original_label": "Gender",
+      "standardized_name": "Sex",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": "Gender"
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "header",
+          "raw_string": "Gender"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "header",
+          "raw_string": "Gender"
+        }
+      ]
+    },
+    {
+      "original_label": "Male",
+      "standardized_name": "Male",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sex",
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 270.0,
+          "percentage": 61.8,
+          "raw_string": "270 (61.8)",
+          "n_for_value": 437
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "categorical_count_percentage",
+          "count": 139.0,
+          "percentage": 62.9,
+          "raw_string": "139 (62.9)",
+          "n_for_value": 221
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 131.0,
+          "percentage": 60.6,
+          "raw_string": "131 (60.6)",
+          "n_for_value": 216
+        }
+      ]
+    },
+    {
+      "original_label": "Female",
+      "standardized_name": "Female",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sex",
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 167.0,
+          "percentage": 38.2,
+          "raw_string": "167 (38.2)",
+          "n_for_value": 437
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "categorical_count_percentage",
+          "count": 82.0,
+          "percentage": 37.1,
+          "raw_string": "82 (37.1)",
+          "n_for_value": 221
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 85.0,
+          "percentage": 39.4,
+          "raw_string": "85 (39.4)",
+          "n_for_value": 216
+        }
+      ]
+    },
+    {
+      "original_label": "Preoperative treatment",
+      "standardized_name": "Preoperative Treatment",
+      "category": "Treatment",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": "Preoperative treatment"
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "header",
+          "raw_string": "Preoperative treatment"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "header",
+          "raw_string": "Preoperative treatment"
+        }
+      ]
+    },
+    {
+      "original_label": "Radiotherapy",
+      "standardized_name": "Radiotherapy",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Preoperative Treatment",
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 376.0,
+          "percentage": 86.0,
+          "raw_string": "376 (86.0)",
+          "n_for_value": 437
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "categorical_count_percentage",
+          "count": 193.0,
+          "percentage": 87.3,
+          "raw_string": "193 (87.3)",
+          "n_for_value": 221
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 183.0,
+          "percentage": 84.7,
+          "raw_string": "183 (84.7)",
+          "n_for_value": 216
+        }
+      ]
+    },
+    {
+      "original_label": "Chemoradiotherapy",
+      "standardized_name": "Chemoradiotherapy",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Preoperative Treatment",
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 61.0,
+          "percentage": 14.0,
+          "raw_string": "61 (14.0)",
+          "n_for_value": 437
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "categorical_count_percentage",
+          "count": 28.0,
+          "percentage": 12.7,
+          "raw_string": "28 (12.7)",
+          "n_for_value": 221
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 33.0,
+          "percentage": 15.3,
+          "raw_string": "33 (15.3)",
+          "n_for_value": 216
+        }
+      ]
+    },
+    {
+      "original_label": "Type of resection",
+      "standardized_name": "Type of Resection",
+      "category": "Surgical Procedure",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": "Type of resection"
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "header",
+          "raw_string": "Type of resection"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "header",
+          "raw_string": "Type of resection"
+        }
+      ]
+    },
+    {
+      "original_label": "LAR",
+      "standardized_name": "Low Anterior Resection",
+      "category": "Surgical Procedure",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Type of Resection",
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 275.0,
+          "percentage": 62.9,
+          "raw_string": "275 (62.9)",
+          "n_for_value": 437
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "categorical_count_percentage",
+          "count": 142.0,
+          "percentage": 64.3,
+          "raw_string": "142 (64.3)",
+          "n_for_value": 221
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 133.0,
+          "percentage": 61.6,
+          "raw_string": "133 (61.6)",
+          "n_for_value": 216
+        }
+      ]
+    },
+    {
+      "original_label": "APR",
+      "standardized_name": "Abdominoperineal Resection",
+      "category": "Surgical Procedure",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Type of Resection",
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 146.0,
+          "percentage": 33.4,
+          "raw_string": "146 (33.4)",
+          "n_for_value": 437
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "categorical_count_percentage",
+          "count": 70.0,
+          "percentage": 31.7,
+          "raw_string": "70 (31.7)",
+          "n_for_value": 221
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 76.0,
+          "percentage": 35.2,
+          "raw_string": "76 (35.2)",
+          "n_for_value": 216
+        }
+      ]
+    },
+    {
+      "original_label": "Hartmann",
+      "standardized_name": "Hartmann's Procedure",
+      "category": "Surgical Procedure",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Type of Resection",
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 3.7,
+          "raw_string": "16 (3.7)",
+          "n_for_value": 437
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "categorical_count_percentage",
+          "count": 9.0,
+          "percentage": 4.1,
+          "raw_string": "9 (4.1)",
+          "n_for_value": 221
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 3.2,
+          "raw_string": "7 (3.2)",
+          "n_for_value": 216
+        }
+      ]
+    },
+    {
+      "original_label": "Tumour location from anal verge",
+      "standardized_name": "Tumor Location from Anal Verge",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": "Tumour location from anal verge"
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "header",
+          "raw_string": "Tumour location from anal verge"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "header",
+          "raw_string": "Tumour location from anal verge"
+        }
+      ]
+    },
+    {
+      "original_label": "<5 cm",
+      "standardized_name": "Tumor Location from Anal Verge",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor Location from Anal Verge",
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 113.0,
+          "percentage": 25.9,
+          "raw_string": "113 (25.9)",
+          "notes": "Category represents '<5 cm'"
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "categorical_count_percentage",
+          "count": 51.0,
+          "percentage": 23.1,
+          "raw_string": "51 (23.1)",
+          "notes": "Category represents '<5 cm'"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 62.0,
+          "percentage": 28.7,
+          "raw_string": "62 (28.7)",
+          "notes": "Category represents '<5 cm'"
+        }
+      ]
+    },
+    {
+      "original_label": "5-9.9 cm",
+      "standardized_name": "Tumor Location from Anal Verge",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor Location from Anal Verge",
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 139.0,
+          "percentage": 31.8,
+          "raw_string": "139 (31.8)",
+          "notes": "Category represents '5-9.9 cm'"
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "categorical_count_percentage",
+          "count": 75.0,
+          "percentage": 33.9,
+          "raw_string": "75 (33.9)",
+          "notes": "Category represents '5-9.9 cm'"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 64.0,
+          "percentage": 29.6,
+          "raw_string": "64 (29.6)",
+          "notes": "Category represents '5-9.9 cm'"
+        }
+      ]
+    },
+    {
+      "original_label": "≥10 cm",
+      "standardized_name": "Tumor Location from Anal Verge",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor Location from Anal Verge",
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 168.0,
+          "percentage": 38.4,
+          "raw_string": "168 (38.4)",
+          "notes": "Category represents '>=10 cm'"
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "categorical_count_percentage",
+          "count": 83.0,
+          "percentage": 37.6,
+          "raw_string": "83 (37.6)",
+          "notes": "Category represents '>=10 cm'"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 85.0,
+          "percentage": 39.4,
+          "raw_string": "85 (39.4)",
+          "notes": "Category represents '>=10 cm'"
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "Tumor Location from Anal Verge",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor Location from Anal Verge",
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 17.0,
+          "percentage": 3.9,
+          "raw_string": "17 (3.9)",
+          "notes": "Category represents 'Unknown'"
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 5.4,
+          "raw_string": "12 (5.4)",
+          "notes": "Category represents 'Unknown'"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 2.3,
+          "raw_string": "5 (2.3)",
+          "notes": "Category represents 'Unknown'"
+        }
+      ]
+    },
+    {
+      "original_label": "CRM",
+      "standardized_name": "Circumferential Resection Margin Status",
+      "category": "Pathology",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": "CRM"
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "header",
+          "raw_string": "CRM"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "header",
+          "raw_string": "CRM"
+        }
+      ]
+    },
+    {
+      "original_label": "Negative",
+      "standardized_name": "Negative Circumferential Resection Margin",
+      "category": "Pathology",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Circumferential Resection Margin Status",
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 409.0,
+          "percentage": 93.6,
+          "raw_string": "409 (93.6)",
+          "n_for_value": 437
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "categorical_count_percentage",
+          "count": 208.0,
+          "percentage": 94.1,
+          "raw_string": "208 (94.1)",
+          "n_for_value": 221
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 201.0,
+          "percentage": 93.1,
+          "raw_string": "201 (93.1)",
+          "n_for_value": 216
+        }
+      ]
+    },
+    {
+      "original_label": "Positive",
+      "standardized_name": "Positive Circumferential Resection Margin",
+      "category": "Pathology",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Circumferential Resection Margin Status",
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 19.0,
+          "percentage": 4.3,
+          "raw_string": "19 (4.3)",
+          "n_for_value": 437
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 3.6,
+          "raw_string": "8 (3.6)",
+          "n_for_value": 221
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 5.1,
+          "raw_string": "11 (5.1)",
+          "n_for_value": 216
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "Unknown Circumferential Resection Margin",
+      "category": "Pathology",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Circumferential Resection Margin Status",
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 9.0,
+          "percentage": 2.1,
+          "raw_string": "9 (2.1)",
+          "n_for_value": 437
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 2.3,
+          "raw_string": "5 (2.3)",
+          "n_for_value": 221
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 1.9,
+          "raw_string": "4 (1.9)",
+          "n_for_value": 216
+        }
+      ]
+    },
+    {
+      "original_label": "Residual tumour",
+      "standardized_name": "Residual Tumor Status",
+      "category": "Pathology",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": "Residual tumour"
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "header",
+          "raw_string": "Residual tumour"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "header",
+          "raw_string": "Residual tumour"
+        }
+      ]
+    },
+    {
+      "original_label": "R0",
+      "standardized_name": "R0 Resection",
+      "category": "Pathology",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Residual Tumor Status",
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 418.0,
+          "percentage": 95.7,
+          "raw_string": "418 (95.7)",
+          "n_for_value": 437
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "categorical_count_percentage",
+          "count": 213.0,
+          "percentage": 96.4,
+          "raw_string": "213 (96.4)",
+          "n_for_value": 221
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 205.0,
+          "percentage": 94.9,
+          "raw_string": "205 (94.9)",
+          "n_for_value": 216
+        }
+      ]
+    },
+    {
+      "original_label": "R1",
+      "standardized_name": "R1 Resection",
+      "category": "Pathology",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Residual Tumor Status",
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 19.0,
+          "percentage": 4.3,
+          "raw_string": "19 (4.3)",
+          "n_for_value": 437
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 3.6,
+          "raw_string": "8 (3.6)",
+          "n_for_value": 221
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 5.1,
+          "raw_string": "11 (5.1)",
+          "n_for_value": 216
+        }
+      ]
+    },
+    {
+      "original_label": "(y)pTNM",
+      "standardized_name": "Pathologic TNM Stage",
+      "category": "Staging",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": "(y)pTNM"
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "header",
+          "raw_string": "(y)pTNM"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "header",
+          "raw_string": "(y)pTNM"
+        }
+      ]
+    },
+    {
+      "original_label": "II",
+      "standardized_name": "Stage II",
+      "category": "Staging",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Pathologic TNM Stage",
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 71.0,
+          "percentage": 16.2,
+          "raw_string": "71 (16.2)",
+          "n_for_value": 437
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "categorical_count_percentage",
+          "count": 32.0,
+          "percentage": 14.5,
+          "raw_string": "32 (14.5)",
+          "n_for_value": 221
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 39.0,
+          "percentage": 18.1,
+          "raw_string": "39 (18.1)",
+          "n_for_value": 216
+        }
+      ]
+    },
+    {
+      "original_label": "III",
+      "standardized_name": "Stage III",
+      "category": "Staging",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Pathologic TNM Stage",
+      "group_data": [
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 366.0,
+          "percentage": 83.8,
+          "raw_string": "366 (83.8)",
+          "n_for_value": 437
+        },
+        {
+          "group_name": "Observation",
+          "data_type": "categorical_count_percentage",
+          "count": 189.0,
+          "percentage": 85.5,
+          "raw_string": "189 (85.5)",
+          "n_for_value": 221
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 177.0,
+          "percentage": 81.9,
+          "raw_string": "177 (81.9)",
+          "n_for_value": 216
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,666 @@
+{
+  "study_id": "NCT00938652",
+  "study_title": "Phase III Study of Iniparib Plus Gemcitabine and Carboplatin Versus Gemcitabine and Carboplatin in Patients With Metastatic Triple-Negative Breast Cancer",
+  "table_name": "Table 1",
+  "table_title": "Overall Demographic and Disease Characteristics (ITT population)",
+  "description": "Baseline patient demographic and disease characteristics for the intent-to-treat (ITT) population of a phase III clinical trial comparing Gemcitabine and Carboplatin with or without Iniparib.",
+  "footnotes": [
+    "Abbreviations: DFI, disease-free interval (time from first breast cancer treatment [surgery or neoadjuvant chemotherapy] to onset of metastatic disease); ECOG PS, Eastern Cooperative Oncology Group performance status; ITT, intention-to-treat.",
+    "*Data missing for 1 patient."
+  ],
+  "groups": [
+    {
+      "name": "Gemcitabine and Carboplatin",
+      "n": 258,
+      "type": "control"
+    },
+    {
+      "name": "Gemcitabine, Carboplatin, and Iniparib",
+      "n": 261,
+      "type": "intervention"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age, median (years)",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "numeric_single",
+          "value": 54.0,
+          "raw_string": "54",
+          "n_for_value": 258
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "numeric_single",
+          "value": 53.0,
+          "raw_string": "53",
+          "n_for_value": 261
+        }
+      ]
+    },
+    {
+      "original_label": "< 50",
+      "standardized_name": "Age",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "categorical_count_percentage",
+          "count": 91.0,
+          "percentage": 35.0,
+          "raw_string": "91",
+          "n_for_value": 258
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "categorical_count_percentage",
+          "count": 91.0,
+          "percentage": 35.0,
+          "raw_string": "91",
+          "n_for_value": 261
+        }
+      ]
+    },
+    {
+      "original_label": "≥ 50",
+      "standardized_name": "Age",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "categorical_count_percentage",
+          "count": 167.0,
+          "percentage": 65.0,
+          "raw_string": "167",
+          "n_for_value": 258
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "categorical_count_percentage",
+          "count": 170.0,
+          "percentage": 65.0,
+          "raw_string": "170",
+          "n_for_value": 261
+        }
+      ]
+    },
+    {
+      "original_label": "ECOG PS",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Baseline Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "0",
+      "standardized_name": "ECOG Performance Status 0",
+      "category": "Baseline Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "categorical_count_percentage",
+          "count": 137.0,
+          "percentage": 53.0,
+          "raw_string": "137",
+          "n_for_value": 258
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "categorical_count_percentage",
+          "count": 148.0,
+          "percentage": 57.0,
+          "raw_string": "148",
+          "n_for_value": 261
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "ECOG Performance Status 1",
+      "category": "Baseline Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "categorical_count_percentage",
+          "count": 117.0,
+          "percentage": 45.0,
+          "raw_string": "117",
+          "n_for_value": 258
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "categorical_count_percentage",
+          "count": 108.0,
+          "percentage": 41.0,
+          "raw_string": "108",
+          "n_for_value": 261
+        }
+      ]
+    },
+    {
+      "original_label": "2",
+      "standardized_name": "ECOG Performance Status 2",
+      "category": "Baseline Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 2.0,
+          "raw_string": "4",
+          "n_for_value": 258
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 2.0,
+          "raw_string": "5",
+          "n_for_value": 261
+        }
+      ]
+    },
+    {
+      "original_label": "No. of metastatic sites",
+      "standardized_name": "Number of metastatic sites",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "Number of metastatic sites",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of metastatic sites",
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "categorical_count_percentage",
+          "count": 37.0,
+          "percentage": 14.0,
+          "raw_string": "37",
+          "n_for_value": 258
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "categorical_count_percentage",
+          "count": 22.0,
+          "percentage": 8.0,
+          "raw_string": "22",
+          "n_for_value": 261
+        }
+      ]
+    },
+    {
+      "original_label": "2",
+      "standardized_name": "Number of metastatic sites",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of metastatic sites",
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "categorical_count_percentage",
+          "count": 66.0,
+          "percentage": 26.0,
+          "raw_string": "66",
+          "n_for_value": 258
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "categorical_count_percentage",
+          "count": 88.0,
+          "percentage": 34.0,
+          "raw_string": "88",
+          "n_for_value": 261
+        }
+      ]
+    },
+    {
+      "original_label": "≥ 3",
+      "standardized_name": "Number of metastatic sites",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of metastatic sites",
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "categorical_count_percentage",
+          "count": 155.0,
+          "percentage": 60.0,
+          "raw_string": "155",
+          "n_for_value": 258
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "categorical_count_percentage",
+          "count": 151.0,
+          "percentage": 58.0,
+          "raw_string": "151",
+          "n_for_value": 261
+        }
+      ]
+    },
+    {
+      "original_label": "Main metastatic sites",
+      "standardized_name": "Main metastatic sites",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Visceral",
+      "standardized_name": "Visceral metastatic sites",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Main metastatic sites",
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "categorical_count_percentage",
+          "count": 214.0,
+          "percentage": 83.0,
+          "raw_string": "214",
+          "n_for_value": 258
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "categorical_count_percentage",
+          "count": 220.0,
+          "percentage": 84.0,
+          "raw_string": "220",
+          "n_for_value": 261
+        }
+      ]
+    },
+    {
+      "original_label": "Lung",
+      "standardized_name": "Lung metastatic sites",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Main metastatic sites",
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "categorical_count_percentage",
+          "count": 157.0,
+          "percentage": 61.0,
+          "raw_string": "157",
+          "n_for_value": 258
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "categorical_count_percentage",
+          "count": 162.0,
+          "percentage": 62.0,
+          "raw_string": "162",
+          "n_for_value": 261
+        }
+      ]
+    },
+    {
+      "original_label": "Liver",
+      "standardized_name": "Liver metastatic sites",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Main metastatic sites",
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "categorical_count_percentage",
+          "count": 112.0,
+          "percentage": 44.0,
+          "raw_string": "112",
+          "n_for_value": 258
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "categorical_count_percentage",
+          "count": 99.0,
+          "percentage": 38.0,
+          "raw_string": "99",
+          "n_for_value": 261
+        }
+      ]
+    },
+    {
+      "original_label": "CNS/brain",
+      "standardized_name": "CNS/brain metastatic sites",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Main metastatic sites",
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "percentage": 8.0,
+          "raw_string": "21",
+          "n_for_value": 258
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "percentage": 8.0,
+          "raw_string": "21",
+          "n_for_value": 261
+        }
+      ]
+    },
+    {
+      "original_label": "Bone",
+      "standardized_name": "Bone metastatic sites",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Main metastatic sites",
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "categorical_count_percentage",
+          "count": 77.0,
+          "percentage": 30.0,
+          "raw_string": "77",
+          "n_for_value": 258
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "categorical_count_percentage",
+          "count": 85.0,
+          "percentage": 33.0,
+          "raw_string": "85",
+          "n_for_value": 261
+        }
+      ]
+    },
+    {
+      "original_label": "Skin/soft tissue",
+      "standardized_name": "Skin/soft tissue metastatic sites",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Main metastatic sites",
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "categorical_count_percentage",
+          "count": 61.0,
+          "percentage": 24.0,
+          "raw_string": "61",
+          "n_for_value": 258
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "categorical_count_percentage",
+          "count": 64.0,
+          "percentage": 25.0,
+          "raw_string": "64",
+          "n_for_value": 261
+        }
+      ]
+    },
+    {
+      "original_label": "Lymph nodes",
+      "standardized_name": "Lymph node metastatic sites",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Main metastatic sites",
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "categorical_count_percentage",
+          "count": 186.0,
+          "percentage": 72.0,
+          "raw_string": "186",
+          "n_for_value": 258
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "categorical_count_percentage",
+          "count": 197.0,
+          "percentage": 76.0,
+          "raw_string": "197",
+          "n_for_value": 261
+        }
+      ]
+    },
+    {
+      "original_label": "Breast",
+      "standardized_name": "Breast metastatic sites",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Main metastatic sites",
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "categorical_count_percentage",
+          "count": 49.0,
+          "percentage": 19.0,
+          "raw_string": "49",
+          "n_for_value": 258
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "categorical_count_percentage",
+          "count": 47.0,
+          "percentage": 18.0,
+          "raw_string": "47",
+          "n_for_value": 261
+        }
+      ]
+    },
+    {
+      "original_label": "Any prior chemotherapy",
+      "standardized_name": "Any prior chemotherapy",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "categorical_count_percentage",
+          "count": 232.0,
+          "percentage": 90.0,
+          "raw_string": "232",
+          "n_for_value": 258
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "categorical_count_percentage",
+          "count": 231.0,
+          "percentage": 89.0,
+          "raw_string": "231",
+          "n_for_value": 261
+        }
+      ]
+    },
+    {
+      "original_label": "DFI, median, months",
+      "standardized_name": "Disease-free interval",
+      "unit": "months",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "numeric_single",
+          "value": 18.0,
+          "raw_string": "18.0*",
+          "notes": "*Data missing for 1 patient."
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "numeric_single",
+          "value": 15.8,
+          "raw_string": "15.8"
+        }
+      ]
+    },
+    {
+      "original_label": "≤ 18",
+      "standardized_name": "Disease-free interval",
+      "unit": "months",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Disease-free interval",
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "categorical_count_percentage",
+          "count": 128.0,
+          "percentage": 50.0,
+          "raw_string": "128*",
+          "notes": "*Data missing for 1 patient."
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "categorical_count_percentage",
+          "count": 140.0,
+          "percentage": 54.0,
+          "raw_string": "140"
+        }
+      ]
+    },
+    {
+      "original_label": "> 18",
+      "standardized_name": "Disease-free interval",
+      "unit": "months",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Disease-free interval",
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "categorical_count_percentage",
+          "count": 129.0,
+          "percentage": 50.0,
+          "raw_string": "129*",
+          "notes": "*Data missing for 1 patient."
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "categorical_count_percentage",
+          "count": 121.0,
+          "percentage": 46.0,
+          "raw_string": "121"
+        }
+      ]
+    },
+    {
+      "original_label": "Line of therapy",
+      "standardized_name": "Line of therapy",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "First-line",
+      "standardized_name": "First-line therapy",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Line of therapy",
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "categorical_count_percentage",
+          "count": 149.0,
+          "percentage": 58.0,
+          "raw_string": "149",
+          "n_for_value": 258
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "categorical_count_percentage",
+          "count": 148.0,
+          "percentage": 57.0,
+          "raw_string": "148",
+          "n_for_value": 261
+        }
+      ]
+    },
+    {
+      "original_label": "Second-line",
+      "standardized_name": "Second-line therapy",
+      "category": "Prior Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Line of therapy",
+      "group_data": [
+        {
+          "group_name": "Gemcitabine and Carboplatin",
+          "data_type": "categorical_count_percentage",
+          "count": 109.0,
+          "percentage": 42.0,
+          "raw_string": "109",
+          "n_for_value": 258
+        },
+        {
+          "group_name": "Gemcitabine, Carboplatin, and Iniparib",
+          "data_type": "categorical_count_percentage",
+          "count": 113.0,
+          "percentage": 43.0,
+          "raw_string": "113",
+          "n_for_value": 261
+        }
+      ]
+    }
+  ]
+}

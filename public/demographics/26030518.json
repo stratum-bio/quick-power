@@ -1,0 +1,1121 @@
+{
+  "study_id": "NCT01942135",
+  "study_title": "Palbociclib in Hormone-Receptor-Positive Advanced Breast Cancer",
+  "table_name": "Table 1",
+  "table_title": "Clinical and Pathological Characteristics of the Patients.",
+  "footnotes": [
+    "No significant differences in the clinical and pathological characteristics of the patients were identified between the two treatment groups. ER denotes estrogen receptor, GnRH gonadotropin-releasing hormone, and PR progesterone receptor.",
+    "Race was self-reported. Race was unspecified in one patient in each treatment group.",
+    "Eastern Cooperative Oncology Group (ECOG) performance status is scored on a scale of 0 to 5, with 0 indicating no symptoms, 1 indicating mild symptoms, and higher numbers indicating increasing degrees of disability.",
+    "The disease-free interval was defined as the time from diagnosis of primary breast cancer to first relapse in patients who received adjuvant therapy.",
+    "Patients were defined as having sensitivity to prior endocrine therapy if they had a relapse after 24 months of adjuvant endocrine therapy or had a clinical benefit (objective response [complete or partial] or stable disease lasting ≥24 weeks) from prior endocrine therapy in the context of advanced disease.",
+    "Visceral metastasis was defined as lung, liver, brain, pleural, or peritoneal involvement.",
+    "Data on disease stage at study entry were missing or unknown for five patients (two in the palbociclib-fulvestrant group and three in the placebo-fulvestrant group).",
+    "Recurrent locally advanced disease included local and regional recurrences.",
+    "Data on number of disease sites were missing for four patients (two in each treatment group).",
+    "Prior endocrine therapy was defined as any endocrine therapy anytime before study entry.",
+    "These patients did not receive chemotherapy in the context of metastatic disease."
+  ],
+  "groups": [
+    {
+      "name": "Palbociclib-Fulvestrant",
+      "n": 347,
+      "type": "intervention"
+    },
+    {
+      "name": "Placebo-Fulvestrant",
+      "n": 174,
+      "type": "control"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age",
+      "standardized_name": "age",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Median — yr",
+      "standardized_name": "median_age",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "age",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "numeric_single",
+          "value": 57.0,
+          "raw_string": "57"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "numeric_single",
+          "value": 56.0,
+          "raw_string": "56"
+        }
+      ]
+    },
+    {
+      "original_label": "Range — yr",
+      "standardized_name": "age_range",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "age",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "numeric_mean_range",
+          "range_min": 30.0,
+          "range_max": 88.0,
+          "raw_string": "30–88"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "numeric_mean_range",
+          "range_min": 29.0,
+          "range_max": 80.0,
+          "raw_string": "29–80"
+        }
+      ]
+    },
+    {
+      "original_label": "<65 yr — no. (%)",
+      "standardized_name": "age_less_than_65",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "age",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 261.0,
+          "percentage": 75.2,
+          "raw_string": "261 (75.2)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 131.0,
+          "percentage": 75.3,
+          "raw_string": "131 (75.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "≥65 yr — no. (%)",
+      "standardized_name": "age_greater_or_equal_to_65",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "age",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 86.0,
+          "percentage": 24.8,
+          "raw_string": "86 (24.8)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 43.0,
+          "percentage": 24.7,
+          "raw_string": "43 (24.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "Race — no. (%)†",
+      "standardized_name": "race",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "White",
+      "standardized_name": "race_white",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "race",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 252.0,
+          "percentage": 72.6,
+          "raw_string": "252 (72.6)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 133.0,
+          "percentage": 76.4,
+          "raw_string": "133 (76.4)"
+        }
+      ]
+    },
+    {
+      "original_label": "Asian",
+      "standardized_name": "race_asian",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "race",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 74.0,
+          "percentage": 21.3,
+          "raw_string": "74 (21.3)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 31.0,
+          "percentage": 17.8,
+          "raw_string": "31 (17.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "Black or other",
+      "standardized_name": "race_black_or_other",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "race",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 20.0,
+          "percentage": 5.8,
+          "raw_string": "20 (5.8)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 9.0,
+          "percentage": 5.2,
+          "raw_string": "9 (5.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Hormone-receptor status — no. (%)",
+      "standardized_name": "hormone_receptor_status",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "ER-positive and PR-positive",
+      "standardized_name": "hormone_receptor_status_er_positive_pr_positive",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "hormone_receptor_status",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 238.0,
+          "percentage": 68.6,
+          "raw_string": "238 (68.6)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 111.0,
+          "percentage": 63.8,
+          "raw_string": "111 (63.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "ER-positive and PR-negative",
+      "standardized_name": "hormone_receptor_status_er_positive_pr_negative",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "hormone_receptor_status",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 91.0,
+          "percentage": 26.2,
+          "raw_string": "91 (26.2)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 48.0,
+          "percentage": 27.6,
+          "raw_string": "48 (27.6)"
+        }
+      ]
+    },
+    {
+      "original_label": "ECOG performance status — no. (%)‡",
+      "standardized_name": "ecog_performance_status",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "0",
+      "standardized_name": "ecog_performance_status_0",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ecog_performance_status",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 207.0,
+          "percentage": 59.7,
+          "raw_string": "207 (59.7)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 115.0,
+          "percentage": 66.1,
+          "raw_string": "115 (66.1)"
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "ecog_performance_status_1",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ecog_performance_status",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 140.0,
+          "percentage": 40.3,
+          "raw_string": "140 (40.3)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 59.0,
+          "percentage": 33.9,
+          "raw_string": "59 (33.9)"
+        }
+      ]
+    },
+    {
+      "original_label": "Disease-free interval§",
+      "standardized_name": "disease_free_interval",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Median — mo",
+      "standardized_name": "median_disease_free_interval",
+      "unit": "months",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "disease_free_interval",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "numeric_single",
+          "value": 48.0,
+          "raw_string": "48"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "numeric_single",
+          "value": 51.0,
+          "raw_string": "51"
+        }
+      ]
+    },
+    {
+      "original_label": "<24 mo — no./total no. (%)",
+      "standardized_name": "disease_free_interval_less_than_24_months",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "disease_free_interval",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 42.0,
+          "percentage": 17.9,
+          "raw_string": "42/235 (17.9)",
+          "n_for_value": 235
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 23.0,
+          "percentage": 18.5,
+          "raw_string": "23/124 (18.5)",
+          "n_for_value": 124
+        }
+      ]
+    },
+    {
+      "original_label": ">24 mo — no./total no. (%)",
+      "standardized_name": "disease_free_interval_greater_than_24_months",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "disease_free_interval",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 186.0,
+          "percentage": 79.1,
+          "raw_string": "186/235 (79.1)",
+          "n_for_value": 235
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 95.0,
+          "percentage": 76.6,
+          "raw_string": "95/124 (76.6)",
+          "n_for_value": 124
+        }
+      ]
+    },
+    {
+      "original_label": "Menopausal status at study entry — no. (%)",
+      "standardized_name": "menopausal_status",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Premenopausal or perimenopausal",
+      "standardized_name": "menopausal_status_pre_or_peri",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "menopausal_status",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 72.0,
+          "percentage": 20.7,
+          "raw_string": "72 (20.7)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 36.0,
+          "percentage": 20.7,
+          "raw_string": "36 (20.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "Postmenopausal",
+      "standardized_name": "menopausal_status_post",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "menopausal_status",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 275.0,
+          "percentage": 79.3,
+          "raw_string": "275 (79.3)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 138.0,
+          "percentage": 79.3,
+          "raw_string": "138 (79.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Documented sensitivity to prior hormonal therapy — no. (%)¶",
+      "standardized_name": "sensitivity_to_prior_hormonal_therapy",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Yes",
+      "standardized_name": "sensitivity_to_prior_hormonal_therapy_yes",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "sensitivity_to_prior_hormonal_therapy",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 274.0,
+          "percentage": 79.0,
+          "raw_string": "274 (79.0)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 136.0,
+          "percentage": 78.2,
+          "raw_string": "136 (78.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "No",
+      "standardized_name": "sensitivity_to_prior_hormonal_therapy_no",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "sensitivity_to_prior_hormonal_therapy",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 73.0,
+          "percentage": 21.0,
+          "raw_string": "73 (21.0)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 38.0,
+          "percentage": 21.8,
+          "raw_string": "38 (21.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "Visceral metastasis — no. (%)||",
+      "standardized_name": "visceral_metastasis",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 206.0,
+          "percentage": 59.4,
+          "raw_string": "206 (59.4)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 105.0,
+          "percentage": 60.3,
+          "raw_string": "105 (60.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Measurable disease — no. (%)",
+      "standardized_name": "measurable_disease",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 268.0,
+          "percentage": 77.2,
+          "raw_string": "268 (77.2)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 138.0,
+          "percentage": 79.3,
+          "raw_string": "138 (79.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Disease stage at study entry — no. (%)**",
+      "standardized_name": "disease_stage_at_entry",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Recurrent locally advanced††",
+      "standardized_name": "disease_stage_at_entry_recurrent_locally_advanced",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "disease_stage_at_entry",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 49.0,
+          "percentage": 14.1,
+          "raw_string": "49 (14.1)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 25.0,
+          "percentage": 14.4,
+          "raw_string": "25 (14.4)"
+        }
+      ]
+    },
+    {
+      "original_label": "Metastatic",
+      "standardized_name": "disease_stage_at_entry_metastatic",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "disease_stage_at_entry",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 296.0,
+          "percentage": 85.3,
+          "raw_string": "296 (85.3)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 146.0,
+          "percentage": 83.9,
+          "raw_string": "146 (83.9)"
+        }
+      ]
+    },
+    {
+      "original_label": "No. of disease sites — no. of patients (%)‡‡",
+      "standardized_name": "number_of_disease_sites",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "number_of_disease_sites_1",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "number_of_disease_sites",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 111.0,
+          "percentage": 32.0,
+          "raw_string": "111 (32.0)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 60.0,
+          "percentage": 34.5,
+          "raw_string": "60 (34.5)"
+        }
+      ]
+    },
+    {
+      "original_label": "2",
+      "standardized_name": "number_of_disease_sites_2",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "number_of_disease_sites",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 99.0,
+          "percentage": 28.5,
+          "raw_string": "99 (28.5)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 50.0,
+          "percentage": 28.7,
+          "raw_string": "50 (28.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "≥3",
+      "standardized_name": "number_of_disease_sites_greater_or_equal_to_3",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "number_of_disease_sites",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 135.0,
+          "percentage": 38.9,
+          "raw_string": "135 (38.9)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 62.0,
+          "percentage": 35.6,
+          "raw_string": "62 (35.6)"
+        }
+      ]
+    },
+    {
+      "original_label": "Prior endocrine therapy — no. (%)§§",
+      "standardized_name": "prior_endocrine_therapy",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Aromatase inhibitor with or without GnRH agonist",
+      "standardized_name": "prior_endocrine_therapy_aromatase_inhibitor",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "prior_endocrine_therapy",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 296.0,
+          "percentage": 85.3,
+          "raw_string": "296 (85.3)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 151.0,
+          "percentage": 86.8,
+          "raw_string": "151 (86.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "Tamoxifen with or without GnRH agonist",
+      "standardized_name": "prior_endocrine_therapy_tamoxifen",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "prior_endocrine_therapy",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 211.0,
+          "percentage": 60.8,
+          "raw_string": "211 (60.8)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 104.0,
+          "percentage": 59.8,
+          "raw_string": "104 (59.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "Most recent therapy — no. (%)",
+      "standardized_name": "most_recent_therapy",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Aromatase inhibitor with or without GnRH agonist",
+      "standardized_name": "most_recent_therapy_aromatase_inhibitor",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "most_recent_therapy",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 238.0,
+          "percentage": 68.6,
+          "raw_string": "238 (68.6)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 118.0,
+          "percentage": 67.8,
+          "raw_string": "118 (67.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "Tamoxifen with or without GnRH agonist",
+      "standardized_name": "most_recent_therapy_tamoxifen",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "most_recent_therapy",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 63.0,
+          "percentage": 18.2,
+          "raw_string": "63 (18.2)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 30.0,
+          "percentage": 17.2,
+          "raw_string": "30 (17.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Prior chemotherapy — no. (%)",
+      "standardized_name": "prior_chemotherapy",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Neoadjuvant or adjuvant treatment only¶¶",
+      "standardized_name": "prior_chemotherapy_neoadjuvant_or_adjuvant_only",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "prior_chemotherapy",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 144.0,
+          "percentage": 41.5,
+          "raw_string": "144 (41.5)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 75.0,
+          "percentage": 43.1,
+          "raw_string": "75 (43.1)"
+        }
+      ]
+    },
+    {
+      "original_label": "Metastatic treatment, with or without prior neoadjuvant or adjuvant therapy",
+      "standardized_name": "prior_chemotherapy_metastatic",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "prior_chemotherapy",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 107.0,
+          "percentage": 30.8,
+          "raw_string": "107 (30.8)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 63.0,
+          "percentage": 36.2,
+          "raw_string": "63 (36.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Prior lines of therapy in the context of metastatic disease — no. of patients (%)",
+      "standardized_name": "prior_lines_of_therapy_metastatic",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "0",
+      "standardized_name": "prior_lines_of_therapy_metastatic_0",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "prior_lines_of_therapy_metastatic",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 84.0,
+          "percentage": 24.2,
+          "raw_string": "84 (24.2)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 45.0,
+          "percentage": 25.9,
+          "raw_string": "45 (25.9)"
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "prior_lines_of_therapy_metastatic_1",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "prior_lines_of_therapy_metastatic",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 132.0,
+          "percentage": 38.0,
+          "raw_string": "132 (38.0)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 70.0,
+          "percentage": 40.2,
+          "raw_string": "70 (40.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "2",
+      "standardized_name": "prior_lines_of_therapy_metastatic_2",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "prior_lines_of_therapy_metastatic",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 90.0,
+          "percentage": 25.9,
+          "raw_string": "90 (25.9)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 43.0,
+          "percentage": 24.7,
+          "raw_string": "43 (24.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "≥3",
+      "standardized_name": "prior_lines_of_therapy_metastatic_greater_or_equal_to_3",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "prior_lines_of_therapy_metastatic",
+      "group_data": [
+        {
+          "group_name": "Palbociclib-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 41.0,
+          "percentage": 11.8,
+          "raw_string": "41 (11.8)"
+        },
+        {
+          "group_name": "Placebo-Fulvestrant",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 9.2,
+          "raw_string": "16 (9.2)"
+        }
+      ]
+    }
+  ]
+}

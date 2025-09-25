@@ -1,0 +1,589 @@
+{
+  "study_id": "NCT02115204",
+  "study_title": "Final analysis of the prospective WSG-AGO EC-Doc versus FEC phase III trial in intermediate-risk (pN1) early breast cancer: efficacy and predictive value of Ki67 expression",
+  "table_name": "Table 1",
+  "table_title": "Summary of patient characteristics",
+  "footnotes": [
+    "By local pathology.",
+    "By central pathology."
+  ],
+  "groups": [
+    {
+      "name": "CMF",
+      "n": 177,
+      "type": "intervention arm"
+    },
+    {
+      "name": "FEC",
+      "n": 795,
+      "type": "intervention arm"
+    },
+    {
+      "name": "EC-Doc",
+      "n": 978,
+      "type": "intervention arm"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Median age (years)",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "numeric_median_iqr",
+          "median": 53.9,
+          "raw_string": "53.9"
+        },
+        {
+          "group_name": "FEC",
+          "data_type": "numeric_median_iqr",
+          "median": 51.5,
+          "raw_string": "51.5"
+        },
+        {
+          "group_name": "EC-Doc",
+          "data_type": "numeric_median_iqr",
+          "median": 51.9,
+          "raw_string": "51.9"
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_type": "Unspecified test",
+        "statistic_value": 0.0,
+        "p_value": 0.233,
+        "notes": "Test statistic value not reported.",
+        "raw_string": "0.233"
+      }
+    },
+    {
+      "original_label": "Premenopausal (%); Postmenopausal (%)",
+      "standardized_name": "Menopausal status",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "header",
+          "raw_string": "Premenopausal (%)"
+        },
+        {
+          "group_name": "FEC",
+          "data_type": "header",
+          "raw_string": "Premenopausal (%)"
+        },
+        {
+          "group_name": "EC-Doc",
+          "data_type": "header",
+          "raw_string": "Premenopausal (%)"
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_type": "Unspecified test",
+        "statistic_value": 0.0,
+        "p_value": 0.274,
+        "notes": "Test statistic value not reported.",
+        "raw_string": "0.274"
+      }
+    },
+    {
+      "original_label": "Premenopausal (%)",
+      "standardized_name": "Premenopausal",
+      "unit": "%",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Menopausal status",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "percentage": 38.4,
+          "raw_string": "38.4"
+        },
+        {
+          "group_name": "FEC",
+          "data_type": "categorical_count_percentage",
+          "percentage": 46.3,
+          "raw_string": "46.3"
+        },
+        {
+          "group_name": "EC-Doc",
+          "data_type": "categorical_count_percentage",
+          "percentage": 44.5,
+          "raw_string": "44.5"
+        }
+      ]
+    },
+    {
+      "original_label": "Postmenopausal (%)",
+      "standardized_name": "Postmenopausal",
+      "unit": "%",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Menopausal status",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "percentage": 61.6,
+          "raw_string": "61.6"
+        },
+        {
+          "group_name": "FEC",
+          "data_type": "categorical_count_percentage",
+          "percentage": 48.5,
+          "raw_string": "48.5"
+        },
+        {
+          "group_name": "EC-Doc",
+          "data_type": "categorical_count_percentage",
+          "percentage": 55.5,
+          "raw_string": "55.5"
+        }
+      ]
+    },
+    {
+      "original_label": "<35 (%/n)",
+      "standardized_name": "Age < 35 years",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 2.3,
+          "raw_string": "2.3/4"
+        },
+        {
+          "group_name": "FEC",
+          "data_type": "categorical_count_percentage",
+          "count": 37.0,
+          "percentage": 4.7,
+          "raw_string": "4.7/37"
+        },
+        {
+          "group_name": "EC-Doc",
+          "data_type": "categorical_count_percentage",
+          "count": 37.0,
+          "percentage": 3.8,
+          "raw_string": "3.8/37"
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_type": "Unspecified test",
+        "statistic_value": 0.0,
+        "p_value": 0.327,
+        "notes": "Test statistic value not reported.",
+        "raw_string": "0.327"
+      }
+    },
+    {
+      "original_label": "Median tumor size (cm)",
+      "standardized_name": "Tumor size",
+      "unit": "cm",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "numeric_median_iqr",
+          "median": 2.0,
+          "raw_string": "2.0"
+        },
+        {
+          "group_name": "FEC",
+          "data_type": "numeric_median_iqr",
+          "median": 2.0,
+          "raw_string": "2.0"
+        },
+        {
+          "group_name": "EC-Doc",
+          "data_type": "numeric_median_iqr",
+          "median": 2.0,
+          "raw_string": "2.0"
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_type": "Unspecified test",
+        "statistic_value": 0.0,
+        "p_value": 0.557,
+        "notes": "Test statistic value not reported.",
+        "raw_string": "0.557"
+      }
+    },
+    {
+      "original_label": "Breast-conserving therapy (%)",
+      "standardized_name": "Breast-conserving therapy",
+      "unit": "%",
+      "category": "Treatment",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "percentage": 66.6,
+          "raw_string": "66.6"
+        },
+        {
+          "group_name": "FEC",
+          "data_type": "categorical_count_percentage",
+          "percentage": 68.3,
+          "raw_string": "68.3"
+        },
+        {
+          "group_name": "EC-Doc",
+          "data_type": "categorical_count_percentage",
+          "percentage": 66.5,
+          "raw_string": "66.5"
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_type": "Unspecified test",
+        "statistic_value": 0.0,
+        "p_value": 0.626,
+        "notes": "Test statistic value not reported.",
+        "raw_string": "0.626"
+      }
+    },
+    {
+      "original_label": "Tumor grade",
+      "standardized_name": "Tumor grade",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "header",
+          "raw_string": "G1/2a (%/n)",
+          "notes": "By local pathology."
+        },
+        {
+          "group_name": "FEC",
+          "data_type": "header",
+          "raw_string": "G1/2a (%/n)",
+          "notes": "By local pathology."
+        },
+        {
+          "group_name": "EC-Doc",
+          "data_type": "header",
+          "raw_string": "G1/2a (%/n)",
+          "notes": "By local pathology."
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_type": "Unspecified test",
+        "statistic_value": 0.0,
+        "p_value": 0.187,
+        "notes": "Test statistic value not reported.",
+        "raw_string": "0.187"
+      }
+    },
+    {
+      "original_label": "G1/2a (%/n)",
+      "standardized_name": "Tumor grade 1/2",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor grade",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 115.0,
+          "percentage": 68.5,
+          "raw_string": "68.5/115",
+          "notes": "By local pathology."
+        },
+        {
+          "group_name": "FEC",
+          "data_type": "categorical_count_percentage",
+          "count": 489.0,
+          "percentage": 63.3,
+          "raw_string": "63.3/489",
+          "notes": "By local pathology."
+        },
+        {
+          "group_name": "EC-Doc",
+          "data_type": "categorical_count_percentage",
+          "count": 607.0,
+          "percentage": 64.9,
+          "raw_string": "64.9/607",
+          "notes": "By local pathology."
+        }
+      ]
+    },
+    {
+      "original_label": "G3a (%/n)",
+      "standardized_name": "Tumor grade 3",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor grade",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 53.0,
+          "percentage": 31.5,
+          "raw_string": "31.5/53",
+          "notes": "By local pathology."
+        },
+        {
+          "group_name": "FEC",
+          "data_type": "categorical_count_percentage",
+          "count": 284.0,
+          "percentage": 36.7,
+          "raw_string": "36.7/284",
+          "notes": "By local pathology."
+        },
+        {
+          "group_name": "EC-Doc",
+          "data_type": "categorical_count_percentage",
+          "count": 329.0,
+          "percentage": 35.1,
+          "raw_string": "35.1/329",
+          "notes": "By local pathology."
+        }
+      ]
+    },
+    {
+      "original_label": "Hormone receptor status",
+      "standardized_name": "Hormone receptor status",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "header",
+          "raw_string": "ER and/or PR positivea (%/n)",
+          "notes": "By local pathology."
+        },
+        {
+          "group_name": "FEC",
+          "data_type": "header",
+          "raw_string": "ER and/or PR positivea (%/n)",
+          "notes": "By local pathology."
+        },
+        {
+          "group_name": "EC-Doc",
+          "data_type": "header",
+          "raw_string": "ER and/or PR positivea (%/n)",
+          "notes": "By local pathology."
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_type": "Unspecified test",
+        "statistic_value": 0.0,
+        "p_value": 0.514,
+        "notes": "Test statistic value not reported.",
+        "raw_string": "0.514"
+      }
+    },
+    {
+      "original_label": "ER and/or PR positivea (%/n)",
+      "standardized_name": "ER and/or PR positive",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone receptor status",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 144.0,
+          "percentage": 81.4,
+          "raw_string": "81.4/144",
+          "notes": "By local pathology."
+        },
+        {
+          "group_name": "FEC",
+          "data_type": "categorical_count_percentage",
+          "count": 617.0,
+          "percentage": 77.6,
+          "raw_string": "77.6/617",
+          "notes": "By local pathology."
+        },
+        {
+          "group_name": "EC-Doc",
+          "data_type": "categorical_count_percentage",
+          "count": 757.0,
+          "percentage": 77.4,
+          "raw_string": "77.4/757",
+          "notes": "By local pathology."
+        }
+      ]
+    },
+    {
+      "original_label": "ER and PR negativea (%/n)",
+      "standardized_name": "ER and PR negative",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone receptor status",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 30.0,
+          "percentage": 16.9,
+          "raw_string": "16.9/30",
+          "notes": "By local pathology."
+        },
+        {
+          "group_name": "FEC",
+          "data_type": "categorical_count_percentage",
+          "count": 165.0,
+          "percentage": 20.8,
+          "raw_string": "20.8/165",
+          "notes": "By local pathology."
+        },
+        {
+          "group_name": "EC-Doc",
+          "data_type": "categorical_count_percentage",
+          "count": 191.0,
+          "percentage": 19.5,
+          "raw_string": "19.5/191",
+          "notes": "By local pathology."
+        }
+      ]
+    },
+    {
+      "original_label": "HER2+++a (%/n)",
+      "standardized_name": "HER2 positive",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 26.0,
+          "percentage": 14.7,
+          "raw_string": "14.7/26",
+          "notes": "By local pathology."
+        },
+        {
+          "group_name": "FEC",
+          "data_type": "categorical_count_percentage",
+          "count": 132.0,
+          "percentage": 16.6,
+          "raw_string": "16.6/132",
+          "notes": "By local pathology."
+        },
+        {
+          "group_name": "EC-Doc",
+          "data_type": "categorical_count_percentage",
+          "count": 148.0,
+          "percentage": 15.1,
+          "raw_string": "15.1/148",
+          "notes": "By local pathology."
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_type": "Unspecified test",
+        "statistic_value": 0.0,
+        "p_value": 0.677,
+        "notes": "Test statistic value not reported.",
+        "raw_string": "0.677"
+      }
+    },
+    {
+      "original_label": "Ki67b (%/n)",
+      "standardized_name": "Ki67 status",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "header",
+          "raw_string": "Ki67b (%/n)",
+          "notes": "By central pathology."
+        },
+        {
+          "group_name": "FEC",
+          "data_type": "header",
+          "raw_string": "Ki67b (%/n)",
+          "notes": "By central pathology."
+        },
+        {
+          "group_name": "EC-Doc",
+          "data_type": "header",
+          "raw_string": "Ki67b (%/n)",
+          "notes": "By central pathology."
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_type": "Unspecified test",
+        "statistic_value": 0.0,
+        "p_value": 0.408,
+        "notes": "Test statistic value not reported.",
+        "raw_string": "0.408"
+      }
+    },
+    {
+      "original_label": "HR+/Ki67 <20%",
+      "standardized_name": "HR positive and Ki67 <20%",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Ki67 status",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 28.0,
+          "percentage": 60.9,
+          "raw_string": "60.9/28",
+          "notes": "By central pathology."
+        },
+        {
+          "group_name": "FEC",
+          "data_type": "categorical_count_percentage",
+          "count": 102.0,
+          "percentage": 58.0,
+          "raw_string": "58.0/102",
+          "notes": "By central pathology."
+        },
+        {
+          "group_name": "EC-Doc",
+          "data_type": "categorical_count_percentage",
+          "count": 147.0,
+          "percentage": 64.5,
+          "raw_string": "64.5/147",
+          "notes": "By central pathology."
+        }
+      ]
+    },
+    {
+      "original_label": "HR+/Ki67 ≥20%",
+      "standardized_name": "HR positive and Ki67 ≥20%",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Ki67 status",
+      "group_data": [
+        {
+          "group_name": "CMF",
+          "data_type": "categorical_count_percentage",
+          "count": 18.0,
+          "percentage": 39.1,
+          "raw_string": "39.1/18",
+          "notes": "By central pathology."
+        },
+        {
+          "group_name": "FEC",
+          "data_type": "categorical_count_percentage",
+          "count": 74.0,
+          "percentage": 42.0,
+          "raw_string": "42.0/74",
+          "notes": "By central pathology."
+        },
+        {
+          "group_name": "EC-Doc",
+          "data_type": "categorical_count_percentage",
+          "count": 81.0,
+          "percentage": 35.5,
+          "raw_string": "35.5/81",
+          "notes": "By central pathology."
+        }
+      ]
+    }
+  ]
+}

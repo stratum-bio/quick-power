@@ -1,0 +1,542 @@
+{
+  "study_id": "NCT01878422",
+  "study_title": "Effectiveness of bevacizumab added to standard chemotherapy in metastatic colorectal cancer: final results for first-line treatment from the ITACa randomized clinical trial",
+  "table_name": "Table 1",
+  "table_title": "Baseline patient characteristics",
+  "footnotes": [
+    "Mandatory as consequence of amendment n. 1 of 3 May 2009."
+  ],
+  "groups": [
+    {
+      "name": "CT + B",
+      "n": 176,
+      "type": "Intervention"
+    },
+    {
+      "name": "CT",
+      "n": 194,
+      "type": "Control"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Median age, years (range)",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "other",
+          "text_value": "66 (34-83)",
+          "raw_string": "66 (34–83)"
+        },
+        {
+          "group_name": "CT",
+          "data_type": "other",
+          "text_value": "66 (38-82)",
+          "raw_string": "66 (38–82)"
+        }
+      ]
+    },
+    {
+      "original_label": "Sex",
+      "standardized_name": "Sex",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "CT",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Male",
+      "standardized_name": "Male",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sex",
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "categorical_count_percentage",
+          "count": 108.0,
+          "percentage": 61.4,
+          "raw_string": "108 (61.4)"
+        },
+        {
+          "group_name": "CT",
+          "data_type": "categorical_count_percentage",
+          "count": 115.0,
+          "percentage": 59.3,
+          "raw_string": "115 (59.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Performance status (ECOG)",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "CT",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "0",
+      "standardized_name": "ECOG 0",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "categorical_count_percentage",
+          "count": 144.0,
+          "percentage": 81.8,
+          "raw_string": "144 (81.8)"
+        },
+        {
+          "group_name": "CT",
+          "data_type": "categorical_count_percentage",
+          "count": 154.0,
+          "percentage": 79.4,
+          "raw_string": "154 (79.4)"
+        }
+      ]
+    },
+    {
+      "original_label": "1-2",
+      "standardized_name": "ECOG 1-2",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "categorical_count_percentage",
+          "count": 32.0,
+          "percentage": 18.2,
+          "raw_string": "32 (18.2)"
+        },
+        {
+          "group_name": "CT",
+          "data_type": "categorical_count_percentage",
+          "count": 40.0,
+          "percentage": 20.6,
+          "raw_string": "40 (20.6)"
+        }
+      ]
+    },
+    {
+      "original_label": "Tumor localization",
+      "standardized_name": "Primary Tumor Location",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "CT",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Rectum",
+      "standardized_name": "Rectum",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Primary Tumor Location",
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "categorical_count_percentage",
+          "count": 41.0,
+          "percentage": 23.3,
+          "raw_string": "41 (23.3)"
+        },
+        {
+          "group_name": "CT",
+          "data_type": "categorical_count_percentage",
+          "count": 51.0,
+          "percentage": 26.3,
+          "raw_string": "51 (26.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Colon",
+      "standardized_name": "Colon",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Primary Tumor Location",
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "categorical_count_percentage",
+          "count": 135.0,
+          "percentage": 76.7,
+          "raw_string": "135 (76.7)"
+        },
+        {
+          "group_name": "CT",
+          "data_type": "categorical_count_percentage",
+          "count": 143.0,
+          "percentage": 73.7,
+          "raw_string": "143 (73.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "Stage at diagnosis",
+      "standardized_name": "Stage at Diagnosis",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "CT",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "I-III",
+      "standardized_name": "Stage I-III",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Stage at Diagnosis",
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "categorical_count_percentage",
+          "count": 43.0,
+          "percentage": 25.9,
+          "raw_string": "43 (25.9)",
+          "n_for_value": 166
+        },
+        {
+          "group_name": "CT",
+          "data_type": "categorical_count_percentage",
+          "count": 47.0,
+          "percentage": 26.5,
+          "raw_string": "47 (26.5)",
+          "n_for_value": 177
+        }
+      ]
+    },
+    {
+      "original_label": "IV",
+      "standardized_name": "Stage IV",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Stage at Diagnosis",
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "categorical_count_percentage",
+          "count": 123.0,
+          "percentage": 74.1,
+          "raw_string": "123 (74.1)",
+          "n_for_value": 166
+        },
+        {
+          "group_name": "CT",
+          "data_type": "categorical_count_percentage",
+          "count": 130.0,
+          "percentage": 73.5,
+          "raw_string": "130 (73.5)",
+          "n_for_value": 177
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown/missing",
+      "standardized_name": "Unknown/Missing",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Stage at Diagnosis",
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "categorical_count_percentage",
+          "count": 10.0,
+          "raw_string": "10"
+        },
+        {
+          "group_name": "CT",
+          "data_type": "categorical_count_percentage",
+          "count": 17.0,
+          "raw_string": "17"
+        }
+      ]
+    },
+    {
+      "original_label": "CT regimen",
+      "standardized_name": "Chemotherapy Regimen",
+      "category": "Treatment Information",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "CT",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "FOLFOX4",
+      "standardized_name": "FOLFOX4",
+      "category": "Treatment Information",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Chemotherapy Regimen",
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "categorical_count_percentage",
+          "count": 103.0,
+          "percentage": 58.5,
+          "raw_string": "103 (58.5)"
+        },
+        {
+          "group_name": "CT",
+          "data_type": "categorical_count_percentage",
+          "count": 118.0,
+          "percentage": 60.8,
+          "raw_string": "118 (60.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "FOLFIRI",
+      "standardized_name": "FOLFIRI",
+      "category": "Treatment Information",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Chemotherapy Regimen",
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "categorical_count_percentage",
+          "count": 73.0,
+          "percentage": 41.5,
+          "raw_string": "73 (41.5)"
+        },
+        {
+          "group_name": "CT",
+          "data_type": "categorical_count_percentage",
+          "count": 76.0,
+          "percentage": 39.2,
+          "raw_string": "76 (39.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "KRAS statusa",
+      "standardized_name": "KRAS Mutation Status",
+      "category": "Biomarker Information",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "CT",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Wild type",
+      "standardized_name": "Wild-type",
+      "category": "Biomarker Information",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "KRAS Mutation Status",
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "categorical_count_percentage",
+          "count": 91.0,
+          "percentage": 58.7,
+          "raw_string": "91 (58.7)",
+          "n_for_value": 155
+        },
+        {
+          "group_name": "CT",
+          "data_type": "categorical_count_percentage",
+          "count": 98.0,
+          "percentage": 58.0,
+          "raw_string": "98 (58.0)",
+          "n_for_value": 169
+        }
+      ]
+    },
+    {
+      "original_label": "Mutated",
+      "standardized_name": "Mutated",
+      "category": "Biomarker Information",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "KRAS Mutation Status",
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "categorical_count_percentage",
+          "count": 64.0,
+          "percentage": 41.3,
+          "raw_string": "64 (41.3)",
+          "n_for_value": 155
+        },
+        {
+          "group_name": "CT",
+          "data_type": "categorical_count_percentage",
+          "count": 71.0,
+          "percentage": 42.0,
+          "raw_string": "71 (42.0)",
+          "n_for_value": 169
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown/missing",
+      "standardized_name": "Unknown/Missing",
+      "category": "Biomarker Information",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "KRAS Mutation Status",
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "raw_string": "21"
+        },
+        {
+          "group_name": "CT",
+          "data_type": "categorical_count_percentage",
+          "count": 25.0,
+          "raw_string": "25"
+        }
+      ]
+    },
+    {
+      "original_label": "Prior cancer therapy",
+      "standardized_name": "Prior Cancer Therapy",
+      "category": "Treatment History",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "CT",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Surgery",
+      "standardized_name": "Prior Surgery",
+      "category": "Treatment History",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior Cancer Therapy",
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "categorical_count_percentage",
+          "count": 134.0,
+          "percentage": 76.1,
+          "raw_string": "134 (76.1)"
+        },
+        {
+          "group_name": "CT",
+          "data_type": "categorical_count_percentage",
+          "count": 146.0,
+          "percentage": 75.3,
+          "raw_string": "146 (75.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Radiotherapy",
+      "standardized_name": "Prior Radiotherapy",
+      "category": "Treatment History",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior Cancer Therapy",
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "categorical_count_percentage",
+          "count": 17.0,
+          "percentage": 9.7,
+          "raw_string": "17 (9.7)"
+        },
+        {
+          "group_name": "CT",
+          "data_type": "categorical_count_percentage",
+          "count": 18.0,
+          "percentage": 9.3,
+          "raw_string": "18 (9.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Adjuvant chemotherapy",
+      "standardized_name": "Prior Adjuvant Chemotherapy",
+      "category": "Treatment History",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior Cancer Therapy",
+      "group_data": [
+        {
+          "group_name": "CT + B",
+          "data_type": "categorical_count_percentage",
+          "count": 34.0,
+          "percentage": 19.3,
+          "raw_string": "34 (19.3)"
+        },
+        {
+          "group_name": "CT",
+          "data_type": "categorical_count_percentage",
+          "count": 26.0,
+          "percentage": 13.4,
+          "raw_string": "26 (13.4)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1405 @@
+{
+  "study_id": "CALGB 40502/NCCTG N063H (Alliance)",
+  "study_title": "Randomized Phase III Trial of Paclitaxel Once Per Week Compared With Nanoparticle Albumin-Bound Nab-Paclitaxel Once Per Week or Ixabepilone With Bevacizumab As First-Line Chemotherapy for Locally Recurrent or Metastatic Breast Cancer: CALGB 40502/NCCTG N063H (Alliance)",
+  "table_name": "Table 1",
+  "table_title": "Patient and Tumor Characteristics",
+  "description": "Baseline patient and tumor characteristics for patients enrolled in the trial.",
+  "footnotes": [
+    "P values are from two-sided Fisher exact tests excluding patients for whom factors were unknown.",
+    "Data on site of metastases, disease-free interval, and tumor subtypes were available for 778 of 783 treated patients."
+  ],
+  "groups": [
+    {
+      "name": "Paclitaxel",
+      "n": 283,
+      "type": "intervention"
+    },
+    {
+      "name": "Nab-Paclitaxel",
+      "n": 271,
+      "type": "intervention"
+    },
+    {
+      "name": "Ixabepilone",
+      "n": 245,
+      "type": "intervention"
+    },
+    {
+      "name": "Total",
+      "n": 799,
+      "type": "total"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age, years",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "header",
+          "raw_string": "Age, years"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "header",
+          "raw_string": "Age, years"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "header",
+          "raw_string": "Age, years"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": "Age, years"
+        }
+      ]
+    },
+    {
+      "original_label": "20-49",
+      "standardized_name": "Age",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, years",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 69.0,
+          "percentage": 24.0,
+          "raw_string": "69 (24)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 76.0,
+          "percentage": 28.0,
+          "raw_string": "76 (28)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 73.0,
+          "percentage": 30.0,
+          "raw_string": "73 (30)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 218.0,
+          "percentage": 27.0,
+          "raw_string": "218 (27)"
+        }
+      ]
+    },
+    {
+      "original_label": "50-69",
+      "standardized_name": "Age",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, years",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 183.0,
+          "percentage": 66.0,
+          "raw_string": "183 (66)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 163.0,
+          "percentage": 60.0,
+          "raw_string": "163 (60)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 154.0,
+          "percentage": 63.0,
+          "raw_string": "154 (63)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 500.0,
+          "percentage": 63.0,
+          "raw_string": "500 (63)"
+        }
+      ]
+    },
+    {
+      "original_label": "70-80+",
+      "standardized_name": "Age",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, years",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 31.0,
+          "percentage": 11.0,
+          "raw_string": "31 (11)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 32.0,
+          "percentage": 12.0,
+          "raw_string": "32 (12)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 18.0,
+          "percentage": 7.0,
+          "raw_string": "18 (7)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 81.0,
+          "percentage": 10.0,
+          "raw_string": "81 (10)"
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_type": "P-value",
+        "statistic_value": 0.3,
+        "p_value": 0.3,
+        "raw_string": ".30"
+      }
+    },
+    {
+      "original_label": "Female sex",
+      "standardized_name": "Sex",
+      "category": "Demographics",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 277.0,
+          "percentage": 98.0,
+          "raw_string": "277 (98)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 268.0,
+          "percentage": 99.0,
+          "raw_string": "268 (99)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 243.0,
+          "percentage": 99.0,
+          "raw_string": "243 (99)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 788.0,
+          "percentage": 99.0,
+          "raw_string": "788 (99)"
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_type": "P-value",
+        "statistic_value": 0.45,
+        "p_value": 0.45,
+        "raw_string": ".45"
+      }
+    },
+    {
+      "original_label": "Race/ethnicity",
+      "standardized_name": "Race/Ethnicity",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "header",
+          "raw_string": "Race/ethnicity"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "header",
+          "raw_string": "Race/ethnicity"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "header",
+          "raw_string": "Race/ethnicity"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": "Race/ethnicity"
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "Race/Ethnicity",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race/ethnicity",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 2.0,
+          "raw_string": "7 (2)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 1.0,
+          "raw_string": "4 (1)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 1.0,
+          "raw_string": "3 (1)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 14.0,
+          "percentage": 2.0,
+          "raw_string": "14 (2)"
+        }
+      ]
+    },
+    {
+      "original_label": "White",
+      "standardized_name": "Race/Ethnicity",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race/ethnicity",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 220.0,
+          "percentage": 78.0,
+          "raw_string": "220 (78)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 214.0,
+          "percentage": 79.0,
+          "raw_string": "214 (79)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 206.0,
+          "percentage": 84.0,
+          "raw_string": "206 (84)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 640.0,
+          "percentage": 80.0,
+          "raw_string": "640 (80)"
+        }
+      ]
+    },
+    {
+      "original_label": "Black",
+      "standardized_name": "Race/Ethnicity",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race/ethnicity",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 42.0,
+          "percentage": 15.0,
+          "raw_string": "42 (15)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 45.0,
+          "percentage": 17.0,
+          "raw_string": "45 (17)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 26.0,
+          "percentage": 11.0,
+          "raw_string": "26 (11)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 113.0,
+          "percentage": 14.0,
+          "raw_string": "113 (14)"
+        }
+      ]
+    },
+    {
+      "original_label": "Other/unknown",
+      "standardized_name": "Race/Ethnicity",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race/ethnicity",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 14.0,
+          "percentage": 5.0,
+          "raw_string": "14 (5)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 3.0,
+          "raw_string": "8 (3)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 10.0,
+          "percentage": 4.0,
+          "raw_string": "10 (4)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 32.0,
+          "percentage": 4.0,
+          "raw_string": "32 (4)"
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_type": "P-value",
+        "statistic_value": 0.23,
+        "p_value": 0.23,
+        "raw_string": ".23"
+      }
+    },
+    {
+      "original_label": "Taxane as adjuvant therapy",
+      "standardized_name": "Prior Taxane Adjuvant Therapy",
+      "category": "Clinical History",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "header",
+          "raw_string": "Taxane as adjuvant therapy"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "header",
+          "raw_string": "Taxane as adjuvant therapy"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "header",
+          "raw_string": "Taxane as adjuvant therapy"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": "Taxane as adjuvant therapy"
+        }
+      ]
+    },
+    {
+      "original_label": "Yes",
+      "standardized_name": "Prior Taxane Adjuvant Therapy",
+      "category": "Clinical History",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Taxane as adjuvant therapy",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 125.0,
+          "percentage": 44.0,
+          "raw_string": "125 (44)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 120.0,
+          "percentage": 44.0,
+          "raw_string": "120 (44)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 107.0,
+          "percentage": 44.0,
+          "raw_string": "107 (44)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 352.0,
+          "percentage": 44.0,
+          "raw_string": "352 (44)"
+        }
+      ]
+    },
+    {
+      "original_label": "No",
+      "standardized_name": "Prior Taxane Adjuvant Therapy",
+      "category": "Clinical History",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Taxane as adjuvant therapy",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 158.0,
+          "percentage": 56.0,
+          "raw_string": "158 (56)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 151.0,
+          "percentage": 56.0,
+          "raw_string": "151 (56)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 138.0,
+          "percentage": 56.0,
+          "raw_string": "138 (56)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 447.0,
+          "percentage": 56.0,
+          "raw_string": "447 (56)"
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_type": "P-value",
+        "statistic_value": 0.99,
+        "p_value": 0.99,
+        "raw_string": ".99"
+      }
+    },
+    {
+      "original_label": "Site of metastases",
+      "standardized_name": "Site of Metastases",
+      "category": "Disease Characteristics",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "header",
+          "raw_string": "Site of metastases"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "header",
+          "raw_string": "Site of metastases"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "header",
+          "raw_string": "Site of metastases"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": "Site of metastases"
+        }
+      ]
+    },
+    {
+      "original_label": "Unknownt",
+      "standardized_name": "Site of Metastases",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Site of metastases",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 4.0,
+          "raw_string": "11 (4)",
+          "notes": "Data on site of metastases, disease-free interval, and tumor subtypes were available for 778 of 783 treated patients."
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 2.0,
+          "raw_string": "6 (2)",
+          "notes": "Data on site of metastases, disease-free interval, and tumor subtypes were available for 778 of 783 treated patients."
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 2.0,
+          "raw_string": "4 (2)",
+          "notes": "Data on site of metastases, disease-free interval, and tumor subtypes were available for 778 of 783 treated patients."
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "percentage": 3.0,
+          "raw_string": "21(3)",
+          "notes": "Data on site of metastases, disease-free interval, and tumor subtypes were available for 778 of 783 treated patients."
+        }
+      ]
+    },
+    {
+      "original_label": "Any visceral",
+      "standardized_name": "Site of Metastases",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Site of metastases",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 217.0,
+          "percentage": 77.0,
+          "raw_string": "217 (77)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 205.0,
+          "percentage": 76.0,
+          "raw_string": "205 (76)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 199.0,
+          "percentage": 81.0,
+          "raw_string": "199 (81)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 621.0,
+          "percentage": 78.0,
+          "raw_string": "621 (78)"
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_type": "P-value",
+        "statistic_value": 0.35,
+        "p_value": 0.35,
+        "raw_string": ".35"
+      }
+    },
+    {
+      "original_label": "Any soft tissue",
+      "standardized_name": "Site of Metastases",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Site of metastases",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 196.0,
+          "percentage": 69.0,
+          "raw_string": "196 (69)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 184.0,
+          "percentage": 68.0,
+          "raw_string": "184 (68)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 164.0,
+          "percentage": 67.0,
+          "raw_string": "164 (67)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 544.0,
+          "percentage": 68.0,
+          "raw_string": "544 (68)"
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_type": "P-value",
+        "statistic_value": 0.6,
+        "p_value": 0.6,
+        "raw_string": ".60"
+      }
+    },
+    {
+      "original_label": "Any bone",
+      "standardized_name": "Site of Metastases",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Site of metastases",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 159.0,
+          "percentage": 56.0,
+          "raw_string": "159 (56)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 162.0,
+          "percentage": 60.0,
+          "raw_string": "162 (60)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 163.0,
+          "percentage": 67.0,
+          "raw_string": "163 (67)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 484.0,
+          "percentage": 61.0,
+          "raw_string": "484 (61)"
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_type": "P-value",
+        "statistic_value": 0.09,
+        "p_value": 0.09,
+        "raw_string": ".09"
+      }
+    },
+    {
+      "original_label": "Disease-free interval",
+      "standardized_name": "Disease-Free Interval",
+      "category": "Disease Characteristics",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "header",
+          "raw_string": "Disease-free interval"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "header",
+          "raw_string": "Disease-free interval"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "header",
+          "raw_string": "Disease-free interval"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": "Disease-free interval"
+        }
+      ]
+    },
+    {
+      "original_label": "Unknownt",
+      "standardized_name": "Disease-Free Interval",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Disease-free interval",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 4.0,
+          "raw_string": "11 (4)",
+          "notes": "Data on site of metastases, disease-free interval, and tumor subtypes were available for 778 of 783 treated patients."
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 2.0,
+          "raw_string": "6 (2)",
+          "notes": "Data on site of metastases, disease-free interval, and tumor subtypes were available for 778 of 783 treated patients."
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 2.0,
+          "raw_string": "4 (2)",
+          "notes": "Data on site of metastases, disease-free interval, and tumor subtypes were available for 778 of 783 treated patients."
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "percentage": 3.0,
+          "raw_string": "21 (3)",
+          "notes": "Data on site of metastases, disease-free interval, and tumor subtypes were available for 778 of 783 treated patients."
+        }
+      ]
+    },
+    {
+      "original_label": "0 to ≤ 1 month (de novo)",
+      "standardized_name": "Disease-Free Interval",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Disease-free interval",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 30.0,
+          "percentage": 11.0,
+          "raw_string": "30 (11)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 31.0,
+          "percentage": 11.0,
+          "raw_string": "31 (11)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 28.0,
+          "percentage": 11.0,
+          "raw_string": "28 (11)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 89.0,
+          "percentage": 11.0,
+          "raw_string": "89 (11)"
+        }
+      ]
+    },
+    {
+      "original_label": "> 1 month to ≤ 2 years",
+      "standardized_name": "Disease-Free Interval",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Disease-free interval",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 88.0,
+          "percentage": 31.0,
+          "raw_string": "88 (31)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 87.0,
+          "percentage": 32.0,
+          "raw_string": "87 (32)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 64.0,
+          "percentage": 26.0,
+          "raw_string": "64 (26)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 239.0,
+          "percentage": 30.0,
+          "raw_string": "239 (30)"
+        }
+      ]
+    },
+    {
+      "original_label": "> 2 years",
+      "standardized_name": "Disease-Free Interval",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Disease-free interval",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 154.0,
+          "percentage": 54.0,
+          "raw_string": "154 (54)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 147.0,
+          "percentage": 54.0,
+          "raw_string": "147 (54)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 149.0,
+          "percentage": 61.0,
+          "raw_string": "149 (61)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 450.0,
+          "percentage": 56.0,
+          "raw_string": "450 (56)"
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_type": "P-value",
+        "statistic_value": 0.24,
+        "p_value": 0.24,
+        "raw_string": ".24"
+      }
+    },
+    {
+      "original_label": "Clinical stage",
+      "standardized_name": "Clinical Stage",
+      "category": "Disease Characteristics",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "header",
+          "raw_string": "Clinical stage"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "header",
+          "raw_string": "Clinical stage"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "header",
+          "raw_string": "Clinical stage"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": "Clinical stage"
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "Clinical Stage",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Clinical stage",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 32.0,
+          "percentage": 11.0,
+          "raw_string": "32 (11)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "percentage": 8.0,
+          "raw_string": "21 (8)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 30.0,
+          "percentage": 12.0,
+          "raw_string": "30 (12)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 83.0,
+          "percentage": 10.0,
+          "raw_string": "83 (10)"
+        }
+      ]
+    },
+    {
+      "original_label": "III",
+      "standardized_name": "Clinical Stage",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Clinical stage",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 25.0,
+          "percentage": 9.0,
+          "raw_string": "25 (9)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "percentage": 8.0,
+          "raw_string": "21 (8)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "percentage": 9.0,
+          "raw_string": "21 (9)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 67.0,
+          "percentage": 8.0,
+          "raw_string": "67 (8)"
+        }
+      ]
+    },
+    {
+      "original_label": "IV",
+      "standardized_name": "Clinical Stage",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Clinical stage",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 226.0,
+          "percentage": 80.0,
+          "raw_string": "226 (80)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 229.0,
+          "percentage": 85.0,
+          "raw_string": "229 (85)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 194.0,
+          "percentage": 79.0,
+          "raw_string": "194 (79)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 649.0,
+          "percentage": 81.0,
+          "raw_string": "649 (81)"
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_type": "P-value",
+        "statistic_value": 0.83,
+        "p_value": 0.83,
+        "raw_string": ".83"
+      }
+    },
+    {
+      "original_label": "Tumor subtype",
+      "standardized_name": "Tumor Subtype",
+      "category": "Disease Characteristics",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "header",
+          "raw_string": "Tumor subtype"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "header",
+          "raw_string": "Tumor subtype"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "header",
+          "raw_string": "Tumor subtype"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": "Tumor subtype"
+        }
+      ]
+    },
+    {
+      "original_label": "ER or PgR unknown/missingt",
+      "standardized_name": "Hormone Receptor Status",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor subtype",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 3.0,
+          "raw_string": "8 (3)",
+          "notes": "Data on site of metastases, disease-free interval, and tumor subtypes were available for 778 of 783 treated patients."
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 1.0,
+          "raw_string": "4 (1)",
+          "notes": "Data on site of metastases, disease-free interval, and tumor subtypes were available for 778 of 783 treated patients."
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 2.0,
+          "raw_string": "4 (2)",
+          "notes": "Data on site of metastases, disease-free interval, and tumor subtypes were available for 778 of 783 treated patients."
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 2.0,
+          "raw_string": "16 (2)",
+          "notes": "Data on site of metastases, disease-free interval, and tumor subtypes were available for 778 of 783 treated patients."
+        }
+      ]
+    },
+    {
+      "original_label": "ER or PgR positive",
+      "standardized_name": "Hormone Receptor Status",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor subtype",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 200.0,
+          "percentage": 71.0,
+          "raw_string": "200 (71)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 197.0,
+          "percentage": 73.0,
+          "raw_string": "197 (73)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 176.0,
+          "percentage": 72.0,
+          "raw_string": "176 (72)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 573.0,
+          "percentage": 72.0,
+          "raw_string": "573 (72)"
+        }
+      ]
+    },
+    {
+      "original_label": "HER2 missing",
+      "standardized_name": "HER2 Status",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ER or PgR positive",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 2.0,
+          "raw_string": "6 (2)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 2.0,
+          "raw_string": "6 (2)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 1.0,
+          "raw_string": "3 (1)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 15.0,
+          "percentage": 2.0,
+          "raw_string": "15 (2)"
+        }
+      ]
+    },
+    {
+      "original_label": "HER2 positive",
+      "standardized_name": "HER2 Status",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ER or PgR positive",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 2.0,
+          "raw_string": "7 (2)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 1.0,
+          "raw_string": "3 (1)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 1.0,
+          "raw_string": "2 (1)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 2.0,
+          "raw_string": "12 (2)"
+        }
+      ]
+    },
+    {
+      "original_label": "HER2 negative",
+      "standardized_name": "HER2 Status",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ER or PgR positive",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 187.0,
+          "percentage": 66.0,
+          "raw_string": "187 (66)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 188.0,
+          "percentage": 69.0,
+          "raw_string": "188 (69)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 171.0,
+          "percentage": 70.0,
+          "raw_string": "171 (70)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 546.0,
+          "percentage": 68.0,
+          "raw_string": "546 (68)"
+        }
+      ]
+    },
+    {
+      "original_label": "ER and PgR negative",
+      "standardized_name": "Hormone Receptor Status",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor subtype",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 75.0,
+          "percentage": 27.0,
+          "raw_string": "75 (27)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 70.0,
+          "percentage": 26.0,
+          "raw_string": "70 (26)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 65.0,
+          "percentage": 27.0,
+          "raw_string": "65 (27)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 210.0,
+          "percentage": 26.0,
+          "raw_string": "210 (26)"
+        }
+      ]
+    },
+    {
+      "original_label": "HER2 missing",
+      "standardized_name": "HER2 Status",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ER and PgR negative",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "raw_string": "1 (<1)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 1.0,
+          "raw_string": "4 (1)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0 (0)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 1.0,
+          "raw_string": "5 (1)"
+        }
+      ]
+    },
+    {
+      "original_label": "HER2 positive",
+      "standardized_name": "HER2 Status",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ER and PgR negative",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "raw_string": "1 (< 1)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "raw_string": "1 (< 1)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 1.0,
+          "raw_string": "2 (1)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 1.0,
+          "raw_string": "4 (1)"
+        }
+      ]
+    },
+    {
+      "original_label": "HER2 negative",
+      "standardized_name": "HER2 Status",
+      "category": "Disease Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ER and PgR negative",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 73.0,
+          "percentage": 26.0,
+          "raw_string": "73 (26)"
+        },
+        {
+          "group_name": "Nab-Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "count": 65.0,
+          "percentage": 24.0,
+          "raw_string": "65 (24)"
+        },
+        {
+          "group_name": "Ixabepilone",
+          "data_type": "categorical_count_percentage",
+          "count": 63.0,
+          "percentage": 26.0,
+          "raw_string": "63 (26)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 201.0,
+          "percentage": 25.0,
+          "raw_string": "201 (25)"
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_type": "P-value",
+        "statistic_value": 0.97,
+        "p_value": 0.97,
+        "raw_string": ".97"
+      }
+    }
+  ]
+}

@@ -1,0 +1,586 @@
+{
+  "study_id": "NCT01154140",
+  "study_title": "First-Line Crizotinib versus Chemotherapy in ALK-Positive Lung Cancer",
+  "table_name": "Table 1",
+  "table_title": "Baseline Characteristics in the Intention-to-Treat Population.",
+  "footnotes": [
+    "There were no significant differences between the groups in any of the characteristics listed in this table.",
+    "Race was self-reported.",
+    "The Eastern Cooperative Oncology Group (ECOG) performance status was assessed at the time of screening; the score was not reported for one patient in the crizotinib group. Scores range from 0 to 5, with higher scores indicating increasing disability; an ECOG performance status of 0 indicates that the patient is fully active, 1 that the patient is ambulatory but restricted in strenuous activity, and 2 that the patient is ambulatory and capable of self-care but is unable to work."
+  ],
+  "groups": [
+    {
+      "name": "Crizotinib",
+      "n": 172,
+      "type": "Intervention"
+    },
+    {
+      "name": "Chemotherapy",
+      "n": 171,
+      "type": "Control"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age — yr",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "header",
+          "raw_string": "Age — yr"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "header",
+          "raw_string": "Age — yr"
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age — yr",
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "numeric_single",
+          "value": 52.0,
+          "raw_string": "52"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "numeric_single",
+          "value": 54.0,
+          "raw_string": "54"
+        }
+      ]
+    },
+    {
+      "original_label": "Range",
+      "standardized_name": "Age Range",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age — yr",
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "text",
+          "text_value": "22–76",
+          "raw_string": "22–76"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "text",
+          "text_value": "19–78",
+          "raw_string": "19–78"
+        }
+      ]
+    },
+    {
+      "original_label": "Male sex — no. (%)",
+      "standardized_name": "Sex",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 68.0,
+          "percentage": 40.0,
+          "raw_string": "68 (40)"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 63.0,
+          "percentage": 37.0,
+          "raw_string": "63 (37)"
+        }
+      ]
+    },
+    {
+      "original_label": "Race — no. (%)",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "header",
+          "raw_string": "Race — no. (%)"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "header",
+          "raw_string": "Race — no. (%)"
+        }
+      ]
+    },
+    {
+      "original_label": "White",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 91.0,
+          "percentage": 53.0,
+          "raw_string": "91 (53)"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 85.0,
+          "percentage": 50.0,
+          "raw_string": "85 (50)"
+        }
+      ]
+    },
+    {
+      "original_label": "Asian",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 77.0,
+          "percentage": 45.0,
+          "raw_string": "77 (45)"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 80.0,
+          "percentage": 47.0,
+          "raw_string": "80 (47)"
+        }
+      ]
+    },
+    {
+      "original_label": "Other",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 2.0,
+          "raw_string": "4 (2)"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 4.0,
+          "raw_string": "6 (4)"
+        }
+      ]
+    },
+    {
+      "original_label": "Smoking status — no. (%)",
+      "standardized_name": "Smoking Status",
+      "category": "Behavioral",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "header",
+          "raw_string": "Smoking status — no. (%)"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "header",
+          "raw_string": "Smoking status — no. (%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Never smoked",
+      "standardized_name": "Smoking Status",
+      "category": "Behavioral",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Smoking status — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 106.0,
+          "percentage": 62.0,
+          "raw_string": "106 (62)"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 112.0,
+          "percentage": 65.0,
+          "raw_string": "112 (65)"
+        }
+      ]
+    },
+    {
+      "original_label": "Former smoker",
+      "standardized_name": "Smoking Status",
+      "category": "Behavioral",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Smoking status — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 56.0,
+          "percentage": 33.0,
+          "raw_string": "56 (33)"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 54.0,
+          "percentage": 32.0,
+          "raw_string": "54 (32)"
+        }
+      ]
+    },
+    {
+      "original_label": "Current smoker",
+      "standardized_name": "Smoking Status",
+      "category": "Behavioral",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Smoking status — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 10.0,
+          "percentage": 6.0,
+          "raw_string": "10 (6)"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 3.0,
+          "raw_string": "5 (3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Histologic characteristic of tumor — no. (%)",
+      "standardized_name": "Histologic Type",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "header",
+          "raw_string": "Histologic characteristic of tumor — no. (%)"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "header",
+          "raw_string": "Histologic characteristic of tumor — no. (%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Adenocarcinoma",
+      "standardized_name": "Histologic Type",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histologic characteristic of tumor — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 161.0,
+          "percentage": 94.0,
+          "raw_string": "161 (94)"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 161.0,
+          "percentage": 94.0,
+          "raw_string": "161 (94)"
+        }
+      ]
+    },
+    {
+      "original_label": "Nonadenocarcinoma",
+      "standardized_name": "Histologic Type",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histologic characteristic of tumor — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 6.0,
+          "raw_string": "11 (6)"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 10.0,
+          "percentage": 6.0,
+          "raw_string": "10 (6)"
+        }
+      ]
+    },
+    {
+      "original_label": "ECOG performance status — no. (%)",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "header",
+          "raw_string": "ECOG performance status — no. (%)"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "header",
+          "raw_string": "ECOG performance status — no. (%)"
+        }
+      ]
+    },
+    {
+      "original_label": "0 or 1",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG performance status — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 161.0,
+          "percentage": 94.0,
+          "raw_string": "161 (94)"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 163.0,
+          "percentage": 95.0,
+          "raw_string": "163 (95)"
+        }
+      ]
+    },
+    {
+      "original_label": "2",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG performance status — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 10.0,
+          "percentage": 6.0,
+          "raw_string": "10 (6)"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 5.0,
+          "raw_string": "8 (5)"
+        }
+      ]
+    },
+    {
+      "original_label": "Extent of disease — no. (%)",
+      "standardized_name": "Extent of Disease",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "header",
+          "raw_string": "Extent of disease — no. (%)"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "header",
+          "raw_string": "Extent of disease — no. (%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Locally advanced",
+      "standardized_name": "Extent of Disease",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Extent of disease — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 2.0,
+          "raw_string": "4 (2)"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 2.0,
+          "raw_string": "3 (2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Metastatic",
+      "standardized_name": "Extent of Disease",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Extent of disease — no. (%)",
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 168.0,
+          "percentage": 98.0,
+          "raw_string": "168 (98)"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 168.0,
+          "percentage": 98.0,
+          "raw_string": "168 (98)"
+        }
+      ]
+    },
+    {
+      "original_label": "Time since first diagnosis — mo",
+      "standardized_name": "Time Since First Diagnosis",
+      "unit": "months",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "header",
+          "raw_string": "Time since first diagnosis — mo"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "header",
+          "raw_string": "Time since first diagnosis — mo"
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Time Since First Diagnosis",
+      "unit": "months",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time since first diagnosis — mo",
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "numeric_single",
+          "value": 1.2,
+          "raw_string": "1.2"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "numeric_single",
+          "value": 1.2,
+          "raw_string": "1.2"
+        }
+      ]
+    },
+    {
+      "original_label": "Range",
+      "standardized_name": "Time Since First Diagnosis Range",
+      "unit": "months",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time since first diagnosis — mo",
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "text",
+          "text_value": "0–114.0",
+          "raw_string": "0–114.0"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "text",
+          "text_value": "0–93.6",
+          "raw_string": "0–93.6"
+        }
+      ]
+    },
+    {
+      "original_label": "Brain metastases present — no. (%)",
+      "standardized_name": "Brain Metastases Present",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Crizotinib",
+          "data_type": "categorical_count_percentage",
+          "count": 45.0,
+          "percentage": 26.0,
+          "raw_string": "45 (26)"
+        },
+        {
+          "group_name": "Chemotherapy",
+          "data_type": "categorical_count_percentage",
+          "count": 47.0,
+          "percentage": 27.0,
+          "raw_string": "47 (27)"
+        }
+      ]
+    }
+  ]
+}

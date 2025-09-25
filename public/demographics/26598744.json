@@ -1,0 +1,2137 @@
+{
+  "study_id": "NCT00490139",
+  "study_title": "Adjuvant Lapatinib and/or Trastuzumab for Early Human Epidermal Growth Factor Receptor 2-Positive Breast Cancer: Results From the Randomized Phase III Adjuvant Lapatinib and/or Trastuzumab Treatment Optimization Trial",
+  "table_name": "Table 1",
+  "table_title": "Baseline Characteristics of the Patients, and Primary Tumors (Intention-to-Treat Groups)",
+  "description": "Baseline characteristics of the intention-to-treat patient population across the four treatment arms of the study.",
+  "footnotes": [
+    "Abbreviations: L+T, lapatinib plus trastuzumab; T→L, trastuzumab followed by lapatinib; L, lapatinib; T, trastuzumab; neodj. CT, neoadjuvant chemotherapy; AI, aromatase inhibitor; SERM, selective estrogen receptor modulator; LHRH, luteinizing hormone-releasing hormone.",
+    "*For the 266 patients receiving neoadjuvant chemotherapy, local laboratory results and were not enrolled within any particular treatment arm or included in any positive/negative result.",
+    "†For 104 patients, hormone receptor status was from a local laboratory."
+  ],
+  "groups": [
+    {
+      "name": "L+T",
+      "n": 2093,
+      "type": "intervention"
+    },
+    {
+      "name": "T→L",
+      "n": 2091,
+      "type": "intervention"
+    },
+    {
+      "name": "L",
+      "n": 2100,
+      "type": "intervention"
+    },
+    {
+      "name": "T",
+      "n": 2097,
+      "type": "control"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Region, No. (%)",
+      "standardized_name": "Region",
+      "category": "Demographics",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "North America (region 1)",
+      "standardized_name": "Region",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Region",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 223.0,
+          "percentage": 11.0,
+          "raw_string": "223 (11)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 244.0,
+          "percentage": 12.0,
+          "raw_string": "244 (12)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 252.0,
+          "percentage": 12.0,
+          "raw_string": "252 (12)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 230.0,
+          "percentage": 11.0,
+          "raw_string": "230 (11)"
+        }
+      ]
+    },
+    {
+      "original_label": "Europe (region 2)",
+      "standardized_name": "Region",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Region",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 1142.0,
+          "percentage": 55.0,
+          "raw_string": "1,142 (55)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 1112.0,
+          "percentage": 53.0,
+          "raw_string": "1,112 (53)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 1112.0,
+          "percentage": 53.0,
+          "raw_string": "1,112 (53)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 1118.0,
+          "percentage": 53.0,
+          "raw_string": "1,118 (53)"
+        }
+      ]
+    },
+    {
+      "original_label": "South America and South Africa (region 4)",
+      "standardized_name": "Region",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Region",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 628.0,
+          "percentage": 30.0,
+          "raw_string": "628 (30)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 622.0,
+          "percentage": 30.0,
+          "raw_string": "622 (30)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 622.0,
+          "percentage": 30.0,
+          "raw_string": "622 (30)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 636.0,
+          "percentage": 30.0,
+          "raw_string": "636 (30)"
+        }
+      ]
+    },
+    {
+      "original_label": "Race, No. (%)",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "White",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 1446.0,
+          "percentage": 69.0,
+          "raw_string": "1,446 (69)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 1452.0,
+          "percentage": 69.0,
+          "raw_string": "1,452 (69)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 1434.0,
+          "percentage": 68.0,
+          "raw_string": "1,434 (68)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 1451.0,
+          "percentage": 69.0,
+          "raw_string": "1,451 (69)"
+        }
+      ]
+    },
+    {
+      "original_label": "Asian",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 546.0,
+          "percentage": 26.0,
+          "raw_string": "546 (26)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 543.0,
+          "percentage": 26.0,
+          "raw_string": "543 (26)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 549.0,
+          "percentage": 26.0,
+          "raw_string": "549 (26)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 555.0,
+          "percentage": 26.0,
+          "raw_string": "555 (26)"
+        }
+      ]
+    },
+    {
+      "original_label": "Black",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 30.0,
+          "percentage": 1.0,
+          "raw_string": "30 (1)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 30.0,
+          "percentage": 1.0,
+          "raw_string": "30 (1)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 43.0,
+          "percentage": 2.0,
+          "raw_string": "43 (2)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 25.0,
+          "percentage": 1.0,
+          "raw_string": "25 (1)"
+        }
+      ]
+    },
+    {
+      "original_label": "Other/missing",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 71.0,
+          "percentage": 3.0,
+          "raw_string": "71 (3)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 66.0,
+          "percentage": 3.0,
+          "raw_string": "66 (3)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 74.0,
+          "percentage": 4.0,
+          "raw_string": "74 (4)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 66.0,
+          "percentage": 3.0,
+          "raw_string": "66 (3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Age, years (range)",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "numeric_median_iqr",
+          "median": 51.0,
+          "raw_string": "51 (19-82)",
+          "notes": "Range is provided instead of IQR."
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "numeric_median_iqr",
+          "median": 51.0,
+          "raw_string": "51 (22-80)",
+          "notes": "Range is provided instead of IQR."
+        },
+        {
+          "group_name": "L",
+          "data_type": "numeric_median_iqr",
+          "median": 51.0,
+          "raw_string": "51 (19-82)",
+          "notes": "Range is provided instead of IQR."
+        },
+        {
+          "group_name": "T",
+          "data_type": "numeric_median_iqr",
+          "median": 51.0,
+          "raw_string": "51 (18-80)",
+          "notes": "Range is provided instead of IQR."
+        }
+      ]
+    },
+    {
+      "original_label": "< 65 years",
+      "standardized_name": "Age <65 years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 1879.0,
+          "percentage": 90.0,
+          "raw_string": "1,879 (90)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 1877.0,
+          "percentage": 90.0,
+          "raw_string": "1,877 (90)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 1889.0,
+          "percentage": 90.0,
+          "raw_string": "1,889 (90)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 1881.0,
+          "percentage": 90.0,
+          "raw_string": "1,881 (90)"
+        }
+      ]
+    },
+    {
+      "original_label": "≥ 65 years",
+      "standardized_name": "Age >=65 years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 214.0,
+          "percentage": 10.0,
+          "raw_string": "214 (10)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 214.0,
+          "percentage": 10.0,
+          "raw_string": "214 (10)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 211.0,
+          "percentage": 10.0,
+          "raw_string": "211 (10)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 216.0,
+          "percentage": 10.0,
+          "raw_string": "216 (10)"
+        }
+      ]
+    },
+    {
+      "original_label": "Medical history, No. (%)",
+      "standardized_name": "Medical history",
+      "category": "Clinical characteristics",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Hypertension",
+      "standardized_name": "Hypertension",
+      "category": "Clinical characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Medical history",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 442.0,
+          "percentage": 21.0,
+          "raw_string": "442 (21)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 454.0,
+          "percentage": 22.0,
+          "raw_string": "454 (22)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 455.0,
+          "percentage": 22.0,
+          "raw_string": "455 (22)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 471.0,
+          "percentage": 22.0,
+          "raw_string": "471 (22)"
+        }
+      ]
+    },
+    {
+      "original_label": "Hypercholesterolemia",
+      "standardized_name": "Hypercholesterolemia",
+      "category": "Clinical characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Medical history",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 147.0,
+          "percentage": 7.0,
+          "raw_string": "147 (7)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 151.0,
+          "percentage": 7.0,
+          "raw_string": "151 (7)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 174.0,
+          "percentage": 8.0,
+          "raw_string": "174 (8)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 157.0,
+          "percentage": 7.0,
+          "raw_string": "157 (7)"
+        }
+      ]
+    },
+    {
+      "original_label": "Diabetes mellitus",
+      "standardized_name": "Diabetes mellitus",
+      "category": "Clinical characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Medical history",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 93.0,
+          "percentage": 4.0,
+          "raw_string": "93 (4)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 111.0,
+          "percentage": 5.0,
+          "raw_string": "111 (5)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 100.0,
+          "percentage": 5.0,
+          "raw_string": "100 (5)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 126.0,
+          "percentage": 6.0,
+          "raw_string": "126 (6)"
+        }
+      ]
+    },
+    {
+      "original_label": "Menopausal status, No. (%)",
+      "standardized_name": "Menopausal status",
+      "category": "Demographics",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Premenopausal",
+      "standardized_name": "Menopausal status",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Menopausal status",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 908.0,
+          "percentage": 43.0,
+          "raw_string": "908 (43)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 929.0,
+          "percentage": 44.0,
+          "raw_string": "929 (44)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 891.0,
+          "percentage": 42.0,
+          "raw_string": "891 (42)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 908.0,
+          "percentage": 43.0,
+          "raw_string": "908 (43)"
+        }
+      ]
+    },
+    {
+      "original_label": "Postmenopausal (or male)",
+      "standardized_name": "Menopausal status",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Menopausal status",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 1185.0,
+          "percentage": 57.0,
+          "raw_string": "1,185 (57)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 1162.0,
+          "percentage": 56.0,
+          "raw_string": "1,162 (56)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 1209.0,
+          "percentage": 58.0,
+          "raw_string": "1,209 (58)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 1189.0,
+          "percentage": 57.0,
+          "raw_string": "1,189 (57)"
+        }
+      ]
+    },
+    {
+      "original_label": "Nodal status, No. (%)",
+      "standardized_name": "Nodal status",
+      "category": "Tumor characteristics",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Not applicable (neoadj. CT)",
+      "standardized_name": "Nodal status",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Nodal status",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 168.0,
+          "percentage": 8.0,
+          "raw_string": "168 (8)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 170.0,
+          "percentage": 8.0,
+          "raw_string": "170 (8)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 167.0,
+          "percentage": 8.0,
+          "raw_string": "167 (8)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 181.0,
+          "percentage": 9.0,
+          "raw_string": "181 (9)"
+        }
+      ]
+    },
+    {
+      "original_label": "Negative",
+      "standardized_name": "Nodal status",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Nodal status",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 845.0,
+          "percentage": 40.0,
+          "raw_string": "845 (40)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 842.0,
+          "percentage": 40.0,
+          "raw_string": "842 (40)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 841.0,
+          "percentage": 40.0,
+          "raw_string": "841 (40)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 844.0,
+          "percentage": 40.0,
+          "raw_string": "844 (40)"
+        }
+      ]
+    },
+    {
+      "original_label": "One to three positive nodes",
+      "standardized_name": "Nodal status",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Nodal status",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 617.0,
+          "percentage": 29.0,
+          "raw_string": "617 (29)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 617.0,
+          "percentage": 29.0,
+          "raw_string": "617 (29)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 620.0,
+          "percentage": 30.0,
+          "raw_string": "620 (30)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 603.0,
+          "percentage": 29.0,
+          "raw_string": "603 (29)"
+        }
+      ]
+    },
+    {
+      "original_label": "Four or more positive nodes",
+      "standardized_name": "Nodal status",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Nodal status",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 463.0,
+          "percentage": 22.0,
+          "raw_string": "463 (22)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 462.0,
+          "percentage": 22.0,
+          "raw_string": "462 (22)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 472.0,
+          "percentage": 22.0,
+          "raw_string": "472 (22)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 469.0,
+          "percentage": 22.0,
+          "raw_string": "469 (22)"
+        }
+      ]
+    },
+    {
+      "original_label": "Pathologic tumor size, No. (%)",
+      "standardized_name": "Pathologic tumor size",
+      "category": "Tumor characteristics",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Not applicable (neoadj. CT)",
+      "standardized_name": "Pathologic tumor size",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Pathologic tumor size",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 168.0,
+          "percentage": 8.0,
+          "raw_string": "168 (8)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 170.0,
+          "percentage": 8.0,
+          "raw_string": "170 (8)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 167.0,
+          "percentage": 8.0,
+          "raw_string": "167 (8)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 181.0,
+          "percentage": 9.0,
+          "raw_string": "181 (9)"
+        }
+      ]
+    },
+    {
+      "original_label": "≤ 2 cm",
+      "standardized_name": "Pathologic tumor size",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Pathologic tumor size",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 863.0,
+          "percentage": 41.0,
+          "raw_string": "863 (41)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 856.0,
+          "percentage": 41.0,
+          "raw_string": "856 (41)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 866.0,
+          "percentage": 41.0,
+          "raw_string": "866 (41)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 854.0,
+          "percentage": 41.0,
+          "raw_string": "854 (41)"
+        }
+      ]
+    },
+    {
+      "original_label": "> 2 cm to ≤ 5 cm",
+      "standardized_name": "Pathologic tumor size",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Pathologic tumor size",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 949.0,
+          "percentage": 45.0,
+          "raw_string": "949 (45)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 949.0,
+          "percentage": 45.0,
+          "raw_string": "949 (45)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 948.0,
+          "percentage": 45.0,
+          "raw_string": "948 (45)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 948.0,
+          "percentage": 45.0,
+          "raw_string": "948 (45)"
+        }
+      ]
+    },
+    {
+      "original_label": "> 5 cm",
+      "standardized_name": "Pathologic tumor size",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Pathologic tumor size",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 113.0,
+          "percentage": 5.0,
+          "raw_string": "113 (5)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 117.0,
+          "percentage": 6.0,
+          "raw_string": "117 (6)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 119.0,
+          "percentage": 6.0,
+          "raw_string": "119 (6)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 114.0,
+          "percentage": 5.0,
+          "raw_string": "114 (5)"
+        }
+      ]
+    },
+    {
+      "original_label": "Hormone receptor status, No. (%)*",
+      "standardized_name": "Hormone receptor status",
+      "category": "Tumor characteristics",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Positive",
+      "standardized_name": "Hormone receptor status",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone receptor status",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 1203.0,
+          "percentage": 57.0,
+          "raw_string": "1,203 (57)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 1205.0,
+          "percentage": 58.0,
+          "raw_string": "1,205 (58)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 1197.0,
+          "percentage": 57.0,
+          "raw_string": "1,197 (57)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 1200.0,
+          "percentage": 57.0,
+          "raw_string": "1,200 (57)"
+        }
+      ]
+    },
+    {
+      "original_label": "Negative",
+      "standardized_name": "Hormone receptor status",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone receptor status",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 890.0,
+          "percentage": 43.0,
+          "raw_string": "890 (43)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 886.0,
+          "percentage": 42.0,
+          "raw_string": "886 (42)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 903.0,
+          "percentage": 43.0,
+          "raw_string": "903 (43)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 897.0,
+          "percentage": 43.0,
+          "raw_string": "897 (43)"
+        }
+      ]
+    },
+    {
+      "original_label": "Histologic grade, No. (%)",
+      "standardized_name": "Histologic grade",
+      "category": "Tumor characteristics",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Well differentiated",
+      "standardized_name": "Histologic grade",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histologic grade",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 79.0,
+          "percentage": 4.0,
+          "raw_string": "79 (4)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 61.0,
+          "percentage": 3.0,
+          "raw_string": "61 (3)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 58.0,
+          "percentage": 3.0,
+          "raw_string": "58 (3)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 59.0,
+          "percentage": 3.0,
+          "raw_string": "59 (3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Moderately differentiated",
+      "standardized_name": "Histologic grade",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histologic grade",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 51.0,
+          "percentage": 2.0,
+          "raw_string": "51 (2)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 59.0,
+          "percentage": 3.0,
+          "raw_string": "59 (3)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 60.0,
+          "percentage": 3.0,
+          "raw_string": "60 (3)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 48.0,
+          "percentage": 2.0,
+          "raw_string": "48 (2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Poorly differentiated",
+      "standardized_name": "Histologic grade",
+      "category": "Tumor characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histologic grade",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 1844.0,
+          "percentage": 88.0,
+          "raw_string": "1,844 (88)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 1854.0,
+          "percentage": 89.0,
+          "raw_string": "1,854 (89)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 1863.0,
+          "percentage": 89.0,
+          "raw_string": "1,863 (89)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 1859.0,
+          "percentage": 89.0,
+          "raw_string": "1,859 (89)"
+        }
+      ]
+    },
+    {
+      "original_label": "Surgery for the primary tumor, No. (%)",
+      "standardized_name": "Surgery for primary tumor",
+      "category": "Treatment",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Mastectomy",
+      "standardized_name": "Surgery for primary tumor",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Surgery for primary tumor",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 928.0,
+          "percentage": 44.0,
+          "raw_string": "928 (44)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 975.0,
+          "percentage": 47.0,
+          "raw_string": "975 (47)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 964.0,
+          "percentage": 46.0,
+          "raw_string": "964 (46)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 931.0,
+          "percentage": 44.0,
+          "raw_string": "931 (44)"
+        }
+      ]
+    },
+    {
+      "original_label": "Breast-conserving procedure",
+      "standardized_name": "Surgery for primary tumor",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Surgery for primary tumor",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 1164.0,
+          "percentage": 56.0,
+          "raw_string": "1,164 (56)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 1115.0,
+          "percentage": 53.0,
+          "raw_string": "1,115 (53)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 1136.0,
+          "percentage": 54.0,
+          "raw_string": "1,136 (54)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 1166.0,
+          "percentage": 56.0,
+          "raw_string": "1,166 (56)"
+        }
+      ]
+    },
+    {
+      "original_label": "Radiotherapy, No. (%)",
+      "standardized_name": "Radiotherapy",
+      "category": "Treatment",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Yes",
+      "standardized_name": "Radiotherapy",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Radiotherapy",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 1491.0,
+          "percentage": 71.0,
+          "raw_string": "1,491 (71)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 1501.0,
+          "percentage": 72.0,
+          "raw_string": "1,501 (72)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 1466.0,
+          "percentage": 70.0,
+          "raw_string": "1,466 (70)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 1486.0,
+          "percentage": 71.0,
+          "raw_string": "1,486 (71)"
+        }
+      ]
+    },
+    {
+      "original_label": "No",
+      "standardized_name": "Radiotherapy",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Radiotherapy",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 602.0,
+          "percentage": 29.0,
+          "raw_string": "602 (29)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 590.0,
+          "percentage": 28.0,
+          "raw_string": "590 (28)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 634.0,
+          "percentage": 30.0,
+          "raw_string": "634 (30)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 611.0,
+          "percentage": 29.0,
+          "raw_string": "611 (29)"
+        }
+      ]
+    },
+    {
+      "original_label": "Timing of chemotherapy, No. (%)",
+      "standardized_name": "Timing of chemotherapy",
+      "category": "Treatment",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Concurrent (design 1)",
+      "standardized_name": "Timing of chemotherapy",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Timing of chemotherapy",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 1145.0,
+          "percentage": 55.0,
+          "raw_string": "1,145 (55)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 1143.0,
+          "percentage": 55.0,
+          "raw_string": "1,143 (55)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 1168.0,
+          "percentage": 56.0,
+          "raw_string": "1,168 (56)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 1147.0,
+          "percentage": 55.0,
+          "raw_string": "1,147 (55)"
+        }
+      ]
+    },
+    {
+      "original_label": "Concurrent (design 2/2B)",
+      "standardized_name": "Timing of chemotherapy",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Timing of chemotherapy",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 938.0,
+          "percentage": 45.0,
+          "raw_string": "938 (45)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 948.0,
+          "percentage": 45.0,
+          "raw_string": "948 (45)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 932.0,
+          "percentage": 44.0,
+          "raw_string": "932 (44)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 950.0,
+          "percentage": 45.0,
+          "raw_string": "950 (45)"
+        }
+      ]
+    },
+    {
+      "original_label": "Any prior anticancer treatment (neoadjuvant)",
+      "standardized_name": "Prior neoadjuvant anticancer treatment",
+      "category": "Treatment",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 169.0,
+          "percentage": 8.0,
+          "raw_string": "169 (8)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 169.0,
+          "percentage": 8.0,
+          "raw_string": "169 (8)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 166.0,
+          "percentage": 8.0,
+          "raw_string": "166 (8)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 187.0,
+          "percentage": 9.0,
+          "raw_string": "187 (9)"
+        }
+      ]
+    },
+    {
+      "original_label": "Any prior anticancer treatment (adjuvant)",
+      "standardized_name": "Prior adjuvant anticancer treatment",
+      "category": "Treatment",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Paclitaxel",
+      "standardized_name": "Prior adjuvant anticancer treatment type",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior adjuvant anticancer treatment",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 54.0,
+          "percentage": 3.0,
+          "raw_string": "54 (3)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 42.0,
+          "percentage": 2.0,
+          "raw_string": "42 (2)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 31.0,
+          "percentage": 1.0,
+          "raw_string": "31 (1)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 72.0,
+          "percentage": 3.0,
+          "raw_string": "72 (3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Anthracycline",
+      "standardized_name": "Prior adjuvant anticancer treatment type",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior adjuvant anticancer treatment",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 392.0,
+          "percentage": 19.0,
+          "raw_string": "392 (19)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 388.0,
+          "percentage": 19.0,
+          "raw_string": "388 (19)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 411.0,
+          "percentage": 20.0,
+          "raw_string": "411 (20)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 389.0,
+          "percentage": 19.0,
+          "raw_string": "389 (19)"
+        }
+      ]
+    },
+    {
+      "original_label": "Docetaxel",
+      "standardized_name": "Prior adjuvant anticancer treatment type",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior adjuvant anticancer treatment",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 19.0,
+          "percentage": 1.0,
+          "raw_string": "19 (1)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 17.0,
+          "raw_string": "17 (< 1)",
+          "notes": "Percentage is < 1"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 24.0,
+          "percentage": 1.0,
+          "raw_string": "24 (1)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 31.0,
+          "percentage": 1.0,
+          "raw_string": "31 (1)"
+        }
+      ]
+    },
+    {
+      "original_label": "Other",
+      "standardized_name": "Prior adjuvant anticancer treatment type",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior adjuvant anticancer treatment",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 1529.0,
+          "percentage": 73.0,
+          "raw_string": "1,529 (73)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 1538.0,
+          "percentage": 74.0,
+          "raw_string": "1,538 (74)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 1509.0,
+          "percentage": 72.0,
+          "raw_string": "1,509 (72)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 1514.0,
+          "percentage": 72.0,
+          "raw_string": "1,514 (72)"
+        }
+      ]
+    },
+    {
+      "original_label": "Not given",
+      "standardized_name": "Prior adjuvant anticancer treatment type",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior adjuvant anticancer treatment",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 111.0,
+          "percentage": 5.0,
+          "raw_string": "111 (5)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 118.0,
+          "percentage": 6.0,
+          "raw_string": "118 (6)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 160.0,
+          "percentage": 8.0,
+          "raw_string": "160 (8)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 117.0,
+          "percentage": 6.0,
+          "raw_string": "117 (6)"
+        }
+      ]
+    },
+    {
+      "original_label": "Adjuvant endocrine therapy intended for patients with hormone receptor positivity, No. (%)†",
+      "standardized_name": "Adjuvant endocrine therapy for HR+ patients",
+      "category": "Treatment",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Yes",
+      "standardized_name": "Adjuvant endocrine therapy for HR+ patients",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Adjuvant endocrine therapy for HR+ patients",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 1092.0,
+          "percentage": 91.0,
+          "raw_string": "1,092 (91)",
+          "n_for_value": 1203
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 1087.0,
+          "percentage": 90.0,
+          "raw_string": "1,087 (90)",
+          "n_for_value": 1205
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 1037.0,
+          "percentage": 87.0,
+          "raw_string": "1,037 (87)",
+          "n_for_value": 1197
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 1083.0,
+          "percentage": 90.0,
+          "raw_string": "1,083 (90)",
+          "n_for_value": 1200
+        }
+      ]
+    },
+    {
+      "original_label": "No",
+      "standardized_name": "Adjuvant endocrine therapy for HR+ patients",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Adjuvant endocrine therapy for HR+ patients",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 111.0,
+          "percentage": 9.0,
+          "raw_string": "111 (9)",
+          "n_for_value": 1203
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 118.0,
+          "percentage": 10.0,
+          "raw_string": "118 (10)",
+          "n_for_value": 1205
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 160.0,
+          "percentage": 13.0,
+          "raw_string": "160 (13)",
+          "n_for_value": 1197
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 117.0,
+          "percentage": 10.0,
+          "raw_string": "117 (10)",
+          "n_for_value": 1200
+        }
+      ]
+    },
+    {
+      "original_label": "Type of endocrine therapy, No. (%)",
+      "standardized_name": "Type of endocrine therapy",
+      "category": "Treatment",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "L",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "T",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "AI",
+      "standardized_name": "Type of endocrine therapy",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Type of endocrine therapy",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 401.0,
+          "percentage": 37.0,
+          "raw_string": "401 (37)",
+          "n_for_value": 1092
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 371.0,
+          "percentage": 34.0,
+          "raw_string": "371 (34)",
+          "n_for_value": 1087
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 377.0,
+          "percentage": 36.0,
+          "raw_string": "377 (36)",
+          "n_for_value": 1037
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 381.0,
+          "percentage": 35.0,
+          "raw_string": "381 (35)",
+          "n_for_value": 1083
+        }
+      ]
+    },
+    {
+      "original_label": "AI and SERM",
+      "standardized_name": "Type of endocrine therapy",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Type of endocrine therapy",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 145.0,
+          "percentage": 13.0,
+          "raw_string": "145 (13)",
+          "n_for_value": 1092
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 169.0,
+          "percentage": 15.0,
+          "raw_string": "169 (15)",
+          "n_for_value": 1087
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 154.0,
+          "percentage": 15.0,
+          "raw_string": "154 (15)",
+          "n_for_value": 1037
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 166.0,
+          "percentage": 15.0,
+          "raw_string": "166 (15)",
+          "n_for_value": 1083
+        }
+      ]
+    },
+    {
+      "original_label": "SERM",
+      "standardized_name": "Type of endocrine therapy",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Type of endocrine therapy",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 529.0,
+          "percentage": 48.0,
+          "raw_string": "529 (48)",
+          "n_for_value": 1092
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 546.0,
+          "percentage": 50.0,
+          "raw_string": "546 (50)",
+          "n_for_value": 1087
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 491.0,
+          "percentage": 47.0,
+          "raw_string": "491 (47)",
+          "n_for_value": 1037
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 519.0,
+          "percentage": 48.0,
+          "raw_string": "519 (48)",
+          "n_for_value": 1083
+        }
+      ]
+    },
+    {
+      "original_label": "LHRH",
+      "standardized_name": "Type of endocrine therapy",
+      "category": "Treatment",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Type of endocrine therapy",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 1.0,
+          "raw_string": "6 (1)",
+          "n_for_value": 1092
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 1.0,
+          "raw_string": "6 (1)",
+          "n_for_value": 1087
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 1.0,
+          "raw_string": "6 (1)",
+          "n_for_value": 1037
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 1.0,
+          "raw_string": "7 (1)",
+          "n_for_value": 1083
+        }
+      ]
+    }
+  ]
+}

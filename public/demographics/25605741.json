@@ -1,0 +1,524 @@
+{
+  "study_id": "SAKK 41/06",
+  "study_title": "Bevacizumab continuation versus no continuation after first-line chemotherapy plus bevacizumab in patients with metastatic colorectal cancer: a randomized phase III non-inferiority trial (SAKK 41/06)",
+  "table_name": "Table 1",
+  "table_title": "Baseline patient demographics and clinical characteristics",
+  "description": "Baseline demographic and clinical characteristics for patients randomized to bevacizumab continuation or no bevacizumab continuation.",
+  "footnotes": [
+    "CR, complete response; PR, partial response; SD, stable disease."
+  ],
+  "groups": [
+    {
+      "name": "Bevacizumab continuation",
+      "n": 131,
+      "type": "Intervention"
+    },
+    {
+      "name": "No bevacizumab continuation",
+      "n": 131,
+      "type": "Control"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Median age (range)",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Bevacizumab continuation",
+          "data_type": "numeric_median_iqr",
+          "median": 63.0,
+          "iqr_min": 40.0,
+          "iqr_max": 83.0,
+          "raw_string": "63 (40-83)",
+          "notes": "The source table reports a range, not an interquartile range (IQR)."
+        },
+        {
+          "group_name": "No bevacizumab continuation",
+          "data_type": "numeric_median_iqr",
+          "median": 65.0,
+          "iqr_min": 23.0,
+          "iqr_max": 85.0,
+          "raw_string": "65 (23-85)",
+          "notes": "The source table reports a range, not an interquartile range (IQR)."
+        }
+      ]
+    },
+    {
+      "original_label": "Sex",
+      "standardized_name": "Sex",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Bevacizumab continuation",
+          "data_type": "header",
+          "raw_string": "Sex"
+        },
+        {
+          "group_name": "No bevacizumab continuation",
+          "data_type": "header",
+          "raw_string": "Sex"
+        }
+      ]
+    },
+    {
+      "original_label": "Male",
+      "standardized_name": "Sex",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sex",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 93.0,
+          "percentage": 71.0,
+          "raw_string": "93"
+        },
+        {
+          "group_name": "No bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 96.0,
+          "percentage": 73.0,
+          "raw_string": "96"
+        }
+      ]
+    },
+    {
+      "original_label": "Female",
+      "standardized_name": "Sex",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sex",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 38.0,
+          "percentage": 29.0,
+          "raw_string": "38"
+        },
+        {
+          "group_name": "No bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 35.0,
+          "percentage": 27.0,
+          "raw_string": "35"
+        }
+      ]
+    },
+    {
+      "original_label": "ECOG performance status score",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Bevacizumab continuation",
+          "data_type": "header",
+          "raw_string": "ECOG performance status score"
+        },
+        {
+          "group_name": "No bevacizumab continuation",
+          "data_type": "header",
+          "raw_string": "ECOG performance status score"
+        }
+      ]
+    },
+    {
+      "original_label": "0",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG performance status score",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 97.0,
+          "percentage": 74.0,
+          "raw_string": "97"
+        },
+        {
+          "group_name": "No bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 91.0,
+          "percentage": 69.0,
+          "raw_string": "91"
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG performance status score",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 34.0,
+          "percentage": 26.0,
+          "raw_string": "34"
+        },
+        {
+          "group_name": "No bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 40.0,
+          "percentage": 31.0,
+          "raw_string": "40"
+        }
+      ]
+    },
+    {
+      "original_label": "Adjuvant chemotherapy",
+      "standardized_name": "Prior Adjuvant Chemotherapy",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 37.0,
+          "percentage": 28.0,
+          "raw_string": "37"
+        },
+        {
+          "group_name": "No bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 37.0,
+          "percentage": 28.0,
+          "raw_string": "37"
+        }
+      ]
+    },
+    {
+      "original_label": "Clinically significant comorbidities",
+      "standardized_name": "Clinically Significant Comorbidities",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 76.0,
+          "percentage": 58.0,
+          "raw_string": "76"
+        },
+        {
+          "group_name": "No bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 65.0,
+          "percentage": 50.0,
+          "raw_string": "65"
+        }
+      ]
+    },
+    {
+      "original_label": "Response to first-line treatment",
+      "standardized_name": "Response to First-line Treatment",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Bevacizumab continuation",
+          "data_type": "header",
+          "raw_string": "Response to first-line treatment"
+        },
+        {
+          "group_name": "No bevacizumab continuation",
+          "data_type": "header",
+          "raw_string": "Response to first-line treatment"
+        }
+      ]
+    },
+    {
+      "original_label": "CR/PR",
+      "standardized_name": "Response to First-line Treatment",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Response to first-line treatment",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 81.0,
+          "percentage": 62.0,
+          "raw_string": "81"
+        },
+        {
+          "group_name": "No bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 77.0,
+          "percentage": 59.0,
+          "raw_string": "77"
+        }
+      ]
+    },
+    {
+      "original_label": "SD",
+      "standardized_name": "Response to First-line Treatment",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Response to first-line treatment",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 50.0,
+          "percentage": 38.0,
+          "raw_string": "50"
+        },
+        {
+          "group_name": "No bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 54.0,
+          "percentage": 41.0,
+          "raw_string": "54"
+        }
+      ]
+    },
+    {
+      "original_label": "Duration of first-line treatment",
+      "standardized_name": "Duration of First-line Treatment",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Bevacizumab continuation",
+          "data_type": "header",
+          "raw_string": "Duration of first-line treatment"
+        },
+        {
+          "group_name": "No bevacizumab continuation",
+          "data_type": "header",
+          "raw_string": "Duration of first-line treatment"
+        }
+      ]
+    },
+    {
+      "original_label": "16-20 weeks",
+      "standardized_name": "Duration of First-line Treatment",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Duration of first-line treatment",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 84.0,
+          "percentage": 64.0,
+          "raw_string": "84"
+        },
+        {
+          "group_name": "No bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 91.0,
+          "percentage": 69.0,
+          "raw_string": "91"
+        }
+      ]
+    },
+    {
+      "original_label": "21-24 weeks",
+      "standardized_name": "Duration of First-line Treatment",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Duration of first-line treatment",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 47.0,
+          "percentage": 36.0,
+          "raw_string": "47"
+        },
+        {
+          "group_name": "No bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 40.0,
+          "percentage": 31.0,
+          "raw_string": "40"
+        }
+      ]
+    },
+    {
+      "original_label": "First-line chemotherapy regimen",
+      "standardized_name": "First-line Chemotherapy Regimen",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Bevacizumab continuation",
+          "data_type": "header",
+          "raw_string": "First-line chemotherapy regimen"
+        },
+        {
+          "group_name": "No bevacizumab continuation",
+          "data_type": "header",
+          "raw_string": "First-line chemotherapy regimen"
+        }
+      ]
+    },
+    {
+      "original_label": "Irinotecan + fluoropyrimidine",
+      "standardized_name": "First-line Chemotherapy Regimen",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "First-line chemotherapy regimen",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 41.0,
+          "percentage": 31.0,
+          "raw_string": "41"
+        },
+        {
+          "group_name": "No bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 42.0,
+          "percentage": 32.0,
+          "raw_string": "42"
+        }
+      ]
+    },
+    {
+      "original_label": "Oxaliplatin + fluoropyrimidine",
+      "standardized_name": "First-line Chemotherapy Regimen",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "First-line chemotherapy regimen",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 81.0,
+          "percentage": 62.0,
+          "raw_string": "81"
+        },
+        {
+          "group_name": "No bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 82.0,
+          "percentage": 63.0,
+          "raw_string": "82"
+        }
+      ]
+    },
+    {
+      "original_label": "Fluoropyrimidine alone",
+      "standardized_name": "First-line Chemotherapy Regimen",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "First-line chemotherapy regimen",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 9.0,
+          "percentage": 7.0,
+          "raw_string": "9"
+        },
+        {
+          "group_name": "No bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 5.0,
+          "raw_string": "7"
+        }
+      ]
+    },
+    {
+      "original_label": "Metastatic spread",
+      "standardized_name": "Metastatic Spread",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Bevacizumab continuation",
+          "data_type": "header",
+          "raw_string": "Metastatic spread"
+        },
+        {
+          "group_name": "No bevacizumab continuation",
+          "data_type": "header",
+          "raw_string": "Metastatic spread"
+        }
+      ]
+    },
+    {
+      "original_label": "1 organ",
+      "standardized_name": "Metastatic Spread",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Metastatic spread",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 49.0,
+          "percentage": 37.0,
+          "raw_string": "49"
+        },
+        {
+          "group_name": "No bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 46.0,
+          "percentage": 35.0,
+          "raw_string": "46"
+        }
+      ]
+    },
+    {
+      "original_label": ">1 organ",
+      "standardized_name": "Metastatic Spread",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Metastatic spread",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 82.0,
+          "percentage": 63.0,
+          "raw_string": "82"
+        },
+        {
+          "group_name": "No bevacizumab continuation",
+          "data_type": "categorical_count_percentage",
+          "count": 85.0,
+          "percentage": 65.0,
+          "raw_string": "85"
+        }
+      ]
+    }
+  ]
+}

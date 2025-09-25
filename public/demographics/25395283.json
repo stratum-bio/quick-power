@@ -1,0 +1,816 @@
+{
+  "study_id": "NCT00673049",
+  "study_title": "Randomized, phase III trial of figitumumab in combination with erlotinib versus erlotinib alone in patients with nonadenocarcinoma nonsmall-cell lung cancer",
+  "table_name": "Table 1",
+  "table_title": "Patient characteristics at baseline (all randomized, as randomized)",
+  "footnotes": [
+    "aPatients who had not had a cigarette within the last year or longer.",
+    "ECOG, Eastern Cooperative Oncology Group."
+  ],
+  "groups": [
+    {
+      "name": "Figitumumab arm",
+      "n": 293,
+      "type": "investigational arm"
+    },
+    {
+      "name": "Control arm",
+      "n": 290,
+      "type": "control arm"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Gender, male",
+      "standardized_name": "Sex",
+      "category": "Male",
+      "time_point": "baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "categorical_count_percentage",
+          "count": 228.0,
+          "percentage": 78.0,
+          "raw_string": "228",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "count": 225.0,
+          "percentage": 78.0,
+          "raw_string": "225",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "Age, years",
+      "standardized_name": "Age",
+      "unit": "years",
+      "time_point": "baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "header",
+          "raw_string": "Age, years"
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "header",
+          "raw_string": "Age, years"
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Age",
+      "unit": "years",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, years",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "numeric_single",
+          "value": 62.0,
+          "raw_string": "62.0",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "numeric_single",
+          "value": 62.0,
+          "raw_string": "62.0",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "Range",
+      "standardized_name": "Age",
+      "unit": "years",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, years",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "numeric_mean_range",
+          "range_min": 33.0,
+          "range_max": 85.0,
+          "raw_string": "33-85",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "numeric_mean_range",
+          "range_min": 29.0,
+          "range_max": 87.0,
+          "raw_string": "29-87",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "Ethnicity",
+      "standardized_name": "Ethnicity",
+      "time_point": "baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "header",
+          "raw_string": "Ethnicity"
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "header",
+          "raw_string": "Ethnicity"
+        }
+      ]
+    },
+    {
+      "original_label": "White",
+      "standardized_name": "Ethnicity",
+      "category": "White",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Ethnicity",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "categorical_count_percentage",
+          "count": 249.0,
+          "percentage": 85.0,
+          "raw_string": "249",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "count": 238.0,
+          "percentage": 82.0,
+          "raw_string": "238",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "Black",
+      "standardized_name": "Ethnicity",
+      "category": "Black",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Ethnicity",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 2.0,
+          "raw_string": "7",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 2.0,
+          "raw_string": "7",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "Asian",
+      "standardized_name": "Ethnicity",
+      "category": "Asian",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Ethnicity",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "percentage": 7.0,
+          "raw_string": "21",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "count": 23.0,
+          "percentage": 8.0,
+          "raw_string": "23",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "Other/not specified",
+      "standardized_name": "Ethnicity",
+      "category": "Other/not specified",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Ethnicity",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 5.0,
+          "raw_string": "16",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "count": 22.0,
+          "percentage": 8.0,
+          "raw_string": "22",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "Region",
+      "standardized_name": "Region",
+      "time_point": "baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "header",
+          "raw_string": "Region"
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "header",
+          "raw_string": "Region"
+        }
+      ]
+    },
+    {
+      "original_label": "United States/Canada",
+      "standardized_name": "Region",
+      "category": "United States/Canada",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Region",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "categorical_count_percentage",
+          "count": 50.0,
+          "percentage": 17.0,
+          "raw_string": "50",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "count": 49.0,
+          "percentage": 17.0,
+          "raw_string": "49",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "European Union",
+      "standardized_name": "Region",
+      "category": "European Union",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Region",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "categorical_count_percentage",
+          "count": 155.0,
+          "percentage": 53.0,
+          "raw_string": "155",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "count": 152.0,
+          "percentage": 52.0,
+          "raw_string": "152",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "Rest of World",
+      "standardized_name": "Region",
+      "category": "Rest of World",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Region",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "categorical_count_percentage",
+          "count": 88.0,
+          "percentage": 30.0,
+          "raw_string": "88",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "count": 89.0,
+          "percentage": 31.0,
+          "raw_string": "89",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "ECOG performance status",
+      "standardized_name": "ECOG Performance Status",
+      "time_point": "baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "header",
+          "raw_string": "ECOG performance status"
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "header",
+          "raw_string": "ECOG performance status"
+        }
+      ]
+    },
+    {
+      "original_label": "0-1",
+      "standardized_name": "ECOG Performance Status",
+      "category": "0-1",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG performance status",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "categorical_count_percentage",
+          "count": 237.0,
+          "percentage": 81.0,
+          "raw_string": "237",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "count": 236.0,
+          "percentage": 82.0,
+          "raw_string": "236",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "2",
+      "standardized_name": "ECOG Performance Status",
+      "category": "2",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG performance status",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "categorical_count_percentage",
+          "count": 56.0,
+          "percentage": 19.0,
+          "raw_string": "56",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "count": 54.0,
+          "percentage": 19.0,
+          "raw_string": "54",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "Disease stage",
+      "standardized_name": "Disease Stage",
+      "time_point": "baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "header",
+          "raw_string": "Disease stage"
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "header",
+          "raw_string": "Disease stage"
+        }
+      ]
+    },
+    {
+      "original_label": "Stage IIIB",
+      "standardized_name": "Disease Stage",
+      "category": "IIIB",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Disease stage",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "categorical_count_percentage",
+          "count": 62.0,
+          "percentage": 21.0,
+          "raw_string": "62",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "count": 55.0,
+          "percentage": 19.0,
+          "raw_string": "55",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "Stage IV",
+      "standardized_name": "Disease Stage",
+      "category": "IV",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Disease stage",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "categorical_count_percentage",
+          "count": 230.0,
+          "percentage": 78.0,
+          "raw_string": "230",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "count": 235.0,
+          "percentage": 81.0,
+          "raw_string": "235",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "Not reported",
+      "standardized_name": "Disease Stage",
+      "category": "Not reported",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Disease stage",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "raw_string": "1",
+          "notes": "% < 1.0",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "Smoking status",
+      "standardized_name": "Smoking Status",
+      "time_point": "baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "header",
+          "raw_string": "Smoking status"
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "header",
+          "raw_string": "Smoking status"
+        }
+      ]
+    },
+    {
+      "original_label": "Never smoked",
+      "standardized_name": "Smoking Status",
+      "category": "Never smoked",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Smoking status",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 6.0,
+          "raw_string": "16",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "count": 26.0,
+          "percentage": 9.0,
+          "raw_string": "26",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "Current smoker",
+      "standardized_name": "Smoking Status",
+      "category": "Current smoker",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Smoking status",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "categorical_count_percentage",
+          "count": 94.0,
+          "percentage": 32.0,
+          "raw_string": "94",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "count": 101.0,
+          "percentage": 35.0,
+          "raw_string": "101",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "Ex-smokera",
+      "standardized_name": "Smoking Status",
+      "category": "Ex-smoker",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Smoking status",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "categorical_count_percentage",
+          "count": 183.0,
+          "percentage": 63.0,
+          "raw_string": "183",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "count": 163.0,
+          "percentage": 56.0,
+          "raw_string": "163",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "Histology",
+      "standardized_name": "Histology",
+      "time_point": "baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "header",
+          "raw_string": "Histology"
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "header",
+          "raw_string": "Histology"
+        }
+      ]
+    },
+    {
+      "original_label": "Squamous cell",
+      "standardized_name": "Histology",
+      "category": "Squamous cell",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histology",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "categorical_count_percentage",
+          "count": 263.0,
+          "percentage": 90.0,
+          "raw_string": "263",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "count": 263.0,
+          "percentage": 91.0,
+          "raw_string": "263",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "Large cell",
+      "standardized_name": "Histology",
+      "category": "Large cell",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histology",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "categorical_count_percentage",
+          "count": 20.0,
+          "percentage": 7.0,
+          "raw_string": "20",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "count": 19.0,
+          "percentage": 7.0,
+          "raw_string": "19",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "Adenosquamous",
+      "standardized_name": "Histology",
+      "category": "Adenosquamous",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histology",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "categorical_count_percentage",
+          "count": 9.0,
+          "percentage": 3.0,
+          "raw_string": "9",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 3.0,
+          "raw_string": "8",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "Not reported",
+      "standardized_name": "Histology",
+      "category": "Not reported",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histology",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "raw_string": "1",
+          "notes": "% < 1.0",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "Prior treatments",
+      "standardized_name": "Prior treatments",
+      "time_point": "baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "header",
+          "raw_string": "Prior treatments"
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "header",
+          "raw_string": "Prior treatments"
+        }
+      ]
+    },
+    {
+      "original_label": "Surgery",
+      "standardized_name": "Prior treatments",
+      "category": "Surgery",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior treatments",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "categorical_count_percentage",
+          "count": 86.0,
+          "percentage": 30.0,
+          "raw_string": "86",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "count": 93.0,
+          "percentage": 32.0,
+          "raw_string": "93",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "Radiation",
+      "standardized_name": "Prior treatments",
+      "category": "Radiation",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior treatments",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "categorical_count_percentage",
+          "count": 129.0,
+          "percentage": 44.0,
+          "raw_string": "129",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "count": 137.0,
+          "percentage": 47.0,
+          "raw_string": "137",
+          "n_for_value": 290
+        }
+      ]
+    },
+    {
+      "original_label": "Systemic",
+      "standardized_name": "Prior treatments",
+      "category": "Systemic",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior treatments",
+      "group_data": [
+        {
+          "group_name": "Figitumumab arm",
+          "data_type": "categorical_count_percentage",
+          "count": 292.0,
+          "percentage": 100.0,
+          "raw_string": "292",
+          "n_for_value": 293
+        },
+        {
+          "group_name": "Control arm",
+          "data_type": "categorical_count_percentage",
+          "count": 290.0,
+          "percentage": 100.0,
+          "raw_string": "290",
+          "n_for_value": 290
+        }
+      ]
+    }
+  ]
+}

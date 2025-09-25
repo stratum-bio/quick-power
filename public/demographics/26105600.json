@@ -1,0 +1,652 @@
+{
+  "study_id": "NCT01342965",
+  "study_title": "First-line erlotinib versus gemcitabine/cisplatin in patients with advanced EGFR mutation-positive non-small-cell lung cancer: analyses from the phase III, randomized, open-label, ENSURE study",
+  "table_name": "Table 1",
+  "table_title": "Baseline demographics and disease characteristics of the ENSURE patient population (intent-to-treat population)",
+  "footnotes": [
+    "Unless otherwise specified.",
+    "ECOG PS, Eastern Cooperative Oncology Group performance status; EGFR, epidermal growth factor receptor; GP, gemcitabine/cisplatin."
+  ],
+  "groups": [
+    {
+      "name": "Erlotinib",
+      "n": 110,
+      "type": "intervention"
+    },
+    {
+      "name": "GP",
+      "n": 107,
+      "type": "intervention"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age",
+      "standardized_name": "Age",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "header",
+          "raw_string": "Age"
+        },
+        {
+          "group_name": "GP",
+          "data_type": "header",
+          "raw_string": "Age"
+        }
+      ]
+    },
+    {
+      "original_label": "Median, years (range)",
+      "standardized_name": "Age",
+      "unit": "years",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "other",
+          "median": 57.5,
+          "text_value": "57.5 (33-79)",
+          "raw_string": "57.5 (33-79)",
+          "notes": "Value is median (range)."
+        },
+        {
+          "group_name": "GP",
+          "data_type": "other",
+          "median": 56.0,
+          "text_value": "56.0 (30-78)",
+          "raw_string": "56.0 (30-78)",
+          "notes": "Value is median (range)."
+        }
+      ]
+    },
+    {
+      "original_label": "<65 years, %",
+      "standardized_name": "Age",
+      "unit": "%",
+      "category": "<65 years",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "percentage": 79.1,
+          "raw_string": "79.1"
+        },
+        {
+          "group_name": "GP",
+          "data_type": "categorical_count_percentage",
+          "percentage": 79.4,
+          "raw_string": "79.4"
+        }
+      ]
+    },
+    {
+      "original_label": "≥65 years, %",
+      "standardized_name": "Age",
+      "unit": "%",
+      "category": "≥65 years",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "percentage": 20.9,
+          "raw_string": "20.9"
+        },
+        {
+          "group_name": "GP",
+          "data_type": "categorical_count_percentage",
+          "percentage": 20.6,
+          "raw_string": "20.6"
+        }
+      ]
+    },
+    {
+      "original_label": "Gender, %",
+      "standardized_name": "Sex",
+      "unit": "%",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "header",
+          "raw_string": "Gender, %"
+        },
+        {
+          "group_name": "GP",
+          "data_type": "header",
+          "raw_string": "Gender, %"
+        }
+      ]
+    },
+    {
+      "original_label": "Male",
+      "standardized_name": "Sex",
+      "unit": "%",
+      "category": "Male",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sex",
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "percentage": 38.2,
+          "raw_string": "38.2"
+        },
+        {
+          "group_name": "GP",
+          "data_type": "categorical_count_percentage",
+          "percentage": 39.3,
+          "raw_string": "39.3"
+        }
+      ]
+    },
+    {
+      "original_label": "Female",
+      "standardized_name": "Sex",
+      "unit": "%",
+      "category": "Female",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sex",
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "percentage": 61.8,
+          "raw_string": "61.8"
+        },
+        {
+          "group_name": "GP",
+          "data_type": "categorical_count_percentage",
+          "percentage": 60.7,
+          "raw_string": "60.7"
+        }
+      ]
+    },
+    {
+      "original_label": "Country, %",
+      "standardized_name": "Country",
+      "unit": "%",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "header",
+          "raw_string": "Country, %"
+        },
+        {
+          "group_name": "GP",
+          "data_type": "header",
+          "raw_string": "Country, %"
+        }
+      ]
+    },
+    {
+      "original_label": "China",
+      "standardized_name": "Country",
+      "unit": "%",
+      "category": "China",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Country",
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "percentage": 79.1,
+          "raw_string": "79.1"
+        },
+        {
+          "group_name": "GP",
+          "data_type": "categorical_count_percentage",
+          "percentage": 82.2,
+          "raw_string": "82.2"
+        }
+      ]
+    },
+    {
+      "original_label": "Non-China",
+      "standardized_name": "Country",
+      "unit": "%",
+      "category": "Non-China",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Country",
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "percentage": 20.9,
+          "raw_string": "20.9"
+        },
+        {
+          "group_name": "GP",
+          "data_type": "categorical_count_percentage",
+          "percentage": 17.8,
+          "raw_string": "17.8"
+        }
+      ]
+    },
+    {
+      "original_label": "ECOG PS, %",
+      "standardized_name": "ECOG Performance Status",
+      "unit": "%",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "header",
+          "raw_string": "ECOG PS, %",
+          "n_for_value": 109
+        },
+        {
+          "group_name": "GP",
+          "data_type": "header",
+          "raw_string": "ECOG PS, %",
+          "n_for_value": 104
+        }
+      ]
+    },
+    {
+      "original_label": "0",
+      "standardized_name": "ECOG Performance Status",
+      "unit": "%",
+      "category": "0",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "percentage": 14.7,
+          "raw_string": "14.7",
+          "n_for_value": 109
+        },
+        {
+          "group_name": "GP",
+          "data_type": "categorical_count_percentage",
+          "percentage": 14.4,
+          "raw_string": "14.4",
+          "n_for_value": 104
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "ECOG Performance Status",
+      "unit": "%",
+      "category": "1",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "percentage": 78.9,
+          "raw_string": "78.9",
+          "n_for_value": 109
+        },
+        {
+          "group_name": "GP",
+          "data_type": "categorical_count_percentage",
+          "percentage": 79.8,
+          "raw_string": "79.8",
+          "n_for_value": 104
+        }
+      ]
+    },
+    {
+      "original_label": "2",
+      "standardized_name": "ECOG Performance Status",
+      "unit": "%",
+      "category": "2",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "percentage": 6.4,
+          "raw_string": "6.4",
+          "n_for_value": 109
+        },
+        {
+          "group_name": "GP",
+          "data_type": "categorical_count_percentage",
+          "percentage": 5.8,
+          "raw_string": "5.8",
+          "n_for_value": 104
+        }
+      ]
+    },
+    {
+      "original_label": "Smoking status, %",
+      "standardized_name": "Smoking Status",
+      "unit": "%",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "header",
+          "raw_string": "Smoking status, %"
+        },
+        {
+          "group_name": "GP",
+          "data_type": "header",
+          "raw_string": "Smoking status, %"
+        }
+      ]
+    },
+    {
+      "original_label": "Current smoker",
+      "standardized_name": "Smoking Status",
+      "unit": "%",
+      "category": "Current",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Smoking Status",
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "percentage": 24.5,
+          "raw_string": "24.5"
+        },
+        {
+          "group_name": "GP",
+          "data_type": "categorical_count_percentage",
+          "percentage": 29.0,
+          "raw_string": "29.0"
+        }
+      ]
+    },
+    {
+      "original_label": "Former smoker",
+      "standardized_name": "Smoking Status",
+      "unit": "%",
+      "category": "Former",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Smoking Status",
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "percentage": 3.6,
+          "raw_string": "3.6"
+        },
+        {
+          "group_name": "GP",
+          "data_type": "categorical_count_percentage",
+          "percentage": 1.9,
+          "raw_string": "1.9"
+        }
+      ]
+    },
+    {
+      "original_label": "Never smoker",
+      "standardized_name": "Smoking Status",
+      "unit": "%",
+      "category": "Never",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Smoking Status",
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "percentage": 71.8,
+          "raw_string": "71.8"
+        },
+        {
+          "group_name": "GP",
+          "data_type": "categorical_count_percentage",
+          "percentage": 69.2,
+          "raw_string": "69.2"
+        }
+      ]
+    },
+    {
+      "original_label": "Stage of disease, %",
+      "standardized_name": "Disease Stage",
+      "unit": "%",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "header",
+          "raw_string": "Stage of disease, %"
+        },
+        {
+          "group_name": "GP",
+          "data_type": "header",
+          "raw_string": "Stage of disease, %"
+        }
+      ]
+    },
+    {
+      "original_label": "IIIB",
+      "standardized_name": "Disease Stage",
+      "unit": "%",
+      "category": "IIIB",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Disease Stage",
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "percentage": 9.1,
+          "raw_string": "9.1"
+        },
+        {
+          "group_name": "GP",
+          "data_type": "categorical_count_percentage",
+          "percentage": 6.5,
+          "raw_string": "6.5"
+        }
+      ]
+    },
+    {
+      "original_label": "IV",
+      "standardized_name": "Disease Stage",
+      "unit": "%",
+      "category": "IV",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Disease Stage",
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "percentage": 90.9,
+          "raw_string": "90.9"
+        },
+        {
+          "group_name": "GP",
+          "data_type": "categorical_count_percentage",
+          "percentage": 93.5,
+          "raw_string": "93.5"
+        }
+      ]
+    },
+    {
+      "original_label": "Histology, %",
+      "standardized_name": "Histology",
+      "unit": "%",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "header",
+          "raw_string": "Histology, %"
+        },
+        {
+          "group_name": "GP",
+          "data_type": "header",
+          "raw_string": "Histology, %"
+        }
+      ]
+    },
+    {
+      "original_label": "Adenocarcinoma",
+      "standardized_name": "Histology",
+      "unit": "%",
+      "category": "Adenocarcinoma",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histology",
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "percentage": 94.5,
+          "raw_string": "94.5"
+        },
+        {
+          "group_name": "GP",
+          "data_type": "categorical_count_percentage",
+          "percentage": 94.4,
+          "raw_string": "94.4"
+        }
+      ]
+    },
+    {
+      "original_label": "Squamous-cell carcinoma",
+      "standardized_name": "Histology",
+      "unit": "%",
+      "category": "Squamous-cell carcinoma",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histology",
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "percentage": 1.8,
+          "raw_string": "1.8"
+        },
+        {
+          "group_name": "GP",
+          "data_type": "categorical_count_percentage",
+          "percentage": 1.9,
+          "raw_string": "1.9"
+        }
+      ]
+    },
+    {
+      "original_label": "Other",
+      "standardized_name": "Histology",
+      "unit": "%",
+      "category": "Other",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histology",
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "percentage": 3.6,
+          "raw_string": "3.6"
+        },
+        {
+          "group_name": "GP",
+          "data_type": "categorical_count_percentage",
+          "percentage": 3.6,
+          "raw_string": "3.6"
+        }
+      ]
+    },
+    {
+      "original_label": "Tissue-assessed EGFR mutation type, %",
+      "standardized_name": "EGFR Mutation Type",
+      "unit": "%",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "header",
+          "raw_string": "Tissue-assessed EGFR mutation type, %",
+          "n_for_value": 109
+        },
+        {
+          "group_name": "GP",
+          "data_type": "header",
+          "raw_string": "Tissue-assessed EGFR mutation type, %",
+          "n_for_value": 107
+        }
+      ]
+    },
+    {
+      "original_label": "Exon 19 deletion",
+      "standardized_name": "EGFR Mutation Type",
+      "unit": "%",
+      "category": "Exon 19 deletion",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "EGFR Mutation Type",
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "percentage": 52.3,
+          "raw_string": "52.3",
+          "n_for_value": 109
+        },
+        {
+          "group_name": "GP",
+          "data_type": "categorical_count_percentage",
+          "percentage": 57.0,
+          "raw_string": "57.0",
+          "n_for_value": 107
+        }
+      ]
+    },
+    {
+      "original_label": "Exon 21 L858R mutation",
+      "standardized_name": "EGFR Mutation Type",
+      "unit": "%",
+      "category": "Exon 21 L858R",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "EGFR Mutation Type",
+      "group_data": [
+        {
+          "group_name": "Erlotinib",
+          "data_type": "categorical_count_percentage",
+          "percentage": 47.7,
+          "raw_string": "47.7",
+          "n_for_value": 109
+        },
+        {
+          "group_name": "GP",
+          "data_type": "categorical_count_percentage",
+          "percentage": 43.0,
+          "raw_string": "43.0",
+          "n_for_value": 107
+        }
+      ]
+    }
+  ]
+}

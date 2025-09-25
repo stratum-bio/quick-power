@@ -1,0 +1,639 @@
+{
+  "study_id": "NCT00066703 and NCT00066690",
+  "study_title": "Adjuvant Exemestane with Ovarian Suppression in Premenopausal Breast Cancer",
+  "table_name": "Table 1",
+  "table_title": "Characteristics of Patients in TEXT and SOFT, Overall and According to Trial and Chemotherapy Stratum.",
+  "description": "Baseline characteristics of patients enrolled in the TEXT and SOFT trials, stratified by trial and chemotherapy cohort.",
+  "footnotes": [
+    "* A more complete summary of characteristics is provided in Table S1 in the Supplementary Appendix. Characteristics were well balanced according to treatment assignment (Table S2 in the Supplementary Appendix). The statistical analysis plan did not specify hypothesis testing regarding comparisons between these groups. HER2 denotes human epidermal growth factor receptor 2, SOFT Suppression of Ovarian Function Trial, and TEXT Tamoxifen and Exemestane Trial.",
+    "† Among patients who received chemotherapy, patients in TEXT received chemotherapy during the trial, and those in SOFT had received chemotherapy before enrollment.",
+    "‡ Data were missing for 3 patients in TEXT who did not receive chemotherapy, for 4 in SOFT who did not receive chemotherapy, for 25 in TEXT who received chemotherapy, and for 42 in SOFT who had received chemotherapy previously.",
+    "§ Oral endocrine therapy before randomization was allowed in SOFT while premenopausal status was established or re-established; it was not allowed in TEXT."
+  ],
+  "groups": [
+    {
+      "name": "No-Chemotherapy Cohorts, TEXT",
+      "n": 1053,
+      "type": "No-Chemotherapy"
+    },
+    {
+      "name": "No-Chemotherapy Cohorts, SOFT",
+      "n": 943,
+      "type": "No-Chemotherapy"
+    },
+    {
+      "name": "Chemotherapy Cohorts, TEXT",
+      "n": 1607,
+      "type": "Chemotherapy"
+    },
+    {
+      "name": "Chemotherapy Cohorts, SOFT",
+      "n": 1087,
+      "type": "Chemotherapy"
+    },
+    {
+      "name": "Overall",
+      "n": 4690,
+      "type": "Overall"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age at randomization — no. (%)",
+      "standardized_name": "Age",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "No-Chemotherapy Cohorts, TEXT",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "No-Chemotherapy Cohorts, SOFT",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, TEXT",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, SOFT",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "<35 yr",
+      "standardized_name": "Age <35 years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "No-Chemotherapy Cohorts, TEXT",
+          "data_type": "categorical_count_percentage",
+          "count": 41.0,
+          "percentage": 3.9,
+          "raw_string": "41 (3.9)"
+        },
+        {
+          "group_name": "No-Chemotherapy Cohorts, SOFT",
+          "data_type": "categorical_count_percentage",
+          "count": 14.0,
+          "percentage": 1.5,
+          "raw_string": "14 (1.5)"
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, TEXT",
+          "data_type": "categorical_count_percentage",
+          "count": 191.0,
+          "percentage": 11.9,
+          "raw_string": "191 (11.9)"
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, SOFT",
+          "data_type": "categorical_count_percentage",
+          "count": 224.0,
+          "percentage": 20.6,
+          "raw_string": "224 (20.6)"
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 470.0,
+          "percentage": 10.0,
+          "raw_string": "470 (10.0)"
+        }
+      ]
+    },
+    {
+      "original_label": "35–39 yr",
+      "standardized_name": "Age 35-39 years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "No-Chemotherapy Cohorts, TEXT",
+          "data_type": "categorical_count_percentage",
+          "count": 123.0,
+          "percentage": 11.7,
+          "raw_string": "123 (11.7)"
+        },
+        {
+          "group_name": "No-Chemotherapy Cohorts, SOFT",
+          "data_type": "categorical_count_percentage",
+          "count": 68.0,
+          "percentage": 7.2,
+          "raw_string": "68 (7.2)"
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, TEXT",
+          "data_type": "categorical_count_percentage",
+          "count": 289.0,
+          "percentage": 18.0,
+          "raw_string": "289 (18.0)"
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, SOFT",
+          "data_type": "categorical_count_percentage",
+          "count": 312.0,
+          "percentage": 28.7,
+          "raw_string": "312 (28.7)"
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 792.0,
+          "percentage": 16.9,
+          "raw_string": "792 (16.9)"
+        }
+      ]
+    },
+    {
+      "original_label": "40–49 yr",
+      "standardized_name": "Age 40-49 years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "No-Chemotherapy Cohorts, TEXT",
+          "data_type": "categorical_count_percentage",
+          "count": 768.0,
+          "percentage": 72.9,
+          "raw_string": "768 (72.9)"
+        },
+        {
+          "group_name": "No-Chemotherapy Cohorts, SOFT",
+          "data_type": "categorical_count_percentage",
+          "count": 690.0,
+          "percentage": 73.2,
+          "raw_string": "690 (73.2)"
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, TEXT",
+          "data_type": "categorical_count_percentage",
+          "count": 1048.0,
+          "percentage": 65.2,
+          "raw_string": "1048 (65.2)"
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, SOFT",
+          "data_type": "categorical_count_percentage",
+          "count": 515.0,
+          "percentage": 47.4,
+          "raw_string": "515 (47.4)"
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 3021.0,
+          "percentage": 64.4,
+          "raw_string": "3021 (64.4)"
+        }
+      ]
+    },
+    {
+      "original_label": "≥50 yr",
+      "standardized_name": "Age ≥50 years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "No-Chemotherapy Cohorts, TEXT",
+          "data_type": "categorical_count_percentage",
+          "count": 121.0,
+          "percentage": 11.5,
+          "raw_string": "121 (11.5)"
+        },
+        {
+          "group_name": "No-Chemotherapy Cohorts, SOFT",
+          "data_type": "categorical_count_percentage",
+          "count": 171.0,
+          "percentage": 18.1,
+          "raw_string": "171 (18.1)"
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, TEXT",
+          "data_type": "categorical_count_percentage",
+          "count": 79.0,
+          "percentage": 4.9,
+          "raw_string": "79 (4.9)"
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, SOFT",
+          "data_type": "categorical_count_percentage",
+          "count": 36.0,
+          "percentage": 3.3,
+          "raw_string": "36 (3.3)"
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 407.0,
+          "percentage": 8.7,
+          "raw_string": "407 (8.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "Lymph-node status — no. (%)",
+      "standardized_name": "Lymph Node Status",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "No-Chemotherapy Cohorts, TEXT",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "No-Chemotherapy Cohorts, SOFT",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, TEXT",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, SOFT",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Negative",
+      "standardized_name": "Lymph Node Negative",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Lymph Node Status",
+      "group_data": [
+        {
+          "group_name": "No-Chemotherapy Cohorts, TEXT",
+          "data_type": "categorical_count_percentage",
+          "count": 835.0,
+          "percentage": 79.3,
+          "raw_string": "835 (79.3)"
+        },
+        {
+          "group_name": "No-Chemotherapy Cohorts, SOFT",
+          "data_type": "categorical_count_percentage",
+          "count": 865.0,
+          "percentage": 91.7,
+          "raw_string": "865 (91.7)"
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, TEXT",
+          "data_type": "categorical_count_percentage",
+          "count": 542.0,
+          "percentage": 33.7,
+          "raw_string": "542 (33.7)"
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, SOFT",
+          "data_type": "categorical_count_percentage",
+          "count": 470.0,
+          "percentage": 43.2,
+          "raw_string": "470 (43.2)"
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 2712.0,
+          "percentage": 57.8,
+          "raw_string": "2712 (57.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "Positive",
+      "standardized_name": "Lymph Node Positive",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Lymph Node Status",
+      "group_data": [
+        {
+          "group_name": "No-Chemotherapy Cohorts, TEXT",
+          "data_type": "categorical_count_percentage",
+          "count": 218.0,
+          "percentage": 20.7,
+          "raw_string": "218 (20.7)"
+        },
+        {
+          "group_name": "No-Chemotherapy Cohorts, SOFT",
+          "data_type": "categorical_count_percentage",
+          "count": 78.0,
+          "percentage": 8.3,
+          "raw_string": "78 (8.3)"
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, TEXT",
+          "data_type": "categorical_count_percentage",
+          "count": 1065.0,
+          "percentage": 66.3,
+          "raw_string": "1065 (66.3)"
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, SOFT",
+          "data_type": "categorical_count_percentage",
+          "count": 617.0,
+          "percentage": 56.8,
+          "raw_string": "617 (56.8)"
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 1978.0,
+          "percentage": 42.2,
+          "raw_string": "1978 (42.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Tumor size — no. (%)‡",
+      "standardized_name": "Tumor Size",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "No-Chemotherapy Cohorts, TEXT",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "No-Chemotherapy Cohorts, SOFT",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, TEXT",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, SOFT",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "<2 cm",
+      "standardized_name": "Tumor Size <2 cm",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor Size",
+      "group_data": [
+        {
+          "group_name": "No-Chemotherapy Cohorts, TEXT",
+          "data_type": "categorical_count_percentage",
+          "count": 847.0,
+          "percentage": 80.4,
+          "raw_string": "847 (80.4)"
+        },
+        {
+          "group_name": "No-Chemotherapy Cohorts, SOFT",
+          "data_type": "categorical_count_percentage",
+          "count": 800.0,
+          "percentage": 84.8,
+          "raw_string": "800 (84.8)"
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, TEXT",
+          "data_type": "categorical_count_percentage",
+          "count": 738.0,
+          "percentage": 45.9,
+          "raw_string": "738 (45.9)"
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, SOFT",
+          "data_type": "categorical_count_percentage",
+          "count": 537.0,
+          "percentage": 49.4,
+          "raw_string": "537 (49.4)"
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 2922.0,
+          "percentage": 62.3,
+          "raw_string": "2922 (62.3)"
+        }
+      ]
+    },
+    {
+      "original_label": ">2 cm",
+      "standardized_name": "Tumor Size ≥2 cm",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor Size",
+      "group_data": [
+        {
+          "group_name": "No-Chemotherapy Cohorts, TEXT",
+          "data_type": "categorical_count_percentage",
+          "count": 203.0,
+          "percentage": 19.3,
+          "raw_string": "203 (19.3)"
+        },
+        {
+          "group_name": "No-Chemotherapy Cohorts, SOFT",
+          "data_type": "categorical_count_percentage",
+          "count": 139.0,
+          "percentage": 14.7,
+          "raw_string": "139 (14.7)"
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, TEXT",
+          "data_type": "categorical_count_percentage",
+          "count": 844.0,
+          "percentage": 52.5,
+          "raw_string": "844 (52.5)"
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, SOFT",
+          "data_type": "categorical_count_percentage",
+          "count": 508.0,
+          "percentage": 46.7,
+          "raw_string": "508 (46.7)"
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 1694.0,
+          "percentage": 36.1,
+          "raw_string": "1694 (36.1)"
+        }
+      ]
+    },
+    {
+      "original_label": "HER2 positive — no. (%)",
+      "standardized_name": "HER2 Positive Status",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "No-Chemotherapy Cohorts, TEXT",
+          "data_type": "categorical_count_percentage",
+          "count": 54.0,
+          "percentage": 5.1,
+          "raw_string": "54 (5.1)"
+        },
+        {
+          "group_name": "No-Chemotherapy Cohorts, SOFT",
+          "data_type": "categorical_count_percentage",
+          "count": 30.0,
+          "percentage": 3.2,
+          "raw_string": "30 (3.2)"
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, TEXT",
+          "data_type": "categorical_count_percentage",
+          "count": 272.0,
+          "percentage": 16.9,
+          "raw_string": "272 (16.9)"
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, SOFT",
+          "data_type": "categorical_count_percentage",
+          "count": 211.0,
+          "percentage": 19.4,
+          "raw_string": "211 (19.4)"
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "categorical_count_percentage",
+          "count": 567.0,
+          "percentage": 12.1,
+          "raw_string": "567 (12.1)"
+        }
+      ]
+    },
+    {
+      "original_label": "Interval from surgery to randomization — mo",
+      "standardized_name": "Interval from surgery to randomization",
+      "unit": "months",
+      "category": "Study Procedure",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "No-Chemotherapy Cohorts, TEXT",
+          "data_type": "numeric_median_iqr",
+          "median": 1.5,
+          "iqr_min": 1.1,
+          "iqr_max": 1.9,
+          "raw_string": "1.5 (1.1-1.9)"
+        },
+        {
+          "group_name": "No-Chemotherapy Cohorts, SOFT",
+          "data_type": "numeric_median_iqr",
+          "median": 1.8,
+          "iqr_min": 1.3,
+          "iqr_max": 2.4,
+          "raw_string": "1.8 (1.3-2.4)"
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, TEXT",
+          "data_type": "numeric_median_iqr",
+          "median": 1.2,
+          "iqr_min": 0.9,
+          "iqr_max": 1.6,
+          "raw_string": "1.2 (0.9-1.6)"
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, SOFT",
+          "data_type": "numeric_median_iqr",
+          "median": 8.0,
+          "iqr_min": 5.7,
+          "iqr_max": 10.1,
+          "raw_string": "8.0 (5.7-10.1)"
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "numeric_median_iqr",
+          "median": 1.6,
+          "iqr_min": 1.1,
+          "iqr_max": 2.7,
+          "raw_string": "1.6 (1.1-2.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "Endocrine therapy before randomization — no. (%)§",
+      "standardized_name": "Endocrine therapy before randomization",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "No-Chemotherapy Cohorts, TEXT",
+          "data_type": "text",
+          "text_value": "Not allowed",
+          "raw_string": "—"
+        },
+        {
+          "group_name": "No-Chemotherapy Cohorts, SOFT",
+          "data_type": "categorical_count_percentage",
+          "count": 44.0,
+          "percentage": 4.7,
+          "raw_string": "44 (4.7)"
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, TEXT",
+          "data_type": "text",
+          "text_value": "Not allowed",
+          "raw_string": "—"
+        },
+        {
+          "group_name": "Chemotherapy Cohorts, SOFT",
+          "data_type": "categorical_count_percentage",
+          "count": 453.0,
+          "percentage": 41.7,
+          "raw_string": "453 (41.7)"
+        },
+        {
+          "group_name": "Overall",
+          "data_type": "text",
+          "text_value": "Not provided",
+          "raw_string": "—"
+        }
+      ]
+    }
+  ]
+}

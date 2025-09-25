@@ -1,0 +1,1071 @@
+{
+  "study_id": "PROFILE 1014",
+  "study_title": "Intracranial Efficacy of Crizotinib Versus Chemotherapy in Patients With Advanced ALK-Positive Non-Small-Cell Lung Cancer: Results From PROFILE 1014",
+  "table_name": "Table 1",
+  "table_title": "Baseline Characteristics of Patients With or Without Treated Brain Metastases at Baseline",
+  "footnotes": [
+    "Abbreviation: ECOG PS, Eastern Cooperative Oncology Group performance status.",
+    "*At screening; data for one patient missing for crizotinib.",
+    "†One patient had both computed tomography and magnetic resonance imaging at screening."
+  ],
+  "groups": [
+    {
+      "name": "Crizotinib (Brain Metastases Present)",
+      "n": 39,
+      "type": "Intervention"
+    },
+    {
+      "name": "Chemotherapy (Brain Metastases Present)",
+      "n": 40,
+      "type": "Control"
+    },
+    {
+      "name": "Crizotinib (Brain Metastases Absent)",
+      "n": 132,
+      "type": "Intervention"
+    },
+    {
+      "name": "Chemotherapy (Brain Metastases Absent)",
+      "n": 131,
+      "type": "Control"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age, years",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "header",
+          "raw_string": "Age, years"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "header",
+          "raw_string": "Age, years"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "header",
+          "raw_string": "Age, years"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "header",
+          "raw_string": "Age, years"
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, years",
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "numeric_single",
+          "value": 48.0,
+          "raw_string": "48"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "numeric_single",
+          "value": 51.0,
+          "raw_string": "51"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "numeric_single",
+          "value": 53.0,
+          "raw_string": "53"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "numeric_single",
+          "value": 56.0,
+          "raw_string": "56"
+        }
+      ]
+    },
+    {
+      "original_label": "Range",
+      "standardized_name": "Age Range",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, years",
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "numeric_mean_range",
+          "range_min": 29.0,
+          "range_max": 70.0,
+          "raw_string": "29-70"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "numeric_mean_range",
+          "range_min": 25.0,
+          "range_max": 76.0,
+          "raw_string": "25-76"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "numeric_mean_range",
+          "range_min": 22.0,
+          "range_max": 76.0,
+          "raw_string": "22-76"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "numeric_mean_range",
+          "range_min": 19.0,
+          "range_max": 78.0,
+          "raw_string": "19-78"
+        }
+      ]
+    },
+    {
+      "original_label": "Sex",
+      "standardized_name": "Sex",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "header",
+          "raw_string": "Sex"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "header",
+          "raw_string": "Sex"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "header",
+          "raw_string": "Sex"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "header",
+          "raw_string": "Sex"
+        }
+      ]
+    },
+    {
+      "original_label": "Male",
+      "standardized_name": "Male",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sex",
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 20.0,
+          "percentage": 51.0,
+          "raw_string": "20 51"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 9.0,
+          "percentage": 23.0,
+          "raw_string": "9 23"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 47.0,
+          "percentage": 36.0,
+          "raw_string": "47 36"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 54.0,
+          "percentage": 41.0,
+          "raw_string": "54 41"
+        }
+      ]
+    },
+    {
+      "original_label": "Female",
+      "standardized_name": "Female",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sex",
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 19.0,
+          "percentage": 49.0,
+          "raw_string": "19 49"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 31.0,
+          "percentage": 78.0,
+          "raw_string": "31 78"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 85.0,
+          "percentage": 64.0,
+          "raw_string": "85 64"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 77.0,
+          "percentage": 59.0,
+          "raw_string": "77 59"
+        }
+      ]
+    },
+    {
+      "original_label": "Race",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "header",
+          "raw_string": "Race"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "header",
+          "raw_string": "Race"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "header",
+          "raw_string": "Race"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "header",
+          "raw_string": "Race"
+        }
+      ]
+    },
+    {
+      "original_label": "White",
+      "standardized_name": "White",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 20.0,
+          "percentage": 51.0,
+          "raw_string": "20 51"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 19.0,
+          "percentage": 48.0,
+          "raw_string": "19 48"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 70.0,
+          "percentage": 53.0,
+          "raw_string": "70 53"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 66.0,
+          "percentage": 50.0,
+          "raw_string": "66 50"
+        }
+      ]
+    },
+    {
+      "original_label": "Asian",
+      "standardized_name": "Asian",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 17.0,
+          "percentage": 44.0,
+          "raw_string": "17 44"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 18.0,
+          "percentage": 45.0,
+          "raw_string": "18 45"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 60.0,
+          "percentage": 45.0,
+          "raw_string": "60 45"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 62.0,
+          "percentage": 47.0,
+          "raw_string": "62 47"
+        }
+      ]
+    },
+    {
+      "original_label": "Other",
+      "standardized_name": "Other",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race",
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 5.0,
+          "raw_string": "2 5"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 8.0,
+          "raw_string": "3 8"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 2.0,
+          "raw_string": "2 2"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 2.0,
+          "raw_string": "3 2"
+        }
+      ]
+    },
+    {
+      "original_label": "Smoking status",
+      "standardized_name": "Smoking Status",
+      "category": "Behavioral",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "header",
+          "raw_string": "Smoking status"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "header",
+          "raw_string": "Smoking status"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "header",
+          "raw_string": "Smoking status"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "header",
+          "raw_string": "Smoking status"
+        }
+      ]
+    },
+    {
+      "original_label": "Never-smoker",
+      "standardized_name": "Never Smoker",
+      "category": "Behavioral",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Smoking status",
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 23.0,
+          "percentage": 59.0,
+          "raw_string": "23 59"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 28.0,
+          "percentage": 70.0,
+          "raw_string": "28 70"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 83.0,
+          "percentage": 63.0,
+          "raw_string": "83 63"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 84.0,
+          "percentage": 64.0,
+          "raw_string": "84 64"
+        }
+      ]
+    },
+    {
+      "original_label": "Ex-smoker",
+      "standardized_name": "Former Smoker",
+      "category": "Behavioral",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Smoking status",
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 13.0,
+          "percentage": 33.0,
+          "raw_string": "13 33"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 30.0,
+          "raw_string": "12 30"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 43.0,
+          "percentage": 33.0,
+          "raw_string": "43 33"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 42.0,
+          "percentage": 32.0,
+          "raw_string": "42 32"
+        }
+      ]
+    },
+    {
+      "original_label": "Current smoker",
+      "standardized_name": "Current Smoker",
+      "category": "Behavioral",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Smoking status",
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 8.0,
+          "raw_string": "3 8"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0 0"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 5.0,
+          "raw_string": "6 5"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 4.0,
+          "raw_string": "5 4"
+        }
+      ]
+    },
+    {
+      "original_label": "Histology",
+      "standardized_name": "Histology",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "header",
+          "raw_string": "Histology"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "header",
+          "raw_string": "Histology"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "header",
+          "raw_string": "Histology"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "header",
+          "raw_string": "Histology"
+        }
+      ]
+    },
+    {
+      "original_label": "Adenocarcinoma",
+      "standardized_name": "Adenocarcinoma",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histology",
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 35.0,
+          "percentage": 90.0,
+          "raw_string": "35 90"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 38.0,
+          "percentage": 95.0,
+          "raw_string": "38 95"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 123.0,
+          "percentage": 93.0,
+          "raw_string": "123 93"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 121.0,
+          "percentage": 92.0,
+          "raw_string": "121 92"
+        }
+      ]
+    },
+    {
+      "original_label": "Large-cell carcinoma",
+      "standardized_name": "Large-cell Carcinoma",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histology",
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 3.0,
+          "raw_string": "1 3"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0 0"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 2.0,
+          "raw_string": "2 2"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 6.0,
+          "raw_string": "8 6"
+        }
+      ]
+    },
+    {
+      "original_label": "Adenosquamous carcinoma",
+      "standardized_name": "Adenosquamous Carcinoma",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histology",
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 5.0,
+          "raw_string": "2 5"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 3.0,
+          "raw_string": "1 3"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 2.0,
+          "raw_string": "3 2"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0 0"
+        }
+      ]
+    },
+    {
+      "original_label": "Other",
+      "standardized_name": "Other Histology",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histology",
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 3.0,
+          "raw_string": "1 3"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 3.0,
+          "raw_string": "1 3"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 3.0,
+          "raw_string": "4 3"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 2.0,
+          "raw_string": "2 2"
+        }
+      ]
+    },
+    {
+      "original_label": "ECOG PS*",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "header",
+          "raw_string": "ECOG PS*",
+          "notes": "At screening; data for one patient missing for crizotinib."
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "header",
+          "raw_string": "ECOG PS*",
+          "notes": "At screening; data for one patient missing for crizotinib."
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "header",
+          "raw_string": "ECOG PS*",
+          "notes": "At screening; data for one patient missing for crizotinib."
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "header",
+          "raw_string": "ECOG PS*",
+          "notes": "At screening; data for one patient missing for crizotinib."
+        }
+      ]
+    },
+    {
+      "original_label": "0 or 1",
+      "standardized_name": "ECOG Performance Status 0 or 1",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG PS*",
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 35.0,
+          "percentage": 90.0,
+          "raw_string": "35 90"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 34.0,
+          "percentage": 85.0,
+          "raw_string": "34 85"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 125.0,
+          "percentage": 95.0,
+          "raw_string": "125 95"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 129.0,
+          "percentage": 98.0,
+          "raw_string": "129 98"
+        }
+      ]
+    },
+    {
+      "original_label": "2",
+      "standardized_name": "ECOG Performance Status 2",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG PS*",
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 10.0,
+          "raw_string": "4 10"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 15.0,
+          "raw_string": "6 15"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 5.0,
+          "raw_string": "6 5"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 2.0,
+          "raw_string": "2 2"
+        }
+      ]
+    },
+    {
+      "original_label": "Time since first diagnosis, months",
+      "standardized_name": "Time Since First Diagnosis",
+      "unit": "months",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "header",
+          "raw_string": "Time since first diagnosis, months"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "header",
+          "raw_string": "Time since first diagnosis, months"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "header",
+          "raw_string": "Time since first diagnosis, months"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "header",
+          "raw_string": "Time since first diagnosis, months"
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Time Since First Diagnosis",
+      "unit": "months",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time since first diagnosis, months",
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "numeric_single",
+          "value": 2.4,
+          "raw_string": "2.4"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "numeric_single",
+          "value": 2.4,
+          "raw_string": "2.4"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "numeric_single",
+          "value": 1.2,
+          "raw_string": "1.2"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "numeric_single",
+          "value": 1.2,
+          "raw_string": "1.2"
+        }
+      ]
+    },
+    {
+      "original_label": "Range",
+      "standardized_name": "Time Since First Diagnosis Range",
+      "unit": "months",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time since first diagnosis, months",
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "numeric_mean_range",
+          "range_min": 0.0,
+          "range_max": 36.0,
+          "raw_string": "0-36.0"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "numeric_mean_range",
+          "range_min": 1.2,
+          "range_max": 74.4,
+          "raw_string": "1.2-74.4"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "numeric_mean_range",
+          "range_min": 0.0,
+          "range_max": 114.0,
+          "raw_string": "0-114.0"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "numeric_mean_range",
+          "range_min": 0.0,
+          "range_max": 93.6,
+          "raw_string": "0-93.6"
+        }
+      ]
+    },
+    {
+      "original_label": "Baseline brain imaging†",
+      "standardized_name": "Baseline Brain Imaging Modality",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "header",
+          "raw_string": "Baseline brain imaging†",
+          "notes": "One patient had both computed tomography and magnetic resonance imaging at screening."
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "header",
+          "raw_string": "Baseline brain imaging†",
+          "notes": "One patient had both computed tomography and magnetic resonance imaging at screening."
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "header",
+          "raw_string": "Baseline brain imaging†",
+          "notes": "One patient had both computed tomography and magnetic resonance imaging at screening."
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "header",
+          "raw_string": "Baseline brain imaging†",
+          "notes": "One patient had both computed tomography and magnetic resonance imaging at screening."
+        }
+      ]
+    },
+    {
+      "original_label": "Computed tomography",
+      "standardized_name": "Computed Tomography",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Baseline brain imaging†",
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 23.0,
+          "percentage": 59.0,
+          "raw_string": "23 59"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 19.0,
+          "percentage": 48.0,
+          "raw_string": "19 48"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 81.0,
+          "percentage": 61.0,
+          "raw_string": "81‡ 61"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 93.0,
+          "percentage": 71.0,
+          "raw_string": "93 71"
+        }
+      ]
+    },
+    {
+      "original_label": "Magnetic resonance imaging",
+      "standardized_name": "Magnetic Resonance Imaging",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Baseline brain imaging†",
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 41.0,
+          "raw_string": "16 41"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "percentage": 53.0,
+          "raw_string": "21 53"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 51.0,
+          "percentage": 39.0,
+          "raw_string": "51‡ 39"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 38.0,
+          "percentage": 29.0,
+          "raw_string": "38 29"
+        }
+      ]
+    },
+    {
+      "original_label": "Not reported",
+      "standardized_name": "Not Reported",
+      "category": "Clinical",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Baseline brain imaging†",
+      "group_data": [
+        {
+          "group_name": "Crizotinib (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0 0"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Present)",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0 0"
+        },
+        {
+          "group_name": "Crizotinib (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 1.0,
+          "raw_string": "1 1"
+        },
+        {
+          "group_name": "Chemotherapy (Brain Metastases Absent)",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0 0"
+        }
+      ]
+    }
+  ]
+}

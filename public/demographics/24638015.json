@@ -1,0 +1,69 @@
+{
+  "study_id": "JCOG 0509",
+  "study_title": "Phase III Study Comparing Amrubicin Plus Cisplatin With Irinotecan Plus Cisplatin in the Treatment of Extensive-Disease Small-Cell Lung Cancer: JCOG 0509",
+  "table_name": "Table 1",
+  "table_title": "Patient Demographic and Clinical Characteristics",
+  "description": "Baseline demographic and clinical characteristics for patients in the irinotecan plus cisplatin (IP) and amrubicin plus cisplatin (AP) treatment arms. The provided data is incomplete as the full table was truncated in the source document.",
+  "footnotes": [
+    "Abbreviations: AP, amrubicin plus cisplatin; ECOG PS, Eastern Cooperative Oncology Group performance status; IP, irinotecan plus cisplatin."
+  ],
+  "groups": [
+    {
+      "name": "IP Arm",
+      "n": 142,
+      "type": "Irinotecan plus cisplatin"
+    },
+    {
+      "name": "AP Arm",
+      "n": 142,
+      "type": "Amrubicin plus cisplatin"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Sex",
+      "standardized_name": "sex",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "IP Arm",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "AP Arm",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Male",
+      "standardized_name": "male_participant",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sex",
+      "group_data": [
+        {
+          "group_name": "IP Arm",
+          "data_type": "categorical_count_percentage",
+          "count": 120.0,
+          "percentage": 84.5,
+          "raw_string": "120 (84.5)",
+          "n_for_value": 142
+        },
+        {
+          "group_name": "AP Arm",
+          "data_type": "categorical_count_percentage",
+          "count": 119.0,
+          "percentage": 83.8,
+          "raw_string": "119 (83.8)",
+          "n_for_value": 142
+        }
+      ]
+    }
+  ]
+}

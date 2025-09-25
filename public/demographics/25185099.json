@@ -1,0 +1,571 @@
+{
+  "study_id": "NCT00703326",
+  "study_title": "Primary Results of ROSE/TRIO-12, a Randomized Placebo-Controlled Phase III Trial Evaluating the Addition of Ramucirumab to First-Line Docetaxel Chemotherapy in Metastatic Breast Cancer",
+  "table_name": "Table 1",
+  "table_title": "ITT Population Baseline Demographics and Clinical Characteristics",
+  "description": "Baseline demographic and clinical characteristics for the Intent-to-Treat (ITT) population of a randomized clinical trial comparing Ramucirumab plus Docetaxel with Placebo plus Docetaxel in patients with metastatic breast cancer.",
+  "footnotes": [
+    "Abbreviations: DOC, docetaxel; ECOG, Eastern Cooperative Oncology Group; ER, estrogen receptor; HER2, human epidermal growth factor receptor 2; IHC, immunohistochemistry; ISH, in situ hybridization; ITT, intent to treat; PBO, placebo; PR, progesterone receptor; RAM, ramucirumab.",
+    "*In RAM group, three patients (0.4%) had unknown ER status.",
+    "†In RAM group, 19 patients (2.5%), and in PBO group, 10 patients (2.6%) had unknown PR status at study initiation.",
+    "‡One patient had unknown HER2 status at study initiation."
+  ],
+  "groups": [
+    {
+      "name": "RAM Plus DOC Arm",
+      "n": 759,
+      "type": "Intervention"
+    },
+    {
+      "name": "PBO Plus DOC Arm",
+      "n": 385,
+      "type": "Placebo Control"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Total No. of patients",
+      "standardized_name": "Total Participants",
+      "category": "Population Characteristics",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "numeric_single",
+          "value": 759.0,
+          "raw_string": "759"
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "numeric_single",
+          "value": 385.0,
+          "raw_string": "385"
+        }
+      ]
+    },
+    {
+      "original_label": "Age, years",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Age, Median",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "numeric_single",
+          "value": 54.0,
+          "raw_string": "54"
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "numeric_single",
+          "value": 54.0,
+          "raw_string": "54"
+        }
+      ]
+    },
+    {
+      "original_label": "Range",
+      "standardized_name": "Age, Range",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "numeric_mean_range",
+          "range_min": 24.0,
+          "range_max": 82.0,
+          "raw_string": "24-82"
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "numeric_mean_range",
+          "range_min": 29.0,
+          "range_max": 81.0,
+          "raw_string": "29-81"
+        }
+      ]
+    },
+    {
+      "original_label": "ECOG PS",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Clinical Characteristics",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "0",
+      "standardized_name": "ECOG Performance Status 0",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 58.0,
+          "raw_string": "58"
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 62.0,
+          "raw_string": "62"
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "ECOG Performance Status 1",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 42.0,
+          "raw_string": "42"
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 37.0,
+          "raw_string": "37"
+        }
+      ]
+    },
+    {
+      "original_label": "No. of metastatic sites",
+      "standardized_name": "Number of Metastatic Sites",
+      "category": "Clinical Characteristics",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "<3",
+      "standardized_name": "Number of Metastatic Sites <3",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of Metastatic Sites",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 48.0,
+          "raw_string": "48"
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 52.0,
+          "raw_string": "52"
+        }
+      ]
+    },
+    {
+      "original_label": "≥3",
+      "standardized_name": "Number of Metastatic Sites ≥3",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Number of Metastatic Sites",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 52.0,
+          "raw_string": "52"
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 48.0,
+          "raw_string": "48"
+        }
+      ]
+    },
+    {
+      "original_label": "Visceral involvement",
+      "standardized_name": "Visceral Involvement",
+      "category": "Clinical Characteristics",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 71.0,
+          "raw_string": "71"
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 72.0,
+          "raw_string": "72"
+        }
+      ]
+    },
+    {
+      "original_label": "Prior adjuvant taxane therapy",
+      "standardized_name": "Prior Adjuvant Taxane Therapy",
+      "category": "Treatment History",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Yes",
+      "standardized_name": "Prior Adjuvant Taxane Therapy, Yes",
+      "category": "Treatment History",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior Adjuvant Taxane Therapy",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 26.0,
+          "raw_string": "26"
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 27.0,
+          "raw_string": "27"
+        }
+      ]
+    },
+    {
+      "original_label": "No",
+      "standardized_name": "Prior Adjuvant Taxane Therapy, No",
+      "category": "Treatment History",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior Adjuvant Taxane Therapy",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 74.0,
+          "raw_string": "74"
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 73.0,
+          "raw_string": "73"
+        }
+      ]
+    },
+    {
+      "original_label": "Geographic region",
+      "standardized_name": "Geographic Region",
+      "category": "Demographics",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "North or South America",
+      "standardized_name": "North or South America",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Geographic Region",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 24.0,
+          "raw_string": "24"
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 24.0,
+          "raw_string": "24"
+        }
+      ]
+    },
+    {
+      "original_label": "Europe, Australia, or New Zealand",
+      "standardized_name": "Europe, Australia, or New Zealand",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Geographic Region",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 63.0,
+          "raw_string": "63"
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 63.0,
+          "raw_string": "63"
+        }
+      ]
+    },
+    {
+      "original_label": "Asia, Africa, or Middle East",
+      "standardized_name": "Asia, Africa, or Middle East",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Geographic Region",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 12.0,
+          "raw_string": "12"
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 13.0,
+          "raw_string": "13"
+        }
+      ]
+    },
+    {
+      "original_label": "Hormone receptor status",
+      "standardized_name": "Hormone Receptor Status",
+      "category": "Clinical Characteristics",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "ER positive",
+      "standardized_name": "Estrogen Receptor Positive",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone Receptor Status",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 72.0,
+          "raw_string": "72"
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 75.0,
+          "raw_string": "75"
+        }
+      ]
+    },
+    {
+      "original_label": "ER negative or unknown*",
+      "standardized_name": "Estrogen Receptor Negative or Unknown",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone Receptor Status",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 28.0,
+          "raw_string": "28*",
+          "notes": "In RAM group, three patients (0.4%) had unknown ER status."
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 25.0,
+          "raw_string": "25"
+        }
+      ]
+    },
+    {
+      "original_label": "PR positive",
+      "standardized_name": "Progesterone Receptor Positive",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone Receptor Status",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 53.0,
+          "raw_string": "53"
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 57.0,
+          "raw_string": "57"
+        }
+      ]
+    },
+    {
+      "original_label": "PR negative or unknown†",
+      "standardized_name": "Progesterone Receptor Negative or Unknown",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone Receptor Status",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 47.0,
+          "raw_string": "47†",
+          "notes": "In RAM group, 19 patients (2.5%) had unknown PR status at study initiation."
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 43.0,
+          "raw_string": "43†",
+          "notes": "In PBO group, 10 patients (2.6%) had unknown PR status at study initiation."
+        }
+      ]
+    },
+    {
+      "original_label": "HER2 negative (IHC 0-1+ or ISH negative)‡",
+      "standardized_name": "HER2 Negative",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone Receptor Status",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 99.6,
+          "raw_string": "99.6‡",
+          "notes": "One patient had unknown HER2 status at study initiation."
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 100.0,
+          "raw_string": "100"
+        }
+      ]
+    },
+    {
+      "original_label": "Triple negative",
+      "standardized_name": "Triple Negative Breast Cancer",
+      "category": "Clinical Characteristics",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Yes",
+      "standardized_name": "Triple Negative Breast Cancer, Yes",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Triple Negative Breast Cancer",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 25.0,
+          "raw_string": "25"
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 22.0,
+          "raw_string": "22"
+        }
+      ]
+    },
+    {
+      "original_label": "No",
+      "standardized_name": "Triple Negative Breast Cancer, No",
+      "category": "Clinical Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Triple Negative Breast Cancer",
+      "group_data": [
+        {
+          "group_name": "RAM Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 75.0,
+          "raw_string": "75"
+        },
+        {
+          "group_name": "PBO Plus DOC Arm",
+          "data_type": "categorical_count_percentage",
+          "percentage": 78.0,
+          "raw_string": "78"
+        }
+      ]
+    }
+  ]
+}

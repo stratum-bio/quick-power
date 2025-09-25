@@ -1,0 +1,21 @@
+{
+  "study_id": "NO16968",
+  "study_title": "Capecitabine Plus Oxaliplatin Compared With Fluorouracil/Folinic Acid As Adjuvant Therapy for Stage III Colon Cancer: Final Results of the NO16968 Randomized Controlled Phase III Trial",
+  "table_name": "Baseline Patient Demographics",
+  "table_title": "Baseline Patient Demographics",
+  "description": "The requested table containing patient baseline demographics is not available in the provided document. The text on page 4 states, 'Treatment groups were well balanced in terms of baseline demographics and clinical characteristics (Data Supplement)', indicating the table is in a separate document not provided.",
+  "footnotes": [],
+  "groups": [
+    {
+      "name": "XELOX",
+      "n": 944,
+      "type": "intervention"
+    },
+    {
+      "name": "FU/FA",
+      "n": 942,
+      "type": "intervention"
+    }
+  ],
+  "characteristics": []
+}

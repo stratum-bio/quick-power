@@ -1,0 +1,790 @@
+{
+  "study_id": "CONcePT",
+  "study_title": "Improved time to treatment failure with an intermittent oxaliplatin strategy: results of CONcePT",
+  "table_name": "Table 2",
+  "table_title": "Patient demographics, as-treated population (cohort 1) at baseline",
+  "footnotes": [
+    "aOne patient not assessed for ECOG PS.",
+    "bDisease stage at initial diagnosis.",
+    "Ca/Mg, calcium/magnesium salts; CO, continuous oxaliplatin; ECOG PS, Eastern Cooperative Oncology Group performance status; IO, intermittent oxaliplatin; SD, standard deviation."
+  ],
+  "groups": [
+    {
+      "name": "CO",
+      "n": 68,
+      "type": "treatment"
+    },
+    {
+      "name": "IO",
+      "n": 71,
+      "type": "treatment"
+    },
+    {
+      "name": "CO + Placebo",
+      "n": 33,
+      "type": "treatment"
+    },
+    {
+      "name": "CO + Ca/Mg",
+      "n": 35,
+      "type": "treatment"
+    },
+    {
+      "name": "IO + Placebo",
+      "n": 36,
+      "type": "treatment"
+    },
+    {
+      "name": "IO + Ca/Mg",
+      "n": 35,
+      "type": "treatment"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Mean age, years (SD)",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CO",
+          "data_type": "numeric_mean_sd",
+          "mean": 61.0,
+          "std_dev": 12.0,
+          "raw_string": "61 (12)"
+        },
+        {
+          "group_name": "IO",
+          "data_type": "numeric_mean_sd",
+          "mean": 63.0,
+          "std_dev": 12.0,
+          "raw_string": "63 (12)"
+        }
+      ]
+    },
+    {
+      "original_label": "Age distribution (years)",
+      "standardized_name": "Age",
+      "category": "Demographics",
+      "time_point": "baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CO + Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "CO + Ca/Mg",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "IO + Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "IO + Ca/Mg",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "<65",
+      "standardized_name": "Age <65",
+      "category": "Demographics",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "CO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 19.0,
+          "raw_string": "19",
+          "n_for_value": 33
+        },
+        {
+          "group_name": "CO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 20.0,
+          "raw_string": "20",
+          "n_for_value": 35
+        },
+        {
+          "group_name": "IO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "raw_string": "21",
+          "n_for_value": 36
+        },
+        {
+          "group_name": "IO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "raw_string": "11",
+          "n_for_value": 35
+        }
+      ]
+    },
+    {
+      "original_label": "≥65",
+      "standardized_name": "Age >=65",
+      "category": "Demographics",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "CO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 14.0,
+          "raw_string": "14",
+          "n_for_value": 33
+        },
+        {
+          "group_name": "CO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 15.0,
+          "raw_string": "15",
+          "n_for_value": 35
+        },
+        {
+          "group_name": "IO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 15.0,
+          "raw_string": "15",
+          "n_for_value": 36
+        },
+        {
+          "group_name": "IO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 24.0,
+          "raw_string": "24",
+          "n_for_value": 35
+        }
+      ]
+    },
+    {
+      "original_label": "Sex, Male/female",
+      "standardized_name": "Sex",
+      "category": "Demographics",
+      "time_point": "baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CO + Placebo",
+          "data_type": "categorical_ratio",
+          "male_count": 16.0,
+          "raw_string": "16/17",
+          "n_for_value": 33
+        },
+        {
+          "group_name": "CO + Ca/Mg",
+          "data_type": "categorical_ratio",
+          "male_count": 24.0,
+          "raw_string": "24/11",
+          "n_for_value": 35
+        },
+        {
+          "group_name": "IO + Placebo",
+          "data_type": "categorical_ratio",
+          "male_count": 18.0,
+          "raw_string": "18/18",
+          "n_for_value": 36
+        },
+        {
+          "group_name": "IO + Ca/Mg",
+          "data_type": "categorical_ratio",
+          "male_count": 18.0,
+          "raw_string": "18/17",
+          "n_for_value": 35
+        }
+      ]
+    },
+    {
+      "original_label": "ECOG PS",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Clinical Characteristics",
+      "time_point": "baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CO + Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "CO + Ca/Mg",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "IO + Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "IO + Ca/Mg",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "0",
+      "standardized_name": "ECOG Performance Status 0",
+      "category": "Clinical Characteristics",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "CO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 19.0,
+          "raw_string": "19a",
+          "notes": "One patient not assessed for ECOG PS.",
+          "n_for_value": 32
+        },
+        {
+          "group_name": "CO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 17.0,
+          "raw_string": "17",
+          "n_for_value": 35
+        },
+        {
+          "group_name": "IO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 22.0,
+          "raw_string": "22",
+          "n_for_value": 36
+        },
+        {
+          "group_name": "IO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "raw_string": "16",
+          "n_for_value": 35
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "ECOG Performance Status 1",
+      "category": "Clinical Characteristics",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG Performance Status",
+      "group_data": [
+        {
+          "group_name": "CO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 13.0,
+          "raw_string": "13a",
+          "notes": "One patient not assessed for ECOG PS.",
+          "n_for_value": 32
+        },
+        {
+          "group_name": "CO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 18.0,
+          "raw_string": "18",
+          "n_for_value": 35
+        },
+        {
+          "group_name": "IO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 14.0,
+          "raw_string": "14",
+          "n_for_value": 36
+        },
+        {
+          "group_name": "IO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 19.0,
+          "raw_string": "19",
+          "n_for_value": 35
+        }
+      ]
+    },
+    {
+      "original_label": "Stageb",
+      "standardized_name": "Disease Stage at Initial Diagnosis",
+      "category": "Clinical Characteristics",
+      "time_point": "baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CO + Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "CO + Ca/Mg",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "IO + Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "IO + Ca/Mg",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "II",
+      "standardized_name": "Disease Stage II at Initial Diagnosis",
+      "category": "Clinical Characteristics",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Disease Stage at Initial Diagnosis",
+      "group_data": [
+        {
+          "group_name": "CO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "raw_string": "1",
+          "n_for_value": 33
+        },
+        {
+          "group_name": "CO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "raw_string": "2",
+          "n_for_value": 35
+        },
+        {
+          "group_name": "IO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "raw_string": "2",
+          "n_for_value": 36
+        },
+        {
+          "group_name": "IO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "raw_string": "0",
+          "n_for_value": 35
+        }
+      ]
+    },
+    {
+      "original_label": "III",
+      "standardized_name": "Disease Stage III at Initial Diagnosis",
+      "category": "Clinical Characteristics",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Disease Stage at Initial Diagnosis",
+      "group_data": [
+        {
+          "group_name": "CO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "raw_string": "12",
+          "n_for_value": 33
+        },
+        {
+          "group_name": "CO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "raw_string": "12",
+          "n_for_value": 35
+        },
+        {
+          "group_name": "IO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 10.0,
+          "raw_string": "10",
+          "n_for_value": 36
+        },
+        {
+          "group_name": "IO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 14.0,
+          "raw_string": "14",
+          "n_for_value": 35
+        }
+      ]
+    },
+    {
+      "original_label": "IV",
+      "standardized_name": "Disease Stage IV at Initial Diagnosis",
+      "category": "Clinical Characteristics",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Disease Stage at Initial Diagnosis",
+      "group_data": [
+        {
+          "group_name": "CO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 19.0,
+          "raw_string": "19",
+          "n_for_value": 33
+        },
+        {
+          "group_name": "CO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 22.0,
+          "raw_string": "22",
+          "notes": "Sum of counts for Stage (2+12+22+0=36) does not match group N (35).",
+          "n_for_value": 35
+        },
+        {
+          "group_name": "IO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "raw_string": "21",
+          "n_for_value": 36
+        },
+        {
+          "group_name": "IO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "raw_string": "21",
+          "n_for_value": 35
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "Disease Stage Unknown at Initial Diagnosis",
+      "category": "Clinical Characteristics",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Disease Stage at Initial Diagnosis",
+      "group_data": [
+        {
+          "group_name": "CO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "raw_string": "1",
+          "n_for_value": 33
+        },
+        {
+          "group_name": "CO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "raw_string": "0",
+          "notes": "Sum of counts for Stage (2+12+22+0=36) does not match group N (35).",
+          "n_for_value": 35
+        },
+        {
+          "group_name": "IO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "raw_string": "3",
+          "n_for_value": 36
+        },
+        {
+          "group_name": "IO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "raw_string": "0",
+          "n_for_value": 35
+        }
+      ]
+    },
+    {
+      "original_label": "Site of disease",
+      "standardized_name": "Primary Tumor Site",
+      "category": "Clinical Characteristics",
+      "time_point": "baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CO + Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "CO + Ca/Mg",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "IO + Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "IO + Ca/Mg",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Colon",
+      "standardized_name": "Primary Tumor Site: Colon",
+      "category": "Clinical Characteristics",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Primary Tumor Site",
+      "group_data": [
+        {
+          "group_name": "CO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 25.0,
+          "raw_string": "25",
+          "n_for_value": 33
+        },
+        {
+          "group_name": "CO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 27.0,
+          "raw_string": "27",
+          "notes": "Sum of counts for Site of disease (27+6+1=34) does not match group N (35).",
+          "n_for_value": 35
+        },
+        {
+          "group_name": "IO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 31.0,
+          "raw_string": "31",
+          "n_for_value": 36
+        },
+        {
+          "group_name": "IO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 28.0,
+          "raw_string": "28",
+          "n_for_value": 35
+        }
+      ]
+    },
+    {
+      "original_label": "Rectum",
+      "standardized_name": "Primary Tumor Site: Rectum",
+      "category": "Clinical Characteristics",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Primary Tumor Site",
+      "group_data": [
+        {
+          "group_name": "CO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "raw_string": "5",
+          "n_for_value": 33
+        },
+        {
+          "group_name": "CO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "raw_string": "6",
+          "notes": "Sum of counts for Site of disease (27+6+1=34) does not match group N (35).",
+          "n_for_value": 35
+        },
+        {
+          "group_name": "IO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "raw_string": "2",
+          "n_for_value": 36
+        },
+        {
+          "group_name": "IO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "raw_string": "6",
+          "n_for_value": 35
+        }
+      ]
+    },
+    {
+      "original_label": "Colorectal",
+      "standardized_name": "Primary Tumor Site: Colorectal (unspecified)",
+      "category": "Clinical Characteristics",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Primary Tumor Site",
+      "group_data": [
+        {
+          "group_name": "CO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "raw_string": "3",
+          "n_for_value": 33
+        },
+        {
+          "group_name": "CO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "raw_string": "1",
+          "notes": "Sum of counts for Site of disease (27+6+1=34) does not match group N (35).",
+          "n_for_value": 35
+        },
+        {
+          "group_name": "IO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "raw_string": "3",
+          "n_for_value": 36
+        },
+        {
+          "group_name": "IO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "raw_string": "1",
+          "n_for_value": 35
+        }
+      ]
+    },
+    {
+      "original_label": "Prior treatment",
+      "standardized_name": "Prior Treatment",
+      "category": "Clinical Characteristics",
+      "time_point": "baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "CO + Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "CO + Ca/Mg",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "IO + Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "IO + Ca/Mg",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Surgery",
+      "standardized_name": "Prior Surgery",
+      "category": "Clinical Characteristics",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior Treatment",
+      "group_data": [
+        {
+          "group_name": "CO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 17.0,
+          "raw_string": "17",
+          "n_for_value": 33
+        },
+        {
+          "group_name": "CO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 18.0,
+          "raw_string": "18",
+          "n_for_value": 35
+        },
+        {
+          "group_name": "IO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 19.0,
+          "raw_string": "19",
+          "n_for_value": 36
+        },
+        {
+          "group_name": "IO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 15.0,
+          "raw_string": "15",
+          "n_for_value": 35
+        }
+      ]
+    },
+    {
+      "original_label": "Radiotherapy",
+      "standardized_name": "Prior Radiotherapy",
+      "category": "Clinical Characteristics",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior Treatment",
+      "group_data": [
+        {
+          "group_name": "CO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "raw_string": "4",
+          "n_for_value": 33
+        },
+        {
+          "group_name": "CO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "raw_string": "5",
+          "n_for_value": 35
+        },
+        {
+          "group_name": "IO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "raw_string": "3",
+          "n_for_value": 36
+        },
+        {
+          "group_name": "IO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "raw_string": "4",
+          "n_for_value": 35
+        }
+      ]
+    },
+    {
+      "original_label": "Adjuvant therapy",
+      "standardized_name": "Prior Adjuvant Therapy",
+      "category": "Clinical Characteristics",
+      "time_point": "baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior Treatment",
+      "group_data": [
+        {
+          "group_name": "CO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 9.0,
+          "raw_string": "9",
+          "n_for_value": 33
+        },
+        {
+          "group_name": "CO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "raw_string": "8",
+          "n_for_value": 35
+        },
+        {
+          "group_name": "IO + Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "raw_string": "8",
+          "n_for_value": 36
+        },
+        {
+          "group_name": "IO + Ca/Mg",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "raw_string": "7",
+          "n_for_value": 35
+        }
+      ]
+    }
+  ]
+}

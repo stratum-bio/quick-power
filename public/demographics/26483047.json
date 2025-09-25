@@ -1,0 +1,1097 @@
+{
+  "study_id": "NCT01229813",
+  "study_title": "A randomized study of KRAS-guided maintenance therapy with bevacizumab, erlotinib or metronomic capecitabine after first-line induction treatment of metastatic colorectal cancer: the Nordic ACT2 trial",
+  "table_name": "Table 1",
+  "table_title": "Patient characteristics at baseline",
+  "footnotes": [
+    "ECOG, Eastern Cooperative Oncology Group; ITT, intention-to-treat population; PD, progressive disease; SD, stable disease; n.a., not applicable (not all patients of the ITT population were evaluable for response); definition of arms: B, bevacizumab; BE, bevacizumab+erlotinib; C, metronomic capecitabine; wt, KRAS wild type; mut, KRAS mutated."
+  ],
+  "groups": [
+    {
+      "name": "ITT Total",
+      "n": 231,
+      "type": "Intention-to-treat population"
+    },
+    {
+      "name": "wt-B",
+      "n": 35,
+      "type": "Full analysis set, KRAS wild type, bevacizumab"
+    },
+    {
+      "name": "wt-BE",
+      "n": 36,
+      "type": "Full analysis set, KRAS wild type, bevacizumab+erlotinib"
+    },
+    {
+      "name": "mut-B",
+      "n": 34,
+      "type": "Full analysis set, KRAS mutated, bevacizumab"
+    },
+    {
+      "name": "mut-C",
+      "n": 33,
+      "type": "Full analysis set, KRAS mutated, metronomic capecitabine"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age, years",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "header",
+          "raw_string": "Age, years"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "header",
+          "raw_string": "Age, years"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "header",
+          "raw_string": "Age, years"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "header",
+          "raw_string": "Age, years"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "header",
+          "raw_string": "Age, years"
+        }
+      ]
+    },
+    {
+      "original_label": "Median (range)",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, years",
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "numeric_median_iqr",
+          "median": 64.0,
+          "iqr_min": 32.0,
+          "iqr_max": 83.0,
+          "raw_string": "64 (32-83)"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "numeric_median_iqr",
+          "median": 61.0,
+          "iqr_min": 32.0,
+          "iqr_max": 76.0,
+          "raw_string": "61 (32-76)"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "numeric_median_iqr",
+          "median": 65.0,
+          "iqr_min": 38.0,
+          "iqr_max": 74.0,
+          "raw_string": "65 (38-74)"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "numeric_median_iqr",
+          "median": 65.0,
+          "iqr_min": 44.0,
+          "iqr_max": 75.0,
+          "raw_string": "65 (44-75)"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "numeric_median_iqr",
+          "median": 63.0,
+          "iqr_min": 45.0,
+          "iqr_max": 79.0,
+          "raw_string": "63 (45-79)"
+        }
+      ]
+    },
+    {
+      "original_label": "Gender",
+      "standardized_name": "Sex",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "header",
+          "raw_string": "Gender"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "header",
+          "raw_string": "Gender"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "header",
+          "raw_string": "Gender"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "header",
+          "raw_string": "Gender"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "header",
+          "raw_string": "Gender"
+        }
+      ]
+    },
+    {
+      "original_label": "M/F",
+      "standardized_name": "Sex, Male",
+      "unit": "%",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Gender",
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "categorical_count_percentage",
+          "count": 143.0,
+          "percentage": 62.0,
+          "raw_string": "62/38%"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "categorical_count_percentage",
+          "count": 23.0,
+          "percentage": 66.0,
+          "raw_string": "66/34%"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "categorical_count_percentage",
+          "count": 23.0,
+          "percentage": 64.0,
+          "raw_string": "64/36%"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "categorical_count_percentage",
+          "count": 18.0,
+          "percentage": 53.0,
+          "raw_string": "53/47%"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "categorical_count_percentage",
+          "count": 23.0,
+          "percentage": 70.0,
+          "raw_string": "70/30%"
+        }
+      ]
+    },
+    {
+      "original_label": "M/F",
+      "standardized_name": "Sex, Female",
+      "unit": "%",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Gender",
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "categorical_count_percentage",
+          "count": 88.0,
+          "percentage": 38.0,
+          "raw_string": "62/38%"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 34.0,
+          "raw_string": "66/34%"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "categorical_count_percentage",
+          "count": 13.0,
+          "percentage": 36.0,
+          "raw_string": "64/36%"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 47.0,
+          "raw_string": "53/47%"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "categorical_count_percentage",
+          "count": 10.0,
+          "percentage": 30.0,
+          "raw_string": "70/30%"
+        }
+      ]
+    },
+    {
+      "original_label": "ECOG",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "header",
+          "raw_string": "ECOG"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "header",
+          "raw_string": "ECOG"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "header",
+          "raw_string": "ECOG"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "header",
+          "raw_string": "ECOG"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "header",
+          "raw_string": "ECOG"
+        }
+      ]
+    },
+    {
+      "original_label": "0/1",
+      "standardized_name": "ECOG Performance Status 0",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG",
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "categorical_count_percentage",
+          "count": 157.0,
+          "percentage": 68.0,
+          "raw_string": "68/32%"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "categorical_count_percentage",
+          "count": 27.0,
+          "percentage": 77.0,
+          "raw_string": "77/23%"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "categorical_count_percentage",
+          "count": 24.0,
+          "percentage": 67.0,
+          "raw_string": "67/33%"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "categorical_count_percentage",
+          "count": 28.0,
+          "percentage": 82.0,
+          "raw_string": "82/18%"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "categorical_count_percentage",
+          "count": 20.0,
+          "percentage": 61.0,
+          "raw_string": "61/39%"
+        }
+      ]
+    },
+    {
+      "original_label": "0/1",
+      "standardized_name": "ECOG Performance Status 1",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG",
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "categorical_count_percentage",
+          "count": 74.0,
+          "percentage": 32.0,
+          "raw_string": "68/32%"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 23.0,
+          "raw_string": "77/23%"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 33.0,
+          "raw_string": "67/33%"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 18.0,
+          "raw_string": "82/18%"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "categorical_count_percentage",
+          "count": 13.0,
+          "percentage": 39.0,
+          "raw_string": "61/39%"
+        }
+      ]
+    },
+    {
+      "original_label": "Primary tumor site",
+      "standardized_name": "Primary Tumor Site",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "header",
+          "raw_string": "Primary tumor site"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "header",
+          "raw_string": "Primary tumor site"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "header",
+          "raw_string": "Primary tumor site"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "header",
+          "raw_string": "Primary tumor site"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "header",
+          "raw_string": "Primary tumor site"
+        }
+      ]
+    },
+    {
+      "original_label": "Colon",
+      "standardized_name": "Primary Tumor Site, Colon",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Primary tumor site",
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "categorical_count_percentage",
+          "count": 129.0,
+          "percentage": 56.0,
+          "raw_string": "56%"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 46.0,
+          "raw_string": "46%"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "categorical_count_percentage",
+          "count": 27.0,
+          "percentage": 75.0,
+          "raw_string": "75%"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "categorical_count_percentage",
+          "count": 17.0,
+          "percentage": 50.0,
+          "raw_string": "50%"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "categorical_count_percentage",
+          "count": 17.0,
+          "percentage": 50.0,
+          "raw_string": "50%"
+        }
+      ]
+    },
+    {
+      "original_label": "Rectum",
+      "standardized_name": "Primary Tumor Site, Rectum",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Primary tumor site",
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "categorical_count_percentage",
+          "count": 95.0,
+          "percentage": 41.0,
+          "raw_string": "41%"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "categorical_count_percentage",
+          "count": 19.0,
+          "percentage": 54.0,
+          "raw_string": "54%"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 19.0,
+          "raw_string": "19%"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "categorical_count_percentage",
+          "count": 15.0,
+          "percentage": 44.0,
+          "raw_string": "44%"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 47.0,
+          "raw_string": "47%"
+        }
+      ]
+    },
+    {
+      "original_label": "Both",
+      "standardized_name": "Primary Tumor Site, Both Colon and Rectum",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Primary tumor site",
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 3.0,
+          "raw_string": "3%"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0%"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 6.0,
+          "raw_string": "6%"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 6.0,
+          "raw_string": "6%"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 3.0,
+          "raw_string": "3%"
+        }
+      ]
+    },
+    {
+      "original_label": "Primary tumor in situ",
+      "standardized_name": "Primary Tumor In Situ",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "categorical_count_percentage",
+          "count": 120.0,
+          "percentage": 52.0,
+          "raw_string": "52%"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "categorical_count_percentage",
+          "count": 15.0,
+          "percentage": 43.0,
+          "raw_string": "43%"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "percentage": 58.0,
+          "raw_string": "58%"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "categorical_count_percentage",
+          "count": 19.0,
+          "percentage": 56.0,
+          "raw_string": "56%"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 49.0,
+          "raw_string": "49%"
+        }
+      ]
+    },
+    {
+      "original_label": "Metastatic sites",
+      "standardized_name": "Number of Metastatic Sites",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "header",
+          "raw_string": "Metastatic sites"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "header",
+          "raw_string": "Metastatic sites"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "header",
+          "raw_string": "Metastatic sites"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "header",
+          "raw_string": "Metastatic sites"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "header",
+          "raw_string": "Metastatic sites"
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "Number of Metastatic Sites, 1",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Metastatic sites",
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "categorical_count_percentage",
+          "count": 90.0,
+          "percentage": 39.0,
+          "raw_string": "39%"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 34.0,
+          "raw_string": "34%"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "categorical_count_percentage",
+          "count": 18.0,
+          "percentage": 50.0,
+          "raw_string": "50%"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 35.0,
+          "raw_string": "35%"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 33.0,
+          "raw_string": "33%"
+        }
+      ]
+    },
+    {
+      "original_label": ">1",
+      "standardized_name": "Number of Metastatic Sites, >1",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Metastatic sites",
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "categorical_count_percentage",
+          "count": 141.0,
+          "percentage": 61.0,
+          "raw_string": "61%"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "categorical_count_percentage",
+          "count": 23.0,
+          "percentage": 66.0,
+          "raw_string": "66%"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "categorical_count_percentage",
+          "count": 18.0,
+          "percentage": 50.0,
+          "raw_string": "50%"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "categorical_count_percentage",
+          "count": 22.0,
+          "percentage": 65.0,
+          "raw_string": "65%"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "categorical_count_percentage",
+          "count": 22.0,
+          "percentage": 67.0,
+          "raw_string": "67%"
+        }
+      ]
+    },
+    {
+      "original_label": "Liver metastases",
+      "standardized_name": "Liver Metastases",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "header",
+          "raw_string": "Liver metastases"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "header",
+          "raw_string": "Liver metastases"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "header",
+          "raw_string": "Liver metastases"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "header",
+          "raw_string": "Liver metastases"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "header",
+          "raw_string": "Liver metastases"
+        }
+      ]
+    },
+    {
+      "original_label": "Total",
+      "standardized_name": "Any Liver Metastases",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Liver metastases",
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "categorical_count_percentage",
+          "count": 173.0,
+          "percentage": 75.0,
+          "raw_string": "75%"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "categorical_count_percentage",
+          "count": 28.0,
+          "percentage": 81.0,
+          "raw_string": "81%"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "categorical_count_percentage",
+          "count": 30.0,
+          "percentage": 83.0,
+          "raw_string": "83%"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "percentage": 62.0,
+          "raw_string": "62%"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "categorical_count_percentage",
+          "count": 25.0,
+          "percentage": 76.0,
+          "raw_string": "76%"
+        }
+      ]
+    },
+    {
+      "original_label": "Liver mets. only",
+      "standardized_name": "Liver Metastases Only",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Liver metastases",
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "categorical_count_percentage",
+          "count": 53.0,
+          "percentage": 23.0,
+          "raw_string": "23%"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 20.0,
+          "raw_string": "20%"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "categorical_count_percentage",
+          "count": 14.0,
+          "percentage": 39.0,
+          "raw_string": "39%"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 12.0,
+          "raw_string": "12%"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 15.0,
+          "raw_string": "15%"
+        }
+      ]
+    },
+    {
+      "original_label": "Previous adjuvant treatment",
+      "standardized_name": "Previous Adjuvant Treatment",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "header",
+          "raw_string": "Previous adjuvant treatment"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "header",
+          "raw_string": "Previous adjuvant treatment"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "header",
+          "raw_string": "Previous adjuvant treatment"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "header",
+          "raw_string": "Previous adjuvant treatment"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "header",
+          "raw_string": "Previous adjuvant treatment"
+        }
+      ]
+    },
+    {
+      "original_label": "Total",
+      "standardized_name": "Any Previous Adjuvant Treatment",
+      "unit": "%",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Previous adjuvant treatment",
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "categorical_count_percentage",
+          "count": 35.0,
+          "percentage": 15.0,
+          "raw_string": "15%"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 21.0,
+          "raw_string": "21%"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 6.0,
+          "raw_string": "6%"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 24.0,
+          "raw_string": "24%"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 15.0,
+          "raw_string": "15%"
+        }
+      ]
+    },
+    {
+      "original_label": "Oxaliplatin",
+      "standardized_name": "Previous Adjuvant Treatment, Oxaliplatin",
+      "unit": "%",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Previous adjuvant treatment",
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "categorical_count_percentage",
+          "count": 23.0,
+          "percentage": 10.0,
+          "raw_string": "10%"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 17.0,
+          "raw_string": "17%"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 6.0,
+          "raw_string": "6%"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 15.0,
+          "raw_string": "15%"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 12.0,
+          "raw_string": "12%"
+        }
+      ]
+    },
+    {
+      "original_label": "Best response induction",
+      "standardized_name": "Best Response to Induction Therapy",
+      "category": "Clinical Characteristics",
+      "time_point": "Post-induction",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "header",
+          "raw_string": "Best response induction"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "header",
+          "raw_string": "Best response induction"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "header",
+          "raw_string": "Best response induction"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "header",
+          "raw_string": "Best response induction"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "header",
+          "raw_string": "Best response induction"
+        }
+      ]
+    },
+    {
+      "original_label": "PR",
+      "standardized_name": "Best Response to Induction Therapy, Partial Response",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "time_point": "Post-induction",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Best response induction",
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "other",
+          "text_value": "not applicable",
+          "raw_string": "n.a.",
+          "notes": "Not all patients of the ITT population were evaluable for response"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 46.0,
+          "raw_string": "46%"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "categorical_count_percentage",
+          "count": 22.0,
+          "percentage": 61.0,
+          "raw_string": "61%"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "categorical_count_percentage",
+          "count": 14.0,
+          "percentage": 41.0,
+          "raw_string": "41%"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "categorical_count_percentage",
+          "count": 18.0,
+          "percentage": 55.0,
+          "raw_string": "55%"
+        }
+      ]
+    },
+    {
+      "original_label": "SD",
+      "standardized_name": "Best Response to Induction Therapy, Stable Disease",
+      "unit": "%",
+      "category": "Clinical Characteristics",
+      "time_point": "Post-induction",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Best response induction",
+      "group_data": [
+        {
+          "group_name": "ITT Total",
+          "data_type": "other",
+          "text_value": "not applicable",
+          "raw_string": "n.a.",
+          "notes": "Not all patients of the ITT population were evaluable for response"
+        },
+        {
+          "group_name": "wt-B",
+          "data_type": "categorical_count_percentage",
+          "count": 19.0,
+          "percentage": 54.0,
+          "raw_string": "54%"
+        },
+        {
+          "group_name": "wt-BE",
+          "data_type": "categorical_count_percentage",
+          "count": 14.0,
+          "percentage": 39.0,
+          "raw_string": "39%"
+        },
+        {
+          "group_name": "mut-B",
+          "data_type": "categorical_count_percentage",
+          "count": 20.0,
+          "percentage": 59.0,
+          "raw_string": "59%"
+        },
+        {
+          "group_name": "mut-C",
+          "data_type": "categorical_count_percentage",
+          "count": 15.0,
+          "percentage": 45.0,
+          "raw_string": "45%"
+        }
+      ]
+    }
+  ]
+}

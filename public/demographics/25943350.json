@@ -1,0 +1,807 @@
+{
+  "study_id": "UNICANCER-PEGASE 07",
+  "study_title": "UNICANCER-PEGASE 07 study: a randomized phase III trial evaluating postoperative docetaxel-5FU regimen after neoadjuvant dose-intense chemotherapy for treatment of inflammatory breast cancer",
+  "table_name": "Table 1",
+  "table_title": "Patient characteristics",
+  "description": "Baseline characteristics of patients with inflammatory breast cancer randomized to either observation (Arm A) or postoperative docetaxel-5FU (Arm B) after neoadjuvant chemotherapy.",
+  "footnotes": [
+    "a X² test.",
+    "b HER2 status was not required at the inclusion but was retrospectively evaluated and collected from local centers.",
+    "SBR, Scarff–Bloom–Richardson grade; BMI, body mass index."
+  ],
+  "groups": [
+    {
+      "name": "Arm A (observation)",
+      "n": 87,
+      "type": "Control"
+    },
+    {
+      "name": "Arm B (D-5FU)",
+      "n": 87,
+      "type": "Intervention"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age (years)",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "header",
+          "raw_string": "Age (years)"
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "header",
+          "raw_string": "Age (years)"
+        }
+      ]
+    },
+    {
+      "original_label": "Median (range)",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age (years)",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "numeric_median_iqr",
+          "median": 45.0,
+          "iqr_min": 25.0,
+          "iqr_max": 56.0,
+          "raw_string": "45 (25-56)",
+          "n_for_value": 87
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "numeric_median_iqr",
+          "median": 47.0,
+          "iqr_min": 27.0,
+          "iqr_max": 60.0,
+          "raw_string": "47 (27-60)",
+          "n_for_value": 87
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_value": 0.0,
+        "p_value": 0.037,
+        "notes": "P-value from an unspecified statistical test.",
+        "raw_string": "0.037"
+      }
+    },
+    {
+      "original_label": "BMI",
+      "standardized_name": "Body Mass Index",
+      "category": "Demographics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "header",
+          "raw_string": "BMI"
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "header",
+          "raw_string": "BMI"
+        }
+      ]
+    },
+    {
+      "original_label": "Median (range)",
+      "standardized_name": "Body Mass Index",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "BMI",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "numeric_median_iqr",
+          "median": 25.0,
+          "iqr_min": 18.0,
+          "iqr_max": 36.0,
+          "raw_string": "25 (18-36)",
+          "n_for_value": 87
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "numeric_median_iqr",
+          "median": 24.0,
+          "iqr_min": 17.0,
+          "iqr_max": 41.0,
+          "raw_string": "24 (17-41)",
+          "n_for_value": 87
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_value": 0.0,
+        "p_value": 0.522,
+        "notes": "P-value from an unspecified statistical test.",
+        "raw_string": "0.522"
+      }
+    },
+    {
+      "original_label": "BMI >30, n (%)",
+      "standardized_name": "Body Mass Index > 30",
+      "unit": "%",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "BMI",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "categorical_count_percentage",
+          "count": 17.0,
+          "percentage": 19.5,
+          "raw_string": "17 (19.5)",
+          "n_for_value": 87
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "categorical_count_percentage",
+          "count": 14.0,
+          "percentage": 16.1,
+          "raw_string": "14 (16.1)",
+          "n_for_value": 87
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_value": 0.0,
+        "p_value": 0.552,
+        "notes": "P-value from an unspecified statistical test.",
+        "raw_string": "0.552"
+      }
+    },
+    {
+      "original_label": "Histological type, n (%)",
+      "standardized_name": "Histological Type",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "header",
+          "raw_string": "Histological type, n (%)"
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "header",
+          "raw_string": "Histological type, n (%)"
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_value": 0.0,
+        "p_value": 0.076,
+        "notes": "P-value from an unspecified statistical test.",
+        "raw_string": "0.076"
+      }
+    },
+    {
+      "original_label": "Ductal",
+      "standardized_name": "Ductal Histology",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histological type, n (%)",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "categorical_count_percentage",
+          "count": 76.0,
+          "percentage": 88.4,
+          "raw_string": "76 (88.4)",
+          "n_for_value": 86
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "categorical_count_percentage",
+          "count": 70.0,
+          "percentage": 81.4,
+          "raw_string": "70 (81.4)",
+          "n_for_value": 86
+        }
+      ]
+    },
+    {
+      "original_label": "Lobular",
+      "standardized_name": "Lobular Histology",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histological type, n (%)",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 8.1,
+          "raw_string": "7 (8.1)",
+          "n_for_value": 86
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 5.8,
+          "raw_string": "5 (5.8)",
+          "n_for_value": 86
+        }
+      ]
+    },
+    {
+      "original_label": "Other",
+      "standardized_name": "Other Histology",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histological type, n (%)",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 3.5,
+          "raw_string": "3 (3.5)",
+          "n_for_value": 86
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 12.8,
+          "raw_string": "11 (12.8)",
+          "n_for_value": 86
+        }
+      ]
+    },
+    {
+      "original_label": "Missing",
+      "standardized_name": "Histological Type - Missing",
+      "category": "Missing Data",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Histological type, n (%)",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "numeric_single",
+          "value": 1.0,
+          "raw_string": "1"
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "numeric_single",
+          "value": 1.0,
+          "raw_string": "1"
+        }
+      ]
+    },
+    {
+      "original_label": "SBR grade, n (%)",
+      "standardized_name": "SBR Grade",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "header",
+          "raw_string": "SBR grade, n (%)"
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "header",
+          "raw_string": "SBR grade, n (%)"
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_value": 0.0,
+        "p_value": 0.225,
+        "notes": "P-value from an unspecified statistical test.",
+        "raw_string": "0.225"
+      }
+    },
+    {
+      "original_label": "I",
+      "standardized_name": "SBR Grade I",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "SBR grade, n (%)",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 2.4,
+          "raw_string": "2 (2.4)",
+          "n_for_value": 85
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0",
+          "n_for_value": 84
+        }
+      ]
+    },
+    {
+      "original_label": "II",
+      "standardized_name": "SBR Grade II",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "SBR grade, n (%)",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "categorical_count_percentage",
+          "count": 23.0,
+          "percentage": 27.1,
+          "raw_string": "23 (27.1)",
+          "n_for_value": 85
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "categorical_count_percentage",
+          "count": 32.0,
+          "percentage": 38.1,
+          "raw_string": "32 (38.1)",
+          "n_for_value": 84
+        }
+      ]
+    },
+    {
+      "original_label": "III",
+      "standardized_name": "SBR Grade III",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "SBR grade, n (%)",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "categorical_count_percentage",
+          "count": 55.0,
+          "percentage": 64.7,
+          "raw_string": "55 (64.7)",
+          "n_for_value": 85
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "categorical_count_percentage",
+          "count": 46.0,
+          "percentage": 54.8,
+          "raw_string": "46 (54.8)",
+          "n_for_value": 84
+        }
+      ]
+    },
+    {
+      "original_label": "Not gradable",
+      "standardized_name": "SBR Grade Not Gradable",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "SBR grade, n (%)",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 5.9,
+          "raw_string": "5 (5.9)",
+          "n_for_value": 85
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 7.1,
+          "raw_string": "6 (7.1)",
+          "n_for_value": 84
+        }
+      ]
+    },
+    {
+      "original_label": "Missing",
+      "standardized_name": "SBR Grade - Missing",
+      "category": "Missing Data",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "SBR grade, n (%)",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "numeric_single",
+          "value": 2.0,
+          "raw_string": "2"
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "numeric_single",
+          "value": 3.0,
+          "raw_string": "3"
+        }
+      ]
+    },
+    {
+      "original_label": "Dermal tumor emboli, n (%)",
+      "standardized_name": "Dermal Tumor Emboli",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "header",
+          "raw_string": "Dermal tumor emboli, n (%)"
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "header",
+          "raw_string": "Dermal tumor emboli, n (%)"
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_value": 0.0,
+        "p_value": 0.435,
+        "notes": "P-value from an unspecified statistical test.",
+        "raw_string": "0.435"
+      }
+    },
+    {
+      "original_label": "Yes",
+      "standardized_name": "Dermal Tumor Emboli Present",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Dermal tumor emboli, n (%)",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "categorical_count_percentage",
+          "count": 27.0,
+          "percentage": 41.5,
+          "raw_string": "27 (41.5)",
+          "n_for_value": 65
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "categorical_count_percentage",
+          "count": 33.0,
+          "percentage": 45.8,
+          "raw_string": "33 (45.8)",
+          "n_for_value": 72
+        }
+      ]
+    },
+    {
+      "original_label": "No",
+      "standardized_name": "Dermal Tumor Emboli Absent",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Dermal tumor emboli, n (%)",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "categorical_count_percentage",
+          "count": 38.0,
+          "percentage": 58.5,
+          "raw_string": "38 (58.5)",
+          "n_for_value": 65
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "categorical_count_percentage",
+          "count": 39.0,
+          "percentage": 54.2,
+          "raw_string": "39 (54.2)",
+          "n_for_value": 72
+        }
+      ]
+    },
+    {
+      "original_label": "Missing",
+      "standardized_name": "Dermal Tumor Emboli - Missing",
+      "category": "Missing Data",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Dermal tumor emboli, n (%)",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "numeric_single",
+          "value": 22.0,
+          "raw_string": "22"
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "numeric_single",
+          "value": 15.0,
+          "raw_string": "15"
+        }
+      ]
+    },
+    {
+      "original_label": "Estrogen receptor, n (%)",
+      "standardized_name": "Estrogen Receptor Status",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "header",
+          "raw_string": "Estrogen receptor, n (%)"
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "header",
+          "raw_string": "Estrogen receptor, n (%)"
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_value": 0.0,
+        "p_value": 0.408,
+        "notes": "P-value from an unspecified statistical test.",
+        "raw_string": "0.408"
+      }
+    },
+    {
+      "original_label": "Positive",
+      "standardized_name": "Estrogen Receptor Positive",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Estrogen receptor, n (%)",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "categorical_count_percentage",
+          "count": 34.0,
+          "percentage": 40.0,
+          "raw_string": "34 (40.0)",
+          "n_for_value": 85
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "categorical_count_percentage",
+          "count": 38.0,
+          "percentage": 46.3,
+          "raw_string": "38 (46.3)",
+          "n_for_value": 82
+        }
+      ]
+    },
+    {
+      "original_label": "Negative",
+      "standardized_name": "Estrogen Receptor Negative",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Estrogen receptor, n (%)",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "categorical_count_percentage",
+          "count": 51.0,
+          "percentage": 60.0,
+          "raw_string": "51 (60.0)",
+          "n_for_value": 85
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "categorical_count_percentage",
+          "count": 44.0,
+          "percentage": 53.7,
+          "raw_string": "44 (53.7)",
+          "n_for_value": 82
+        }
+      ]
+    },
+    {
+      "original_label": "Missing",
+      "standardized_name": "Estrogen Receptor Status - Missing",
+      "category": "Missing Data",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Estrogen receptor, n (%)",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "numeric_single",
+          "value": 2.0,
+          "raw_string": "2"
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "numeric_single",
+          "value": 5.0,
+          "raw_string": "5"
+        }
+      ]
+    },
+    {
+      "original_label": "Hormone receptor (estrogen/progesterone), n (%)",
+      "standardized_name": "Hormone Receptor Status",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "header",
+          "raw_string": "Hormone receptor (estrogen/progesterone), n (%)"
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "header",
+          "raw_string": "Hormone receptor (estrogen/progesterone), n (%)"
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_value": 0.0,
+        "p_value": 0.446,
+        "notes": "P-value from an unspecified statistical test.",
+        "raw_string": "0.446"
+      }
+    },
+    {
+      "original_label": "Positive (+/-, +/+, -/+)",
+      "standardized_name": "Hormone Receptor Positive",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone receptor (estrogen/progesterone), n (%)",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "categorical_count_percentage",
+          "count": 37.0,
+          "percentage": 43.5,
+          "raw_string": "37 (43.5)",
+          "n_for_value": 85
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "categorical_count_percentage",
+          "count": 41.0,
+          "percentage": 49.4,
+          "raw_string": "41 (49.4)",
+          "n_for_value": 83
+        }
+      ]
+    },
+    {
+      "original_label": "Negative (-/-)",
+      "standardized_name": "Hormone Receptor Negative",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone receptor (estrogen/progesterone), n (%)",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "categorical_count_percentage",
+          "count": 48.0,
+          "percentage": 56.5,
+          "raw_string": "48 (56.5)",
+          "n_for_value": 85
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "categorical_count_percentage",
+          "count": 42.0,
+          "percentage": 50.6,
+          "raw_string": "42 (50.6)",
+          "n_for_value": 83
+        }
+      ]
+    },
+    {
+      "original_label": "Missing",
+      "standardized_name": "Hormone Receptor Status - Missing",
+      "category": "Missing Data",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone receptor (estrogen/progesterone), n (%)",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "numeric_single",
+          "value": 2.0,
+          "raw_string": "2"
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "numeric_single",
+          "value": 4.0,
+          "raw_string": "4"
+        }
+      ]
+    },
+    {
+      "original_label": "HER2, n (%)b",
+      "standardized_name": "HER2 Status",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "header",
+          "raw_string": "HER2, n (%)"
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "header",
+          "raw_string": "HER2, n (%)"
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_value": 0.0,
+        "p_value": 0.3179,
+        "notes": "P-value from an unspecified statistical test.",
+        "raw_string": "0.3179"
+      }
+    },
+    {
+      "original_label": "Positive",
+      "standardized_name": "HER2 Positive",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "HER2, n (%)b",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "categorical_count_percentage",
+          "count": 14.0,
+          "percentage": 29.2,
+          "raw_string": "14 (29.2)",
+          "n_for_value": 48
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "categorical_count_percentage",
+          "count": 19.0,
+          "percentage": 38.8,
+          "raw_string": "19 (38.8)",
+          "n_for_value": 49
+        }
+      ]
+    },
+    {
+      "original_label": "Negative",
+      "standardized_name": "HER2 Negative",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "HER2, n (%)b",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "categorical_count_percentage",
+          "count": 34.0,
+          "percentage": 70.8,
+          "raw_string": "34 (70.8)",
+          "n_for_value": 48
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "categorical_count_percentage",
+          "count": 30.0,
+          "percentage": 61.2,
+          "raw_string": "30 (61.2)",
+          "n_for_value": 49
+        }
+      ]
+    },
+    {
+      "original_label": "Missing",
+      "standardized_name": "HER2 Status - Missing",
+      "category": "Missing Data",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "HER2, n (%)b",
+      "group_data": [
+        {
+          "group_name": "Arm A (observation)",
+          "data_type": "numeric_single",
+          "value": 39.0,
+          "raw_string": "39"
+        },
+        {
+          "group_name": "Arm B (D-5FU)",
+          "data_type": "numeric_single",
+          "value": 38.0,
+          "raw_string": "38"
+        }
+      ]
+    }
+  ]
+}

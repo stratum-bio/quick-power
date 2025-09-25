@@ -1,0 +1,965 @@
+{
+  "study_id": "UMIN000002557",
+  "study_title": "FOLFIRI plus bevacizumab as second-line therapy in patients with metastatic colorectal cancer after first-line bevacizumab plus oxaliplatin-based therapy: the randomized phase III EAGLE study",
+  "table_name": "Table 1",
+  "table_title": "Baseline characteristics",
+  "description": "Baseline demographic and clinical characteristics of patients with metastatic colorectal cancer randomized to receive FOLFIRI plus either 5 mg/kg or 10 mg/kg of bevacizumab.",
+  "footnotes": [
+    "Percentages may not add up to 100% because of rounding.",
+    "CA19-9, carbohydrate antigen 19-9; CEA, carcinoembryonic antigen; ECOG, Eastern Cooperative Oncology Group; FOLFIRI, 5-fluorouracil/leucovorin plus irinotecan; mFOLFOX6, modified 5-fluorouracil/leucovorin plus oxaliplatin; XELOX, capecitabine plus oxaliplatin.",
+    "aData missing for one patient (bevacizumab 5 mg/kg plus FOLFIRI).",
+    "bTarget lesions defined using RECIST, version 1.1."
+  ],
+  "groups": [
+    {
+      "name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+      "n": 181,
+      "type": "Intervention"
+    },
+    {
+      "name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+      "n": 188,
+      "type": "Intervention"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age, years",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "numeric_median_iqr",
+          "median": 66.0,
+          "iqr_min": 36.0,
+          "iqr_max": 84.0,
+          "raw_string": "66 (36-84)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "numeric_median_iqr",
+          "median": 65.0,
+          "iqr_min": 31.0,
+          "iqr_max": 88.0,
+          "raw_string": "65 (31-88)"
+        }
+      ]
+    },
+    {
+      "original_label": "Sex",
+      "standardized_name": "Sex",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "header",
+          "raw_string": "N (%)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "header",
+          "raw_string": "N (%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Male",
+      "standardized_name": "Male",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sex",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 102.0,
+          "percentage": 56.0,
+          "raw_string": "102 (56)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 107.0,
+          "percentage": 57.0,
+          "raw_string": "107 (57)"
+        }
+      ]
+    },
+    {
+      "original_label": "Female",
+      "standardized_name": "Female",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Sex",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 79.0,
+          "percentage": 44.0,
+          "raw_string": "79 (44)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 81.0,
+          "percentage": 43.0,
+          "raw_string": "81 (43)"
+        }
+      ]
+    },
+    {
+      "original_label": "ECOG performance status",
+      "standardized_name": "ECOG performance status",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "header",
+          "raw_string": "N (%)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "header",
+          "raw_string": "N (%)"
+        }
+      ]
+    },
+    {
+      "original_label": "0",
+      "standardized_name": "ECOG 0",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG performance status",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 155.0,
+          "percentage": 86.0,
+          "raw_string": "155 (86)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 163.0,
+          "percentage": 87.0,
+          "raw_string": "163 (87)"
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "ECOG 1",
+      "category": "Clinical Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "ECOG performance status",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 26.0,
+          "percentage": 14.0,
+          "raw_string": "26 (14)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 25.0,
+          "percentage": 13.0,
+          "raw_string": "25 (13)"
+        }
+      ]
+    },
+    {
+      "original_label": "No. of metastases",
+      "standardized_name": "Number of metastases",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "header",
+          "raw_string": "N (%)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "header",
+          "raw_string": "N (%)"
+        }
+      ]
+    },
+    {
+      "original_label": "<2",
+      "standardized_name": "Less than 2 metastases",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "No. of metastases",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 84.0,
+          "percentage": 46.0,
+          "raw_string": "84 (46)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 84.0,
+          "percentage": 45.0,
+          "raw_string": "84 (45)"
+        }
+      ]
+    },
+    {
+      "original_label": "≥2",
+      "standardized_name": "2 or more metastases",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "No. of metastases",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 97.0,
+          "percentage": 54.0,
+          "raw_string": "97 (54)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 104.0,
+          "percentage": 55.0,
+          "raw_string": "104 (55)"
+        }
+      ]
+    },
+    {
+      "original_label": "Reason for starting second-line treatment",
+      "standardized_name": "Reason for starting second-line treatment",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "header",
+          "raw_string": "N (%)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "header",
+          "raw_string": "N (%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Progressive disease",
+      "standardized_name": "Progressive disease",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Reason for starting second-line treatment",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 154.0,
+          "percentage": 85.0,
+          "raw_string": "154 (85)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 158.0,
+          "percentage": 84.0,
+          "raw_string": "158 (84)"
+        }
+      ]
+    },
+    {
+      "original_label": "Toxicity",
+      "standardized_name": "Toxicity",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Reason for starting second-line treatment",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 27.0,
+          "percentage": 15.0,
+          "raw_string": "27 (15)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 30.0,
+          "percentage": 16.0,
+          "raw_string": "30 (16)"
+        }
+      ]
+    },
+    {
+      "original_label": "Time to recurrence after adjuvant therapy",
+      "standardized_name": "Time to recurrence after adjuvant therapy",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "header",
+          "raw_string": "N (%)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "header",
+          "raw_string": "N (%)"
+        }
+      ]
+    },
+    {
+      "original_label": "≤6 months",
+      "standardized_name": "≤6 months",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time to recurrence after adjuvant therapy",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 23.0,
+          "percentage": 13.0,
+          "raw_string": "23 (13)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 25.0,
+          "percentage": 13.0,
+          "raw_string": "25 (13)"
+        }
+      ]
+    },
+    {
+      "original_label": ">6 months",
+      "standardized_name": ">6 months",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Time to recurrence after adjuvant therapy",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 158.0,
+          "percentage": 87.0,
+          "raw_string": "158 (87)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 163.0,
+          "percentage": 87.0,
+          "raw_string": "163 (87)"
+        }
+      ]
+    },
+    {
+      "original_label": "Primary cancer",
+      "standardized_name": "Primary cancer location",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "header",
+          "raw_string": "N (%)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "header",
+          "raw_string": "N (%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Colon",
+      "standardized_name": "Colon",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Primary cancer",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 115.0,
+          "percentage": 64.0,
+          "raw_string": "115 (64)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 104.0,
+          "percentage": 55.0,
+          "raw_string": "104 (55)"
+        }
+      ]
+    },
+    {
+      "original_label": "Rectum",
+      "standardized_name": "Rectum",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Primary cancer",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 66.0,
+          "percentage": 37.0,
+          "raw_string": "66 (37)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 84.0,
+          "percentage": 45.0,
+          "raw_string": "84 (45)"
+        }
+      ]
+    },
+    {
+      "original_label": "Cancer type",
+      "standardized_name": "Cancer histology",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "header",
+          "raw_string": "N (%)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "header",
+          "raw_string": "N (%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Adenocarcinoma",
+      "standardized_name": "Adenocarcinoma",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Cancer type",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 168.0,
+          "percentage": 93.0,
+          "raw_string": "168 (93)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 178.0,
+          "percentage": 95.0,
+          "raw_string": "178 (95)"
+        }
+      ]
+    },
+    {
+      "original_label": "Other",
+      "standardized_name": "Other",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Cancer type",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 9.0,
+          "percentage": 5.0,
+          "raw_string": "9 (5)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 4.0,
+          "raw_string": "7 (4)"
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "Unknown",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Cancer type",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 2.0,
+          "raw_string": "4 (2)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 2.0,
+          "raw_string": "3 (2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Site of metastases/recurrence",
+      "standardized_name": "Site of metastases or recurrence",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "header",
+          "raw_string": "N (%)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "header",
+          "raw_string": "N (%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Liver",
+      "standardized_name": "Liver",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Site of metastases/recurrence",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 118.0,
+          "percentage": 65.0,
+          "raw_string": "118 (65)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 113.0,
+          "percentage": 60.0,
+          "raw_string": "113 (60)"
+        }
+      ]
+    },
+    {
+      "original_label": "Lung",
+      "standardized_name": "Lung",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Site of metastases/recurrence",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 75.0,
+          "percentage": 41.0,
+          "raw_string": "75 (41)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 88.0,
+          "percentage": 47.0,
+          "raw_string": "88 (47)"
+        }
+      ]
+    },
+    {
+      "original_label": "Lymph nodes",
+      "standardized_name": "Lymph nodes",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Site of metastases/recurrence",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 56.0,
+          "percentage": 31.0,
+          "raw_string": "56 (31)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 61.0,
+          "percentage": 32.0,
+          "raw_string": "61 (32)"
+        }
+      ]
+    },
+    {
+      "original_label": "Peritoneum",
+      "standardized_name": "Peritoneum",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Site of metastases/recurrence",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 35.0,
+          "percentage": 19.0,
+          "raw_string": "35 (19)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 36.0,
+          "percentage": 19.0,
+          "raw_string": "36 (19)"
+        }
+      ]
+    },
+    {
+      "original_label": "Othera",
+      "standardized_name": "Other",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Site of metastases/recurrence",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 25.0,
+          "percentage": 14.0,
+          "raw_string": "25 (14)",
+          "notes": "Data missing for one patient in this group."
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 28.0,
+          "percentage": 15.0,
+          "raw_string": "28 (15)"
+        }
+      ]
+    },
+    {
+      "original_label": "First-line chemotherapy regimen",
+      "standardized_name": "First-line chemotherapy regimen",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "header",
+          "raw_string": "N (%)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "header",
+          "raw_string": "N (%)"
+        }
+      ]
+    },
+    {
+      "original_label": "mFOLFOX6",
+      "standardized_name": "mFOLFOX6",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "First-line chemotherapy regimen",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 105.0,
+          "percentage": 58.0,
+          "raw_string": "105 (58)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 110.0,
+          "percentage": 59.0,
+          "raw_string": "110 (59)"
+        }
+      ]
+    },
+    {
+      "original_label": "XELOX",
+      "standardized_name": "XELOX",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "First-line chemotherapy regimen",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 27.0,
+          "percentage": 15.0,
+          "raw_string": "27 (15)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 36.0,
+          "percentage": 19.0,
+          "raw_string": "36 (19)"
+        }
+      ]
+    },
+    {
+      "original_label": "Other",
+      "standardized_name": "Other",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "First-line chemotherapy regimen",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 49.0,
+          "percentage": 27.0,
+          "raw_string": "49 (27)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 42.0,
+          "percentage": 22.0,
+          "raw_string": "42 (22)"
+        }
+      ]
+    },
+    {
+      "original_label": "Resection status",
+      "standardized_name": "Resection status",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "header",
+          "raw_string": "N (%)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "header",
+          "raw_string": "N (%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Resected",
+      "standardized_name": "Resected",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Resection status",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 153.0,
+          "percentage": 85.0,
+          "raw_string": "153 (85)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 149.0,
+          "percentage": 79.0,
+          "raw_string": "149 (79)"
+        }
+      ]
+    },
+    {
+      "original_label": "Non-resected",
+      "standardized_name": "Non-resected",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Resection status",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 27.0,
+          "percentage": 15.0,
+          "raw_string": "27 (15)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "categorical_count_percentage",
+          "count": 39.0,
+          "percentage": 21.0,
+          "raw_string": "39 (21)"
+        }
+      ]
+    },
+    {
+      "original_label": "Cycles of first-line oxaliplatin, n",
+      "standardized_name": "Cycles of first-line oxaliplatin",
+      "unit": "cycles",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "numeric_median_iqr",
+          "median": 12.0,
+          "iqr_min": 4.0,
+          "iqr_max": 33.0,
+          "raw_string": "12 (4-33)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "numeric_median_iqr",
+          "median": 12.0,
+          "iqr_min": 4.0,
+          "iqr_max": 30.0,
+          "raw_string": "12 (4-30)"
+        }
+      ]
+    },
+    {
+      "original_label": "Cycles of first-line bevacizumab, n",
+      "standardized_name": "Cycles of first-line bevacizumab",
+      "unit": "cycles",
+      "category": "Treatment History",
+      "time_point": "Baseline",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "numeric_median_iqr",
+          "median": 15.0,
+          "iqr_min": 4.0,
+          "iqr_max": 54.0,
+          "raw_string": "15 (4-54)"
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "numeric_median_iqr",
+          "median": 15.0,
+          "iqr_min": 4.0,
+          "iqr_max": 64.0,
+          "raw_string": "15 (4-64)"
+        }
+      ]
+    },
+    {
+      "original_label": "CEA, ng/ml",
+      "standardized_name": "Carcinoembryonic antigen (CEA)",
+      "unit": "ng/ml",
+      "category": "Biomarkers",
+      "time_point": "Baseline",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "numeric_median_iqr",
+          "median": 23.2,
+          "iqr_min": 0.4,
+          "iqr_max": 9279.0,
+          "raw_string": "23.2 (0.40-9279)",
+          "n_for_value": 176
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "numeric_median_iqr",
+          "median": 18.2,
+          "iqr_min": 0.7,
+          "iqr_max": 2049.0,
+          "raw_string": "18.2 (0.70-2049)",
+          "n_for_value": 179
+        }
+      ]
+    },
+    {
+      "original_label": "CA19-9, ng/ml",
+      "standardized_name": "Carbohydrate antigen 19-9 (CA19-9)",
+      "unit": "ng/ml",
+      "category": "Biomarkers",
+      "time_point": "Baseline",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "numeric_median_iqr",
+          "median": 38.3,
+          "iqr_min": 0.6,
+          "iqr_max": 48019.0,
+          "raw_string": "38.3 (0.60-48019)",
+          "n_for_value": 175
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "numeric_median_iqr",
+          "median": 36.1,
+          "iqr_min": 0.1,
+          "iqr_max": 50000.0,
+          "raw_string": "36.1 (0.10-50 000)",
+          "n_for_value": 178
+        }
+      ]
+    },
+    {
+      "original_label": "Sum of target lesions,b mm",
+      "standardized_name": "Sum of target lesions",
+      "unit": "mm",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "group_data": [
+        {
+          "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+          "data_type": "numeric_median_iqr",
+          "median": 50.0,
+          "iqr_min": 4.4,
+          "iqr_max": 254.0,
+          "raw_string": "50.0 (4.40-254)",
+          "n_for_value": 181
+        },
+        {
+          "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+          "data_type": "numeric_median_iqr",
+          "median": 44.4,
+          "iqr_min": 10.0,
+          "iqr_max": 246.0,
+          "raw_string": "44.4 (10-246)",
+          "n_for_value": 186
+        }
+      ]
+    }
+  ]
+}

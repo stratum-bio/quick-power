@@ -1,0 +1,1059 @@
+{
+  "study_id": "E1199",
+  "study_title": "Long-Term Follow-Up of the E1199 Phase III Trial Evaluating the Role of Taxane and Schedule in Operable Breast Cancer",
+  "table_name": "Table A1",
+  "table_title": "Demographic and Clinical Characteristics (N = 4954)",
+  "description": "Baseline demographic and clinical characteristics of eligible patients (N=4954) in a phase 3 clinical trial for operable breast cancer.",
+  "footnotes": [
+    "Abbreviations: BMI, body mass index; ER, estrogen receptor; HER2, human epidermal growth factor receptor 2; PR, progesterone receptor."
+  ],
+  "groups": [
+    {
+      "name": "Paclitaxel Every 3 Weeks",
+      "n": 1253
+    },
+    {
+      "name": "Weekly Paclitaxel",
+      "n": 1232
+    },
+    {
+      "name": "Docetaxel Every 3 Weeks",
+      "n": 1236
+    },
+    {
+      "name": "Weekly Docetaxel",
+      "n": 1233
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age, years",
+      "standardized_name": "Age",
+      "unit": "years",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Median",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, years",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "numeric_single",
+          "value": 51.0,
+          "raw_string": "51"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "numeric_single",
+          "value": 51.0,
+          "raw_string": "51"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "numeric_single",
+          "value": 51.0,
+          "raw_string": "51"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "numeric_single",
+          "value": 51.0,
+          "raw_string": "51"
+        }
+      ]
+    },
+    {
+      "original_label": "Range",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Range",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, years",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "numeric_mean_range",
+          "range_min": 26.0,
+          "range_max": 79.0,
+          "raw_string": "26-79"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "numeric_mean_range",
+          "range_min": 22.0,
+          "range_max": 84.0,
+          "raw_string": "22-84"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "numeric_mean_range",
+          "range_min": 25.0,
+          "range_max": 79.0,
+          "raw_string": "25-79"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "numeric_mean_range",
+          "range_min": 19.0,
+          "range_max": 81.0,
+          "raw_string": "19-81"
+        }
+      ]
+    },
+    {
+      "original_label": "Race, %",
+      "standardized_name": "Race",
+      "unit": "%",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "White",
+      "standardized_name": "Race",
+      "category": "White",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race, %",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 84.2,
+          "raw_string": "84.2"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 83.2,
+          "raw_string": "83.2"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 85.0,
+          "raw_string": "85.0"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 85.4,
+          "raw_string": "85.4"
+        }
+      ]
+    },
+    {
+      "original_label": "Black",
+      "standardized_name": "Race",
+      "category": "Black",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race, %",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 8.1,
+          "raw_string": "8.1"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 8.7,
+          "raw_string": "8.7"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 9.7,
+          "raw_string": "9.7"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 7.1,
+          "raw_string": "7.1"
+        }
+      ]
+    },
+    {
+      "original_label": "Other",
+      "standardized_name": "Race",
+      "category": "Other",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Race, %",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 7.7,
+          "raw_string": "7.7"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 8.1,
+          "raw_string": "8.1"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 5.3,
+          "raw_string": "5.3"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 7.5,
+          "raw_string": "7.5"
+        }
+      ]
+    },
+    {
+      "original_label": "BMI, %",
+      "standardized_name": "Body Mass Index",
+      "unit": "%",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Normal (< 25 kg/m²)",
+      "standardized_name": "Body Mass Index",
+      "unit": "%",
+      "category": "Normal (< 25 kg/m^2)",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "BMI, %",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 29.5,
+          "raw_string": "29.5"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 30.1,
+          "raw_string": "30.1"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 31.5,
+          "raw_string": "31.5"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 28.9,
+          "raw_string": "28.9"
+        }
+      ]
+    },
+    {
+      "original_label": "Overweight (25 to 30 kg/m²)",
+      "standardized_name": "Body Mass Index",
+      "unit": "%",
+      "category": "Overweight (25-30 kg/m^2)",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "BMI, %",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 31.6,
+          "raw_string": "31.6"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 32.0,
+          "raw_string": "32.0"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 29.4,
+          "raw_string": "29.4"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 31.4,
+          "raw_string": "31.4"
+        }
+      ]
+    },
+    {
+      "original_label": "Obese (≥ 30 kg/m²)",
+      "standardized_name": "Body Mass Index",
+      "unit": "%",
+      "category": "Obese (>= 30 kg/m^2)",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "BMI, %",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 35.8,
+          "raw_string": "35.8"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 33.9,
+          "raw_string": "33.9"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 35.4,
+          "raw_string": "35.4"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 35.8,
+          "raw_string": "35.8"
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "Body Mass Index",
+      "unit": "%",
+      "category": "Unknown",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "BMI, %",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 3.1,
+          "raw_string": "3.1"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 4.1,
+          "raw_string": "4.1"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 3.7,
+          "raw_string": "3.7"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 4.0,
+          "raw_string": "4.0"
+        }
+      ]
+    },
+    {
+      "original_label": "Tumor size, %",
+      "standardized_name": "Tumor Size",
+      "unit": "%",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "< 2 cm",
+      "standardized_name": "Tumor Size",
+      "unit": "%",
+      "category": "< 2 cm",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor size, %",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 39.0,
+          "raw_string": "39.0"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 36.1,
+          "raw_string": "36.1"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 36.6,
+          "raw_string": "36.6"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 36.5,
+          "raw_string": "36.5"
+        }
+      ]
+    },
+    {
+      "original_label": "≥ 2 cm",
+      "standardized_name": "Tumor Size",
+      "unit": "%",
+      "category": ">= 2 cm",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor size, %",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 60.7,
+          "raw_string": "60.7"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 63.8,
+          "raw_string": "63.8"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 63.1,
+          "raw_string": "63.1"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 63.3,
+          "raw_string": "63.3"
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "Tumor Size",
+      "unit": "%",
+      "category": "Unknown",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor size, %",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 0.2,
+          "raw_string": "0.2"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 0.1,
+          "raw_string": "0.1"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 0.3,
+          "raw_string": "0.3"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 0.2,
+          "raw_string": "0.2"
+        }
+      ]
+    },
+    {
+      "original_label": "Positive lymph nodes, %",
+      "standardized_name": "Positive Lymph Nodes",
+      "unit": "%",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "0",
+      "standardized_name": "Positive Lymph Nodes",
+      "unit": "%",
+      "category": "0",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Positive lymph nodes, %",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 12.1,
+          "raw_string": "12.1"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 12.2,
+          "raw_string": "12.2"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 11.9,
+          "raw_string": "11.9"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 11.8,
+          "raw_string": "11.8"
+        }
+      ]
+    },
+    {
+      "original_label": "1-3",
+      "standardized_name": "Positive Lymph Nodes",
+      "unit": "%",
+      "category": "1-3",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Positive lymph nodes, %",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 54.8,
+          "raw_string": "54.8"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 55.8,
+          "raw_string": "55.8"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 55.5,
+          "raw_string": "55.5"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 55.8,
+          "raw_string": "55.8"
+        }
+      ]
+    },
+    {
+      "original_label": "4-9",
+      "standardized_name": "Positive Lymph Nodes",
+      "unit": "%",
+      "category": "4-9",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Positive lymph nodes, %",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 22.9,
+          "raw_string": "22.9"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 22.5,
+          "raw_string": "22.5"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 23.1,
+          "raw_string": "23.1"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 22.2,
+          "raw_string": "22.2"
+        }
+      ]
+    },
+    {
+      "original_label": "≥ 10",
+      "standardized_name": "Positive Lymph Nodes",
+      "unit": "%",
+      "category": ">= 10",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Positive lymph nodes, %",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 10.1,
+          "raw_string": "10.1"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 9.5,
+          "raw_string": "9.5"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 9.1,
+          "raw_string": "9.1"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 10.0,
+          "raw_string": "10.0"
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "Positive Lymph Nodes",
+      "unit": "%",
+      "category": "Unknown",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Positive lymph nodes, %",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 0.2,
+          "raw_string": "0.2"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 0.1,
+          "raw_string": "0.1"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 0.3,
+          "raw_string": "0.3"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 0.2,
+          "raw_string": "0.2"
+        }
+      ]
+    },
+    {
+      "original_label": "Expression of ER and/or PR, %",
+      "standardized_name": "ER and/or PR Expression Status",
+      "unit": "%",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Yes",
+      "standardized_name": "ER and/or PR Expression Status",
+      "category": "Positive",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Expression of ER and/or PR, %",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 71.0,
+          "raw_string": "71.0"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 70.2,
+          "raw_string": "70.2"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 71.7,
+          "raw_string": "71.7"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 72.8,
+          "raw_string": "72.8"
+        }
+      ]
+    },
+    {
+      "original_label": "No",
+      "standardized_name": "ER and/or PR Expression Status",
+      "category": "Negative",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Expression of ER and/or PR, %",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 27.9,
+          "raw_string": "27.9"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 28.7,
+          "raw_string": "28.7"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 27.0,
+          "raw_string": "27.0"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 26.3,
+          "raw_string": "26.3"
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "ER and/or PR Expression Status",
+      "category": "Unknown",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Expression of ER and/or PR, %",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 1.2,
+          "raw_string": "1.2"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 1.1,
+          "raw_string": "1.1"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 1.3,
+          "raw_string": "1.3"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 1.0,
+          "raw_string": "1.0"
+        }
+      ]
+    },
+    {
+      "original_label": "Expression of HER2 protein, %",
+      "standardized_name": "HER2 Expression Status",
+      "unit": "%",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Yes",
+      "standardized_name": "HER2 Expression Status",
+      "category": "Positive",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Expression of HER2 protein, %",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 20.6,
+          "raw_string": "20.6"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 19.2,
+          "raw_string": "19.2"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 19.3,
+          "raw_string": "19.3"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 19.6,
+          "raw_string": "19.6"
+        }
+      ]
+    },
+    {
+      "original_label": "No",
+      "standardized_name": "HER2 Expression Status",
+      "category": "Negative",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Expression of HER2 protein, %",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 70.2,
+          "raw_string": "70.2"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 69.6,
+          "raw_string": "69.6"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 70.6,
+          "raw_string": "70.6"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 68.4,
+          "raw_string": "68.4"
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "HER2 Expression Status",
+      "category": "Unknown",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Expression of HER2 protein, %",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 9.2,
+          "raw_string": "9.2"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 11.2,
+          "raw_string": "11.2"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 10.1,
+          "raw_string": "10.1"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 12.1,
+          "raw_string": "12.1"
+        }
+      ]
+    },
+    {
+      "original_label": "Premenopausal or age < 50 years, %",
+      "standardized_name": "Menopausal Status",
+      "unit": "%",
+      "category": "Premenopausal or age < 50 years",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 46.2,
+          "raw_string": "46.2"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 45.8,
+          "raw_string": "45.8"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 47.0,
+          "raw_string": "47.0"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 45.6,
+          "raw_string": "45.6"
+        }
+      ]
+    },
+    {
+      "original_label": "Breast-sparing surgery, %",
+      "standardized_name": "Breast-Sparing Surgery",
+      "unit": "%",
+      "group_data": [
+        {
+          "group_name": "Paclitaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 39.4,
+          "raw_string": "39.4"
+        },
+        {
+          "group_name": "Weekly Paclitaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 39.0,
+          "raw_string": "39.0"
+        },
+        {
+          "group_name": "Docetaxel Every 3 Weeks",
+          "data_type": "categorical_count_percentage",
+          "percentage": 39.2,
+          "raw_string": "39.2"
+        },
+        {
+          "group_name": "Weekly Docetaxel",
+          "data_type": "categorical_count_percentage",
+          "percentage": 38.9,
+          "raw_string": "38.9"
+        }
+      ]
+    }
+  ]
+}

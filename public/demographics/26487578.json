@@ -1,0 +1,850 @@
+{
+  "study_id": "FFCD 2001-02",
+  "study_title": "Randomized phase III trial in elderly patients comparing LV5FU2 with or without irinotecan for first-line treatment of metastatic colorectal cancer (FFCD 2001-02)",
+  "table_name": "Table 1",
+  "table_title": "Efficacy results for PFS, OS and ORR",
+  "description": "The table is presented in two sections. The first section compares the FU (fluorouracil) arms to the IRI (irinotecan) arms. The second section compares the CLASSIC treatment regimen arms to the SIMPLIFIED treatment regimen arms.",
+  "footnotes": [
+    "CR, complete response; PR, partial response; SD, stable disease; PD, progressive disease; NE, not evaluable, FU, fluorouracil; IRI, irinotecan; PFS, progression-free survival; OS, overall survival; ORR; objective response rate; CI, confidence interval."
+  ],
+  "groups": [
+    {
+      "name": "FU",
+      "n": 142
+    },
+    {
+      "name": "IRI",
+      "n": 140
+    },
+    {
+      "name": "CLASSIC",
+      "n": 141
+    },
+    {
+      "name": "SIMPLIFIED",
+      "n": 141
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Progression-free survival",
+      "standardized_name": "Progression-free survival",
+      "category": "Progression-Free Survival",
+      "group_data": [
+        {
+          "group_name": "FU",
+          "data_type": "header",
+          "raw_string": "Progression-free survival"
+        },
+        {
+          "group_name": "IRI",
+          "data_type": "header",
+          "raw_string": "Progression-free survival"
+        }
+      ]
+    },
+    {
+      "original_label": "N. of events (death or progression)",
+      "standardized_name": "Number of progression-free survival events",
+      "category": "Progression-Free Survival",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Progression-free survival",
+      "group_data": [
+        {
+          "group_name": "FU",
+          "data_type": "numeric_single",
+          "value": 137.0,
+          "raw_string": "137"
+        },
+        {
+          "group_name": "IRI",
+          "data_type": "numeric_single",
+          "value": 133.0,
+          "raw_string": "133"
+        }
+      ]
+    },
+    {
+      "original_label": "Median in months (95% CI)",
+      "standardized_name": "Median progression-free survival",
+      "unit": "months",
+      "category": "Progression-Free Survival",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Progression-free survival",
+      "group_data": [
+        {
+          "group_name": "FU",
+          "data_type": "numeric_median_iqr",
+          "median": 5.2,
+          "iqr_min": 3.9,
+          "iqr_max": 6.1,
+          "raw_string": "5.2 (3.9-6.1)",
+          "notes": "Values in parentheses represent the 95% Confidence Interval."
+        },
+        {
+          "group_name": "IRI",
+          "data_type": "numeric_median_iqr",
+          "median": 7.3,
+          "iqr_min": 6.5,
+          "iqr_max": 8.6,
+          "raw_string": "7.3 (6.5-8.6)",
+          "notes": "Values in parentheses represent the 95% Confidence Interval."
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_value": 0.15,
+        "p_value": 0.15,
+        "raw_string": "0.15"
+      }
+    },
+    {
+      "original_label": "6-month survival (95% CI)",
+      "standardized_name": "6-month progression-free survival rate",
+      "unit": "%",
+      "category": "Progression-Free Survival",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Progression-free survival",
+      "group_data": [
+        {
+          "group_name": "FU",
+          "data_type": "categorical_count_percentage",
+          "percentage": 42.5,
+          "raw_string": "42.5% (34.2-50.5)"
+        },
+        {
+          "group_name": "IRI",
+          "data_type": "categorical_count_percentage",
+          "percentage": 61.4,
+          "raw_string": "61.4% (52.8-68.9)"
+        }
+      ]
+    },
+    {
+      "original_label": "12-month survival (95% CI)",
+      "standardized_name": "12-month progression-free survival rate",
+      "unit": "%",
+      "category": "Progression-Free Survival",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Progression-free survival",
+      "group_data": [
+        {
+          "group_name": "FU",
+          "data_type": "categorical_count_percentage",
+          "percentage": 17.3,
+          "raw_string": "17.3% (11.5-24.0)"
+        },
+        {
+          "group_name": "IRI",
+          "data_type": "categorical_count_percentage",
+          "percentage": 19.3,
+          "raw_string": "19.3% (13.2-26.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Overall survival",
+      "standardized_name": "Overall survival",
+      "category": "Overall Survival",
+      "group_data": [
+        {
+          "group_name": "FU",
+          "data_type": "header",
+          "raw_string": "Overall survival"
+        },
+        {
+          "group_name": "IRI",
+          "data_type": "header",
+          "raw_string": "Overall survival"
+        }
+      ]
+    },
+    {
+      "original_label": "N. of events (death)",
+      "standardized_name": "Number of deaths",
+      "category": "Overall Survival",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Overall survival",
+      "group_data": [
+        {
+          "group_name": "FU",
+          "data_type": "numeric_single",
+          "value": 129.0,
+          "raw_string": "129"
+        },
+        {
+          "group_name": "IRI",
+          "data_type": "numeric_single",
+          "value": 121.0,
+          "raw_string": "121"
+        }
+      ]
+    },
+    {
+      "original_label": "Median in months (95% CI)",
+      "standardized_name": "Median overall survival",
+      "unit": "months",
+      "category": "Overall Survival",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Overall survival",
+      "group_data": [
+        {
+          "group_name": "FU",
+          "data_type": "numeric_median_iqr",
+          "median": 14.2,
+          "iqr_min": 9.5,
+          "iqr_max": 19.0,
+          "raw_string": "14.2 (9.5-19.0)",
+          "notes": "Values in parentheses represent the 95% Confidence Interval."
+        },
+        {
+          "group_name": "IRI",
+          "data_type": "numeric_median_iqr",
+          "median": 13.3,
+          "iqr_min": 11.2,
+          "iqr_max": 17.9,
+          "raw_string": "13.3 (11.2-17.9)",
+          "notes": "Values in parentheses represent the 95% Confidence Interval."
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_value": 0.77,
+        "p_value": 0.77,
+        "raw_string": "0.77"
+      }
+    },
+    {
+      "original_label": "12-month survival (95% CI)",
+      "standardized_name": "12-month overall survival rate",
+      "unit": "%",
+      "category": "Overall Survival",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Overall survival",
+      "group_data": [
+        {
+          "group_name": "FU",
+          "data_type": "categorical_count_percentage",
+          "percentage": 53.3,
+          "raw_string": "53.3% (44.6-61.1)"
+        },
+        {
+          "group_name": "IRI",
+          "data_type": "categorical_count_percentage",
+          "percentage": 57.1,
+          "raw_string": "57.1% (48.5-64.9)"
+        }
+      ]
+    },
+    {
+      "original_label": "24-month survival (95% CI)",
+      "standardized_name": "24-month overall survival rate",
+      "unit": "%",
+      "category": "Overall Survival",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Overall survival",
+      "group_data": [
+        {
+          "group_name": "FU",
+          "data_type": "categorical_count_percentage",
+          "percentage": 29.3,
+          "raw_string": "29.3% (21.8-37.2)"
+        },
+        {
+          "group_name": "IRI",
+          "data_type": "categorical_count_percentage",
+          "percentage": 22.9,
+          "raw_string": "22.9% (16.0-30.5)"
+        }
+      ]
+    },
+    {
+      "original_label": "Tumor response, N (%)",
+      "standardized_name": "Tumor response",
+      "category": "Tumor Response",
+      "group_data": [
+        {
+          "group_name": "FU",
+          "data_type": "header",
+          "raw_string": "N = 133",
+          "n_for_value": 133
+        },
+        {
+          "group_name": "IRI",
+          "data_type": "header",
+          "raw_string": "N = 132",
+          "n_for_value": 132
+        }
+      ]
+    },
+    {
+      "original_label": "Objective response (CR and PR)",
+      "standardized_name": "Objective response rate",
+      "unit": "%",
+      "category": "Tumor Response",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor response, N (%)",
+      "group_data": [
+        {
+          "group_name": "FU",
+          "data_type": "categorical_count_percentage",
+          "count": 28.0,
+          "percentage": 21.1,
+          "raw_string": "28 (21.1)",
+          "n_for_value": 133
+        },
+        {
+          "group_name": "IRI",
+          "data_type": "categorical_count_percentage",
+          "count": 55.0,
+          "percentage": 41.7,
+          "raw_string": "55 (41.7)",
+          "n_for_value": 132
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_value": 0.0003,
+        "p_value": 0.0003,
+        "raw_string": "0.0003"
+      }
+    },
+    {
+      "original_label": "CR",
+      "standardized_name": "Complete Response",
+      "unit": "%",
+      "category": "Tumor Response",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor response, N (%)",
+      "group_data": [
+        {
+          "group_name": "FU",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 2.3,
+          "raw_string": "3 (2.3)",
+          "n_for_value": 133
+        },
+        {
+          "group_name": "IRI",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 4.6,
+          "raw_string": "6 (4.6)",
+          "n_for_value": 132
+        }
+      ]
+    },
+    {
+      "original_label": "PR",
+      "standardized_name": "Partial Response",
+      "unit": "%",
+      "category": "Tumor Response",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor response, N (%)",
+      "group_data": [
+        {
+          "group_name": "FU",
+          "data_type": "categorical_count_percentage",
+          "count": 25.0,
+          "percentage": 18.8,
+          "raw_string": "25 (18.8)",
+          "n_for_value": 133
+        },
+        {
+          "group_name": "IRI",
+          "data_type": "categorical_count_percentage",
+          "count": 49.0,
+          "percentage": 37.1,
+          "raw_string": "49 (37.1)",
+          "n_for_value": 132
+        }
+      ]
+    },
+    {
+      "original_label": "SD",
+      "standardized_name": "Stable Disease",
+      "unit": "%",
+      "category": "Tumor Response",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor response, N (%)",
+      "group_data": [
+        {
+          "group_name": "FU",
+          "data_type": "categorical_count_percentage",
+          "count": 59.0,
+          "percentage": 44.4,
+          "raw_string": "59 (44.4)",
+          "n_for_value": 133
+        },
+        {
+          "group_name": "IRI",
+          "data_type": "categorical_count_percentage",
+          "count": 43.0,
+          "percentage": 32.6,
+          "raw_string": "43 (32.6)",
+          "n_for_value": 132
+        }
+      ]
+    },
+    {
+      "original_label": "PD",
+      "standardized_name": "Progressive Disease",
+      "unit": "%",
+      "category": "Tumor Response",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor response, N (%)",
+      "group_data": [
+        {
+          "group_name": "FU",
+          "data_type": "categorical_count_percentage",
+          "count": 34.0,
+          "percentage": 25.6,
+          "raw_string": "34 (25.6)",
+          "n_for_value": 133
+        },
+        {
+          "group_name": "IRI",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 12.1,
+          "raw_string": "16 (12.1)",
+          "n_for_value": 132
+        }
+      ]
+    },
+    {
+      "original_label": "NE",
+      "standardized_name": "Not evaluable",
+      "unit": "%",
+      "category": "Tumor Response",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor response, N (%)",
+      "group_data": [
+        {
+          "group_name": "FU",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 9.0,
+          "raw_string": "12 (9.0)",
+          "n_for_value": 133
+        },
+        {
+          "group_name": "IRI",
+          "data_type": "categorical_count_percentage",
+          "count": 18.0,
+          "percentage": 13.6,
+          "raw_string": "18 (13.6)",
+          "n_for_value": 132
+        }
+      ]
+    },
+    {
+      "original_label": "Progression-free survival",
+      "standardized_name": "Progression-free survival",
+      "category": "Progression-Free Survival",
+      "group_data": [
+        {
+          "group_name": "CLASSIC",
+          "data_type": "header",
+          "raw_string": "Progression-free survival"
+        },
+        {
+          "group_name": "SIMPLIFIED",
+          "data_type": "header",
+          "raw_string": "Progression-free survival"
+        }
+      ]
+    },
+    {
+      "original_label": "N. of events (death or progression)",
+      "standardized_name": "Number of progression-free survival events",
+      "category": "Progression-Free Survival",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Progression-free survival",
+      "group_data": [
+        {
+          "group_name": "CLASSIC",
+          "data_type": "numeric_single",
+          "value": 136.0,
+          "raw_string": "136"
+        },
+        {
+          "group_name": "SIMPLIFIED",
+          "data_type": "numeric_single",
+          "value": 134.0,
+          "raw_string": "134"
+        }
+      ]
+    },
+    {
+      "original_label": "Median in months (95% CI)",
+      "standardized_name": "Median progression-free survival",
+      "unit": "months",
+      "category": "Progression-Free Survival",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Progression-free survival",
+      "group_data": [
+        {
+          "group_name": "CLASSIC",
+          "data_type": "numeric_median_iqr",
+          "median": 6.5,
+          "iqr_min": 4.9,
+          "iqr_max": 7.4,
+          "raw_string": "6.5 (4.9-7.4)",
+          "notes": "Values in parentheses represent the 95% Confidence Interval."
+        },
+        {
+          "group_name": "SIMPLIFIED",
+          "data_type": "numeric_median_iqr",
+          "median": 6.0,
+          "iqr_min": 4.8,
+          "iqr_max": 7.7,
+          "raw_string": "6.0 (4.8-7.7)",
+          "notes": "Values in parentheses represent the 95% Confidence Interval."
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_value": 0.19,
+        "p_value": 0.19,
+        "raw_string": "0.19"
+      }
+    },
+    {
+      "original_label": "6-month survival (95% CI)",
+      "standardized_name": "6-month progression-free survival rate",
+      "unit": "%",
+      "category": "Progression-Free Survival",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Progression-free survival",
+      "group_data": [
+        {
+          "group_name": "CLASSIC",
+          "data_type": "categorical_count_percentage",
+          "percentage": 54.3,
+          "raw_string": "54.3% (45.7-62.1)"
+        },
+        {
+          "group_name": "SIMPLIFIED",
+          "data_type": "categorical_count_percentage",
+          "percentage": 49.7,
+          "raw_string": "49.7% (41.1-57.6)"
+        }
+      ]
+    },
+    {
+      "original_label": "12-month survival (95% CI)",
+      "standardized_name": "12-month progression-free survival rate",
+      "unit": "%",
+      "category": "Progression-Free Survival",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Progression-free survival",
+      "group_data": [
+        {
+          "group_name": "CLASSIC",
+          "data_type": "categorical_count_percentage",
+          "percentage": 22.9,
+          "raw_string": "22.9% (16.3-30.1)"
+        },
+        {
+          "group_name": "SIMPLIFIED",
+          "data_type": "categorical_count_percentage",
+          "percentage": 13.7,
+          "raw_string": "13.7% (8.6-19.9)"
+        }
+      ]
+    },
+    {
+      "original_label": "Overall survival",
+      "standardized_name": "Overall survival",
+      "category": "Overall Survival",
+      "group_data": [
+        {
+          "group_name": "CLASSIC",
+          "data_type": "header",
+          "raw_string": "Overall survival"
+        },
+        {
+          "group_name": "SIMPLIFIED",
+          "data_type": "header",
+          "raw_string": "Overall survival"
+        }
+      ]
+    },
+    {
+      "original_label": "N. of events (death)",
+      "standardized_name": "Number of deaths",
+      "category": "Overall Survival",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Overall survival",
+      "group_data": [
+        {
+          "group_name": "CLASSIC",
+          "data_type": "numeric_single",
+          "value": 122.0,
+          "raw_string": "122"
+        },
+        {
+          "group_name": "SIMPLIFIED",
+          "data_type": "numeric_single",
+          "value": 128.0,
+          "raw_string": "128"
+        }
+      ]
+    },
+    {
+      "original_label": "Median in months (95% CI)",
+      "standardized_name": "Median overall survival",
+      "unit": "months",
+      "category": "Overall Survival",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Overall survival",
+      "group_data": [
+        {
+          "group_name": "CLASSIC",
+          "data_type": "numeric_median_iqr",
+          "median": 15.2,
+          "iqr_min": 12.6,
+          "iqr_max": 19.7,
+          "raw_string": "15.2 (12.6-19.7)",
+          "notes": "Values in parentheses represent the 95% Confidence Interval."
+        },
+        {
+          "group_name": "SIMPLIFIED",
+          "data_type": "numeric_median_iqr",
+          "median": 11.4,
+          "iqr_min": 9.2,
+          "iqr_max": 15.7,
+          "raw_string": "11.4 (9.2-15.7)",
+          "notes": "Values in parentheses represent the 95% Confidence Interval."
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_value": 0.01,
+        "p_value": 0.01,
+        "raw_string": "0.01"
+      }
+    },
+    {
+      "original_label": "12-month survival (95% CI)",
+      "standardized_name": "12-month overall survival rate",
+      "unit": "%",
+      "category": "Overall Survival",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Overall survival",
+      "group_data": [
+        {
+          "group_name": "CLASSIC",
+          "data_type": "categorical_count_percentage",
+          "percentage": 62.9,
+          "raw_string": "62.9 (54.3-70.3)"
+        },
+        {
+          "group_name": "SIMPLIFIED",
+          "data_type": "categorical_count_percentage",
+          "percentage": 47.5,
+          "raw_string": "47.5 (39.0-55.5)"
+        }
+      ]
+    },
+    {
+      "original_label": "24-month survival (95% CI)",
+      "standardized_name": "24-month overall survival rate",
+      "unit": "%",
+      "category": "Overall Survival",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Overall survival",
+      "group_data": [
+        {
+          "group_name": "CLASSIC",
+          "data_type": "categorical_count_percentage",
+          "percentage": 31.3,
+          "raw_string": "31.3 (23.6-39.4)"
+        },
+        {
+          "group_name": "SIMPLIFIED",
+          "data_type": "categorical_count_percentage",
+          "percentage": 20.9,
+          "raw_string": "20.9 (14.4-28.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Tumor response, N (%)",
+      "standardized_name": "Tumor response",
+      "category": "Tumor Response",
+      "group_data": [
+        {
+          "group_name": "CLASSIC",
+          "data_type": "header",
+          "raw_string": "N = 132",
+          "n_for_value": 132
+        },
+        {
+          "group_name": "SIMPLIFIED",
+          "data_type": "header",
+          "raw_string": "N = 133",
+          "n_for_value": 133
+        }
+      ]
+    },
+    {
+      "original_label": "Objective response (CR and PR)",
+      "standardized_name": "Objective response rate",
+      "unit": "%",
+      "category": "Tumor Response",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor response, N (%)",
+      "group_data": [
+        {
+          "group_name": "CLASSIC",
+          "data_type": "categorical_count_percentage",
+          "count": 49.0,
+          "percentage": 37.1,
+          "raw_string": "49 (37.1)",
+          "n_for_value": 132
+        },
+        {
+          "group_name": "SIMPLIFIED",
+          "data_type": "categorical_count_percentage",
+          "count": 34.0,
+          "percentage": 25.6,
+          "raw_string": "34 (25.6)",
+          "n_for_value": 133
+        }
+      ],
+      "comparison_statistics": {
+        "statistic_value": 0.04,
+        "p_value": 0.04,
+        "raw_string": "0.04"
+      }
+    },
+    {
+      "original_label": "CR",
+      "standardized_name": "Complete Response",
+      "unit": "%",
+      "category": "Tumor Response",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor response, N (%)",
+      "group_data": [
+        {
+          "group_name": "CLASSIC",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 5.3,
+          "raw_string": "7 (5.3)",
+          "n_for_value": 132
+        },
+        {
+          "group_name": "SIMPLIFIED",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 1.5,
+          "raw_string": "2 (1.5)",
+          "n_for_value": 133
+        }
+      ]
+    },
+    {
+      "original_label": "PR",
+      "standardized_name": "Partial Response",
+      "unit": "%",
+      "category": "Tumor Response",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor response, N (%)",
+      "group_data": [
+        {
+          "group_name": "CLASSIC",
+          "data_type": "categorical_count_percentage",
+          "count": 42.0,
+          "percentage": 31.8,
+          "raw_string": "42 (31.8)",
+          "n_for_value": 132
+        },
+        {
+          "group_name": "SIMPLIFIED",
+          "data_type": "categorical_count_percentage",
+          "count": 32.0,
+          "percentage": 24.1,
+          "raw_string": "32 (24.1)",
+          "n_for_value": 133
+        }
+      ]
+    },
+    {
+      "original_label": "SD",
+      "standardized_name": "Stable Disease",
+      "unit": "%",
+      "category": "Tumor Response",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor response, N (%)",
+      "group_data": [
+        {
+          "group_name": "CLASSIC",
+          "data_type": "categorical_count_percentage",
+          "count": 48.0,
+          "percentage": 36.4,
+          "raw_string": "48 (36.4)",
+          "n_for_value": 132
+        },
+        {
+          "group_name": "SIMPLIFIED",
+          "data_type": "categorical_count_percentage",
+          "count": 54.0,
+          "percentage": 40.6,
+          "raw_string": "54 (40.6)",
+          "n_for_value": 133
+        }
+      ]
+    },
+    {
+      "original_label": "PD",
+      "standardized_name": "Progressive Disease",
+      "unit": "%",
+      "category": "Tumor Response",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor response, N (%)",
+      "group_data": [
+        {
+          "group_name": "CLASSIC",
+          "data_type": "categorical_count_percentage",
+          "count": 23.0,
+          "percentage": 17.4,
+          "raw_string": "23 (17.4)",
+          "n_for_value": 132
+        },
+        {
+          "group_name": "SIMPLIFIED",
+          "data_type": "categorical_count_percentage",
+          "count": 27.0,
+          "percentage": 20.3,
+          "raw_string": "27 (20.3)",
+          "n_for_value": 133
+        }
+      ]
+    },
+    {
+      "original_label": "NE",
+      "standardized_name": "Not evaluable",
+      "unit": "%",
+      "category": "Tumor Response",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor response, N (%)",
+      "group_data": [
+        {
+          "group_name": "CLASSIC",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 9.1,
+          "raw_string": "12 (9.1)",
+          "n_for_value": 132
+        },
+        {
+          "group_name": "SIMPLIFIED",
+          "data_type": "categorical_count_percentage",
+          "count": 18.0,
+          "percentage": 13.5,
+          "raw_string": "18 (13.5)",
+          "n_for_value": 133
+        }
+      ]
+    }
+  ]
+}

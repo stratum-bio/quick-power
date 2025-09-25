@@ -1,0 +1,1664 @@
+{
+  "study_id": "NCT00433589",
+  "study_title": "70-Gene Signature as an Aid to Treatment Decisions in Early-Stage Breast Cancer",
+  "table_name": "Table 1",
+  "table_title": "Characteristics of the Patients and Tumors at Baseline, According to Risk Group.",
+  "description": "Baseline characteristics of patients and tumors, categorized by low vs high clinical risk and low vs high genomic risk.",
+  "footnotes": [
+    "* Data were missing for one patient at high clinical and low genomic risk with respect to tumor size, lymph-node status, and hormone-receptor status. Percentages may not total 100 because of rounding. ER denotes estrogen receptor, HER2 human epidermal growth factor receptor, and PR progesterone receptor.",
+    "† A majority of patients at high clinical risk and low genomic risk (54%) had tumors measuring 2 to 5 cm in diameter. Most of the patients at low clinical and genomic risk (96%) and at low clinical and high genomic risk (98%) had tumors measuring 2 cm or less, as did 52% of the patients at high clinical and genomic risk.",
+    "‡ More than three quarters (76%) of patients at high clinical and genomic risk had grade 3 tumors. Most patients at low clinical and genomic risk, low clinical and high genomic risk, and high clinical and low genomic risk had grade 1 or 2 tumors (98%, 85%, and 71%, respectively).",
+    "§ The presence of negative lymph nodes was substantially more frequent among patients at low clinical and genomic risk (94%) and low clinical and high genomic risk (97%) than among patients at high clinical and low genomic risk (52%) and high clinical and genomic risk (74%).",
+    "¶ Almost all tumors were positive for hormone receptors except among patients at high clinical and genomic risk, in whom 38% of tumors were hormone-receptor-negative. Hormone receptor positivity was defined as the presence of at least 1% of immunoreactive cells, an Allred score of more than 2 (on a scale from 0 to 8, with higher scores indicating a greater number of receptors), or a level of cytosolic protein of at least 10 fmol per milligram.",
+    "|| HER-2 positivity was reported in 4% of patients at low clinical and genomic risk, 12% of those at low clinical and high genomic risk, 8% of those at high clinical and low genomic risk, and 19% of those at high clinical and genomic risk.",
+    "** Specifically, among patients at high clinical and low genomic risk, 48% had node-positive disease, 58% of tumors measured 2 cm or more, and 90% had the luminal HER2-negative subtype.",
+    "†† The World Health Organization performance scores range from 0 to 5, with 0 denoting perfect health and 5 death."
+  ],
+  "groups": [
+    {
+      "name": "Low Clinical Risk, Low Genomic Risk",
+      "n": 2745,
+      "type": "Low Clinical Risk, Low Genomic Risk"
+    },
+    {
+      "name": "Low Clinical Risk, High Genomic Risk",
+      "n": 592,
+      "type": "Low Clinical Risk, High Genomic Risk"
+    },
+    {
+      "name": "High Clinical Risk, Low Genomic Risk",
+      "n": 1550,
+      "type": "High Clinical Risk, Low Genomic Risk"
+    },
+    {
+      "name": "High Clinical Risk, High Genomic Risk",
+      "n": 1806,
+      "type": "High Clinical Risk, High Genomic Risk"
+    },
+    {
+      "name": "All Patients",
+      "n": 6693,
+      "type": "Total"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age — yr",
+      "standardized_name": "Age",
+      "category": "Demographics",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Age — yr"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Age — yr"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Age — yr"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Age — yr"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "header",
+          "raw_string": "Age — yr"
+        }
+      ]
+    },
+    {
+      "original_label": "<35",
+      "standardized_name": "Age <35 years",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 24.0,
+          "percentage": 0.9,
+          "raw_string": "24 (0.9)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 13.0,
+          "percentage": 2.2,
+          "raw_string": "13 (2.2)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 20.0,
+          "percentage": 1.3,
+          "raw_string": "20 (1.3)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 65.0,
+          "percentage": 3.6,
+          "raw_string": "65 (3.6)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 122.0,
+          "percentage": 1.8,
+          "raw_string": "122 (1.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "35 to <50",
+      "standardized_name": "Age 35 to <50 years",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 774.0,
+          "percentage": 28.2,
+          "raw_string": "774 (28.2)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 165.0,
+          "percentage": 27.9,
+          "raw_string": "165 (27.9)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 514.0,
+          "percentage": 33.2,
+          "raw_string": "514 (33.2)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 651.0,
+          "percentage": 36.0,
+          "raw_string": "651 (36.0)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 2104.0,
+          "percentage": 31.4,
+          "raw_string": "2104 (31.4)"
+        }
+      ]
+    },
+    {
+      "original_label": "50 to 70",
+      "standardized_name": "Age 50 to 70 years",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 1928.0,
+          "percentage": 70.2,
+          "raw_string": "1928 (70.2)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 403.0,
+          "percentage": 68.1,
+          "raw_string": "403 (68.1)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 1000.0,
+          "percentage": 64.5,
+          "raw_string": "1000 (64.5)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 1080.0,
+          "percentage": 59.8,
+          "raw_string": "1080 (59.8)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 4411.0,
+          "percentage": 65.9,
+          "raw_string": "4411 (65.9)"
+        }
+      ]
+    },
+    {
+      "original_label": ">70",
+      "standardized_name": "Age >70 years",
+      "unit": "years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 19.0,
+          "percentage": 0.7,
+          "raw_string": "19 (0.7)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 1.9,
+          "raw_string": "11 (1.9)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 16.0,
+          "percentage": 1.0,
+          "raw_string": "16 (1.0)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 10.0,
+          "percentage": 0.6,
+          "raw_string": "10 (0.6)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 56.0,
+          "percentage": 0.8,
+          "raw_string": "56 (0.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "Tumor size — cm†",
+      "standardized_name": "Tumor size",
+      "category": "Tumor Characteristics",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Tumor size — cm†"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Tumor size — cm†"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Tumor size — cm†"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Tumor size — cm†"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "header",
+          "raw_string": "Tumor size — cm†"
+        }
+      ]
+    },
+    {
+      "original_label": "<1",
+      "standardized_name": "Tumor size <1 cm",
+      "unit": "cm",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor size",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 655.0,
+          "percentage": 23.9,
+          "raw_string": "655 (23.9)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 198.0,
+          "percentage": 33.4,
+          "raw_string": "198 (33.4)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 38.0,
+          "percentage": 2.5,
+          "raw_string": "38 (2.5)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 29.0,
+          "percentage": 1.6,
+          "raw_string": "29 (1.6)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 920.0,
+          "percentage": 13.7,
+          "raw_string": "920 (13.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "1 to 2",
+      "standardized_name": "Tumor size 1 to 2 cm",
+      "unit": "cm",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor size",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 1968.0,
+          "percentage": 71.7,
+          "raw_string": "1968 (71.7)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 383.0,
+          "percentage": 64.7,
+          "raw_string": "383 (64.7)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 610.0,
+          "percentage": 39.4,
+          "raw_string": "610 (39.4)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 914.0,
+          "percentage": 50.6,
+          "raw_string": "914 (50.6)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 3875.0,
+          "percentage": 57.9,
+          "raw_string": "3875 (57.9)"
+        }
+      ]
+    },
+    {
+      "original_label": ">2 to 5",
+      "standardized_name": "Tumor size >2 to 5 cm",
+      "unit": "cm",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor size",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 122.0,
+          "percentage": 4.4,
+          "raw_string": "122 (4.4)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 11.0,
+          "percentage": 1.9,
+          "raw_string": "11 (1.9)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 843.0,
+          "percentage": 54.4,
+          "raw_string": "843 (54.4)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 843.0,
+          "percentage": 46.7,
+          "raw_string": "843 (46.7)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 1819.0,
+          "percentage": 27.2,
+          "raw_string": "1819 (27.2)"
+        }
+      ]
+    },
+    {
+      "original_label": ">5",
+      "standardized_name": "Tumor size >5 cm",
+      "unit": "cm",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor size",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 58.0,
+          "percentage": 3.7,
+          "raw_string": "58 (3.7)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 20.0,
+          "percentage": 1.1,
+          "raw_string": "20 (1.1)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 78.0,
+          "percentage": 1.2,
+          "raw_string": "78 (1.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Tumor grade‡",
+      "standardized_name": "Tumor grade",
+      "category": "Tumor Characteristics",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Tumor grade‡"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Tumor grade‡"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Tumor grade‡"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Tumor grade‡"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "header",
+          "raw_string": "Tumor grade‡"
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "Tumor grade 1",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor grade",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 1242.0,
+          "percentage": 45.2,
+          "raw_string": "1242 (45.2)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 92.0,
+          "percentage": 15.5,
+          "raw_string": "92 (15.5)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 98.0,
+          "percentage": 6.3,
+          "raw_string": "98 (6.3)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 15.0,
+          "percentage": 0.8,
+          "raw_string": "15 (0.8)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 1447.0,
+          "percentage": 21.6,
+          "raw_string": "1447 (21.6)"
+        }
+      ]
+    },
+    {
+      "original_label": "2",
+      "standardized_name": "Tumor grade 2",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor grade",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 1457.0,
+          "percentage": 53.1,
+          "raw_string": "1457 (53.1)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 414.0,
+          "percentage": 69.9,
+          "raw_string": "414 (69.9)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 995.0,
+          "percentage": 64.2,
+          "raw_string": "995 (64.2)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 421.0,
+          "percentage": 23.3,
+          "raw_string": "421 (23.3)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 3287.0,
+          "percentage": 49.1,
+          "raw_string": "3287 (49.1)"
+        }
+      ]
+    },
+    {
+      "original_label": "3",
+      "standardized_name": "Tumor grade 3",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor grade",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 36.0,
+          "percentage": 1.3,
+          "raw_string": "36 (1.3)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 83.0,
+          "percentage": 14.0,
+          "raw_string": "83 (14.0)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 443.0,
+          "percentage": 28.6,
+          "raw_string": "443 (28.6)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 1365.0,
+          "percentage": 75.6,
+          "raw_string": "1365 (75.6)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 1927.0,
+          "percentage": 28.8,
+          "raw_string": "1927 (28.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "Missing data",
+      "standardized_name": "Tumor grade Missing",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Tumor grade",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 10.0,
+          "percentage": 0.4,
+          "raw_string": "10 (0.4)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 0.5,
+          "raw_string": "3 (0.5)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 14.0,
+          "percentage": 0.9,
+          "raw_string": "14 (0.9)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 0.3,
+          "raw_string": "5 (0.3)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 32.0,
+          "percentage": 0.5,
+          "raw_string": "32 (0.5)"
+        }
+      ]
+    },
+    {
+      "original_label": "Lymph-node status§",
+      "standardized_name": "Lymph-node status",
+      "category": "Tumor Characteristics",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Lymph-node status§"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Lymph-node status§"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Lymph-node status§"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Lymph-node status§"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "header",
+          "raw_string": "Lymph-node status§"
+        }
+      ]
+    },
+    {
+      "original_label": "Negative",
+      "standardized_name": "Lymph-node negative",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Lymph-node status",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 2570.0,
+          "percentage": 93.6,
+          "raw_string": "2570 (93.6)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 577.0,
+          "percentage": 97.5,
+          "raw_string": "577 (97.5)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 812.0,
+          "percentage": 52.4,
+          "raw_string": "812 (52.4)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 1329.0,
+          "percentage": 73.6,
+          "raw_string": "1329 (73.6)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 5288.0,
+          "percentage": 79.0,
+          "raw_string": "5288 (79.0)"
+        }
+      ]
+    },
+    {
+      "original_label": "Positive",
+      "standardized_name": "Lymph-node positive",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Lymph-node status",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Positive"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Positive"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Positive"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Positive"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "header",
+          "raw_string": "Positive"
+        }
+      ]
+    },
+    {
+      "original_label": "1 node",
+      "standardized_name": "Lymph-node positive: 1 node",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Lymph-node positive",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 131.0,
+          "percentage": 4.8,
+          "raw_string": "131 (4.8)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 10.0,
+          "percentage": 1.7,
+          "raw_string": "10 (1.7)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 505.0,
+          "percentage": 32.6,
+          "raw_string": "505 (32.6)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 296.0,
+          "percentage": 16.4,
+          "raw_string": "296 (16.4)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 942.0,
+          "percentage": 14.1,
+          "raw_string": "942 (14.1)"
+        }
+      ]
+    },
+    {
+      "original_label": "2 nodes",
+      "standardized_name": "Lymph-node positive: 2 nodes",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Lymph-node positive",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 26.0,
+          "percentage": 0.9,
+          "raw_string": "26 (0.9)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 0.5,
+          "raw_string": "3 (0.5)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 157.0,
+          "percentage": 10.1,
+          "raw_string": "157 (10.1)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 114.0,
+          "percentage": 6.3,
+          "raw_string": "114 (6.3)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 300.0,
+          "percentage": 4.5,
+          "raw_string": "300 (4.5)"
+        }
+      ]
+    },
+    {
+      "original_label": "3 nodes",
+      "standardized_name": "Lymph-node positive: 3 nodes",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Lymph-node positive",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 18.0,
+          "percentage": 0.7,
+          "raw_string": "18 (0.7)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 0.3,
+          "raw_string": "2 (0.3)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 69.0,
+          "percentage": 4.5,
+          "raw_string": "69 (4.5)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 65.0,
+          "percentage": 3.6,
+          "raw_string": "65 (3.6)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 154.0,
+          "percentage": 2.3,
+          "raw_string": "154 (2.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "≥4 nodes",
+      "standardized_name": "Lymph-node positive: ≥4 nodes",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Lymph-node positive",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 0.4,
+          "raw_string": "6 (0.4)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 0.1,
+          "raw_string": "2 (0.1)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 0.1,
+          "raw_string": "8 (0.1)"
+        }
+      ]
+    },
+    {
+      "original_label": "Hormone-receptor status¶",
+      "standardized_name": "Hormone receptor status",
+      "category": "Tumor Characteristics",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Hormone-receptor status¶"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Hormone-receptor status¶"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Hormone-receptor status¶"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Hormone-receptor status¶"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "header",
+          "raw_string": "Hormone-receptor status¶"
+        }
+      ]
+    },
+    {
+      "original_label": "ER-positive, PR-positive, or both",
+      "standardized_name": "ER-positive, PR-positive, or both",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone receptor status",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 2741.0,
+          "percentage": 99.9,
+          "raw_string": "2741 (99.9)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 535.0,
+          "percentage": 90.4,
+          "raw_string": "535 (90.4)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 1520.0,
+          "percentage": 98.1,
+          "raw_string": "1520 (98.1)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 1118.0,
+          "percentage": 61.9,
+          "raw_string": "1118 (61.9)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 5914.0,
+          "percentage": 88.4,
+          "raw_string": "5914 (88.4)"
+        }
+      ]
+    },
+    {
+      "original_label": "ER-negative and PR-negative",
+      "standardized_name": "ER-negative and PR-negative",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Hormone receptor status",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 0.1,
+          "raw_string": "4 (0.1)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 57.0,
+          "percentage": 9.6,
+          "raw_string": "57 (9.6)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 29.0,
+          "percentage": 1.9,
+          "raw_string": "29 (1.9)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 688.0,
+          "percentage": 38.1,
+          "raw_string": "688 (38.1)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 778.0,
+          "percentage": 11.6,
+          "raw_string": "778 (11.6)"
+        }
+      ]
+    },
+    {
+      "original_label": "HER2 status||",
+      "standardized_name": "HER2 status",
+      "category": "Tumor Characteristics",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "header",
+          "raw_string": "HER2 status||"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "header",
+          "raw_string": "HER2 status||"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "header",
+          "raw_string": "HER2 status||"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "header",
+          "raw_string": "HER2 status||"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "header",
+          "raw_string": "HER2 status||"
+        }
+      ]
+    },
+    {
+      "original_label": "Negative",
+      "standardized_name": "HER2 negative",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "HER2 status",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 2641.0,
+          "percentage": 96.2,
+          "raw_string": "2641 (96.2)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 518.0,
+          "percentage": 87.5,
+          "raw_string": "518 (87.5)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 1423.0,
+          "percentage": 91.8,
+          "raw_string": "1423 (91.8)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 1461.0,
+          "percentage": 80.9,
+          "raw_string": "1461 (80.9)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 6043.0,
+          "percentage": 90.3,
+          "raw_string": "6043 (90.3)"
+        }
+      ]
+    },
+    {
+      "original_label": "Positive",
+      "standardized_name": "HER2 positive",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "HER2 status",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 97.0,
+          "percentage": 3.5,
+          "raw_string": "97 (3.5)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 73.0,
+          "percentage": 12.3,
+          "raw_string": "73 (12.3)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 124.0,
+          "percentage": 8.0,
+          "raw_string": "124 (8.0)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 344.0,
+          "percentage": 19.0,
+          "raw_string": "344 (19.0)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 638.0,
+          "percentage": 9.5,
+          "raw_string": "638 (9.5)"
+        }
+      ]
+    },
+    {
+      "original_label": "Missing data",
+      "standardized_name": "HER2 status missing",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "HER2 status",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 0.3,
+          "raw_string": "7 (0.3)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.2,
+          "raw_string": "1 (0.2)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 0.2,
+          "raw_string": "3 (0.2)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.1,
+          "raw_string": "1 (0.1)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 0.2,
+          "raw_string": "12 (0.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "Clinical-pathological subtype**",
+      "standardized_name": "Clinical-pathological subtype",
+      "category": "Tumor Characteristics",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Clinical-pathological subtype**"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Clinical-pathological subtype**"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Clinical-pathological subtype**"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "header",
+          "raw_string": "Clinical-pathological subtype**"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "header",
+          "raw_string": "Clinical-pathological subtype**"
+        }
+      ]
+    },
+    {
+      "original_label": "Luminal HER2-negative: ER-positive, PR-positive, or both",
+      "standardized_name": "Luminal HER2-negative",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Clinical-pathological subtype",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 2638.0,
+          "percentage": 96.1,
+          "raw_string": "2638 (96.1)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 467.0,
+          "percentage": 78.9,
+          "raw_string": "467 (78.9)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 1402.0,
+          "percentage": 90.5,
+          "raw_string": "1402 (90.5)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 895.0,
+          "percentage": 49.6,
+          "raw_string": "895 (49.6)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 5402.0,
+          "percentage": 80.7,
+          "raw_string": "5402 (80.7)"
+        }
+      ]
+    },
+    {
+      "original_label": "Luminal HER2-positive: ER-positive, PR-positive, or both",
+      "standardized_name": "Luminal HER2-positive",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Clinical-pathological subtype",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 96.0,
+          "percentage": 3.5,
+          "raw_string": "96 (3.5)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 68.0,
+          "percentage": 11.5,
+          "raw_string": "68 (11.5)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 115.0,
+          "percentage": 7.4,
+          "raw_string": "115 (7.4)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 222.0,
+          "percentage": 12.3,
+          "raw_string": "222 (12.3)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 501.0,
+          "percentage": 7.5,
+          "raw_string": "501 (7.5)"
+        }
+      ]
+    },
+    {
+      "original_label": "Nonluminal HER2-positive: ER-negative, PR-negative",
+      "standardized_name": "Nonluminal HER2-positive",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Clinical-pathological subtype",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "raw_string": "1 (<0.1)",
+          "notes": "Percentage is less than 0.1%"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 0.8,
+          "raw_string": "5 (0.8)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 9.0,
+          "percentage": 0.6,
+          "raw_string": "9 (0.6)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 122.0,
+          "percentage": 6.8,
+          "raw_string": "122 (6.8)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 137.0,
+          "percentage": 2.0,
+          "raw_string": "137 (2.0)"
+        }
+      ]
+    },
+    {
+      "original_label": "Triple negative: ER-negative, PR-negative, HER2-negative",
+      "standardized_name": "Triple negative",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Clinical-pathological subtype",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 0.1,
+          "raw_string": "3 (0.1)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 51.0,
+          "percentage": 8.6,
+          "raw_string": "51 (8.6)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 20.0,
+          "percentage": 1.3,
+          "raw_string": "20 (1.3)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 566.0,
+          "percentage": 31.3,
+          "raw_string": "566 (31.3)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 640.0,
+          "percentage": 9.6,
+          "raw_string": "640 (9.6)"
+        }
+      ]
+    },
+    {
+      "original_label": "Missing data",
+      "standardized_name": "Clinical-pathological subtype missing",
+      "category": "Tumor Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Clinical-pathological subtype",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 7.0,
+          "percentage": 0.3,
+          "raw_string": "7 (0.3)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.2,
+          "raw_string": "1 (0.2)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 0.3,
+          "raw_string": "4 (0.3)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.1,
+          "raw_string": "1 (0.1)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 13.0,
+          "percentage": 0.2,
+          "raw_string": "13 (0.2)"
+        }
+      ]
+    },
+    {
+      "original_label": "WHO performance status††",
+      "standardized_name": "WHO performance status",
+      "category": "Patient Characteristics",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "header",
+          "raw_string": "WHO performance status††"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "header",
+          "raw_string": "WHO performance status††"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "header",
+          "raw_string": "WHO performance status††"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "header",
+          "raw_string": "WHO performance status††"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "header",
+          "raw_string": "WHO performance status††"
+        }
+      ]
+    },
+    {
+      "original_label": "0",
+      "standardized_name": "WHO performance status 0",
+      "category": "Patient Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "WHO performance status",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 2644.0,
+          "percentage": 96.3,
+          "raw_string": "2644 (96.3)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 565.0,
+          "percentage": 95.4,
+          "raw_string": "565 (95.4)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 1491.0,
+          "percentage": 96.2,
+          "raw_string": "1491 (96.2)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 1734.0,
+          "percentage": 96.0,
+          "raw_string": "1734 (96.0)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 6434.0,
+          "percentage": 96.1,
+          "raw_string": "6434 (96.1)"
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "WHO performance status 1",
+      "category": "Patient Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "WHO performance status",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 101.0,
+          "percentage": 3.7,
+          "raw_string": "101 (3.7)"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 27.0,
+          "percentage": 4.6,
+          "raw_string": "27 (4.6)"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 58.0,
+          "percentage": 3.7,
+          "raw_string": "58 (3.7)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 71.0,
+          "percentage": 3.9,
+          "raw_string": "71 (3.9)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 257.0,
+          "percentage": 3.8,
+          "raw_string": "257 (3.8)"
+        }
+      ]
+    },
+    {
+      "original_label": "2",
+      "standardized_name": "WHO performance status 2",
+      "category": "Patient Characteristics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "WHO performance status",
+      "group_data": [
+        {
+          "group_name": "Low Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0"
+        },
+        {
+          "group_name": "Low Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 0.0,
+          "percentage": 0.0,
+          "raw_string": "0"
+        },
+        {
+          "group_name": "High Clinical Risk, Low Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.1,
+          "raw_string": "1 (0.1)"
+        },
+        {
+          "group_name": "High Clinical Risk, High Genomic Risk",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.1,
+          "raw_string": "1 (0.1)"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "raw_string": "2 (<0.1)",
+          "notes": "Percentage is less than 0.1%"
+        }
+      ]
+    }
+  ]
+}

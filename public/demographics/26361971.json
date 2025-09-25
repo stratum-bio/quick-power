@@ -1,0 +1,26 @@
+{
+  "study_id": "NCT00973609",
+  "study_title": "Maintenance strategies after first-line oxaliplatin plus fluoropyrimidine plus bevacizumab for patients with metastatic colorectal cancer (AIO 0207): a randomised, non-inferiority, open-label, phase 3 trial",
+  "table_name": "Baseline Characteristics",
+  "table_title": "Baseline Patient Characteristics",
+  "description": "The provided document is an abstract of the clinical trial publication and does not contain a table with baseline demographics. The group information has been extracted from the text in the 'Findings' section.",
+  "footnotes": [],
+  "groups": [
+    {
+      "name": "fluoropyrimidine plus bevacizumab",
+      "n": 158,
+      "type": "intervention"
+    },
+    {
+      "name": "bevacizumab monotherapy",
+      "n": 156,
+      "type": "intervention"
+    },
+    {
+      "name": "no treatment",
+      "n": 158,
+      "type": "control"
+    }
+  ],
+  "characteristics": []
+}

@@ -1,0 +1,1213 @@
+{
+  "study_id": "CALGB 90202 (Alliance)",
+  "study_title": "Randomized Controlled Trial of Early Zoledronic Acid in Men With Castration-Sensitive Prostate Cancer and Bone Metastases: Results of CALGB 90202 (Alliance)",
+  "table_name": "Table 1",
+  "table_title": "Baseline Demographics and Disease Characteristics by Treatment Arm",
+  "footnotes": [
+    "*Not mutually exclusive."
+  ],
+  "groups": [
+    {
+      "name": "Zoledronic acid",
+      "n": 323,
+      "type": "intervention"
+    },
+    {
+      "name": "Placebo",
+      "n": 322,
+      "type": "control"
+    },
+    {
+      "name": "Total",
+      "n": 645,
+      "type": "total"
+    }
+  ],
+  "characteristics": [
+    {
+      "original_label": "Age, years",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Median",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, years",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "numeric_median_iqr",
+          "median": 66.1,
+          "raw_string": "66.1"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "numeric_median_iqr",
+          "median": 66.7,
+          "raw_string": "66.7"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "numeric_median_iqr",
+          "median": 66.3,
+          "raw_string": "66.3"
+        }
+      ]
+    },
+    {
+      "original_label": "Interquartile range",
+      "standardized_name": "Age Interquartile Range",
+      "unit": "years",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age, years",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "numeric_median_iqr",
+          "iqr_min": 60.0,
+          "iqr_max": 72.5,
+          "raw_string": "60.0-72.5"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "numeric_median_iqr",
+          "iqr_min": 60.2,
+          "iqr_max": 73.6,
+          "raw_string": "60.2-73.6"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "numeric_median_iqr",
+          "iqr_min": 60.0,
+          "iqr_max": 73.0,
+          "raw_string": "60.0-73.0"
+        }
+      ]
+    },
+    {
+      "original_label": "White race",
+      "standardized_name": "Race",
+      "category": "Demographics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 261.0,
+          "percentage": 81.0,
+          "raw_string": "261 (81%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 256.0,
+          "percentage": 80.0,
+          "raw_string": "256 (80%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 517.0,
+          "percentage": 80.0,
+          "raw_string": "517 (80%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Gleason score",
+      "standardized_name": "Gleason Score",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "0-4",
+      "standardized_name": "Gleason Score 0-4",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Gleason score",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "raw_string": "2 (<1%)",
+          "notes": "Percentage <1%"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "raw_string": "3 (<1%)",
+          "notes": "Percentage <1%"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 1.0,
+          "raw_string": "5 (1%)"
+        }
+      ]
+    },
+    {
+      "original_label": "5-7",
+      "standardized_name": "Gleason Score 5-7",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Gleason score",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 120.0,
+          "percentage": 37.0,
+          "raw_string": "120 (37%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 112.0,
+          "percentage": 35.0,
+          "raw_string": "112 (35%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 232.0,
+          "percentage": 36.0,
+          "raw_string": "232 (36%)"
+        }
+      ]
+    },
+    {
+      "original_label": "8-10",
+      "standardized_name": "Gleason Score 8-10",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Gleason score",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 187.0,
+          "percentage": 58.0,
+          "raw_string": "187 (58%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 186.0,
+          "percentage": 58.0,
+          "raw_string": "186 (58%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 373.0,
+          "percentage": 58.0,
+          "raw_string": "373 (58%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Unknown",
+      "standardized_name": "Gleason Score Unknown",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Gleason score",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 4.0,
+          "raw_string": "12 (4%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "percentage": 7.0,
+          "raw_string": "21 (7%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 36.0,
+          "percentage": 5.0,
+          "raw_string": "36 (5%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Prior prostatectomy",
+      "standardized_name": "Prior Prostatectomy",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 62.0,
+          "percentage": 19.0,
+          "raw_string": "62 (19%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 45.0,
+          "percentage": 14.0,
+          "raw_string": "45 (14%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 107.0,
+          "percentage": 17.0,
+          "raw_string": "107 (17%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Prior radiation therapy",
+      "standardized_name": "Prior Radiation Therapy",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 59.0,
+          "percentage": 18.0,
+          "raw_string": "59 (18%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 50.0,
+          "percentage": 16.0,
+          "raw_string": "50 (16%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 109.0,
+          "percentage": 17.0,
+          "raw_string": "109 (17%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Prior neoadjuvant ADT",
+      "standardized_name": "Prior Neoadjuvant Androgen Deprivation Therapy",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "percentage": 6.5,
+          "raw_string": "21 (6.5%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 13.0,
+          "percentage": 4.0,
+          "raw_string": "13 (4.0%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 34.0,
+          "percentage": 5.3,
+          "raw_string": "34 (5.3%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Concurrently enrolled on CALGB 9594",
+      "standardized_name": "Concurrent Enrollment on CALGB 9594",
+      "category": "Concurrent Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 44.0,
+          "percentage": 14.0,
+          "raw_string": "44 (14%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 36.0,
+          "percentage": 11.0,
+          "raw_string": "36 (11%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 80.0,
+          "percentage": 12.0,
+          "raw_string": "80 (12%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Type of ADT at enrollment",
+      "standardized_name": "Androgen Deprivation Therapy Type at Enrollment",
+      "category": "Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "None",
+      "standardized_name": "Androgen Deprivation Therapy Type at Enrollment - None",
+      "category": "Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Type of ADT at enrollment",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 9.0,
+          "percentage": 3.0,
+          "raw_string": "9 (3%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 14.0,
+          "percentage": 4.0,
+          "raw_string": "14 (4%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 23.0,
+          "percentage": 4.0,
+          "raw_string": "23 (4%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Orchiectomy only",
+      "standardized_name": "Androgen Deprivation Therapy Type at Enrollment - Orchiectomy only",
+      "category": "Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Type of ADT at enrollment",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 1.0,
+          "raw_string": "4 (1%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 10.0,
+          "percentage": 3.0,
+          "raw_string": "10 (3%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 14.0,
+          "percentage": 2.0,
+          "raw_string": "14 (2%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Orchiectomy and antiandrogen",
+      "standardized_name": "Androgen Deprivation Therapy Type at Enrollment - Orchiectomy and antiandrogen",
+      "category": "Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Type of ADT at enrollment",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 4.0,
+          "percentage": 1.0,
+          "raw_string": "4 (1%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 1.0,
+          "raw_string": "2 (1%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 6.0,
+          "percentage": 1.0,
+          "raw_string": "6 (1%)"
+        }
+      ]
+    },
+    {
+      "original_label": "GnRH agonist only",
+      "standardized_name": "Androgen Deprivation Therapy Type at Enrollment - GnRH agonist only",
+      "category": "Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Type of ADT at enrollment",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 75.0,
+          "percentage": 23.0,
+          "raw_string": "75 (23%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 81.0,
+          "percentage": 25.0,
+          "raw_string": "81 (25%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 156.0,
+          "percentage": 24.0,
+          "raw_string": "156 (24%)"
+        }
+      ]
+    },
+    {
+      "original_label": "GnRH agonist and antiandrogen",
+      "standardized_name": "Androgen Deprivation Therapy Type at Enrollment - GnRH agonist and antiandrogen",
+      "category": "Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Type of ADT at enrollment",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 222.0,
+          "percentage": 69.0,
+          "raw_string": "222 (69%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 210.0,
+          "percentage": 65.0,
+          "raw_string": "210 (65%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 432.0,
+          "percentage": 67.0,
+          "raw_string": "432 (67%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Site of metastatic disease*",
+      "standardized_name": "Site of Metastatic Disease",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "Bone",
+      "standardized_name": "Metastatic Site - Bone",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Site of metastatic disease*",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 312.0,
+          "percentage": 97.0,
+          "raw_string": "312 (97%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 310.0,
+          "percentage": 96.0,
+          "raw_string": "310 (96%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 622.0,
+          "percentage": 96.0,
+          "raw_string": "622 (96%)"
+        }
+      ]
+    },
+    {
+      "original_label": "CNS (excluding brain)",
+      "standardized_name": "Metastatic Site - CNS (excluding brain)",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Site of metastatic disease*",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.3,
+          "raw_string": "1 (0.3%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 1.0,
+          "percentage": 0.3,
+          "raw_string": "1 (0.3%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 0.3,
+          "raw_string": "2 (0.3%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Liver",
+      "standardized_name": "Metastatic Site - Liver",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Site of metastatic disease*",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 10.0,
+          "percentage": 3.0,
+          "raw_string": "10 (3%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 12.0,
+          "percentage": 4.0,
+          "raw_string": "12 (4%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 22.0,
+          "percentage": 3.0,
+          "raw_string": "22 (3%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Lung",
+      "standardized_name": "Metastatic Site - Lung",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Site of metastatic disease*",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 14.0,
+          "percentage": 4.0,
+          "raw_string": "14 (4%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 13.0,
+          "percentage": 4.0,
+          "raw_string": "13 (4%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 27.0,
+          "percentage": 4.0,
+          "raw_string": "27 (4%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Pleura",
+      "standardized_name": "Metastatic Site - Pleura",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Site of metastatic disease*",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 3.0,
+          "percentage": 0.9,
+          "raw_string": "3 (0.9%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 2.0,
+          "percentage": 0.6,
+          "raw_string": "2 (0.6%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 5.0,
+          "percentage": 0.8,
+          "raw_string": "5 (0.8%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Soft tissue",
+      "standardized_name": "Metastatic Site - Soft tissue",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Site of metastatic disease*",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 31.0,
+          "percentage": 10.0,
+          "raw_string": "31 (10%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 27.0,
+          "percentage": 8.0,
+          "raw_string": "27 (8%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 58.0,
+          "percentage": 9.0,
+          "raw_string": "58 (9%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Other",
+      "standardized_name": "Metastatic Site - Other",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Site of metastatic disease*",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 48.0,
+          "percentage": 15.0,
+          "raw_string": "48 (15%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 64.0,
+          "percentage": 20.0,
+          "raw_string": "64 (20%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 112.0,
+          "percentage": 17.0,
+          "raw_string": "112 (17%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Performance status",
+      "standardized_name": "ECOG Performance Status",
+      "category": "Clinical Assessment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "0",
+      "standardized_name": "ECOG Performance Status 0",
+      "category": "Clinical Assessment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Performance status",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 205.0,
+          "percentage": 63.0,
+          "raw_string": "205 (63%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 205.0,
+          "percentage": 64.0,
+          "raw_string": "205 (64%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 410.0,
+          "percentage": 64.0,
+          "raw_string": "410 (64%)"
+        }
+      ]
+    },
+    {
+      "original_label": "1",
+      "standardized_name": "ECOG Performance Status 1",
+      "category": "Clinical Assessment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Performance status",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 105.0,
+          "percentage": 33.0,
+          "raw_string": "105 (33%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 109.0,
+          "percentage": 34.0,
+          "raw_string": "109 (34%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 214.0,
+          "percentage": 33.0,
+          "raw_string": "214 (33%)"
+        }
+      ]
+    },
+    {
+      "original_label": "2",
+      "standardized_name": "ECOG Performance Status 2",
+      "category": "Clinical Assessment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Performance status",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 13.0,
+          "percentage": 4.0,
+          "raw_string": "13 (4%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 8.0,
+          "percentage": 2.0,
+          "raw_string": "8 (2%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 21.0,
+          "percentage": 3.0,
+          "raw_string": "21 (3%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Prior SRE",
+      "standardized_name": "Prior Skeletal-Related Event",
+      "category": "Disease Characteristics",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "categorical_count_percentage",
+          "count": 42.0,
+          "percentage": 13.0,
+          "raw_string": "42 (13%)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "categorical_count_percentage",
+          "count": 40.0,
+          "percentage": 12.0,
+          "raw_string": "40 (12%)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "categorical_count_percentage",
+          "count": 82.0,
+          "percentage": 13.0,
+          "raw_string": "82 (13%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Baseline labs",
+      "standardized_name": "Baseline Laboratory Values",
+      "category": "Laboratory Data",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
+      "original_label": "HGB, mg/dL",
+      "standardized_name": "Hemoglobin",
+      "unit": "mg/dL",
+      "category": "Laboratory Data",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Baseline labs",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "numeric_median_iqr",
+          "median": 13.7,
+          "iqr_min": 12.3,
+          "iqr_max": 14.6,
+          "raw_string": "13.7 (12.3-14.6)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "numeric_median_iqr",
+          "median": 13.5,
+          "iqr_min": 11.9,
+          "iqr_max": 14.7,
+          "raw_string": "13.5 (11.9-14.7)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "numeric_median_iqr",
+          "median": 13.6,
+          "iqr_min": 12.1,
+          "iqr_max": 14.6,
+          "raw_string": "13.6 (12.1-14.6)"
+        }
+      ]
+    },
+    {
+      "original_label": "Serum calcium, mg/dL",
+      "standardized_name": "Serum Calcium",
+      "unit": "mg/dL",
+      "category": "Laboratory Data",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Baseline labs",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "numeric_median_iqr",
+          "median": 9.3,
+          "iqr_min": 9.0,
+          "iqr_max": 9.6,
+          "raw_string": "9.3 (9.0-9.6)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "numeric_median_iqr",
+          "median": 9.3,
+          "iqr_min": 9.0,
+          "iqr_max": 9.6,
+          "raw_string": "9.3 (9.0-9.6)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "numeric_median_iqr",
+          "median": 9.3,
+          "iqr_min": 9.0,
+          "iqr_max": 9.6,
+          "raw_string": "9.3 (9.0-9.6)"
+        }
+      ]
+    },
+    {
+      "original_label": "Serum creatinine, mg/dL",
+      "standardized_name": "Serum Creatinine",
+      "unit": "mg/dL",
+      "category": "Laboratory Data",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Baseline labs",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "numeric_median_iqr",
+          "median": 1.0,
+          "iqr_min": 0.9,
+          "iqr_max": 1.2,
+          "raw_string": "1.0 (0.9-1.2)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "numeric_median_iqr",
+          "median": 1.0,
+          "iqr_min": 0.9,
+          "iqr_max": 1.1,
+          "raw_string": "1.0 (0.9-1.1)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "numeric_median_iqr",
+          "median": 1.0,
+          "iqr_min": 0.9,
+          "iqr_max": 1.1,
+          "raw_string": "1.0 (0.9-1.1)"
+        }
+      ]
+    },
+    {
+      "original_label": "LDH, U/L",
+      "standardized_name": "Lactate Dehydrogenase",
+      "unit": "U/L",
+      "category": "Laboratory Data",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Baseline labs",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "numeric_median_iqr",
+          "median": 163.0,
+          "iqr_min": 141.0,
+          "iqr_max": 198.0,
+          "raw_string": "163 (141-198)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "numeric_median_iqr",
+          "median": 170.5,
+          "iqr_min": 142.0,
+          "iqr_max": 202.5,
+          "raw_string": "170.5 (142-202.5)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "numeric_median_iqr",
+          "median": 167.0,
+          "iqr_min": 142.0,
+          "iqr_max": 199.0,
+          "raw_string": "167 (142-199)"
+        }
+      ]
+    },
+    {
+      "original_label": "Alkaline phosphatase, U/L",
+      "standardized_name": "Alkaline Phosphatase",
+      "unit": "U/L",
+      "category": "Laboratory Data",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Baseline labs",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "numeric_median_iqr",
+          "median": 117.0,
+          "iqr_min": 79.0,
+          "iqr_max": 250.0,
+          "raw_string": "117 (79-250)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "numeric_median_iqr",
+          "median": 117.5,
+          "iqr_min": 82.0,
+          "iqr_max": 270.0,
+          "raw_string": "117.5 (82-270)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "numeric_median_iqr",
+          "median": 117.0,
+          "iqr_min": 81.0,
+          "iqr_max": 262.0,
+          "raw_string": "117 (81-262)"
+        }
+      ]
+    },
+    {
+      "original_label": "PSA, ng/mL",
+      "standardized_name": "Prostate-Specific Antigen",
+      "unit": "ng/mL",
+      "category": "Laboratory Data",
+      "time_point": "Baseline",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Baseline labs",
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "numeric_median_iqr",
+          "median": 6.9,
+          "iqr_min": 0.8,
+          "iqr_max": 41.1,
+          "raw_string": "6.9 (0.8-41.1)"
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "numeric_median_iqr",
+          "median": 6.8,
+          "iqr_min": 1.3,
+          "iqr_max": 32.8,
+          "raw_string": "6.8 (1.3-32.8)"
+        },
+        {
+          "group_name": "Total",
+          "data_type": "numeric_median_iqr",
+          "median": 6.9,
+          "iqr_min": 1.1,
+          "iqr_max": 37.3,
+          "raw_string": "6.9 (1.1-37.3)"
+        }
+      ]
+    }
+  ]
+}

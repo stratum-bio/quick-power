@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   type StudyTable,
   type GroupData,
@@ -6,7 +6,7 @@ import {
 } from "./types/study_table.d";
 
 interface DemographicsTableProps {
-  studyTable: StudyTable;
+  pubmed: string | number;
 }
 
 function renderGroupData(data: GroupData) {
@@ -31,13 +31,54 @@ function renderGroupData(data: GroupData) {
 }
 
 const DemographicsTable: React.FC<DemographicsTableProps> = ({
-  studyTable,
+  pubmed,
 }) => {
+  const [studyTable, setStudyTable] = useState<StudyTable | null>(null);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchStudyTable = async () => {
+      setLoading(true);
+      setError(null);
+      try {
+        const response = await fetch(`/demographics/${pubmed}.json`);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data: StudyTable = await response.json();
+        setStudyTable(data);
+      } catch (e: unknown) {
+        if (e instanceof Error) {
+          setError(e.message);
+        } else {
+          setError("An unknown error occurred");
+        }
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchStudyTable();
+  }, [pubmed]);
+
+  if (loading) {
+    return <div>Loading demographics data...</div>;
+  }
+
+  if (!studyTable) {
+    return <div></div>;
+  }
+
   const groupCount = studyTable.groups.length;
 
   return (
     <div className="mt-8 max-w-3xl">
-      <h2 className="text-xl font-semibold mb-4">{studyTable.table_title}</h2>
+      <h2 className="text-xl font-semibold mb-4">Patient Characteristics</h2>
+
+      <p className="italic mb-4 ">
+      Data is in the process of being cleaned and verified.  Reference the original publication for accurate and most legible information.
+      </p>
 
       <div
         className={`grid grid-cols-${groupCount + 1} gap-x-4 items-center border-b pb-2 mb-2 rounded-md shadow-xl/30 shadow-gemini-blue ring ring-gemini-blue`}
@@ -58,16 +99,16 @@ const DemographicsTable: React.FC<DemographicsTableProps> = ({
           >
             <div className={`grid grid-cols-${groupCount + 1} gap-x-4 items-center`}>
               <div
-                className={`${characteristic.is_sub_characteristic ? "pl-4" : ""} ${characteristic.group_data[0]?.data_type === DataType.Header ? "font-semibold col-span-" + (groupCount+1) : ""}`}
+                className={`${characteristic.is_sub_characteristic ? "pl-4" : ""} ${characteristic.group_data[0]?.data_type === DataType.Header ? "pt-1 pb-1 font-semibold col-span-3" : "col-span-1"}`}
               >
                 {characteristic.original_label}{" "}
                 {characteristic.unit ? `(${characteristic.unit})` : ""}
               </div>
-              {characteristic.group_data.map((data, dataIndex) => (
+              {(characteristic.group_data[0]?.data_type != DataType.Header) && (characteristic.group_data.map((data, dataIndex) => (
                 <div key={dataIndex} className="col-span-1 text-center">
                   {renderGroupData(data)}
                 </div>
-              ))}
+              )))}
             </div>
           </div>
         ))}

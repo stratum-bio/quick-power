@@ -10,7 +10,7 @@ import AppError from "./AppError"; // Import the AppError component
 
 import { DISEASE_VAL_TO_NAME } from "./constants";
 import DemographicsTable from "./DemographicsTable";
-import { CerebelStudyTable } from "./data/25605838";
+
 
 function fitLambdaPerArm(data: Trial): Record<string, number> {
   const result: Record<string, number> = {};
@@ -167,7 +167,7 @@ const TrialDetail: React.FC = () => {
         <p>No arm data available.</p>
       )}
 
-      <DemographicsTable studyTable={CerebelStudyTable} />
+      <DemographicsTable pubmed={trialData.meta.pubmed}/>
 
       {trialName !== undefined && (
         <>
