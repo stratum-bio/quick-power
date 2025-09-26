@@ -7,6 +7,7 @@ import {
 
 interface DemographicsTableProps {
   pubmed: string | number;
+  showTitle?: boolean;
 }
 
 function renderGroupData(data: GroupData) {
@@ -30,7 +31,7 @@ function renderGroupData(data: GroupData) {
   }
 }
 
-const DemographicsTable: React.FC<DemographicsTableProps> = ({ pubmed }) => {
+const DemographicsTable: React.FC<DemographicsTableProps> = ({ pubmed, showTitle = false}) => {
   const [studyTable, setStudyTable] = useState<StudyTable | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [, setError] = useState<string | null>(null);
@@ -72,7 +73,9 @@ const DemographicsTable: React.FC<DemographicsTableProps> = ({ pubmed }) => {
 
   return (
     <div className="mt-8 max-w-3xl">
-      <h2 className="text-xl font-semibold mb-4">Patient Characteristics</h2>
+      <h2 className="text-xl font-semibold mb-4">
+        {showTitle ?  studyTable.study_title : "Patient Characteristics" }
+      </h2>
 
       <p className="italic mb-4 ">
         Disclaimer: data is in the process of being cleaned and verified.

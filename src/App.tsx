@@ -5,6 +5,7 @@ import TrialDetail from "./TrialDetail";
 import SimulateFromTrial from "./SimulateFromTrial";
 import LandingPage from "./LandingPage"; // Import the new LandingPage component
 import PrognosticFactorsGrid from "./PrognosticFactorsGrid";
+import DemographicsPage from "./DemographicsPage";
 import { Routes, Route, NavLink } from "react-router-dom";
 import { useState } from "react";
 
@@ -145,6 +146,7 @@ function App() {
               path="/prognostic-factors"
               element={<PrognosticFactorsGrid />}
             />
+            <Route path="/characteristics/:pubmedId" element={<DemographicsPage />} />
             {/* Fallback route for any unmatched paths, redirects to LandingPage */}
             <Route path="*" element={<LandingPage />} />
           </Routes>
