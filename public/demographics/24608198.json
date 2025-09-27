@@ -10,16 +10,6 @@
   ],
   "groups": [
     {
-      "name": "CO",
-      "n": 68,
-      "type": "treatment"
-    },
-    {
-      "name": "IO",
-      "n": 71,
-      "type": "treatment"
-    },
-    {
       "name": "CO + Placebo",
       "n": 33,
       "type": "treatment"
@@ -41,30 +31,6 @@
     }
   ],
   "characteristics": [
-    {
-      "original_label": "Mean age, years (SD)",
-      "standardized_name": "Age",
-      "unit": "years",
-      "category": "Demographics",
-      "time_point": "baseline",
-      "is_sub_characteristic": false,
-      "group_data": [
-        {
-          "group_name": "CO",
-          "data_type": "numeric_mean_sd",
-          "mean": 61.0,
-          "std_dev": 12.0,
-          "raw_string": "61 (12)"
-        },
-        {
-          "group_name": "IO",
-          "data_type": "numeric_mean_sd",
-          "mean": 63.0,
-          "std_dev": 12.0,
-          "raw_string": "63 (12)"
-        }
-      ]
-    },
     {
       "original_label": "Age distribution (years)",
       "standardized_name": "Age",

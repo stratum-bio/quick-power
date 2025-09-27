@@ -897,32 +897,12 @@
       ]
     },
     {
-      "original_label": "Bone",
-      "standardized_name": "Site of Metastases, Bone",
-      "category": "Clinical Characteristics",
-      "time_point": "Baseline",
-      "is_sub_characteristic": true,
-      "sub_characteristic_of": "Site of metastases — no. (%)",
-      "group_data": [
-        {
-          "group_name": "Ribociclib Group",
-          "data_type": "header",
-          "raw_string": ""
-        },
-        {
-          "group_name": "Placebo Group",
-          "data_type": "header",
-          "raw_string": ""
-        }
-      ]
-    },
-    {
-      "original_label": "Any",
+      "original_label": "Bone - Any",
       "standardized_name": "Site of Metastases, Bone, Any",
       "category": "Clinical Characteristics",
       "time_point": "Baseline",
       "is_sub_characteristic": true,
-      "sub_characteristic_of": "Bone",
+      "sub_characteristic_of": "Site of metastases — no. (%)",
       "group_data": [
         {
           "group_name": "Ribociclib Group",
@@ -941,12 +921,12 @@
       ]
     },
     {
-      "original_label": "Only",
+      "original_label": "Bone - Only",
       "standardized_name": "Site of Metastases, Bone, Only",
       "category": "Clinical Characteristics",
       "time_point": "Baseline",
       "is_sub_characteristic": true,
-      "sub_characteristic_of": "Bone",
+      "sub_characteristic_of": "Site of metastases — no. (%)",
       "group_data": [
         {
           "group_name": "Ribociclib Group",

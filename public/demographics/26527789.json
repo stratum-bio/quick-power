@@ -149,7 +149,24 @@
       "standardized_name": "Sex",
       "category": "Demographics",
       "is_sub_characteristic": false,
-      "group_data": []
+      "group_data": [
+        {
+          "group_name": "Arm A: Definitive CT/RT",
+          "data_type": "header"
+        },
+        {
+          "group_name": "Arm B: Surgery",
+          "data_type": "header"
+        },
+        {
+          "group_name": "Patients Not Randomly Assigned",
+          "data_type": "header"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "header"
+        }
+      ]
     },
     {
       "original_label": "Male",
@@ -230,7 +247,24 @@
       "standardized_name": "ECOG Performance Status",
       "category": "Baseline Characteristics",
       "is_sub_characteristic": false,
-      "group_data": []
+      "group_data": [
+        {
+          "group_name": "Arm A: Definitive CT/RT",
+          "data_type": "header"
+        },
+        {
+          "group_name": "Arm B: Surgery",
+          "data_type": "header"
+        },
+        {
+          "group_name": "Patients Not Randomly Assigned",
+          "data_type": "header"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "header"
+        }
+      ]
     },
     {
       "original_label": "0",
@@ -348,7 +382,24 @@
       "standardized_name": "Histology",
       "category": "Disease Characteristics",
       "is_sub_characteristic": false,
-      "group_data": []
+      "group_data": [
+        {
+          "group_name": "Arm A: Definitive CT/RT",
+          "data_type": "header"
+        },
+        {
+          "group_name": "Arm B: Surgery",
+          "data_type": "header"
+        },
+        {
+          "group_name": "Patients Not Randomly Assigned",
+          "data_type": "header"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "header"
+        }
+      ]
     },
     {
       "original_label": "Adenocarcinoma",
@@ -503,7 +554,24 @@
       "standardized_name": "Tumor-node group",
       "category": "Disease Characteristics",
       "is_sub_characteristic": false,
-      "group_data": []
+      "group_data": [
+        {
+          "group_name": "Arm A: Definitive CT/RT",
+          "data_type": "header"
+        },
+        {
+          "group_name": "Arm B: Surgery",
+          "data_type": "header"
+        },
+        {
+          "group_name": "Patients Not Randomly Assigned",
+          "data_type": "header"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "header"
+        }
+      ]
     },
     {
       "original_label": "T4, N0 or N1",
@@ -621,7 +689,24 @@
       "standardized_name": "Stage",
       "category": "Disease Characteristics",
       "is_sub_characteristic": false,
-      "group_data": []
+      "group_data": [
+        {
+          "group_name": "Arm A: Definitive CT/RT",
+          "data_type": "header"
+        },
+        {
+          "group_name": "Arm B: Surgery",
+          "data_type": "header"
+        },
+        {
+          "group_name": "Patients Not Randomly Assigned",
+          "data_type": "header"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "header"
+        }
+      ]
     },
     {
       "original_label": "IIIA",
@@ -702,7 +787,24 @@
       "standardized_name": "Prophylactic Cranial Irradiation Policy",
       "category": "Treatment Information",
       "is_sub_characteristic": false,
-      "group_data": []
+      "group_data": [
+        {
+          "group_name": "Arm A: Definitive CT/RT",
+          "data_type": "header"
+        },
+        {
+          "group_name": "Arm B: Surgery",
+          "data_type": "header"
+        },
+        {
+          "group_name": "Patients Not Randomly Assigned",
+          "data_type": "header"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "header"
+        }
+      ]
     },
     {
       "original_label": "Planned or already performed",
@@ -779,7 +881,24 @@
       "standardized_name": "Region",
       "category": "Demographics",
       "is_sub_characteristic": false,
-      "group_data": []
+      "group_data": [
+        {
+          "group_name": "Arm A: Definitive CT/RT",
+          "data_type": "header"
+        },
+        {
+          "group_name": "Arm B: Surgery",
+          "data_type": "header"
+        },
+        {
+          "group_name": "Patients Not Randomly Assigned",
+          "data_type": "header"
+        },
+        {
+          "group_name": "All Patients",
+          "data_type": "header"
+        }
+      ]
     },
     {
       "original_label": "Germany",

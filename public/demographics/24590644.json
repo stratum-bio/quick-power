@@ -289,11 +289,36 @@
       ]
     },
     {
+      "original_label": "Prior therapy",
+      "standardized_name": "Prior Treatment",
+      "category": "Prior Treatment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Zoledronic acid",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Placebo",
+          "data_type": "header",
+          "raw_string": ""
+        },
+        {
+          "group_name": "Total",
+          "data_type": "header",
+          "raw_string": ""
+        }
+      ]
+    },
+    {
       "original_label": "Prior prostatectomy",
       "standardized_name": "Prior Prostatectomy",
       "category": "Prior Treatment",
       "time_point": "Baseline",
-      "is_sub_characteristic": false,
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior therapy",
       "group_data": [
         {
           "group_name": "Zoledronic acid",
@@ -323,7 +348,8 @@
       "standardized_name": "Prior Radiation Therapy",
       "category": "Prior Treatment",
       "time_point": "Baseline",
-      "is_sub_characteristic": false,
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior therapy",
       "group_data": [
         {
           "group_name": "Zoledronic acid",
@@ -353,7 +379,8 @@
       "standardized_name": "Prior Neoadjuvant Androgen Deprivation Therapy",
       "category": "Prior Treatment",
       "time_point": "Baseline",
-      "is_sub_characteristic": false,
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior therapy",
       "group_data": [
         {
           "group_name": "Zoledronic acid",
@@ -383,7 +410,8 @@
       "standardized_name": "Concurrent Enrollment on CALGB 9594",
       "category": "Concurrent Treatment",
       "time_point": "Baseline",
-      "is_sub_characteristic": false,
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Prior therapy",
       "group_data": [
         {
           "group_name": "Zoledronic acid",
