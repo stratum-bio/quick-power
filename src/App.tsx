@@ -146,7 +146,10 @@ function App() {
               path="/prognostic-factors"
               element={<PrognosticFactorsGrid />}
             />
-            <Route path="/characteristics/:pubmedId" element={<DemographicsPage />} />
+            <Route
+              path="/characteristics/:pubmedId"
+              element={<DemographicsPage />}
+            />
             {/* Fallback route for any unmatched paths, redirects to LandingPage */}
             <Route path="*" element={<LandingPage />} />
           </Routes>

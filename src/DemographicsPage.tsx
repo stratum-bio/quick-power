@@ -1,7 +1,6 @@
-
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import DemographicsTable from './DemographicsTable';
+import React from "react";
+import { useParams } from "react-router-dom";
+import DemographicsTable from "./DemographicsTable";
 
 const DemographicsPage: React.FC = () => {
   const { pubmedId } = useParams<{ pubmedId: string }>();

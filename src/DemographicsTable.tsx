@@ -31,7 +31,10 @@ function renderGroupData(data: GroupData) {
   }
 }
 
-const DemographicsTable: React.FC<DemographicsTableProps> = ({ pubmed, showTitle = false}) => {
+const DemographicsTable: React.FC<DemographicsTableProps> = ({
+  pubmed,
+  showTitle = false,
+}) => {
   const [studyTable, setStudyTable] = useState<StudyTable | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [, setError] = useState<string | null>(null);
@@ -74,7 +77,7 @@ const DemographicsTable: React.FC<DemographicsTableProps> = ({ pubmed, showTitle
   return (
     <div className="mt-8 max-w-3xl">
       <h2 className="text-xl font-semibold mb-4">
-        {showTitle ?  studyTable.study_title : "Patient Characteristics" }
+        {showTitle ? studyTable.study_title : "Patient Characteristics"}
       </h2>
 
       <p className="italic mb-4 ">
@@ -90,8 +93,12 @@ const DemographicsTable: React.FC<DemographicsTableProps> = ({ pubmed, showTitle
         }}
       >
         {/* Header Row */}
-        <div className="bg-table-hl grid gap-x-4 items-center col-span-full rounded-t-md"
-             style={{ gridTemplateColumns: `repeat(${groupCount + 1}, minmax(0, 1fr))` }}>
+        <div
+          className="bg-table-hl grid gap-x-4 items-center col-span-full rounded-t-md"
+          style={{
+            gridTemplateColumns: `repeat(${groupCount + 1}, minmax(0, 1fr))`,
+          }}
+        >
           <div className="font-bold p-4">Characteristic</div>
           {studyTable.groups.map((group, index) => (
             <div key={index} className="font-bold text-center">
