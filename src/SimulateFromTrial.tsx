@@ -155,13 +155,7 @@ const SimulateFromTrial: React.FC = () => {
         treatHazardRatio={treatHazardRatio}
       />
     );
-  }, [
-    simulationParameters,
-    lambdaByArm,
-    trialData,
-    forceSimulation,
-    allocationChange,
-  ]);
+  }, [lambdaByArm, trialData, forceSimulation, allocationChange]);
 
   if (loading) {
     return <Loading message="Loading trial details..." />;
@@ -181,14 +175,16 @@ const SimulateFromTrial: React.FC = () => {
         Simulate from trial {trialData.meta.identifier}
       </h2>
       {trialData.meta.title && (
-        <div className="max-w-3xl">
-          {trialData.meta.title}
-          <br />
-          <br />
-          <span className="italic"> PubMed: {trialData.meta.pubmed} </span>
-        </div>
+        <div className="max-w-3xl italic">{trialData.meta.title}</div>
       )}
-      <div className="mt-8 max-w-3xl">{memoizedKaplanMeierPlot}</div>
+
+      <div className="max-w-3xl mt-8">
+        Select the parameters for the trial simulation. If relevant, update the
+        prognostic factor distribution with the original and target
+        distributions for the simulation. The adjusted Kaplan-Meier estimator
+        will be shown in the plot below the parameters as they are updated in
+        the input.
+      </div>
 
       <div className="mt-8 p-4 ring ring-gemini-blue shadow-xl shadow-gemini-blue/30 rounded-md shadow-md bg-white max-w-3xl">
         <h2
@@ -344,7 +340,7 @@ const SimulateFromTrial: React.FC = () => {
         <div className="mt-4 flex justify-end">
           <button
             type="submit"
-            className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm font-semibold rounded-md text-white bg-gemini-blue hover:bg-gemini-blue-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gemini-blue"
+            className="main-button inline-flex justify-center py-2 px-4"
             onClick={() => {
               setSimulationParameters({
                 controlArm,
@@ -358,8 +354,33 @@ const SimulateFromTrial: React.FC = () => {
           >
             Start Simulation
           </button>
+          <button
+            type="submit"
+            className="secondary-button inline-flex justify-center py-2 ml-2"
+            onClick={() => {
+              setSimulationParameters({
+                controlArm,
+                treatmentArm,
+                accrualPeriod,
+                followUpPeriod,
+                largestSampleSize,
+              });
+            }}
+          >
+            Update Inputs
+          </button>
         </div>
       </div>
+      <div className="mt-8 max-w-3xl">
+        <h2 className="text-xl font-semibold mb-4">Input trial data</h2>
+        <p>
+          View the Kaplan-Meier estimators used for the trial simulation.
+          Changing prognostic factor distributions and the hazard rate
+          multipliers will display here as the changes are applied.
+        </p>
+        {memoizedKaplanMeierPlot}
+      </div>
+
       {memoizedBootstrapSimulationPlot && (
         <div className="mt-8 max-w-3xl">
           <h2 className="text-xl font-semibold mb-4">Results</h2>

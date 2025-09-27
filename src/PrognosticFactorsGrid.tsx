@@ -407,10 +407,16 @@ const PrognosticFactorsGrid: React.FC = () => {
         </div>
       )}
       <div className="flex space-x-2 mt-4">
-        <button className="px-4 py-2 mb-4 ml-4 md:ml-0" onClick={handleSave}>
+        <button
+          className="px-4 py-2 mb-4 ml-4 md:ml-0 main-button"
+          onClick={handleSave}
+        >
           Save
         </button>
-        <button className="px-4 py-2 mb-4 ml-2 md:ml-0" onClick={handleReset}>
+        <button
+          className="px-4 py-2 mb-4 ml-2 md:ml-0 secondary-button"
+          onClick={handleReset}
+        >
           Reset to Defaults
         </button>
       </div>

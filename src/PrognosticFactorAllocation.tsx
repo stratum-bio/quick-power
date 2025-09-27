@@ -375,16 +375,10 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
       )}
 
       <div className="mt-4 flex justify-end space-x-2">
-        <button
-          className="px-4 py-2 bg-gemini-blue text-white rounded hover:bg-gemini-blue-hover"
-          onClick={handleUpdate}
-        >
-          Update
+        <button className="px-4 py-2 main-button" onClick={handleUpdate}>
+          Update Inputs
         </button>
-        <button
-          className="px-4 py-2 bg-gray-300 text-gray-800 rounded hover:bg-gray-400"
-          onClick={handleReset}
-        >
+        <button className="px-4 py-2 secondary-button" onClick={handleReset}>
           Reset
         </button>
       </div>
