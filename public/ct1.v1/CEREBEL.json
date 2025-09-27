@@ -2,6 +2,7 @@
   "meta": {
     "identifier": "CEREBEL",
     "pubmed": "25605838",
+    "registration": "NCT00820222",
     "publication_date": "2015-01-20 00:00:00",
     "arms": 2,
     "disease": "breast_cancer",

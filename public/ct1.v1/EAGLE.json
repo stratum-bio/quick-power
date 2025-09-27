@@ -2,6 +2,7 @@
   "meta": {
     "identifier": "EAGLE",
     "pubmed": "25908603",
+    "registration": "UMIN000002557",
     "publication_date": "2015-04-23 00:00:00",
     "arms": 2,
     "disease": "colorectal_cancer",

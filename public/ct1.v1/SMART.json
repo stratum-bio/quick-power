@@ -2,6 +2,7 @@
   "meta": {
     "identifier": "SMART",
     "pubmed": "27345639",
+    "registration": "ISRCTN72767336",
     "publication_date": "2016-06-23 00:00:00",
     "arms": 2,
     "disease": "lung_cancer",

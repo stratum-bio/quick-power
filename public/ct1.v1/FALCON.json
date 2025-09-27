@@ -2,6 +2,7 @@
   "meta": {
     "identifier": "FALCON",
     "pubmed": "27908454",
+    "registration": "NCT01602380",
     "publication_date": "2016-11-28 00:00:00",
     "arms": 2,
     "disease": "breast_cancer",

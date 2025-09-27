@@ -2,6 +2,7 @@
   "meta": {
     "identifier": "RADIANT",
     "pubmed": "26324372",
+    "registration": "NCT00373425",
     "publication_date": "2015-08-31 00:00:00",
     "arms": 2,
     "disease": "lung_cancer",

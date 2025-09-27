@@ -2,6 +2,7 @@
   "meta": {
     "identifier": "A001",
     "pubmed": "25794890",
+    "registration": "NCT00201851",
     "publication_date": "2015-03-20 00:00:00",
     "arms": 2,
     "disease": "breast_cancer",

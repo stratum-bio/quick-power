@@ -2,6 +2,7 @@
   "meta": {
     "identifier": "IMPRESS",
     "pubmed": "26159065",
+    "registration": "NCT01544179",
     "publication_date": "2015-07-07 00:00:00",
     "arms": 2,
     "disease": "lung_cancer",

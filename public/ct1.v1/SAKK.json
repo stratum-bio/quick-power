@@ -2,6 +2,7 @@
   "meta": {
     "identifier": "SAKK",
     "pubmed": "26275735",
+    "registration": "NCT00030771",
     "publication_date": "2015-08-12 00:00:00",
     "arms": 2,
     "disease": "lung_cancer",

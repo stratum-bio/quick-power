@@ -2,6 +2,7 @@
   "meta": {
     "identifier": "MAGRIT",
     "pubmed": "27132212",
+    "registration": "NCT00480025",
     "publication_date": "2016-04-27 00:00:00",
     "arms": 2,
     "disease": "lung_cancer",

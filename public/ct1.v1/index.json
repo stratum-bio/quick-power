@@ -3,21 +3,22 @@
     {
       "identifier": "20050181",
       "pubmed": "24356622",
+      "registration": "NR",
       "publication_date": "2014-01-01 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 2166,
+      "subjects": 597,
       "weibull_by_arm": {
         "folfiri": {
-          "scale": 11.816590001042517,
-          "shape": 1.1336795405854965
+          "scale": 7.776647599009686,
+          "shape": 1.1285661111161989
         },
         "panitumumab_folfiri": {
-          "scale": 12.871818120698908,
-          "shape": 1.209263129207877
+          "scale": 9.43026502504777,
+          "shape": 1.266902407896144
         }
       },
-      "weibull_max_diff": 0.8996558462545444,
+      "weibull_max_diff": 0.7959171308563324,
       "time_scale": "Months",
       "title": null,
       "condition_list": null
@@ -25,6 +26,7 @@
     {
       "identifier": "A001",
       "pubmed": "25794890",
+      "registration": "NCT00201851",
       "publication_date": "2015-03-20 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
@@ -49,21 +51,22 @@
     {
       "identifier": "A003",
       "pubmed": "25515658",
+      "registration": "NR",
       "publication_date": "2014-12-15 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 312,
+      "subjects": 156,
       "weibull_by_arm": {
         "control": {
-          "scale": 36.83662021277722,
-          "shape": 1.0229257341558111
+          "scale": 31.836447352316892,
+          "shape": 0.9682259526551558
         },
         "pci": {
-          "scale": 45.87978467727788,
-          "shape": 1.1612154024449497
+          "scale": 44.2260260584848,
+          "shape": 1.1599661661775416
         }
       },
-      "weibull_max_diff": 0.7693555335266804,
+      "weibull_max_diff": 0.6761950397264841,
       "time_scale": "Months",
       "title": null,
       "condition_list": null
@@ -71,21 +74,22 @@
     {
       "identifier": "A004",
       "pubmed": "24401928",
+      "registration": "NCT00294996",
       "publication_date": "2014-01-08 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 726,
+      "subjects": 363,
       "weibull_by_arm": {
         "mpt": {
-          "scale": 35.15217898891336,
-          "shape": 1.1178200713665236
+          "scale": 21.76816126901653,
+          "shape": 1.3171716027986091
         },
         "pt": {
-          "scale": 29.131616101421912,
-          "shape": 1.236468288104832
+          "scale": 19.290787784382715,
+          "shape": 1.3891966638934463
         }
       },
-      "weibull_max_diff": 0.8552171326560942,
+      "weibull_max_diff": 0.8990702992102588,
       "time_scale": "Months",
       "title": "Trial of Myocet in Metastatic Breast Cancer",
       "condition_list": [
@@ -95,21 +99,22 @@
     {
       "identifier": "ACT1",
       "pubmed": "25385727",
+      "registration": "NCT00547651",
       "publication_date": "2014-11-10 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1274,
+      "subjects": 637,
       "weibull_by_arm": {
         "amrubicin": {
-          "scale": 7.940933722528505,
-          "shape": 1.1917893930017627
+          "scale": 10.709136490382825,
+          "shape": 1.2517906674639223
         },
         "topotecan": {
-          "scale": 7.21517734950653,
-          "shape": 1.2380463675941704
+          "scale": 9.66215290584306,
+          "shape": 1.37134740402304
         }
       },
-      "weibull_max_diff": 0.919105994114723,
+      "weibull_max_diff": 0.9255615151609111,
       "time_scale": "Months",
       "title": "AMR PH GL 2007 CL001 Phase 3 Trial in Patients With Small Cell Lung Cancer After Failure of First-Line Chemotherapy",
       "condition_list": [
@@ -119,29 +124,22 @@
     {
       "identifier": "ACT2",
       "pubmed": "26483047",
+      "registration": "NCT01229813",
       "publication_date": "2015-10-19 00:00:00",
-      "arms": 4,
+      "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 276,
+      "subjects": 67,
       "weibull_by_arm": {
         "mut_b": {
-          "scale": 20.030448516153264,
-          "shape": 0.939553845634075
+          "scale": 5.574648008897047,
+          "shape": 1.701525321214657
         },
         "mut_c": {
-          "scale": 16.57157286512814,
-          "shape": 1.0747471533432331
-        },
-        "wt_b": {
-          "scale": 19.94243792038846,
-          "shape": 0.9188916514917906
-        },
-        "wt_be": {
-          "scale": 15.346021556517229,
-          "shape": 1.1174910410392223
+          "scale": 5.0684004864697165,
+          "shape": 1.7762242975432931
         }
       },
-      "weibull_max_diff": 0.8152314913439899,
+      "weibull_max_diff": 0.9174610450685504,
       "time_scale": "Months",
       "title": "Avastin and Chemotherapy Followed by a KRAS Stratified Randomization to Maintenance Treatment for First Line Treatment of Metastatic Colorectal Cancer.",
       "condition_list": [
@@ -151,6 +149,7 @@
     {
       "identifier": "ACTSCC",
       "pubmed": "24942277",
+      "registration": "NCT00660894",
       "publication_date": "2014-06-18 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
@@ -175,25 +174,26 @@
     {
       "identifier": "AIO0207",
       "pubmed": "26361971",
+      "registration": "NCT00973609",
       "publication_date": "2015-09-09 00:00:00",
       "arms": 3,
       "disease": "colorectal_cancer",
-      "subjects": 924,
+      "subjects": 470,
       "weibull_by_arm": {
         "5fu_bev": {
-          "scale": 17.966662734904062,
-          "shape": 1.1392617646702654
+          "scale": 27.034048781449098,
+          "shape": 1.5612133262838768
         },
         "bev": {
-          "scale": 16.781704933066916,
-          "shape": 1.033384049072635
+          "scale": 27.969930778055094,
+          "shape": 1.7386418657055023
         },
         "no_tx": {
-          "scale": 14.887675369269534,
-          "shape": 0.9424066867643434
+          "scale": 28.622390416294785,
+          "shape": 1.5973543457558492
         }
       },
-      "weibull_max_diff": 0.7747731576560741,
+      "weibull_max_diff": 0.9395034710100996,
       "time_scale": "Months",
       "title": "Optimal Maintenance Therapy With Bevacizumab After Induction in Metastatic Colorectal Cancer (CRC)",
       "condition_list": [
@@ -203,6 +203,7 @@
     {
       "identifier": "ALTTO",
       "pubmed": "26598744",
+      "registration": "NCT00490139",
       "publication_date": "2015-11-23 00:00:00",
       "arms": 4,
       "disease": "breast_cancer",
@@ -235,21 +236,22 @@
     {
       "identifier": "AMAROS",
       "pubmed": "25439688",
+      "registration": "NCT00014612",
       "publication_date": "2014-10-16 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 2850,
+      "subjects": 1425,
       "weibull_by_arm": {
         "dissection": {
-          "scale": 312.74454098122743,
-          "shape": 1.3216064398885357
+          "scale": 272.8503225889016,
+          "shape": 1.2592031866116276
         },
         "radiotherapy": {
-          "scale": 244.86246122073698,
-          "shape": 1.4463121630008902
+          "scale": 232.38006522043548,
+          "shape": 1.3005579507458338
         }
       },
-      "weibull_max_diff": 0.8018944669608372,
+      "weibull_max_diff": 0.8595950628519236,
       "time_scale": "Months",
       "title": "Comparison of Complete Axillary Lymph Node Dissection With Axillary Radiation Therapy in Treating Women With Invasive Breast Cancer",
       "condition_list": [
@@ -259,21 +261,22 @@
     {
       "identifier": "ASPECCT",
       "pubmed": "24739896",
+      "registration": "NCT01001377",
       "publication_date": "2014-04-14 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 1998,
+      "subjects": 999,
       "weibull_by_arm": {
         "cetuximab": {
-          "scale": 9.37929826249343,
-          "shape": 1.1496775635842702
+          "scale": 5.502211103814547,
+          "shape": 1.3602008720048124
         },
         "panitumumab": {
-          "scale": 9.492297665705376,
-          "shape": 1.1282859867622286
+          "scale": 5.4468401674637645,
+          "shape": 1.3097107110657884
         }
       },
-      "weibull_max_diff": 0.9940859797902283,
+      "weibull_max_diff": 0.9797067047830609,
       "time_scale": "Months",
       "title": "ASPECCT: A Study of Panitumumab Efficacy and Safety Compared to Cetuximab in Patients With KRAS Wild-Type Metastatic Colorectal Cancer",
       "condition_list": [
@@ -283,21 +286,22 @@
     {
       "identifier": "ATTENTION",
       "pubmed": "26153496",
+      "registration": "NCT01377376",
       "publication_date": "2015-07-07 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 614,
+      "subjects": 307,
       "weibull_by_arm": {
         "placebo": {
-          "scale": 9.32520182305826,
-          "shape": 0.8954662440689388
+          "scale": 15.525300346192921,
+          "shape": 1.2988138319371667
         },
         "tivantinib": {
-          "scale": 12.082641770927134,
-          "shape": 0.9256926338349798
+          "scale": 17.327162654407616,
+          "shape": 1.3003261870799425
         }
       },
-      "weibull_max_diff": 0.7615389493515234,
+      "weibull_max_diff": 0.8957153589560667,
       "time_scale": "Months",
       "title": "A Phase 3, Randomized, Double-Blinded, Placebo-Controlled Study of ARQ 197 Plus Erlotinib Versus Placebo Plus Erlotinib",
       "condition_list": [
@@ -307,6 +311,7 @@
     {
       "identifier": "AURA3",
       "pubmed": "27959700",
+      "registration": "NCT02151981 ",
       "publication_date": "2016-12-06 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
@@ -329,21 +334,22 @@
     {
       "identifier": "AZURE",
       "pubmed": "25035292",
+      "registration": "NCT00072020",
       "publication_date": "2014-07-15 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 6718,
+      "subjects": 3359,
       "weibull_by_arm": {
         "control": {
-          "scale": 256.5840161434994,
-          "shape": 1.0754293855986232
+          "scale": 235.2572936858909,
+          "shape": 0.9990223306742869
         },
         "zoledronic_acid": {
-          "scale": 252.83828118836027,
-          "shape": 1.151102902087934
+          "scale": 235.61091635018633,
+          "shape": 1.0584118187787335
         }
       },
-      "weibull_max_diff": 0.9923310393697637,
+      "weibull_max_diff": 0.9781542886513478,
       "time_scale": "Months",
       "title": "Chemotherapy and/or Hormone Therapy With or Without Zoledronate in Treating Women With Stage II or Stage III Breast Cancer",
       "condition_list": [
@@ -354,21 +360,22 @@
     {
       "identifier": "BEACON",
       "pubmed": "26482278",
+      "registration": "NCT01492101",
       "publication_date": "2015-10-16 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 1704,
+      "subjects": 852,
       "weibull_by_arm": {
         "control": {
-          "scale": 9.480445322444377,
-          "shape": 1.0299503113591575
+          "scale": 14.717470528524164,
+          "shape": 1.2283456927386625
         },
         "etirinotecan_pegol": {
-          "scale": 10.36051750037134,
-          "shape": 1.0498373471090634
+          "scale": 16.339080275100002,
+          "shape": 1.4185378822025332
         }
       },
-      "weibull_max_diff": 0.9089075942898485,
+      "weibull_max_diff": 0.8654288557325618,
       "time_scale": "Months",
       "title": "The BEACON Study (Breast Cancer Outcomes With NKTR-102)",
       "condition_list": [
@@ -379,21 +386,22 @@
     {
       "identifier": "BEBYP",
       "pubmed": "25600568",
+      "registration": "NCT00720512",
       "publication_date": "2015-01-18 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 368,
+      "subjects": 184,
       "weibull_by_arm": {
         "bev_ct": {
-          "scale": 13.37245692003412,
-          "shape": 1.111797802913326
+          "scale": 7.257403328502776,
+          "shape": 1.4485582988101162
         },
         "ct": {
-          "scale": 11.758155381063588,
-          "shape": 1.213225975285288
+          "scale": 6.047594768471415,
+          "shape": 1.4436054062693404
         }
       },
-      "weibull_max_diff": 0.9038516923691202,
+      "weibull_max_diff": 0.8325770153542781,
       "time_scale": "Months",
       "title": "Second-Line Combination Chemotherapy With or Without Bevacizumab in Treating Patients With Metastatic Colorectal Cancer Who Have Received First-Line Chemotherapy and Bevacizumab",
       "condition_list": [
@@ -403,21 +411,22 @@
     {
       "identifier": "BEYOND",
       "pubmed": "26014294",
+      "registration": "NCT01364012",
       "publication_date": "2015-05-26 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 552,
+      "subjects": 276,
       "weibull_by_arm": {
         "bev_cp": {
-          "scale": 23.031613950648946,
-          "shape": 1.367385730786773
+          "scale": 31.292249414574883,
+          "shape": 1.5888164898819073
         },
         "placebo_cp": {
-          "scale": 16.028125026594573,
-          "shape": 1.2814721405685434
+          "scale": 23.544593024134937,
+          "shape": 1.7059294390513422
         }
       },
-      "weibull_max_diff": 0.6835244052676356,
+      "weibull_max_diff": 0.764420125437896,
       "time_scale": "Months",
       "title": "A Study of Bevacizumab Versus Placebo in Combination With Carboplatin/Paclitaxel in Participants With Advanced or Recurrent Non-Squamous Non-Small Cell Lung Cancer Who Have Not Received Previous Chemotherapy",
       "condition_list": [
@@ -427,6 +436,7 @@
     {
       "identifier": "BOLERO1",
       "pubmed": "26092818",
+      "registration": "NCT00876395",
       "publication_date": "2015-06-17 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
@@ -451,6 +461,7 @@
     {
       "identifier": "BOLERO2",
       "pubmed": "25231953",
+      "registration": "NCT00863655",
       "publication_date": "2014-09-17 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
@@ -475,21 +486,22 @@
     {
       "identifier": "BREC",
       "pubmed": "25164908",
+      "registration": "NCT00617656",
       "publication_date": "2014-08-27 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 401,
+      "subjects": 124,
       "weibull_by_arm": {
         "control": {
-          "scale": 7.849383367243453,
-          "shape": 1.0198652796090517
+          "scale": 7.0329635921487235,
+          "shape": 1.2319520547359775
         },
         "experimental": {
-          "scale": 6.628169526078104,
-          "shape": 1.0677022575760178
+          "scale": 7.2491701070782275,
+          "shape": 1.1151955454306737
         }
       },
-      "weibull_max_diff": 0.8581254028022476,
+      "weibull_max_diff": 0.9991315214656907,
       "time_scale": "Unknown",
       "title": "Study to Evaluate Treatment Customized According to RAP80 and BRCA1 in Patients With Advanced Lung Carcinoma",
       "condition_list": [
@@ -500,21 +512,22 @@
     {
       "identifier": "CA184043",
       "pubmed": "24831977",
+      "registration": "NCT00861614",
       "publication_date": "2014-05-13 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 1598,
+      "subjects": 799,
       "weibull_by_arm": {
         "ipilimumab": {
-          "scale": 10.9847080281065,
-          "shape": 1.0066442990788094
+          "scale": 16.78510676175935,
+          "shape": 1.0711093021697695
         },
         "placebo": {
-          "scale": 9.166906070657427,
-          "shape": 1.1513566752192401
+          "scale": 14.30917127818776,
+          "shape": 1.3915602005730698
         }
       },
-      "weibull_max_diff": 0.87359196850924,
+      "weibull_max_diff": 0.9223842844941835,
       "time_scale": "Months",
       "title": "Study of Immunotherapy to Treat Advanced Prostate Cancer",
       "condition_list": [
@@ -524,21 +537,22 @@
     {
       "identifier": "CA184095",
       "pubmed": "28034081",
+      "registration": "NCT01057810",
       "publication_date": "2016-10-10 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 1204,
+      "subjects": 602,
       "weibull_by_arm": {
         "ipilimumab": {
-          "scale": 21.98384373957261,
-          "shape": 0.9275249230439752
+          "scale": 10.558305971936788,
+          "shape": 1.0499210831956127
         },
         "placebo": {
-          "scale": 20.890892445706896,
-          "shape": 0.8730248726446571
+          "scale": 6.999802766247194,
+          "shape": 1.0530702685600735
         }
       },
-      "weibull_max_diff": 0.9271290459193409,
+      "weibull_max_diff": 0.663658918418058,
       "time_scale": "Months",
       "title": "Phase 3 Study of Immunotherapy to Treat Advanced Prostate Cancer",
       "condition_list": [
@@ -548,21 +562,22 @@
     {
       "identifier": "CAIRO3",
       "pubmed": "25862517",
+      "registration": "NCT00442637",
       "publication_date": "2015-04-08 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 1671,
+      "subjects": 557,
       "weibull_by_arm": {
         "maintenance": {
-          "scale": 18.636621192935216,
-          "shape": 1.1824810489253175
+          "scale": 12.828816113899292,
+          "shape": 1.0899122632155613
         },
         "observation": {
-          "scale": 13.451602752051196,
-          "shape": 1.0587466152633185
+          "scale": 6.071903026592062,
+          "shape": 1.0920172852747656
         }
       },
-      "weibull_max_diff": 0.6961055115748959,
+      "weibull_max_diff": 0.4736088037982093,
       "time_scale": "Months",
       "title": "Maintenance Treatment Versus Observation After Induction in Advanced Colorectal Carcinoma",
       "condition_list": [
@@ -572,25 +587,22 @@
     {
       "identifier": "CALGB40502",
       "pubmed": "26056183",
+      "registration": "NCT00785291",
       "publication_date": "2015-06-08 00:00:00",
-      "arms": 3,
+      "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 2058,
+      "subjects": 487,
       "weibull_by_arm": {
         "ixabepilone": {
-          "scale": 19.567795344174453,
-          "shape": 1.155521115596846
-        },
-        "nab_paclitaxel": {
-          "scale": 22.000751204737146,
-          "shape": 1.2278501445774763
+          "scale": 11.453262768158037,
+          "shape": 1.1846461706917943
         },
         "paclitaxel": {
-          "scale": 25.1187057003319,
-          "shape": 1.2643605063633363
+          "scale": 16.873345343689127,
+          "shape": 1.3008339858946707
         }
       },
-      "weibull_max_diff": 0.7580304559429134,
+      "weibull_max_diff": 0.6602780462944249,
       "time_scale": "Months",
       "title": "Paclitaxel, Nab-paclitaxel, or Ixabepilone With or Without Bevacizumab in Treating Patients With Stage IIIC or Stage IV Breast Cancer",
       "condition_list": [
@@ -608,21 +620,22 @@
     {
       "identifier": "CALGB40503",
       "pubmed": "27138575",
+      "registration": "NCT00601900",
       "publication_date": "2016-08-01 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 686,
+      "subjects": 343,
       "weibull_by_arm": {
         "l": {
-          "scale": 38.3878200956845,
-          "shape": 1.095893460068365
+          "scale": 53.739310680664246,
+          "shape": 1.5854018073519571
         },
         "l_b": {
-          "scale": 44.353244971822754,
-          "shape": 1.2536972721899031
+          "scale": 58.66738600905614,
+          "shape": 1.6292560479437577
         }
       },
-      "weibull_max_diff": 0.8298236029911665,
+      "weibull_max_diff": 0.9103175392891053,
       "time_scale": "Months",
       "title": "Tamoxifen Citrate or Letrozole With or Without Bevacizumab in Treating Women With Stage IIIB or Stage IV Breast Cancer",
       "condition_list": [
@@ -635,21 +648,22 @@
     {
       "identifier": "CALGB90202",
       "pubmed": "24590644",
+      "registration": "NCT00079001",
       "publication_date": "2014-03-03 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 1290,
+      "subjects": 645,
       "weibull_by_arm": {
         "placebo": {
-          "scale": 33.2847839887828,
-          "shape": 0.9566869096027001
+          "scale": 49.272457490664934,
+          "shape": 1.475336995963079
         },
         "za": {
-          "scale": 38.24328163700584,
-          "shape": 0.908895440101159
+          "scale": 56.07999088707003,
+          "shape": 1.3276385891996736
         }
       },
-      "weibull_max_diff": 0.8880536929893998,
+      "weibull_max_diff": 0.903231284329094,
       "time_scale": "Months",
       "title": "Zoledronate in Preventing Skeletal (Bone)-Related Events in Men Who Are Receiving Androgen Deprivation Therapy For Prostate Cancer and Bone Metastases",
       "condition_list": [
@@ -660,21 +674,22 @@
     {
       "identifier": "CBCSG006",
       "pubmed": "25795409",
+      "registration": "NCT01287624",
       "publication_date": "2015-03-18 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 472,
+      "subjects": 236,
       "weibull_by_arm": {
         "cis_gemcitabine": {
-          "scale": 17.176765161774927,
-          "shape": 1.327622673569633
+          "scale": 10.159254000452579,
+          "shape": 1.4955725751749833
         },
         "paclitaxel_gemcitabine": {
-          "scale": 15.053140697720325,
-          "shape": 1.2894014598530883
+          "scale": 8.027172732363692,
+          "shape": 1.5897568001928133
         }
       },
-      "weibull_max_diff": 0.8692241030589907,
+      "weibull_max_diff": 0.8016895146565828,
       "time_scale": "Months",
       "title": "Gemcitabine Plus Cisplatin Versus Gemcitabine Plus Paclitaxel in Triple Negative Breast Cancer (TNBC)",
       "condition_list": [
@@ -684,6 +699,7 @@
     {
       "identifier": "CEREBEL",
       "pubmed": "25605838",
+      "registration": "NCT00820222",
       "publication_date": "2015-01-20 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
@@ -708,21 +724,22 @@
     {
       "identifier": "Checkmate017",
       "pubmed": "26028407",
+      "registration": "NCT01642004",
       "publication_date": "2015-05-31 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 544,
+      "subjects": 272,
       "weibull_by_arm": {
         "docetaxel": {
-          "scale": 6.564370620446858,
-          "shape": 1.1052241285232394
+          "scale": 9.112779152943894,
+          "shape": 1.1662903134752185
         },
         "nivolumab": {
-          "scale": 10.944530544084868,
-          "shape": 0.9283496825520984
+          "scale": 15.244740284737507,
+          "shape": 1.0517517175984938
         }
       },
-      "weibull_max_diff": 0.6389038278699026,
+      "weibull_max_diff": 0.6185770226099081,
       "time_scale": "Months",
       "title": "Study of BMS-936558 (Nivolumab) Compared to Docetaxel in Previously Treated Advanced or Metastatic Squamous Cell Non-small Cell Lung Cancer (NSCLC) (CheckMate 017)",
       "condition_list": [
@@ -732,21 +749,22 @@
     {
       "identifier": "Checkmate057",
       "pubmed": "26412456",
+      "registration": "NCT01673867",
       "publication_date": "2015-09-27 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1164,
+      "subjects": 582,
       "weibull_by_arm": {
         "docetaxel": {
-          "scale": 9.239964802861241,
-          "shape": 1.1675392128866384
+          "scale": 5.730995957312953,
+          "shape": 1.3391786533396461
         },
         "nivolumab": {
-          "scale": 11.362917216164657,
-          "shape": 0.8594353849139753
+          "scale": 6.435667508019261,
+          "shape": 0.8798282457513712
         }
       },
-      "weibull_max_diff": 0.9100293226587033,
+      "weibull_max_diff": 0.9734370061393168,
       "time_scale": "Months",
       "title": "Study of BMS-936558 (Nivolumab) Compared to Docetaxel in Previously Treated Metastatic Non-squamous NSCLC",
       "condition_list": [
@@ -756,16 +774,20 @@
     {
       "identifier": "CHHiP",
       "pubmed": "27339115",
+      "registration": "ISRCTN97182923",
       "publication_date": "2016-06-20 00:00:00",
       "arms": 3,
       "disease": "prostate_cancer",
-      "subjects": 6432,
+      "subjects": 3216,
       "weibull_by_arm": {
-        "57gy": null,
+        "57gy": {
+          "scale": 190.27205537244572,
+          "shape": 1.6705715107544987
+        },
         "60gy": null,
         "74gy": {
-          "scale": 270.4558808158743,
-          "shape": 1.5520253065168723
+          "scale": 251.43855805787902,
+          "shape": 1.4765482043346796
         }
       },
       "weibull_max_diff": null,
@@ -776,21 +798,22 @@
     {
       "identifier": "Chronicle",
       "pubmed": "24718885",
+      "registration": "NCT00427713",
       "publication_date": "2014-04-08 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 226,
+      "subjects": 113,
       "weibull_by_arm": {
         "capecitabine_oxaliplatin": {
-          "scale": 236.62918691746066,
-          "shape": 0.9283330049079543
+          "scale": 170.6727869516311,
+          "shape": 1.3825223323242297
         },
         "follow_up_only": {
-          "scale": 295.3138474853679,
-          "shape": 0.7875916103290566
+          "scale": 305.16528094915503,
+          "shape": 1.0680570804849523
         }
       },
-      "weibull_max_diff": 0.8598538255857687,
+      "weibull_max_diff": 0.6046827689536184,
       "time_scale": "Months",
       "title": "Capecitabine and Oxaliplatin or Standard Follow-Up Care in Treating Patients Who Have Undergone Surgery for Locally Advanced Rectal Cancer",
       "condition_list": [
@@ -800,21 +823,22 @@
     {
       "identifier": "CLEOPATRA",
       "pubmed": "25693012",
+      "registration": "NCT00567190",
       "publication_date": "2015-02-19 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 1616,
+      "subjects": 808,
       "weibull_by_arm": {
         "control": {
-          "scale": 38.635393499379006,
-          "shape": 1.0156364737709664
+          "scale": 21.90037495630407,
+          "shape": 1.0371771226392956
         },
         "pertuzumab": {
-          "scale": 53.810106914328195,
-          "shape": 1.049940492492214
+          "scale": 32.530292603125,
+          "shape": 1.0656198090782358
         }
       },
-      "weibull_max_diff": 0.7095793144706508,
+      "weibull_max_diff": 0.6669101186305192,
       "time_scale": "Months",
       "title": "A Study to Evaluate Pertuzumab + Trastuzumab + Docetaxel vs. Placebo + Trastuzumab + Docetaxel in Previously Untreated HER2-Positive Metastatic Breast Cancer",
       "condition_list": [
@@ -824,21 +848,22 @@
     {
       "identifier": "COMET1",
       "pubmed": "27400947",
+      "registration": "NCT01605227",
       "publication_date": "2016-07-11 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 2056,
+      "subjects": 1028,
       "weibull_by_arm": {
         "cabozantinib": {
-          "scale": 11.41093067078136,
-          "shape": 1.4298572657486288
+          "scale": 7.786872705024262,
+          "shape": 1.652848951503562
         },
         "prednisone": {
-          "scale": 9.556887766737505,
-          "shape": 1.2773521570109894
+          "scale": 4.9324148084156905,
+          "shape": 1.7231688544499177
         }
       },
-      "weibull_max_diff": 0.8122776633038625,
+      "weibull_max_diff": 0.6391848937521186,
       "time_scale": "Months",
       "title": "Study of Cabozantinib (XL184) Versus Prednisone in Men With Metastatic Castration-resistant Prostate Cancer Previously Treated With Docetaxel and Abiraterone or MDV3100",
       "condition_list": [
@@ -851,6 +876,7 @@
     {
       "identifier": "CONCEPT",
       "pubmed": "24608198",
+      "registration": "NR",
       "publication_date": "2014-03-07 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
@@ -873,21 +899,22 @@
     {
       "identifier": "CONCUR",
       "pubmed": "25981818",
+      "registration": "NCT01584830",
       "publication_date": "2015-05-14 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 408,
+      "subjects": 204,
       "weibull_by_arm": {
         "placebo": {
-          "scale": 4.668679235335768,
-          "shape": 1.167952885207099
+          "scale": 7.724940755547679,
+          "shape": 1.6464811037062892
         },
         "regorafenib": {
-          "scale": 8.187453085010173,
-          "shape": 1.2063573819224984
+          "scale": 11.605371988096163,
+          "shape": 1.5544195142460562
         }
       },
-      "weibull_max_diff": 0.5645553982940328,
+      "weibull_max_diff": 0.6744686561626283,
       "time_scale": "Months",
       "title": "Asian Subjects With Metastatic Colorectal Cancer Treated With Regorafenib or Placebo After Failure of Standard Therapy",
       "condition_list": [
@@ -897,6 +924,7 @@
     {
       "identifier": "COUAA202",
       "pubmed": "25601341",
+      "registration": "NCT00887198",
       "publication_date": "2015-01-16 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
@@ -921,25 +949,26 @@
     {
       "identifier": "Dalotuzumab",
       "pubmed": "26405092",
+      "registration": "NCT00614393",
       "publication_date": "2015-09-23 00:00:00",
       "arms": 3,
       "disease": "colorectal_cancer",
-      "subjects": 688,
+      "subjects": 344,
       "weibull_by_arm": {
         "arma": {
-          "scale": 10.327652341066552,
-          "shape": 1.1089155622429583
+          "scale": 14.36551834216656,
+          "shape": 1.3527967671040078
         },
         "armb": {
-          "scale": 11.319783893103516,
-          "shape": 1.2463053200559393
+          "scale": 15.462423416957256,
+          "shape": 1.6572212267851951
         },
         "armc": {
-          "scale": 12.502880183748372,
-          "shape": 1.2541488180084437
+          "scale": 17.802527022316813,
+          "shape": 1.549857874163799
         }
       },
-      "weibull_max_diff": 0.7950037954866261,
+      "weibull_max_diff": 0.7796128885376081,
       "time_scale": "Months",
       "title": "Study of Dalotuzumab (MK-0646) in Combination With Cetuximab and Irinotecan in Metastatic Colorectal Cancer (MK-0646-004)",
       "condition_list": [
@@ -949,6 +978,7 @@
     {
       "identifier": "DART0105",
       "pubmed": "25702876",
+      "registration": "NCT02175212",
       "publication_date": "2015-02-19 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
@@ -973,6 +1003,7 @@
     {
       "identifier": "DELTA",
       "pubmed": "24841974",
+      "registration": "NR",
       "publication_date": "2014-05-19 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
@@ -995,29 +1026,30 @@
     {
       "identifier": "E1199",
       "pubmed": "26077235",
+      "registration": "NCT00004125",
       "publication_date": "2015-06-15 00:00:00",
       "arms": 4,
       "disease": "breast_cancer",
-      "subjects": 9896,
+      "subjects": 4948,
       "weibull_by_arm": {
         "d1": {
-          "scale": 325.6474555866163,
-          "shape": 1.0661233960510446
+          "scale": 344.49816304236253,
+          "shape": 1.2030560693271235
         },
         "d3": {
-          "scale": 438.6707077668723,
-          "shape": 0.9734690018351247
+          "scale": 458.55432197130034,
+          "shape": 1.077701885248766
         },
         "p1": {
-          "scale": 338.3580264602103,
-          "shape": 1.1714159694380333
+          "scale": 346.1714023453911,
+          "shape": 1.3292104876970967
         },
         "p3": {
-          "scale": 336.3153297447605,
-          "shape": 1.009006482883157
+          "scale": 365.3534267504893,
+          "shape": 1.1444078139585707
         }
       },
-      "weibull_max_diff": 0.7670427607898054,
+      "weibull_max_diff": 0.7783693751571782,
       "time_scale": "Months",
       "title": "Combination Chemotherapy in Treating Women With Stage II or Stage IIIA Breast Cancer That Has Spread to the Lymph Nodes",
       "condition_list": [
@@ -1027,6 +1059,7 @@
     {
       "identifier": "EAGLE",
       "pubmed": "25908603",
+      "registration": "UMIN000002557",
       "publication_date": "2015-04-23 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
@@ -1049,21 +1082,22 @@
     {
       "identifier": "ELDA",
       "pubmed": "25488686",
+      "registration": "NCT00331097",
       "publication_date": "2014-12-08 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 598,
+      "subjects": 299,
       "weibull_by_arm": {
         "cmf": {
-          "scale": 221.98054772745786,
-          "shape": 1.0591215912882341
+          "scale": 180.84274007190913,
+          "shape": 0.9574196192570659
         },
         "wdocetaxel": {
-          "scale": 163.21914605573176,
-          "shape": 1.166717817550218
+          "scale": 134.66092059668705,
+          "shape": 1.0547624286882595
         }
       },
-      "weibull_max_diff": 0.759129812422177,
+      "weibull_max_diff": 0.771407507916668,
       "time_scale": "Months",
       "title": "ELDA: Elderly Breast Cancer - Docetaxel in Adjuvant Treatment",
       "condition_list": [
@@ -1073,21 +1107,22 @@
     {
       "identifier": "ELM-PC4",
       "pubmed": "25701170",
+      "registration": "NCT01193244",
       "publication_date": "2015-02-18 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 3120,
+      "subjects": 1560,
       "weibull_by_arm": {
         "orteronel": {
-          "scale": 27.939010854015113,
-          "shape": 1.3255393785338976
+          "scale": 17.933949840200803,
+          "shape": 1.4146927779124179
         },
         "placebo": {
-          "scale": 25.11694170993908,
-          "shape": 1.138829289862945
+          "scale": 13.84390440516696,
+          "shape": 1.261886683676063
         }
       },
-      "weibull_max_diff": 0.8591485304976211,
+      "weibull_max_diff": 0.7480967867770324,
       "time_scale": "Months",
       "title": "Study Comparing Orteronel Plus Prednisone in Participants With Chemotherapy-Naive Metastatic Castration-Resistant Prostate Cancer",
       "condition_list": [
@@ -1097,21 +1132,22 @@
     {
       "identifier": "ELM-PC5",
       "pubmed": "25624429",
+      "registration": "NCT01193257",
       "publication_date": "2015-01-26 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 2198,
+      "subjects": 1099,
       "weibull_by_arm": {
         "orteronel": {
-          "scale": 16.408611403659467,
-          "shape": 1.282675626585377
+          "scale": 11.243834879789542,
+          "shape": 1.4411533782163686
         },
         "placebo": {
-          "scale": 14.375112499857257,
-          "shape": 1.2623491958279829
+          "scale": 9.18271591101107,
+          "shape": 1.3613320539775537
         }
       },
-      "weibull_max_diff": 0.8720496755892034,
+      "weibull_max_diff": 0.804600909588052,
       "time_scale": "Months",
       "title": "Study Comparing Orteronel Plus Prednisone in Participants With Metastatic Castration-Resistant Prostate Cancer.",
       "condition_list": [
@@ -1121,21 +1157,22 @@
     {
       "identifier": "ENSURE",
       "pubmed": "26105600",
+      "registration": "NCT01342965",
       "publication_date": "2015-06-23 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 434,
+      "subjects": 217,
       "weibull_by_arm": {
         "erlotinib": {
-          "scale": 28.54123478465864,
-          "shape": 1.2835367203647199
+          "scale": 32.816507971096485,
+          "shape": 1.67402553862252
         },
         "gp": {
-          "scale": 20.603913567382953,
-          "shape": 1.026828188532089
+          "scale": 31.389952770462006,
+          "shape": 1.518813546090212
         }
       },
-      "weibull_max_diff": 0.6721615540876733,
+      "weibull_max_diff": 0.9353653845358364,
       "time_scale": "Months",
       "title": "A Study of Erlotinib (Tarceva) Versus Gemcitabine/Cisplatin as First-line Treatment in Patients With Non-small Cell Lung Cancer With EGFR Mutations",
       "condition_list": [
@@ -1145,6 +1182,7 @@
     {
       "identifier": "EORTC22881",
       "pubmed": "25500422",
+      "registration": "NCT02295033",
       "publication_date": "2014-12-09 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
@@ -1169,21 +1207,22 @@
     {
       "identifier": "Eribulin",
       "pubmed": "25605862",
+      "registration": "NCT00337103",
       "publication_date": "2015-01-20 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 2204,
+      "subjects": 1102,
       "weibull_by_arm": {
         "capecitabine": {
-          "scale": 14.813315513048083,
-          "shape": 0.9833840890773416
+          "scale": 21.069890405361402,
+          "shape": 1.2135654945636845
         },
         "eribulin": {
-          "scale": 15.861785199930718,
-          "shape": 0.9960342666252662
+          "scale": 23.588702180992293,
+          "shape": 1.2968709553881437
         }
       },
-      "weibull_max_diff": 0.9294894121138964,
+      "weibull_max_diff": 0.8760580731583885,
       "time_scale": "Months",
       "title": "E7389 Versus Capecitabine in Patients With Locally Advanced or Metastatic Breast Cancer Previously Treated With Anthracyclines and Taxanes",
       "condition_list": [
@@ -1193,21 +1232,22 @@
     {
       "identifier": "ESPATUE",
       "pubmed": "26527789",
+      "registration": null,
       "publication_date": "2015-11-02 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 322,
+      "subjects": 161,
       "weibull_by_arm": {
         "arma": {
-          "scale": 54.36234588101419,
-          "shape": 0.8225888845097586
+          "scale": 42.63029822703371,
+          "shape": 0.75447579027498
         },
         "armb": {
-          "scale": 59.98460000004645,
-          "shape": 0.7934268387833388
+          "scale": 45.18755356550319,
+          "shape": 0.7717196619858958
         }
       },
-      "weibull_max_diff": 0.9212353360070199,
+      "weibull_max_diff": 0.9332229062764944,
       "time_scale": "Months",
       "title": null,
       "condition_list": null
@@ -1215,6 +1255,7 @@
     {
       "identifier": "ExteNET",
       "pubmed": "26874901",
+      "registration": "NCT00878709",
       "publication_date": "2016-02-10 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
@@ -1239,6 +1280,7 @@
     {
       "identifier": "FALCON",
       "pubmed": "27908454",
+      "registration": "NCT01602380",
       "publication_date": "2016-11-28 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
@@ -1263,29 +1305,22 @@
     {
       "identifier": "FFCD2001",
       "pubmed": "26487578",
+      "registration": "NCT00303771",
       "publication_date": "2015-10-20 00:00:00",
-      "arms": 4,
+      "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 1128,
+      "subjects": 282,
       "weibull_by_arm": {
-        "classic": {
-          "scale": 14.767228175418106,
-          "shape": 1.0076592789605712
-        },
         "fu": {
-          "scale": 12.945116456387149,
-          "shape": 1.0432983299943999
+          "scale": 19.233161956658602,
+          "shape": 1.1614016254791462
         },
         "iri": {
-          "scale": 13.753005773173069,
-          "shape": 1.0483132930671168
-        },
-        "simplified": {
-          "scale": 11.918443654957702,
-          "shape": 1.1297202235683794
+          "scale": 19.36507543282855,
+          "shape": 1.0678563312677158
         }
       },
-      "weibull_max_diff": 0.8394365932876486,
+      "weibull_max_diff": 0.9794053013160864,
       "time_scale": "Months",
       "title": "Combination Chemotherapy as First-Line Therapy in Treating Older Patients With Metastatic Colorectal Cancer That Cannot Be Removed By Surgery",
       "condition_list": [
@@ -1295,21 +1330,22 @@
     {
       "identifier": "Figitumumab",
       "pubmed": "25395283",
+      "registration": "NCT00673049",
       "publication_date": "2014-11-13 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1166,
+      "subjects": 583,
       "weibull_by_arm": {
         "control": {
-          "scale": 6.70772382023619,
-          "shape": 1.0749981417355208
+          "scale": 9.650897389371242,
+          "shape": 1.2524434806700862
         },
         "figitumumab": {
-          "scale": 6.134410904393899,
-          "shape": 0.9511840760940343
+          "scale": 8.869073899805516,
+          "shape": 1.0330372658452724
         }
       },
-      "weibull_max_diff": 0.8748300951666622,
+      "weibull_max_diff": 0.8636101672673369,
       "time_scale": "Months",
       "title": "Trial Of CP-751, 871 And Erlotinib In Refractory Lung Cancer",
       "condition_list": [
@@ -1322,21 +1358,22 @@
     {
       "identifier": "Figitumumab2",
       "pubmed": "24888810",
+      "registration": "NCT00596830",
       "publication_date": "2014-06-02 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1362,
+      "subjects": 681,
       "weibull_by_arm": {
         "control": {
-          "scale": 10.509376199864988,
-          "shape": 1.0951041185445372
+          "scale": 6.225708286482188,
+          "shape": 1.4067718967349858
         },
         "figitumumab": {
-          "scale": 9.19494769650693,
-          "shape": 1.1290101269449675
+          "scale": 5.8483113283756465,
+          "shape": 1.5540498273238157
         }
       },
-      "weibull_max_diff": 0.883766332615463,
+      "weibull_max_diff": 0.9628638306090126,
       "time_scale": "Months",
       "title": "Carboplatin And Paclitaxel With Or Without CP-751, 871 (An IGF-1R Inhibitor) For Advanced NSCLC Of Squamous, Large Cell And Adenosquamous Carcinoma Histology",
       "condition_list": [
@@ -1349,21 +1386,22 @@
     {
       "identifier": "FIRE3",
       "pubmed": "25088940",
+      "registration": "NCT00433927",
       "publication_date": "2014-08-01 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 1184,
+      "subjects": 592,
       "weibull_by_arm": {
         "folfiri_bevacizumab": {
-          "scale": 23.00378183756358,
-          "shape": 1.332215564857169
+          "scale": 32.66381953238477,
+          "shape": 1.6069900929785057
         },
         "folfiri_cetuximab": {
-          "scale": 25.11731522770527,
-          "shape": 1.1792059177683776
+          "scale": 39.76809916080087,
+          "shape": 1.4301996947965403
         }
       },
-      "weibull_max_diff": 0.9491382392906446,
+      "weibull_max_diff": 0.8448431910894793,
       "time_scale": "Months",
       "title": "5-FU, Folinic Acid and Irinotecan (FOLFIRI) Plus Cetuximab Versus FOLFIRI Plus Bevacizumab in First Line Treatment Colorectal Cancer (CRC)",
       "condition_list": [
@@ -1374,21 +1412,22 @@
     {
       "identifier": "GECESTRO-APBI",
       "pubmed": "26494415",
+      "registration": "NCT00402519",
       "publication_date": "2015-10-20 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 2368,
+      "subjects": 1184,
       "weibull_by_arm": {
         "apbi": {
-          "scale": 479.9959692409167,
-          "shape": 1.5254749104442857
+          "scale": 543.3106442965797,
+          "shape": 1.3358636609340564
         },
         "wbi": {
-          "scale": 643.9806710909006,
-          "shape": 1.2518668024973587
+          "scale": 650.6008862349162,
+          "shape": 1.2010845289110679
         }
       },
-      "weibull_max_diff": 0.7855435122700433,
+      "weibull_max_diff": 0.861200870617196,
       "time_scale": "Months",
       "title": "APBI Versus EBRT Therapy After Breast Conserving Surgery for Low-risk Breast Cancer",
       "condition_list": [
@@ -1398,21 +1437,22 @@
     {
       "identifier": "GEICAM2003",
       "pubmed": "26416999",
+      "registration": "NCT00129935",
       "publication_date": "2015-09-28 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 2768,
+      "subjects": 1384,
       "weibull_by_arm": {
         "ec_t": {
-          "scale": 302.5613225390401,
-          "shape": 1.4074984951916494
+          "scale": 277.2111046153077,
+          "shape": 1.2759933044881666
         },
         "et_x": {
-          "scale": 295.5595016770032,
-          "shape": 1.2633132201482347
+          "scale": 237.0403731698626,
+          "shape": 1.2009815421995014
         }
       },
-      "weibull_max_diff": 0.948252970889826,
+      "weibull_max_diff": 0.8398858211574513,
       "time_scale": "Months",
       "title": "EC Followed Docetaxel Versus ET Followed Capecitabine as Adjuvant Chemotherapy for Node Positive Operable Breast Cancer",
       "condition_list": [
@@ -1422,6 +1462,7 @@
     {
       "identifier": "GETUG12",
       "pubmed": "26028518",
+      "registration": "NCT00055731",
       "publication_date": "2015-05-29 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
@@ -1446,6 +1487,7 @@
     {
       "identifier": "GETUG16",
       "pubmed": "27160475",
+      "registration": "NCT00423475",
       "publication_date": "2016-05-06 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
@@ -1470,6 +1512,7 @@
     {
       "identifier": "GIM",
       "pubmed": "26720025",
+      "registration": "NCT00311636",
       "publication_date": "2015-12-22 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
@@ -1494,29 +1537,22 @@
     {
       "identifier": "GIM2",
       "pubmed": "25740286",
+      "registration": "NCT00433420",
       "publication_date": "2015-03-02 00:00:00",
-      "arms": 4,
+      "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 8188,
+      "subjects": 2003,
       "weibull_by_arm": {
-        "ec_p": {
-          "scale": 297.4854756971565,
-          "shape": 1.1871640448524559
-        },
-        "fec_p": {
-          "scale": 259.17197745051845,
-          "shape": 1.2484847303070383
-        },
         "q2": {
-          "scale": 286.4365267507208,
-          "shape": 1.329614896277486
+          "scale": 226.59765867372897,
+          "shape": 1.2333739186947725
         },
         "q3": {
-          "scale": 259.1963308101716,
-          "shape": 1.1721253299511796
+          "scale": 209.9227673268272,
+          "shape": 1.0661151259531425
         }
       },
-      "weibull_max_diff": 0.8678462695756858,
+      "weibull_max_diff": 0.8842131803544266,
       "time_scale": "Months",
       "title": "Combination Chemotherapy With or Without Fluorouracil and/or Pegfilgrastim in Treating Women With Node-Positive Breast Cancer",
       "condition_list": [
@@ -1526,21 +1562,19 @@
     {
       "identifier": "HYPRO",
       "pubmed": "27339116",
+      "registration": "ISRCTN85138529",
       "publication_date": "2016-06-20 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 1608,
+      "subjects": 804,
       "weibull_by_arm": {
-        "conventional_fractionation": {
-          "scale": 125.86229983834399,
-          "shape": 1.9646293949891935
-        },
+        "conventional_fractionation": null,
         "hypofractionation": {
-          "scale": 203.92090741487357,
-          "shape": 1.3050607884366419
+          "scale": 180.35369942861834,
+          "shape": 1.2836717082921536
         }
       },
-      "weibull_max_diff": 0.6782361258956012,
+      "weibull_max_diff": null,
       "time_scale": "Months",
       "title": null,
       "condition_list": null
@@ -1548,6 +1582,7 @@
     {
       "identifier": "IBCSG2200",
       "pubmed": "27325862",
+      "registration": "NCT00022516",
       "publication_date": "2016-06-20 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
@@ -1572,21 +1607,22 @@
     {
       "identifier": "IMELDA",
       "pubmed": "25273343",
+      "registration": "NCT00929240",
       "publication_date": "2014-09-28 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 370,
+      "subjects": 185,
       "weibull_by_arm": {
         "bevacizumab": {
-          "scale": 18.68554496323302,
-          "shape": 0.9592381534758526
+          "scale": 33.35383954238565,
+          "shape": 1.2234032385478497
         },
         "bevacizumab_capecitabine": {
-          "scale": 32.037736043420225,
-          "shape": 1.1749192739733898
+          "scale": 47.32250737809721,
+          "shape": 1.6796206364922583
         }
       },
-      "weibull_max_diff": 0.5437289431136192,
+      "weibull_max_diff": 0.6497379659377023,
       "time_scale": "Months",
       "title": "A Study of Avastin (Bevacizumab) + Xeloda (Capecitabine)as Maintenance Therapy in Patients With HER2-Negative Metastatic Breast Cancer",
       "condition_list": [
@@ -1596,6 +1632,7 @@
     {
       "identifier": "IMPRESS",
       "pubmed": "26159065",
+      "registration": "NCT01544179",
       "publication_date": "2015-07-07 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
@@ -1620,21 +1657,22 @@
     {
       "identifier": "Iniparib",
       "pubmed": "25349301",
+      "registration": "NCT00938652",
       "publication_date": "2014-10-27 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 1038,
+      "subjects": 519,
       "weibull_by_arm": {
         "gc": {
-          "scale": 9.58093794814626,
-          "shape": 1.154846337693064
+          "scale": 13.99942298423129,
+          "shape": 1.3962938571310528
         },
         "gci": {
-          "scale": 11.15388221555746,
-          "shape": 1.188095047549703
+          "scale": 15.170845061283135,
+          "shape": 1.4810074090118748
         }
       },
-      "weibull_max_diff": 0.8513825915443395,
+      "weibull_max_diff": 0.9090330840357158,
       "time_scale": "Months",
       "title": "A Phase 3, Multi-Center Study of Gemcitabine/Carboplatin, With or Without BSI-201, in Patients With ER-, PR-, and Her2-Negative Metastatic Breast Cancer",
       "condition_list": [
@@ -1644,21 +1682,22 @@
     {
       "identifier": "INSPIRE",
       "pubmed": "25701171",
+      "registration": "NCT00982111",
       "publication_date": "2015-02-18 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1266,
+      "subjects": 633,
       "weibull_by_arm": {
         "ct": {
-          "scale": 11.861139289127411,
-          "shape": 1.0744190414874133
+          "scale": 7.433962278462784,
+          "shape": 1.224841381745874
         },
         "necitumumab_ct": {
-          "scale": 12.065351937569295,
-          "shape": 1.0674825132991965
+          "scale": 8.064026394587762,
+          "shape": 1.188044500521541
         }
       },
-      "weibull_max_diff": 0.9852560039504944,
+      "weibull_max_diff": 0.9304509199606321,
       "time_scale": "Months",
       "title": "First-line Treatment of Patients With Stage IV Nonsquamous Non-Small Cell Lung Cancer With Necitumumab (IMC-11F8) and Pemetrexed-Cisplatin",
       "condition_list": [
@@ -1668,21 +1707,22 @@
     {
       "identifier": "INT0142",
       "pubmed": "25349302",
+      "registration": "NR",
       "publication_date": "2014-10-27 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 674,
+      "subjects": 337,
       "weibull_by_arm": {
         "tamoxifen": {
-          "scale": 1457.5047485411458,
-          "shape": 0.8203409901004007
+          "scale": 1415.5005505518843,
+          "shape": 0.720802575119548
         },
         "tamoxifen_ofs": {
-          "scale": 1056.0416329967634,
-          "shape": 1.0289669317528278
+          "scale": 1191.9015167820728,
+          "shape": 0.849380809717511
         }
       },
-      "weibull_max_diff": 0.7932537314684135,
+      "weibull_max_diff": 0.9094089942146336,
       "time_scale": "Months",
       "title": null,
       "condition_list": null
@@ -1690,21 +1730,22 @@
     {
       "identifier": "ITACa",
       "pubmed": "25735317",
+      "registration": "NCT01878422",
       "publication_date": "2015-03-03 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 740,
+      "subjects": 370,
       "weibull_by_arm": {
         "ct": {
-          "scale": 19.655962191059803,
-          "shape": 1.183675042166224
+          "scale": 28.70755197337413,
+          "shape": 1.5630067953277014
         },
         "ct_b": {
-          "scale": 19.08058630620982,
-          "shape": 1.137251962781001
+          "scale": 26.867127080128814,
+          "shape": 1.221306434995404
         }
       },
-      "weibull_max_diff": 0.9585352526318047,
+      "weibull_max_diff": 0.8764605539391427,
       "time_scale": "Months",
       "title": "Sequential Treatment Strategy for Metastatic Colorectal Cancer",
       "condition_list": [
@@ -1714,21 +1755,22 @@
     {
       "identifier": "JCOG0509",
       "pubmed": "24638015",
+      "registration": "UMIN000000720",
       "publication_date": "2014-03-17 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 568,
+      "subjects": 284,
       "weibull_by_arm": {
         "amrubicin_cisplatin": {
-          "scale": 12.629967015787354,
-          "shape": 1.2611987467966284
+          "scale": 6.449946186603248,
+          "shape": 1.4623169869974113
         },
         "irinotecan_cisplatin": {
-          "scale": 15.421095593829088,
-          "shape": 1.225596474160705
+          "scale": 7.921788268982463,
+          "shape": 1.5187813353867672
         }
       },
-      "weibull_max_diff": 0.825948981460891,
+      "weibull_max_diff": 0.8066517238495836,
       "time_scale": "Months",
       "title": null,
       "condition_list": null
@@ -1736,21 +1778,22 @@
     {
       "identifier": "JCOG0605",
       "pubmed": "27312053",
+      "registration": "UMIN000000828",
       "publication_date": "2016-06-13 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 360,
+      "subjects": 180,
       "weibull_by_arm": {
         "combination_chemotherapy": {
-          "scale": 15.23807847495808,
-          "shape": 1.233688570773158
+          "scale": 23.84023030928263,
+          "shape": 1.6852274295541605
         },
         "topotecan": {
-          "scale": 10.354230407021308,
-          "shape": 1.0115539658427501
+          "scale": 17.664740291819594,
+          "shape": 1.32528791906166
         }
       },
-      "weibull_max_diff": 0.6365821335939731,
+      "weibull_max_diff": 0.6984640124116194,
       "time_scale": "Months",
       "title": null,
       "condition_list": null
@@ -1758,21 +1801,22 @@
     {
       "identifier": "JFMC33-0502",
       "pubmed": "26347106",
+      "registration": "UMIN-CTR C000000245",
       "publication_date": "2015-09-07 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 2120,
+      "subjects": 1060,
       "weibull_by_arm": {
         "control": {
-          "scale": 285.91990847867544,
-          "shape": 0.8767937561314038
+          "scale": 224.59988816239252,
+          "shape": 1.4326402254403396
         },
         "study": {
-          "scale": 248.1733354095472,
-          "shape": 0.9311956770797367
+          "scale": 182.95806667320437,
+          "shape": 1.6016374957974904
         }
       },
-      "weibull_max_diff": 0.8894400232326678,
+      "weibull_max_diff": 0.8368842255249666,
       "time_scale": "Months",
       "title": null,
       "condition_list": null
@@ -1780,21 +1824,22 @@
     {
       "identifier": "KEYNOTE024",
       "pubmed": "27718847",
+      "registration": "NCT02142738 ",
       "publication_date": "2016-10-09 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 610,
+      "subjects": 305,
       "weibull_by_arm": {
         "chemotherapy": {
-          "scale": 10.850614473461523,
-          "shape": 1.110176916372776
+          "scale": 6.781443964730418,
+          "shape": 1.352877992037303
         },
         "pembrolizumab": {
-          "scale": 23.355772938781186,
-          "shape": 0.8578595163378541
+          "scale": 14.863316613256066,
+          "shape": 0.8712172320115487
         }
       },
-      "weibull_max_diff": 0.5119540069385574,
+      "weibull_max_diff": 0.5299730967914621,
       "time_scale": "Months",
       "title": null,
       "condition_list": null
@@ -1802,21 +1847,22 @@
     {
       "identifier": "LEA",
       "pubmed": "25691671",
+      "registration": "NCT00545077",
       "publication_date": "2015-02-17 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 748,
+      "subjects": 374,
       "weibull_by_arm": {
         "et": {
-          "scale": 43.10704355693739,
-          "shape": 1.0394637004636296
+          "scale": 61.47421866641948,
+          "shape": 1.8982996749418506
         },
         "et_b": {
-          "scale": 41.38198357900892,
-          "shape": 1.2509680836894392
+          "scale": 62.64677691122132,
+          "shape": 1.6896586927649886
         }
       },
-      "weibull_max_diff": 0.9814012673022933,
+      "weibull_max_diff": 0.995065533189882,
       "time_scale": "Months",
       "title": "Bevacizumab + Endocrine Treatment vs Endocrine Treatment as First Line in Postmenopausal Women",
       "condition_list": [
@@ -1826,21 +1872,22 @@
     {
       "identifier": "LUMELung1",
       "pubmed": "24411639",
+      "registration": "NCT00805194",
       "publication_date": "2014-01-09 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 2448,
+      "subjects": 1134,
       "weibull_by_arm": {
         "docetaxel_nintedanib": {
-          "scale": 10.704825278513336,
-          "shape": 1.011255932957356
+          "scale": 4.574611149069907,
+          "shape": 1.5060049905639479
         },
         "docetaxel_placebo": {
-          "scale": 9.526611232942662,
-          "shape": 0.9883715332715001
+          "scale": 3.8117086616542792,
+          "shape": 1.4391960304255043
         }
       },
-      "weibull_max_diff": 0.8824993840645133,
+      "weibull_max_diff": 0.8238708295895204,
       "time_scale": "Months",
       "title": "LUME-Lung 1: BIBF 1120 Plus Docetaxel as Compared to Placebo Plus Docetaxel in 2nd Line Non Small Cell Lung Cancer",
       "condition_list": [
@@ -1850,21 +1897,22 @@
     {
       "identifier": "LUXBreast1",
       "pubmed": "26822398",
+      "registration": "NCT01125566",
       "publication_date": "2016-01-25 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 1016,
+      "subjects": 508,
       "weibull_by_arm": {
         "afatinib": {
-          "scale": 18.210624836166186,
-          "shape": 1.1042721670250324
+          "scale": 27.11358985043573,
+          "shape": 1.3670383098703451
         },
         "trastuzumab": {
-          "scale": 23.549823818096765,
-          "shape": 1.030729885932585
+          "scale": 35.18559149904294,
+          "shape": 1.4428101932288098
         }
       },
-      "weibull_max_diff": 0.7918115626803103,
+      "weibull_max_diff": 0.7598138953166015,
       "time_scale": "Months",
       "title": "LUX-Breast 1: BIBW 2992 (Afatinib) in HER2-positive Metastatic Breast Cancer Patients After One Prior Herceptin Treatment",
       "condition_list": [
@@ -1874,21 +1922,22 @@
     {
       "identifier": "LUXLung3-6",
       "pubmed": "25589191",
+      "registration": "NCT00949650/NCT01121393",
       "publication_date": "2015-01-12 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 709,
+      "subjects": 345,
       "weibull_by_arm": {
         "afatinib": {
-          "scale": 34.808029297012965,
-          "shape": 1.4502304732796731
+          "scale": 39.07881160906308,
+          "shape": 1.3792886182259843
         },
         "ct": {
-          "scale": 34.713144840488205,
-          "shape": 1.4647004294265074
+          "scale": 35.44322588245273,
+          "shape": 1.5337595045849466
         }
       },
-      "weibull_max_diff": 0.9997670938653634,
+      "weibull_max_diff": 0.9315681149958189,
       "time_scale": "Months",
       "title": null,
       "condition_list": null
@@ -1896,21 +1945,22 @@
     {
       "identifier": "LUXLung8",
       "pubmed": "26156651",
+      "registration": "NCT01523587",
       "publication_date": "2015-07-06 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1590,
+      "subjects": 795,
       "weibull_by_arm": {
         "afatinib": {
-          "scale": 8.686576417439191,
-          "shape": 1.0312775515939463
+          "scale": 12.069294817227805,
+          "shape": 1.140846736918917
         },
         "erlotinib": {
-          "scale": 7.194079018766485,
-          "shape": 1.1029425908544808
+          "scale": 9.97728399224739,
+          "shape": 1.2438928518052412
         }
       },
-      "weibull_max_diff": 0.8475307028533817,
+      "weibull_max_diff": 0.8489630026397991,
       "time_scale": "Months",
       "title": "LUX-Lung 8: A Phase III Trial of Afatinib (BIBW 2992) Versus Erlotinib for the Treatment of Squamous Cell Lung Cancer After at Least One Prior Platinum Based Chemotherapy",
       "condition_list": [
@@ -1920,21 +1970,22 @@
     {
       "identifier": "MA17R",
       "pubmed": "27264120",
+      "registration": "NCT00003140,NCT00754845",
       "publication_date": "2016-06-28 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 3836,
+      "subjects": 1918,
       "weibull_by_arm": {
         "letrozole": {
-          "scale": 478.7746204465816,
-          "shape": 1.364480772727386
+          "scale": 334.32489869279243,
+          "shape": 1.6017319763844164
         },
         "placebo": {
-          "scale": 470.32475965049224,
-          "shape": 1.271287255045813
+          "scale": 300.7487519033388,
+          "shape": 1.7213689049575749
         }
       },
-      "weibull_max_diff": 0.963196965189558,
+      "weibull_max_diff": 0.9139909236693261,
       "time_scale": "Months",
       "title": null,
       "condition_list": null
@@ -1942,21 +1993,22 @@
     {
       "identifier": "MA31",
       "pubmed": "25779558",
+      "registration": "NCT00667251",
       "publication_date": "2015-03-16 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 1304,
+      "subjects": 652,
       "weibull_by_arm": {
         "ltax_l": {
-          "scale": 23.654395657243732,
-          "shape": 1.3168534171994026
+          "scale": 44.33832852714683,
+          "shape": 1.3782535501788287
         },
         "ttax_t": {
-          "scale": 29.014652054002504,
-          "shape": 1.2813614190774498
+          "scale": 55.6577970544606,
+          "shape": 1.3510174165313507
         }
       },
-      "weibull_max_diff": 0.8215661994231425,
+      "weibull_max_diff": 0.8009060065850866,
       "time_scale": "Months",
       "title": "Chemotherapy and Lapatinib or Trastuzumab in Treating Women With HER2/Neu-Positive Metastatic Breast Cancer",
       "condition_list": [
@@ -1966,6 +2018,7 @@
     {
       "identifier": "MAGRIT",
       "pubmed": "27132212",
+      "registration": "NCT00480025",
       "publication_date": "2016-04-27 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
@@ -1990,21 +2043,22 @@
     {
       "identifier": "MAINSAIL",
       "pubmed": "25743937",
+      "registration": "NCT00988208",
       "publication_date": "2015-03-03 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 2118,
+      "subjects": 1059,
       "weibull_by_arm": {
         "lenolidomide": {
-          "scale": 19.043285284550027,
-          "shape": 1.5226549346025426
+          "scale": 22.4526935068759,
+          "shape": 1.7439801865234412
         },
         "placebo": {
-          "scale": 22.482785423962202,
-          "shape": 1.6493301456212992
+          "scale": 26.616526217176588,
+          "shape": 1.8739702918097219
         }
       },
-      "weibull_max_diff": 0.8315011537822211,
+      "weibull_max_diff": 0.8313539546419266,
       "time_scale": "Months",
       "title": "Study to Evaluate Safety and Effectiveness of Lenalidomide in Combination With Docetaxel and Prednisone for Patients With Castrate-Resistant Prostate Cancer",
       "condition_list": [
@@ -2014,21 +2068,22 @@
     {
       "identifier": "MAPS",
       "pubmed": "26719230",
+      "registration": "NCT00651456",
       "publication_date": "2015-12-21 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 896,
+      "subjects": 448,
       "weibull_by_arm": {
         "pc": {
-          "scale": 16.714276878821376,
-          "shape": 1.2045112720530584
+          "scale": 24.23011719301944,
+          "shape": 1.2884369479476332
         },
         "pcb": {
-          "scale": 21.122772559431,
-          "shape": 1.1625926140548146
+          "scale": 27.569603366700623,
+          "shape": 1.2326556809477507
         }
       },
-      "weibull_max_diff": 0.8000211085130661,
+      "weibull_max_diff": 0.8902573718520987,
       "time_scale": "Months",
       "title": "Mesothelioma Avastin Plus Pemetrexed-cisplatin Study",
       "condition_list": [
@@ -2038,6 +2093,7 @@
     {
       "identifier": "MARIANNE",
       "pubmed": "28056202",
+      "registration": "NCT01120184",
       "publication_date": "2016-11-07 00:00:00",
       "arms": 3,
       "disease": "breast_cancer",
@@ -2066,21 +2122,22 @@
     {
       "identifier": "MARQUEE",
       "pubmed": "26169611",
+      "registration": "NCT01244191",
       "publication_date": "2015-07-13 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 2096,
+      "subjects": 1048,
       "weibull_by_arm": {
         "erlotinib_placebo": {
-          "scale": 14.992398036322378,
-          "shape": 1.1197119866895808
+          "scale": 17.895822582257793,
+          "shape": 1.201897828275707
         },
         "erlotinib_tivantinib": {
-          "scale": 18.12345180241325,
-          "shape": 1.0537881899040078
+          "scale": 23.280289720112997,
+          "shape": 1.2270267924793543
         }
       },
-      "weibull_max_diff": 0.844351633207428,
+      "weibull_max_diff": 0.7639255830383987,
       "time_scale": "Months",
       "title": "Tivantinib Plus Erlotinib Versus Placebo Plus Erlotinib for the Treatment of Non-squamous, Non-small-cell Lung Cancer",
       "condition_list": [
@@ -2090,21 +2147,22 @@
     {
       "identifier": "METlung",
       "pubmed": "27937096",
+      "registration": "NCT01456325",
       "publication_date": "2016-12-12 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 998,
+      "subjects": 499,
       "weibull_by_arm": {
         "onaturzumab_erlotinib": {
-          "scale": 6.159605945824911,
-          "shape": 1.1626030836571613
+          "scale": 3.9358677509221347,
+          "shape": 1.2552412065139813
         },
         "placebo_erlotinib": {
-          "scale": 6.925968122275102,
-          "shape": 1.0354788051439112
+          "scale": 3.9813460774444134,
+          "shape": 1.1288852636684603
         }
       },
-      "weibull_max_diff": 0.9244447469602225,
+      "weibull_max_diff": 0.9790296441006507,
       "time_scale": "Months",
       "title": "A Study of Onartuzumab (MetMAb) in Combination With Tarceva (Erlotinib) in Participants With Met Diagnostic-Positive Non-Small Cell Lung Cancer Who Have Received Chemotherapy For Advanced or Metastatic Disease (MetLung)",
       "condition_list": [
@@ -2114,21 +2172,22 @@
     {
       "identifier": "MINDACT",
       "pubmed": "27557300",
+      "registration": "NCT00433589",
       "publication_date": "2016-08-25 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 2187,
+      "subjects": 690,
       "weibull_by_arm": {
         "chemotherapy": {
-          "scale": 35.85434275672805,
-          "shape": 1.2977098197188799
+          "scale": 47.66664840069843,
+          "shape": 1.0969772682825552
         },
         "no_chemotherapy": {
-          "scale": 26.590628004829068,
-          "shape": 1.3675290858036768
+          "scale": 23.88495482559643,
+          "shape": 1.483314428566777
         }
       },
-      "weibull_max_diff": 0.7524006130710486,
+      "weibull_max_diff": 0.5466415287646568,
       "time_scale": "Unknown",
       "title": "Genetic Testing or Clinical Assessment in Determining the Need for Chemotherapy in Women With Breast Cancer That Involves No More Than 3 Lymph Nodes",
       "condition_list": [
@@ -2138,21 +2197,22 @@
     {
       "identifier": "MIROX",
       "pubmed": "25403578",
+      "registration": "NCT00268398",
       "publication_date": "2014-11-17 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 564,
+      "subjects": 282,
       "weibull_by_arm": {
         "folfox4": {
-          "scale": 93.88935655637376,
-          "shape": 0.8973544760004881
+          "scale": 52.6730175035074,
+          "shape": 0.8598996315093516
         },
         "folfox7_folfiri": {
-          "scale": 89.21883012576264,
-          "shape": 0.9403674085691295
+          "scale": 52.54506435747728,
+          "shape": 0.8612718173245202
         }
       },
-      "weibull_max_diff": 0.9681746652896391,
+      "weibull_max_diff": 0.998248452763057,
       "time_scale": "Months",
       "title": "Combination Chemotherapy in Treating Patients With Colorectal Cancer and Resectable Metastases",
       "condition_list": [
@@ -2164,6 +2224,7 @@
     {
       "identifier": "MONALEESA2",
       "pubmed": "27717303",
+      "registration": "NCT01958021",
       "publication_date": "2016-10-08 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
@@ -2188,6 +2249,7 @@
     {
       "identifier": "MRC-RT01",
       "pubmed": "24581940",
+      "registration": "ISRCTN47772397",
       "publication_date": "2014-02-26 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
@@ -2210,21 +2272,22 @@
     {
       "identifier": "NCICBR26",
       "pubmed": "25439692",
+      "registration": "NCT01000025",
       "publication_date": "2014-10-15 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1440,
+      "subjects": 720,
       "weibull_by_arm": {
         "dacomitinib": {
-          "scale": 8.251828503614037,
-          "shape": 1.0276357238113936
+          "scale": 10.499090275578485,
+          "shape": 1.1550946327061289
         },
         "placebo": {
-          "scale": 7.070346008259505,
-          "shape": 0.9573697578304633
+          "scale": 10.007460605562917,
+          "shape": 1.1576258467199954
         }
       },
-      "weibull_max_diff": 0.8346839534149735,
+      "weibull_max_diff": 0.9538356083519857,
       "time_scale": "Months",
       "title": "PF-00299804 in Stage IIIB or Stage IV Non-Small Cell Lung Cancer Not Responding to Standard Therapy for Advanced or Metastatic Cancer",
       "condition_list": [
@@ -2234,6 +2297,7 @@
     {
       "identifier": "NeoALTTO",
       "pubmed": "25130998",
+      "registration": "NCT00553358",
       "publication_date": "2014-08-15 00:00:00",
       "arms": 3,
       "disease": "breast_cancer",
@@ -2262,21 +2326,22 @@
     {
       "identifier": "NITRO",
       "pubmed": "26347110",
+      "registration": "ACTRN12608000588392",
       "publication_date": "2015-09-07 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 744,
+      "subjects": 372,
       "weibull_by_arm": {
         "chemo": {
-          "scale": 10.59651613978979,
-          "shape": 1.1171950936859834
+          "scale": 15.52350347603232,
+          "shape": 1.2217778175589316
         },
         "nitro_chemo": {
-          "scale": 9.981782772061488,
-          "shape": 1.0797383811766177
+          "scale": 14.87292011744397,
+          "shape": 1.1369049795165544
         }
       },
-      "weibull_max_diff": 0.9313274588929646,
+      "weibull_max_diff": 0.9368729264187624,
       "time_scale": "Months",
       "title": null,
       "condition_list": null
@@ -2284,21 +2349,22 @@
     {
       "identifier": "NO16968",
       "pubmed": "26324362",
+      "registration": "NCT00069121",
       "publication_date": "2015-08-31 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 3772,
+      "subjects": 1886,
       "weibull_by_arm": {
         "fu_fa": {
-          "scale": 174.3157689123797,
-          "shape": 0.8931357615727189
+          "scale": 142.50328112487975,
+          "shape": 0.7925950128509885
         },
         "xelox": {
-          "scale": 235.79829704350507,
-          "shape": 0.8414441275690921
+          "scale": 197.24379502313843,
+          "shape": 0.766530260942291
         }
       },
-      "weibull_max_diff": 0.7581312924197106,
+      "weibull_max_diff": 0.7339227467734017,
       "time_scale": "Months",
       "title": "A Study of Xeloda (Capecitabine) Plus Oxaliplatin in Patients With Colon Cancer",
       "condition_list": [
@@ -2308,21 +2374,22 @@
     {
       "identifier": "NOAH",
       "pubmed": "24657003",
+      "registration": "ISRCTN86043495",
       "publication_date": "2014-03-20 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 470,
+      "subjects": 235,
       "weibull_by_arm": {
         "chemotherapy": {
-          "scale": 99.37446162005529,
-          "shape": 1.105740193301686
+          "scale": 80.97529438914245,
+          "shape": 0.9678508913555205
         },
         "chemotherapy_trastuzumab": {
-          "scale": 131.01991822370653,
-          "shape": 1.286422608203459
+          "scale": 118.65340940156564,
+          "shape": 1.1126300767835744
         }
       },
-      "weibull_max_diff": 0.7239670292791728,
+      "weibull_max_diff": 0.6496388416911041,
       "time_scale": "Months",
       "title": null,
       "condition_list": null
@@ -2330,21 +2397,22 @@
     {
       "identifier": "NSABPB35",
       "pubmed": "26686957",
+      "registration": "NCT00053898",
       "publication_date": "2015-12-10 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 6154,
+      "subjects": 3077,
       "weibull_by_arm": {
         "anastrozole": {
-          "scale": 796.1985120928189,
-          "shape": 1.0811354200057242
+          "scale": 506.6773903855825,
+          "shape": 1.146734057102217
         },
         "tamoxifen": {
-          "scale": 456.36199205170146,
-          "shape": 1.349005325522123
+          "scale": 379.13589285552985,
+          "shape": 1.2987923023408883
         }
       },
-      "weibull_max_diff": 0.6130884724683436,
+      "weibull_max_diff": 0.776809299388879,
       "time_scale": "Unknown",
       "title": "Anastrozole or Tamoxifen in Treating Postmenopausal Women With Ductal Carcinoma in Situ Who Are Undergoing Lumpectomy and Radiation Therapy",
       "condition_list": [
@@ -2354,21 +2422,22 @@
     {
       "identifier": "NSABPB40",
       "pubmed": "26272770",
+      "registration": "NCT00408408",
       "publication_date": "2015-08-11 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 2370,
+      "subjects": 1186,
       "weibull_by_arm": {
         "bev": {
-          "scale": 206.70664061862482,
-          "shape": 1.2128030174030768
+          "scale": 258.5172113716244,
+          "shape": 1.2924213271291236
         },
         "no_bev": {
-          "scale": 158.0067537547423,
-          "shape": 1.2359455912766415
+          "scale": 157.81303175591523,
+          "shape": 1.4747177574247503
         }
       },
-      "weibull_max_diff": 0.7687386799460596,
+      "weibull_max_diff": 0.6322338580561608,
       "time_scale": "Months",
       "title": "Chemotherapy With or Without Bevacizumab in Treating Women With Stage I, Stage II, or Stage IIIA Breast Cancer That Can Be Removed By Surgery",
       "condition_list": [
@@ -2378,29 +2447,22 @@
     {
       "identifier": "NSABPR04",
       "pubmed": "26374429",
+      "registration": "NCT00058474",
       "publication_date": "2015-09-14 00:00:00",
-      "arms": 4,
+      "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 5702,
+      "subjects": 1284,
       "weibull_by_arm": {
-        "5fu": {
-          "scale": 514.6993162658364,
-          "shape": 0.8036637519069818
-        },
-        "cape": {
-          "scale": 622.6090609852946,
-          "shape": 0.7481855474372218
-        },
         "no_oxali": {
-          "scale": 462.06203800874556,
-          "shape": 0.7960240609796129
+          "scale": 2142.7008689534246,
+          "shape": 0.5195560453683031
         },
         "oxali": {
-          "scale": 683.1005024625172,
-          "shape": 0.7161369015744349
+          "scale": 3112.7144281955443,
+          "shape": 0.4884904978273978
         }
       },
-      "weibull_max_diff": 0.7120689116623117,
+      "weibull_max_diff": 0.7199554730749205,
       "time_scale": "Months",
       "title": "Radiation Therapy and Either Capecitabine or Fluorouracil With or Without Oxaliplatin Before Surgery in Treating Patients With Resectable Rectal Cancer",
       "condition_list": [
@@ -2410,6 +2472,7 @@
     {
       "identifier": "NTR1527",
       "pubmed": "25230595",
+      "registration": "NTR1527",
       "publication_date": "2014-09-14 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
@@ -2432,21 +2495,22 @@
     {
       "identifier": "OMEGA",
       "pubmed": "24504445",
+      "registration": "ISRCTN 11114726",
       "publication_date": "2014-02-06 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 156,
+      "subjects": 78,
       "weibull_by_arm": {
         "capecitabine": {
-          "scale": 13.671359911045801,
-          "shape": 1.0890989138371365
+          "scale": 9.125337382961993,
+          "shape": 1.213436588772962
         },
         "peg_doxorubicin": {
-          "scale": 11.551736024040673,
-          "shape": 1.2598349170826646
+          "scale": 7.110911845750127,
+          "shape": 1.7783788327810686
         }
       },
-      "weibull_max_diff": 0.8843872966741667,
+      "weibull_max_diff": 0.8577240570635423,
       "time_scale": "Months",
       "title": null,
       "condition_list": null
@@ -2454,6 +2518,7 @@
     {
       "identifier": "OPTIMAL",
       "pubmed": "26141208",
+      "registration": "NCT00874419",
       "publication_date": "2015-07-03 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
@@ -2478,21 +2543,22 @@
     {
       "identifier": "OPTIMOX3",
       "pubmed": "26474518",
+      "registration": "NCT00265824",
       "publication_date": "2015-10-14 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 904,
+      "subjects": 452,
       "weibull_by_arm": {
         "bev": {
-          "scale": 17.753196160876822,
-          "shape": 1.021533413584423
+          "scale": 29.38153317777502,
+          "shape": 1.561073687301702
         },
         "bev_erlotinib": {
-          "scale": 21.290480014149992,
-          "shape": 0.9682270738293668
+          "scale": 34.311669742469974,
+          "shape": 1.3659179107522426
         }
       },
-      "weibull_max_diff": 0.8504911954446575,
+      "weibull_max_diff": 0.8855250242567492,
       "time_scale": "Months",
       "title": "Optimized Chemotherapy Followed by Maintenance With Bevacizumab With or Without Erlotinib in Treating Patients With Metastatic Colorectal Cancer That Cannot be Removed by Surgery (DREAM)",
       "condition_list": [
@@ -2502,6 +2568,7 @@
     {
       "identifier": "PALOMA2",
       "pubmed": "27959613",
+      "registration": "NCT01740427",
       "publication_date": "2016-11-17 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
@@ -2526,19 +2593,12 @@
     {
       "identifier": "PALOMA3",
       "pubmed": "26947331",
+      "registration": "NCT01942135",
       "publication_date": "2016-03-02 00:00:00",
-      "arms": 4,
+      "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 1042,
+      "subjects": 521,
       "weibull_by_arm": {
-        "fulvestrant_palbociclib": {
-          "scale": 12.59290756193508,
-          "shape": 1.2950437067914646
-        },
-        "fulvestrant_placebo": {
-          "scale": 6.8764362902759695,
-          "shape": 1.247383303129894
-        },
         "palbociclib_fulvestrant": {
           "scale": 10.514811211751766,
           "shape": 1.4313831584952303
@@ -2548,7 +2608,7 @@
           "shape": 1.4793739737396174
         }
       },
-      "weibull_max_diff": 0.46681073619607655,
+      "weibull_max_diff": 0.5441994817061294,
       "time_scale": "Unknown",
       "title": "Palbociclib (PD-0332991) Combined With Fulvestrant In Hormone Receptor+ HER2-Negative Metastatic Breast Cancer After Endocrine Failure (PALOMA-3)",
       "condition_list": [
@@ -2558,21 +2618,22 @@
     {
       "identifier": "PEGASE07",
       "pubmed": "25943350",
+      "registration": "NCT02324088",
       "publication_date": "2015-05-05 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 348,
+      "subjects": 174,
       "weibull_by_arm": {
         "arma": {
-          "scale": 112.04033489847464,
-          "shape": 1.0989866246539686
+          "scale": 91.0074400104293,
+          "shape": 1.0592501065315914
         },
         "armb": {
-          "scale": 115.61154003697197,
-          "shape": 1.0076586838300396
+          "scale": 93.66280256643522,
+          "shape": 0.8973277038818576
         }
       },
-      "weibull_max_diff": 0.9988502690677877,
+      "weibull_max_diff": 0.9668829860982271,
       "time_scale": "Months",
       "title": "Interest of Maintenance Chemotherapy After Induction Treatment for Inflammatory Breast Cancer",
       "condition_list": [
@@ -2582,21 +2643,19 @@
     {
       "identifier": "PETACC8",
       "pubmed": "24928083",
+      "registration": "EudraCT 2005-003463-23",
       "publication_date": "2014-06-11 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 3204,
+      "subjects": 1602,
       "weibull_by_arm": {
-        "folfox4": {
-          "scale": 162.78830097363397,
-          "shape": 1.1902433751733226
-        },
+        "folfox4": null,
         "folfox4_cetuximab": {
-          "scale": 181.72800715071992,
-          "shape": 1.028424744141636
+          "scale": 165.40395359529717,
+          "shape": 1.4230442971181856
         }
       },
-      "weibull_max_diff": 0.9402506810010453,
+      "weibull_max_diff": null,
       "time_scale": "Months",
       "title": null,
       "condition_list": null
@@ -2604,21 +2663,22 @@
     {
       "identifier": "PREVAIL",
       "pubmed": "24881730",
+      "registration": "NCT01212991",
       "publication_date": "2014-06-01 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 3350,
+      "subjects": 1717,
       "weibull_by_arm": {
         "enzalutamide": {
-          "scale": 43.72887629007011,
-          "shape": 1.373889523309343
+          "scale": 40.405783930556936,
+          "shape": 1.9631710809449592
         },
         "placebo": {
-          "scale": 30.631680692764604,
-          "shape": 0.918910108749442
+          "scale": 38.04338004518768,
+          "shape": 1.5831271867929544
         }
       },
-      "weibull_max_diff": 0.6138162282405174,
+      "weibull_max_diff": 0.9002673502675894,
       "time_scale": "Months",
       "title": "A Safety and Efficacy Study of Oral MDV3100 in Chemotherapy-Naive Patients With Progressive Metastatic Prostate Cancer",
       "condition_list": [
@@ -2628,21 +2688,22 @@
     {
       "identifier": "PROCLAIM",
       "pubmed": "26811519",
+      "registration": null,
       "publication_date": "2016-01-25 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1196,
+      "subjects": 598,
       "weibull_by_arm": {
         "eto_cis": {
-          "scale": 24.583087462906068,
-          "shape": 1.126479714645295
+          "scale": 17.870718982302556,
+          "shape": 1.0767587864953252
         },
         "pem_cis": {
-          "scale": 27.283843832762848,
-          "shape": 1.087564180830555
+          "scale": 20.708438324994034,
+          "shape": 1.0505120886701775
         }
       },
-      "weibull_max_diff": 0.9115636575779894,
+      "weibull_max_diff": 0.8703383041031278,
       "time_scale": "Months",
       "title": null,
       "condition_list": null
@@ -2650,21 +2711,22 @@
     {
       "identifier": "PROCTOR-SCRIPT",
       "pubmed": "25480874",
+      "registration": "ISRCTN36266738",
       "publication_date": "2014-12-05 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 874,
+      "subjects": 437,
       "weibull_by_arm": {
         "chemotherapy": {
-          "scale": 164.71476528491914,
-          "shape": 1.061928936639293
+          "scale": 169.89463186608157,
+          "shape": 1.427704816125063
         },
         "observation": {
-          "scale": 159.26405596627848,
-          "shape": 0.9080208554765457
+          "scale": 176.71064230856962,
+          "shape": 1.2856387153652373
         }
       },
-      "weibull_max_diff": 0.9119663292149931,
+      "weibull_max_diff": 0.9890923376152434,
       "time_scale": "Months",
       "title": null,
       "condition_list": null
@@ -2672,21 +2734,22 @@
     {
       "identifier": "PROFILE1014",
       "pubmed": "27022118",
+      "registration": "NCT01154140",
       "publication_date": "2016-03-28 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1029,
+      "subjects": 343,
       "weibull_by_arm": {
         "chemotherapy": {
-          "scale": 21.02857955198328,
-          "shape": 1.1345670010907825
+          "scale": 56.31937809597151,
+          "shape": 0.947438593798252
         },
         "crizotinib": {
-          "scale": 31.88507134420208,
-          "shape": 1.1301745644387302
+          "scale": 52.89249449793867,
+          "shape": 1.1035032967157778
         }
       },
-      "weibull_max_diff": 0.6603403026119596,
+      "weibull_max_diff": 0.9919655507384048,
       "time_scale": "Unknown",
       "title": "A Clinical Trial Testing The Efficacy Of Crizotinib Versus Standard Chemotherapy Pemetrexed Plus Cisplatin Or Carboplatin In Patients With ALK Positive Non Squamous Cancer Of The Lung",
       "condition_list": [
@@ -2696,21 +2759,22 @@
     {
       "identifier": "PROSE",
       "pubmed": "24831979",
+      "registration": "NCT00989690",
       "publication_date": "2014-05-13 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 526,
+      "subjects": 263,
       "weibull_by_arm": {
         "chemotherapy": {
-          "scale": 9.157546281667297,
-          "shape": 1.040723659565072
+          "scale": 13.831697470196676,
+          "shape": 1.0981264114813398
         },
         "erlotinib": {
-          "scale": 7.662582849279921,
-          "shape": 0.9235388099287416
+          "scale": 12.07644677291705,
+          "shape": 0.998082117738984
         }
       },
-      "weibull_max_diff": 0.8001828443193322,
+      "weibull_max_diff": 0.8443729315563747,
       "time_scale": "Months",
       "title": "Study of Blood and Tissue Samples in Predicting Response to Second-Line Therapy Using Erlotinib Hydrochloride or Chemotherapy in Patients With Advanced Non-Small Cell Lung Cancer",
       "condition_list": [
@@ -2720,6 +2784,7 @@
     {
       "identifier": "QUARTZ",
       "pubmed": "27604504",
+      "registration": "ISRCTN3826061",
       "publication_date": "2016-09-04 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
@@ -2742,6 +2807,7 @@
     {
       "identifier": "QUASAR2",
       "pubmed": "27660192",
+      "registration": "ISRCTN45133151",
       "publication_date": "2016-09-19 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
@@ -2764,21 +2830,22 @@
     {
       "identifier": "R98",
       "pubmed": "25739671",
+      "registration": "NR",
       "publication_date": "2015-03-03 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 714,
+      "subjects": 357,
       "weibull_by_arm": {
         "5fulv": {
-          "scale": 171.260441567989,
-          "shape": 0.9004848481265388
+          "scale": 179.32580568234897,
+          "shape": 1.192729316379432
         },
         "5fulv_cpt11": {
-          "scale": 196.60426563996756,
-          "shape": 0.9734174416015056
+          "scale": 201.80456896484066,
+          "shape": 1.1885214024886976
         }
       },
-      "weibull_max_diff": 0.8449287857822468,
+      "weibull_max_diff": 0.8895785140735387,
       "time_scale": "Months",
       "title": null,
       "condition_list": null
@@ -2786,6 +2853,7 @@
     {
       "identifier": "RADIANT",
       "pubmed": "26324372",
+      "registration": "NCT00373425",
       "publication_date": "2015-08-31 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
@@ -2810,21 +2878,22 @@
     {
       "identifier": "RAISE",
       "pubmed": "25877855",
+      "registration": "NCT01183780",
       "publication_date": "2015-04-13 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 2144,
+      "subjects": 1072,
       "weibull_by_arm": {
         "placebo_folfiri": {
-          "scale": 9.526718227062716,
-          "shape": 1.3271051305453474
+          "scale": 6.8114778047198135,
+          "shape": 1.2776826143316853
         },
         "ramucirumab_folfiri": {
-          "scale": 13.101979931839066,
-          "shape": 1.2351923900055464
+          "scale": 8.246810477406692,
+          "shape": 1.3368423231468676
         }
       },
-      "weibull_max_diff": 0.7422178830962697,
+      "weibull_max_diff": 0.8155342866430518,
       "time_scale": "Months",
       "title": "A Study in Second Line Metastatic Colorectal Cancer",
       "condition_list": [
@@ -2834,21 +2903,22 @@
     {
       "identifier": "RECOURSE",
       "pubmed": "25970050",
+      "registration": "NCT01607957",
       "publication_date": "2015-05-14 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 1600,
+      "subjects": 800,
       "weibull_by_arm": {
         "placebo": {
-          "scale": 4.577726862746945,
-          "shape": 1.1474863072483479
+          "scale": 7.501213073395242,
+          "shape": 1.3950058827100156
         },
         "tas102": {
-          "scale": 6.513178700598647,
-          "shape": 1.2332198687646387
+          "scale": 9.758244271178215,
+          "shape": 1.530655280380222
         }
       },
-      "weibull_max_diff": 0.6874060391514106,
+      "weibull_max_diff": 0.7510135864664694,
       "time_scale": "Months",
       "title": "Study of TAS-102 in Patients With Metastatic Colorectal Cancer Refractory to Standard Chemotherapies",
       "condition_list": [
@@ -2858,21 +2928,22 @@
     {
       "identifier": "REVEL",
       "pubmed": "24933332",
+      "registration": "NCT01168973",
       "publication_date": "2014-06-02 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 2506,
+      "subjects": 1253,
       "weibull_by_arm": {
         "placebo_docetaxel": {
-          "scale": 8.746381547058048,
-          "shape": 1.0153955319653536
+          "scale": 5.221983031658977,
+          "shape": 1.1633998461117394
         },
         "ramucirumab_docetaxel": {
-          "scale": 10.480024614491194,
-          "shape": 1.1060309517851954
+          "scale": 6.6635469497272135,
+          "shape": 1.279365128837868
         }
       },
-      "weibull_max_diff": 0.8102519473246872,
+      "weibull_max_diff": 0.7616025403465446,
       "time_scale": "Months",
       "title": "A Study of Chemotherapy and Ramucirumab Versus Chemotherapy Alone in Second Line Non-Small Cell Lung Cancer (NSCLC) Participants Who Received Prior First Line Platinum-based Chemotherapy",
       "condition_list": [
@@ -2882,21 +2953,22 @@
     {
       "identifier": "ROSE",
       "pubmed": "25185099",
+      "registration": "NCT00703326",
       "publication_date": "2014-09-02 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 2288,
+      "subjects": 1144,
       "weibull_by_arm": {
         "pbo_doc": {
-          "scale": 21.884060747310365,
-          "shape": 1.1779833878910189
+          "scale": 11.53610953234385,
+          "shape": 1.2641232860454192
         },
         "ram_doc": {
-          "scale": 22.898211625840915,
-          "shape": 1.2438443387317037
+          "scale": 13.012706288333046,
+          "shape": 1.327678333005292
         }
       },
-      "weibull_max_diff": 0.9400946149842485,
+      "weibull_max_diff": 0.8743074645468384,
       "time_scale": "Months",
       "title": "Phase III Study of Docetaxel + Ramucirumab or Placebo in Breast Cancer",
       "condition_list": [
@@ -2906,6 +2978,7 @@
     {
       "identifier": "RTOG0415",
       "pubmed": "27044935",
+      "registration": null,
       "publication_date": "2016-04-04 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
@@ -2928,19 +3001,12 @@
     {
       "identifier": "RTOG0617",
       "pubmed": "25601342",
+      "registration": "NCT00533949",
       "publication_date": "2015-01-16 00:00:00",
-      "arms": 4,
+      "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 889,
+      "subjects": 465,
       "weibull_by_arm": {
-        "60gy": {
-          "scale": 36.03577658189805,
-          "shape": 1.393606007302837
-        },
-        "74gy": {
-          "scale": 27.750534037976966,
-          "shape": 1.2964543404470432
-        },
         "cetuximab": {
           "scale": 32.70551340647145,
           "shape": 1.2633729207296849
@@ -2950,7 +3016,7 @@
           "shape": 1.293220905662079
         }
       },
-      "weibull_max_diff": 0.7550546537881432,
+      "weibull_max_diff": 0.9543432467175639,
       "time_scale": "Months",
       "title": "High-Dose or Standard-Dose Radiation Therapy and Chemotherapy With or Without Cetuximab in Treating Patients With Newly Diagnosed Stage III Non-Small Cell Lung Cancer That Cannot Be Removed by Surgery",
       "condition_list": [
@@ -2961,6 +3027,7 @@
     {
       "identifier": "RTOG9804",
       "pubmed": "25605856",
+      "registration": "NCT00003857",
       "publication_date": "2015-01-20 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
@@ -2985,6 +3052,7 @@
     {
       "identifier": "SAKK",
       "pubmed": "26275735",
+      "registration": "NCT00030771",
       "publication_date": "2015-08-12 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
@@ -3009,21 +3077,22 @@
     {
       "identifier": "SAKK4106",
       "pubmed": "25605741",
+      "registration": "NCT00544700",
       "publication_date": "2015-01-20 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 524,
+      "subjects": 262,
       "weibull_by_arm": {
         "bev": {
-          "scale": 19.2416520583306,
-          "shape": 0.9409829439207315
+          "scale": 33.838583967848486,
+          "shape": 1.9665370049086224
         },
         "no_bev": {
-          "scale": 17.075555158634735,
-          "shape": 0.9080720110943096
+          "scale": 30.733962387534717,
+          "shape": 2.0000586309101234
         }
       },
-      "weibull_max_diff": 0.874987303745984,
+      "weibull_max_diff": 0.9110935681776872,
       "time_scale": "Months",
       "title": "Bevacizumab in Treating Patients Who Have Undergone First-Line Therapy for Metastatic Colorectal Cancer",
       "condition_list": [
@@ -3033,25 +3102,22 @@
     {
       "identifier": "SELECTBC",
       "pubmed": "26617202",
+      "registration": "University Hospital Medical Information Network Japan protocol ID C000000416",
       "publication_date": "2015-11-23 00:00:00",
-      "arms": 3,
+      "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 1184,
+      "subjects": 592,
       "weibull_by_arm": {
         "s-1": {
           "scale": 44.67294055143579,
           "shape": 1.46791296244211
         },
-        "s1": {
-          "scale": 12.622413792669809,
-          "shape": 0.9112398589902104
-        },
         "taxane": {
-          "scale": 28.537628842542134,
-          "shape": 0.9090301096607823
+          "scale": 46.24435105592767,
+          "shape": 1.3789752954627055
         }
       },
-      "weibull_max_diff": 0.24257986267712034,
+      "weibull_max_diff": 0.9817015557467643,
       "time_scale": "Months",
       "title": null,
       "condition_list": null
@@ -3059,6 +3125,7 @@
     {
       "identifier": "SIRFLOX",
       "pubmed": "26903575",
+      "registration": "NCT00724503",
       "publication_date": "2016-02-22 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
@@ -3085,6 +3152,7 @@
     {
       "identifier": "SMART",
       "pubmed": "27345639",
+      "registration": "ISRCTN72767336",
       "publication_date": "2016-06-23 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
@@ -3107,6 +3175,7 @@
     {
       "identifier": "SOFT",
       "pubmed": "25495490",
+      "registration": "NCT00066690",
       "publication_date": "2014-12-11 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
@@ -3138,21 +3207,22 @@
     {
       "identifier": "SQUIRE",
       "pubmed": "26045340",
+      "registration": "NCT00981058",
       "publication_date": "2015-06-02 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 2186,
+      "subjects": 1093,
       "weibull_by_arm": {
         "gem_cis": {
-          "scale": 10.782032364457438,
-          "shape": 1.1571487411398935
+          "scale": 14.432263847338989,
+          "shape": 1.2500432584526597
         },
         "necitumumab_gem_cis": {
-          "scale": 12.053132760856927,
-          "shape": 1.1955072532174589
+          "scale": 16.331746246386636,
+          "shape": 1.2981485889794881
         }
       },
-      "weibull_max_diff": 0.8854969731029723,
+      "weibull_max_diff": 0.8741444225575222,
       "time_scale": "Months",
       "title": "First-line Treatment of Participants With Stage IV Squamous Non-Small Cell Lung Cancer With Necitumumab and Gemcitabine-Cisplatin",
       "condition_list": [
@@ -3162,6 +3232,7 @@
     {
       "identifier": "TANIA",
       "pubmed": "25273342",
+      "registration": "NCT01250379",
       "publication_date": "2014-09-28 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
@@ -3186,21 +3257,22 @@
     {
       "identifier": "Tasquinimod",
       "pubmed": "27298414",
+      "registration": "NCT01234311",
       "publication_date": "2016-06-13 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 1735,
+      "subjects": 1158,
       "weibull_by_arm": {
         "placebo": {
-          "scale": 22.901270424922153,
-          "shape": 0.9983886449145419
+          "scale": 31.93362648373618,
+          "shape": 1.2688051445194395
         },
         "tasq": {
-          "scale": 22.383968406297246,
-          "shape": 1.1181223719372857
+          "scale": 29.17214308142884,
+          "shape": 1.3406502308301753
         }
       },
-      "weibull_max_diff": 0.9836709213391905,
+      "weibull_max_diff": 0.927775819893474,
       "time_scale": "Months",
       "title": "A Study of Tasquinimod in Men With Metastatic Castrate Resistant Prostate Cancer",
       "condition_list": [
@@ -3210,21 +3282,22 @@
     {
       "identifier": "TCOG0701",
       "pubmed": "25908605",
+      "registration": "UMIN000000608",
       "publication_date": "2015-04-23 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1192,
+      "subjects": 596,
       "weibull_by_arm": {
         "docetaxel_cis": {
-          "scale": 14.764213312527241,
-          "shape": 1.004698884182586
+          "scale": 23.75578018621354,
+          "shape": 1.261324726703294
         },
         "s1_cis": {
-          "scale": 13.82813444722896,
-          "shape": 0.9885228304239696
+          "scale": 23.372078912244508,
+          "shape": 1.2115068358993757
         }
       },
-      "weibull_max_diff": 0.9310237366964371,
+      "weibull_max_diff": 0.9721623042099504,
       "time_scale": "Months",
       "title": null,
       "condition_list": null
@@ -3232,6 +3305,7 @@
     {
       "identifier": "TEXT-SOFT(2)",
       "pubmed": "24881463",
+      "registration": "NCT00066703, NCT00066690 ",
       "publication_date": "2014-06-01 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
@@ -3254,21 +3328,22 @@
     {
       "identifier": "TH3RESA",
       "pubmed": "24793816",
+      "registration": "NCT01419197",
       "publication_date": "2014-05-02 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 1204,
+      "subjects": 602,
       "weibull_by_arm": {
         "physicians_choice": {
-          "scale": 19.296083229888026,
-          "shape": 1.3469062488590267
+          "scale": 19.46448516717345,
+          "shape": 1.3438003681576698
         },
         "trastuzumab_emtansine": {
-          "scale": 25.36873450897297,
-          "shape": 1.475698875410506
+          "scale": 26.69480858541251,
+          "shape": 1.4345859598819282
         }
       },
-      "weibull_max_diff": 0.7427733344874813,
+      "weibull_max_diff": 0.7166714711117969,
       "time_scale": "Months",
       "title": "A Study of Trastuzumab Emtansine in Comparison With Treatment of Physician's Choice in Participants With HER2-positive Breast Cancer Who Have Received at Least Two Prior Regimens of HER2-directed Therapy",
       "condition_list": [
@@ -3278,26 +3353,19 @@
     {
       "identifier": "TRAPEZE",
       "pubmed": "26794729",
+      "registration": "ISRCTN12808747",
       "publication_date": "2016-01-21 00:00:00",
-      "arms": 4,
+      "arms": 2,
       "disease": "prostate_cancer",
-      "subjects": 1514,
+      "subjects": 757,
       "weibull_by_arm": {
         "no_sr89": {
           "scale": 12.081821893425497,
           "shape": 1.3307820817354248
         },
-        "no_za": {
-          "scale": 12.45167444141812,
-          "shape": 1.2304217805795967
-        },
         "sr89": {
           "scale": 13.310362623526967,
           "shape": 1.21869872576313
-        },
-        "za": {
-          "scale": 12.872577134754346,
-          "shape": 1.3254224535839838
         }
       },
       "weibull_max_diff": 0.9309857132792448,
@@ -3308,6 +3376,7 @@
     {
       "identifier": "TRIBE",
       "pubmed": "26338525",
+      "registration": "NCT00719797",
       "publication_date": "2015-09-01 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
@@ -3332,21 +3401,22 @@
     {
       "identifier": "TRIBE(2)",
       "pubmed": "25337750",
+      "registration": "NCT00719797",
       "publication_date": "2014-10-23 00:00:00",
       "arms": 2,
       "disease": "colorectal_cancer",
-      "subjects": 1016,
+      "subjects": 508,
       "weibull_by_arm": {
         "folfiri_bevacizumab": {
-          "scale": 23.27130976369453,
-          "shape": 1.203086885941335
+          "scale": 33.92298331450049,
+          "shape": 1.5599327986594906
         },
         "folfoxiri_bevacizumab": {
-          "scale": 26.811605901674586,
-          "shape": 1.2158796392581603
+          "scale": 39.28503173749985,
+          "shape": 1.3863759771717665
         }
       },
-      "weibull_max_diff": 0.8651789915422565,
+      "weibull_max_diff": 0.8892850133412336,
       "time_scale": "Months",
       "title": "Combination Chemotherapy and Bevacizumab as First-Line Therapy in Treating Patients With Metastatic Colorectal Cancer",
       "condition_list": [
@@ -3356,6 +3426,7 @@
     {
       "identifier": "TROG0306",
       "pubmed": "27155740",
+      "registration": "NCT00110162",
       "publication_date": "2016-05-04 00:00:00",
       "arms": 2,
       "disease": "prostate_cancer",
@@ -3374,21 +3445,22 @@
     {
       "identifier": "TURANDOT",
       "pubmed": "27501767",
+      "registration": "NCT00600340",
       "publication_date": "2016-08-05 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
-      "subjects": 1128,
+      "subjects": 564,
       "weibull_by_arm": {
         "bev_capecitabine": {
-          "scale": 23.409626770321825,
-          "shape": 1.0152827876336035
+          "scale": 36.99175191066461,
+          "shape": 1.253195464657852
         },
         "bev_paclitaxel": {
-          "scale": 27.817795949959475,
-          "shape": 1.166187765212033
+          "scale": 40.01565495955538,
+          "shape": 1.3169501105900634
         }
       },
-      "weibull_max_diff": 0.803127678545206,
+      "weibull_max_diff": 0.9114357766165914,
       "time_scale": "Months",
       "title": "2-arm Trial of Paclitaxel Plus Bevacizumab vs. Capecitabine Plus Bevacizumab",
       "condition_list": [
@@ -3398,21 +3470,22 @@
     {
       "identifier": "VANTAGE014",
       "pubmed": "25800891",
+      "registration": "NCT00128102",
       "publication_date": "2015-03-20 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1322,
+      "subjects": 661,
       "weibull_by_arm": {
         "placebo": {
-          "scale": 23.589598765421705,
-          "shape": 0.9364730751517556
+          "scale": 10.449947303663231,
+          "shape": 1.3045917050220586
         },
         "vorinostat": {
-          "scale": 26.34867533534466,
-          "shape": 0.9785884339489221
+          "scale": 13.09548301197205,
+          "shape": 1.2314642484059963
         }
       },
-      "weibull_max_diff": 0.8803324155706448,
+      "weibull_max_diff": 0.8114054122066279,
       "time_scale": "Unknown",
       "title": "Suberoylanilide Hydroxamic Acid (Vorinostat, MK-0683) Versus Placebo in Advanced Malignant Pleural Mesothelioma (MK-0683-014)",
       "condition_list": [
@@ -3423,21 +3496,22 @@
     {
       "identifier": "WJOG5108L",
       "pubmed": "27022112",
+      "registration": "University Hospital Medical Information Network in Japan 000002014",
       "publication_date": "2016-03-28 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 1118,
+      "subjects": 559,
       "weibull_by_arm": {
         "erlotinib": {
-          "scale": 20.614091926639738,
-          "shape": 0.9389212788899175
+          "scale": 32.560777497767255,
+          "shape": 1.2437906990281196
         },
         "gefitinib": {
-          "scale": 19.588384674246225,
-          "shape": 0.9214294680300211
+          "scale": 32.014239861410935,
+          "shape": 1.2341303560267618
         }
       },
-      "weibull_max_diff": 0.9432269164327338,
+      "weibull_max_diff": 0.9809495707460612,
       "time_scale": "Months",
       "title": null,
       "condition_list": null
@@ -3445,21 +3519,22 @@
     {
       "identifier": "WJOG5208L",
       "pubmed": "26522337",
+      "registration": "UMIN000002015",
       "publication_date": "2015-10-28 00:00:00",
       "arms": 2,
       "disease": "lung_cancer",
-      "subjects": 698,
+      "subjects": 349,
       "weibull_by_arm": {
         "cisplatin_docetaxel": {
-          "scale": 10.942531443824327,
-          "shape": 1.0892310562814265
+          "scale": 5.927614140788438,
+          "shape": 1.421976926991651
         },
         "nedaplatin_docetaxel": {
-          "scale": 12.903737109538739,
-          "shape": 1.0896215906786064
+          "scale": 6.7896658295213035,
+          "shape": 1.3412152745064247
         }
       },
-      "weibull_max_diff": 0.8479103180994387,
+      "weibull_max_diff": 0.8866903007831959,
       "time_scale": "Months",
       "title": null,
       "condition_list": null
@@ -3467,6 +3542,7 @@
     {
       "identifier": "WSGAGO",
       "pubmed": "24827128",
+      "registration": "NCT02115204",
       "publication_date": "2014-05-14 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",
@@ -3491,6 +3567,7 @@
     {
       "identifier": "WSG-ARA",
       "pubmed": "24356620",
+      "registration": "NR",
       "publication_date": "2014-01-01 00:00:00",
       "arms": 2,
       "disease": "breast_cancer",

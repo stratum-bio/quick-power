@@ -2,6 +2,7 @@
   "meta": {
     "identifier": "BOLERO2",
     "pubmed": "25231953",
+    "registration": "NCT00863655",
     "publication_date": "2014-09-17 00:00:00",
     "arms": 2,
     "disease": "breast_cancer",

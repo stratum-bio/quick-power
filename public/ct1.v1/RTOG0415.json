@@ -2,6 +2,7 @@
   "meta": {
     "identifier": "RTOG0415",
     "pubmed": "27044935",
+    "registration": null,
     "publication_date": "2016-04-04 00:00:00",
     "arms": 2,
     "disease": "prostate_cancer",
