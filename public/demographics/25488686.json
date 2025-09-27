@@ -1169,24 +1169,24 @@
       ]
     },
     {
-      "original_label": "Other comorbiditiesa",
+      "original_label": "Other comorbidities",
       "standardized_name": "Other Comorbidities",
       "category": "Comorbidities",
       "group_data": [
         {
           "group_name": "CMF",
           "data_type": "header",
-          "raw_string": "Other comorbiditiesa"
+          "raw_string": "Other comorbidities"
         },
         {
           "group_name": "Docetaxel",
           "data_type": "header",
-          "raw_string": "Other comorbiditiesa"
+          "raw_string": "Other comorbidities"
         },
         {
           "group_name": "Total",
           "data_type": "header",
-          "raw_string": "Other comorbiditiesa"
+          "raw_string": "Other comorbidities"
         }
       ]
     },
@@ -1195,7 +1195,7 @@
       "standardized_name": "Hypertension",
       "category": "Comorbidities",
       "is_sub_characteristic": true,
-      "sub_characteristic_of": "Other comorbiditiesa",
+      "sub_characteristic_of": "Other comorbidities",
       "group_data": [
         {
           "group_name": "CMF",
@@ -1225,7 +1225,7 @@
       "standardized_name": "Arthropathy",
       "category": "Comorbidities",
       "is_sub_characteristic": true,
-      "sub_characteristic_of": "Other comorbiditiesa",
+      "sub_characteristic_of": "Other comorbidities",
       "group_data": [
         {
           "group_name": "CMF",
@@ -1255,7 +1255,7 @@
       "standardized_name": "Endocrine Disease or Dysmetabolism",
       "category": "Comorbidities",
       "is_sub_characteristic": true,
-      "sub_characteristic_of": "Other comorbiditiesa",
+      "sub_characteristic_of": "Other comorbidities",
       "group_data": [
         {
           "group_name": "CMF",
@@ -1285,7 +1285,7 @@
       "standardized_name": "Osteoporosis",
       "category": "Comorbidities",
       "is_sub_characteristic": true,
-      "sub_characteristic_of": "Other comorbiditiesa",
+      "sub_characteristic_of": "Other comorbidities",
       "group_data": [
         {
           "group_name": "CMF",
@@ -1315,7 +1315,7 @@
       "standardized_name": "Coronary Syndrome",
       "category": "Comorbidities",
       "is_sub_characteristic": true,
-      "sub_characteristic_of": "Other comorbiditiesa",
+      "sub_characteristic_of": "Other comorbidities",
       "group_data": [
         {
           "group_name": "CMF",
@@ -1345,7 +1345,7 @@
       "standardized_name": "Heart Rhythm Disease",
       "category": "Comorbidities",
       "is_sub_characteristic": true,
-      "sub_characteristic_of": "Other comorbiditiesa",
+      "sub_characteristic_of": "Other comorbidities",
       "group_data": [
         {
           "group_name": "CMF",
@@ -1375,7 +1375,7 @@
       "standardized_name": "Urinary Incontinence",
       "category": "Comorbidities",
       "is_sub_characteristic": true,
-      "sub_characteristic_of": "Other comorbiditiesa",
+      "sub_characteristic_of": "Other comorbidities",
       "group_data": [
         {
           "group_name": "CMF",
@@ -1405,7 +1405,7 @@
       "standardized_name": "Depression",
       "category": "Comorbidities",
       "is_sub_characteristic": true,
-      "sub_characteristic_of": "Other comorbiditiesa",
+      "sub_characteristic_of": "Other comorbidities",
       "group_data": [
         {
           "group_name": "CMF",
@@ -1435,7 +1435,7 @@
       "standardized_name": "Gastritis",
       "category": "Comorbidities",
       "is_sub_characteristic": true,
-      "sub_characteristic_of": "Other comorbiditiesa",
+      "sub_characteristic_of": "Other comorbidities",
       "group_data": [
         {
           "group_name": "CMF",
@@ -1465,7 +1465,7 @@
       "standardized_name": "Other Gastrointestinal Disease",
       "category": "Comorbidities",
       "is_sub_characteristic": true,
-      "sub_characteristic_of": "Other comorbiditiesa",
+      "sub_characteristic_of": "Other comorbidities",
       "group_data": [
         {
           "group_name": "CMF",
@@ -1495,7 +1495,7 @@
       "standardized_name": "Nephrolithiasis",
       "category": "Comorbidities",
       "is_sub_characteristic": true,
-      "sub_characteristic_of": "Other comorbiditiesa",
+      "sub_characteristic_of": "Other comorbidities",
       "group_data": [
         {
           "group_name": "CMF",
@@ -1525,7 +1525,7 @@
       "standardized_name": "Cholelithiasis",
       "category": "Comorbidities",
       "is_sub_characteristic": true,
-      "sub_characteristic_of": "Other comorbiditiesa",
+      "sub_characteristic_of": "Other comorbidities",
       "group_data": [
         {
           "group_name": "CMF",

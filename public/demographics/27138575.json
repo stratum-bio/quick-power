@@ -20,46 +20,6 @@
   ],
   "characteristics": [
     {
-      "original_label": "No. randomly assigned and treated",
-      "standardized_name": "Participant Count",
-      "time_point": "Baseline",
-      "is_sub_characteristic": false,
-      "group_data": [
-        {
-          "group_name": "Letrozole + Bevacizumab",
-          "data_type": "categorical_count_percentage",
-          "count": 173.0,
-          "percentage": 100.0,
-          "raw_string": "173 100"
-        },
-        {
-          "group_name": "Letrozole",
-          "data_type": "categorical_count_percentage",
-          "count": 170.0,
-          "percentage": 100.0,
-          "raw_string": "170 100"
-        }
-      ]
-    },
-    {
-      "original_label": "Patient and clinical factors",
-      "standardized_name": "Patient and clinical factors",
-      "time_point": "Baseline",
-      "is_sub_characteristic": false,
-      "group_data": [
-        {
-          "group_name": "Letrozole + Bevacizumab",
-          "data_type": "header",
-          "raw_string": ""
-        },
-        {
-          "group_name": "Letrozole",
-          "data_type": "header",
-          "raw_string": ""
-        }
-      ]
-    },
-    {
       "original_label": "Disease measurability",
       "standardized_name": "Disease Measurability",
       "time_point": "Baseline",

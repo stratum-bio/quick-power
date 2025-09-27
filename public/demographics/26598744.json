@@ -33,6 +33,116 @@
   ],
   "characteristics": [
     {
+      "original_label": "Age (range)",
+      "standardized_name": "Age",
+      "unit": "years",
+      "category": "Demographics",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "numeric_median_iqr",
+          "median": 51.0,
+          "raw_string": "51 (19-82)",
+          "notes": "Range is provided instead of IQR."
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "numeric_median_iqr",
+          "median": 51.0,
+          "raw_string": "51 (22-80)",
+          "notes": "Range is provided instead of IQR."
+        },
+        {
+          "group_name": "L",
+          "data_type": "numeric_median_iqr",
+          "median": 51.0,
+          "raw_string": "51 (19-82)",
+          "notes": "Range is provided instead of IQR."
+        },
+        {
+          "group_name": "T",
+          "data_type": "numeric_median_iqr",
+          "median": 51.0,
+          "raw_string": "51 (18-80)",
+          "notes": "Range is provided instead of IQR."
+        }
+      ]
+    },
+    {
+      "original_label": "< 65 years",
+      "standardized_name": "Age <65 years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 1879.0,
+          "percentage": 90.0,
+          "raw_string": "1,879 (90)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 1877.0,
+          "percentage": 90.0,
+          "raw_string": "1,877 (90)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 1889.0,
+          "percentage": 90.0,
+          "raw_string": "1,889 (90)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 1881.0,
+          "percentage": 90.0,
+          "raw_string": "1,881 (90)"
+        }
+      ]
+    },
+    {
+      "original_label": "≥ 65 years",
+      "standardized_name": "Age >=65 years",
+      "category": "Demographics",
+      "is_sub_characteristic": true,
+      "sub_characteristic_of": "Age",
+      "group_data": [
+        {
+          "group_name": "L+T",
+          "data_type": "categorical_count_percentage",
+          "count": 214.0,
+          "percentage": 10.0,
+          "raw_string": "214 (10)"
+        },
+        {
+          "group_name": "T→L",
+          "data_type": "categorical_count_percentage",
+          "count": 214.0,
+          "percentage": 10.0,
+          "raw_string": "214 (10)"
+        },
+        {
+          "group_name": "L",
+          "data_type": "categorical_count_percentage",
+          "count": 211.0,
+          "percentage": 10.0,
+          "raw_string": "211 (10)"
+        },
+        {
+          "group_name": "T",
+          "data_type": "categorical_count_percentage",
+          "count": 216.0,
+          "percentage": 10.0,
+          "raw_string": "216 (10)"
+        }
+      ]
+    },
+    {
       "original_label": "Region, No. (%)",
       "standardized_name": "Region",
       "category": "Demographics",
@@ -342,116 +452,6 @@
           "count": 66.0,
           "percentage": 3.0,
           "raw_string": "66 (3)"
-        }
-      ]
-    },
-    {
-      "original_label": "Age, years (range)",
-      "standardized_name": "Age",
-      "unit": "years",
-      "category": "Demographics",
-      "group_data": [
-        {
-          "group_name": "L+T",
-          "data_type": "numeric_median_iqr",
-          "median": 51.0,
-          "raw_string": "51 (19-82)",
-          "notes": "Range is provided instead of IQR."
-        },
-        {
-          "group_name": "T→L",
-          "data_type": "numeric_median_iqr",
-          "median": 51.0,
-          "raw_string": "51 (22-80)",
-          "notes": "Range is provided instead of IQR."
-        },
-        {
-          "group_name": "L",
-          "data_type": "numeric_median_iqr",
-          "median": 51.0,
-          "raw_string": "51 (19-82)",
-          "notes": "Range is provided instead of IQR."
-        },
-        {
-          "group_name": "T",
-          "data_type": "numeric_median_iqr",
-          "median": 51.0,
-          "raw_string": "51 (18-80)",
-          "notes": "Range is provided instead of IQR."
-        }
-      ]
-    },
-    {
-      "original_label": "< 65 years",
-      "standardized_name": "Age <65 years",
-      "category": "Demographics",
-      "is_sub_characteristic": true,
-      "sub_characteristic_of": "Age",
-      "group_data": [
-        {
-          "group_name": "L+T",
-          "data_type": "categorical_count_percentage",
-          "count": 1879.0,
-          "percentage": 90.0,
-          "raw_string": "1,879 (90)"
-        },
-        {
-          "group_name": "T→L",
-          "data_type": "categorical_count_percentage",
-          "count": 1877.0,
-          "percentage": 90.0,
-          "raw_string": "1,877 (90)"
-        },
-        {
-          "group_name": "L",
-          "data_type": "categorical_count_percentage",
-          "count": 1889.0,
-          "percentage": 90.0,
-          "raw_string": "1,889 (90)"
-        },
-        {
-          "group_name": "T",
-          "data_type": "categorical_count_percentage",
-          "count": 1881.0,
-          "percentage": 90.0,
-          "raw_string": "1,881 (90)"
-        }
-      ]
-    },
-    {
-      "original_label": "≥ 65 years",
-      "standardized_name": "Age >=65 years",
-      "category": "Demographics",
-      "is_sub_characteristic": true,
-      "sub_characteristic_of": "Age",
-      "group_data": [
-        {
-          "group_name": "L+T",
-          "data_type": "categorical_count_percentage",
-          "count": 214.0,
-          "percentage": 10.0,
-          "raw_string": "214 (10)"
-        },
-        {
-          "group_name": "T→L",
-          "data_type": "categorical_count_percentage",
-          "count": 214.0,
-          "percentage": 10.0,
-          "raw_string": "214 (10)"
-        },
-        {
-          "group_name": "L",
-          "data_type": "categorical_count_percentage",
-          "count": 211.0,
-          "percentage": 10.0,
-          "raw_string": "211 (10)"
-        },
-        {
-          "group_name": "T",
-          "data_type": "categorical_count_percentage",
-          "count": 216.0,
-          "percentage": 10.0,
-          "raw_string": "216 (10)"
         }
       ]
     },

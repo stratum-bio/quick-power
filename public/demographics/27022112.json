@@ -105,8 +105,7 @@
       "standardized_name": "Age Category",
       "category": "≥ 65 years",
       "time_point": "Baseline",
-      "is_sub_characteristic": true,
-      "sub_characteristic_of": "Age Category",
+      "is_sub_characteristic": false,
       "group_data": [
         {
           "group_name": "Erlotinib",

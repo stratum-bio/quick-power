@@ -70,6 +70,81 @@
       ]
     },
     {
+      "original_label": "Prior Radiotherapy n (%)",
+      "standardized_name": "Prior Radiotherapy",
+      "category": "Medical History",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Economic analysis subset",
+          "data_type": "categorical_count_percentage",
+          "count": 331.0,
+          "percentage": 44.3,
+          "raw_string": "331 (44.30%)"
+        },
+        {
+          "group_name": "All TRAPEZE trial participants",
+          "data_type": "categorical_count_percentage",
+          "count": 337.0,
+          "percentage": 44.87,
+          "raw_string": "337 (44.87%)"
+        }
+      ]
+    },
+    {
+      "original_label": "Daily Present Pain Index (scale 0.5) median (IQR)",
+      "standardized_name": "Daily Present Pain Index",
+      "unit": "score",
+      "category": "Clinical Assessment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Economic analysis subset",
+          "data_type": "numeric_median_iqr",
+          "median": 1.43,
+          "iqr_min": 0.86,
+          "iqr_max": 2.0,
+          "raw_string": "1.43 (0.86, 2.00)"
+        },
+        {
+          "group_name": "All TRAPEZE trial participants",
+          "data_type": "numeric_median_iqr",
+          "median": 1.43,
+          "iqr_min": 0.86,
+          "iqr_max": 2.0,
+          "raw_string": "1.43 (0.86, 2.00)"
+        }
+      ]
+    },
+    {
+      "original_label": "Daily Analgesic Score median (IQR)",
+      "standardized_name": "Daily Analgesic Score",
+      "unit": "score",
+      "category": "Clinical Assessment",
+      "time_point": "Baseline",
+      "is_sub_characteristic": false,
+      "group_data": [
+        {
+          "group_name": "Economic analysis subset",
+          "data_type": "numeric_median_iqr",
+          "median": 10.01,
+          "iqr_min": 0.86,
+          "iqr_max": 27.63,
+          "raw_string": "10.01 (0.86, 27.63)"
+        },
+        {
+          "group_name": "All TRAPEZE trial participants",
+          "data_type": "numeric_median_iqr",
+          "median": 10.21,
+          "iqr_min": 0.88,
+          "iqr_max": 27.89,
+          "raw_string": "10.21 (0.88, 27.89)"
+        }
+      ]
+    },
+    {
       "original_label": "ECOG n(%)",
       "standardized_name": "ECOG Performance Status",
       "category": "Clinical Assessment",
@@ -157,81 +232,6 @@
           "count": 63.0,
           "percentage": 8.32,
           "raw_string": "63 (8.32)"
-        }
-      ]
-    },
-    {
-      "original_label": "Prior Radiotherapy n (%)",
-      "standardized_name": "Prior Radiotherapy",
-      "category": "Medical History",
-      "time_point": "Baseline",
-      "is_sub_characteristic": false,
-      "group_data": [
-        {
-          "group_name": "Economic analysis subset",
-          "data_type": "categorical_count_percentage",
-          "count": 331.0,
-          "percentage": 44.3,
-          "raw_string": "331 (44.30%)"
-        },
-        {
-          "group_name": "All TRAPEZE trial participants",
-          "data_type": "categorical_count_percentage",
-          "count": 337.0,
-          "percentage": 44.87,
-          "raw_string": "337 (44.87%)"
-        }
-      ]
-    },
-    {
-      "original_label": "Daily Present Pain Index (scale 0.5) median (IQR)",
-      "standardized_name": "Daily Present Pain Index",
-      "unit": "score",
-      "category": "Clinical Assessment",
-      "time_point": "Baseline",
-      "is_sub_characteristic": false,
-      "group_data": [
-        {
-          "group_name": "Economic analysis subset",
-          "data_type": "numeric_median_iqr",
-          "median": 1.43,
-          "iqr_min": 0.86,
-          "iqr_max": 2.0,
-          "raw_string": "1.43 (0.86, 2.00)"
-        },
-        {
-          "group_name": "All TRAPEZE trial participants",
-          "data_type": "numeric_median_iqr",
-          "median": 1.43,
-          "iqr_min": 0.86,
-          "iqr_max": 2.0,
-          "raw_string": "1.43 (0.86, 2.00)"
-        }
-      ]
-    },
-    {
-      "original_label": "Daily Analgesic Score median (IQR)",
-      "standardized_name": "Daily Analgesic Score",
-      "unit": "score",
-      "category": "Clinical Assessment",
-      "time_point": "Baseline",
-      "is_sub_characteristic": false,
-      "group_data": [
-        {
-          "group_name": "Economic analysis subset",
-          "data_type": "numeric_median_iqr",
-          "median": 10.01,
-          "iqr_min": 0.86,
-          "iqr_max": 27.63,
-          "raw_string": "10.01 (0.86, 27.63)"
-        },
-        {
-          "group_name": "All TRAPEZE trial participants",
-          "data_type": "numeric_median_iqr",
-          "median": 10.21,
-          "iqr_min": 0.88,
-          "iqr_max": 27.89,
-          "raw_string": "10.21 (0.88, 27.89)"
         }
       ]
     }
