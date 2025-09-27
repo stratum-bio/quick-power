@@ -30,7 +30,7 @@ export const ValidatedInputField: React.FC<ValidatedInputFieldProps> = ({
   }
 
   return (
-    <div className="mb-4 flex flex-col items-center lg:items-end">
+    <div className="mb-4 flex flex-col items-center">
       <div className="block text-left w-48">
         <label
           className="block font-medium text-gray-700 mb-1"

@@ -74,8 +74,8 @@ const SchoenfeldEventCount: React.FC<SchoenfeldEventCountProps> = ({
   );
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 items-center lg:items-end">
-      <div className="text-right">
+    <div className="grid grid-cols-1 md:grid-cols-2 items-end">
+      <div className="shrink">
         <form>
           <ValidatedInputField
             max={0.5}
@@ -111,7 +111,7 @@ const SchoenfeldEventCount: React.FC<SchoenfeldEventCountProps> = ({
             value={parameters.group1Proportion}
             onValueChange={group1Change}
           />
-          <div className="mb-4 flex flex-col items-center lg:items-end">
+          <div className="mb-4 flex flex-col items-center">
             <div className="block w-48 text-left">
               <label
                 className="block font-medium text-gray-700 mb-1"

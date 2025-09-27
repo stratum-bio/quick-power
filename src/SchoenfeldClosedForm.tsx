@@ -110,7 +110,7 @@ const SchoenfeldClosedForm: React.FC = () => {
           (control)
         </p>
       </div>
-      <div className="px-8 lg:w-3/4">
+      <div className="mx-auto lg:w-2/3">
         <SchoenfeldEventCount
           parameters={parameters}
           setParameters={setParameters}
@@ -132,7 +132,7 @@ const SchoenfeldClosedForm: React.FC = () => {
           proportion of patients randomized to each treatment.
         </p>
       </div>
-      <div className="px-8 lg:w-3/4">
+      <div className="mx-auto lg:w-2/3">
         <SchoenfeldSampleSize
           parameters={parameters}
           setParameters={setParameters}
