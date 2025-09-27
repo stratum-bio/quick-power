@@ -12,13 +12,13 @@ const LandingPage: React.FC = () => {
         <div className="flex flex-col md:flex-row gap-8 justify-center items-center w-full md:w-xl">
           <Link
             to="/trials"
-            className="flex flex-col items-center justify-center p-8 bg-white rounded-md shadow-xl shadow-gemini-blue/30 ring ring-gemini-blue transition-shadow duration-300 cursor-pointer w-80 h-30 text-center hover:bg-medium-azure-alpha"
+            className="flex flex-col items-center justify-center p-8 bg-white rounded-md shadow-xl shadow-gemini-blue/30 ring ring-gemini-blue transition-shadow duration-300 cursor-pointer w-80 h-30 text-center hover:bg-table-hl"
           >
             <p className="text-xl text-gray-700">An Existing Trial</p>
           </Link>
           <Link
             to="/schoenfeld"
-            className="flex flex-col items-center justify-center p-8 bg-white rounded-md shadow-xl shadow-gemini-blue/30 ring ring-gemini-blue transition-shadow duration-300 cursor-pointer w-80 h-30 text-center hover:bg-medium-azure-alpha"
+            className="flex flex-col items-center justify-center p-8 bg-white rounded-md shadow-xl shadow-gemini-blue/30 ring ring-gemini-blue transition-shadow duration-300 cursor-pointer w-80 h-30 text-center hover:bg-table-hl"
           >
             <p className="text-xl text-gray-700">Custom Parameters</p>
           </Link>

@@ -89,7 +89,7 @@ const TrialList: React.FC = () => {
               className="m-4 mb-6 shadow-lg shadow-gemini-blue/30 irounded-lg md:w-196"
             >
               <h2
-                className={`text-xl font-bold text-left cursor-pointer border border-gemini-blue ${!collapsedStates[disease] ? "rounded-t-sm bg-gemini-blue text-white hover:bg-gemini-blue-hover" : "rounded-sm hover:bg-medium-azure-alpha"} p-4 flex justify-between items-center`}
+                className={`text-xl font-bold text-left cursor-pointer border border-gemini-blue ${!collapsedStates[disease] ? "rounded-t-sm bg-gemini-blue text-white hover:bg-gemini-blue-hover" : "rounded-sm hover:bg-table-hl"} p-4 flex justify-between items-center`}
                 onClick={() => toggleCollapse(disease)}
               >
                 <span>
@@ -123,7 +123,7 @@ const TrialList: React.FC = () => {
                         <Link
                           to={`/trial-detail/${trial.identifier}`}
                           key={trial.identifier}
-                          className={`grid pr-4 ${idx % 2 == 0 ? "bg-gray-100" : ""} hover:bg-medium-azure-alpha`}
+                          className={`grid pr-4 ${idx % 2 == 0 ? "bg-gray-100" : ""} hover:bg-table-hl`}
                         >
                           {trial.title && (
                             <div className="text-left italic mt-4 ml-4">
