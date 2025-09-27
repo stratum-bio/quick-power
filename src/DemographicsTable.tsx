@@ -90,18 +90,21 @@ const DemographicsTable: React.FC<DemographicsTableProps> = ({ pubmed, showTitle
         }}
       >
         {/* Header Row */}
-        <div className="font-bold p-4">Characteristic</div>
-        {studyTable.groups.map((group, index) => (
-          <div key={index} className="font-bold text-center">
-            {group.name} (N={group.n})
-          </div>
-        ))}
+        <div className="bg-table-hl grid gap-x-4 items-center col-span-full rounded-t-md"
+             style={{ gridTemplateColumns: `repeat(${groupCount + 1}, minmax(0, 1fr))` }}>
+          <div className="font-bold p-4">Characteristic</div>
+          {studyTable.groups.map((group, index) => (
+            <div key={index} className="font-bold text-center">
+              {group.name} (N={group.n})
+            </div>
+          ))}
+        </div>
 
         {/* Characteristics */}
         {studyTable.characteristics.map((characteristic, charIndex) => (
           <div
             key={charIndex}
-            className={`pl-4 hover:bg-medium-azure-alpha col-span-full ${characteristic.group_data[0]?.data_type === DataType.Header ? "bg-medium-azure-alpha" : ""}`}
+            className={`pl-4 col-span-full ${characteristic.group_data[0]?.data_type === DataType.Header ? "border-b border-t" : "hover:bg-table-hl"}`}
           >
             <div
               className={`grid gap-x-4 items-center`}
