@@ -8,14 +8,28 @@ import AppError from "./AppError"; // Import the AppError component
 import { DISEASE_VAL_TO_NAME } from "./constants";
 
 const TrialList: React.FC = () => {
-  const [trialIndex, setTrialIndex] = useState<TrialIndex | null>(null);
+  const [trialIndex, setTrialIndex] = useState<TrialIndex | null>(() => {
+    const savedTrialIndex = localStorage.getItem("trialIndex");
+    return savedTrialIndex ? JSON.parse(savedTrialIndex) : null;
+  });
   const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(() => {
+    const savedError = localStorage.getItem("error");
+    return savedError ? JSON.parse(savedError) : null;
+  });
   const [collapsedStates, setCollapsedStates] = useState<
     Record<string, boolean>
-  >({});
+  >(() => {
+    const savedCollapsedStates = localStorage.getItem("collapsedStates");
+    return savedCollapsedStates ? JSON.parse(savedCollapsedStates) : {};
+  });
 
   useEffect(() => {
+    if (trialIndex && Object.keys(collapsedStates).length > 0) {
+      setLoading(false);
+      return;
+    }
+
     const fetchTrials = async () => {
       try {
         const response = await fetch("/ct1.v1/index.json");
@@ -25,12 +39,17 @@ const TrialList: React.FC = () => {
         const data: TrialIndex = await response.json();
         setTrialIndex(data);
 
-        // Initialize all disease sections as collapsed
-        const initialCollapsedStates: Record<string, boolean> = {};
-        data.trials.forEach((trial) => {
-          initialCollapsedStates[trial.disease] = true;
+        // Initialize all disease sections as collapsed if no saved state
+        setCollapsedStates((prevState) => {
+          if (Object.keys(prevState).length === 0) {
+            const initialCollapsedStates: Record<string, boolean> = {};
+            data.trials.forEach((trial) => {
+              initialCollapsedStates[trial.disease] = true;
+            });
+            return initialCollapsedStates;
+          }
+          return prevState;
         });
-        setCollapsedStates(initialCollapsedStates);
       } catch (e: unknown) {
         if (e instanceof Error) {
           setError("Index data not found");
@@ -43,7 +62,19 @@ const TrialList: React.FC = () => {
     };
 
     fetchTrials();
-  }, []);
+  }, [trialIndex, collapsedStates]);
+
+  useEffect(() => {
+    localStorage.setItem("collapsedStates", JSON.stringify(collapsedStates));
+  }, [collapsedStates]);
+
+  useEffect(() => {
+    localStorage.setItem("trialIndex", JSON.stringify(trialIndex));
+  }, [trialIndex]);
+
+  useEffect(() => {
+    localStorage.setItem("error", JSON.stringify(error));
+  }, [error]);
 
   const toggleCollapse = (disease: string) => {
     setCollapsedStates((prevState) => ({
