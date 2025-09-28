@@ -74,6 +74,27 @@ const DemographicsTable: React.FC<DemographicsTableProps> = ({
 
   const groupCount = studyTable.groups.length;
 
+  const hasChildren = new Set();
+  for (const char of studyTable.characteristics) {
+    if (char.is_sub_characteristic && char.sub_characteristic_of) {
+      hasChildren.add(char.sub_characteristic_of);
+    }
+  }
+
+  let currentColor = "bg-gray-100";
+  let otherColor = "bg-white";
+  const charColors: string[] = [];
+  const fontWeights: string[] = [];
+  for (const char of studyTable.characteristics) {
+    let weight = "";
+    if (!char.is_sub_characteristic) {
+      [currentColor, otherColor] = [otherColor, currentColor];
+      weight = "font-semibold";
+    }
+    charColors.push(currentColor);
+    fontWeights.push(weight);
+  }
+
   return (
     <div className="mt-8 max-w-3xl">
       <h2 className="text-xl font-semibold mb-4">
@@ -111,7 +132,7 @@ const DemographicsTable: React.FC<DemographicsTableProps> = ({
         {studyTable.characteristics.map((characteristic, charIndex) => (
           <div
             key={charIndex}
-            className={`pl-4 col-span-full ${characteristic.group_data[0]?.data_type === DataType.Header ? "border-b border-t" : "hover:bg-table-hl"}`}
+            className={`pl-4 col-span-full ${charColors[charIndex]} ${characteristic.group_data[0]?.data_type === DataType.Header ? "font-medium" : "hover:bg-table-hl"}`}
           >
             <div
               className={`grid gap-x-4 items-center`}
@@ -120,7 +141,7 @@ const DemographicsTable: React.FC<DemographicsTableProps> = ({
               }}
             >
               <div
-                className={`${characteristic.is_sub_characteristic ? "pl-4" : ""} ${characteristic.group_data[0]?.data_type === DataType.Header ? "pt-1 pb-1 font-semibold col-span-3" : "col-span-1"}`}
+                className={`${characteristic.is_sub_characteristic ? "pl-4" : ""} ${fontWeights[charIndex]} ${characteristic.group_data[0]?.data_type === DataType.Header ? "pt-1 pb-1 col-span-3" : "col-span-1"}`}
               >
                 {characteristic.original_label}{" "}
                 {characteristic.unit ? `(${characteristic.unit})` : ""}
