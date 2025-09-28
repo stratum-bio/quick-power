@@ -122,7 +122,7 @@ const DemographicsTable: React.FC<DemographicsTableProps> = ({
         >
           <div className="font-bold p-4">Characteristic</div>
           {studyTable.groups.map((group, index) => (
-            <div key={index} className="font-bold text-center">
+            <div key={index} className="font-bold text-right pr-2">
               {group.name} (N={group.n})
             </div>
           ))}
@@ -148,7 +148,7 @@ const DemographicsTable: React.FC<DemographicsTableProps> = ({
               </div>
               {characteristic.group_data[0]?.data_type != DataType.Header &&
                 characteristic.group_data.map((data, dataIndex) => (
-                  <div key={dataIndex} className="col-span-1 text-center">
+                  <div key={dataIndex} className="col-span-1 text-right pr-2">
                     {renderGroupData(data)}
                   </div>
                 ))}
