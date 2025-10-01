@@ -22,7 +22,8 @@
     "title": "2-arm Trial of Paclitaxel Plus Bevacizumab vs. Capecitabine Plus Bevacizumab",
     "condition_list": [
       "Metastatic Breast Cancer"
-    ]
+    ],
+    "data_index": null
   },
   "arms": [
     {

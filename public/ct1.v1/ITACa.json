@@ -22,7 +22,8 @@
     "title": "Sequential Treatment Strategy for Metastatic Colorectal Cancer",
     "condition_list": [
       "Metastatic Colorectal Cancer"
-    ]
+    ],
+    "data_index": null
   },
   "arms": [
     {

@@ -25,7 +25,8 @@
       "Carcinoma, Adenosquamous",
       "Carcinoma, Large Cell",
       "Carcinoma, Non-Small-Cell Lung"
-    ]
+    ],
+    "data_index": null
   },
   "arms": [
     {

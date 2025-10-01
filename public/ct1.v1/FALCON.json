@@ -22,7 +22,8 @@
     "title": "A Global Study to Compare the Effects of Fulvestrant and Arimidex in a Subset of Patients With Breast Cancer.",
     "condition_list": [
       "Hormone Receptor Positive Breast Cancer"
-    ]
+    ],
+    "data_index": null
   },
   "arms": [
     {

@@ -22,7 +22,8 @@
     "title": "Clinical Trials of Adjuvant Androgen Deprivation in Localized Prostate Cancer",
     "condition_list": [
       "Prostate Adenocarcinoma"
-    ]
+    ],
+    "data_index": null
   },
   "arms": [
     {

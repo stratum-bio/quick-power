@@ -26,7 +26,8 @@
     "title": "Neo ALTTO (Neoadjuvant Lapatinib and/or Trastuzumab Treatment Optimisation) Study",
     "condition_list": [
       "Neoplasms, Breast"
-    ]
+    ],
+    "data_index": null
   },
   "arms": [
     {

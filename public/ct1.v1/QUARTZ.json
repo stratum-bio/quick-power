@@ -20,7 +20,8 @@
     "weibull_max_diff": 0.9017639995989009,
     "time_scale": "Unknown",
     "title": null,
-    "condition_list": null
+    "condition_list": null,
+    "data_index": null
   },
   "arms": [
     {

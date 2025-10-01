@@ -24,7 +24,8 @@
       "Colorectal Cancer",
       "Colorectal Carcinoma",
       "Liver Metastases"
-    ]
+    ],
+    "data_index": null
   },
   "arms": [
     {

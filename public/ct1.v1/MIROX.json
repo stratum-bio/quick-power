@@ -24,7 +24,8 @@
       "Colorectal Cancer",
       "Metastatic Cancer",
       "Chemotherapy"
-    ]
+    ],
+    "data_index": null
   },
   "arms": [
     {
