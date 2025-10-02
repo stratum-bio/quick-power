@@ -1,3 +1,5 @@
+import { ParsedFactor } from "./demo_types.d";
+
 export interface Weibull {
   scale: number;
   shape: number;
@@ -7,6 +9,11 @@ export interface TrialArmData {
   events: boolean[];
   time: number[];
   arm_name: string;
+}
+
+export interface TrialDataIndex {
+  age: ParsedFactor[];
+  ecog: ParsedFactor[];
 }
 
 export interface TrialMeta {
@@ -21,6 +28,7 @@ export interface TrialMeta {
   time_scale: string;
   title: string | null;
   condition_list: string[] | null;
+  data_index: TrialDataIndex | null;
 }
 
 export interface Trial {
