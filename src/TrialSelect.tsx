@@ -5,8 +5,7 @@ import CitationFooter from "./CitationFooter";
 import AppError from "./AppError"; // Import the AppError component
 
 import { DISEASE_VAL_TO_NAME } from "./constants";
-import FactorRangeInput from "./FactorRangeInput";
-import { AgeFactors } from "./data/filter-factor-age";
+import TrialFilter from "./TrialFilter";
 import TrialList from "./TrialList"; // Import the new component
 
 const TrialSelect: React.FC = () => {
@@ -95,7 +94,7 @@ const TrialSelect: React.FC = () => {
 
   return (
     <div className="w-full mt-4">
-      <FactorRangeInput factors={AgeFactors} />
+      <TrialFilter />
       <h2 className="text-3xl m-4 mb-8 text-black text-left">
         Find a reference trial for sample size estimation
       </h2>
