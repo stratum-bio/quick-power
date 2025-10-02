@@ -27,9 +27,7 @@ const TrialListItem: React.FC<TrialListItemProps> = ({ trial, idx }) => {
         <div>{trial.subjects}</div>
         <div>{trial.arms}</div>
         <div>
-          {trial.weibull_max_diff
-            ? trial.weibull_max_diff.toFixed(3)
-            : "N/A"}
+          {trial.weibull_max_diff ? trial.weibull_max_diff.toFixed(3) : "N/A"}
         </div>
       </div>
     </Link>

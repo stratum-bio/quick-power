@@ -18,7 +18,9 @@ const TrialFilter: React.FC<TrialFilterProps> = ({ onApplyFilter }) => {
   const [selectedDisease, setSelectedDisease] = useState<string>(
     Object.keys(DISEASE_VAL_TO_NAME)[0],
   );
-  const [selectedFactor, setSelectedFactor] = useState<FactorType>(FactorType.AGE);
+  const [selectedFactor, setSelectedFactor] = useState<FactorType>(
+    FactorType.AGE,
+  );
 
   const handleDiseaseChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedDisease(event.target.value);
@@ -69,13 +71,19 @@ const TrialFilter: React.FC<TrialFilterProps> = ({ onApplyFilter }) => {
       <h2 className="option-label">Select target distribution</h2>
 
       <div className="max-w-lg">
-      {selectedFactor === FactorType.AGE && (
-        <FactorRangeInput factors={AgeFactors} onValuesChange={handleFactorRangeChange} />
-      )}
+        {selectedFactor === FactorType.AGE && (
+          <FactorRangeInput
+            factors={AgeFactors}
+            onValuesChange={handleFactorRangeChange}
+          />
+        )}
 
-      {selectedFactor === FactorType.ECOG && (
-        <FactorRangeInput factors={ECOGFactors} onValuesChange={handleFactorRangeChange} />
-      )}
+        {selectedFactor === FactorType.ECOG && (
+          <FactorRangeInput
+            factors={ECOGFactors}
+            onValuesChange={handleFactorRangeChange}
+          />
+        )}
       </div>
       <div className="text-right">
         <button

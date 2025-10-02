@@ -186,22 +186,19 @@ const SimulateFromTrial: React.FC = () => {
       </div>
 
       <div className="max-w-3xl">
-      <OptionalForm heading="Prognostic Factors">
-        <PrognosticFactorAllocation
-          onUpdate={handlePrognosticFactorUpdate}
-          disease={trialData.meta.disease as DiseaseType}
-        />
-      </OptionalForm>
+        <OptionalForm heading="Prognostic Factors">
+          <PrognosticFactorAllocation
+            onUpdate={handlePrognosticFactorUpdate}
+            disease={trialData.meta.disease as DiseaseType}
+          />
+        </OptionalForm>
       </div>
 
       <div className="mt-8 p-4 ring ring-gemini-blue shadow-gemini-blue/30 rounded-sm shadow-md bg-white max-w-3xl">
         <h2 className="text-xl font-semibold mb-4">Simulation Parameters</h2>
         <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label
-              htmlFor="controlArm"
-              className="option-label"
-            >
+            <label htmlFor="controlArm" className="option-label">
               Control Arm
             </label>
             <select
@@ -220,10 +217,7 @@ const SimulateFromTrial: React.FC = () => {
             </select>
           </div>
           <div>
-            <label
-              htmlFor="treatmentArm"
-              className="option-label"
-            >
+            <label htmlFor="treatmentArm" className="option-label">
               Treatment Arm
             </label>
             <select
@@ -242,10 +236,7 @@ const SimulateFromTrial: React.FC = () => {
             </select>
           </div>
           <div>
-            <label
-              htmlFor="controlHazardRatio"
-              className="option-label"
-            >
+            <label htmlFor="controlHazardRatio" className="option-label">
               Control Hazard Adjustment Multiplier
             </label>
             <input
@@ -261,10 +252,7 @@ const SimulateFromTrial: React.FC = () => {
             />
           </div>
           <div>
-            <label
-              htmlFor="treatHazardRatio"
-              className="option-label"
-            >
+            <label htmlFor="treatHazardRatio" className="option-label">
               Treatment Hazard Adjustment Multiplier
             </label>
             <input
@@ -278,10 +266,7 @@ const SimulateFromTrial: React.FC = () => {
             />
           </div>
           <div>
-            <label
-              htmlFor="accrualPeriod"
-              className="option-label"
-            >
+            <label htmlFor="accrualPeriod" className="option-label">
               Enrollment Period
             </label>
             <input
@@ -295,10 +280,7 @@ const SimulateFromTrial: React.FC = () => {
             />
           </div>
           <div>
-            <label
-              htmlFor="followUpPeriod"
-              className="option-label"
-            >
+            <label htmlFor="followUpPeriod" className="option-label">
               Follow-up Period
             </label>
             <input
@@ -312,10 +294,7 @@ const SimulateFromTrial: React.FC = () => {
             />
           </div>
           <div>
-            <label
-              htmlFor="largestSampleSize"
-              className="option-label"
-            >
+            <label htmlFor="largestSampleSize" className="option-label">
               Largest Sample Size
             </label>
             <input

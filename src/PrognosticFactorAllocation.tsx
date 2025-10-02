@@ -230,10 +230,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
         </Link>
       </p>
       <div className="mb-4">
-        <label
-          htmlFor="biomarker-select"
-          className="option-label"
-        >
+        <label htmlFor="biomarker-select" className="option-label">
           Biomarker
         </label>
         <select
@@ -254,10 +251,7 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
       </div>
       {selectedBiomarker && currentRefList && currentRefList.length > 1 && (
         <div className="mb-4">
-          <label
-            htmlFor="biomarker-ref-select"
-            className="option-label"
-          >
+          <label htmlFor="biomarker-ref-select" className="option-label">
             Available reference group
           </label>
           <select

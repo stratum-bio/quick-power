@@ -6,7 +6,11 @@ interface OptionalFormProps {
   color?: string;
 }
 
-const OptionalForm: React.FC<OptionalFormProps> = ({ heading, children, color }) => {
+const OptionalForm: React.FC<OptionalFormProps> = ({
+  heading,
+  children,
+  color,
+}) => {
   const [showContent, setShowContent] = useState<boolean>(false);
 
   return (

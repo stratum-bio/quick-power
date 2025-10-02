@@ -7,8 +7,10 @@ interface FactorRangeInputProps {
   onValuesChange: (query: FactorQuery) => void;
 }
 
-
-function valuesToQuery(rangeByName: Record<string, Range>, valuesByName: Record<string, number>): FactorQuery {
+function valuesToQuery(
+  rangeByName: Record<string, Range>,
+  valuesByName: Record<string, number>,
+): FactorQuery {
   const intervals: Range[] = [];
   const values: number[] = [];
   for (const [name, interval] of Object.entries(rangeByName)) {
@@ -19,17 +21,20 @@ function valuesToQuery(rangeByName: Record<string, Range>, valuesByName: Record<
   return {
     intervals: intervals,
     values: values,
-  }
+  };
 }
 
 const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
   factors,
   onValuesChange,
 }) => {
-  const factorByName = factors.reduce((acc, f) => {
-    acc[rangeToString(f)] = f;
-    return acc;
-  }, {} as {[key: string]: Range});
+  const factorByName = factors.reduce(
+    (acc, f) => {
+      acc[rangeToString(f)] = f;
+      return acc;
+    },
+    {} as { [key: string]: Range },
+  );
   const groupNames = Object.keys(factorByName);
   const initialValues = Array.from(groupNames).reduce(
     (acc, name) => ({
@@ -63,36 +68,36 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
       const activeGroupNames = Array.from(groupNames).filter(
         (groupName) => newState[groupName],
       );
-              const numActiveGroups = activeGroupNames.length;
-      
-              if (numActiveGroups === 0) {
-                const newSliderValues = Array.from(groupNames).reduce(
-                  (acc, groupName) => ({ ...acc, [groupName]: 0 }),
-                  {},
-                );
-                setSliderValues(newSliderValues);
-                onValuesChange(valuesToQuery(factorByName, newSliderValues));
-              } else {
-                const normalizedValue = 100 / numActiveGroups;
-                const newSliderValues = Array.from(groupNames).reduce(
-                  (acc, groupName) => {
-                    if (newState[groupName]) {
-                      return { ...acc, [groupName]: normalizedValue };
-                    } else {
-                      return { ...acc, [groupName]: 0 };
-                    }
-                  },
-                  {},
-                );
-                setSliderValues(newSliderValues);
-                onValuesChange(valuesToQuery(factorByName, newSliderValues));
-              }
-              return newState;
-            });
-            if (!checked) {
-              handleSliderChange(name, "0");
+      const numActiveGroups = activeGroupNames.length;
+
+      if (numActiveGroups === 0) {
+        const newSliderValues = Array.from(groupNames).reduce(
+          (acc, groupName) => ({ ...acc, [groupName]: 0 }),
+          {},
+        );
+        setSliderValues(newSliderValues);
+        onValuesChange(valuesToQuery(factorByName, newSliderValues));
+      } else {
+        const normalizedValue = 100 / numActiveGroups;
+        const newSliderValues = Array.from(groupNames).reduce(
+          (acc, groupName) => {
+            if (newState[groupName]) {
+              return { ...acc, [groupName]: normalizedValue };
+            } else {
+              return { ...acc, [groupName]: 0 };
             }
-          };
+          },
+          {},
+        );
+        setSliderValues(newSliderValues);
+        onValuesChange(valuesToQuery(factorByName, newSliderValues));
+      }
+      return newState;
+    });
+    if (!checked) {
+      handleSliderChange(name, "0");
+    }
+  };
   return (
     <div className="grid grid-cols-1 gap-4 p-4">
       {Array.from(groupNames).map((name) => (
