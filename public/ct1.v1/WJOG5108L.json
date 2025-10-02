@@ -24,7 +24,7 @@
     "data_index": {
       "age": [
         {
-          "age_range": {
+          "value_range": {
             "relation": "<",
             "lower": null,
             "upper": 65.0
@@ -48,7 +48,7 @@
           ]
         },
         {
-          "age_range": {
+          "value_range": {
             "relation": "≥",
             "lower": 65.0,
             "upper": null
@@ -74,7 +74,7 @@
       ],
       "ecog": [
         {
-          "age_range": {
+          "value_range": {
             "relation": "=",
             "lower": 0.0,
             "upper": 0.0
@@ -98,7 +98,7 @@
           ]
         },
         {
-          "age_range": {
+          "value_range": {
             "relation": "=",
             "lower": 1.0,
             "upper": 1.0
@@ -122,7 +122,7 @@
           ]
         },
         {
-          "age_range": {
+          "value_range": {
             "relation": "=",
             "lower": 2.0,
             "upper": 2.0

@@ -26,7 +26,7 @@
     "data_index": {
       "age": [
         {
-          "age_range": {
+          "value_range": {
             "relation": "<",
             "lower": null,
             "upper": 35.0

@@ -51,7 +51,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "<",
               "lower": null,
               "upper": 44.0
@@ -75,7 +75,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 44.0,
               "upper": null
@@ -128,7 +128,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -147,7 +147,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -166,7 +166,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -240,7 +240,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 65.0,
               "upper": null
@@ -259,7 +259,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 75.0,
               "upper": null
@@ -280,7 +280,7 @@
         ],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -299,7 +299,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -318,7 +318,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -367,7 +367,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 0.0,
               "upper": 1.0
@@ -401,7 +401,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 0.0,
               "upper": 1.0
@@ -464,7 +464,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 70.0,
               "upper": null
@@ -485,7 +485,7 @@
         ],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -504,7 +504,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -593,7 +593,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "<",
               "lower": null,
               "upper": 65.0
@@ -622,7 +622,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 65.0,
               "upper": null
@@ -737,7 +737,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -756,7 +756,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -912,7 +912,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -931,7 +931,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -1033,7 +1033,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -1057,7 +1057,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -1136,7 +1136,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "<",
               "lower": null,
               "upper": 65.0
@@ -1155,7 +1155,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 65.0,
               "upper": null
@@ -1176,7 +1176,7 @@
         ],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -1195,7 +1195,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -1214,7 +1214,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -1296,7 +1296,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 20.0,
               "upper": 49.0
@@ -1325,7 +1325,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 50.0,
               "upper": 69.0
@@ -1354,7 +1354,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 70.0,
               "upper": 80.0
@@ -1416,7 +1416,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "<",
               "lower": null,
               "upper": 30.0
@@ -1435,7 +1435,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 31.0,
               "upper": 40.0
@@ -1454,7 +1454,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 41.0,
               "upper": 50.0
@@ -1473,7 +1473,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 51.0,
               "upper": 60.0
@@ -1492,7 +1492,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 61.0,
               "upper": 70.0
@@ -1511,7 +1511,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 71.0,
               "upper": 80.0
@@ -1530,7 +1530,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 80.0,
               "upper": null
@@ -1551,7 +1551,7 @@
         ],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -1570,7 +1570,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -1589,7 +1589,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -1639,7 +1639,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -1663,7 +1663,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -1687,7 +1687,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -1767,7 +1767,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -1791,7 +1791,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -1815,7 +1815,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -1868,7 +1868,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "<",
               "lower": null,
               "upper": 65.0
@@ -1892,7 +1892,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 65.0,
               "upper": 75.0
@@ -1916,7 +1916,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 75.0,
               "upper": null
@@ -1942,7 +1942,7 @@
         ],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -1966,7 +1966,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -2019,7 +2019,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 75.0,
               "upper": null
@@ -2045,7 +2045,7 @@
         ],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -2069,7 +2069,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -2206,7 +2206,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 0.0,
               "upper": 1.0
@@ -2225,7 +2225,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -2271,7 +2271,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "<",
               "lower": null,
               "upper": 65.0
@@ -2300,7 +2300,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 65.0,
               "upper": null
@@ -2331,7 +2331,7 @@
         ],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -2360,7 +2360,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -2525,7 +2525,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -2544,7 +2544,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -2563,7 +2563,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -2647,7 +2647,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -2666,7 +2666,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -2714,7 +2714,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 65.0,
               "upper": 69.0
@@ -2738,7 +2738,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 70.0,
               "upper": 74.0
@@ -2762,7 +2762,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 75.0,
               "upper": 79.0
@@ -2788,7 +2788,7 @@
         ],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -2812,7 +2812,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -2891,7 +2891,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 70.0,
               "upper": null
@@ -2912,7 +2912,7 @@
         ],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -2931,7 +2931,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -2950,7 +2950,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -2998,7 +2998,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "<",
               "lower": null,
               "upper": 65.0
@@ -3017,7 +3017,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 65.0,
               "upper": null
@@ -3038,7 +3038,7 @@
         ],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -3057,7 +3057,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -3076,7 +3076,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -3151,7 +3151,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -3170,7 +3170,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -3189,7 +3189,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -3208,7 +3208,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 3.0,
               "upper": 3.0
@@ -3365,7 +3365,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 0.0,
               "upper": 1.0
@@ -3384,7 +3384,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -3436,7 +3436,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -3455,7 +3455,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -3637,7 +3637,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "<",
               "lower": null,
               "upper": 30.0
@@ -3656,7 +3656,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 30.0,
               "upper": 34.0
@@ -3675,7 +3675,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 35.0,
               "upper": 39.0
@@ -3694,7 +3694,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 40.0,
               "upper": 44.0
@@ -3713,7 +3713,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 45.0,
               "upper": 49.0
@@ -3890,7 +3890,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "<",
               "lower": null,
               "upper": 50.0
@@ -3909,7 +3909,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 50.0,
               "upper": null
@@ -3930,7 +3930,7 @@
         ],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -3949,7 +3949,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -3968,7 +3968,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -4040,7 +4040,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 26.0,
               "upper": 40.0
@@ -4059,7 +4059,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 41.0,
               "upper": 50.0
@@ -4078,7 +4078,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 51.0,
               "upper": 55.0
@@ -4128,7 +4128,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -4147,7 +4147,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 1.0,
               "upper": 2.0
@@ -4244,7 +4244,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "≤",
               "lower": null,
               "upper": 50.0
@@ -4268,7 +4268,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 51.0,
               "upper": 60.0
@@ -4292,7 +4292,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 61.0,
               "upper": 70.0
@@ -4316,7 +4316,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 71.0,
               "upper": 80.0
@@ -4342,7 +4342,7 @@
         ],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -4366,7 +4366,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -4418,7 +4418,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -4437,7 +4437,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -4485,7 +4485,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "<",
               "lower": null,
               "upper": 40.0
@@ -4504,7 +4504,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 40.0,
               "upper": 64.0
@@ -4523,7 +4523,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 65.0,
               "upper": 69.0
@@ -4542,7 +4542,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 70.0,
               "upper": 80.0
@@ -4561,7 +4561,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": ">",
               "lower": 80.0,
               "upper": null
@@ -4582,7 +4582,7 @@
         ],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -4601,7 +4601,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -4778,7 +4778,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "≤",
               "lower": null,
               "upper": 39.0
@@ -4802,7 +4802,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 40.0,
               "upper": 49.0
@@ -4826,7 +4826,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 50.0,
               "upper": 59.0
@@ -4850,7 +4850,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 60.0,
               "upper": 69.0
@@ -4874,7 +4874,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 70.0,
               "upper": null
@@ -4900,7 +4900,7 @@
         ],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -4924,7 +4924,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -4948,7 +4948,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -5084,7 +5084,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -5108,7 +5108,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -5162,7 +5162,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -5181,7 +5181,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -5200,7 +5200,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -5249,7 +5249,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -5268,7 +5268,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -5287,7 +5287,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -5335,7 +5335,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "<",
               "lower": null,
               "upper": 35.0
@@ -5369,7 +5369,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 35.0,
               "upper": 50.0
@@ -5403,7 +5403,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 50.0,
               "upper": 70.0
@@ -5437,7 +5437,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": ">",
               "lower": 70.0,
               "upper": null
@@ -5533,7 +5533,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -5552,7 +5552,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -5678,7 +5678,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "<",
               "lower": null,
               "upper": 50.0
@@ -5697,7 +5697,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 50.0,
               "upper": 59.0
@@ -5716,7 +5716,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 60.0,
               "upper": 69.0
@@ -5735,7 +5735,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 70.0,
               "upper": 79.0
@@ -5754,7 +5754,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 80.0,
               "upper": null
@@ -5775,7 +5775,7 @@
         ],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -5794,7 +5794,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -5813,7 +5813,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -5963,7 +5963,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "<",
               "lower": null,
               "upper": 59.0
@@ -6002,7 +6002,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 60.0,
               "upper": null
@@ -6093,7 +6093,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "<",
               "lower": null,
               "upper": 75.0
@@ -6112,7 +6112,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 75.0,
               "upper": 80.0
@@ -6131,7 +6131,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 80.0,
               "upper": null
@@ -6152,7 +6152,7 @@
         ],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -6171,7 +6171,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -6190,7 +6190,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -6209,7 +6209,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 3.0,
               "upper": 3.0
@@ -6309,7 +6309,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "<",
               "lower": null,
               "upper": 65.0
@@ -6328,7 +6328,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 65.0,
               "upper": null
@@ -6349,7 +6349,7 @@
         ],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -6368,7 +6368,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -6387,7 +6387,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -6511,7 +6511,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "<",
               "lower": null,
               "upper": 65.0
@@ -6530,7 +6530,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 65.0,
               "upper": 74.0
@@ -6549,7 +6549,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 75.0,
               "upper": 84.0
@@ -6568,7 +6568,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 85.0,
               "upper": null
@@ -6589,7 +6589,7 @@
         ],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -6608,7 +6608,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -6627,7 +6627,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 2.0,
               "upper": null
@@ -6674,7 +6674,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -6693,7 +6693,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -6769,7 +6769,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 0.0,
               "upper": 1.0
@@ -6798,7 +6798,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -6929,7 +6929,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -6953,7 +6953,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -6977,7 +6977,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -7031,7 +7031,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -7070,7 +7070,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -7109,7 +7109,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -7204,7 +7204,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -7223,7 +7223,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -7298,7 +7298,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -7317,7 +7317,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -7363,7 +7363,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "≤",
               "lower": null,
               "upper": 59.0
@@ -7387,7 +7387,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 60.0,
               "upper": 69.0
@@ -7411,7 +7411,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 70.0,
               "upper": null
@@ -7492,7 +7492,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 1.0,
               "upper": 3.0
@@ -7511,7 +7511,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "<",
               "lower": null,
               "upper": 50.0
@@ -7530,7 +7530,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 50.0,
               "upper": null
@@ -7606,7 +7606,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -7625,7 +7625,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -7759,7 +7759,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "<",
               "lower": null,
               "upper": 35.0
@@ -7783,7 +7783,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 35.0,
               "upper": 39.0
@@ -7807,7 +7807,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 40.0,
               "upper": 49.0
@@ -7831,7 +7831,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 50.0,
               "upper": null
@@ -7937,7 +7937,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "≤",
               "lower": null,
               "upper": 65.0
@@ -7956,7 +7956,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 66.0,
               "upper": 75.0
@@ -7975,7 +7975,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 76.0,
               "upper": 80.0
@@ -7994,7 +7994,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": ">",
               "lower": 80.0,
               "upper": null
@@ -8042,7 +8042,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -8061,7 +8061,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -8107,7 +8107,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "<",
               "lower": null,
               "upper": 35.0
@@ -8141,7 +8141,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 35.0,
               "upper": 39.0
@@ -8175,7 +8175,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 40.0,
               "upper": 49.0
@@ -8209,7 +8209,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 50.0,
               "upper": null
@@ -8298,7 +8298,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -8317,7 +8317,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -8336,7 +8336,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -8411,7 +8411,7 @@
         "age": [],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -8430,7 +8430,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "-",
               "lower": 1.0,
               "upper": 2.0
@@ -8549,7 +8549,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "<",
               "lower": null,
               "upper": 65.0
@@ -8573,7 +8573,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "≥",
               "lower": 65.0,
               "upper": null
@@ -8599,7 +8599,7 @@
         ],
         "ecog": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 0.0,
               "upper": 0.0
@@ -8623,7 +8623,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 1.0,
               "upper": 1.0
@@ -8647,7 +8647,7 @@
             ]
           },
           {
-            "age_range": {
+            "value_range": {
               "relation": "=",
               "lower": 2.0,
               "upper": 2.0
@@ -8724,7 +8724,7 @@
       "data_index": {
         "age": [
           {
-            "age_range": {
+            "value_range": {
               "relation": "<",
               "lower": null,
               "upper": 35.0

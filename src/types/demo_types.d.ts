@@ -21,6 +21,6 @@ export interface ParsedGroupData {
 }
 
 export interface ParsedFactor {
-    age_range: Range;
+    value_range: Range;
     groups: ParsedGroupData[];
 }
