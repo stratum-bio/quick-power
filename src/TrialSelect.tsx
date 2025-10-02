@@ -9,7 +9,7 @@ import FactorRangeInput from "./FactorRangeInput";
 import { AgeFactors } from "./data/filter-factor-age";
 import TrialListContent from "./TrialListContent"; // Import the new component
 
-const TrialList: React.FC = () => {
+const TrialSelect: React.FC = () => {
   const [trialIndex, setTrialIndex] = useState<TrialIndex | null>(() => {
     const savedTrialIndex = localStorage.getItem("trialIndex");
     return savedTrialIndex ? JSON.parse(savedTrialIndex) : null;
@@ -123,4 +123,4 @@ const TrialList: React.FC = () => {
   );
 };
 
-export default TrialList;
+export default TrialSelect;

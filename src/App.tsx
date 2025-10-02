@@ -1,6 +1,6 @@
 import "./App.css";
 import SchoenfeldClosedForm from "./SchoenfeldClosedForm";
-import TrialList from "./TrialList";
+import TrialSelect from "./TrialSelect";
 import TrialDetail from "./TrialDetail";
 import SimulateFromTrial from "./SimulateFromTrial";
 import LandingPage from "./LandingPage"; // Import the new LandingPage component
@@ -136,7 +136,7 @@ function App() {
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/schoenfeld" element={<SchoenfeldClosedForm />} />
-            <Route path="/trials" element={<TrialList />} />
+            <Route path="/trials" element={<TrialSelect />} />
             <Route path="/trial-detail/:trialName" element={<TrialDetail />} />
             <Route
               path="/simulate-from-trial/:trialName"
