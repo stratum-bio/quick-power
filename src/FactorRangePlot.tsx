@@ -11,48 +11,20 @@ import {
 } from "recharts";
 import { type ParsedFactor } from "./types/demo_types.d";
 import { PLOT_COLORS } from "./constants";
+import { processFactorRangeData } from "./utils/factorRangePlotUtils";
 
 interface FactorRangePlotProps {
   factors: ParsedFactor[];
 }
 
 const FactorRangePlot: React.FC<FactorRangePlotProps> = ({ factors }) => {
-  const sortedFactors = factors.sort(
-    (a, b) => (a.value_range.lower ?? 0) - (b.value_range.lower ?? 0),
-  );
-
-  const groupNames: Set<string> = new Set();
-  const chartData: { [key: string]: number | string }[] = [];
-  for (const factor of sortedFactors) {
-    const vrange = factor.value_range;
-    let name = "";
-    if (vrange.relation == "=") {
-      name = `${vrange.lower}`;
-    } else if (vrange.lower && vrange.upper) {
-      name = `${vrange.lower} - ${vrange.upper}`;
-    } else if (vrange.lower) {
-      name = `${vrange.lower}${vrange.relation}`;
-    } else if (vrange.upper) {
-      name = `${vrange.relation}${vrange.upper}`;
-    }
-
-    const entry: { [key: string]: number | string } = {
-      name: name,
-    };
-    for (const group of factor.groups) {
-      if (group.count || group.percentage) {
-        const group_name = group.group_name.toLowerCase();
-        groupNames.add(group_name);
-        entry[group_name] = group.count ?? group.percentage ?? 0;
-      }
-    }
-
-    chartData.push(entry);
-  }
+  const { chartData, groupNames } = processFactorRangeData(factors);
 
   if (groupNames.size == 0) {
     return <div>No data</div>;
   }
+
+  console.log(factors.map((f) => f.value_range)); 
 
   return (
     <ResponsiveContainer width="100%" height={400}>
