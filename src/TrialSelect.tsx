@@ -5,6 +5,7 @@ import CitationFooter from "./CitationFooter";
 import AppError from "./AppError"; // Import the AppError component
 
 import { DISEASE_VAL_TO_NAME } from "./constants";
+import OptionalForm from "./OptionalForm";
 import TrialFilter from "./TrialFilter";
 import TrialList from "./TrialList"; // Import the new component
 
@@ -94,7 +95,6 @@ const TrialSelect: React.FC = () => {
 
   return (
     <div className="w-full mt-4">
-      <TrialFilter />
       <h2 className="text-3xl m-4 mb-8 text-black text-left">
         Find a reference trial for sample size estimation
       </h2>
@@ -104,6 +104,11 @@ const TrialSelect: React.FC = () => {
           a good starting point for performing power analysis and sample size
           estimation.
         </p>
+      </div>
+      <div className="m-4 md:w-196">
+      <OptionalForm heading="Find Factors">
+        <TrialFilter />
+      </OptionalForm>
       </div>
       {trialIndex && trialIndex.trials.length > 0 ? (
         <TrialList

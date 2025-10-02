@@ -185,12 +185,14 @@ const SimulateFromTrial: React.FC = () => {
         the input.
       </div>
 
+      <div className="max-w-3xl">
       <OptionalForm heading="Prognostic Factors">
         <PrognosticFactorAllocation
           onUpdate={handlePrognosticFactorUpdate}
           disease={trialData.meta.disease as DiseaseType}
         />
       </OptionalForm>
+      </div>
 
       <div className="mt-8 p-4 ring ring-gemini-blue shadow-xl shadow-gemini-blue/30 rounded-md shadow-md bg-white max-w-3xl">
         <h2 className="text-xl font-semibold mb-4">Simulation Parameters</h2>
