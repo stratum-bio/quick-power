@@ -194,7 +194,7 @@ const SimulateFromTrial: React.FC = () => {
       </OptionalForm>
       </div>
 
-      <div className="mt-8 p-4 ring ring-gemini-blue shadow-xl shadow-gemini-blue/30 rounded-md shadow-md bg-white max-w-3xl">
+      <div className="mt-8 p-4 ring ring-gemini-blue shadow-gemini-blue/30 rounded-sm shadow-md bg-white max-w-3xl">
         <h2 className="text-xl font-semibold mb-4">Simulation Parameters</h2>
         <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
@@ -207,7 +207,7 @@ const SimulateFromTrial: React.FC = () => {
             <select
               id="controlArm"
               name="controlArm"
-              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-md"
+              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-sm"
               value={controlArm}
               onChange={(e) => setControlArm(e.target.value)}
             >
@@ -229,7 +229,7 @@ const SimulateFromTrial: React.FC = () => {
             <select
               id="treatmentArm"
               name="treatmentArm"
-              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-md"
+              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-sm"
               value={treatmentArm}
               onChange={(e) => setTreatmentArm(e.target.value)}
             >
@@ -252,7 +252,7 @@ const SimulateFromTrial: React.FC = () => {
               type="number"
               id="controlHazardRatio"
               name="controlHazardRatio"
-              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-md"
+              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-sm"
               value={controlHazardRatio}
               onChange={(e) =>
                 setControlHazardRatio(parseFloat(e.target.value))
@@ -271,7 +271,7 @@ const SimulateFromTrial: React.FC = () => {
               type="number"
               id="controlHazardRatio"
               name="controlHazardRatio"
-              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-md"
+              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-sm"
               value={treatHazardRatio}
               onChange={(e) => setTreatHazardRatio(parseFloat(e.target.value))}
               step="0.1"
@@ -288,7 +288,7 @@ const SimulateFromTrial: React.FC = () => {
               type="number"
               id="accrualPeriod"
               name="accrualPeriod"
-              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-md"
+              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-sm"
               value={accrualPeriod}
               onChange={(e) => setAccrualPeriod(parseFloat(e.target.value))}
               step="1"
@@ -305,7 +305,7 @@ const SimulateFromTrial: React.FC = () => {
               type="number"
               id="followUpPeriod"
               name="followUpPeriod"
-              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-md"
+              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-sm"
               value={followUpPeriod}
               onChange={(e) => setFollowUpPeriod(parseFloat(e.target.value))}
               step="1"
@@ -322,7 +322,7 @@ const SimulateFromTrial: React.FC = () => {
               type="number"
               id="largestSampleSize"
               name="largestSampleSize"
-              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-md"
+              className="mt-1 block w-full pl-3 pr-3 py-2 text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-sm"
               value={largestSampleSize}
               onChange={(e) => setLargestSampleSize(parseInt(e.target.value))}
               step="50"

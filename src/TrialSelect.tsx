@@ -105,10 +105,11 @@ const TrialSelect: React.FC = () => {
           estimation.
         </p>
       </div>
-      <div className="m-4 md:w-196">
+      <div className="m-4 md:w-196 mb-8">
       <OptionalForm heading="Find Factors">
         <TrialFilter />
       </OptionalForm>
+      <hr className="h-px my-8 bg-gray-200 border-0" />
       </div>
       {trialIndex && trialIndex.trials.length > 0 ? (
         <TrialList

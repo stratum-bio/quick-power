@@ -89,7 +89,7 @@ input:focus {
 }
 
 .optional-input-panel {
-  @apply p-4 ring ring-gemini-blue shadow-xl shadow-gemini-blue/30 rounded-md shadow-md bg-white;
+  @apply p-4 ring ring-gemini-blue shadow-gemini-blue/30 rounded-sm shadow-md;
 }
 
 .optional-input-panel-heading {
