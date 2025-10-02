@@ -34,9 +34,9 @@ const TrialSelect: React.FC = () => {
   const [filterFactor, setFilterFactor] = useState<FactorType>(FactorType.AGE);
 
   const handleApplyFilter = (
-    query: FactorQuery | null,
     disease: string,
     factor: FactorType,
+    query: FactorQuery | null,
   ) => {
     setFilterQuery(query);
     setFilterDisease(disease);

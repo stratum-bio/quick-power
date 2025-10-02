@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { computeCumulativeDists, toRegularGrid, ksTest } from "./trialFilter";
-import type { ParsedFactor } from "../types/demo_types.d";
+import { type ParsedFactor, Relationship } from "../types/demo_types.d";
 
 describe("computeCumulativeDists", () => {
   it("should return an empty array if factors is empty", () => {
@@ -12,14 +12,23 @@ describe("computeCumulativeDists", () => {
   it("should return an empty array if factors have different group lengths", () => {
     const factors: ParsedFactor[] = [
       {
-        factor_type: "AGE",
-        value_range: { lower: 0, upper: 10 },
-        groups: [{ count: 10 }, { count: 20 }],
+        value_range: {
+          lower: 0,
+          upper: 10,
+          relation: Relationship.BETWEEN_INCL,
+        },
+        groups: [
+          { count: 10, group_name: "Group A", percentage: null },
+          { count: 20, group_name: "Group B", percentage: null },
+        ],
       },
       {
-        factor_type: "AGE",
-        value_range: { lower: 10, upper: 20 },
-        groups: [{ count: 30 }],
+        value_range: {
+          lower: 10,
+          upper: 20,
+          relation: Relationship.BETWEEN_INCL,
+        },
+        groups: [{ count: 30, group_name: "Group A", percentage: null }],
       },
     ];
     const result = computeCumulativeDists(factors, 100);
@@ -29,19 +38,37 @@ describe("computeCumulativeDists", () => {
   it("should compute cumulative distributions correctly with counts", () => {
     const factors: ParsedFactor[] = [
       {
-        factor_type: "AGE",
-        value_range: { lower: 0, upper: 10 },
-        groups: [{ count: 10 }, { count: 20 }],
+        value_range: {
+          lower: 0,
+          upper: 10,
+          relation: Relationship.BETWEEN_INCL,
+        },
+        groups: [
+          { count: 10, group_name: "Group A", percentage: null },
+          { count: 20, group_name: "Group B", percentage: null },
+        ],
       },
       {
-        factor_type: "AGE",
-        value_range: { lower: 10, upper: 20 },
-        groups: [{ count: 40 }, { count: 20 }],
+        value_range: {
+          lower: 10,
+          upper: 20,
+          relation: Relationship.BETWEEN_INCL,
+        },
+        groups: [
+          { count: 40, group_name: "Group A", percentage: null },
+          { count: 20, group_name: "Group B", percentage: null },
+        ],
       },
       {
-        factor_type: "AGE",
-        value_range: { lower: 20, upper: null },
-        groups: [{ count: 50 }, { count: 60 }],
+        value_range: {
+          lower: 20,
+          upper: null,
+          relation: Relationship.GREATER_THAN_EQ,
+        },
+        groups: [
+          { count: 50, group_name: "Group A", percentage: null },
+          { count: 60, group_name: "Group B", percentage: null },
+        ],
       },
     ];
     const result = computeCumulativeDists(factors, 90);
@@ -60,19 +87,37 @@ describe("computeCumulativeDists", () => {
   it("should compute cumulative distributions correctly with percentages", () => {
     const factors: ParsedFactor[] = [
       {
-        factor_type: "AGE",
-        value_range: { lower: 0, upper: 10 },
-        groups: [{ percentage: 0.1 }, { percentage: 0.2 }],
+        value_range: {
+          lower: 0,
+          upper: 10,
+          relation: Relationship.BETWEEN_INCL,
+        },
+        groups: [
+          { percentage: 0.1, group_name: "Group A", count: null },
+          { percentage: 0.2, group_name: "Group B", count: null },
+        ],
       },
       {
-        factor_type: "AGE",
-        value_range: { lower: 10, upper: 20 },
-        groups: [{ percentage: 0.4 }, { percentage: 0.2 }],
+        value_range: {
+          lower: 10,
+          upper: 20,
+          relation: Relationship.BETWEEN_INCL,
+        },
+        groups: [
+          { percentage: 0.4, group_name: "Group A", count: null },
+          { percentage: 0.2, group_name: "Group B", count: null },
+        ],
       },
       {
-        factor_type: "AGE",
-        value_range: { lower: 20, upper: null },
-        groups: [{ percentage: 0.5 }, { percentage: 0.6 }],
+        value_range: {
+          lower: 20,
+          upper: null,
+          relation: Relationship.GREATER_THAN_EQ,
+        },
+        groups: [
+          { percentage: 0.5, group_name: "Group A", count: null },
+          { percentage: 0.6, group_name: "Group B", count: null },
+        ],
       },
     ];
     const result = computeCumulativeDists(factors, 90);
