@@ -1,6 +1,5 @@
 import { type ParsedFactor, type Range } from "../types/demo_types.d";
 
-
 export function rangeToString(range: Range): string {
   let name = "";
   if (range.relation == "=") {
