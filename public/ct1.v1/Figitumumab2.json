@@ -26,7 +26,49 @@
       "Carcinoma, Large Cell",
       "Carcinoma, Non-Small-Cell Lung"
     ],
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "Figitumumab Arm",
+              "count": 113,
+              "percentage": 33.0
+            },
+            {
+              "group_name": "Control Arm",
+              "count": 115,
+              "percentage": 34.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "Figitumumab Arm",
+              "count": 226,
+              "percentage": 66.0
+            },
+            {
+              "group_name": "Control Arm",
+              "count": 217,
+              "percentage": 64.0
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

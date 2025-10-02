@@ -23,7 +23,128 @@
     "condition_list": [
       "Non-small Cell Lung Cancer"
     ],
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "Erlotinib (ITT)",
+              "count": 385,
+              "percentage": 61.8
+            },
+            {
+              "group_name": "Placebo (ITT)",
+              "count": 211,
+              "percentage": 60.3
+            },
+            {
+              "group_name": "Total (ITT)",
+              "count": 596,
+              "percentage": 61.3
+            },
+            {
+              "group_name": "Erlotinib (EGFRm+)",
+              "count": 61,
+              "percentage": 59.8
+            },
+            {
+              "group_name": "Placebo (EGFRm+)",
+              "count": 38,
+              "percentage": 64.4
+            },
+            {
+              "group_name": "Total (EGFRm+)",
+              "count": 99,
+              "percentage": 61.5
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "Erlotinib (ITT)",
+              "count": 230,
+              "percentage": 36.9
+            },
+            {
+              "group_name": "Placebo (ITT)",
+              "count": 134,
+              "percentage": 38.3
+            },
+            {
+              "group_name": "Total (ITT)",
+              "count": 364,
+              "percentage": 37.4
+            },
+            {
+              "group_name": "Erlotinib (EGFRm+)",
+              "count": 40,
+              "percentage": 39.2
+            },
+            {
+              "group_name": "Placebo (EGFRm+)",
+              "count": 21,
+              "percentage": 35.6
+            },
+            {
+              "group_name": "Total (EGFRm+)",
+              "count": 61,
+              "percentage": 37.9
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 2.0,
+            "upper": 2.0
+          },
+          "groups": [
+            {
+              "group_name": "Erlotinib (ITT)",
+              "count": 6,
+              "percentage": 1.0
+            },
+            {
+              "group_name": "Placebo (ITT)",
+              "count": 5,
+              "percentage": 1.4
+            },
+            {
+              "group_name": "Total (ITT)",
+              "count": 11,
+              "percentage": 1.1
+            },
+            {
+              "group_name": "Erlotinib (EGFRm+)",
+              "count": 1,
+              "percentage": 1.0
+            },
+            {
+              "group_name": "Placebo (EGFRm+)",
+              "count": 0,
+              "percentage": 0.0
+            },
+            {
+              "group_name": "Total (EGFRm+)",
+              "count": 1,
+              "percentage": 0.6
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

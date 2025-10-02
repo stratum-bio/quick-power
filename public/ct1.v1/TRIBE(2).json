@@ -23,7 +23,49 @@
     "condition_list": [
       "Colorectal Cancer"
     ],
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "FOLFIRI plus Bevacizumab",
+              "count": 229,
+              "percentage": 89.5
+            },
+            {
+              "group_name": "FOLFOXIRI plus Bevacizumab",
+              "count": 227,
+              "percentage": 90.1
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "-",
+            "lower": 1.0,
+            "upper": 2.0
+          },
+          "groups": [
+            {
+              "group_name": "FOLFIRI plus Bevacizumab",
+              "count": 27,
+              "percentage": 10.5
+            },
+            {
+              "group_name": "FOLFOXIRI plus Bevacizumab",
+              "count": 25,
+              "percentage": 9.9
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

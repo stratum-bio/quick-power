@@ -21,7 +21,49 @@
     "time_scale": "Unknown",
     "title": null,
     "condition_list": null,
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+              "count": 155,
+              "percentage": 86.0
+            },
+            {
+              "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+              "count": 163,
+              "percentage": 87.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "Bevacizumab 5 mg/kg plus FOLFIRI",
+              "count": 26,
+              "percentage": 14.0
+            },
+            {
+              "group_name": "Bevacizumab 10 mg/kg plus FOLFIRI",
+              "count": 25,
+              "percentage": 13.0
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

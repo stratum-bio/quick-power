@@ -24,7 +24,59 @@
       "Non Small Cell Lung Cancer",
       "BRCA1 Mutation"
     ],
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "All patients",
+              "count": 93,
+              "percentage": 33.3
+            },
+            {
+              "group_name": "Control arm",
+              "count": 44,
+              "percentage": 31.0
+            },
+            {
+              "group_name": "Experimental arm",
+              "count": 49,
+              "percentage": 35.8
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "All patients",
+              "count": 186,
+              "percentage": 66.7
+            },
+            {
+              "group_name": "Control arm",
+              "count": 98,
+              "percentage": 69.0
+            },
+            {
+              "group_name": "Experimental arm",
+              "count": 88,
+              "percentage": 64.2
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

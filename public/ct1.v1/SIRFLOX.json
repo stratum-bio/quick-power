@@ -25,7 +25,10 @@
       "Colorectal Carcinoma",
       "Liver Metastases"
     ],
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": []
+    }
   },
   "arms": [
     {

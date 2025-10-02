@@ -26,7 +26,49 @@
       "Carcinoma, Squamous Cell",
       "Carcinoma, Adenosquamous Cell"
     ],
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "-",
+            "lower": 0.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "Figitumumab arm",
+              "count": 237,
+              "percentage": 81.0
+            },
+            {
+              "group_name": "Control arm",
+              "count": 236,
+              "percentage": 82.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 2.0,
+            "upper": 2.0
+          },
+          "groups": [
+            {
+              "group_name": "Figitumumab arm",
+              "count": 56,
+              "percentage": 19.0
+            },
+            {
+              "group_name": "Control arm",
+              "count": 54,
+              "percentage": 19.0
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

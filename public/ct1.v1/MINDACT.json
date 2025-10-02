@@ -24,132 +24,145 @@
       "Breast Cancer"
     ],
     "data_index": {
-      "age_values": [
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46,
-        47,
-        48,
-        49,
-        50,
-        51,
-        52,
-        53,
-        54,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        61,
-        62,
-        63,
-        64,
-        65,
-        66,
-        67,
-        68,
-        69,
-        70,
-        71,
-        72,
-        73,
-        74,
-        75,
-        76,
-        77,
-        78,
-        79,
-        80,
-        81,
-        82,
-        83,
-        84,
-        85,
-        86,
-        87,
-        88,
-        89,
-        90
+      "age": [
+        {
+          "age_range": {
+            "relation": "<",
+            "lower": null,
+            "upper": 35.0
+          },
+          "groups": [
+            {
+              "group_name": "Low Clinical Risk, Low Genomic Risk",
+              "count": 24,
+              "percentage": 0.9
+            },
+            {
+              "group_name": "Low Clinical Risk, High Genomic Risk",
+              "count": 13,
+              "percentage": 2.2
+            },
+            {
+              "group_name": "High Clinical Risk, Low Genomic Risk",
+              "count": 20,
+              "percentage": 1.3
+            },
+            {
+              "group_name": "High Clinical Risk, High Genomic Risk",
+              "count": 65,
+              "percentage": 3.6
+            },
+            {
+              "group_name": "All Patients",
+              "count": 122,
+              "percentage": 1.8
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "-",
+            "lower": 35.0,
+            "upper": 50.0
+          },
+          "groups": [
+            {
+              "group_name": "Low Clinical Risk, Low Genomic Risk",
+              "count": 774,
+              "percentage": 28.2
+            },
+            {
+              "group_name": "Low Clinical Risk, High Genomic Risk",
+              "count": 165,
+              "percentage": 27.9
+            },
+            {
+              "group_name": "High Clinical Risk, Low Genomic Risk",
+              "count": 514,
+              "percentage": 33.2
+            },
+            {
+              "group_name": "High Clinical Risk, High Genomic Risk",
+              "count": 651,
+              "percentage": 36.0
+            },
+            {
+              "group_name": "All Patients",
+              "count": 2104,
+              "percentage": 31.4
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "-",
+            "lower": 50.0,
+            "upper": 70.0
+          },
+          "groups": [
+            {
+              "group_name": "Low Clinical Risk, Low Genomic Risk",
+              "count": 1928,
+              "percentage": 70.2
+            },
+            {
+              "group_name": "Low Clinical Risk, High Genomic Risk",
+              "count": 403,
+              "percentage": 68.1
+            },
+            {
+              "group_name": "High Clinical Risk, Low Genomic Risk",
+              "count": 1000,
+              "percentage": 64.5
+            },
+            {
+              "group_name": "High Clinical Risk, High Genomic Risk",
+              "count": 1080,
+              "percentage": 59.8
+            },
+            {
+              "group_name": "All Patients",
+              "count": 4411,
+              "percentage": 65.9
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": ">",
+            "lower": 70.0,
+            "upper": null
+          },
+          "groups": [
+            {
+              "group_name": "Low Clinical Risk, Low Genomic Risk",
+              "count": 19,
+              "percentage": 0.7
+            },
+            {
+              "group_name": "Low Clinical Risk, High Genomic Risk",
+              "count": 11,
+              "percentage": 1.9
+            },
+            {
+              "group_name": "High Clinical Risk, Low Genomic Risk",
+              "count": 16,
+              "percentage": 1.0
+            },
+            {
+              "group_name": "High Clinical Risk, High Genomic Risk",
+              "count": 10,
+              "percentage": 0.6
+            },
+            {
+              "group_name": "All Patients",
+              "count": 56,
+              "percentage": 0.8
+            }
+          ]
+        }
       ],
-      "age_cumulative_dist": [
-        0.0023957711295393832,
-        0.005321972595079291,
-        0.008896043136022066,
-        0.013261422752588582,
-        0.018593309456679107,
-        0.0386344585841652,
-        0.058675607711651284,
-        0.07871675683913737,
-        0.09875790596662345,
-        0.11879905509410954,
-        0.13884020422159563,
-        0.1588813533490817,
-        0.1789225024765678,
-        0.19896365160405388,
-        0.21900480073153997,
-        0.23904594985902605,
-        0.25908709898651217,
-        0.2791282481139983,
-        0.2991693972414844,
-        0.3192105463689705,
-        0.3512226806443068,
-        0.38323481491964306,
-        0.41524694919497934,
-        0.4472590834703156,
-        0.4792712177456519,
-        0.5112833520209882,
-        0.5432954862963244,
-        0.5753076205716607,
-        0.6073197548469971,
-        0.6393318891223334,
-        0.6713440233976697,
-        0.7033561576730061,
-        0.7353682919483424,
-        0.7673804262236787,
-        0.7993925604990151,
-        0.8314046947743514,
-        0.8634168290496878,
-        0.8954289633250241,
-        0.9274410976003604,
-        0.9594532318756968,
-        0.9914653661510331,
-        0.9930412969815968,
-        0.994331560017303,
-        0.9953879380441956,
-        0.9962528272216883,
-        0.9969609385893059,
-        0.9975406911425785,
-        0.9980153523871182,
-        0.9984039721453173,
-        0.9987221470926085,
-        0.9989826467068148,
-        0.9991959257521305,
-        0.9993705438655175,
-        0.9995135090849919,
-        0.9996305591067962,
-        0.9997263915592958,
-        0.9998048525353,
-        0.9998690909492712,
-        0.9999216849143184,
-        0.9999647452109289,
-        1.0000000000000007
-      ]
+      "ecog": []
     }
   },
   "arms": [

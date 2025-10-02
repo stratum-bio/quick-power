@@ -27,131 +27,199 @@
       "Stage IV Breast Cancer AJCC v6 and v7"
     ],
     "data_index": {
-      "age_values": [
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46,
-        47,
-        48,
-        49,
-        50,
-        51,
-        52,
-        53,
-        54,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        61,
-        62,
-        63,
-        64,
-        65,
-        66,
-        67,
-        68,
-        69,
-        70,
-        71,
-        72,
-        73,
-        74,
-        75,
-        76,
-        77,
-        78,
-        79,
-        80,
-        81,
-        82,
-        83,
-        84,
-        85,
-        86,
-        87,
-        88,
-        89,
-        90
+      "age": [
+        {
+          "age_range": {
+            "relation": "<",
+            "lower": null,
+            "upper": 30.0
+          },
+          "groups": [
+            {
+              "group_name": "Letrozole + Bevacizumab",
+              "count": 1,
+              "percentage": 1.0
+            },
+            {
+              "group_name": "Letrozole",
+              "count": 1,
+              "percentage": 1.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "-",
+            "lower": 31.0,
+            "upper": 40.0
+          },
+          "groups": [
+            {
+              "group_name": "Letrozole + Bevacizumab",
+              "count": 17,
+              "percentage": 10.0
+            },
+            {
+              "group_name": "Letrozole",
+              "count": 13,
+              "percentage": 8.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "-",
+            "lower": 41.0,
+            "upper": 50.0
+          },
+          "groups": [
+            {
+              "group_name": "Letrozole + Bevacizumab",
+              "count": 35,
+              "percentage": 20.0
+            },
+            {
+              "group_name": "Letrozole",
+              "count": 25,
+              "percentage": 15.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "-",
+            "lower": 51.0,
+            "upper": 60.0
+          },
+          "groups": [
+            {
+              "group_name": "Letrozole + Bevacizumab",
+              "count": 53,
+              "percentage": 31.0
+            },
+            {
+              "group_name": "Letrozole",
+              "count": 54,
+              "percentage": 32.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "-",
+            "lower": 61.0,
+            "upper": 70.0
+          },
+          "groups": [
+            {
+              "group_name": "Letrozole + Bevacizumab",
+              "count": 53,
+              "percentage": 31.0
+            },
+            {
+              "group_name": "Letrozole",
+              "count": 59,
+              "percentage": 35.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "-",
+            "lower": 71.0,
+            "upper": 80.0
+          },
+          "groups": [
+            {
+              "group_name": "Letrozole + Bevacizumab",
+              "count": 17,
+              "percentage": 10.0
+            },
+            {
+              "group_name": "Letrozole",
+              "count": 8,
+              "percentage": 5.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "≥",
+            "lower": 80.0,
+            "upper": null
+          },
+          "groups": [
+            {
+              "group_name": "Letrozole + Bevacizumab",
+              "count": 5,
+              "percentage": 3.0
+            },
+            {
+              "group_name": "Letrozole",
+              "count": 5,
+              "percentage": 3.0
+            }
+          ]
+        }
       ],
-      "age_cumulative_dist": [
-        0.0,
-        0.008784773060029281,
-        0.017569546120058562,
-        0.02635431918008784,
-        0.035139092240117124,
-        0.04392386530014641,
-        0.05270863836017569,
-        0.06149341142020497,
-        0.07027818448023425,
-        0.07906295754026353,
-        0.08784773060029281,
-        0.10541727672035138,
-        0.12298682284040995,
-        0.1405563689604685,
-        0.15812591508052706,
-        0.17569546120058563,
-        0.1932650073206442,
-        0.21083455344070276,
-        0.22840409956076133,
-        0.2459736456808199,
-        0.26354319180087843,
-        0.2948755490483162,
-        0.32620790629575397,
-        0.35754026354319174,
-        0.3888726207906295,
-        0.4202049780380673,
-        0.45153733528550505,
-        0.4828696925329428,
-        0.5142020497803805,
-        0.5455344070278183,
-        0.5768667642752561,
-        0.6096632503660321,
-        0.6424597364568081,
-        0.6752562225475841,
-        0.7080527086383601,
-        0.7408491947291361,
-        0.7736456808199121,
-        0.8064421669106882,
-        0.8392386530014642,
-        0.8720351390922402,
-        0.9048316251830162,
-        0.9121522693997073,
-        0.9194729136163984,
-        0.9267935578330895,
-        0.9341142020497806,
-        0.9414348462664717,
-        0.9487554904831628,
-        0.9560761346998539,
-        0.963396778916545,
-        0.9707174231332361,
-        0.9766868895191023,
-        0.9815742752286762,
-        0.9855757282112583,
-        0.9888518408250938,
-        0.9915340949725877,
-        0.9937301389307119,
-        0.9955281076543393,
-        0.9970001599414454,
-        0.998205374419038,
-        0.9991921205758978,
-        1.0000000000000004
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "Letrozole + Bevacizumab",
+              "count": 106,
+              "percentage": 61.0
+            },
+            {
+              "group_name": "Letrozole",
+              "count": 101,
+              "percentage": 59.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "Letrozole + Bevacizumab",
+              "count": 64,
+              "percentage": 37.0
+            },
+            {
+              "group_name": "Letrozole",
+              "count": 64,
+              "percentage": 38.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 2.0,
+            "upper": 2.0
+          },
+          "groups": [
+            {
+              "group_name": "Letrozole + Bevacizumab",
+              "count": 3,
+              "percentage": 2.0
+            },
+            {
+              "group_name": "Letrozole",
+              "count": 2,
+              "percentage": 1.0
+            }
+          ]
+        }
       ]
     }
   },

@@ -23,7 +23,49 @@
     "condition_list": [
       "Colorectal Cancer"
     ],
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "Bevacizumab continuation",
+              "count": 97,
+              "percentage": 74.0
+            },
+            {
+              "group_name": "No bevacizumab continuation",
+              "count": 91,
+              "percentage": 69.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "Bevacizumab continuation",
+              "count": 34,
+              "percentage": 26.0
+            },
+            {
+              "group_name": "No bevacizumab continuation",
+              "count": 40,
+              "percentage": 31.0
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

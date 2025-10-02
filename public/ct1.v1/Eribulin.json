@@ -23,7 +23,87 @@
     "condition_list": [
       "Metastatic Breast Cancer"
     ],
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "Eribulin",
+              "count": 250,
+              "percentage": 45.1
+            },
+            {
+              "group_name": "Capecitabine",
+              "count": 230,
+              "percentage": 42.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "Eribulin",
+              "count": 293,
+              "percentage": 52.9
+            },
+            {
+              "group_name": "Capecitabine",
+              "count": 301,
+              "percentage": 54.9
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 2.0,
+            "upper": 2.0
+          },
+          "groups": [
+            {
+              "group_name": "Eribulin",
+              "count": 11,
+              "percentage": 2.0
+            },
+            {
+              "group_name": "Capecitabine",
+              "count": 16,
+              "percentage": 2.9
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 3.0,
+            "upper": 3.0
+          },
+          "groups": [
+            {
+              "group_name": "Eribulin",
+              "count": 0,
+              "percentage": 0.0
+            },
+            {
+              "group_name": "Capecitabine",
+              "count": 1,
+              "percentage": 0.2
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

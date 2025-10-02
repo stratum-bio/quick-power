@@ -23,7 +23,10 @@
     "condition_list": [
       "Colorectal Cancer"
     ],
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": []
+    }
   },
   "arms": [
     {

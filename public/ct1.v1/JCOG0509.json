@@ -21,7 +21,10 @@
     "time_scale": "Months",
     "title": null,
     "condition_list": null,
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": []
+    }
   },
   "arms": [
     {

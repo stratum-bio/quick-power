@@ -23,7 +23,49 @@
     "condition_list": [
       "Metastatic Colorectal Cancer"
     ],
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "CT + B",
+              "count": 144,
+              "percentage": 81.8
+            },
+            {
+              "group_name": "CT",
+              "count": 154,
+              "percentage": 79.4
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "-",
+            "lower": 1.0,
+            "upper": 2.0
+          },
+          "groups": [
+            {
+              "group_name": "CT + B",
+              "count": 32,
+              "percentage": 18.2
+            },
+            {
+              "group_name": "CT",
+              "count": 40,
+              "percentage": 20.6
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

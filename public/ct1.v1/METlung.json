@@ -23,7 +23,68 @@
     "condition_list": [
       "Non-Squamous Non-Small Cell Lung Cancer"
     ],
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "Onartuzumab + Erlotinib",
+              "count": 93,
+              "percentage": 37.0
+            },
+            {
+              "group_name": "Placebo + Erlotinib",
+              "count": 78,
+              "percentage": 31.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "Onartuzumab + Erlotinib",
+              "count": 153,
+              "percentage": 61.0
+            },
+            {
+              "group_name": "Placebo + Erlotinib",
+              "count": 169,
+              "percentage": 68.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 2.0,
+            "upper": 2.0
+          },
+          "groups": [
+            {
+              "group_name": "Onartuzumab + Erlotinib",
+              "count": 4,
+              "percentage": 2.0
+            },
+            {
+              "group_name": "Placebo + Erlotinib",
+              "count": 1,
+              "percentage": 0.5
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

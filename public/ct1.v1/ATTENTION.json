@@ -23,7 +23,49 @@
     "condition_list": [
       "Non-small-cell Lung Cancer"
     ],
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "Placebo group",
+              "count": 51,
+              "percentage": 33.3
+            },
+            {
+              "group_name": "Tivantinib group",
+              "count": 66,
+              "percentage": 42.9
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "Placebo group",
+              "count": 102,
+              "percentage": 66.7
+            },
+            {
+              "group_name": "Tivantinib group",
+              "count": 88,
+              "percentage": 57.1
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

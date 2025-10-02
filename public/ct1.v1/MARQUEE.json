@@ -23,7 +23,68 @@
     "condition_list": [
       "Non Squamous, Non-small-cell Lung Cancer"
     ],
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "Erlotinib Plus Tivantinib",
+              "count": 168,
+              "percentage": 31.9
+            },
+            {
+              "group_name": "Erlotinib Plus Placebo",
+              "count": 168,
+              "percentage": 32.2
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "Erlotinib Plus Tivantinib",
+              "count": 357,
+              "percentage": 67.9
+            },
+            {
+              "group_name": "Erlotinib Plus Placebo",
+              "count": 353,
+              "percentage": 67.6
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 2.0,
+            "upper": 2.0
+          },
+          "groups": [
+            {
+              "group_name": "Erlotinib Plus Tivantinib",
+              "count": 1,
+              "percentage": 0.2
+            },
+            {
+              "group_name": "Erlotinib Plus Placebo",
+              "count": 1,
+              "percentage": 0.2
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

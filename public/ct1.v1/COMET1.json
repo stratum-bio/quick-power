@@ -26,7 +26,49 @@
       "Pain",
       "Prostatic Neoplasms"
     ],
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "-",
+            "lower": 0.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "Cabozantinib",
+              "count": 605,
+              "percentage": 89.0
+            },
+            {
+              "group_name": "Prednisone",
+              "count": 303,
+              "percentage": 88.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 2.0,
+            "upper": 2.0
+          },
+          "groups": [
+            {
+              "group_name": "Cabozantinib",
+              "count": 76,
+              "percentage": 11.0
+            },
+            {
+              "group_name": "Prednisone",
+              "count": 43,
+              "percentage": 12.0
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

@@ -23,7 +23,49 @@
     "condition_list": [
       "Advanced, Metastatic Breast Cancer"
     ],
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "Ribociclib Group",
+              "count": 205,
+              "percentage": 61.4
+            },
+            {
+              "group_name": "Placebo Group",
+              "count": 202,
+              "percentage": 60.5
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "Ribociclib Group",
+              "count": 129,
+              "percentage": 38.6
+            },
+            {
+              "group_name": "Placebo Group",
+              "count": 132,
+              "percentage": 39.5
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

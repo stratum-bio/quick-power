@@ -21,7 +21,49 @@
     "time_scale": "Months",
     "title": null,
     "condition_list": null,
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "Pembrolizumab Group",
+              "count": 54,
+              "percentage": 35.1
+            },
+            {
+              "group_name": "Chemotherapy Group",
+              "count": 53,
+              "percentage": 35.1
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "Pembrolizumab Group",
+              "count": 99,
+              "percentage": 64.3
+            },
+            {
+              "group_name": "Chemotherapy Group",
+              "count": 98,
+              "percentage": 64.9
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

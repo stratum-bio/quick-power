@@ -24,131 +24,85 @@
       "Prostate Cancer"
     ],
     "data_index": {
-      "age_values": [
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46,
-        47,
-        48,
-        49,
-        50,
-        51,
-        52,
-        53,
-        54,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        61,
-        62,
-        63,
-        64,
-        65,
-        66,
-        67,
-        68,
-        69,
-        70,
-        71,
-        72,
-        73,
-        74,
-        75,
-        76,
-        77,
-        78,
-        79,
-        80,
-        81,
-        82,
-        83,
-        84,
-        85,
-        86,
-        87,
-        88,
-        89,
-        90
+      "age": [
+        {
+          "age_range": {
+            "relation": "≥",
+            "lower": 70.0,
+            "upper": null
+          },
+          "groups": [
+            {
+              "group_name": "Orteronel Plus Prednisone",
+              "count": 367,
+              "percentage": 50.0
+            },
+            {
+              "group_name": "Placebo Plus Prednisone",
+              "count": 194,
+              "percentage": 53.0
+            }
+          ]
+        }
       ],
-      "age_cumulative_dist": [
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.1840288659180781,
-        0.3346989578992732,
-        0.4580571957733658,
-        0.5590543787663944,
-        0.6417438784570315,
-        0.7094443148103884,
-        0.7648727440496802,
-        0.8102537036626952,
-        0.8474084909020605,
-        0.8778282578389982,
-        0.9027338565317339,
-        0.9231248361052954,
-        0.9398195581675551,
-        0.9534880405340167,
-        0.9646788473953428,
-        0.9738411051244666,
-        0.9813425272949268,
-        0.9874841723177035,
-        0.9925125259723391,
-        0.9966293937467413,
-        1.0
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "Orteronel Plus Prednisone",
+              "count": null,
+              "percentage": 42.0
+            },
+            {
+              "group_name": "Placebo Plus Prednisone",
+              "count": null,
+              "percentage": 40.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "Orteronel Plus Prednisone",
+              "count": null,
+              "percentage": 50.0
+            },
+            {
+              "group_name": "Placebo Plus Prednisone",
+              "count": null,
+              "percentage": 53.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 2.0,
+            "upper": 2.0
+          },
+          "groups": [
+            {
+              "group_name": "Orteronel Plus Prednisone",
+              "count": null,
+              "percentage": 9.0
+            },
+            {
+              "group_name": "Placebo Plus Prednisone",
+              "count": null,
+              "percentage": 7.0
+            }
+          ]
+        }
       ]
     }
   },

@@ -21,7 +21,49 @@
     "time_scale": "Months",
     "title": null,
     "condition_list": null,
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "Arm A",
+              "count": 148,
+              "percentage": 49.2
+            },
+            {
+              "group_name": "Arm B",
+              "count": 145,
+              "percentage": 48.8
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "Arm A",
+              "count": 152,
+              "percentage": 50.5
+            },
+            {
+              "group_name": "Arm B",
+              "count": 149,
+              "percentage": 50.2
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

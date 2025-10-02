@@ -27,7 +27,10 @@
     "condition_list": [
       "Colorectal Neoplasms"
     ],
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": []
+    }
   },
   "arms": [
     {

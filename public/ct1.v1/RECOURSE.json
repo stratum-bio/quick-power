@@ -23,7 +23,49 @@
     "condition_list": [
       "Colorectal Cancer"
     ],
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "TAS-102",
+              "count": 301,
+              "percentage": 56.0
+            },
+            {
+              "group_name": "Placebo",
+              "count": 147,
+              "percentage": 55.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "TAS-102",
+              "count": 233,
+              "percentage": 44.0
+            },
+            {
+              "group_name": "Placebo",
+              "count": 119,
+              "percentage": 45.0
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

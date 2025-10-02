@@ -24,131 +24,129 @@
       "Breast Cancer"
     ],
     "data_index": {
-      "age_values": [
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46,
-        47,
-        48,
-        49,
-        50,
-        51,
-        52,
-        53,
-        54,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        61,
-        62,
-        63,
-        64,
-        65,
-        66,
-        67,
-        68,
-        69,
-        70,
-        71,
-        72,
-        73,
-        74,
-        75,
-        76,
-        77,
-        78,
-        79,
-        80,
-        81,
-        82,
-        83,
-        84,
-        85,
-        86,
-        87,
-        88,
-        89,
-        90
+      "age": [
+        {
+          "age_range": {
+            "relation": "-",
+            "lower": 65.0,
+            "upper": 69.0
+          },
+          "groups": [
+            {
+              "group_name": "CMF",
+              "count": 65,
+              "percentage": 43.0
+            },
+            {
+              "group_name": "Docetaxel",
+              "count": 60,
+              "percentage": 41.0
+            },
+            {
+              "group_name": "Total",
+              "count": 125,
+              "percentage": 42.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "-",
+            "lower": 70.0,
+            "upper": 74.0
+          },
+          "groups": [
+            {
+              "group_name": "CMF",
+              "count": 54,
+              "percentage": 36.0
+            },
+            {
+              "group_name": "Docetaxel",
+              "count": 51,
+              "percentage": 35.0
+            },
+            {
+              "group_name": "Total",
+              "count": 105,
+              "percentage": 35.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "-",
+            "lower": 75.0,
+            "upper": 79.0
+          },
+          "groups": [
+            {
+              "group_name": "CMF",
+              "count": 33,
+              "percentage": 22.0
+            },
+            {
+              "group_name": "Docetaxel",
+              "count": 36,
+              "percentage": 24.0
+            },
+            {
+              "group_name": "Total",
+              "count": 69,
+              "percentage": 23.0
+            }
+          ]
+        }
       ],
-      "age_cumulative_dist": [
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.08361204013377926,
-        0.16722408026755853,
-        0.2508361204013378,
-        0.33444816053511706,
-        0.4180602006688963,
-        0.4882943143812709,
-        0.5585284280936454,
-        0.62876254180602,
-        0.6989966555183945,
-        0.769230769230769,
-        0.8153846153846152,
-        0.8615384615384614,
-        0.9076923076923076,
-        0.9538461538461538,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        1.0
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "CMF",
+              "count": 127,
+              "percentage": 84.0
+            },
+            {
+              "group_name": "Docetaxel",
+              "count": 120,
+              "percentage": 82.0
+            },
+            {
+              "group_name": "Total",
+              "count": 247,
+              "percentage": 83.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "CMF",
+              "count": 25,
+              "percentage": 16.0
+            },
+            {
+              "group_name": "Docetaxel",
+              "count": 27,
+              "percentage": 18.0
+            },
+            {
+              "group_name": "Total",
+              "count": 52,
+              "percentage": 17.0
+            }
+          ]
+        }
       ]
     }
   },

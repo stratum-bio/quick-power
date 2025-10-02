@@ -23,7 +23,83 @@
     "condition_list": [
       "Metastases, Brain"
     ],
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "Lapatinib plus Capecitabine",
+              "count": 260,
+              "percentage": 96.0
+            },
+            {
+              "group_name": "Trastuzumab plus Capecitabine",
+              "count": 261,
+              "percentage": 98.0
+            },
+            {
+              "group_name": "Total",
+              "count": 521,
+              "percentage": 96.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "Lapatinib plus Capecitabine",
+              "count": 9,
+              "percentage": 3.0
+            },
+            {
+              "group_name": "Trastuzumab plus Capecitabine",
+              "count": 5,
+              "percentage": 2.0
+            },
+            {
+              "group_name": "Total",
+              "count": 14,
+              "percentage": 3.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 2.0,
+            "upper": 2.0
+          },
+          "groups": [
+            {
+              "group_name": "Lapatinib plus Capecitabine",
+              "count": 2,
+              "percentage": 1.0
+            },
+            {
+              "group_name": "Trastuzumab plus Capecitabine",
+              "count": 3,
+              "percentage": 1.0
+            },
+            {
+              "group_name": "Total",
+              "count": 5,
+              "percentage": 1.0
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

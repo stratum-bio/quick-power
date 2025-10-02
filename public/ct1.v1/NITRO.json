@@ -22,131 +22,161 @@
     "title": null,
     "condition_list": null,
     "data_index": {
-      "age_values": [
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46,
-        47,
-        48,
-        49,
-        50,
-        51,
-        52,
-        53,
-        54,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        61,
-        62,
-        63,
-        64,
-        65,
-        66,
-        67,
-        68,
-        69,
-        70,
-        71,
-        72,
-        73,
-        74,
-        75,
-        76,
-        77,
-        78,
-        79,
-        80,
-        81,
-        82,
-        83,
-        84,
-        85,
-        86,
-        87,
-        88,
-        89,
-        90
+      "age": [
+        {
+          "age_range": {
+            "relation": "<",
+            "lower": null,
+            "upper": 50.0
+          },
+          "groups": [
+            {
+              "group_name": "Chemotherapy + nitroglycerin",
+              "count": 11,
+              "percentage": 6.0
+            },
+            {
+              "group_name": "Chemotherapy alone",
+              "count": 8,
+              "percentage": 4.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "-",
+            "lower": 50.0,
+            "upper": 59.0
+          },
+          "groups": [
+            {
+              "group_name": "Chemotherapy + nitroglycerin",
+              "count": 49,
+              "percentage": 26.0
+            },
+            {
+              "group_name": "Chemotherapy alone",
+              "count": 43,
+              "percentage": 23.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "-",
+            "lower": 60.0,
+            "upper": 69.0
+          },
+          "groups": [
+            {
+              "group_name": "Chemotherapy + nitroglycerin",
+              "count": 77,
+              "percentage": 41.0
+            },
+            {
+              "group_name": "Chemotherapy alone",
+              "count": 80,
+              "percentage": 43.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "-",
+            "lower": 70.0,
+            "upper": 79.0
+          },
+          "groups": [
+            {
+              "group_name": "Chemotherapy + nitroglycerin",
+              "count": 48,
+              "percentage": 26.0
+            },
+            {
+              "group_name": "Chemotherapy alone",
+              "count": 51,
+              "percentage": 28.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "≥",
+            "lower": 80.0,
+            "upper": null
+          },
+          "groups": [
+            {
+              "group_name": "Chemotherapy + nitroglycerin",
+              "count": 2,
+              "percentage": 1.0
+            },
+            {
+              "group_name": "Chemotherapy alone",
+              "count": 3,
+              "percentage": 2.0
+            }
+          ]
+        }
       ],
-      "age_cumulative_dist": [
-        0.00021098126302695772,
-        0.0004686743596082002,
-        0.0007834214185313646,
-        0.0011678543444229193,
-        0.0016374017804344485,
-        0.002210908313865966,
-        0.002911390775622099,
-        0.0037669619864538653,
-        0.004811959023166221,
-        0.006088321286075896,
-        0.00764727367440533,
-        0.009551382421351284,
-        0.011877066096707977,
-        0.014717662552396723,
-        0.018187174898194963,
-        0.022424846846823693,
-        0.027600751053056805,
-        0.03392261472652275,
-        0.04164415645400664,
-        0.051075268817204304,
-        0.07580645161290323,
-        0.10053763440860215,
-        0.12526881720430108,
-        0.15000000000000002,
-        0.17473118279569894,
-        0.19946236559139785,
-        0.22419354838709676,
-        0.24892473118279568,
-        0.2736559139784946,
-        0.2983870967741935,
-        0.34059139784946235,
-        0.3827956989247312,
-        0.42500000000000004,
-        0.4672043010752689,
-        0.5094086021505377,
-        0.5516129032258066,
-        0.5938172043010754,
-        0.6360215053763443,
-        0.6782258064516131,
-        0.720430107526882,
-        0.7470430107526884,
-        0.7736559139784949,
-        0.8002688172043013,
-        0.8268817204301078,
-        0.8534946236559142,
-        0.8801075268817207,
-        0.9067204301075271,
-        0.9333333333333336,
-        0.95994623655914,
-        0.9865591397849465,
-        0.9892991569499644,
-        0.9915424932669261,
-        0.9933791816991193,
-        0.9948829350023785,
-        0.9961141040767993,
-        0.9971221000602662,
-        0.9979473773709098,
-        0.998623057284951,
-        0.9991762572098137,
-        0.9996291790008992,
-        1.0
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "Chemotherapy + nitroglycerin",
+              "count": 60,
+              "percentage": 32.0
+            },
+            {
+              "group_name": "Chemotherapy alone",
+              "count": 65,
+              "percentage": 35.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "Chemotherapy + nitroglycerin",
+              "count": 114,
+              "percentage": 61.0
+            },
+            {
+              "group_name": "Chemotherapy alone",
+              "count": 106,
+              "percentage": 57.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 2.0,
+            "upper": 2.0
+          },
+          "groups": [
+            {
+              "group_name": "Chemotherapy + nitroglycerin",
+              "count": 13,
+              "percentage": 7.0
+            },
+            {
+              "group_name": "Chemotherapy alone",
+              "count": 14,
+              "percentage": 8.0
+            }
+          ]
+        }
       ]
     }
   },

@@ -27,7 +27,59 @@
     "condition_list": [
       "Breast Cancer"
     ],
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "Trastuzumab + Taxane",
+              "count": 245,
+              "percentage": 67.1
+            },
+            {
+              "group_name": "T-DM1",
+              "count": 239,
+              "percentage": 65.1
+            },
+            {
+              "group_name": "T-DM1 + Pertuzumab",
+              "count": 235,
+              "percentage": 64.7
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "Trastuzumab + Taxane",
+              "count": 119,
+              "percentage": 32.6
+            },
+            {
+              "group_name": "T-DM1",
+              "count": 128,
+              "percentage": 34.9
+            },
+            {
+              "group_name": "T-DM1 + Pertuzumab",
+              "count": 127,
+              "percentage": 35.0
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

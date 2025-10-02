@@ -21,7 +21,68 @@
     "time_scale": "Months",
     "title": null,
     "condition_list": null,
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "Erlotinib",
+              "count": 77,
+              "percentage": 51.3
+            },
+            {
+              "group_name": "Docetaxel",
+              "count": 78,
+              "percentage": 51.7
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "Erlotinib",
+              "count": 67,
+              "percentage": 44.7
+            },
+            {
+              "group_name": "Docetaxel",
+              "count": 67,
+              "percentage": 44.4
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 2.0,
+            "upper": 2.0
+          },
+          "groups": [
+            {
+              "group_name": "Erlotinib",
+              "count": 6,
+              "percentage": 4.0
+            },
+            {
+              "group_name": "Docetaxel",
+              "count": 6,
+              "percentage": 4.0
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

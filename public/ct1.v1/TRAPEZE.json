@@ -21,7 +21,68 @@
     "time_scale": "Unknown",
     "title": null,
     "condition_list": null,
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "Economic analysis subset",
+              "count": 291,
+              "percentage": 41.16
+            },
+            {
+              "group_name": "All TRAPEZE trial participants",
+              "count": 305,
+              "percentage": 40.29
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "Economic analysis subset",
+              "count": 361,
+              "percentage": 51.06
+            },
+            {
+              "group_name": "All TRAPEZE trial participants",
+              "count": 389,
+              "percentage": 51.39
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 2.0,
+            "upper": 2.0
+          },
+          "groups": [
+            {
+              "group_name": "Economic analysis subset",
+              "count": 55,
+              "percentage": 7.78
+            },
+            {
+              "group_name": "All TRAPEZE trial participants",
+              "count": 63,
+              "percentage": 8.32
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

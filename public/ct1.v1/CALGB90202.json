@@ -24,7 +24,83 @@
       "Metastatic Cancer",
       "Prostate Cancer"
     ],
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "Zoledronic acid",
+              "count": 205,
+              "percentage": 63.0
+            },
+            {
+              "group_name": "Placebo",
+              "count": 205,
+              "percentage": 64.0
+            },
+            {
+              "group_name": "Total",
+              "count": 410,
+              "percentage": 64.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "Zoledronic acid",
+              "count": 105,
+              "percentage": 33.0
+            },
+            {
+              "group_name": "Placebo",
+              "count": 109,
+              "percentage": 34.0
+            },
+            {
+              "group_name": "Total",
+              "count": 214,
+              "percentage": 33.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 2.0,
+            "upper": 2.0
+          },
+          "groups": [
+            {
+              "group_name": "Zoledronic acid",
+              "count": 13,
+              "percentage": 4.0
+            },
+            {
+              "group_name": "Placebo",
+              "count": 8,
+              "percentage": 2.0
+            },
+            {
+              "group_name": "Total",
+              "count": 21,
+              "percentage": 3.0
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

@@ -25,7 +25,10 @@
       "Metastatic Cancer",
       "Chemotherapy"
     ],
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": []
+    }
   },
   "arms": [
     {

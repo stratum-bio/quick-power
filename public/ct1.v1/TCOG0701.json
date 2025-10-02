@@ -21,7 +21,49 @@
     "time_scale": "Months",
     "title": null,
     "condition_list": null,
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "S-1 plus cisplatin",
+              "count": 151,
+              "percentage": 50.2
+            },
+            {
+              "group_name": "Docetaxel plus cisplatin",
+              "count": 152,
+              "percentage": 51.5
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "S-1 plus cisplatin",
+              "count": 150,
+              "percentage": 49.8
+            },
+            {
+              "group_name": "Docetaxel plus cisplatin",
+              "count": 143,
+              "percentage": 48.5
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

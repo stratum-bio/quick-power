@@ -23,7 +23,69 @@
     "condition_list": [
       "Non Squamous Lung Cancer"
     ],
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "-",
+            "lower": 0.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "Crizotinib (Brain Metastases Present)",
+              "count": 35,
+              "percentage": 90.0
+            },
+            {
+              "group_name": "Chemotherapy (Brain Metastases Present)",
+              "count": 34,
+              "percentage": 85.0
+            },
+            {
+              "group_name": "Crizotinib (Brain Metastases Absent)",
+              "count": 125,
+              "percentage": 95.0
+            },
+            {
+              "group_name": "Chemotherapy (Brain Metastases Absent)",
+              "count": 129,
+              "percentage": 98.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 2.0,
+            "upper": 2.0
+          },
+          "groups": [
+            {
+              "group_name": "Crizotinib (Brain Metastases Present)",
+              "count": 4,
+              "percentage": 10.0
+            },
+            {
+              "group_name": "Chemotherapy (Brain Metastases Present)",
+              "count": 6,
+              "percentage": 15.0
+            },
+            {
+              "group_name": "Crizotinib (Brain Metastases Absent)",
+              "count": 6,
+              "percentage": 5.0
+            },
+            {
+              "group_name": "Chemotherapy (Brain Metastases Absent)",
+              "count": 2,
+              "percentage": 2.0
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

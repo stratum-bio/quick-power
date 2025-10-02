@@ -23,7 +23,49 @@
     "condition_list": [
       "Breast Cancer"
     ],
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "RAM Plus DOC Arm",
+              "count": null,
+              "percentage": 58.0
+            },
+            {
+              "group_name": "PBO Plus DOC Arm",
+              "count": null,
+              "percentage": 62.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "RAM Plus DOC Arm",
+              "count": null,
+              "percentage": 42.0
+            },
+            {
+              "group_name": "PBO Plus DOC Arm",
+              "count": null,
+              "percentage": 37.0
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {

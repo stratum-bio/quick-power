@@ -21,7 +21,83 @@
     "time_scale": "Months",
     "title": null,
     "condition_list": null,
-    "data_index": null
+    "data_index": {
+      "age": [],
+      "ecog": [
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "groups": [
+            {
+              "group_name": "Control arm",
+              "count": null,
+              "percentage": 58.0
+            },
+            {
+              "group_name": "LV5-FU2 + irinotecan arm",
+              "count": null,
+              "percentage": 65.0
+            },
+            {
+              "group_name": "All",
+              "count": null,
+              "percentage": 62.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 1.0,
+            "upper": 1.0
+          },
+          "groups": [
+            {
+              "group_name": "Control arm",
+              "count": null,
+              "percentage": 28.0
+            },
+            {
+              "group_name": "LV5-FU2 + irinotecan arm",
+              "count": null,
+              "percentage": 23.0
+            },
+            {
+              "group_name": "All",
+              "count": null,
+              "percentage": 26.0
+            }
+          ]
+        },
+        {
+          "age_range": {
+            "relation": "=",
+            "lower": 2.0,
+            "upper": 2.0
+          },
+          "groups": [
+            {
+              "group_name": "Control arm",
+              "count": null,
+              "percentage": 2.0
+            },
+            {
+              "group_name": "LV5-FU2 + irinotecan arm",
+              "count": null,
+              "percentage": 2.0
+            },
+            {
+              "group_name": "All",
+              "count": null,
+              "percentage": 2.0
+            }
+          ]
+        }
+      ]
+    }
   },
   "arms": [
     {
