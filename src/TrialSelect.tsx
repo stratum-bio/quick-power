@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Loading from "./Loading";
 import type { TrialIndex } from "./types/trialdata";
+import { type FactorQuery, FactorType } from "./types/demo_types.d";
 import CitationFooter from "./CitationFooter";
 import AppError from "./AppError"; // Import the AppError component
 
@@ -25,6 +26,22 @@ const TrialSelect: React.FC = () => {
     const savedCollapsedStates = localStorage.getItem("collapsedStates");
     return savedCollapsedStates ? JSON.parse(savedCollapsedStates) : {};
   });
+
+  const [filterQuery, setFilterQuery] = useState<FactorQuery | null>(null);
+  const [filterDisease, setFilterDisease] = useState<string>(
+    Object.keys(DISEASE_VAL_TO_NAME)[0],
+  );
+  const [filterFactor, setFilterFactor] = useState<FactorType>(FactorType.AGE);
+
+  const handleApplyFilter = (
+    query: FactorQuery | null,
+    disease: string,
+    factor: FactorType,
+  ) => {
+    setFilterQuery(query);
+    setFilterDisease(disease);
+    setFilterFactor(factor);
+  };
 
   useEffect(() => {
     if (trialIndex && Object.keys(collapsedStates).length > 0) {
@@ -107,7 +124,7 @@ const TrialSelect: React.FC = () => {
       </div>
       <div className="m-4 md:w-196 mb-8">
         <OptionalForm heading="Search Factors">
-          <TrialFilter />
+          <TrialFilter onApplyFilter={handleApplyFilter} />
         </OptionalForm>
         <hr className="h-px my-8 bg-gray-200 border-0" />
       </div>
