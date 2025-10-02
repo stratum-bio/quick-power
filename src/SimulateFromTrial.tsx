@@ -9,6 +9,7 @@ import KaplanMeierPlot from "./KaplanMeierPlot";
 import BootstrapSimulationPlot from "./BootstrapSimulationPlot";
 import AppError from "./AppError"; // Import the AppError component
 import PrognosticFactorAllocation from "./PrognosticFactorAllocation";
+import OptionalForm from "./OptionalForm";
 import { DiseaseType } from "./types/prognostic-factors.d";
 
 function fitLambdaPerArm(data: Trial): Record<string, number> {
@@ -46,8 +47,6 @@ const SimulateFromTrial: React.FC = () => {
     largestSampleSize: number;
   } | null>(null);
   const [forceSimulation, setForceSimulation] = useState<boolean>(false);
-  const [showPrognosticFactors, setShowPrognosticFactors] =
-    useState<boolean>(false);
   const [allocationChange, setPrognosticFactorAllocation] = useState<
     AllocationChange | undefined
   >(undefined);
@@ -186,21 +185,12 @@ const SimulateFromTrial: React.FC = () => {
         the input.
       </div>
 
-      <div className="mt-8 optional-input-panel">
-        <h2
-          className="optional-input-panel-heading"
-          onClick={() => setShowPrognosticFactors(!showPrognosticFactors)}
-        >
-          <span>Prognostic Factors</span>
-          <span>{showPrognosticFactors ? "▲" : "▼"}</span>
-        </h2>
-        {showPrognosticFactors && (
-          <PrognosticFactorAllocation
-            onUpdate={handlePrognosticFactorUpdate}
-            disease={trialData.meta.disease as DiseaseType}
-          />
-        )}
-      </div>
+      <OptionalForm heading="Prognostic Factors">
+        <PrognosticFactorAllocation
+          onUpdate={handlePrognosticFactorUpdate}
+          disease={trialData.meta.disease as DiseaseType}
+        />
+      </OptionalForm>
 
       <div className="mt-8 p-4 ring ring-gemini-blue shadow-xl shadow-gemini-blue/30 rounded-md shadow-md bg-white max-w-3xl">
         <h2 className="text-xl font-semibold mb-4">Simulation Parameters</h2>

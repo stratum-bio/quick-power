@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import type { TrialIndex, TrialMeta } from "./types/trialdata";
 import TrialListItem from "./TrialListItem";
 
