@@ -106,7 +106,7 @@ const TrialSelect: React.FC = () => {
         </p>
       </div>
       <div className="m-4 md:w-196 mb-8">
-      <OptionalForm heading="Find Factors">
+      <OptionalForm heading="Search Factors">
         <TrialFilter />
       </OptionalForm>
       <hr className="h-px my-8 bg-gray-200 border-0" />

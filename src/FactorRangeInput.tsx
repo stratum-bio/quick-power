@@ -1,13 +1,36 @@
 import React, { useState } from "react";
-import { type Range } from "./types/demo_types.d";
+import { type Range, type FactorQuery } from "./types/demo_types.d";
 import { rangeToString } from "./utils/factorRangePlotUtils";
 
 interface FactorRangeInputProps {
   factors: Range[];
+  onValuesChange: (query: FactorQuery) => void;
 }
 
-const FactorRangeInput: React.FC<FactorRangeInputProps> = ({ factors }) => {
-  const groupNames = factors.map((f) => rangeToString(f));
+
+function valuesToQuery(rangeByName: Record<string, Range>, valuesByName: Record<string, number>): FactorQuery {
+  const intervals: Range[] = [];
+  const values: number[] = [];
+  for (const [name, interval] of Object.entries(rangeByName)) {
+    intervals.push(interval);
+    values.push(valuesByName[name]);
+  }
+
+  return {
+    intervals: intervals,
+    values: values,
+  }
+}
+
+const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
+  factors,
+  onValuesChange,
+}) => {
+  const factorByName = factors.reduce((acc, f) => {
+    acc[rangeToString(f)] = f;
+    return acc;
+  }, {} as {[key: string]: Range});
+  const groupNames = Object.keys(factorByName);
   const initialValues = Array.from(groupNames).reduce(
     (acc, name) => ({
       ...acc,
@@ -26,10 +49,12 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({ factors }) => {
   }
 
   const handleSliderChange = (name: string, value: string) => {
-    setSliderValues((prev) => ({
-      ...prev,
+    const newSliderValues = {
+      ...sliderValues,
       [name]: Number(value),
-    }));
+    };
+    setSliderValues(newSliderValues);
+    onValuesChange(valuesToQuery(factorByName, newSliderValues));
   };
 
   const handleCheckboxChange = (name: string, checked: boolean) => {
@@ -38,34 +63,36 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({ factors }) => {
       const activeGroupNames = Array.from(groupNames).filter(
         (groupName) => newState[groupName],
       );
-      const numActiveGroups = activeGroupNames.length;
-
-      if (numActiveGroups === 0) {
-        setSliderValues(
-          Array.from(groupNames).reduce(
-            (acc, groupName) => ({ ...acc, [groupName]: 0 }),
-            {},
-          ),
-        );
-      } else {
-        const normalizedValue = 100 / numActiveGroups;
-        setSliderValues(
-          Array.from(groupNames).reduce((acc, groupName) => {
-            if (newState[groupName]) {
-              return { ...acc, [groupName]: normalizedValue };
-            } else {
-              return { ...acc, [groupName]: 0 };
+              const numActiveGroups = activeGroupNames.length;
+      
+              if (numActiveGroups === 0) {
+                const newSliderValues = Array.from(groupNames).reduce(
+                  (acc, groupName) => ({ ...acc, [groupName]: 0 }),
+                  {},
+                );
+                setSliderValues(newSliderValues);
+                onValuesChange(valuesToQuery(factorByName, newSliderValues));
+              } else {
+                const normalizedValue = 100 / numActiveGroups;
+                const newSliderValues = Array.from(groupNames).reduce(
+                  (acc, groupName) => {
+                    if (newState[groupName]) {
+                      return { ...acc, [groupName]: normalizedValue };
+                    } else {
+                      return { ...acc, [groupName]: 0 };
+                    }
+                  },
+                  {},
+                );
+                setSliderValues(newSliderValues);
+                onValuesChange(valuesToQuery(factorByName, newSliderValues));
+              }
+              return newState;
+            });
+            if (!checked) {
+              handleSliderChange(name, "0");
             }
-          }, {}),
-        );
-      }
-      return newState;
-    });
-    if (!checked) {
-      handleSliderChange(name, "0");
-    }
-  };
-
+          };
   return (
     <div className="grid grid-cols-1 gap-4 p-4">
       {Array.from(groupNames).map((name) => (

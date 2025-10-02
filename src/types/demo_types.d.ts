@@ -8,6 +8,11 @@ export enum Relationship {
   MISSING = "N/A",
 }
 
+export enum FactorType {
+  AGE = "Age",
+  ECOG = "ECOG",
+}
+
 export interface Range {
   relation: Relationship;
   lower: number | null;
@@ -23,4 +28,9 @@ export interface ParsedGroupData {
 export interface ParsedFactor {
   value_range: Range;
   groups: ParsedGroupData[];
+}
+
+export interface FactorQuery {
+  intervals: Range[];
+  values: number[];
 }

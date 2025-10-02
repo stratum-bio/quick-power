@@ -1,28 +1,42 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { DISEASE_VAL_TO_NAME } from "./constants";
 import FactorRangeInput from "./FactorRangeInput";
 import { AgeFactors } from "./data/filter-factor-age";
 import { ECOGFactors } from "./data/filter-factor-ecog";
+import { type FactorQuery, FactorType } from "./types/demo_types.d";
 
-const TrialFilter: React.FC = () => {
+interface TrialFilterProps {
+  onApplyFilter: (
+    disease: string,
+    factor: FactorType,
+    query: FactorQuery | null,
+  ) => void;
+}
+
+const TrialFilter: React.FC<TrialFilterProps> = ({ onApplyFilter }) => {
+  const queryRef = useRef<FactorQuery | null>(null);
   const [selectedDisease, setSelectedDisease] = useState<string>(
     Object.keys(DISEASE_VAL_TO_NAME)[0],
   );
-  const [selectedFactor, setSelectedFactor] = useState<"Age" | "ECOG">("Age");
+  const [selectedFactor, setSelectedFactor] = useState<FactorType>(FactorType.AGE);
 
   const handleDiseaseChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedDisease(event.target.value);
   };
 
   const handleFactorChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedFactor(event.target.value as "Age" | "ECOG");
+    setSelectedFactor(event.target.value as FactorType);
+  };
+
+  const handleFactorRangeChange = (query: FactorQuery) => {
+    queryRef.current = query;
   };
 
   return (
     <div className="p-4">
       <div className="mb-4">
         <label htmlFor="disease-select" className="option-label">
-          Select Disease:
+          Disease
         </label>
         <select
           id="disease-select"
@@ -48,20 +62,38 @@ const TrialFilter: React.FC = () => {
           onChange={handleFactorChange}
           className="mt-1 block w-full pl-3 pr-10 py-2 option-selector"
         >
-          <option value="Age">Age</option>
-          <option value="ECOG">ECOG</option>
+          <option value={FactorType.AGE}>Age</option>
+          <option value={FactorType.ECOG}>ECOG</option>
         </select>
       </div>
       <h2 className="option-label">Select target distribution</h2>
 
       <div className="max-w-lg">
-      {selectedFactor === "Age" && (
-        <FactorRangeInput factors={AgeFactors} />
+      {selectedFactor === FactorType.AGE && (
+        <FactorRangeInput factors={AgeFactors} onValuesChange={handleFactorRangeChange} />
       )}
 
-      {selectedFactor === "ECOG" && (
-        <FactorRangeInput factors={ECOGFactors} />
+      {selectedFactor === FactorType.ECOG && (
+        <FactorRangeInput factors={ECOGFactors} onValuesChange={handleFactorRangeChange} />
       )}
+      </div>
+      <div className="text-right">
+        <button
+          className="main-button mt-4"
+          onClick={() => {
+            onApplyFilter(selectedDisease, selectedFactor, queryRef.current);
+          }}
+        >
+          Apply
+        </button>
+        <button
+          className="secondary-button mt-4 ml-4"
+          onClick={() => {
+            onApplyFilter(selectedDisease, selectedFactor, null);
+          }}
+        >
+          Reset
+        </button>
       </div>
     </div>
   );
