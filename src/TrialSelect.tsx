@@ -7,7 +7,7 @@ import AppError from "./AppError"; // Import the AppError component
 import { DISEASE_VAL_TO_NAME } from "./constants";
 import FactorRangeInput from "./FactorRangeInput";
 import { AgeFactors } from "./data/filter-factor-age";
-import TrialListContent from "./TrialListContent"; // Import the new component
+import TrialList from "./TrialList"; // Import the new component
 
 const TrialSelect: React.FC = () => {
   const [trialIndex, setTrialIndex] = useState<TrialIndex | null>(() => {
@@ -107,7 +107,7 @@ const TrialSelect: React.FC = () => {
         </p>
       </div>
       {trialIndex && trialIndex.trials.length > 0 ? (
-        <TrialListContent
+        <TrialList
           trialIndex={trialIndex}
           collapsedStates={collapsedStates}
           toggleCollapse={toggleCollapse}

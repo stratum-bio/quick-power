@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import type { TrialIndex, TrialMeta } from "./types/trialdata";
 
-interface TrialListContentProps {
+interface TrialListProps {
   trialIndex: TrialIndex;
   collapsedStates: Record<string, boolean>;
   toggleCollapse: (disease: string) => void;
   DISEASE_VAL_TO_NAME: Record<string, string>;
 }
 
-const TrialListContent: React.FC<TrialListContentProps> = ({
+const TrialList: React.FC<TrialListProps> = ({
   trialIndex,
   collapsedStates,
   toggleCollapse,
@@ -98,4 +98,4 @@ const TrialListContent: React.FC<TrialListContentProps> = ({
   );
 };
 
-export default TrialListContent;
+export default TrialList;
