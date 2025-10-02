@@ -43,6 +43,8 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
     }),
     {},
   );
+  onValuesChange(valuesToQuery(factorByName, initialValues));
+
   const [sliderValues, setSliderValues] =
     useState<Record<string, number>>(initialValues);
   const [includedInNormalization, setIncludedInNormalization] = useState<

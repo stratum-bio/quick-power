@@ -24,8 +24,6 @@ const FactorRangePlot: React.FC<FactorRangePlotProps> = ({ factors }) => {
     return <div>No data</div>;
   }
 
-  console.log(factors.map((f) => f.value_range));
-
   return (
     <ResponsiveContainer width="100%" height={400}>
       <BarChart

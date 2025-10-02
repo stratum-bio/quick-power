@@ -152,6 +152,7 @@ function scoreECOG(factors: ParsedFactor[], query: FactorQuery): number {
 }
 
 function hasFactor(dataIndex: TrialDataIndex, factor: FactorType): boolean {
+  console.log(dataIndex);
   if (factor == FactorType.AGE && dataIndex.age.length > 0) {
     return true;
   } else if (factor == FactorType.ECOG && dataIndex.ecog.length > 0) {
@@ -167,8 +168,9 @@ export function searchTrials(
   query: FactorQuery,
 ): TrialMeta[] {
   const diseaseTrials = trials.filter((t) => t.disease === disease);
+  console.log(diseaseTrials.map((t) => t.data_index));
   const withFactorTrials = diseaseTrials.filter(
-    (t) => t.data_index !== null && hasFactor(t.data_index, factor),
+    (t) => t.data_index && hasFactor(t.data_index, factor),
   );
   const scoredTrials = withFactorTrials.map((t) => {
     let score = 0.0;

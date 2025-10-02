@@ -9,12 +9,11 @@ import { DISEASE_VAL_TO_NAME } from "./constants";
 import OptionalForm from "./OptionalForm";
 import TrialFilter from "./TrialFilter";
 import TrialList from "./TrialList"; // Import the new component
+import TrialSearchList from "./TrialSearchList";
+import { searchTrials } from "./utils/trialFilter";
 
 const TrialSelect: React.FC = () => {
-  const [trialIndex, setTrialIndex] = useState<TrialIndex | null>(() => {
-    const savedTrialIndex = localStorage.getItem("trialIndex");
-    return savedTrialIndex ? JSON.parse(savedTrialIndex) : null;
-  });
+  const [trialIndex, setTrialIndex] = useState<TrialIndex | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(() => {
     const savedError = localStorage.getItem("error");
@@ -129,12 +128,23 @@ const TrialSelect: React.FC = () => {
         <hr className="h-px my-8 bg-gray-200 border-0" />
       </div>
       {trialIndex && trialIndex.trials.length > 0 ? (
-        <TrialList
-          trialIndex={trialIndex}
-          collapsedStates={collapsedStates}
-          toggleCollapse={toggleCollapse}
-          DISEASE_VAL_TO_NAME={DISEASE_VAL_TO_NAME}
-        />
+        filterQuery ? (
+          <TrialSearchList
+            trials={searchTrials(
+              trialIndex.trials,
+              filterDisease,
+              filterFactor,
+              filterQuery,
+            )}
+          />
+        ) : (
+          <TrialList
+            trialIndex={trialIndex}
+            collapsedStates={collapsedStates}
+            toggleCollapse={toggleCollapse}
+            DISEASE_VAL_TO_NAME={DISEASE_VAL_TO_NAME}
+          />
+        )
       ) : (
         <div>No trials found.</div>
       )}

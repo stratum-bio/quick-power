@@ -111,7 +111,6 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
   const handleFactorRefChange = (
     event: React.ChangeEvent<HTMLSelectElement>,
   ) => {
-    console.log(event);
     setSelectedFactorRefIdx(parseInt(event.target.value));
   };
 
