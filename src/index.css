@@ -88,6 +88,14 @@ input:focus {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.optional-input-panel {
+  @apply p-4 ring ring-gemini-blue shadow-xl shadow-gemini-blue/30 rounded-md shadow-md bg-white max-w-3xl;
+}
+
+.optional-input-panel-heading {
+  @apply text-xl font-semibold cursor-pointer flex justify-between items-center
+}
+
 
 @theme {
   --color-medium-azure-alpha: #29649b2f;

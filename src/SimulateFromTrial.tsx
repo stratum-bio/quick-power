@@ -186,9 +186,9 @@ const SimulateFromTrial: React.FC = () => {
         the input.
       </div>
 
-      <div className="mt-8 p-4 ring ring-gemini-blue shadow-xl shadow-gemini-blue/30 rounded-md shadow-md bg-white max-w-3xl">
+      <div className="mt-8 optional-input-panel">
         <h2
-          className="text-xl font-semibold cursor-pointer flex justify-between items-center"
+          className="optional-input-panel-heading"
           onClick={() => setShowPrognosticFactors(!showPrognosticFactors)}
         >
           <span>Prognostic Factors</span>
