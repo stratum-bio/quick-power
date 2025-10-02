@@ -232,13 +232,13 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
       <div className="mb-4">
         <label
           htmlFor="biomarker-select"
-          className="block mt-4 font-semibold text-gray-700"
+          className="option-label"
         >
           Biomarker
         </label>
         <select
           id="biomarker-select"
-          className="mt-1 block w-full pl-3 pr-10 py-2 border border-gray-300 focus:outline-none focus:border-gemini-blue focus:ring-gemini-blue rounded-md"
+          className="mt-1 block w-full pl-3 pr-10 py-2 option-selector"
           value={selectedBiomarker}
           onChange={handleBiomarkerChange}
         >
@@ -256,13 +256,13 @@ const PrognosticFactorAllocation: React.FC<PrognosticFactorAllocationProps> = ({
         <div className="mb-4">
           <label
             htmlFor="biomarker-ref-select"
-            className="block mt-4 font-semibold text-gray-700"
+            className="option-label"
           >
             Available reference group
           </label>
           <select
             id="biomarker-ref-select"
-            className="mt-1 block w-full pl-3 pr-10 py-2 border border-gray-300 focus:outline-none focus:border-gemini-blue focus:ring-gemini-blue rounded-md"
+            className="mt-1 block w-full pl-3 pr-10 py-2 option-selector"
             value={selectedFactorRefIdx}
             onChange={handleFactorRefChange}
           >

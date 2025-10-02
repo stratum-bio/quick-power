@@ -96,6 +96,14 @@ input:focus {
   @apply text-xl font-semibold cursor-pointer flex justify-between items-center
 }
 
+.option-selector {
+  @apply  text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-sm
+}
+
+.option-label {
+  @apply block font-semibold text-gray-700
+}
+
 
 @theme {
   --color-medium-azure-alpha: #29649b2f;

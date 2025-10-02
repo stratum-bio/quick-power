@@ -21,14 +21,14 @@ const TrialFilter: React.FC = () => {
   return (
     <div className="p-4">
       <div className="mb-4">
-        <label htmlFor="disease-select" className="block text-lg font-medium text-gray-700">
+        <label htmlFor="disease-select" className="option-label">
           Select Disease:
         </label>
         <select
           id="disease-select"
           value={selectedDisease}
           onChange={handleDiseaseChange}
-          className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+          className="mt-1 block w-full pl-3 pr-10 py-2 option-selector"
         >
           {Object.entries(DISEASE_VAL_TO_NAME).map(([key, value]) => (
             <option key={key} value={key}>
@@ -39,33 +39,30 @@ const TrialFilter: React.FC = () => {
       </div>
 
       <div className="mb-4">
-        <label htmlFor="factor-select" className="block text-lg font-medium text-gray-700">
+        <label htmlFor="factor-select" className="option-label">
           Factor:
         </label>
         <select
           id="factor-select"
           value={selectedFactor}
           onChange={handleFactorChange}
-          className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+          className="mt-1 block w-full pl-3 pr-10 py-2 option-selector"
         >
           <option value="Age">Age</option>
           <option value="ECOG">ECOG</option>
         </select>
       </div>
+      <h2 className="option-label">Select target distribution</h2>
 
+      <div className="max-w-lg">
       {selectedFactor === "Age" && (
-        <>
-          <h2 className="text-xl font-semibold mb-2">Age Factors</h2>
-          <FactorRangeInput factors={AgeFactors} />
-        </>
+        <FactorRangeInput factors={AgeFactors} />
       )}
 
       {selectedFactor === "ECOG" && (
-        <>
-          <h2 className="text-xl font-semibold mb-2 mt-4">ECOG Factors</h2>
-          <FactorRangeInput factors={ECOGFactors} />
-        </>
+        <FactorRangeInput factors={ECOGFactors} />
       )}
+      </div>
     </div>
   );
 };

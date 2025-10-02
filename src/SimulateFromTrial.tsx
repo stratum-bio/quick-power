@@ -200,14 +200,14 @@ const SimulateFromTrial: React.FC = () => {
           <div>
             <label
               htmlFor="controlArm"
-              className="block font-semibold text-gray-700"
+              className="option-label"
             >
               Control Arm
             </label>
             <select
               id="controlArm"
               name="controlArm"
-              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-sm"
+              className="mt-1 block w-full pl-3 pr-10 py-2 option-selector"
               value={controlArm}
               onChange={(e) => setControlArm(e.target.value)}
             >
@@ -222,14 +222,14 @@ const SimulateFromTrial: React.FC = () => {
           <div>
             <label
               htmlFor="treatmentArm"
-              className="block font-semibold text-gray-700"
+              className="option-label"
             >
               Treatment Arm
             </label>
             <select
               id="treatmentArm"
               name="treatmentArm"
-              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border border-gray-300 focus:outline-none focus:ring-gemini-blue focus:border-gemini-blue rounded-sm"
+              className="mt-1 block w-full pl-3 pr-10 py-2 option-selector"
               value={treatmentArm}
               onChange={(e) => setTreatmentArm(e.target.value)}
             >
@@ -244,7 +244,7 @@ const SimulateFromTrial: React.FC = () => {
           <div>
             <label
               htmlFor="controlHazardRatio"
-              className="block font-semibold text-gray-700"
+              className="option-label"
             >
               Control Hazard Adjustment Multiplier
             </label>
@@ -263,7 +263,7 @@ const SimulateFromTrial: React.FC = () => {
           <div>
             <label
               htmlFor="treatHazardRatio"
-              className="block font-semibold text-gray-700"
+              className="option-label"
             >
               Treatment Hazard Adjustment Multiplier
             </label>
@@ -280,7 +280,7 @@ const SimulateFromTrial: React.FC = () => {
           <div>
             <label
               htmlFor="accrualPeriod"
-              className="block font-semibold text-gray-700"
+              className="option-label"
             >
               Enrollment Period
             </label>
@@ -297,7 +297,7 @@ const SimulateFromTrial: React.FC = () => {
           <div>
             <label
               htmlFor="followUpPeriod"
-              className="block font-semibold text-gray-700"
+              className="option-label"
             >
               Follow-up Period
             </label>
@@ -314,7 +314,7 @@ const SimulateFromTrial: React.FC = () => {
           <div>
             <label
               htmlFor="largestSampleSize"
-              className="block font-semibold text-gray-700"
+              className="option-label"
             >
               Largest Sample Size
             </label>

@@ -67,7 +67,7 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({ factors }) => {
   };
 
   return (
-    <div className="grid grid-cols-1 gap-4 p-4 border rounded-lg shadow-md max-w-3xl">
+    <div className="grid grid-cols-1 gap-4 p-4">
       {Array.from(groupNames).map((name) => (
         <div key={name} className="grid grid-cols-[auto_1fr] gap-2 items-right">
           <div className="w-24">
