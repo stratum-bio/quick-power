@@ -10,7 +10,7 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({ factors }) => {
   const groupNames = factors.map( (f) => rangeToString(f) ) ;
   const initialValues = Array.from(groupNames).reduce((acc, name) => ({
     ...acc,
-    [name]: 0,
+    [name]: 100 / factors.length,
   }), {});
   const [sliderValues, setSliderValues] = useState<Record<string, number>>(initialValues);
   const [includedInNormalization, setIncludedInNormalization] = useState<Record<string, boolean>>(
@@ -26,13 +26,6 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({ factors }) => {
       ...prev,
       [name]: Number(value),
     }));
-  };
-
-  const handleCheckboxChange = (name: string, checked: boolean) => {
-    setIncludedInNormalization((prev) => ({ ...prev, [name]: checked }));
-    if (!checked) {
-      setSliderValues((prev) => ({ ...prev, [name]: 0 }));
-    }
   };
 
   const handleNormalize = () => {
@@ -51,20 +44,35 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({ factors }) => {
         return { ...acc, [name]: 0 };
       }
     }, {});
-    setSliderValues(newValues);
+    setSliderValues(() => newValues);
+  };
+
+  const handleCheckboxChange = (name: string, checked: boolean) => {
+    setIncludedInNormalization((prev) => ({ ...prev, [name]: checked }));
+    if (!checked) {
+      handleSliderChange(name, "0");
+    }
   };
 
   return (
-    <div>
+    <div className="grid grid-cols-1 gap-4 p-4 border rounded-lg shadow-md max-w-3xl">
       {Array.from(groupNames).map((name) => (
-        <div key={name}>
+        <div key={name} className="grid grid-cols-[auto_1fr] gap-2 items-right">
+          <div className="w-24">
           <input
             type="checkbox"
             id={`checkbox-${name}`}
             checked={includedInNormalization[name]}
-            onChange={(e) => handleCheckboxChange(name, e.target.checked)}
+            onChange={(e) => {
+              handleCheckboxChange(name, e.target.checked);
+              handleNormalize();
+            }}
+            className="justify-self-end"
           />
-          <label htmlFor={`checkbox-${name}`}>{name}: {sliderValues[name].toFixed(2)}</label>
+          <label htmlFor={`checkbox-${name}`} className="text-left ml-4">
+            {name}
+          </label>
+          </div>
           <input
             type="range"
             id={name}
@@ -73,11 +81,11 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({ factors }) => {
             max="100"
             value={sliderValues[name]}
             onChange={(e) => handleSliderChange(name, e.target.value)}
-            disabled={!includedInNormalization[name]} // Disable slider if not included
+            disabled={!includedInNormalization[name]}
+            className="w-full"
           />
         </div>
       ))}
-      <button onClick={handleNormalize}>Normalize</button>
     </div>
   );
 };
