@@ -7,6 +7,7 @@ import { samplesToLambda } from "./utils/simulate";
 import MultiSurvivalPlot from "./MultiSurvivalPlot";
 import KaplanMeierPlot from "./KaplanMeierPlot";
 import AppError from "./AppError"; // Import the AppError component
+import FactorRangePlot from "./FactorRangePlot";
 
 import { DISEASE_VAL_TO_NAME } from "./constants";
 import DemographicsTable from "./DemographicsTable";
@@ -155,6 +156,26 @@ const TrialDetail: React.FC = () => {
       )}
 
       <DemographicsTable pubmed={trialData.meta.pubmed} />
+
+      {trialData.meta.data_index &&
+        trialData.meta.data_index.age.length > 0 && (
+          <>
+            <h2 className="text-xl font-bold mb-3 mt-8">Age</h2>
+            <div className="max-w-3xl">
+              <FactorRangePlot factors={trialData.meta.data_index.age} />
+            </div>
+          </>
+        )}
+
+      {trialData.meta.data_index &&
+        trialData.meta.data_index.ecog.length > 0 && (
+          <>
+            <h2 className="text-xl font-bold mb-3 mt-8">ECOG</h2>
+            <div className="max-w-3xl">
+              <FactorRangePlot factors={trialData.meta.data_index.ecog} />
+            </div>
+          </>
+        )}
 
       {trialName !== undefined && (
         <>
