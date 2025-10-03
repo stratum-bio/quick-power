@@ -1,5 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { type Range, type FactorQuery } from "./types/demo_types.d";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+} from "recharts";
+
+
 import { rangeToString } from "./utils/factorRangePlotUtils";
 
 interface FactorRangeInputProps {
@@ -104,10 +115,32 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
     }
   };
   return (
-    <div className="grid grid-cols-1 gap-4 p-4">
+    <div className="p-4">
+      <div style={{ width: "100%", height: 300 }}>
+        <ResponsiveContainer>
+          <BarChart
+            data={Array.from(groupNames).map((name) => ({
+              name,
+              value: sliderValues[name],
+            }))}
+            margin={{
+              top: 5,
+              right: 30,
+              left: 20,
+              bottom: 5,
+            }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" />
+            <YAxis domain={[0, 100]} />
+            <Tooltip />
+            <Bar dataKey="value" fill="#8884d8" />
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+      <div className={`grid grid-cols-${groupNames.length} gap-2 items-right`}>
       {Array.from(groupNames).map((name) => (
-        <div key={name} className="grid grid-cols-[auto_1fr] gap-2 items-right">
-          <div className="w-24">
+          <div key={name} >
             <input
               type="checkbox"
               id={`checkbox-${name}`}
@@ -121,19 +154,8 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
               {name}
             </label>
           </div>
-          <input
-            type="range"
-            id={name}
-            name={name}
-            min="0"
-            max="100"
-            value={sliderValues[name]}
-            onChange={(e) => handleSliderChange(name, e.target.value)}
-            disabled={!includedInNormalization[name]}
-            className="w-full"
-          />
-        </div>
       ))}
+      </div>
     </div>
   );
 };
