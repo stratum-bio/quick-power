@@ -4,16 +4,21 @@ export const AgeFactors: Range[] = [
   {
     relation: Relationship.LESS_THAN,
     lower: null,
-    upper: 65,
+    upper: 40,
+  },
+  {
+    relation: Relationship.LESS_THAN,
+    lower: 40,
+    upper: 55,
   },
   {
     relation: Relationship.BETWEEN_INCL,
-    lower: 65,
-    upper: 74,
+    lower: 55,
+    upper: 70,
   },
   {
     relation: Relationship.BETWEEN_INCL,
-    lower: 75,
+    lower: 70,
     upper: 84,
   },
   {

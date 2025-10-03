@@ -19,7 +19,7 @@ const TrialFilter: React.FC<TrialFilterProps> = ({ onApplyFilter }) => {
     Object.keys(DISEASE_VAL_TO_NAME)[0],
   );
   const [selectedFactor, setSelectedFactor] = useState<FactorType>(
-    FactorType.AGE,
+    FactorType.ECOG,
   );
 
   const handleDiseaseChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -36,7 +36,10 @@ const TrialFilter: React.FC<TrialFilterProps> = ({ onApplyFilter }) => {
 
   return (
     <div className="p-4">
-      <div className="mb-4">
+      <p className="italic">
+      This functionality is still under development.
+      </p>
+      <div className="mb-4 mt-4">
         <label htmlFor="disease-select" className="option-label">
           Disease
         </label>

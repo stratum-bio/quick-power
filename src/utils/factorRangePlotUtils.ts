@@ -7,7 +7,7 @@ export function rangeToString(range: Range): string {
   } else if (range.lower && range.upper) {
     name = `${range.lower} - ${range.upper}`;
   } else if (range.lower) {
-    name = `${range.lower}${range.relation}`;
+    name = `${range.relation}${range.lower}`;
   } else if (range.upper) {
     name = `${range.relation}${range.upper}`;
   }
