@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { type Range, type FactorQuery } from "./types/demo_types.d";
 import { rangeToString } from "./utils/factorRangePlotUtils";
 
@@ -43,7 +43,10 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
     }),
     {},
   );
-  onValuesChange(valuesToQuery(factorByName, initialValues));
+
+  useEffect(() => {
+    onValuesChange(valuesToQuery(factorByName, initialValues));
+  }, []);
 
   const [sliderValues, setSliderValues] =
     useState<Record<string, number>>(initialValues);

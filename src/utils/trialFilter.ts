@@ -148,11 +148,10 @@ function scoreECOG(factors: ParsedFactor[], query: FactorQuery): number {
   );
   const queryDist = toRegularGrid(queryToCumulativeDist(query, 3), 0, 3);
   const scores = cumulativeDists.map((c) => ksTest(c, queryDist));
-  return Math.max(...scores);
+  return Math.min(...scores);
 }
 
 function hasFactor(dataIndex: TrialDataIndex, factor: FactorType): boolean {
-  console.log(dataIndex);
   if (factor == FactorType.AGE && dataIndex.age.length > 0) {
     return true;
   } else if (factor == FactorType.ECOG && dataIndex.ecog.length > 0) {
@@ -167,8 +166,8 @@ export function searchTrials(
   factor: FactorType,
   query: FactorQuery,
 ): TrialMeta[] {
+  console.log(query);
   const diseaseTrials = trials.filter((t) => t.disease === disease);
-  console.log(diseaseTrials.map((t) => t.data_index));
   const withFactorTrials = diseaseTrials.filter(
     (t) => t.data_index && hasFactor(t.data_index, factor),
   );
