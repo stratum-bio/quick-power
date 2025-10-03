@@ -1,13 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import type { TrialMeta } from "./types/trialdata";
+import { FactorType } from "./types/demo_types.d";
+import FactorRangePlot from "./FactorRangePlot";
 
 interface TrialListItemProps {
   trial: TrialMeta;
   idx: number;
+  showFactor?: FactorType;
 }
 
-const TrialListItem: React.FC<TrialListItemProps> = ({ trial, idx }) => {
+const TrialListItem: React.FC<TrialListItemProps> = ({ trial, idx , showFactor }) => {
   return (
     <Link
       to={`/trial-detail/${trial.identifier}`}
@@ -30,6 +33,16 @@ const TrialListItem: React.FC<TrialListItemProps> = ({ trial, idx }) => {
           {trial.weibull_max_diff ? trial.weibull_max_diff.toFixed(3) : "N/A"}
         </div>
       </div>
+      {showFactor && trial.data_index && (
+        <div className="col-span-full">
+          {showFactor === FactorType.AGE && trial.data_index.age && (
+            <FactorRangePlot factors={trial.data_index.age} />
+          )}
+          {showFactor === FactorType.ECOG && trial.data_index.ecog && (
+            <FactorRangePlot factors={trial.data_index.ecog} />
+          )}
+        </div>
+      )}
     </Link>
   );
 };

@@ -2,12 +2,14 @@ import React from "react";
 
 import type { TrialMeta } from "./types/trialdata";
 import TrialListItem from "./TrialListItem";
+import { FactorType } from "./types/demo_types.d";
 
 interface TrialSearchListProps {
   trials: TrialMeta[];
+  factorType: FactorType;
 }
 
-const TrialSearchList: React.FC<TrialSearchListProps> = ({ trials }) => {
+const TrialSearchList: React.FC<TrialSearchListProps> = ({ trials , factorType }) => {
   return (
     <div
       key="search_results"
@@ -27,7 +29,7 @@ const TrialSearchList: React.FC<TrialSearchListProps> = ({ trials }) => {
       </div>
       <div className="text-right">
         {trials.map((trial, idx) => (
-          <TrialListItem trial={trial} idx={idx} />
+          <TrialListItem trial={trial} idx={idx} showFactor={factorType} />
         ))}
       </div>
     </div>

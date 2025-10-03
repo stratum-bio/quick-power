@@ -136,6 +136,7 @@ const TrialSelect: React.FC = () => {
               filterFactor,
               filterQuery,
             )}
+            factorType={filterFactor}
           />
         ) : (
           <TrialList
