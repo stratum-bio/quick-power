@@ -140,17 +140,19 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
       </div>
       <div className={`grid grid-cols-${groupNames.length} gap-2 items-right`}>
       {Array.from(groupNames).map((name) => (
-          <div key={name} >
+          <div
+            key={name}
+            className="secondary-button"
+            onClick={() => handleCheckboxChange(name, !includedInNormalization[name])}
+          >
             <input
               type="checkbox"
               id={`checkbox-${name}`}
               checked={includedInNormalization[name]}
-              onChange={(e) => {
-                handleCheckboxChange(name, e.target.checked);
-              }}
-              className="justify-self-end"
+              readOnly
+              className="justify-self-end pointer-events-none"
             />
-            <label htmlFor={`checkbox-${name}`} className="text-left ml-4">
+            <label htmlFor={`checkbox-${name}`} className="text-left ml-4 font-semibold pointer-events-none">
               {name}
             </label>
           </div>
