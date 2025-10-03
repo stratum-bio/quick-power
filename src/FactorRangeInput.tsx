@@ -7,6 +7,7 @@ import {
   YAxis,
   CartesianGrid,
   ResponsiveContainer,
+  Tooltip,
 } from "recharts";
 
 
@@ -115,11 +116,11 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
   };
   return (
     <div className="">
-      <p>
+      <div className="mt-4 mb-4">
       Select and deselect the groups to modify
       the target distribution for searching the
       trials
-      </p>
+      </div>
       <div style={{ width: "100%", height: 300 }}>
         <ResponsiveContainer>
             <BarChart
@@ -129,7 +130,7 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
             }))}
             margin={{
               top: 5,
-              right: 30,
+              right: 0,
               left: 0,
               bottom: 5,
             }}
@@ -141,24 +142,11 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
           >
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" />
-            <YAxis domain={[0, 100]} />
+            <YAxis hide domain={[0, 100]} />
+            <Tooltip content={<></>} cursor={{fill: "#e6efff" }}/>
             <Bar dataKey="value" fill="#8884d8" />
           </BarChart>
         </ResponsiveContainer>
-      </div>
-      <div
-        className="grid gap-2 w-fit mx-auto"
-        style={{ gridTemplateColumns: `repeat(${groupNames.length}, auto)` }}
-      >
-      {Array.from(groupNames).map((name) => (
-          <div
-            key={name}
-            className={`${includedInNormalization[name] ? "selected-option-button" : "secondary-button"} text-center w-24 md:w-32 ring ring-gemini-blue/30`}
-            onClick={() => handleCheckboxChange(name, !includedInNormalization[name])}
-          >
-            {name.trim()}
-          </div>
-      ))}
       </div>
     </div>
   );
