@@ -70,7 +70,7 @@ const TrialFilter: React.FC<TrialFilterProps> = ({ onApplyFilter }) => {
       </div>
       <h2 className="option-label">Select target distribution</h2>
 
-      <div className="max-w-lg">
+      <div>
         {selectedFactor === FactorType.AGE && (
           <FactorRangeInput
             factors={AgeFactors}

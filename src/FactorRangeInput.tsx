@@ -126,7 +126,7 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
             margin={{
               top: 5,
               right: 30,
-              left: 20,
+              left: 0,
               bottom: 5,
             }}
           >
@@ -138,23 +138,14 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
           </BarChart>
         </ResponsiveContainer>
       </div>
-      <div className={`grid grid-cols-${groupNames.length} gap-2 items-right`}>
+      <div className={`grid grid-cols-${groupNames.length} gap-2`}>
       {Array.from(groupNames).map((name) => (
           <div
             key={name}
-            className="secondary-button"
+            className={`${includedInNormalization[name] ? "selected-option-button" : "secondary-button"} text-center`}
             onClick={() => handleCheckboxChange(name, !includedInNormalization[name])}
           >
-            <input
-              type="checkbox"
-              id={`checkbox-${name}`}
-              checked={includedInNormalization[name]}
-              readOnly
-              className="justify-self-end pointer-events-none"
-            />
-            <label htmlFor={`checkbox-${name}`} className="text-left ml-4 font-semibold pointer-events-none">
-              {name}
-            </label>
+            {name.trim()}
           </div>
       ))}
       </div>
