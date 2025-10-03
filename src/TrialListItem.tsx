@@ -10,7 +10,11 @@ interface TrialListItemProps {
   showFactor?: FactorType;
 }
 
-const TrialListItem: React.FC<TrialListItemProps> = ({ trial, idx , showFactor }) => {
+const TrialListItem: React.FC<TrialListItemProps> = ({
+  trial,
+  idx,
+  showFactor,
+}) => {
   return (
     <Link
       to={`/trial-detail/${trial.identifier}`}

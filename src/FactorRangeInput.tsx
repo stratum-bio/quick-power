@@ -10,7 +10,6 @@ import {
   Tooltip,
 } from "recharts";
 
-
 import { rangeToString } from "./utils/factorRangePlotUtils";
 
 interface FactorRangeInputProps {
@@ -117,13 +116,12 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
   return (
     <div className="">
       <div className="mt-4 mb-4">
-      Select and deselect the groups to modify
-      the target distribution for searching the
-      trials
+        Select and deselect the groups to modify the target distribution for
+        searching the trials
       </div>
       <div style={{ width: "100%", height: 300 }}>
         <ResponsiveContainer>
-            <BarChart
+          <BarChart
             data={Array.from(groupNames).map((name) => ({
               name,
               value: sliderValues[name],
@@ -136,14 +134,17 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
             }}
             onClick={(state) => {
               if (state.activeLabel) {
-                handleCheckboxChange(state.activeLabel, !includedInNormalization[state.activeLabel]);
+                handleCheckboxChange(
+                  state.activeLabel,
+                  !includedInNormalization[state.activeLabel],
+                );
               }
             }}
           >
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" />
             <YAxis hide domain={[0, 100]} />
-            <Tooltip content={<></>} cursor={{fill: "#e6efff" }}/>
+            <Tooltip content={<></>} cursor={{ fill: "#e6efff" }} />
             <Bar dataKey="value" fill="#8884d8" />
           </BarChart>
         </ResponsiveContainer>

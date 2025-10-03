@@ -36,9 +36,7 @@ const TrialFilter: React.FC<TrialFilterProps> = ({ onApplyFilter }) => {
 
   return (
     <div className="p-4">
-      <p className="italic">
-      This functionality is still under development.
-      </p>
+      <p className="italic">This functionality is still under development.</p>
       <div className="mb-4 mt-4">
         <label htmlFor="disease-select" className="option-label">
           Disease

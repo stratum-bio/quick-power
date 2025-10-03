@@ -9,7 +9,10 @@ interface TrialSearchListProps {
   factorType: FactorType;
 }
 
-const TrialSearchList: React.FC<TrialSearchListProps> = ({ trials , factorType }) => {
+const TrialSearchList: React.FC<TrialSearchListProps> = ({
+  trials,
+  factorType,
+}) => {
   return (
     <div
       key="search_results"
