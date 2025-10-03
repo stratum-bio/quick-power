@@ -63,7 +63,6 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
   const [includedInNormalization, setIncludedInNormalization] = useState<
     Record<string, boolean>
   >(groupNames.reduce((acc, name) => ({ ...acc, [name]: true }), {}));
-  const [chartKey, setChartKey] = useState(0); // New state for forcing re-render
 
   if (groupNames.length == 0) {
     return <div>No data</div>;
@@ -113,7 +112,6 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
     if (!checked) {
       handleSliderChange(name, "0");
     }
-    setChartKey((prevKey) => prevKey + 1); // Increment key to force re-render
   };
   return (
     <div className="">
@@ -124,7 +122,6 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
       <div style={{ width: "100%", height: 300 }}>
         <ResponsiveContainer>
           <BarChart
-            key={chartKey} // Add key prop here
             data={Array.from(groupNames).map((name) => ({
               name,
               value: sliderValues[name],
