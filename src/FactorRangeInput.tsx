@@ -73,7 +73,7 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
   }
 
   const handleInput = (name: string) => {
-    const idx = groupNames.indexOf(name); 
+    const idx = groupNames.indexOf(name);
     if (idx == -1) {
       console.log("Error, could not find ", name);
       return;
@@ -86,16 +86,19 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
       const right = idx + i;
 
       if (left >= 0) {
-        newSliderValues[groupNames[left]] = 100 / (2.5 ** i);
+        newSliderValues[groupNames[left]] = 100 / 2.5 ** i;
       }
       if (right < groupNames.length) {
-        newSliderValues[groupNames[right]] = 100 / (2.5 ** i);
+        newSliderValues[groupNames[right]] = 100 / 2.5 ** i;
       }
     }
-    const totalSum = Object.values(newSliderValues).reduce((acc, v) => acc + v, 0);
+    const totalSum = Object.values(newSliderValues).reduce(
+      (acc, v) => acc + v,
+      0,
+    );
     const normSliderValues: Record<string, number> = {};
     Object.entries(newSliderValues).forEach(([key, val]) => {
-      normSliderValues[key] = val * 100 / totalSum;
+      normSliderValues[key] = (val * 100) / totalSum;
     });
 
     console.log(newSliderValues, normSliderValues, totalSum);
@@ -124,9 +127,7 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
             }}
             onClick={(state) => {
               if (state.activeLabel) {
-                handleInput(
-                  state.activeLabel,
-                );
+                handleInput(state.activeLabel);
               }
             }}
           >
