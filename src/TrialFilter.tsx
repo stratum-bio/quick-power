@@ -21,6 +21,7 @@ const TrialFilter: React.FC<TrialFilterProps> = ({ onApplyFilter }) => {
   const [selectedFactor, setSelectedFactor] = useState<FactorType>(
     FactorType.ECOG,
   );
+  const [resetFactorRange, setResetFactorRange] = useState<number>(0);
 
   const handleDiseaseChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedDisease(event.target.value);
@@ -76,6 +77,7 @@ const TrialFilter: React.FC<TrialFilterProps> = ({ onApplyFilter }) => {
           <FactorRangeInput
             factors={AgeFactors}
             onValuesChange={handleFactorRangeChange}
+            resetTrigger={resetFactorRange}
           />
         )}
 
@@ -83,6 +85,7 @@ const TrialFilter: React.FC<TrialFilterProps> = ({ onApplyFilter }) => {
           <FactorRangeInput
             factors={ECOGFactors}
             onValuesChange={handleFactorRangeChange}
+            resetTrigger={resetFactorRange}
           />
         )}
       </div>
@@ -99,6 +102,7 @@ const TrialFilter: React.FC<TrialFilterProps> = ({ onApplyFilter }) => {
           className="secondary-button mt-4 ml-4"
           onClick={() => {
             onApplyFilter(selectedDisease, selectedFactor, null);
+            setResetFactorRange((prev) => prev + 1);
           }}
         >
           Reset

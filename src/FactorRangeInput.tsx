@@ -15,6 +15,7 @@ import { rangeToString } from "./utils/factorRangePlotUtils";
 interface FactorRangeInputProps {
   factors: Range[];
   onValuesChange: (query: FactorQuery) => void;
+  resetTrigger: number;
 }
 
 function valuesToQuery(
@@ -37,6 +38,7 @@ function valuesToQuery(
 const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
   factors,
   onValuesChange,
+  resetTrigger,
 }) => {
   const factorByName = factors.reduce(
     (acc, f) => {
@@ -60,6 +62,11 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
 
   const [sliderValues, setSliderValues] =
     useState<Record<string, number>>(initialValues);
+
+  useEffect(() => {
+    setSliderValues(initialValues);
+    onValuesChange(valuesToQuery(factorByName, initialValues));
+  }, [resetTrigger]);
 
   if (groupNames.length == 0) {
     return <div>No data</div>;
