@@ -60,63 +60,46 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
 
   const [sliderValues, setSliderValues] =
     useState<Record<string, number>>(initialValues);
-  const [includedInNormalization, setIncludedInNormalization] = useState<
-    Record<string, boolean>
-  >(groupNames.reduce((acc, name) => ({ ...acc, [name]: true }), {}));
 
   if (groupNames.length == 0) {
     return <div>No data</div>;
   }
 
-  const handleSliderChange = (name: string, value: string) => {
-    const newSliderValues = {
-      ...sliderValues,
-      [name]: Number(value),
-    };
-    setSliderValues(newSliderValues);
-    onValuesChange(valuesToQuery(factorByName, newSliderValues));
-  };
-
-  const handleCheckboxChange = (name: string, checked: boolean) => {
-    setIncludedInNormalization((prev) => {
-      const newState = { ...prev, [name]: checked };
-      const activeGroupNames = Array.from(groupNames).filter(
-        (groupName) => newState[groupName],
-      );
-      const numActiveGroups = activeGroupNames.length;
-
-      if (numActiveGroups === 0) {
-        const newSliderValues = Array.from(groupNames).reduce(
-          (acc, groupName) => ({ ...acc, [groupName]: 0 }),
-          {},
-        );
-        setSliderValues(newSliderValues);
-        onValuesChange(valuesToQuery(factorByName, newSliderValues));
-      } else {
-        const normalizedValue = 100 / numActiveGroups;
-        const newSliderValues = Array.from(groupNames).reduce(
-          (acc, groupName) => {
-            if (newState[groupName]) {
-              return { ...acc, [groupName]: normalizedValue };
-            } else {
-              return { ...acc, [groupName]: 0 };
-            }
-          },
-          {},
-        );
-        setSliderValues(newSliderValues);
-        onValuesChange(valuesToQuery(factorByName, newSliderValues));
-      }
-      return newState;
-    });
-    if (!checked) {
-      handleSliderChange(name, "0");
+  const handleInput = (name: string) => {
+    const idx = groupNames.indexOf(name); 
+    if (idx == -1) {
+      console.log("Error, could not find ", name);
+      return;
     }
+    const newSliderValues = {
+      [name]: 100,
+    };
+    for (let i = 1; i < 3; i++) {
+      const left = idx - i;
+      const right = idx + i;
+
+      if (left >= 0) {
+        newSliderValues[groupNames[left]] = 100 / (2.5 ** i);
+      }
+      if (right < groupNames.length) {
+        newSliderValues[groupNames[right]] = 100 / (2.5 ** i);
+      }
+    }
+    const totalSum = Object.values(newSliderValues).reduce((acc, v) => acc + v, 0);
+    const normSliderValues: Record<string, number> = {};
+    Object.entries(newSliderValues).forEach(([key, val]) => {
+      normSliderValues[key] = val * 100 / totalSum;
+    });
+
+    console.log(newSliderValues, normSliderValues, totalSum);
+    setSliderValues(normSliderValues);
+    onValuesChange(valuesToQuery(factorByName, normSliderValues));
   };
+  console.log("sliderValues ", sliderValues);
   return (
     <div className="">
       <div className="mt-4 mb-4">
-        Select and deselect the groups to modify the target distribution for
+        Select the group of interest to modify the target distribution for
         searching the trials
       </div>
       <div style={{ width: "100%", height: 300 }}>
@@ -134,9 +117,8 @@ const FactorRangeInput: React.FC<FactorRangeInputProps> = ({
             }}
             onClick={(state) => {
               if (state.activeLabel) {
-                handleCheckboxChange(
+                handleInput(
                   state.activeLabel,
-                  !includedInNormalization[state.activeLabel],
                 );
               }
             }}
