@@ -121,18 +121,20 @@ function interpolateSampleSize(sampleSizeList: number[], pvalueList: number[]): 
   if (i == pvalueList.length) {
     return Infinity;
   }
-  const range = pvalueList[i] - pvalueList[i - 1];
-  const weightLeft = (ALPHA - pvalueList[i - 1]) / range;
-  const weightRight = (pvalueList[i] - ALPHA) / range;
+  const range = pvalueList[i - 1] - pvalueList[i];
+  const weightRight = (pvalueList[i - 1] - ALPHA) / range;
+  const weightLeft = (ALPHA - pvalueList[i]) / range;
+  console.log(range, weightLeft, weightRight);
+  console.log(sampleSizeList, pvalueList);
   return Math.round(weightLeft * sampleSizeList[i-1] + weightRight * sampleSizeList[i] );
 }
 
 
 function simCountToLabel(simCount: number): string {
   if (simCount < 1000) {
-    return "noisy";
+    return "noisy, refine the estimates by running the slow but accurate simulation";
   } else if (simCount < 10000) {
-    return "slightly noisy";
+    return "slightly noisy, refine the estimates by running the slow but accurate simulation";
   } else {
     return "reasonable";
   }
@@ -562,71 +564,60 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
         </div>
       )}
       <div className="mb-4 overflow-x-auto">
-        <table className="min-w-full divide-y divide-gray-200">
-          <thead className="bg-gray-50">
-            <tr>
-              <th
-                scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-              >
-                Method
-              </th>
-              <th
-                scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-              >
-                80% Power
-              </th>
-              <th
-                scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-              >
-                90% Power
-              </th>
-            </tr>
-          </thead>
-          <tbody className="bg-white divide-y divide-gray-200">
+        <div className="min-w-full divide-y divide-gray-200">
+          <div className="grid grid-cols-3 bg-gray-50 rounded-md">
+            <div className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              Method
+            </div>
+            <div className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              80% Power
+            </div>
+            <div className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              90% Power
+            </div>
+          </div>
+          <div className="bg-white divide-y divide-gray-200">
             {schoenfeldSampleSize[0] && (
-              <tr>
-                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+              <div className="grid grid-cols-3">
+                <div className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                   Schoenfeld
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                </div>
+                <div className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
                   {Math.round(schoenfeldSampleSize[0])}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                </div>
+                <div className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
                   {schoenfeldSampleSize[1] ? Math.round(schoenfeldSampleSize[1]) : "N/A"}
-                </td>
-              </tr>
+                </div>
+              </div>
             )}
             {logrankSampleSize[0] && (
-              <tr>
-                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+              <div className="grid grid-cols-3">
+                <div className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                   Log Rank
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                </div>
+                <div className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
                   {Math.round(logrankSampleSize[0])}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                </div>
+                <div className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
                   {logrankSampleSize[1] ? Math.round(logrankSampleSize[1]) : "N/A"}
-                </td>
-              </tr>
+                </div>
+              </div>
             )}
             {rmstSampleSize[0] && (
-              <tr>
-                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+              <div className="grid grid-cols-3">
+                <div className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                   RMST
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                </div>
+                <div className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
                   {Math.round(rmstSampleSize[0])}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                </div>
+                <div className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
                   {rmstSampleSize[1] ? Math.round(rmstSampleSize[1]) : "N/A"}
-                </td>
-              </tr>
+                </div>
+              </div>
             )}
-          </tbody>
-        </table>
+          </div>
+        </div>
         <p className={`italic ${datasetSimCount < 10000 ? "text-error" : "text-success" } `}>
         * Estimate reliability: {simCountToLabel(datasetSimCount)}
         </p>
