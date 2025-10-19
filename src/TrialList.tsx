@@ -61,8 +61,8 @@ const TrialList: React.FC<TrialListProps> = ({
                   {trials
                     .sort(
                       (a, b) =>
-                        (a.weibull_max_diff || Infinity) -
-                        (b.weibull_max_diff || Infinity),
+                        a.min_hazard_ratio -
+                        b.min_hazard_ratio,
                     )
                     .map((trial, idx) => (
                       <TrialListItem trial={trial} idx={idx} />

@@ -29,6 +29,8 @@ export interface TrialMeta {
   title: string | null;
   condition_list: string[] | null;
   data_index: TrialDataIndex | null;
+  hazard_ratios: Record<string, Record<string, number>>
+  min_hazard_ratio: number
 }
 
 export interface Trial {
