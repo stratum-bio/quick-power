@@ -25,76 +25,7 @@
     ],
     "data_index": {
       "age": [],
-      "ecog": [
-        {
-          "value_range": {
-            "relation": "-",
-            "lower": 0.0,
-            "upper": 1.0
-          },
-          "groups": [
-            {
-              "group_name": "ITT Total",
-              "count": 157,
-              "percentage": 68.0
-            },
-            {
-              "group_name": "wt-B",
-              "count": 27,
-              "percentage": 77.0
-            },
-            {
-              "group_name": "wt-BE",
-              "count": 24,
-              "percentage": 67.0
-            },
-            {
-              "group_name": "mut-B",
-              "count": 28,
-              "percentage": 82.0
-            },
-            {
-              "group_name": "mut-C",
-              "count": 20,
-              "percentage": 61.0
-            }
-          ]
-        },
-        {
-          "value_range": {
-            "relation": "-",
-            "lower": 0.0,
-            "upper": 1.0
-          },
-          "groups": [
-            {
-              "group_name": "ITT Total",
-              "count": 74,
-              "percentage": 32.0
-            },
-            {
-              "group_name": "wt-B",
-              "count": 8,
-              "percentage": 23.0
-            },
-            {
-              "group_name": "wt-BE",
-              "count": 12,
-              "percentage": 33.0
-            },
-            {
-              "group_name": "mut-B",
-              "count": 6,
-              "percentage": 18.0
-            },
-            {
-              "group_name": "mut-C",
-              "count": 13,
-              "percentage": 39.0
-            }
-          ]
-        }
-      ]
+      "ecog": []
     },
     "hazard_ratios": {
       "mut_b": {
