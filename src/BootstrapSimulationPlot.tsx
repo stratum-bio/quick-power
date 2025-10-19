@@ -128,6 +128,17 @@ function interpolateSampleSize(sampleSizeList: number[], pvalueList: number[]): 
 }
 
 
+function simCountToLabel(simCount: number): string {
+  if (simCount < 1000) {
+    return "noisy";
+  } else if (simCount < 10000) {
+    return "slightly noisy";
+  } else {
+    return "reasonable";
+  }
+}
+
+
 
 const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
   trialName,
@@ -261,11 +272,11 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
 
         setLogRankSampleSize([
           interpolateSampleSize(processedData.map((e) => e.sample_size), processedData.map((e) => e.pvalue_80)),
-          interpolateSampleSize(processedData.map((e) => e.sample_size), processedData.map((e) => e.pvalue_90)),
+          interpolateSampleSize(processedData.map((e) => e.sample_size), processedData.map((e) => e.pvalue_90 + e.pvalue_80)),
         ]);
         setRmstSampleSize([
           interpolateSampleSize(processedData.map((e) => e.sample_size), processedData.map((e) => e.rmst_pvalue_80 ?? 0)),
-          interpolateSampleSize(processedData.map((e) => e.sample_size), processedData.map((e) => e.rmst_pvalue_90 ?? 0)),
+          interpolateSampleSize(processedData.map((e) => e.sample_size), processedData.map((e) => (e.rmst_pvalue_90 ?? 0) + (e.rmst_pvalue_80 ?? 0))),
         ]);
 
         correctBounds(processedData);
@@ -550,16 +561,76 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
           <p className="font-bold text-red-950 italic"> {mismatchMessage} </p>
         </div>
       )}
-      {schoenfeldSampleSize[0] && (
-        <p className="mb-2 text-gray-600">
-          Schoenfeld Sample Size (80% Power): {Math.round(schoenfeldSampleSize[0])}
+      <div className="mb-4 overflow-x-auto">
+        <table className="min-w-full divide-y divide-gray-200">
+          <thead className="bg-gray-50">
+            <tr>
+              <th
+                scope="col"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >
+                Method
+              </th>
+              <th
+                scope="col"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >
+                80% Power
+              </th>
+              <th
+                scope="col"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >
+                90% Power
+              </th>
+            </tr>
+          </thead>
+          <tbody className="bg-white divide-y divide-gray-200">
+            {schoenfeldSampleSize[0] && (
+              <tr>
+                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                  Schoenfeld
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                  {Math.round(schoenfeldSampleSize[0])}
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                  {schoenfeldSampleSize[1] ? Math.round(schoenfeldSampleSize[1]) : "N/A"}
+                </td>
+              </tr>
+            )}
+            {logrankSampleSize[0] && (
+              <tr>
+                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                  Log Rank
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                  {Math.round(logrankSampleSize[0])}
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                  {logrankSampleSize[1] ? Math.round(logrankSampleSize[1]) : "N/A"}
+                </td>
+              </tr>
+            )}
+            {rmstSampleSize[0] && (
+              <tr>
+                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                  RMST
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                  {Math.round(rmstSampleSize[0])}
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                  {rmstSampleSize[1] ? Math.round(rmstSampleSize[1]) : "N/A"}
+                </td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+        <p className={`italic ${datasetSimCount < 10000 ? "text-error" : "text-success" } `}>
+        * Estimate reliability: {simCountToLabel(datasetSimCount)}
         </p>
-      )}
-      {schoenfeldSampleSize[1] && (
-        <p className="mb-2 text-gray-600">
-          Schoenfeld Sample Size (90% Power): {Math.round(schoenfeldSampleSize[1])}
-        </p>
-      )}
+      </div>
       <h3 className="font-bold text-l">
         P-Value distribution as a function of sample size
       </h3>
