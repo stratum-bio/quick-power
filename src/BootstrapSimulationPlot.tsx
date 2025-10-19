@@ -563,6 +563,9 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
           <p className="font-bold text-red-950 italic"> {mismatchMessage} </p>
         </div>
       )}
+      <h3 className="font-bold text-l mb-4">
+        Sample size estimates
+      </h3>
       <div className="mb-4 overflow-x-auto">
         <div className="min-w-full divide-y divide-gray-200">
           <div className="grid grid-cols-3 bg-gray-50 rounded-md">
