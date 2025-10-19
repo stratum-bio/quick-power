@@ -1,4 +1,4 @@
-import { ParsedFactor } from "./demo_types.d";
+import { type ParsedFactor } from "./demo_types.d";
 
 export interface Weibull {
   scale: number;

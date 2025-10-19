@@ -16,8 +16,9 @@ import { InlineMath } from "react-katex";
 import { linspace } from "./utils/survival";
 import { formatLegend } from "./utils/formatters.tsx";
 import { InlineMathTooltip } from "./InlineMathTooltip";
+import { schoenfeldFromKM } from "./utils/schoenfeld-from-km";
 import type {
-  Trial,
+  TrialMeta,
   // TrialArmData
 } from "./types/trialdata.d";
 
@@ -45,7 +46,7 @@ interface TrackedBootstrapSimulationProps {
 
 interface BootstrapSimulationProps extends TrackedBootstrapSimulationProps {
   trialName?: string;
-  trial: Trial;
+  trialMeta: TrialMeta;
 }
 
 interface HazardDistPlotData {
@@ -56,6 +57,8 @@ interface HazardDistPlotData {
   treat_hazard: number[];
   pvalue_80: number;
   pvalue_90: number;
+  rmst_pvalue_80: number | null;
+  rmst_pvalue_90: number | null;
 }
 
 function propsAreEqual(
@@ -105,9 +108,30 @@ function correctBounds(results: HazardDistPlotData[]) {
   }
 }
 
+
+function interpolateSampleSize(sampleSizeList: number[], pvalueList: number[]): number {
+  if (pvalueList[0] < ALPHA) {
+    return sampleSizeList[0];
+  }
+  let i = 0;
+  while (i < pvalueList.length && pvalueList[i] > ALPHA) {
+    i++;
+  }
+
+  if (i == pvalueList.length) {
+    return Infinity;
+  }
+  const range = pvalueList[i] - pvalueList[i - 1];
+  const weightLeft = (ALPHA - pvalueList[i - 1]) / range;
+  const weightRight = (pvalueList[i] - ALPHA) / range;
+  return Math.round(weightLeft * sampleSizeList[i-1] + weightRight * sampleSizeList[i] );
+}
+
+
+
 const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
   trialName,
-  // trial,
+  trialMeta,
   controlArmName,
   treatArmName,
   totalSampleSize,
@@ -143,21 +167,11 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
   const [minSampleSize, setMinSampleSize] = useState(MIN_SAMPLE_SIZE);
   const [maxSampleSize, setMaxSampleSize] = useState(totalSampleSize);
 
-  /*
-   * Keeping this for now in case we want to
-   * bring back the bootstrap resampling
-   * simulation method
-   *
-  const controlArm = findArm(trial, controlArmName);
-  const treatArm = findArm(trial, treatArmName);
+  const [schoenfeldSampleSize, setSchoenfeldSampleSize] = useState<[number | null, number | null]>([null, null]);
+  const [logrankSampleSize, setLogRankSampleSize] = useState<[number | null, number | null]>([null, null]);
+  const [rmstSampleSize, setRmstSampleSize] = useState<[number | null, number | null]>([null, null]);
 
-  const controlTimes = new Float64Array(controlArm.time);
-  const controlEvents = new Uint8Array(
-    controlArm.events.map((e) => (e ? 1 : 0)),
-  );
-  const treatTimes = new Float64Array(treatArm.time);
-  const treatEvents = new Uint8Array(treatArm.events.map((e) => (e ? 1 : 0)));
-  */
+
 
   useEffect(() => {
     setLoading(true);
@@ -166,6 +180,38 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
       setMinSampleSize(MIN_SAMPLE_SIZE);
       setMaxSampleSize(totalSampleSize);
     }
+
+    const fetchSchoenfeldSampleSize = async () => {
+      if (trialName && controlArmName && accrual && followup && treatHazardRatio) {
+        try {
+          const sampleSize80 = await schoenfeldFromKM(
+            trialName,
+            controlArmName,
+            trialMeta.hazard_ratios[controlArmName][treatArmName] * treatHazardRatio,
+            accrual,
+            followup,
+            ALPHA,
+            0.8,
+          );
+
+          const sampleSize90 = await schoenfeldFromKM(
+            trialName,
+            controlArmName,
+            trialMeta.hazard_ratios[controlArmName][treatArmName] * treatHazardRatio,
+            accrual,
+            followup,
+            ALPHA,
+            0.9,
+          );
+          setSchoenfeldSampleSize([sampleSize80, sampleSize90]);
+        } catch (error) {
+          console.error("Error calculating Schoenfeld sample size:", error);
+          setSchoenfeldSampleSize([null, null]);
+        }
+      }
+    };
+
+    fetchSchoenfeldSampleSize();
 
     const worker = new Worker();
     const sampleEvalPoints = linspace(
@@ -212,6 +258,15 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
             treat_hazard: result.treat_hazard.map((v) => v * Math.log(2)),
           }));
         processedData.sort((a, b) => a.sample_size - b.sample_size);
+
+        setLogRankSampleSize([
+          interpolateSampleSize(processedData.map((e) => e.sample_size), processedData.map((e) => e.pvalue_80)),
+          interpolateSampleSize(processedData.map((e) => e.sample_size), processedData.map((e) => e.pvalue_90)),
+        ]);
+        setRmstSampleSize([
+          interpolateSampleSize(processedData.map((e) => e.sample_size), processedData.map((e) => e.rmst_pvalue_80 ?? 0)),
+          interpolateSampleSize(processedData.map((e) => e.sample_size), processedData.map((e) => e.rmst_pvalue_90 ?? 0)),
+        ]);
 
         correctBounds(processedData);
         setData(processedData);
@@ -481,7 +536,7 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
   }
 
   let containerClass = "";
-  let mismatchMessage = "";
+  let mismatchMessage = null;
   if (!propsAreEqual(allProperties, properties)) {
     containerClass = "bg-red-100 rounded-lg";
     mismatchMessage =
@@ -490,9 +545,21 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
 
   return (
     <div className={containerClass}>
-      <div className="pt-4 pb-4 text-center">
-        <p className="font-bold text-red-950 italic"> {mismatchMessage} </p>
-      </div>
+      {mismatchMessage && (
+        <div className="pt-4 pb-4 text-center">
+          <p className="font-bold text-red-950 italic"> {mismatchMessage} </p>
+        </div>
+      )}
+      {schoenfeldSampleSize[0] && (
+        <p className="mb-2 text-gray-600">
+          Schoenfeld Sample Size (80% Power): {Math.round(schoenfeldSampleSize[0])}
+        </p>
+      )}
+      {schoenfeldSampleSize[1] && (
+        <p className="mb-2 text-gray-600">
+          Schoenfeld Sample Size (90% Power): {Math.round(schoenfeldSampleSize[1])}
+        </p>
+      )}
       <h3 className="font-bold text-l">
         P-Value distribution as a function of sample size
       </h3>

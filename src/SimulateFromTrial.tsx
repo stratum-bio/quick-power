@@ -141,7 +141,7 @@ const SimulateFromTrial: React.FC = () => {
     }
     return (
       <BootstrapSimulationPlot
-        trial={trialData}
+        trialMeta={trialData.meta}
         controlArmName={simulationParameters.controlArm}
         treatArmName={simulationParameters.treatmentArm}
         totalSampleSize={simulationParameters.largestSampleSize}
