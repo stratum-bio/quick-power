@@ -86,7 +86,12 @@ export function computeCumulativeDists(
 
   const result: CumulativeDist[] = [];
   // upper will only be null for the upper limit
-  const maxBound = Math.max(...factors.map((f) => Math.max(f.value_range.lower ?? 0 , f.value_range.upper ?? 0))) + maxPad;
+  const maxBound =
+    Math.max(
+      ...factors.map((f) =>
+        Math.max(f.value_range.lower ?? 0, f.value_range.upper ?? 0),
+      ),
+    ) + maxPad;
   const values = factors.map((f) => f.value_range.upper ?? maxBound);
 
   for (let i = 0; i < factors[0].groups.length; i++) {
@@ -108,14 +113,11 @@ export function ksTest(a: CumulativeDist, b: CumulativeDist): number {
     while (a.values[aIdx] < b.values[0]) {
       aIdx += 1;
     }
-  }
-  else {
+  } else {
     while (a.values[0] > b.values[bIdx]) {
       bIdx += 1;
     }
   }
-
-
 
   let maxDiff = 0.0;
   while (aIdx < a.values.length && bIdx < b.values.length) {
@@ -154,8 +156,8 @@ function sortIntervals(factors: ParsedFactor[]): ParsedFactor[] {
 
 function scoreAge(factors: ParsedFactor[], query: FactorQuery): number {
   const sortedFactors = sortIntervals(factors);
-  const cumulativeDists = computeCumulativeDists(sortedFactors, AGE_PAD).map((d) =>
-    toRegularGrid(d, d.values[0] - AGE_PAD, d.values[-1] + AGE_PAD),
+  const cumulativeDists = computeCumulativeDists(sortedFactors, AGE_PAD).map(
+    (d) => toRegularGrid(d, d.values[0] - AGE_PAD, d.values[-1] + AGE_PAD),
   );
   const queryDist = toRegularGrid(queryToCumulativeDist(query, 90), 30, 90);
   const scores = cumulativeDists.map((c) => ksTest(c, queryDist));

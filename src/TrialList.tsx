@@ -59,11 +59,7 @@ const TrialList: React.FC<TrialListProps> = ({
                 </div>
                 <div className="text-right">
                   {trials
-                    .sort(
-                      (a, b) =>
-                        a.min_hazard_ratio -
-                        b.min_hazard_ratio,
-                    )
+                    .sort((a, b) => a.min_hazard_ratio - b.min_hazard_ratio)
                     .map((trial, idx) => (
                       <TrialListItem trial={trial} idx={idx} />
                     ))}

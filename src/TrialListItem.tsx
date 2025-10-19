@@ -33,9 +33,7 @@ const TrialListItem: React.FC<TrialListItemProps> = ({
         </div>
         <div>{trial.subjects}</div>
         <div>{trial.arms}</div>
-        <div>
-          {trial.min_hazard_ratio.toFixed(3)}
-        </div>
+        <div>{trial.min_hazard_ratio.toFixed(3)}</div>
       </div>
       {showFactor && trial.data_index && (
         <div className="col-span-full">
