@@ -21,7 +21,16 @@
     "time_scale": "Months",
     "title": null,
     "condition_list": null,
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "chemotherapy": {
+        "chemotherapy_trastuzumab": 0.6276780855082638
+      },
+      "chemotherapy_trastuzumab": {
+        "chemotherapy": 1.5931733528505263
+      }
+    },
+    "min_hazard_ratio": 0.6276780855082638
   },
   "arms": [
     {

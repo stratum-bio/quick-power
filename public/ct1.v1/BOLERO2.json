@@ -23,7 +23,16 @@
     "condition_list": [
       "Breast Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "eve_exe": {
+        "pbo_exe": 1.10886534689736
+      },
+      "pbo_exe": {
+        "eve_exe": 0.9018227531395324
+      }
+    },
+    "min_hazard_ratio": 0.9018227531395324
   },
   "arms": [
     {

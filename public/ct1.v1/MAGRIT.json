@@ -23,7 +23,16 @@
     "condition_list": [
       "Lung Cancer, Non-Small Cell"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "mage_a3": {
+        "placebo": 0.9826073156800658
+      },
+      "placebo": {
+        "mage_a3": 1.0177005442992215
+      }
+    },
+    "min_hazard_ratio": 0.9826073156800658
   },
   "arms": [
     {

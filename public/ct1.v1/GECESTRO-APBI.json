@@ -23,7 +23,16 @@
     "condition_list": [
       "Breast Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "apbi": {
+        "wbi": 1.0888897195309188
+      },
+      "wbi": {
+        "apbi": 0.918366646376998
+      }
+    },
+    "min_hazard_ratio": 0.918366646376998
   },
   "arms": [
     {

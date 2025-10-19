@@ -104,7 +104,16 @@
           ]
         }
       ]
-    }
+    },
+    "hazard_ratios": {
+      "orteronel": {
+        "placebo": 1.3139647193921682
+      },
+      "placebo": {
+        "orteronel": 0.761055441779741
+      }
+    },
+    "min_hazard_ratio": 0.761055441779741
   },
   "arms": [
     {

@@ -21,7 +21,16 @@
     "time_scale": "Months",
     "title": null,
     "condition_list": null,
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "afatinib": {
+        "ct": 1.140204067580736
+      },
+      "ct": {
+        "afatinib": 0.8770359871823482
+      }
+    },
+    "min_hazard_ratio": 0.8770359871823482
   },
   "arms": [
     {

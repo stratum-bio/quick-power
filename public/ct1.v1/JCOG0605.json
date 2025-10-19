@@ -21,7 +21,16 @@
     "time_scale": "Months",
     "title": null,
     "condition_list": null,
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "combination_chemotherapy": {
+        "topotecan": 1.5409470824726297
+      },
+      "topotecan": {
+        "combination_chemotherapy": 0.6489515515324401
+      }
+    },
+    "min_hazard_ratio": 0.6489515515324401
   },
   "arms": [
     {

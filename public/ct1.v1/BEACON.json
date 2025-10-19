@@ -24,7 +24,16 @@
       "Locally Recurrent Breast Cancer",
       "Metastatic Breast Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "control": {
+        "etirinotecan_pegol": 0.8655932754301117
+      },
+      "etirinotecan_pegol": {
+        "control": 1.1552769971590895
+      }
+    },
+    "min_hazard_ratio": 0.8655932754301117
   },
   "arms": [
     {

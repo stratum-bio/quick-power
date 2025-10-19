@@ -65,7 +65,16 @@
           ]
         }
       ]
-    }
+    },
+    "hazard_ratios": {
+      "bev_cp": {
+        "placebo_cp": 1.5511110138158408
+      },
+      "placebo_cp": {
+        "bev_cp": 0.6446991808406611
+      }
+    },
+    "min_hazard_ratio": 0.6446991808406611
   },
   "arms": [
     {

@@ -26,7 +26,16 @@
     "data_index": {
       "age": [],
       "ecog": []
-    }
+    },
+    "hazard_ratios": {
+      "cm_maintenance": {
+        "no_cm": 1.2109582952493951
+      },
+      "no_cm": {
+        "cm_maintenance": 0.825792270405193
+      }
+    },
+    "min_hazard_ratio": 0.825792270405193
   },
   "arms": [
     {

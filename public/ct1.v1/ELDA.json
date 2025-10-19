@@ -148,7 +148,16 @@
           ]
         }
       ]
-    }
+    },
+    "hazard_ratios": {
+      "cmf": {
+        "wdocetaxel": 1.2261001369036086
+      },
+      "wdocetaxel": {
+        "cmf": 0.8155940692783857
+      }
+    },
+    "min_hazard_ratio": 0.8155940692783857
   },
   "arms": [
     {

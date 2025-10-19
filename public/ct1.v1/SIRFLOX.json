@@ -28,7 +28,16 @@
     "data_index": {
       "age": [],
       "ecog": []
-    }
+    },
+    "hazard_ratios": {
+      "mfolfox6": {
+        "mfolfox6_rt": 0.913620944745268
+      },
+      "mfolfox6_rt": {
+        "mfolfox6": 1.0945458351754578
+      }
+    },
+    "min_hazard_ratio": 0.913620944745268
   },
   "arms": [
     {

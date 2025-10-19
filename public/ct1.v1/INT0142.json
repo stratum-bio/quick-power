@@ -82,7 +82,16 @@
         }
       ],
       "ecog": []
-    }
+    },
+    "hazard_ratios": {
+      "tamoxifen": {
+        "tamoxifen_ofs": 0.8314175799185108
+      },
+      "tamoxifen_ofs": {
+        "tamoxifen": 1.202765041482539
+      }
+    },
+    "min_hazard_ratio": 0.8314175799185108
   },
   "arms": [
     {

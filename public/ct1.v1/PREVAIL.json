@@ -161,7 +161,16 @@
           ]
         }
       ]
-    }
+    },
+    "hazard_ratios": {
+      "enzalutamide": {
+        "placebo": 1.3792372683996428
+      },
+      "placebo": {
+        "enzalutamide": 0.7250384128325653
+      }
+    },
+    "min_hazard_ratio": 0.7250384128325653
   },
   "arms": [
     {

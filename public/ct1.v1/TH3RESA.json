@@ -23,7 +23,16 @@
     "condition_list": [
       "Breast Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "physicians_choice": {
+        "trastuzumab_emtansine": 0.5451165935859678
+      },
+      "trastuzumab_emtansine": {
+        "physicians_choice": 1.834469931325426
+      }
+    },
+    "min_hazard_ratio": 0.5451165935859678
   },
   "arms": [
     {

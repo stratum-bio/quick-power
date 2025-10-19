@@ -170,7 +170,16 @@
           ]
         }
       ]
-    }
+    },
+    "hazard_ratios": {
+      "control": {
+        "study": 1.130290677559507
+      },
+      "study": {
+        "control": 0.8847281675888656
+      }
+    },
+    "min_hazard_ratio": 0.8847281675888656
   },
   "arms": [
     {

@@ -65,7 +65,16 @@
           ]
         }
       ]
-    }
+    },
+    "hazard_ratios": {
+      "placebo": {
+        "tivantinib": 0.8622049282087932
+      },
+      "tivantinib": {
+        "placebo": 1.1598170774521923
+      }
+    },
+    "min_hazard_ratio": 0.8622049282087932
   },
   "arms": [
     {

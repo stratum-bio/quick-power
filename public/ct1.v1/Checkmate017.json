@@ -148,7 +148,16 @@
           ]
         }
       ]
-    }
+    },
+    "hazard_ratios": {
+      "docetaxel": {
+        "nivolumab": 0.588949662384394
+      },
+      "nivolumab": {
+        "docetaxel": 1.697937979880058
+      }
+    },
+    "min_hazard_ratio": 0.588949662384394
   },
   "arms": [
     {

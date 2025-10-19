@@ -23,7 +23,16 @@
     "condition_list": [
       "Lung Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "chemo_surgery": {
+        "crt_surgery": 0.9267188263986699
+      },
+      "crt_surgery": {
+        "chemo_surgery": 1.0790759521807802
+      }
+    },
+    "min_hazard_ratio": 0.9267188263986699
   },
   "arms": [
     {

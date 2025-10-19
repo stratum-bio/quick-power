@@ -23,7 +23,16 @@
     "condition_list": [
       "Colorectal Cancer Metastatic"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "maintenance": {
+        "observation": 2.2146382386078995
+      },
+      "observation": {
+        "maintenance": 0.45154101584942846
+      }
+    },
+    "min_hazard_ratio": 0.45154101584942846
   },
   "arms": [
     {

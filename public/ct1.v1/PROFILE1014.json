@@ -85,7 +85,16 @@
           ]
         }
       ]
-    }
+    },
+    "hazard_ratios": {
+      "chemotherapy": {
+        "crizotinib": 0.8858915119991972
+      },
+      "crizotinib": {
+        "chemotherapy": 1.1288063904611676
+      }
+    },
+    "min_hazard_ratio": 0.8858915119991972
   },
   "arms": [
     {

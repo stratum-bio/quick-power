@@ -63,7 +63,16 @@
           ]
         }
       ]
-    }
+    },
+    "hazard_ratios": {
+      "chemotherapy": {
+        "pembrolizumab": 0.4874003368488659
+      },
+      "pembrolizumab": {
+        "chemotherapy": 2.0517014954589206
+      }
+    },
+    "min_hazard_ratio": 0.4874003368488659
   },
   "arms": [
     {

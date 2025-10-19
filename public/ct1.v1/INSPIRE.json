@@ -23,7 +23,16 @@
     "condition_list": [
       "Non Small Cell Lung Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "ct": {
+        "necitumumab_ct": 0.9220894743843224
+      },
+      "necitumumab_ct": {
+        "ct": 1.0844934551147527
+      }
+    },
+    "min_hazard_ratio": 0.9220894743843224
   },
   "arms": [
     {

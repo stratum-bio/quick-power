@@ -123,7 +123,16 @@
           ]
         }
       ]
-    }
+    },
+    "hazard_ratios": {
+      "palbociclib_letrozole": {
+        "placebo_letrozole": 1.5104607091590372
+      },
+      "placebo_letrozole": {
+        "palbociclib_letrozole": 0.6620496607003827
+      }
+    },
+    "min_hazard_ratio": 0.6620496607003827
   },
   "arms": [
     {

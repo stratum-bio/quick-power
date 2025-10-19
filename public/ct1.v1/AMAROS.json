@@ -26,7 +26,16 @@
     "data_index": {
       "age": [],
       "ecog": []
-    }
+    },
+    "hazard_ratios": {
+      "dissection": {
+        "radiotherapy": 1.1704172706961227
+      },
+      "radiotherapy": {
+        "dissection": 0.854396141476309
+      }
+    },
+    "min_hazard_ratio": 0.854396141476309
   },
   "arms": [
     {

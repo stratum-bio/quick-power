@@ -21,7 +21,16 @@
     "time_scale": "Months",
     "title": null,
     "condition_list": null,
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "deferred_rt": {
+        "immediate_rt": 0.962042538094348
+      },
+      "immediate_rt": {
+        "deferred_rt": 1.0394550764676578
+      }
+    },
+    "min_hazard_ratio": 0.962042538094348
   },
   "arms": [
     {

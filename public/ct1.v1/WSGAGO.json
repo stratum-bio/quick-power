@@ -51,7 +51,16 @@
         }
       ],
       "ecog": []
-    }
+    },
+    "hazard_ratios": {
+      "control": {
+        "ed_doc": 0.7312952791887889
+      },
+      "ed_doc": {
+        "control": 1.3674366954881472
+      }
+    },
+    "min_hazard_ratio": 0.7312952791887889
   },
   "arms": [
     {

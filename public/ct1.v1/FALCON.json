@@ -23,7 +23,16 @@
     "condition_list": [
       "Hormone Receptor Positive Breast Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "anastrazole": {
+        "fulvestrant": 0.7855328865547712
+      },
+      "fulvestrant": {
+        "anastrazole": 1.2730211772365754
+      }
+    },
+    "min_hazard_ratio": 0.7855328865547712
   },
   "arms": [
     {

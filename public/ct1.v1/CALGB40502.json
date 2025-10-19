@@ -122,7 +122,16 @@
         }
       ],
       "ecog": []
-    }
+    },
+    "hazard_ratios": {
+      "ixabepilone": {
+        "paclitaxel": 0.6352754680859464
+      },
+      "paclitaxel": {
+        "ixabepilone": 1.5741202836195618
+      }
+    },
+    "min_hazard_ratio": 0.6352754680859464
   },
   "arms": [
     {

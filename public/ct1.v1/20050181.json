@@ -21,7 +21,16 @@
     "time_scale": "Months",
     "title": null,
     "condition_list": null,
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "folfiri": {
+        "panitumumab_folfiri": 0.8183406587758713
+      },
+      "panitumumab_folfiri": {
+        "folfiri": 1.221984987884956
+      }
+    },
+    "min_hazard_ratio": 0.8183406587758713
   },
   "arms": [
     {

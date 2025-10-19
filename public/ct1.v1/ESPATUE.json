@@ -21,7 +21,16 @@
     "time_scale": "Months",
     "title": null,
     "condition_list": null,
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "arma": {
+        "armb": 0.9649004235484337
+      },
+      "armb": {
+        "arma": 1.0363763716907564
+      }
+    },
+    "min_hazard_ratio": 0.9649004235484337
   },
   "arms": [
     {

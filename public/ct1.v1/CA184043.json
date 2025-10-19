@@ -23,7 +23,16 @@
     "condition_list": [
       "Prostate Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "ipilimumab": {
+        "placebo": 1.1722804477123434
+      },
+      "placebo": {
+        "ipilimumab": 0.8530381974308779
+      }
+    },
+    "min_hazard_ratio": 0.8530381974308779
   },
   "arms": [
     {

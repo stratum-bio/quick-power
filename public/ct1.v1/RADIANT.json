@@ -144,7 +144,16 @@
           ]
         }
       ]
-    }
+    },
+    "hazard_ratios": {
+      "erlotinib": {
+        "placebo": 1.113944065403075
+      },
+      "placebo": {
+        "erlotinib": 0.8977111428284823
+      }
+    },
+    "min_hazard_ratio": 0.8977111428284823
   },
   "arms": [
     {

@@ -18,7 +18,16 @@
     "time_scale": "Months",
     "title": null,
     "condition_list": null,
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "conventional_fractionation": {
+        "hypofractionation": 0.9781318402384043
+      },
+      "hypofractionation": {
+        "conventional_fractionation": 1.0223570676896334
+      }
+    },
+    "min_hazard_ratio": 0.9781318402384043
   },
   "arms": [
     {

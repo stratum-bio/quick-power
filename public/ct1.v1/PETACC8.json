@@ -18,7 +18,16 @@
     "time_scale": "Months",
     "title": null,
     "condition_list": null,
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "folfox4": {
+        "folfox4_cetuximab": 1.1796639885868696
+      },
+      "folfox4_cetuximab": {
+        "folfox4": 0.8476990140200086
+      }
+    },
+    "min_hazard_ratio": 0.8476990140200086
   },
   "arms": [
     {

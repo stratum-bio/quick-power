@@ -161,7 +161,16 @@
         }
       ],
       "ecog": []
-    }
+    },
+    "hazard_ratios": {
+      "exemestane_os": {
+        "tamoxifen_os": 1.4389046025311047
+      },
+      "tamoxifen_os": {
+        "exemestane_os": 0.6949731054032006
+      }
+    },
+    "min_hazard_ratio": 0.6949731054032006
   },
   "arms": [
     {

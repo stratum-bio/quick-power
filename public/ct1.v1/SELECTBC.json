@@ -21,7 +21,16 @@
     "time_scale": "Months",
     "title": null,
     "condition_list": null,
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "s-1": {
+        "taxane": 0.9581480505444305
+      },
+      "taxane": {
+        "s-1": 1.043680044468899
+      }
+    },
+    "min_hazard_ratio": 0.9581480505444305
   },
   "arms": [
     {

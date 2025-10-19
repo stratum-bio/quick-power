@@ -23,7 +23,16 @@
     "condition_list": [
       "Breast Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "neratinib": {
+        "placebo": 1.466712701178002
+      },
+      "placebo": {
+        "neratinib": 0.6817967821488435
+      }
+    },
+    "min_hazard_ratio": 0.6817967821488435
   },
   "arms": [
     {

@@ -21,7 +21,16 @@
     "time_scale": "Months",
     "title": null,
     "condition_list": null,
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "cap": {
+        "cap_bev": 1.1561864687439267
+      },
+      "cap_bev": {
+        "cap": 0.8649123882987433
+      }
+    },
+    "min_hazard_ratio": 0.8649123882987433
   },
   "arms": [
     {

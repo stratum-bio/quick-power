@@ -23,7 +23,16 @@
     "condition_list": [
       "Lung Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "chemotherapy": {
+        "erlotinib": 1.1469139083851045
+      },
+      "erlotinib": {
+        "chemotherapy": 0.8719050250319446
+      }
+    },
+    "min_hazard_ratio": 0.8719050250319446
   },
   "arms": [
     {

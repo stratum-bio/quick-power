@@ -28,7 +28,16 @@
     "data_index": {
       "age": [],
       "ecog": []
-    }
+    },
+    "hazard_ratios": {
+      "folfox4": {
+        "folfox7_folfiri": 0.9969235013642661
+      },
+      "folfox7_folfiri": {
+        "folfox4": 1.0030859926880284
+      }
+    },
+    "min_hazard_ratio": 0.9969235013642661
   },
   "arms": [
     {

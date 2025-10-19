@@ -23,7 +23,16 @@
     "condition_list": [
       "Breast Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "everolimus": {
+        "placebo": 1.1376701160834315
+      },
+      "placebo": {
+        "everolimus": 0.8789894239664326
+      }
+    },
+    "min_hazard_ratio": 0.8789894239664326
   },
   "arms": [
     {

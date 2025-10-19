@@ -23,7 +23,16 @@
     "condition_list": [
       "Colorectal Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "folfiri_bev": {
+        "folfoxiri_bev": 0.8360602363184663
+      },
+      "folfoxiri_bev": {
+        "folfiri_bev": 1.1960860671994533
+      }
+    },
+    "min_hazard_ratio": 0.8360602363184663
   },
   "arms": [
     {

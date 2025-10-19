@@ -23,7 +23,16 @@
     "condition_list": [
       "Prostate Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "orteronel": {
+        "placebo": 1.3944826598563949
+      },
+      "placebo": {
+        "orteronel": 0.7171118213137057
+      }
+    },
+    "min_hazard_ratio": 0.7171118213137057
   },
   "arms": [
     {

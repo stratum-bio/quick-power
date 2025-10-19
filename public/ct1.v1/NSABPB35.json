@@ -23,7 +23,16 @@
     "condition_list": [
       "Breast Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "anastrozole": {
+        "tamoxifen": 1.145570861601498
+      },
+      "tamoxifen": {
+        "anastrozole": 0.8729272308847039
+      }
+    },
+    "min_hazard_ratio": 0.8729272308847039
   },
   "arms": [
     {

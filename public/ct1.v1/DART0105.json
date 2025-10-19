@@ -23,7 +23,16 @@
     "condition_list": [
       "Prostate Adenocarcinoma"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "ltad": {
+        "stad": 1.8699429845694302
+      },
+      "stad": {
+        "ltad": 0.5347756633501086
+      }
+    },
+    "min_hazard_ratio": 0.5347756633501086
   },
   "arms": [
     {

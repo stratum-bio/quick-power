@@ -21,7 +21,16 @@
     "time_scale": "Months",
     "title": null,
     "condition_list": null,
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "control": {
+        "escalated_dose": 1.0306721858816579
+      },
+      "escalated_dose": {
+        "control": 0.9702405999678546
+      }
+    },
+    "min_hazard_ratio": 0.9702405999678546
   },
   "arms": [
     {

@@ -27,7 +27,22 @@
     "condition_list": [
       "Neoplasms, Breast"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "lapatinib": {
+        "lapatinib_trastuzumab": 0.7310583137470753,
+        "trastuzumab": 0.9763934499444237
+      },
+      "lapatinib_trastuzumab": {
+        "lapatinib": 1.367879936792526,
+        "trastuzumab": 1.335682748006585
+      },
+      "trastuzumab": {
+        "lapatinib": 1.0241772925216983,
+        "lapatinib_trastuzumab": 0.748680778794539
+      }
+    },
+    "min_hazard_ratio": 0.7310583137470753
   },
   "arms": [
     {

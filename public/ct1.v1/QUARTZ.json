@@ -21,7 +21,16 @@
     "time_scale": "Unknown",
     "title": null,
     "condition_list": null,
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "osc": {
+        "osc_wbrt": 0.9180794469586869
+      },
+      "osc_wbrt": {
+        "osc": 1.0892303528988592
+      }
+    },
+    "min_hazard_ratio": 0.9180794469586869
   },
   "arms": [
     {

@@ -103,7 +103,16 @@
         }
       ],
       "ecog": []
-    }
+    },
+    "hazard_ratios": {
+      "placebo": {
+        "tasq": 1.108740906561803
+      },
+      "tasq": {
+        "placebo": 0.9019239698668576
+      }
+    },
+    "min_hazard_ratio": 0.9019239698668576
   },
   "arms": [
     {

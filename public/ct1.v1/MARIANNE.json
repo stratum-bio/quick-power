@@ -79,7 +79,22 @@
           ]
         }
       ]
-    }
+    },
+    "hazard_ratios": {
+      "t-dm1": {
+        "t-dm1_pertuzumab": 0.9020659948489711,
+        "trastuzumab_taxane": 1.0631036957940558
+      },
+      "t-dm1_pertuzumab": {
+        "t-dm1": 1.1085663418311489,
+        "trastuzumab_taxane": 1.178938263579872
+      },
+      "trastuzumab_taxane": {
+        "t-dm1": 0.940642012586625,
+        "t-dm1_pertuzumab": 0.8482208364019655
+      }
+    },
+    "min_hazard_ratio": 0.8482208364019655
   },
   "arms": [
     {

@@ -23,7 +23,16 @@
     "condition_list": [
       "Breast Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "mpt": {
+        "pt": 1.1678913682328038
+      },
+      "pt": {
+        "mpt": 0.8562440199495189
+      }
+    },
+    "min_hazard_ratio": 0.8562440199495189
   },
   "arms": [
     {

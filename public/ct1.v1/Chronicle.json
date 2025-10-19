@@ -26,7 +26,16 @@
     "data_index": {
       "age": [],
       "ecog": []
-    }
+    },
+    "hazard_ratios": {
+      "capecitabine_oxaliplatin": {
+        "follow_up_only": 0.8287623903552926
+      },
+      "follow_up_only": {
+        "capecitabine_oxaliplatin": 1.2066184610178765
+      }
+    },
+    "min_hazard_ratio": 0.8287623903552926
   },
   "arms": [
     {

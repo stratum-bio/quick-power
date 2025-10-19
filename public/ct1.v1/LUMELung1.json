@@ -23,7 +23,16 @@
     "condition_list": [
       "Carcinoma, Non-Small-Cell Lung"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "docetaxel_nintedanib": {
+        "docetaxel_placebo": 1.2661784701565484
+      },
+      "docetaxel_placebo": {
+        "docetaxel_nintedanib": 0.7897780791331587
+      }
+    },
+    "min_hazard_ratio": 0.7897780791331587
   },
   "arms": [
     {

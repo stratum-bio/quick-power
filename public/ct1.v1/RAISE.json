@@ -23,7 +23,16 @@
     "condition_list": [
       "Colorectal Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "placebo_folfiri": {
+        "ramucirumab_folfiri": 0.8016383883334508
+      },
+      "ramucirumab_folfiri": {
+        "placebo_folfiri": 1.2474452503190732
+      }
+    },
+    "min_hazard_ratio": 0.8016383883334508
   },
   "arms": [
     {

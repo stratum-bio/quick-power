@@ -22,7 +22,16 @@
       "time_scale": "Months",
       "title": null,
       "condition_list": null,
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "folfiri": {
+          "panitumumab_folfiri": 0.8183406587758713
+        },
+        "panitumumab_folfiri": {
+          "folfiri": 1.221984987884956
+        }
+      },
+      "min_hazard_ratio": 0.8183406587758713
     },
     {
       "identifier": "A001",
@@ -100,7 +109,16 @@
           }
         ],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "a": {
+          "b": 0.8004482164254558
+        },
+        "b": {
+          "a": 1.249300053994344
+        }
+      },
+      "min_hazard_ratio": 0.8004482164254558
     },
     {
       "identifier": "A003",
@@ -185,7 +203,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "control": {
+          "pci": 0.6964213190503215
+        },
+        "pci": {
+          "control": 1.4359123890171195
+        }
+      },
+      "min_hazard_ratio": 0.6964213190503215
     },
     {
       "identifier": "A004",
@@ -211,7 +238,16 @@
       "condition_list": [
         "Breast Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "mpt": {
+          "pt": 1.1678913682328038
+        },
+        "pt": {
+          "mpt": 0.8562440199495189
+        }
+      },
+      "min_hazard_ratio": 0.8562440199495189
     },
     {
       "identifier": "ACT1",
@@ -337,7 +373,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "amrubicin": {
+          "topotecan": 1.1396754952129853
+        },
+        "topotecan": {
+          "amrubicin": 0.8774427494495857
+        }
+      },
+      "min_hazard_ratio": 0.8774427494495857
     },
     {
       "identifier": "ACT2",
@@ -435,7 +480,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "mut_b": {
+          "mut_c": 1.2001261381019788
+        },
+        "mut_c": {
+          "mut_b": 0.8332457466358646
+        }
+      },
+      "min_hazard_ratio": 0.8332457466358646
     },
     {
       "identifier": "ACTSCC",
@@ -523,7 +577,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "s_1": {
+          "uft_lv": 1.1898769061915693
+        },
+        "uft_lv": {
+          "s_1": 0.8404230679631354
+        }
+      },
+      "min_hazard_ratio": 0.8404230679631354
     },
     {
       "identifier": "AIO0207",
@@ -556,7 +619,22 @@
       "data_index": {
         "age": [],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "5fu_bev": {
+          "bev": 0.9337842736300257,
+          "no_tx": 0.900599763062741
+        },
+        "bev": {
+          "5fu_bev": 1.0709111603610166,
+          "no_tx": 0.9691892534763462
+        },
+        "no_tx": {
+          "5fu_bev": 1.110371155994113,
+          "bev": 1.0317902271544386
+        }
+      },
+      "min_hazard_ratio": 0.900599763062741
     },
     {
       "identifier": "ALTTO",
@@ -652,7 +730,30 @@
           }
         ],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "l": {
+          "l_t": 0.6445212135534971,
+          "t": 0.7723756168712284,
+          "t_then_l": 0.7309847098359135
+        },
+        "l_t": {
+          "l": 1.5515393116180143,
+          "t": 1.1979950648081523,
+          "t_then_l": 1.1312447812355255
+        },
+        "t": {
+          "l": 1.2947068474932468,
+          "l_t": 0.8347279795849082,
+          "t_then_l": 0.9441996215842547
+        },
+        "t_then_l": {
+          "l": 1.3680176706082858,
+          "l_t": 0.8839819786022064,
+          "t": 1.0590980732677258
+        }
+      },
+      "min_hazard_ratio": 0.6445212135534971
     },
     {
       "identifier": "AMAROS",
@@ -681,7 +782,16 @@
       "data_index": {
         "age": [],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "dissection": {
+          "radiotherapy": 1.1704172706961227
+        },
+        "radiotherapy": {
+          "dissection": 0.854396141476309
+        }
+      },
+      "min_hazard_ratio": 0.854396141476309
     },
     {
       "identifier": "ASPECCT",
@@ -707,7 +817,16 @@
       "condition_list": [
         "Metastatic Colorectal Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "cetuximab": {
+          "panitumumab": 1.0174876312299852
+        },
+        "panitumumab": {
+          "cetuximab": 0.9828129299136094
+        }
+      },
+      "min_hazard_ratio": 0.9828129299136094
     },
     {
       "identifier": "ATTENTION",
@@ -775,7 +894,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "placebo": {
+          "tivantinib": 0.8622049282087932
+        },
+        "tivantinib": {
+          "placebo": 1.1598170774521923
+        }
+      },
+      "min_hazard_ratio": 0.8622049282087932
     },
     {
       "identifier": "AURA3",
@@ -802,7 +930,16 @@
       "data_index": {
         "age": [],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "osimertinib": {
+          "platinum-pemetrexed": 2.705936806409041
+        },
+        "platinum-pemetrexed": {
+          "osimertinib": 0.3695577803707345
+        }
+      },
+      "min_hazard_ratio": 0.3695577803707345
     },
     {
       "identifier": "AZURE",
@@ -829,7 +966,16 @@
         "Breast Cancer",
         "Metastatic Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "control": {
+          "zoledronic_acid": 0.9362441933525788
+        },
+        "zoledronic_acid": {
+          "control": 1.0680974120855378
+        }
+      },
+      "min_hazard_ratio": 0.9362441933525788
     },
     {
       "identifier": "BEACON",
@@ -856,7 +1002,16 @@
         "Locally Recurrent Breast Cancer",
         "Metastatic Breast Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "control": {
+          "etirinotecan_pegol": 0.8655932754301117
+        },
+        "etirinotecan_pegol": {
+          "control": 1.1552769971590895
+        }
+      },
+      "min_hazard_ratio": 0.8655932754301117
     },
     {
       "identifier": "BEBYP",
@@ -882,7 +1037,16 @@
       "condition_list": [
         "Colorectal Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "bev_ct": {
+          "ct": 1.4150537989983927
+        },
+        "ct": {
+          "bev_ct": 0.706686912333526
+        }
+      },
+      "min_hazard_ratio": 0.706686912333526
     },
     {
       "identifier": "BEYOND",
@@ -950,7 +1114,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "bev_cp": {
+          "placebo_cp": 1.5511110138158408
+        },
+        "placebo_cp": {
+          "bev_cp": 0.6446991808406611
+        }
+      },
+      "min_hazard_ratio": 0.6446991808406611
     },
     {
       "identifier": "BOLERO1",
@@ -976,7 +1149,16 @@
       "condition_list": [
         "Breast Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "everolimus": {
+          "placebo": 1.1376701160834315
+        },
+        "placebo": {
+          "everolimus": 0.8789894239664326
+        }
+      },
+      "min_hazard_ratio": 0.8789894239664326
     },
     {
       "identifier": "BOLERO2",
@@ -1002,7 +1184,16 @@
       "condition_list": [
         "Breast Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "eve_exe": {
+          "pbo_exe": 1.10886534689736
+        },
+        "pbo_exe": {
+          "eve_exe": 0.9018227531395324
+        }
+      },
+      "min_hazard_ratio": 0.9018227531395324
     },
     {
       "identifier": "BREC",
@@ -1081,7 +1272,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "control": {
+          "experimental": 0.96469794487325
+        },
+        "experimental": {
+          "control": 1.036593894818951
+        }
+      },
+      "min_hazard_ratio": 0.96469794487325
     },
     {
       "identifier": "CA184043",
@@ -1107,7 +1307,16 @@
       "condition_list": [
         "Prostate Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "ipilimumab": {
+          "placebo": 1.1722804477123434
+        },
+        "placebo": {
+          "ipilimumab": 0.8530381974308779
+        }
+      },
+      "min_hazard_ratio": 0.8530381974308779
     },
     {
       "identifier": "CA184095",
@@ -1233,7 +1442,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "ipilimumab": {
+          "placebo": 1.5219072840015455
+        },
+        "placebo": {
+          "ipilimumab": 0.6570702502787841
+        }
+      },
+      "min_hazard_ratio": 0.6570702502787841
     },
     {
       "identifier": "CAIRO3",
@@ -1259,7 +1477,16 @@
       "condition_list": [
         "Colorectal Cancer Metastatic"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "maintenance": {
+          "observation": 2.2146382386078995
+        },
+        "observation": {
+          "maintenance": 0.45154101584942846
+        }
+      },
+      "min_hazard_ratio": 0.45154101584942846
     },
     {
       "identifier": "CALGB40502",
@@ -1384,7 +1611,16 @@
           }
         ],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "ixabepilone": {
+          "paclitaxel": 0.6352754680859464
+        },
+        "paclitaxel": {
+          "ixabepilone": 1.5741202836195618
+        }
+      },
+      "min_hazard_ratio": 0.6352754680859464
     },
     {
       "identifier": "CALGB40503",
@@ -1608,7 +1844,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "l": {
+          "l_b": 0.8570638966364913
+        },
+        "l_b": {
+          "l": 1.1667741505907023
+        }
+      },
+      "min_hazard_ratio": 0.8570638966364913
     },
     {
       "identifier": "CALGB90202",
@@ -1711,7 +1956,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "placebo": {
+          "za": 0.8871768312554618
+        },
+        "za": {
+          "placebo": 1.1271710044376158
+        }
+      },
+      "min_hazard_ratio": 0.8871768312554618
     },
     {
       "identifier": "CBCSG006",
@@ -1737,7 +1991,16 @@
       "condition_list": [
         "Breast Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "cis_gemcitabine": {
+          "paclitaxel_gemcitabine": 1.4181755975223733
+        },
+        "paclitaxel_gemcitabine": {
+          "cis_gemcitabine": 0.7051312980896386
+        }
+      },
+      "min_hazard_ratio": 0.7051312980896386
     },
     {
       "identifier": "CEREBEL",
@@ -1839,7 +2102,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "lapatinib_cape": {
+          "trastuzumab_cape": 0.7296869619349212
+        },
+        "trastuzumab_cape": {
+          "lapatinib_cape": 1.3704506893590176
+        }
+      },
+      "min_hazard_ratio": 0.7296869619349212
     },
     {
       "identifier": "Checkmate017",
@@ -1990,7 +2262,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "docetaxel": {
+          "nivolumab": 0.588949662384394
+        },
+        "nivolumab": {
+          "docetaxel": 1.697937979880058
+        }
+      },
+      "min_hazard_ratio": 0.588949662384394
     },
     {
       "identifier": "Checkmate057",
@@ -2093,7 +2374,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "docetaxel": {
+          "nivolumab": 0.9150004059212293
+        },
+        "nivolumab": {
+          "docetaxel": 1.0928956900223366
+        }
+      },
+      "min_hazard_ratio": 0.9150004059212293
     },
     {
       "identifier": "CHHiP",
@@ -2118,7 +2408,22 @@
       "time_scale": "Months",
       "title": null,
       "condition_list": null,
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "57gy": {
+          "60gy": 0.6779658507740692,
+          "74gy": 0.8231949689002638
+        },
+        "60gy": {
+          "57gy": 1.4750005459098594,
+          "74gy": 1.190127300450831
+        },
+        "74gy": {
+          "57gy": 1.2147790472236928,
+          "60gy": 0.8402462489694951
+        }
+      },
+      "min_hazard_ratio": 0.6779658507740692
     },
     {
       "identifier": "Chronicle",
@@ -2147,7 +2452,16 @@
       "data_index": {
         "age": [],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "capecitabine_oxaliplatin": {
+          "follow_up_only": 0.8287623903552926
+        },
+        "follow_up_only": {
+          "capecitabine_oxaliplatin": 1.2066184610178765
+        }
+      },
+      "min_hazard_ratio": 0.8287623903552926
     },
     {
       "identifier": "CLEOPATRA",
@@ -2173,7 +2487,16 @@
       "condition_list": [
         "Metastatic Breast Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "control": {
+          "pertuzumab": 0.6675805476564973
+        },
+        "pertuzumab": {
+          "control": 1.4979465826415133
+        }
+      },
+      "min_hazard_ratio": 0.6675805476564973
     },
     {
       "identifier": "COMET1",
@@ -2244,7 +2567,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "cabozantinib": {
+          "prednisone": 2.032633185845251
+        },
+        "prednisone": {
+          "cabozantinib": 0.4919726820184527
+        }
+      },
+      "min_hazard_ratio": 0.4919726820184527
     },
     {
       "identifier": "CONCEPT",
@@ -2389,7 +2721,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "co": {
+          "io": 0.5557993364245009
+        },
+        "io": {
+          "co": 1.7992104964231794
+        }
+      },
+      "min_hazard_ratio": 0.5557993364245009
     },
     {
       "identifier": "CONCUR",
@@ -2415,7 +2756,16 @@
       "condition_list": [
         "Colorectal Neoplasms"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "placebo": {
+          "regorafenib": 0.5350282796518171
+        },
+        "regorafenib": {
+          "placebo": 1.8690600815545206
+        }
+      },
+      "min_hazard_ratio": 0.5350282796518171
     },
     {
       "identifier": "COUAA202",
@@ -2441,7 +2791,16 @@
       "condition_list": [
         "Prostate Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "abiraterone": {
+          "placebo": 1.2412887715393734
+        },
+        "placebo": {
+          "abiraterone": 0.8056143122601993
+        }
+      },
+      "min_hazard_ratio": 0.8056143122601993
     },
     {
       "identifier": "Dalotuzumab",
@@ -2471,7 +2830,22 @@
       "condition_list": [
         "Metastatic Colorectal Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "arma": {
+          "armb": 0.8634431943110108,
+          "armc": 0.7225256820699413
+        },
+        "armb": {
+          "arma": 1.1581537808030968,
+          "armc": 0.8050678861838909
+        },
+        "armc": {
+          "arma": 1.3840338479528245,
+          "armb": 1.2421312750904872
+        }
+      },
+      "min_hazard_ratio": 0.7225256820699413
     },
     {
       "identifier": "DART0105",
@@ -2497,7 +2871,16 @@
       "condition_list": [
         "Prostate Adenocarcinoma"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "ltad": {
+          "stad": 1.8699429845694302
+        },
+        "stad": {
+          "ltad": 0.5347756633501086
+        }
+      },
+      "min_hazard_ratio": 0.5347756633501086
     },
     {
       "identifier": "DELTA",
@@ -2582,7 +2965,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "docetaxel": {
+          "erlotinib": 0.906799758090535
+        },
+        "erlotinib": {
+          "docetaxel": 1.1027792972791681
+        }
+      },
+      "min_hazard_ratio": 0.906799758090535
     },
     {
       "identifier": "E1199",
@@ -2619,7 +3011,30 @@
       "data_index": {
         "age": [],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "d1": {
+          "d3": 0.8379788529058525,
+          "p1": 0.8681109568274208,
+          "p3": 0.9914473742618535
+        },
+        "d3": {
+          "d1": 1.1933475367932114,
+          "p1": 1.0420977770787545,
+          "p3": 1.1843336176218622
+        },
+        "p1": {
+          "d1": 1.1519264814426229,
+          "d3": 0.9596028530098543,
+          "p3": 1.136070597394036
+        },
+        "p3": {
+          "d1": 1.0086264041442583,
+          "d3": 0.8443566788283833,
+          "p1": 0.8802269879124061
+        }
+      },
+      "min_hazard_ratio": 0.8379788529058525
     },
     {
       "identifier": "EAGLE",
@@ -2685,7 +3100,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "bev10": {
+          "bev5": 0.9986909069063066
+        },
+        "bev5": {
+          "bev10": 1.0013108090647873
+        }
+      },
+      "min_hazard_ratio": 0.9986909069063066
     },
     {
       "identifier": "ELDA",
@@ -2836,7 +3260,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "cmf": {
+          "wdocetaxel": 1.2261001369036086
+        },
+        "wdocetaxel": {
+          "cmf": 0.8155940692783857
+        }
+      },
+      "min_hazard_ratio": 0.8155940692783857
     },
     {
       "identifier": "ELM-PC4",
@@ -2862,7 +3295,16 @@
       "condition_list": [
         "Prostate Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "orteronel": {
+          "placebo": 1.3944826598563949
+        },
+        "placebo": {
+          "orteronel": 0.7171118213137057
+        }
+      },
+      "min_hazard_ratio": 0.7171118213137057
     },
     {
       "identifier": "ELM-PC5",
@@ -2969,7 +3411,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "orteronel": {
+          "placebo": 1.3139647193921682
+        },
+        "placebo": {
+          "orteronel": 0.761055441779741
+        }
+      },
+      "min_hazard_ratio": 0.761055441779741
     },
     {
       "identifier": "ENSURE",
@@ -3095,7 +3546,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "erlotinib": {
+          "gp": 1.1035691213882313
+        },
+        "gp": {
+          "erlotinib": 0.9061507617593115
+        }
+      },
+      "min_hazard_ratio": 0.9061507617593115
     },
     {
       "identifier": "EORTC22881",
@@ -3121,7 +3581,16 @@
       "condition_list": [
         "Breast Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "boost": {
+          "no_boost": 0.9605605591312459
+        },
+        "no_boost": {
+          "boost": 1.0410587760384664
+        }
+      },
+      "min_hazard_ratio": 0.9605605591312459
     },
     {
       "identifier": "Eribulin",
@@ -3227,7 +3696,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "capecitabine": {
+          "eribulin": 0.8790988951511122
+        },
+        "eribulin": {
+          "capecitabine": 1.1375284459072221
+        }
+      },
+      "min_hazard_ratio": 0.8790988951511122
     },
     {
       "identifier": "ESPATUE",
@@ -3251,7 +3729,16 @@
       "time_scale": "Months",
       "title": null,
       "condition_list": null,
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "arma": {
+          "armb": 0.9649004235484337
+        },
+        "armb": {
+          "arma": 1.0363763716907564
+        }
+      },
+      "min_hazard_ratio": 0.9649004235484337
     },
     {
       "identifier": "ExteNET",
@@ -3277,7 +3764,16 @@
       "condition_list": [
         "Breast Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "neratinib": {
+          "placebo": 1.466712701178002
+        },
+        "placebo": {
+          "neratinib": 0.6817967821488435
+        }
+      },
+      "min_hazard_ratio": 0.6817967821488435
     },
     {
       "identifier": "FALCON",
@@ -3303,7 +3799,16 @@
       "condition_list": [
         "Hormone Receptor Positive Breast Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "anastrazole": {
+          "fulvestrant": 0.7855328865547712
+        },
+        "fulvestrant": {
+          "anastrazole": 1.2730211772365754
+        }
+      },
+      "min_hazard_ratio": 0.7855328865547712
     },
     {
       "identifier": "FFCD2001",
@@ -3332,7 +3837,16 @@
       "data_index": {
         "age": [],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "fu": {
+          "iri": 0.9835943335209187
+        },
+        "iri": {
+          "fu": 1.0166793015372049
+        }
+      },
+      "min_hazard_ratio": 0.9835943335209187
     },
     {
       "identifier": "Figitumumab",
@@ -3403,7 +3917,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "control": {
+          "figitumumab": 1.0703571498167341
+        },
+        "figitumumab": {
+          "control": 0.934267594859547
+        }
+      },
+      "min_hazard_ratio": 0.934267594859547
     },
     {
       "identifier": "Figitumumab2",
@@ -3474,7 +3997,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "control": {
+          "figitumumab": 1.0956415246272873
+        },
+        "figitumumab": {
+          "control": 0.9127072838355389
+        }
+      },
+      "min_hazard_ratio": 0.9127072838355389
     },
     {
       "identifier": "FIRE3",
@@ -3501,7 +4033,16 @@
         "Neoplasm Metastasis",
         "Colorectal Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "folfiri_bevacizumab": {
+          "folfiri_cetuximab": 0.7585764851431736
+        },
+        "folfiri_cetuximab": {
+          "folfiri_bevacizumab": 1.3182586325639398
+        }
+      },
+      "min_hazard_ratio": 0.7585764851431736
     },
     {
       "identifier": "GECESTRO-APBI",
@@ -3527,7 +4068,16 @@
       "condition_list": [
         "Breast Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "apbi": {
+          "wbi": 1.0888897195309188
+        },
+        "wbi": {
+          "apbi": 0.918366646376998
+        }
+      },
+      "min_hazard_ratio": 0.918366646376998
     },
     {
       "identifier": "GEICAM2003",
@@ -3556,7 +4106,16 @@
       "data_index": {
         "age": [],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "ec_t": {
+          "et_x": 1.324632628762925
+        },
+        "et_x": {
+          "ec_t": 0.754926292985777
+        }
+      },
+      "min_hazard_ratio": 0.754926292985777
     },
     {
       "identifier": "GETUG12",
@@ -3582,7 +4141,16 @@
       "condition_list": [
         "Prostate Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "adt": {
+          "adt_de": 0.7323763698052258
+        },
+        "adt_de": {
+          "adt": 1.3654181664353102
+        }
+      },
+      "min_hazard_ratio": 0.7323763698052258
     },
     {
       "identifier": "GETUG16",
@@ -3608,7 +4176,16 @@
       "condition_list": [
         "Prostate Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "rt": {
+          "rt_goserelin": 0.5046918978116813
+        },
+        "rt_goserelin": {
+          "rt": 1.9814068827654054
+        }
+      },
+      "min_hazard_ratio": 0.5046918978116813
     },
     {
       "identifier": "GIM",
@@ -3733,7 +4310,16 @@
           }
         ],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "control": {
+          "lhrha": 1.177226473806574
+        },
+        "lhrha": {
+          "control": 0.8494542233377487
+        }
+      },
+      "min_hazard_ratio": 0.8494542233377487
     },
     {
       "identifier": "GIM2",
@@ -3759,7 +4345,16 @@
       "condition_list": [
         "Breast Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "q2": {
+          "q3": 1.3041458598962865
+        },
+        "q3": {
+          "q2": 0.7667853962895883
+        }
+      },
+      "min_hazard_ratio": 0.7667853962895883
     },
     {
       "identifier": "HYPRO",
@@ -3780,7 +4375,16 @@
       "time_scale": "Months",
       "title": null,
       "condition_list": null,
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "conventional_fractionation": {
+          "hypofractionation": 0.9781318402384043
+        },
+        "hypofractionation": {
+          "conventional_fractionation": 1.0223570676896334
+        }
+      },
+      "min_hazard_ratio": 0.9781318402384043
     },
     {
       "identifier": "IBCSG2200",
@@ -3809,7 +4413,16 @@
       "data_index": {
         "age": [],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "cm_maintenance": {
+          "no_cm": 1.2109582952493951
+        },
+        "no_cm": {
+          "cm_maintenance": 0.825792270405193
+        }
+      },
+      "min_hazard_ratio": 0.825792270405193
     },
     {
       "identifier": "IMELDA",
@@ -3835,7 +4448,16 @@
       "condition_list": [
         "Breast Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "bevacizumab": {
+          "bevacizumab_capecitabine": 0.5136499224137542
+        },
+        "bevacizumab_capecitabine": {
+          "bevacizumab": 1.9468512626280168
+        }
+      },
+      "min_hazard_ratio": 0.5136499224137542
     },
     {
       "identifier": "IMPRESS",
@@ -3861,7 +4483,16 @@
       "condition_list": [
         "Non-Small Cell Lung Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "gefitinib": {
+          "placebo": 1.218912513332584
+        },
+        "placebo": {
+          "gefitinib": 0.8204034244147159
+        }
+      },
+      "min_hazard_ratio": 0.8204034244147159
     },
     {
       "identifier": "Iniparib",
@@ -3987,7 +4618,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "gc": {
+          "gci": 0.8681086286088634
+        },
+        "gci": {
+          "gc": 1.1519295708447126
+        }
+      },
+      "min_hazard_ratio": 0.8681086286088634
     },
     {
       "identifier": "INSPIRE",
@@ -4013,7 +4653,16 @@
       "condition_list": [
         "Non Small Cell Lung Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "ct": {
+          "necitumumab_ct": 0.9220894743843224
+        },
+        "necitumumab_ct": {
+          "ct": 1.0844934551147527
+        }
+      },
+      "min_hazard_ratio": 0.9220894743843224
     },
     {
       "identifier": "INT0142",
@@ -4098,7 +4747,16 @@
           }
         ],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "tamoxifen": {
+          "tamoxifen_ofs": 0.8314175799185108
+        },
+        "tamoxifen_ofs": {
+          "tamoxifen": 1.202765041482539
+        }
+      },
+      "min_hazard_ratio": 0.8314175799185108
     },
     {
       "identifier": "ITACa",
@@ -4166,7 +4824,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "ct": {
+          "ct_b": 1.1026559391285584
+        },
+        "ct_b": {
+          "ct": 0.9069012050942303
+        }
+      },
+      "min_hazard_ratio": 0.9069012050942303
     },
     {
       "identifier": "JCOG0509",
@@ -4193,7 +4860,16 @@
       "data_index": {
         "age": [],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "amrubicin_cisplatin": {
+          "irinotecan_cisplatin": 0.6958584967026972
+        },
+        "irinotecan_cisplatin": {
+          "amrubicin_cisplatin": 1.437073779710196
+        }
+      },
+      "min_hazard_ratio": 0.6958584967026972
     },
     {
       "identifier": "JCOG0605",
@@ -4217,7 +4893,16 @@
       "time_scale": "Months",
       "title": null,
       "condition_list": null,
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "combination_chemotherapy": {
+          "topotecan": 1.5409470824726297
+        },
+        "topotecan": {
+          "combination_chemotherapy": 0.6489515515324401
+        }
+      },
+      "min_hazard_ratio": 0.6489515515324401
     },
     {
       "identifier": "JFMC33-0502",
@@ -4390,7 +5075,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "control": {
+          "study": 1.130290677559507
+        },
+        "study": {
+          "control": 0.8847281675888656
+        }
+      },
+      "min_hazard_ratio": 0.8847281675888656
     },
     {
       "identifier": "KEYNOTE024",
@@ -4456,7 +5150,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "chemotherapy": {
+          "pembrolizumab": 0.4874003368488659
+        },
+        "pembrolizumab": {
+          "chemotherapy": 2.0517014954589206
+        }
+      },
+      "min_hazard_ratio": 0.4874003368488659
     },
     {
       "identifier": "LEA",
@@ -4620,7 +5323,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "et": {
+          "et_b": 1.1356278640866047
+        },
+        "et_b": {
+          "et": 0.8805701512126145
+        }
+      },
+      "min_hazard_ratio": 0.8805701512126145
     },
     {
       "identifier": "LUMELung1",
@@ -4646,7 +5358,16 @@
       "condition_list": [
         "Carcinoma, Non-Small-Cell Lung"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "docetaxel_nintedanib": {
+          "docetaxel_placebo": 1.2661784701565484
+        },
+        "docetaxel_placebo": {
+          "docetaxel_nintedanib": 0.7897780791331587
+        }
+      },
+      "min_hazard_ratio": 0.7897780791331587
     },
     {
       "identifier": "LUXBreast1",
@@ -4672,7 +5393,16 @@
       "condition_list": [
         "Breast Neoplasms"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "afatinib": {
+          "trastuzumab": 0.6788545873249003
+        },
+        "trastuzumab": {
+          "afatinib": 1.4730695183789029
+        }
+      },
+      "min_hazard_ratio": 0.6788545873249003
     },
     {
       "identifier": "LUXLung3-6",
@@ -4696,7 +5426,16 @@
       "time_scale": "Months",
       "title": null,
       "condition_list": null,
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "afatinib": {
+          "ct": 1.140204067580736
+        },
+        "ct": {
+          "afatinib": 0.8770359871823482
+        }
+      },
+      "min_hazard_ratio": 0.8770359871823482
     },
     {
       "identifier": "LUXLung8",
@@ -4722,7 +5461,16 @@
       "condition_list": [
         "Carcinoma, Non-Small-Cell Lung"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "afatinib": {
+          "erlotinib": 1.2471748390305148
+        },
+        "erlotinib": {
+          "afatinib": 0.8018121988231778
+        }
+      },
+      "min_hazard_ratio": 0.8018121988231778
     },
     {
       "identifier": "MA17R",
@@ -4749,7 +5497,16 @@
       "data_index": {
         "age": [],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "letrozole": {
+          "placebo": 1.0240546638227424
+        },
+        "placebo": {
+          "letrozole": 0.9765103712989817
+        }
+      },
+      "min_hazard_ratio": 0.9765103712989817
     },
     {
       "identifier": "MA31",
@@ -4972,7 +5729,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "ltax_l": {
+          "ttax_t": 0.7454346915035306
+        },
+        "ttax_t": {
+          "ltax_l": 1.3414991432489076
+        }
+      },
+      "min_hazard_ratio": 0.7454346915035306
     },
     {
       "identifier": "MAGRIT",
@@ -4998,7 +5764,16 @@
       "condition_list": [
         "Lung Cancer, Non-Small Cell"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "mage_a3": {
+          "placebo": 0.9826073156800658
+        },
+        "placebo": {
+          "mage_a3": 1.0177005442992215
+        }
+      },
+      "min_hazard_ratio": 0.9826073156800658
     },
     {
       "identifier": "MAINSAIL",
@@ -5024,7 +5799,16 @@
       "condition_list": [
         "Prostate Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "lenolidomide": {
+          "placebo": 0.6576682175665367
+        },
+        "placebo": {
+          "lenolidomide": 1.5205235303906557
+        }
+      },
+      "min_hazard_ratio": 0.6576682175665367
     },
     {
       "identifier": "MAPS",
@@ -5050,7 +5834,16 @@
       "condition_list": [
         "Mesothelioma"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "pc": {
+          "pcb": 0.842549616309941
+        },
+        "pcb": {
+          "pc": 1.186873723092575
+        }
+      },
+      "min_hazard_ratio": 0.842549616309941
     },
     {
       "identifier": "MARIANNE",
@@ -5132,7 +5925,22 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "t-dm1": {
+          "t-dm1_pertuzumab": 0.9020659948489711,
+          "trastuzumab_taxane": 1.0631036957940558
+        },
+        "t-dm1_pertuzumab": {
+          "t-dm1": 1.1085663418311489,
+          "trastuzumab_taxane": 1.178938263579872
+        },
+        "trastuzumab_taxane": {
+          "t-dm1": 0.940642012586625,
+          "t-dm1_pertuzumab": 0.8482208364019655
+        }
+      },
+      "min_hazard_ratio": 0.8482208364019655
     },
     {
       "identifier": "MARQUEE",
@@ -5219,7 +6027,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "erlotinib_placebo": {
+          "erlotinib_tivantinib": 0.7363598295019215
+        },
+        "erlotinib_tivantinib": {
+          "erlotinib_placebo": 1.3580317121269454
+        }
+      },
+      "min_hazard_ratio": 0.7363598295019215
     },
     {
       "identifier": "METlung",
@@ -5306,7 +6123,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "onaturzumab_erlotinib": {
+          "placebo_erlotinib": 0.9951102449927552
+        },
+        "placebo_erlotinib": {
+          "onaturzumab_erlotinib": 1.0049137821983538
+        }
+      },
+      "min_hazard_ratio": 0.9951102449927552
     },
     {
       "identifier": "MINDACT",
@@ -5472,7 +6298,16 @@
           }
         ],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "chemotherapy": {
+          "no_chemotherapy": 1.1971818464688657
+        },
+        "no_chemotherapy": {
+          "chemotherapy": 0.8352949912743318
+        }
+      },
+      "min_hazard_ratio": 0.8352949912743318
     },
     {
       "identifier": "MIROX",
@@ -5503,7 +6338,16 @@
       "data_index": {
         "age": [],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "folfox4": {
+          "folfox7_folfiri": 0.9969235013642661
+        },
+        "folfox7_folfiri": {
+          "folfox4": 1.0030859926880284
+        }
+      },
+      "min_hazard_ratio": 0.9969235013642661
     },
     {
       "identifier": "MONALEESA2",
@@ -5571,7 +6415,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "placebo": {
+          "ribociclib_letrozole": 0.5589104471819617
+        },
+        "ribociclib_letrozole": {
+          "placebo": 1.7891953980141562
+        }
+      },
+      "min_hazard_ratio": 0.5589104471819617
     },
     {
       "identifier": "MRC-RT01",
@@ -5595,7 +6448,16 @@
       "time_scale": "Months",
       "title": null,
       "condition_list": null,
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "control": {
+          "escalated_dose": 1.0306721858816579
+        },
+        "escalated_dose": {
+          "control": 0.9702405999678546
+        }
+      },
+      "min_hazard_ratio": 0.9702405999678546
     },
     {
       "identifier": "NCICBR26",
@@ -5621,7 +6483,16 @@
       "condition_list": [
         "Lung Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "dacomitinib": {
+          "placebo": 1.0549722936157826
+        },
+        "placebo": {
+          "dacomitinib": 0.9478921920997829
+        }
+      },
+      "min_hazard_ratio": 0.9478921920997829
     },
     {
       "identifier": "NeoALTTO",
@@ -5651,7 +6522,22 @@
       "condition_list": [
         "Neoplasms, Breast"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "lapatinib": {
+          "lapatinib_trastuzumab": 0.7310583137470753,
+          "trastuzumab": 0.9763934499444237
+        },
+        "lapatinib_trastuzumab": {
+          "lapatinib": 1.367879936792526,
+          "trastuzumab": 1.335682748006585
+        },
+        "trastuzumab": {
+          "lapatinib": 1.0241772925216983,
+          "lapatinib_trastuzumab": 0.748680778794539
+        }
+      },
+      "min_hazard_ratio": 0.7310583137470753
     },
     {
       "identifier": "NITRO",
@@ -5832,7 +6718,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "chemo": {
+          "nitro_chemo": 1.0471217930089916
+        },
+        "nitro_chemo": {
+          "chemo": 0.9549987467326191
+        }
+      },
+      "min_hazard_ratio": 0.9549987467326191
     },
     {
       "identifier": "NO16968",
@@ -5858,7 +6753,16 @@
       "condition_list": [
         "Colorectal Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "fu_fa": {
+          "xelox": 0.8028927481286159
+        },
+        "xelox": {
+          "fu_fa": 1.2454963658979414
+        }
+      },
+      "min_hazard_ratio": 0.8028927481286159
     },
     {
       "identifier": "NOAH",
@@ -5882,7 +6786,16 @@
       "time_scale": "Months",
       "title": null,
       "condition_list": null,
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "chemotherapy": {
+          "chemotherapy_trastuzumab": 0.6276780855082638
+        },
+        "chemotherapy_trastuzumab": {
+          "chemotherapy": 1.5931733528505263
+        }
+      },
+      "min_hazard_ratio": 0.6276780855082638
     },
     {
       "identifier": "NSABPB35",
@@ -5908,7 +6821,16 @@
       "condition_list": [
         "Breast Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "anastrozole": {
+          "tamoxifen": 1.145570861601498
+        },
+        "tamoxifen": {
+          "anastrozole": 0.8729272308847039
+        }
+      },
+      "min_hazard_ratio": 0.8729272308847039
     },
     {
       "identifier": "NSABPB40",
@@ -5934,7 +6856,16 @@
       "condition_list": [
         "Breast Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "bev": {
+          "no_bev": 1.5368084958298838
+        },
+        "no_bev": {
+          "bev": 0.6506991617455858
+        }
+      },
+      "min_hazard_ratio": 0.6506991617455858
     },
     {
       "identifier": "NSABPR04",
@@ -6042,7 +6973,16 @@
           }
         ],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "no_oxali": {
+          "oxali": 0.944210432428928
+        },
+        "oxali": {
+          "no_oxali": 1.0590859470039495
+        }
+      },
+      "min_hazard_ratio": 0.944210432428928
     },
     {
       "identifier": "NTR1527",
@@ -6066,7 +7006,16 @@
       "time_scale": "Unknown",
       "title": null,
       "condition_list": null,
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "control": {
+          "thoracic_radiotherapy": 0.728625519910647
+        },
+        "thoracic_radiotherapy": {
+          "control": 1.3724471249958858
+        }
+      },
+      "min_hazard_ratio": 0.728625519910647
     },
     {
       "identifier": "OMEGA",
@@ -6228,7 +7177,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "capecitabine": {
+          "peg_doxorubicin": 1.5201413532851178
+        },
+        "peg_doxorubicin": {
+          "capecitabine": 0.6578335612270132
+        }
+      },
+      "min_hazard_ratio": 0.6578335612270132
     },
     {
       "identifier": "OPTIMAL",
@@ -6254,7 +7212,16 @@
       "condition_list": [
         "Non-small Cell Lung Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "erlotinib": {
+          "gem_carboplatin": 0.8043030816547999
+        },
+        "gem_carboplatin": {
+          "erlotinib": 1.2433124064905565
+        }
+      },
+      "min_hazard_ratio": 0.8043030816547999
     },
     {
       "identifier": "OPTIMOX3",
@@ -6280,7 +7247,16 @@
       "condition_list": [
         "Colorectal Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "bev": {
+          "bev_erlotinib": 0.805101672454462
+        },
+        "bev_erlotinib": {
+          "bev": 1.2420791487755378
+        }
+      },
+      "min_hazard_ratio": 0.805101672454462
     },
     {
       "identifier": "PALOMA2",
@@ -6406,7 +7382,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "palbociclib_letrozole": {
+          "placebo_letrozole": 1.5104607091590372
+        },
+        "placebo_letrozole": {
+          "palbociclib_letrozole": 0.6620496607003827
+        }
+      },
+      "min_hazard_ratio": 0.6620496607003827
     },
     {
       "identifier": "PALOMA3",
@@ -6432,7 +7417,16 @@
       "condition_list": [
         "Metastatic Breast Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "palbociclib_fulvestrant": {
+          "placebo_fulvestrant": 2.3672223191837185
+        },
+        "placebo_fulvestrant": {
+          "palbociclib_fulvestrant": 0.4224360305730926
+        }
+      },
+      "min_hazard_ratio": 0.4224360305730926
     },
     {
       "identifier": "PEGASE07",
@@ -6461,7 +7455,16 @@
       "data_index": {
         "age": [],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "arma": {
+          "armb": 1.0933760676898459
+        },
+        "armb": {
+          "arma": 0.9145983980725527
+        }
+      },
+      "min_hazard_ratio": 0.9145983980725527
     },
     {
       "identifier": "PETACC8",
@@ -6482,7 +7485,16 @@
       "time_scale": "Months",
       "title": null,
       "condition_list": null,
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "folfox4": {
+          "folfox4_cetuximab": 1.1796639885868696
+        },
+        "folfox4_cetuximab": {
+          "folfox4": 0.8476990140200086
+        }
+      },
+      "min_hazard_ratio": 0.8476990140200086
     },
     {
       "identifier": "PREVAIL",
@@ -6646,7 +7658,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "enzalutamide": {
+          "placebo": 1.3792372683996428
+        },
+        "placebo": {
+          "enzalutamide": 0.7250384128325653
+        }
+      },
+      "min_hazard_ratio": 0.7250384128325653
     },
     {
       "identifier": "PROCLAIM",
@@ -6712,7 +7733,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "eto_cis": {
+          "pem_cis": 0.8592707804837656
+        },
+        "pem_cis": {
+          "eto_cis": 1.1637774991452687
+        }
+      },
+      "min_hazard_ratio": 0.8592707804837656
     },
     {
       "identifier": "PROCTOR-SCRIPT",
@@ -6739,7 +7769,16 @@
       "data_index": {
         "age": [],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "chemotherapy": {
+          "observation": 1.0809541394655215
+        },
+        "observation": {
+          "chemotherapy": 0.9251086271749239
+        }
+      },
+      "min_hazard_ratio": 0.9251086271749239
     },
     {
       "identifier": "PROFILE1014",
@@ -6827,7 +7866,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "chemotherapy": {
+          "crizotinib": 0.8858915119991972
+        },
+        "crizotinib": {
+          "chemotherapy": 1.1288063904611676
+        }
+      },
+      "min_hazard_ratio": 0.8858915119991972
     },
     {
       "identifier": "PROSE",
@@ -6853,7 +7901,16 @@
       "condition_list": [
         "Lung Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "chemotherapy": {
+          "erlotinib": 1.1469139083851045
+        },
+        "erlotinib": {
+          "chemotherapy": 0.8719050250319446
+        }
+      },
+      "min_hazard_ratio": 0.8719050250319446
     },
     {
       "identifier": "QUARTZ",
@@ -6877,7 +7934,16 @@
       "time_scale": "Unknown",
       "title": null,
       "condition_list": null,
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "osc": {
+          "osc_wbrt": 0.9180794469586869
+        },
+        "osc_wbrt": {
+          "osc": 1.0892303528988592
+        }
+      },
+      "min_hazard_ratio": 0.9180794469586869
     },
     {
       "identifier": "QUASAR2",
@@ -6901,7 +7967,16 @@
       "time_scale": "Months",
       "title": null,
       "condition_list": null,
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "cap": {
+          "cap_bev": 1.1561864687439267
+        },
+        "cap_bev": {
+          "cap": 0.8649123882987433
+        }
+      },
+      "min_hazard_ratio": 0.8649123882987433
     },
     {
       "identifier": "R98",
@@ -7001,7 +8076,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "5fulv": {
+          "5fulv_cpt11": 0.8654476156348614
+        },
+        "5fulv_cpt11": {
+          "5fulv": 1.1554714369008179
+        }
+      },
+      "min_hazard_ratio": 0.8654476156348614
     },
     {
       "identifier": "RADIANT",
@@ -7148,7 +8232,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "erlotinib": {
+          "placebo": 1.113944065403075
+        },
+        "placebo": {
+          "erlotinib": 0.8977111428284823
+        }
+      },
+      "min_hazard_ratio": 0.8977111428284823
     },
     {
       "identifier": "RAISE",
@@ -7174,7 +8267,16 @@
       "condition_list": [
         "Colorectal Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "placebo_folfiri": {
+          "ramucirumab_folfiri": 0.8016383883334508
+        },
+        "ramucirumab_folfiri": {
+          "placebo_folfiri": 1.2474452503190732
+        }
+      },
+      "min_hazard_ratio": 0.8016383883334508
     },
     {
       "identifier": "RECOURSE",
@@ -7242,7 +8344,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "placebo": {
+          "tas102": 0.6811884930487105
+        },
+        "tas102": {
+          "placebo": 1.4680224492994949
+        }
+      },
+      "min_hazard_ratio": 0.6811884930487105
     },
     {
       "identifier": "REVEL",
@@ -7268,7 +8379,16 @@
       "condition_list": [
         "Non-Small Cell Lung Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "placebo_docetaxel": {
+          "ramucirumab_docetaxel": 0.768255995434902
+        },
+        "ramucirumab_docetaxel": {
+          "placebo_docetaxel": 1.3016494579178781
+        }
+      },
+      "min_hazard_ratio": 0.768255995434902
     },
     {
       "identifier": "ROSE",
@@ -7336,7 +8456,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "pbo_doc": {
+          "ram_doc": 0.8549664512752414
+        },
+        "ram_doc": {
+          "pbo_doc": 1.1696365377944726
+        }
+      },
+      "min_hazard_ratio": 0.8549664512752414
     },
     {
       "identifier": "RTOG0415",
@@ -7436,7 +8565,16 @@
           }
         ],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "70gy": {
+          "73.8gy": 1.1992598049949663
+        },
+        "73.8gy": {
+          "70gy": 0.8338476749032687
+        }
+      },
+      "min_hazard_ratio": 0.8338476749032687
     },
     {
       "identifier": "RTOG0617",
@@ -7463,7 +8601,16 @@
         "Lung Cancer",
         "Radiation Toxicity"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "cetuximab": {
+          "no_cetuximab": 1.0588669460911484
+        },
+        "no_cetuximab": {
+          "cetuximab": 0.944405719426356
+        }
+      },
+      "min_hazard_ratio": 0.944405719426356
     },
     {
       "identifier": "RTOG9804",
@@ -7550,7 +8697,16 @@
           }
         ],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "observation": {
+          "rt": 0.8629264967120092
+        },
+        "rt": {
+          "observation": 1.1588472527037694
+        }
+      },
+      "min_hazard_ratio": 0.8629264967120092
     },
     {
       "identifier": "SAKK",
@@ -7576,7 +8732,16 @@
       "condition_list": [
         "Lung Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "chemo_surgery": {
+          "crt_surgery": 0.9267188263986699
+        },
+        "crt_surgery": {
+          "chemo_surgery": 1.0790759521807802
+        }
+      },
+      "min_hazard_ratio": 0.9267188263986699
     },
     {
       "identifier": "SAKK4106",
@@ -7644,7 +8809,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "bev": {
+          "no_bev": 1.1940065675975848
+        },
+        "no_bev": {
+          "bev": 0.8375163312644603
+        }
+      },
+      "min_hazard_ratio": 0.8375163312644603
     },
     {
       "identifier": "SELECTBC",
@@ -7668,7 +8842,16 @@
       "time_scale": "Months",
       "title": null,
       "condition_list": null,
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "s-1": {
+          "taxane": 0.9581480505444305
+        },
+        "taxane": {
+          "s-1": 1.043680044468899
+        }
+      },
+      "min_hazard_ratio": 0.9581480505444305
     },
     {
       "identifier": "SIRFLOX",
@@ -7699,7 +8882,16 @@
       "data_index": {
         "age": [],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "mfolfox6": {
+          "mfolfox6_rt": 0.913620944745268
+        },
+        "mfolfox6_rt": {
+          "mfolfox6": 1.0945458351754578
+        }
+      },
+      "min_hazard_ratio": 0.913620944745268
     },
     {
       "identifier": "SMART",
@@ -7723,7 +8915,16 @@
       "time_scale": "Months",
       "title": null,
       "condition_list": null,
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "deferred_rt": {
+          "immediate_rt": 0.962042538094348
+        },
+        "immediate_rt": {
+          "deferred_rt": 1.0394550764676578
+        }
+      },
+      "min_hazard_ratio": 0.962042538094348
     },
     {
       "identifier": "SOFT",
@@ -7856,7 +9057,16 @@
           }
         ],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "tamoxifen": {
+          "tamoxifen_os": 0.8419553281284404
+        },
+        "tamoxifen_os": {
+          "tamoxifen": 1.1877114694705633
+        }
+      },
+      "min_hazard_ratio": 0.8419553281284404
     },
     {
       "identifier": "SQUIRE",
@@ -7882,7 +9092,16 @@
       "condition_list": [
         "Non Small Cell Lung Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "gem_cis": {
+          "necitumumab_gem_cis": 0.8544711369213004
+        },
+        "necitumumab_gem_cis": {
+          "gem_cis": 1.1703145452086854
+        }
+      },
+      "min_hazard_ratio": 0.8544711369213004
     },
     {
       "identifier": "TANIA",
@@ -7908,7 +9127,16 @@
       "condition_list": [
         "Breast Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "chem_bev": {
+          "chemo": 1.3085136506574875
+        },
+        "chemo": {
+          "chem_bev": 0.7642258829302476
+        }
+      },
+      "min_hazard_ratio": 0.7642258829302476
     },
     {
       "identifier": "Tasquinimod",
@@ -8014,7 +9242,16 @@
           }
         ],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "placebo": {
+          "tasq": 1.108740906561803
+        },
+        "tasq": {
+          "placebo": 0.9019239698668576
+        }
+      },
+      "min_hazard_ratio": 0.9019239698668576
     },
     {
       "identifier": "TCOG0701",
@@ -8080,7 +9317,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "docetaxel_cis": {
+          "s1_cis": 1.0208267764660766
+        },
+        "s1_cis": {
+          "docetaxel_cis": 0.9795981287460197
+        }
+      },
+      "min_hazard_ratio": 0.9795981287460197
     },
     {
       "identifier": "TEXT-SOFT(2)",
@@ -8244,7 +9490,16 @@
           }
         ],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "exemestane_os": {
+          "tamoxifen_os": 1.4389046025311047
+        },
+        "tamoxifen_os": {
+          "exemestane_os": 0.6949731054032006
+        }
+      },
+      "min_hazard_ratio": 0.6949731054032006
     },
     {
       "identifier": "TH3RESA",
@@ -8270,7 +9525,16 @@
       "condition_list": [
         "Breast Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "physicians_choice": {
+          "trastuzumab_emtansine": 0.5451165935859678
+        },
+        "trastuzumab_emtansine": {
+          "physicians_choice": 1.834469931325426
+        }
+      },
+      "min_hazard_ratio": 0.5451165935859678
     },
     {
       "identifier": "TRAPEZE",
@@ -8355,7 +9619,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "no_sr89": {
+          "sr89": 0.8754058921477321
+        },
+        "sr89": {
+          "no_sr89": 1.1423272438189638
+        }
+      },
+      "min_hazard_ratio": 0.8754058921477321
     },
     {
       "identifier": "TRIBE",
@@ -8381,7 +9654,16 @@
       "condition_list": [
         "Colorectal Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "folfiri_bev": {
+          "folfoxiri_bev": 0.8360602363184663
+        },
+        "folfoxiri_bev": {
+          "folfiri_bev": 1.1960860671994533
+        }
+      },
+      "min_hazard_ratio": 0.8360602363184663
     },
     {
       "identifier": "TRIBE(2)",
@@ -8449,7 +9731,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "folfiri_bevacizumab": {
+          "folfoxiri_bevacizumab": 0.8349879823439391
+        },
+        "folfoxiri_bevacizumab": {
+          "folfiri_bevacizumab": 1.19762202707738
+        }
+      },
+      "min_hazard_ratio": 0.8349879823439391
     },
     {
       "identifier": "TROG0306",
@@ -8469,7 +9760,16 @@
       "condition_list": [
         "Prostate Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "delayed_adt": {
+          "immediate_adt": 0.50026736185684
+        },
+        "immediate_adt": {
+          "delayed_adt": 1.9989311241259171
+        }
+      },
+      "min_hazard_ratio": 0.50026736185684
     },
     {
       "identifier": "TURANDOT",
@@ -8495,7 +9795,16 @@
       "condition_list": [
         "Metastatic Breast Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "bev_capecitabine": {
+          "bev_paclitaxel": 0.9040806823526071
+        },
+        "bev_paclitaxel": {
+          "bev_capecitabine": 1.1060959707686608
+        }
+      },
+      "min_hazard_ratio": 0.9040806823526071
     },
     {
       "identifier": "VANTAGE014",
@@ -8522,7 +9831,16 @@
         "Mesothelioma",
         "Lung Cancer"
       ],
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "placebo": {
+          "vorinostat": 0.7557110451409773
+        },
+        "vorinostat": {
+          "placebo": 1.3232570920191469
+        }
+      },
+      "min_hazard_ratio": 0.7557110451409773
     },
     {
       "identifier": "WJOG5108L",
@@ -8671,7 +9989,16 @@
             ]
           }
         ]
-      }
+      },
+      "hazard_ratios": {
+        "erlotinib": {
+          "gefitinib": 1.028987179832223
+        },
+        "gefitinib": {
+          "erlotinib": 0.9718294062352173
+        }
+      },
+      "min_hazard_ratio": 0.9718294062352173
     },
     {
       "identifier": "WJOG5208L",
@@ -8695,7 +10022,16 @@
       "time_scale": "Months",
       "title": null,
       "condition_list": null,
-      "data_index": null
+      "data_index": null,
+      "hazard_ratios": {
+        "cisplatin_docetaxel": {
+          "nedaplatin_docetaxel": 0.8226812269491308
+        },
+        "nedaplatin_docetaxel": {
+          "cisplatin_docetaxel": 1.215537643551739
+        }
+      },
+      "min_hazard_ratio": 0.8226812269491308
     },
     {
       "identifier": "WSGAGO",
@@ -8749,7 +10085,16 @@
           }
         ],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "control": {
+          "ed_doc": 0.7312952791887889
+        },
+        "ed_doc": {
+          "control": 1.3674366954881472
+        }
+      },
+      "min_hazard_ratio": 0.7312952791887889
     },
     {
       "identifier": "WSG-ARA",
@@ -8776,7 +10121,16 @@
       "data_index": {
         "age": [],
         "ecog": []
-      }
+      },
+      "hazard_ratios": {
+        "da_negative": {
+          "da_positive": 0.9126835478018845
+        },
+        "da_positive": {
+          "da_negative": 1.0956700188235113
+        }
+      },
+      "min_hazard_ratio": 0.9126835478018845
     }
   ]
 }

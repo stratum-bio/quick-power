@@ -24,7 +24,16 @@
       "Breast Cancer",
       "Metastatic Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "control": {
+        "zoledronic_acid": 0.9362441933525788
+      },
+      "zoledronic_acid": {
+        "control": 1.0680974120855378
+      }
+    },
+    "min_hazard_ratio": 0.9362441933525788
   },
   "arms": [
     {

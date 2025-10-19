@@ -63,7 +63,16 @@
           ]
         }
       ]
-    }
+    },
+    "hazard_ratios": {
+      "docetaxel_cis": {
+        "s1_cis": 1.0208267764660766
+      },
+      "s1_cis": {
+        "docetaxel_cis": 0.9795981287460197
+      }
+    },
+    "min_hazard_ratio": 0.9795981287460197
   },
   "arms": [
     {

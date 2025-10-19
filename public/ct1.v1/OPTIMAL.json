@@ -23,7 +23,16 @@
     "condition_list": [
       "Non-small Cell Lung Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "erlotinib": {
+        "gem_carboplatin": 0.8043030816547999
+      },
+      "gem_carboplatin": {
+        "erlotinib": 1.2433124064905565
+      }
+    },
+    "min_hazard_ratio": 0.8043030816547999
   },
   "arms": [
     {

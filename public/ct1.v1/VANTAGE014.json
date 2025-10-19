@@ -24,7 +24,16 @@
       "Mesothelioma",
       "Lung Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "placebo": {
+        "vorinostat": 0.7557110451409773
+      },
+      "vorinostat": {
+        "placebo": 1.3232570920191469
+      }
+    },
+    "min_hazard_ratio": 0.7557110451409773
   },
   "arms": [
     {

@@ -17,7 +17,16 @@
     "condition_list": [
       "Prostate Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "delayed_adt": {
+        "immediate_adt": 0.50026736185684
+      },
+      "immediate_adt": {
+        "delayed_adt": 1.9989311241259171
+      }
+    },
+    "min_hazard_ratio": 0.50026736185684
   },
   "arms": [
     {

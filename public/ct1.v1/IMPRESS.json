@@ -23,7 +23,16 @@
     "condition_list": [
       "Non-Small Cell Lung Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "gefitinib": {
+        "placebo": 1.218912513332584
+      },
+      "placebo": {
+        "gefitinib": 0.8204034244147159
+      }
+    },
+    "min_hazard_ratio": 0.8204034244147159
   },
   "arms": [
     {

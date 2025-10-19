@@ -163,7 +163,16 @@
         }
       ],
       "ecog": []
-    }
+    },
+    "hazard_ratios": {
+      "chemotherapy": {
+        "no_chemotherapy": 1.1971818464688657
+      },
+      "no_chemotherapy": {
+        "chemotherapy": 0.8352949912743318
+      }
+    },
+    "min_hazard_ratio": 0.8352949912743318
   },
   "arms": [
     {

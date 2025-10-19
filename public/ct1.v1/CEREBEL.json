@@ -99,7 +99,16 @@
           ]
         }
       ]
-    }
+    },
+    "hazard_ratios": {
+      "lapatinib_cape": {
+        "trastuzumab_cape": 0.7296869619349212
+      },
+      "trastuzumab_cape": {
+        "lapatinib_cape": 1.3704506893590176
+      }
+    },
+    "min_hazard_ratio": 0.7296869619349212
   },
   "arms": [
     {

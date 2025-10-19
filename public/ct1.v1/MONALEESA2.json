@@ -65,7 +65,16 @@
           ]
         }
       ]
-    }
+    },
+    "hazard_ratios": {
+      "placebo": {
+        "ribociclib_letrozole": 0.5589104471819617
+      },
+      "ribociclib_letrozole": {
+        "placebo": 1.7891953980141562
+      }
+    },
+    "min_hazard_ratio": 0.5589104471819617
   },
   "arms": [
     {

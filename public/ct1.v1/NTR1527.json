@@ -21,7 +21,16 @@
     "time_scale": "Unknown",
     "title": null,
     "condition_list": null,
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "control": {
+        "thoracic_radiotherapy": 0.728625519910647
+      },
+      "thoracic_radiotherapy": {
+        "control": 1.3724471249958858
+      }
+    },
+    "min_hazard_ratio": 0.728625519910647
   },
   "arms": [
     {

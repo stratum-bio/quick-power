@@ -84,7 +84,16 @@
         }
       ],
       "ecog": []
-    }
+    },
+    "hazard_ratios": {
+      "observation": {
+        "rt": 0.8629264967120092
+      },
+      "rt": {
+        "observation": 1.1588472527037694
+      }
+    },
+    "min_hazard_ratio": 0.8629264967120092
   },
   "arms": [
     {

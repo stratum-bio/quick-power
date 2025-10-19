@@ -130,7 +130,16 @@
         }
       ],
       "ecog": []
-    }
+    },
+    "hazard_ratios": {
+      "tamoxifen": {
+        "tamoxifen_os": 0.8419553281284404
+      },
+      "tamoxifen_os": {
+        "tamoxifen": 1.1877114694705633
+      }
+    },
+    "min_hazard_ratio": 0.8419553281284404
   },
   "arms": [
     {

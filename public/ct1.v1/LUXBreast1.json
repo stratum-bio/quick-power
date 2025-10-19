@@ -23,7 +23,16 @@
     "condition_list": [
       "Breast Neoplasms"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "afatinib": {
+        "trastuzumab": 0.6788545873249003
+      },
+      "trastuzumab": {
+        "afatinib": 1.4730695183789029
+      }
+    },
+    "min_hazard_ratio": 0.6788545873249003
   },
   "arms": [
     {

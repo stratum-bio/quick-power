@@ -23,7 +23,16 @@
     "condition_list": [
       "Colorectal Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "bev_ct": {
+        "ct": 1.4150537989983927
+      },
+      "ct": {
+        "bev_ct": 0.706686912333526
+      }
+    },
+    "min_hazard_ratio": 0.706686912333526
   },
   "arms": [
     {

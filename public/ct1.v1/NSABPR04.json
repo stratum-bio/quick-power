@@ -105,7 +105,16 @@
         }
       ],
       "ecog": []
-    }
+    },
+    "hazard_ratios": {
+      "no_oxali": {
+        "oxali": 0.944210432428928
+      },
+      "oxali": {
+        "no_oxali": 1.0590859470039495
+      }
+    },
+    "min_hazard_ratio": 0.944210432428928
   },
   "arms": [
     {

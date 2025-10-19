@@ -23,7 +23,16 @@
     "condition_list": [
       "Prostate Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "rt": {
+        "rt_goserelin": 0.5046918978116813
+      },
+      "rt_goserelin": {
+        "rt": 1.9814068827654054
+      }
+    },
+    "min_hazard_ratio": 0.5046918978116813
   },
   "arms": [
     {

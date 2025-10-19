@@ -23,7 +23,16 @@
     "condition_list": [
       "Carcinoma, Non-Small-Cell Lung"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "afatinib": {
+        "erlotinib": 1.2471748390305148
+      },
+      "erlotinib": {
+        "afatinib": 0.8018121988231778
+      }
+    },
+    "min_hazard_ratio": 0.8018121988231778
   },
   "arms": [
     {

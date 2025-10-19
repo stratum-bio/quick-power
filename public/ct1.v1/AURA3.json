@@ -24,7 +24,16 @@
     "data_index": {
       "age": [],
       "ecog": []
-    }
+    },
+    "hazard_ratios": {
+      "osimertinib": {
+        "platinum-pemetrexed": 2.705936806409041
+      },
+      "platinum-pemetrexed": {
+        "osimertinib": 0.3695577803707345
+      }
+    },
+    "min_hazard_ratio": 0.3695577803707345
   },
   "arms": [
     {

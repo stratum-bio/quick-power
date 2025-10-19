@@ -84,7 +84,16 @@
           ]
         }
       ]
-    }
+    },
+    "hazard_ratios": {
+      "onaturzumab_erlotinib": {
+        "placebo_erlotinib": 0.9951102449927552
+      },
+      "placebo_erlotinib": {
+        "onaturzumab_erlotinib": 1.0049137821983538
+      }
+    },
+    "min_hazard_ratio": 0.9951102449927552
   },
   "arms": [
     {

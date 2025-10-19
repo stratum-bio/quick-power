@@ -159,7 +159,16 @@
           ]
         }
       ]
-    }
+    },
+    "hazard_ratios": {
+      "capecitabine": {
+        "peg_doxorubicin": 1.5201413532851178
+      },
+      "peg_doxorubicin": {
+        "capecitabine": 0.6578335612270132
+      }
+    },
+    "min_hazard_ratio": 0.6578335612270132
   },
   "arms": [
     {

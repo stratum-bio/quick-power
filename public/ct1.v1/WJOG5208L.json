@@ -21,7 +21,16 @@
     "time_scale": "Months",
     "title": null,
     "condition_list": null,
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "cisplatin_docetaxel": {
+        "nedaplatin_docetaxel": 0.8226812269491308
+      },
+      "nedaplatin_docetaxel": {
+        "cisplatin_docetaxel": 1.215537643551739
+      }
+    },
+    "min_hazard_ratio": 0.8226812269491308
   },
   "arms": [
     {

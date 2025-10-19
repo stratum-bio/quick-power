@@ -24,7 +24,16 @@
     "data_index": {
       "age": [],
       "ecog": []
-    }
+    },
+    "hazard_ratios": {
+      "chemotherapy": {
+        "observation": 1.0809541394655215
+      },
+      "observation": {
+        "chemotherapy": 0.9251086271749239
+      }
+    },
+    "min_hazard_ratio": 0.9251086271749239
   },
   "arms": [
     {

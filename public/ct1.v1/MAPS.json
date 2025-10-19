@@ -23,7 +23,16 @@
     "condition_list": [
       "Mesothelioma"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "pc": {
+        "pcb": 0.842549616309941
+      },
+      "pcb": {
+        "pc": 1.186873723092575
+      }
+    },
+    "min_hazard_ratio": 0.842549616309941
   },
   "arms": [
     {

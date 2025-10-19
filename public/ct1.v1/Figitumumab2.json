@@ -68,7 +68,16 @@
           ]
         }
       ]
-    }
+    },
+    "hazard_ratios": {
+      "control": {
+        "figitumumab": 1.0956415246272873
+      },
+      "figitumumab": {
+        "control": 0.9127072838355389
+      }
+    },
+    "min_hazard_ratio": 0.9127072838355389
   },
   "arms": [
     {

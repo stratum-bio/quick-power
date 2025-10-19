@@ -24,7 +24,16 @@
     "data_index": {
       "age": [],
       "ecog": []
-    }
+    },
+    "hazard_ratios": {
+      "amrubicin_cisplatin": {
+        "irinotecan_cisplatin": 0.6958584967026972
+      },
+      "irinotecan_cisplatin": {
+        "amrubicin_cisplatin": 1.437073779710196
+      }
+    },
+    "min_hazard_ratio": 0.6958584967026972
   },
   "arms": [
     {

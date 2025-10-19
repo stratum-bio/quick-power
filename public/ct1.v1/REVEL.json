@@ -23,7 +23,16 @@
     "condition_list": [
       "Non-Small Cell Lung Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "placebo_docetaxel": {
+        "ramucirumab_docetaxel": 0.768255995434902
+      },
+      "ramucirumab_docetaxel": {
+        "placebo_docetaxel": 1.3016494579178781
+      }
+    },
+    "min_hazard_ratio": 0.768255995434902
   },
   "arms": [
     {

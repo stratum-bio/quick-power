@@ -122,7 +122,16 @@
         }
       ],
       "ecog": []
-    }
+    },
+    "hazard_ratios": {
+      "control": {
+        "lhrha": 1.177226473806574
+      },
+      "lhrha": {
+        "control": 0.8494542233377487
+      }
+    },
+    "min_hazard_ratio": 0.8494542233377487
   },
   "arms": [
     {

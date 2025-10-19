@@ -24,7 +24,16 @@
     "data_index": {
       "age": [],
       "ecog": []
-    }
+    },
+    "hazard_ratios": {
+      "letrozole": {
+        "placebo": 1.0240546638227424
+      },
+      "placebo": {
+        "letrozole": 0.9765103712989817
+      }
+    },
+    "min_hazard_ratio": 0.9765103712989817
   },
   "arms": [
     {

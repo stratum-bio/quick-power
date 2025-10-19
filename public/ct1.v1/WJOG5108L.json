@@ -146,7 +146,16 @@
           ]
         }
       ]
-    }
+    },
+    "hazard_ratios": {
+      "erlotinib": {
+        "gefitinib": 1.028987179832223
+      },
+      "gefitinib": {
+        "erlotinib": 0.9718294062352173
+      }
+    },
+    "min_hazard_ratio": 0.9718294062352173
   },
   "arms": [
     {

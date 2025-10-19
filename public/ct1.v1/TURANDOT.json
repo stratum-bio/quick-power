@@ -23,7 +23,16 @@
     "condition_list": [
       "Metastatic Breast Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "bev_capecitabine": {
+        "bev_paclitaxel": 0.9040806823526071
+      },
+      "bev_paclitaxel": {
+        "bev_capecitabine": 1.1060959707686608
+      }
+    },
+    "min_hazard_ratio": 0.9040806823526071
   },
   "arms": [
     {

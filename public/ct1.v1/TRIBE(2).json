@@ -65,7 +65,16 @@
           ]
         }
       ]
-    }
+    },
+    "hazard_ratios": {
+      "folfiri_bevacizumab": {
+        "folfoxiri_bevacizumab": 0.8349879823439391
+      },
+      "folfoxiri_bevacizumab": {
+        "folfiri_bevacizumab": 1.19762202707738
+      }
+    },
+    "min_hazard_ratio": 0.8349879823439391
   },
   "arms": [
     {

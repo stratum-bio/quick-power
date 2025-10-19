@@ -23,7 +23,16 @@
     "condition_list": [
       "Breast Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "bevacizumab": {
+        "bevacizumab_capecitabine": 0.5136499224137542
+      },
+      "bevacizumab_capecitabine": {
+        "bevacizumab": 1.9468512626280168
+      }
+    },
+    "min_hazard_ratio": 0.5136499224137542
   },
   "arms": [
     {

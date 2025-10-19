@@ -27,7 +27,22 @@
     "condition_list": [
       "Metastatic Colorectal Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "arma": {
+        "armb": 0.8634431943110108,
+        "armc": 0.7225256820699413
+      },
+      "armb": {
+        "arma": 1.1581537808030968,
+        "armc": 0.8050678861838909
+      },
+      "armc": {
+        "arma": 1.3840338479528245,
+        "armb": 1.2421312750904872
+      }
+    },
+    "min_hazard_ratio": 0.7225256820699413
   },
   "arms": [
     {

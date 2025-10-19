@@ -103,7 +103,16 @@
           ]
         }
       ]
-    }
+    },
+    "hazard_ratios": {
+      "capecitabine": {
+        "eribulin": 0.8790988951511122
+      },
+      "eribulin": {
+        "capecitabine": 1.1375284459072221
+      }
+    },
+    "min_hazard_ratio": 0.8790988951511122
   },
   "arms": [
     {

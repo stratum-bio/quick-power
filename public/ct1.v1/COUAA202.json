@@ -23,7 +23,16 @@
     "condition_list": [
       "Prostate Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "abiraterone": {
+        "placebo": 1.2412887715393734
+      },
+      "placebo": {
+        "abiraterone": 0.8056143122601993
+      }
+    },
+    "min_hazard_ratio": 0.8056143122601993
   },
   "arms": [
     {

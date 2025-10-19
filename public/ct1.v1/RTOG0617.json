@@ -24,7 +24,16 @@
       "Lung Cancer",
       "Radiation Toxicity"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "cetuximab": {
+        "no_cetuximab": 1.0588669460911484
+      },
+      "no_cetuximab": {
+        "cetuximab": 0.944405719426356
+      }
+    },
+    "min_hazard_ratio": 0.944405719426356
   },
   "arms": [
     {

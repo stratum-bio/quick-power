@@ -23,7 +23,16 @@
     "condition_list": [
       "Metastatic Breast Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "control": {
+        "pertuzumab": 0.6675805476564973
+      },
+      "pertuzumab": {
+        "control": 1.4979465826415133
+      }
+    },
+    "min_hazard_ratio": 0.6675805476564973
   },
   "arms": [
     {

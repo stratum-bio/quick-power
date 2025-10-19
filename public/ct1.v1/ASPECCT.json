@@ -23,7 +23,16 @@
     "condition_list": [
       "Metastatic Colorectal Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "cetuximab": {
+        "panitumumab": 1.0174876312299852
+      },
+      "panitumumab": {
+        "cetuximab": 0.9828129299136094
+      }
+    },
+    "min_hazard_ratio": 0.9828129299136094
   },
   "arms": [
     {

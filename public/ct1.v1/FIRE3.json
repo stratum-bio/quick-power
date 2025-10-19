@@ -24,7 +24,16 @@
       "Neoplasm Metastasis",
       "Colorectal Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "folfiri_bevacizumab": {
+        "folfiri_cetuximab": 0.7585764851431736
+      },
+      "folfiri_cetuximab": {
+        "folfiri_bevacizumab": 1.3182586325639398
+      }
+    },
+    "min_hazard_ratio": 0.7585764851431736
   },
   "arms": [
     {

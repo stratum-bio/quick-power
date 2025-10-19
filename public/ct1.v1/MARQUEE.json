@@ -84,7 +84,16 @@
           ]
         }
       ]
-    }
+    },
+    "hazard_ratios": {
+      "erlotinib_placebo": {
+        "erlotinib_tivantinib": 0.7363598295019215
+      },
+      "erlotinib_tivantinib": {
+        "erlotinib_placebo": 1.3580317121269454
+      }
+    },
+    "min_hazard_ratio": 0.7363598295019215
   },
   "arms": [
     {

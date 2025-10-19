@@ -23,7 +23,16 @@
     "condition_list": [
       "Prostate Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "lenolidomide": {
+        "placebo": 0.6576682175665367
+      },
+      "placebo": {
+        "lenolidomide": 1.5205235303906557
+      }
+    },
+    "min_hazard_ratio": 0.6576682175665367
   },
   "arms": [
     {

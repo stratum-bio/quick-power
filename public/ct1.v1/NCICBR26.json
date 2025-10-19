@@ -23,7 +23,16 @@
     "condition_list": [
       "Lung Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "dacomitinib": {
+        "placebo": 1.0549722936157826
+      },
+      "placebo": {
+        "dacomitinib": 0.9478921920997829
+      }
+    },
+    "min_hazard_ratio": 0.9478921920997829
   },
   "arms": [
     {

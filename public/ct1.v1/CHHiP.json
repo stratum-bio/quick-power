@@ -22,7 +22,22 @@
     "time_scale": "Months",
     "title": null,
     "condition_list": null,
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "57gy": {
+        "60gy": 0.6779658507740692,
+        "74gy": 0.8231949689002638
+      },
+      "60gy": {
+        "57gy": 1.4750005459098594,
+        "74gy": 1.190127300450831
+      },
+      "74gy": {
+        "57gy": 1.2147790472236928,
+        "60gy": 0.8402462489694951
+      }
+    },
+    "min_hazard_ratio": 0.6779658507740692
   },
   "arms": [
     {

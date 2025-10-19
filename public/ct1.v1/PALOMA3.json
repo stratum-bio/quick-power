@@ -23,7 +23,16 @@
     "condition_list": [
       "Metastatic Breast Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "palbociclib_fulvestrant": {
+        "placebo_fulvestrant": 2.3672223191837185
+      },
+      "placebo_fulvestrant": {
+        "palbociclib_fulvestrant": 0.4224360305730926
+      }
+    },
+    "min_hazard_ratio": 0.4224360305730926
   },
   "arms": [
     {

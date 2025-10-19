@@ -178,7 +178,16 @@
           ]
         }
       ]
-    }
+    },
+    "hazard_ratios": {
+      "chemo": {
+        "nitro_chemo": 1.0471217930089916
+      },
+      "nitro_chemo": {
+        "chemo": 0.9549987467326191
+      }
+    },
+    "min_hazard_ratio": 0.9549987467326191
   },
   "arms": [
     {

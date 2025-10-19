@@ -23,7 +23,16 @@
     "condition_list": [
       "Colorectal Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "bev": {
+        "bev_erlotinib": 0.805101672454462
+      },
+      "bev_erlotinib": {
+        "bev": 1.2420791487755378
+      }
+    },
+    "min_hazard_ratio": 0.805101672454462
   },
   "arms": [
     {

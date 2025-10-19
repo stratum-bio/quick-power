@@ -23,7 +23,16 @@
     "condition_list": [
       "Breast Cancer"
     ],
-    "data_index": null
+    "data_index": null,
+    "hazard_ratios": {
+      "cis_gemcitabine": {
+        "paclitaxel_gemcitabine": 1.4181755975223733
+      },
+      "paclitaxel_gemcitabine": {
+        "cis_gemcitabine": 0.7051312980896386
+      }
+    },
+    "min_hazard_ratio": 0.7051312980896386
   },
   "arms": [
     {
