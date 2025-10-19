@@ -4,11 +4,11 @@ export function rangeToString(range: Range): string {
   let name = "";
   if (range.relation == "=") {
     name = `${range.lower}`;
-  } else if (range.lower && range.upper) {
+  } else if (range.lower != null && range.upper != null) {
     name = `${range.lower} - ${range.upper}`;
-  } else if (range.lower) {
+  } else if (range.lower != null) {
     name = `${range.relation}${range.lower}`;
-  } else if (range.upper) {
+  } else if (range.upper != null) {
     name = `${range.relation}${range.upper}`;
   }
 
@@ -37,5 +37,8 @@ export function processFactorRangeData(factors: ParsedFactor[]) {
 
     chartData.push(entry);
   }
+  console.log("group names ", groupNames);
+  console.log("original ", factors);
+  console.log("chart ", chartData);
   return { chartData, groupNames };
 }

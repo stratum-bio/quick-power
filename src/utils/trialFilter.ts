@@ -10,6 +10,8 @@ interface CumulativeDist {
   probabilities: number[];
 }
 
+const AGE_PAD = 10;
+
 function cumulativeSum(arr: number[]): number[] {
   // Initialize the result array with the first element's sum (which is itself)
   const result: number[] = [];
@@ -67,7 +69,7 @@ export function toRegularGrid(
 
 export function computeCumulativeDists(
   factors: ParsedFactor[],
-  expectedMax: number,
+  maxPad: number,
 ): CumulativeDist[] {
   if (factors.length === 0) {
     return [];
@@ -84,7 +86,8 @@ export function computeCumulativeDists(
 
   const result: CumulativeDist[] = [];
   // upper will only be null for the upper limit
-  const values = factors.map((f) => f.value_range.upper ?? expectedMax);
+  const maxBound = Math.max(...factors.map((f) => Math.max(f.value_range.lower ?? 0 , f.value_range.upper ?? 0))) + maxPad;
+  const values = factors.map((f) => f.value_range.upper ?? maxBound);
 
   for (let i = 0; i < factors[0].groups.length; i++) {
     const data = factors.map((f) => f.groups[i]);
@@ -99,12 +102,30 @@ export function computeCumulativeDists(
 }
 
 export function ksTest(a: CumulativeDist, b: CumulativeDist): number {
+  let aIdx = 0;
+  let bIdx = 0;
+  if (a.values[0] < b.values[0]) {
+    while (a.values[aIdx] < b.values[0]) {
+      aIdx += 1;
+    }
+  }
+  else {
+    while (a.values[0] > b.values[bIdx]) {
+      bIdx += 1;
+    }
+  }
+
+
+
   let maxDiff = 0.0;
-  for (let i = 0; i < a.values.length; i++) {
-    const diff = Math.abs(a.probabilities[i] - b.probabilities[i]);
+  while (aIdx < a.values.length && bIdx < b.values.length) {
+    const diff = Math.abs(a.probabilities[aIdx] - b.probabilities[bIdx]);
     if (diff > maxDiff) {
       maxDiff = diff;
     }
+
+    aIdx += 1;
+    bIdx += 1;
   }
 
   return maxDiff;
@@ -133,8 +154,8 @@ function sortIntervals(factors: ParsedFactor[]): ParsedFactor[] {
 
 function scoreAge(factors: ParsedFactor[], query: FactorQuery): number {
   const sortedFactors = sortIntervals(factors);
-  const cumulativeDists = computeCumulativeDists(sortedFactors, 90).map((d) =>
-    toRegularGrid(d, 30, 90),
+  const cumulativeDists = computeCumulativeDists(sortedFactors, AGE_PAD).map((d) =>
+    toRegularGrid(d, d.values[0] - AGE_PAD, d.values[-1] + AGE_PAD),
   );
   const queryDist = toRegularGrid(queryToCumulativeDist(query, 90), 30, 90);
   const scores = cumulativeDists.map((c) => ksTest(c, queryDist));
@@ -143,7 +164,7 @@ function scoreAge(factors: ParsedFactor[], query: FactorQuery): number {
 
 function scoreECOG(factors: ParsedFactor[], query: FactorQuery): number {
   const sortedFactors = sortIntervals(factors);
-  const cumulativeDists = computeCumulativeDists(sortedFactors, 3).map((d) =>
+  const cumulativeDists = computeCumulativeDists(sortedFactors, 1).map((d) =>
     toRegularGrid(d, 0, 3),
   );
   const queryDist = toRegularGrid(queryToCumulativeDist(query, 3), 0, 3);
