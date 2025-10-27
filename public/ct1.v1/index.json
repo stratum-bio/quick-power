@@ -20,7 +20,7 @@
       },
       "weibull_max_diff": 0.7959171308563324,
       "time_scale": "Months",
-      "title": null,
+      "title": "Final results from a randomized phase 3 study of FOLFIRI {+/-} panitumumab for second-line treatment of metastatic colorectal cancer.",
       "condition_list": null,
       "data_index": null,
       "hazard_ratios": {
@@ -140,7 +140,7 @@
       },
       "weibull_max_diff": 0.6761950397264841,
       "time_scale": "Months",
-      "title": null,
+      "title": "Randomized phase III trial of prophylactic cranial irradiation versus observation in patients with fully resected stage IIIA-N2 nonsmall-cell lung cancer and high risk of cerebral metastases after adjuvant chemotherapy.",
       "condition_list": null,
       "data_index": {
         "age": [],
@@ -925,7 +925,7 @@
       },
       "weibull_max_diff": 0.4935384926557388,
       "time_scale": "Unknown",
-      "title": null,
+      "title": "Osimertinib or Platinum-Pemetrexed in EGFR T790M-Positive Lung Cancer.",
       "condition_list": null,
       "data_index": {
         "age": [],
@@ -2406,7 +2406,7 @@
       },
       "weibull_max_diff": null,
       "time_scale": "Months",
-      "title": null,
+      "title": "Conventional versus hypofractionated high-dose intensity-modulated radiotherapy for prostate cancer: 5-year outcomes of the randomised, non-inferiority, phase 3 CHHiP trial.",
       "condition_list": null,
       "data_index": null,
       "hazard_ratios": {
@@ -2598,7 +2598,7 @@
       },
       "weibull_max_diff": 0.6990505487707297,
       "time_scale": "Unknown",
-      "title": null,
+      "title": "Improved time to treatment failure with an intermittent oxaliplatin strategy: results of CONcePT.",
       "condition_list": null,
       "data_index": {
         "age": [
@@ -2902,7 +2902,7 @@
       },
       "weibull_max_diff": 0.9251199191063197,
       "time_scale": "Months",
-      "title": null,
+      "title": "Randomized phase III trial of erlotinib versus docetaxel as second- or third-line therapy in patients with advanced non-small-cell lung cancer: Docetaxel and Erlotinib Lung Cancer Trial (DELTA).",
       "condition_list": null,
       "data_index": {
         "age": [],
@@ -3056,7 +3056,7 @@
       },
       "weibull_max_diff": 0.9780514841452311,
       "time_scale": "Unknown",
-      "title": null,
+      "title": "FOLFIRI plus bevacizumab as second-line therapy in patients with metastatic colorectal cancer after first-line bevacizumab plus oxaliplatin-based therapy: the randomized phase III EAGLE study.",
       "condition_list": null,
       "data_index": {
         "age": [],
@@ -3727,7 +3727,7 @@
       },
       "weibull_max_diff": 0.9332229062764944,
       "time_scale": "Months",
-      "title": null,
+      "title": "Phase III Study of Surgery Versus Definitive Concurrent Chemoradiotherapy Boost in Patients With Resectable Stage IIIA(N2) and Selected IIIB Non-Small-Cell Lung Cancer After Induction Chemotherapy and Concurrent Chemoradiotherapy (ESPATUE).",
       "condition_list": null,
       "data_index": null,
       "hazard_ratios": {
@@ -4373,7 +4373,7 @@
       },
       "weibull_max_diff": null,
       "time_scale": "Months",
-      "title": null,
+      "title": "Hypofractionated versus conventionally fractionated radiotherapy for patients with localised prostate cancer (HYPRO): final efficacy results from a randomised, multicentre, open-label, phase 3 trial.",
       "condition_list": null,
       "data_index": null,
       "hazard_ratios": {
@@ -4684,7 +4684,7 @@
       },
       "weibull_max_diff": 0.9094089942146336,
       "time_scale": "Months",
-      "title": null,
+      "title": "Phase III comparison of tamoxifen versus tamoxifen plus ovarian function suppression in premenopausal women with node-negative, hormone receptor-positive breast cancer (E-3193, INT-0142): a trial of the Eastern Cooperative Oncology Group.",
       "condition_list": null,
       "data_index": {
         "age": [
@@ -4855,7 +4855,7 @@
       },
       "weibull_max_diff": 0.8066517238495836,
       "time_scale": "Months",
-      "title": null,
+      "title": "Phase III study comparing amrubicin plus cisplatin with irinotecan plus cisplatin in the treatment of extensive-disease small-cell lung cancer: JCOG 0509.",
       "condition_list": null,
       "data_index": {
         "age": [],
@@ -4891,7 +4891,7 @@
       },
       "weibull_max_diff": 0.6984640124116194,
       "time_scale": "Months",
-      "title": null,
+      "title": "Combined chemotherapy with cisplatin, etoposide, and irinotecan versus topotecan alone as second-line treatment for patients with sensitive relapsed small-cell lung cancer (JCOG0605): a multicentre, open-label, randomised phase 3 trial.",
       "condition_list": null,
       "data_index": null,
       "hazard_ratios": {
@@ -4924,7 +4924,7 @@
       },
       "weibull_max_diff": 0.8368842255249666,
       "time_scale": "Months",
-      "title": null,
+      "title": "Randomized phase III trial of treatment duration for oral uracil and tegafur plus leucovorin as adjuvant chemotherapy for patients with stage IIB/III colon cancer: final results of JFMC33-0502.",
       "condition_list": null,
       "data_index": {
         "age": [
@@ -5106,7 +5106,7 @@
       },
       "weibull_max_diff": 0.5299730967914621,
       "time_scale": "Months",
-      "title": null,
+      "title": "Pembrolizumab versus Chemotherapy for PD-L1-Positive Non-Small-Cell Lung Cancer.",
       "condition_list": null,
       "data_index": {
         "age": [],
@@ -5424,7 +5424,7 @@
       },
       "weibull_max_diff": 0.9315681149958189,
       "time_scale": "Months",
-      "title": null,
+      "title": "Afatinib versus cisplatin-based chemotherapy for EGFR mutation-positive lung adenocarcinoma (LUX-Lung 3 and LUX-Lung 6): analysis of overall survival data from two randomised, phase 3 trials.",
       "condition_list": null,
       "data_index": null,
       "hazard_ratios": {
@@ -5492,7 +5492,7 @@
       },
       "weibull_max_diff": 0.9139909236693261,
       "time_scale": "Months",
-      "title": null,
+      "title": "Extending Aromatase-Inhibitor Adjuvant Therapy to 10 Years.",
       "condition_list": null,
       "data_index": {
         "age": [],
@@ -6446,7 +6446,7 @@
       },
       "weibull_max_diff": 0.9870142268795672,
       "time_scale": "Months",
-      "title": null,
+      "title": "Escalated-dose versus control-dose conformal radiotherapy for prostate cancer: long-term results from the MRC RT01 randomised controlled trial.",
       "condition_list": null,
       "data_index": null,
       "hazard_ratios": {
@@ -6559,7 +6559,7 @@
       },
       "weibull_max_diff": 0.9368729264187624,
       "time_scale": "Months",
-      "title": null,
+      "title": "A phase III randomized trial of adding topical nitroglycerin to first-line chemotherapy for advanced nonsmall-cell lung cancer: the Australasian lung cancer trials group NITRO trial.",
       "condition_list": null,
       "data_index": {
         "age": [
@@ -6784,7 +6784,7 @@
       },
       "weibull_max_diff": 0.6496388416911041,
       "time_scale": "Months",
-      "title": null,
+      "title": "Neoadjuvant and adjuvant trastuzumab in patients with HER2-positive locally advanced breast cancer (NOAH): follow-up of a randomised controlled superiority trial with a parallel HER2-negative cohort.",
       "condition_list": null,
       "data_index": null,
       "hazard_ratios": {
@@ -7004,7 +7004,7 @@
       },
       "weibull_max_diff": 0.753838851532133,
       "time_scale": "Unknown",
-      "title": null,
+      "title": "Use of thoracic radiotherapy for extensive stage small-cell lung cancer: a phase 3 randomised controlled trial.",
       "condition_list": null,
       "data_index": null,
       "hazard_ratios": {
@@ -7037,7 +7037,7 @@
       },
       "weibull_max_diff": 0.8577240570635423,
       "time_scale": "Months",
-      "title": null,
+      "title": "A randomized phase III study comparing pegylated liposomal doxorubicin with capecitabine as first-line chemotherapy in elderly patients with metastatic breast cancer: results of the OMEGA study of the Dutch Breast Cancer Research Group BOOG.",
       "condition_list": null,
       "data_index": {
         "age": [
@@ -7483,7 +7483,7 @@
       },
       "weibull_max_diff": null,
       "time_scale": "Months",
-      "title": null,
+      "title": "Oxaliplatin, fluorouracil, and leucovorin with or without cetuximab in patients with resected stage III colon cancer (PETACC-8): an open-label, randomised phase 3 trial.",
       "condition_list": null,
       "data_index": null,
       "hazard_ratios": {
@@ -7689,7 +7689,7 @@
       },
       "weibull_max_diff": 0.8703383041031278,
       "time_scale": "Months",
-      "title": null,
+      "title": "PROCLAIM: Randomized Phase III Trial of Pemetrexed-Cisplatin or Etoposide-Cisplatin Plus Thoracic Radiation Therapy Followed by Consolidation Chemotherapy in Locally Advanced Nonsquamous Non-Small-Cell Lung Cancer.",
       "condition_list": null,
       "data_index": {
         "age": [],
@@ -7764,7 +7764,7 @@
       },
       "weibull_max_diff": 0.9890923376152434,
       "time_scale": "Months",
-      "title": null,
+      "title": "Adjuvant chemotherapy for rectal cancer patients treated with preoperative (chemo)radiotherapy and total mesorectal excision: a Dutch Colorectal Cancer Group (DCCG) randomized phase III trial.",
       "condition_list": null,
       "data_index": {
         "age": [],
@@ -7932,7 +7932,7 @@
       },
       "weibull_max_diff": 0.9017639995989009,
       "time_scale": "Unknown",
-      "title": null,
+      "title": "Dexamethasone and supportive care with or without whole brain radiotherapy in treating patients with non-small cell lung cancer with brain metastases unsuitable for resection or stereotactic radiotherapy (QUARTZ): results from a phase 3, non-inferiority, randomised trial.",
       "condition_list": null,
       "data_index": null,
       "hazard_ratios": {
@@ -7965,7 +7965,7 @@
       },
       "weibull_max_diff": 0.8855216152997422,
       "time_scale": "Months",
-      "title": null,
+      "title": "Adjuvant capecitabine plus bevacizumab versus capecitabine alone in patients with colorectal cancer (QUASAR 2): an open-label, randomised phase 3 trial.",
       "condition_list": null,
       "data_index": null,
       "hazard_ratios": {
@@ -7998,7 +7998,7 @@
       },
       "weibull_max_diff": 0.8895785140735387,
       "time_scale": "Months",
-      "title": null,
+      "title": "Postoperative irinotecan in resected stage II-III rectal cancer: final analysis of the French R98 Intergroup trial†.",
       "condition_list": null,
       "data_index": {
         "age": [],
@@ -8487,7 +8487,7 @@
       },
       "weibull_max_diff": 0.5715396159096268,
       "time_scale": "Unknown",
-      "title": null,
+      "title": "Randomized Phase III Noninferiority Study Comparing Two Radiotherapy Fractionation Schedules in Patients With Low-Risk Prostate Cancer.",
       "condition_list": null,
       "data_index": {
         "age": [
@@ -8840,7 +8840,7 @@
       },
       "weibull_max_diff": 0.9817015557467643,
       "time_scale": "Months",
-      "title": null,
+      "title": "Taxanes versus S-1 as the first-line chemotherapy for metastatic breast cancer (SELECT BC): an open-label, non-inferiority, randomised phase 3 trial.",
       "condition_list": null,
       "data_index": null,
       "hazard_ratios": {
@@ -8913,7 +8913,7 @@
       },
       "weibull_max_diff": 0.976270648446306,
       "time_scale": "Months",
-      "title": null,
+      "title": "Prophylactic radiotherapy for the prevention of procedure-tract metastases after surgical and large-bore pleural procedures in malignant pleural mesothelioma (SMART): a multicentre, open-label, phase 3, randomised controlled trial.",
       "condition_list": null,
       "data_index": null,
       "hazard_ratios": {
@@ -9273,7 +9273,7 @@
       },
       "weibull_max_diff": 0.9721623042099504,
       "time_scale": "Months",
-      "title": null,
+      "title": "A randomized phase III trial of oral S-1 plus cisplatin versus docetaxel plus cisplatin in Japanese patients with advanced non-small-cell lung cancer: TCOG0701 CATS trial.",
       "condition_list": null,
       "data_index": {
         "age": [],
@@ -9348,7 +9348,7 @@
       },
       "weibull_max_diff": 0.5618717357337745,
       "time_scale": "Unknown",
-      "title": null,
+      "title": "Adjuvant exemestane with ovarian suppression in premenopausal breast cancer.",
       "condition_list": null,
       "data_index": {
         "age": [
@@ -9556,7 +9556,7 @@
       },
       "weibull_max_diff": 0.9309857132792448,
       "time_scale": "Unknown",
-      "title": null,
+      "title": "Clinical Outcomes and Survival Following Treatment of Metastatic Castrate-Refractory Prostate Cancer With Docetaxel Alone or With Strontium-89, Zoledronic Acid, or Both: The TRAPEZE Randomized Clinical Trial.",
       "condition_list": null,
       "data_index": {
         "age": [],
@@ -9862,7 +9862,7 @@
       },
       "weibull_max_diff": 0.9809495707460612,
       "time_scale": "Months",
-      "title": null,
+      "title": "Randomized Phase III Study Comparing Gefitinib With Erlotinib in Patients With Previously Treated Advanced Lung Adenocarcinoma: WJOG 5108L.",
       "condition_list": null,
       "data_index": {
         "age": [
@@ -10020,7 +10020,7 @@
       },
       "weibull_max_diff": 0.8866903007831959,
       "time_scale": "Months",
-      "title": null,
+      "title": "Nedaplatin plus docetaxel versus cisplatin plus docetaxel for advanced or relapsed squamous cell carcinoma of the lung (WJOG5208L): a randomised, open-label, phase 3 trial.",
       "condition_list": null,
       "data_index": null,
       "hazard_ratios": {
@@ -10116,7 +10116,7 @@
       },
       "weibull_max_diff": 0.8916358661327319,
       "time_scale": "Unknown",
-      "title": null,
+      "title": "Final results from the prospective phase III WSG-ARA trial: impact of adjuvant darbepoetin alfa on event-free survival in early breast cancer.",
       "condition_list": null,
       "data_index": {
         "age": [],
