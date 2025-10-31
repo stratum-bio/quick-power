@@ -108,8 +108,10 @@ function correctBounds(results: HazardDistPlotData[]) {
   }
 }
 
-
-function interpolateSampleSize(sampleSizeList: number[], pvalueList: number[]): number {
+function interpolateSampleSize(
+  sampleSizeList: number[],
+  pvalueList: number[],
+): number | null {
   if (pvalueList[0] < ALPHA) {
     return sampleSizeList[0];
   }
@@ -119,16 +121,17 @@ function interpolateSampleSize(sampleSizeList: number[], pvalueList: number[]): 
   }
 
   if (i == pvalueList.length) {
-    return Infinity;
+    return null;
   }
   const range = pvalueList[i - 1] - pvalueList[i];
   const weightRight = (pvalueList[i - 1] - ALPHA) / range;
   const weightLeft = (ALPHA - pvalueList[i]) / range;
   console.log(range, weightLeft, weightRight);
   console.log(sampleSizeList, pvalueList);
-  return Math.round(weightLeft * sampleSizeList[i-1] + weightRight * sampleSizeList[i] );
+  return Math.round(
+    weightLeft * sampleSizeList[i - 1] + weightRight * sampleSizeList[i],
+  );
 }
-
 
 function simCountToLabel(simCount: number): string {
   if (simCount < 1000) {
@@ -139,8 +142,6 @@ function simCountToLabel(simCount: number): string {
     return "reasonable";
   }
 }
-
-
 
 const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
   trialName,
@@ -180,11 +181,15 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
   const [minSampleSize, setMinSampleSize] = useState(MIN_SAMPLE_SIZE);
   const [maxSampleSize, setMaxSampleSize] = useState(totalSampleSize);
 
-  const [schoenfeldSampleSize, setSchoenfeldSampleSize] = useState<[number | null, number | null]>([null, null]);
-  const [logrankSampleSize, setLogRankSampleSize] = useState<[number | null, number | null]>([null, null]);
-  const [rmstSampleSize, setRmstSampleSize] = useState<[number | null, number | null]>([null, null]);
-
-
+  const [schoenfeldSampleSize, setSchoenfeldSampleSize] = useState<
+    [number | null, number | null]
+  >([null, null]);
+  const [logrankSampleSize, setLogRankSampleSize] = useState<
+    [number | null, number | null]
+  >([null, null]);
+  const [rmstSampleSize, setRmstSampleSize] = useState<
+    [number | null, number | null]
+  >([null, null]);
 
   useEffect(() => {
     setLoading(true);
@@ -195,12 +200,19 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
     }
 
     const fetchSchoenfeldSampleSize = async () => {
-      if (trialName && controlArmName && accrual && followup && treatHazardRatio) {
+      if (
+        trialName &&
+        controlArmName &&
+        accrual &&
+        followup &&
+        treatHazardRatio
+      ) {
         try {
           const sampleSize80 = await schoenfeldFromKM(
             trialName,
             controlArmName,
-            trialMeta.hazard_ratios[controlArmName][treatArmName] * treatHazardRatio,
+            trialMeta.hazard_ratios[controlArmName][treatArmName] *
+              treatHazardRatio,
             accrual,
             followup,
             ALPHA,
@@ -210,7 +222,8 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
           const sampleSize90 = await schoenfeldFromKM(
             trialName,
             controlArmName,
-            trialMeta.hazard_ratios[controlArmName][treatArmName] * treatHazardRatio,
+            trialMeta.hazard_ratios[controlArmName][treatArmName] *
+              treatHazardRatio,
             accrual,
             followup,
             ALPHA,
@@ -273,12 +286,26 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
         processedData.sort((a, b) => a.sample_size - b.sample_size);
 
         setLogRankSampleSize([
-          interpolateSampleSize(processedData.map((e) => e.sample_size), processedData.map((e) => e.pvalue_80)),
-          interpolateSampleSize(processedData.map((e) => e.sample_size), processedData.map((e) => e.pvalue_90 + e.pvalue_80)),
+          interpolateSampleSize(
+            processedData.map((e) => e.sample_size),
+            processedData.map((e) => e.pvalue_80),
+          ),
+          interpolateSampleSize(
+            processedData.map((e) => e.sample_size),
+            processedData.map((e) => e.pvalue_90 + e.pvalue_80),
+          ),
         ]);
         setRmstSampleSize([
-          interpolateSampleSize(processedData.map((e) => e.sample_size), processedData.map((e) => e.rmst_pvalue_80 ?? 0)),
-          interpolateSampleSize(processedData.map((e) => e.sample_size), processedData.map((e) => (e.rmst_pvalue_90 ?? 0) + (e.rmst_pvalue_80 ?? 0))),
+          interpolateSampleSize(
+            processedData.map((e) => e.sample_size),
+            processedData.map((e) => e.rmst_pvalue_80 ?? 0),
+          ),
+          interpolateSampleSize(
+            processedData.map((e) => e.sample_size),
+            processedData.map(
+              (e) => (e.rmst_pvalue_90 ?? 0) + (e.rmst_pvalue_80 ?? 0),
+            ),
+          ),
         ]);
 
         correctBounds(processedData);
@@ -563,9 +590,7 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
           <p className="font-bold text-red-950 italic"> {mismatchMessage} </p>
         </div>
       )}
-      <h3 className="font-bold text-l mb-4">
-        Sample size estimates
-      </h3>
+      <h3 className="font-bold text-l mb-4">Sample size estimates</h3>
       <div className="mb-4 overflow-x-auto">
         <div className="min-w-full divide-y divide-gray-200">
           <div className="grid grid-cols-3 bg-gray-50 rounded-md">
@@ -589,40 +614,51 @@ const BootstrapSimulationPlot: React.FC<BootstrapSimulationProps> = ({
                   {Math.round(schoenfeldSampleSize[0])}
                 </div>
                 <div className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
-                  {schoenfeldSampleSize[1] ? Math.round(schoenfeldSampleSize[1]) : "N/A"}
+                  {schoenfeldSampleSize[1]
+                    ? Math.round(schoenfeldSampleSize[1])
+                    : "N/A"}
                 </div>
               </div>
             )}
-            {logrankSampleSize[0] && (
-              <div className="grid grid-cols-3">
-                <div className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                  Log Rank
-                </div>
-                <div className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
-                  {Math.round(logrankSampleSize[0])}
-                </div>
-                <div className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
-                  {logrankSampleSize[1] ? Math.round(logrankSampleSize[1]) : "N/A"}
-                </div>
+            <div className="grid grid-cols-3">
+              <div className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                Log Rank
               </div>
-            )}
-            {rmstSampleSize[0] && (
-              <div className="grid grid-cols-3">
-                <div className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                  RMST
-                </div>
-                <div className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
-                  {Math.round(rmstSampleSize[0])}
-                </div>
-                <div className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
-                  {rmstSampleSize[1] ? Math.round(rmstSampleSize[1]) : "N/A"}
-                </div>
+              <div className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                {logrankSampleSize[0]
+                  ? Math.round(logrankSampleSize[0])
+                  : "Out of range**"}
               </div>
-            )}
+              <div className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                {logrankSampleSize[1]
+                  ? Math.round(logrankSampleSize[1])
+                  : "Out of range**"}
+              </div>
+            </div>
+            <div className="grid grid-cols-3">
+              <div className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                RMST
+              </div>
+              <div className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                {rmstSampleSize[0]
+                  ? Math.round(rmstSampleSize[0])
+                  : "Out of range**"}
+              </div>
+              <div className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                {rmstSampleSize[1]
+                  ? Math.round(rmstSampleSize[1])
+                  : "Out of range**"}
+              </div>
+            </div>
           </div>
         </div>
-        <p className={`italic ${datasetSimCount < 10000 ? "text-error" : "text-success" } `}>
-        * Estimate reliability: {simCountToLabel(datasetSimCount)}
+        <p
+          className={`italic ${datasetSimCount < 10000 ? "text-error" : "text-success"} `}
+        >
+          * Estimate reliability: {simCountToLabel(datasetSimCount)}
+          <br />
+          ** In case of out-of-range numbers, update the simulation min and max
+          sample sizes below to change the range of sample sizes evaluated.
         </p>
       </div>
       <h3 className="font-bold text-l">
